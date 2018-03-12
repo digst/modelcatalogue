@@ -1,0 +1,23 @@
+Filer som tilsammen danner søgning i xml/xmi-dokumenter
+
+index2.htm 
+Søger efter et ord - inputtet i en HTML-formular -
+Anvender transformationen findconcepts.xsl til at gennemsøge xmi 
+
+findconcepts.xsl
+Gennemsøger XMI efter en tekstparameter leveret af index2.htm
+Viser en liste over fund - objektfund med link til index.htm#EAID
+
+index.htm
+modtager et EAID fra URL
+Anvender transformationen concepts.xsl til at gennemsøge xmi
+
+concepts.xsl
+Søger efter EAID i XMI
+Viser fundne element
+
+
+
+
+
+

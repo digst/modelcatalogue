@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:adms="http://www.w3.org/ns/adms#"
+         xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+         xmlns:vann="http://purl.org/vocab/vann/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/">
+   <rdf:Description rdf:about="http://data.gov.dk/model/concepts/ModellingLevels">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Modelleringsniveauer</dct:identifier>
+      <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+      <dct:title xml:lang="da">Modelleringsniveauer</dct:title>
+      <skos:prefLabel xml:lang="da">Modelleringsniveauer</skos:prefLabel>
+      <dct:description xml:lang="da">Modelleringsniveauer, som de forstås i regi af de Fællesoffentlige regler for begrebs- og datamodellering.</dct:description>
+      <skos:definition xml:lang="da">Modelleringsniveauer, som de forstås i regi af de Fællesoffentlige regler for begrebs- og datamodellering.</skos:definition>
+      <dct:description xml:lang="en">Modelling levels types as used by the danish model regime.</dct:description>
+      <skos:definition xml:lang="en">Modelling levels types as used by the danish model regime.</skos:definition>
+     <vann:usageNote xml:lang="en"/>
+     <dcat:theme rdf:resource="tbd"/>
+      <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+
+   <rdf:Description rdf:about="http://data.gov.dk/model/concepts/ModellingLevels.rdf.xml">
+      <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+	<dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/EN"/>
+   </rdf:Description>
+
+   <rdf:Description rdf:about="http://data.gov.dk/model/concepts/ModellingLevels#Formidling">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Formidling</dct:identifier>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:inScheme rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels"/>
+     <dct:title xml:lang="en">Formidling</dct:title>
+      <dct:description xml:lang="da">Niveau 1: Formidling: udgøres af et mindre antal basale regler, som handler om grundlæggende dokumentation af modellen, tilføjelse af metadata, et ensartet grafisk udtryk, samt at modellen er udstillet på internettet.</dct:description>
+      <skos:definition xml:lang="da">Niveau 1: Formidling: udgøres af et mindre antal basale regler, som handler om grundlæggende dokumentation af modellen, tilføjelse af metadata, et ensartet grafisk udtryk, samt at modellen er udstillet på internettet.</skos:definition>
+      <dct:description xml:lang="en">a level...</dct:description>
+      <skos:definition xml:lang="en">a level...</skos:definition>
+      <skos:prefLabel xml:lang="da">Niveau 1: Formidling</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Level 1: Formiddag</skos:prefLabel>
+      <dcat:theme rdf:resource="tbd"/>
+      <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+
+   <rdf:Description rdf:about="http://data.gov.dk/model/concepts/ModellingLevels#Genbrug">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Genbrug</dct:identifier>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:inScheme rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels"/>
+     <dct:title xml:lang="en">Genbrug</dct:title>
+      <dct:description xml:lang="da">Niveau 2: Genbrug: tillægger yderligere regler, som vedrører genbrug af modelelementer fra eksisterende modeller, højere kvalitet i definitioner og betegnelser samt anvendelse af et standardiseret udvekslingsformat.</dct:description>
+      <skos:definition xml:lang="da">Niveau 2: Genbrug: tillægger yderligere regler, som vedrører genbrug af modelelementer fra eksisterende modeller, højere kvalitet i definitioner og betegnelser samt anvendelse af et standardiseret udvekslingsformat.</skos:definition>
+      <dct:description xml:lang="en">a level...</dct:description>
+      <skos:definition xml:lang="en">a level...</skos:definition>
+      <skos:prefLabel xml:lang="da">Niveau 2: Genbrug</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Level 2: Genbo</skos:prefLabel>
+      <dcat:theme rdf:resource="tbd"/>
+      <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+
+   <rdf:Description rdf:about="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Sammenhæng</dct:identifier>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:inScheme rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels"/>
+     <dct:title xml:lang="en">Formidling</dct:title>
+      <dct:description xml:lang="da">Niveau 3: Sammenhæng: tillægger yderligere regler, som vedrører datasammenhæng, muliggør sømløs automatisk sammenstilling af data i services og tjenester samt selvbeskrivende data.</dct:description>
+      <skos:definition xml:lang="da">Niveau 3: Sammenhæng: tillægger yderligere regler, som vedrører datasammenhæng, muliggør sømløs automatisk sammenstilling af data i services og tjenester samt selvbeskrivende data.</skos:definition>
+      <dct:description xml:lang="en">a level...</dct:description>
+      <skos:definition xml:lang="en">a level...</skos:definition>
+      <skos:prefLabel xml:lang="da">Niveau 3: Sammenhæng</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Level 3: Samme seng</skos:prefLabel>
+      <dcat:theme rdf:resource="tbd"/>
+      <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+
+  
+
+   </rdf:RDF>
+

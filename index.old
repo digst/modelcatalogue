@@ -1,0 +1,63 @@
+<html>
+<head>
+<script>
+//var loc = window.location.toString();
+//var cid=loc.substring(12);
+//hent URL
+var loc = window.location.toString();
+//lav variablen eaid med URL-parameteren som værdi
+if (loc.indexOf('#') >= 0){
+	var eaid=loc.substring(loc.indexOf('#')+1);
+	//alert(eaid);
+}
+
+function loadXMLDoc(filename)
+{
+//hjælpefunktion der loader xml
+if (window.ActiveXObject)
+  {
+  xhttp = new ActiveXObject("Msxml2.XMLHTTP");
+  }
+else 
+  {
+  xhttp = new XMLHttpRequest();
+  }
+xhttp.open("GET", filename, false);
+try {xhttp.responseType = "msxml-document"} catch(err) {} // Helping IE11
+xhttp.send("");
+return xhttp.responseXML;
+}
+
+function displayResult()
+{
+//se udførlige kommentarer i index2.htm
+xml = loadXMLDoc("1.3.0_Ejerfortegnelsen.xml");
+xsl = loadXMLDoc("concepts.xsl");
+// code for IE
+if (window.ActiveXObject || xhttp.responseType == "msxml-document")
+  {
+	var template = new ActiveXObject('Msxml2.XslTemplate');
+    template.stylesheet = xsl;
+    var proc = template.createProcessor();
+    proc.input = xml;
+    proc.addParameter('eaid', eaid);
+    proc.transform();
+    document.getElementById("example").innerHTML = proc.output;
+  }
+// code for Chrome, Firefox, Opera, etc.
+else if (typeof XSLTProcessor !== 'undefined')
+  {
+  xsltProcessor = new XSLTProcessor();
+  xsltProcessor.importStylesheet(xsl);
+  xsltProcessor.setParameter(null, "eaid", eaid);
+  var resultFragment = xsltProcessor.transformToFragment(xml, document);
+  //result = xsltProcessor.transformToFragment(xml, );
+  document.getElementById("example").appendChild(resultFragment);
+  }
+}
+</script>
+</head>
+<body onload="displayResult()">
+<div id="example" />
+</body>
+</html>
