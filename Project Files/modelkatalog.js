@@ -32,6 +32,7 @@ function displayResult(filterpath)
 					function(data2){
 						xsl  = data2;
 						//indsæt filter i stylesheet
+
 						if (filterpath ) {$(xsl).find('BODY')[0].firstChild.attributes[0].value = "//rdf:Description[(" + filterpath + ")]";}							
 					  	xsltProcessor = new XSLTProcessor();
 						//  console.log ($(xsl).find('BODY')[0].firstChild)
@@ -228,27 +229,57 @@ console.log($(katData).length)
 		})
 		//$(nedtrykte).each(function(){console.log(this)});
 		console.log(nedtrykte)
-			
-				var nodePath = $(".knapkasse")
-				.map(function(){
-					var kassetag = this.id;
-					var kasseprefix = this.attributes['data-prefix'].value;
-					var kasseklassificeret = this.attributes['data-klassificeret'].value;
-					return $(this)
-						.find(".nedtrykt")
-						.map(function(){
-							if(kasseklassificeret == "true"){resource = "/@rdf:resource"} else {resource = ""};
-							return kasseprefix + ":" + kassetag + resource + "='" + this.id + "'"
-						}
-						).get().join(" or ")
-					}
-					).filter(function(){
-						return this.length > 0;
-					}
-					).get().join(") and (");
-						
-		console.log(nodePath)
-			displayResult(nodePath);
-			
+			filterByCategory();
 		}
 
+		function filterByCategory()
+		{
+			var nodePath = $(".knapkasse")
+			.map(function(){
+				var kassetag = this.id;
+				var kasseprefix = this.attributes['data-prefix'].value;
+				var kasseklassificeret = this.attributes['data-klassificeret'].value;
+				return $(this)
+					.find(".nedtrykt")
+					.map(function(){
+						if(kasseklassificeret == "true"){resource = "/@rdf:resource"} else {resource = ""};
+						return kasseprefix + ":" + kassetag + resource + "='" + this.id + "'"
+					}
+					).get().join(" or ")
+				}
+				).filter(function(){
+					return this.length > 0;
+				}
+				).get().join(") and (");
+					
+	console.log(nodePath)
+		displayResult(nodePath);
+		
+		}
+
+		function searchClick(query){
+			if(query == ""){
+				//Please enter search query
+			}else
+			{
+				$('.klapmodel').each(function(){ // For each element
+
+					var regex = new RegExp(query)
+
+					var toRemove = $(this).filter(function () {
+						if(!regex.test($(this).text()))
+						{
+							console.log("Text does not contain query")
+							$(this).remove(); // if it is empty, it removes it
+						}
+					});
+				});
+			}
+		}
+
+		function resetSearch()
+		{
+			filterByCategory();
+			document.getElementById('searchField').value = "";
+
+		}
