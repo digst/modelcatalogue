@@ -44,7 +44,7 @@ function displayResult(filterpath)
 						$('.enmodel').addClass("klapmodel");//klap alle modeller sammen
 						arrows();//tilføj klap ud/ind pile
 						sideknapper(filterpath);//lav filterknapper
-						   
+						searchClick(document.getElementById('searchField').value);							   
 					})
 			})
 	}
@@ -72,12 +72,12 @@ function displayResult(filterpath)
 			document.getElementById("resultatdiv").innerHTML = source.transformNode(stylesheet);
  	  	        $('.enmodel').addClass("klapmodel");//klap alle modeller sammen
   			arrows();//tilføj klap ud/ind pile
-  			sideknapper(filterpath);//lav filterknapper
+			  sideknapper(filterpath);//lav filterknapper
+			  searchClick(document.getElementById('searchField').value);	
 			}
 		}
 
 	 }
-	
 }
 	
 
@@ -281,5 +281,4 @@ console.log($(katData).length)
 		{
 			filterByCategory();
 			document.getElementById('searchField').value = "";
-
 		}
