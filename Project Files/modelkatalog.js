@@ -275,21 +275,20 @@ function searchClick(query){
 				{
 					$(this).remove(); // if it is empty, it removes it
 				}else
-				{/*
+				{
 					input = $(this).html();
 					matches = input.match(regex);
-					console.log(matches);
+					//console.log(matches);
 
 
 					for (let i = 0; i < matches.length; i++) {
-						console.log(`Found ${matches[i]} at ${matches.index}`);
-
-						var txt = matches.input.slice(0, matches.index) + "<span class=\"red\">" + matches.input.slice(matches.lastIndex) + "</span>";
-						console.log(txt)
-						console.log(matches.input)
+						//console.log(`Found ${matches[i]} at ${matches.index}`);
+						console.log($(this).html(txt))
+						var txt = matches.input.slice(0, matches.index) + "<span class=\"red\">"+ query +"</span>" + matches.input.slice(matches.index + query.length)
+						console.log($(this).html(txt))
 						$(this).html(txt);
-					}				*/
-					//Highlight query text
+					}				
+					//Highlight query text works, but disables drop down function. Also only marks titles, not elements in child nodes
 				}
 			});
 		});
