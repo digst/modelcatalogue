@@ -232,6 +232,7 @@ console.log($(katData).length)
 			filterByCategory();
 		}
 
+		//Filters the shown elements based on predefined filters within categories such as "Modeltype", "FORMområde" and "Datatema"
 		function filterByCategory()
 		{
 			var nodePath = $(".knapkasse")
@@ -257,6 +258,8 @@ console.log($(katData).length)
 		
 		}
 
+		//Triggers on search button click. Goes through all elements of the DOM that has the class ".klapmodel" 
+		//and checks for a substring containing the search query
 		function searchClick(query){
 			if(query == ""){
 				//Please enter search query
@@ -277,6 +280,7 @@ console.log($(katData).length)
 			}
 		}
 
+		//Removes the search query and restores filters if ant where set.
 		function resetSearch()
 		{
 			filterByCategory();

@@ -36,7 +36,7 @@
   <p>Her finder du en oversigt over begrebs- og datamodeller udarbejdet i offentligt regi og som er registret med henblik på videndeling og genbrug. Derudover indeholder dette katalog også oplysninger om en række anderkendte  internationale modeller som kan have en bred anvendelse i dansk administrativ og fællesoffentlig kontekst. Anvendelse af Modelreglerne og genbrug af modeller og data gør os i stand til at skabe en fællesoffentlig dataarkitektur og et fælles datagrundlag, hvor vi kan anvende hinandens modeller og de data, de dokumenterer. </p> <p>Del og genbrug nu!</p>
 
   <div class="searchinput"><h3>Søg efter modeller</h3>
-	<form method="get">
+	<form method="post" onsubmit="searchClick(document.getElementById('searchField').value); return false;">
 		<input id="searchField" type="search" value="" placeholder="Søg">
 		<input type="button" value="Søg" onclick="searchClick(document.getElementById('searchField').value)">
 		<input type="button" value="Nulstil Søgning" onclick="resetSearch()">
