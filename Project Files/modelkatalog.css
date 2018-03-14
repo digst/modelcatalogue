@@ -232,7 +232,22 @@ a:hover{
 }
 .enmodel {
 	position:relative;
-}	
 }
+
+form{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+form input{
+	flex: 1 1 0;
+}
+
+form input:first-child{
+	width: 50%;
+	flex: 1 1 auto;
+}
+
+
 		
 
