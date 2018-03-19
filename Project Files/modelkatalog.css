@@ -237,7 +237,7 @@ a:hover{
 form{
 	display: flex;
 	flex-wrap: wrap;
-	overflow: auto; 
+	flex-direction: row;
 }
 
 form input{
@@ -245,8 +245,7 @@ form input{
 }
 
 form input:first-child{
-	width: 50%;
-	flex: 1 1 auto;
+	flex: 1 1 70%;
 }
 
 .red{

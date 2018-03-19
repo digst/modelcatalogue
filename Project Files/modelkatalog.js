@@ -4,9 +4,9 @@
 	var xsl; //inputfil - transformations-stylesheet
 	var nedtrykte = []; //valgte knapper
 
-	$(document).ready(function() {
+	/*$(document).ready(function() {
 		displayResult();//vis kataloget
-	})
+	})*/
 		
 	/*
 	* Knaptræ:
@@ -297,7 +297,7 @@ function searchClick(query){
 	}
 }
 
-//Removes the search query and restores filters if ant where set.
+//Removes the search query and restores filters if any where set.
 function resetSearch()
 {
 	$('.klapmodel').each(function(){
@@ -305,7 +305,7 @@ function resetSearch()
 			$(this).show();
 			$(this).removeClass("hidden");
 		}
-		
+
 		test = $(this).find("span").removeClass("red");
 	})
 
