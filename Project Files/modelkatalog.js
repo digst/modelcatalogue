@@ -3,14 +3,11 @@
 	var xml; //inputfil - selve kataloget
 	var xsl; //inputfil - transformations-stylesheet
 	var nedtrykte = []; //valgte knapper
-	
-	
-	
+
 	$(document).ready(function() {
 		displayResult();//vis kataloget
 	})
-	
-	
+		
 	/*
 	* Knaptræ:
 	* opdater knaptræ for hver ny fragment - gem knap-states i variabel
@@ -18,7 +15,6 @@
 	* 
 	* //rdf:Description[dadk:modelType/@rdf:resource='http://data.gov.dk/model/concepts/ModelTypes#CoreModel'  or dadk:modelType/@rdf:resource='http://data.gov.dk/model/concepts/ModelTypes#LogicalModel']
 	*/
-	
 	
 	function displayResult(filterpath)
 	{// hent katalog, hent stylesheet, modificer evt stylesheet med filter, lav transformation og vis resultat
@@ -73,7 +69,7 @@
 					$('.enmodel').addClass("klapmodel");//klap alle modeller sammen
 					arrows();//tilføj klap ud/ind pile
 					sideknapper(filterpath);//lav filterknapper
-					searchClick(document.getElementById('searchField').value);	
+					searchClick(document.getElementById('searchField').value);
 				}
 			}
 			
@@ -105,7 +101,7 @@
 			
 		})}
 		//console.log(katData) find("Description,rdf\\:Description")..children().length
-		console.log($(katData).length)
+		//console.log($(katData).length)
 		$("#knapdiv").empty()
 		
 		$(config).each(function(index,theme){
@@ -164,7 +160,7 @@ function knapfabrik(katData,theme,tdata,kasse){
 	//"modellingLevel,dadk\\:modellingLevel"
 	$.each(_.countBy($(katData).find(theme.tag + "," + theme.prefix + "\\:" + theme.tag).map(function(){return tdata?this.attributes[0].nodeValue:this.textContent})),
 	function(buttonTopicID,count){
-		console.log(buttonTopicID,count)
+		//console.log(buttonTopicID,count)
 		var knap = document.createElement("div");
 		knap.className = "knap"
 		$(knap).attr('id',buttonTopicID)
@@ -229,7 +225,7 @@ nedtrykte = $(".nedtrykt").map(function() { //registrer hvilke knapper der er ne
 return this.attributes['id'].value
 })
 //$(nedtrykte).each(function(){console.log(this)});
-console.log(nedtrykte)
+//console.log(nedtrykte)
 filterByCategory();
 }
 
@@ -254,7 +250,7 @@ function filterByCategory()
 }
 ).get().join(") and (");
 
-console.log(nodePath)
+//console.log(nodePath)
 displayResult(nodePath);
 
 }
@@ -273,7 +269,8 @@ function searchClick(query){
 			var toRemove = $(this).filter(function () {
 				if(!regex.test($(this).text()))
 				{
-					$(this).remove(); // if it is empty, it removes it
+					$(this).hide(); // if it is empty, it removes it
+					$(this).addClass("hidden");
 				}else
 				{
 					input = $(this).html();
@@ -281,24 +278,37 @@ function searchClick(query){
 					//console.log(matches);
 
 
-					for (let i = 0; i < matches.length; i++) {
+					for (i = 0; i < matches.length; i++) {
 						//console.log(`Found ${matches[i]} at ${matches.index}`);
-						console.log($(this).html(txt))
+						//console.log($(this).html(txt))
 						var txt = matches.input.slice(0, matches.index) + "<span class=\"red\">"+ query +"</span>" + matches.input.slice(matches.index + query.length)
-						console.log($(this).html(txt))
+						//console.log($(this).html(txt))
 						$(this).html(txt);
-					}				
-					//Highlight query text works, but disables drop down function. Also only marks titles, not elements in child nodes
+					}			
+
+					//Recreate arrows
+					$('.pilopned').each(function(){
+						$(this).remove();
+					})
+					arrows();
 				}
 			});
-		});
+		});	
 	}
 }
 
 //Removes the search query and restores filters if ant where set.
 function resetSearch()
 {
-	filterByCategory();
+	$('.klapmodel').each(function(){
+		if($(this).hasClass("hidden")){
+			$(this).show();
+			$(this).removeClass("hidden");
+		}
+		
+		test = $(this).find("span").removeClass("red");
+	})
+
 	document.getElementById('searchField').value = "";
 }
 
