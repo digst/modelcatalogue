@@ -2,6 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"> 
+<<<<<<< HEAD
+=======
+<meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+>>>>>>> development
 <title>Modelkataloget</title>
 	<script src="jquery-3.2.1.js" type="text/javascript" language="JavaScript"></script>
 	<script src="modelkatalog.js" type="text/javascript" language="JavaScript"></script>
@@ -36,12 +40,21 @@
   <p>Her finder du en oversigt over begrebs- og datamodeller udarbejdet i offentligt regi og som er registret med henblik på videndeling og genbrug. Derudover indeholder dette katalog også oplysninger om en række anderkendte  internationale modeller som kan have en bred anvendelse i dansk administrativ og fællesoffentlig kontekst. Anvendelse af Modelreglerne og genbrug af modeller og data gør os i stand til at skabe en fællesoffentlig dataarkitektur og et fælles datagrundlag, hvor vi kan anvende hinandens modeller og de data, de dokumenterer. </p> <p>Del og genbrug nu!</p>
 
   <div class="searchinput"><h3>Søg efter modeller</h3>
+<<<<<<< HEAD
 	<form method="post" onsubmit="searchClick(document.getElementById('searchField').value); return false;">
 		<input id="searchField" type="search" value="" placeholder="Søg">
 		<input type="button" value="Søg" onclick="searchClick(document.getElementById('searchField').value)">
 		<input type="button" value="Nulstil Søgning" onclick="resetSearch()">
 	</form>
 </div>
+=======
+		<form method="post" onsubmit="searchClick(document.getElementById('searchField').value); return false;">
+			<input id="searchField" type="search" value="" placeholder="Indtast søgeord">
+			<input type="button" value="Søg" onclick="searchClick(document.getElementById('searchField').value)">
+			<input type="button" value="Nulstil søgning" onclick="resetSearch()">
+		</form>
+	</div>
+>>>>>>> development
 
   <p>Se hele <a href="modelkatalog.rdf.xml">modelkataloget</a></p>  
 </div>  
@@ -50,8 +63,13 @@
 
 <div class="col-3 right">
 
+<<<<<<< HEAD
 	<div class="overkasse" title="">Filter Indstillinger
 		<div class="knap" onclick="resetFilter()">Nulstil Filter</div>
+=======
+	<div class="overkasse" title="">Filterindstillinger
+		<div class="knap" onclick="resetFilter()">Nulstil filter</div>
+>>>>>>> development
 	</div>
 
 	<div id="knapdiv">
@@ -82,6 +100,15 @@
 <div class="footer">
   <p>Fællesoffentlig Digital Arkitektur</p>
 </div>
+<<<<<<< HEAD
 
 </body>
+=======
+</body>
+<script>
+	window.onload = function() {
+			displayResult(); // Your function call
+	};
+	</script>
+>>>>>>> development
 </html>
