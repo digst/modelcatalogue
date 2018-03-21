@@ -147,22 +147,13 @@ input {
 .model{}
 
 .klapmodel:hover {
-<<<<<<< HEAD
-    border-top: 1px solid #d0d0d0;
-=======
->>>>>>> development
     padding-top:0;
 	background-color: #C8C8C8;
 }
 
 .klapmodel{
 	max-height:4em;
-<<<<<<< HEAD
-	background-color: #f3f3f3;
-=======
-	border-style: solid;
-    border-width: 2px; 
->>>>>>> development
+	border: thin grey solid;
 	margin: .5em;	
 	padding-top:1px;
 
@@ -245,19 +236,6 @@ a:hover{
 form{
 	display: flex;
 	flex-wrap: wrap;
-<<<<<<< HEAD
-}
-
-form input{
-	flex: 1 1 0;
-}
-
-form input:first-child{
-	width: 50%;
-	flex: 1 1 auto;
-}
-
-=======
 	flex-direction: row;
 }
 
@@ -276,7 +254,6 @@ form input:first-child{
 .klapud_description{
 	font-style: italic;
 }
->>>>>>> development
 
 		
 

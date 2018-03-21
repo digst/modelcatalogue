@@ -40,11 +40,7 @@ xmlns:dadk="http://data.gov.dk/model/vocabular/modelcat#"  >
 	    <BODY><xsl:for-each select="//rdf:type[@rdf:resource='http://www.w3.org/ns/dcat#Dataset' ]/..">
 	    
 	    		
-<<<<<<< HEAD
-		    	  	<div class="enmodel" id="enmodel"><h2><xsl:if test="vann:preferredNamespacePrefix"><xsl:value-of select="vann:preferredNamespacePrefix"/>:</xsl:if>
-=======
 		    	  	<div class="enmodel"><h2><xsl:if test="vann:preferredNamespacePrefix"><xsl:value-of select="vann:preferredNamespacePrefix"/>:</xsl:if>
->>>>>>> development
 			  <xsl:for-each select="dct:title[@xml:lang='da']"> 
 			    	  			<xsl:value-of select="."/>&#160;
 			    	  	</xsl:for-each> 
@@ -54,11 +50,7 @@ xmlns:dadk="http://data.gov.dk/model/vocabular/modelcat#"  >
 
 			    	  	<table>
 			    	  		<xsl:for-each select="dct:description[@xml:lang='da']"> 
-<<<<<<< HEAD
-			    	  	  		<tr><td colspan="2">  <xsl:value-of select="."/></td></tr>
-=======
 			    	  	  		<tr class="klapud_description"><td colspan="2">  <xsl:value-of select="."/>&#160;</td></tr>
->>>>>>> development
 			    	  	 	</xsl:for-each>
 
 <!-- 			    	  		<tr><td>Prefix:</td><td> <xsl:value-of select="vann:preferredNamespacePrefix"/></td></tr>-->

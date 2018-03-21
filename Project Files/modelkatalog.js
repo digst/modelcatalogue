@@ -3,22 +3,11 @@
 	var xml; //inputfil - selve kataloget
 	var xsl; //inputfil - transformations-stylesheet
 	var nedtrykte = []; //valgte knapper
-<<<<<<< HEAD
-	
-	
-	
-	$(document).ready(function() {
-		displayResult();//vis kataloget
-	})
-	
-	
-=======
 
 	/*$(document).ready(function() {
 		displayResult();//vis kataloget
 	})*/
 		
->>>>>>> development
 	/*
 	* Knaptræ:
 	* opdater knaptræ for hver ny fragment - gem knap-states i variabel
@@ -27,10 +16,6 @@
 	* //rdf:Description[dadk:modelType/@rdf:resource='http://data.gov.dk/model/concepts/ModelTypes#CoreModel'  or dadk:modelType/@rdf:resource='http://data.gov.dk/model/concepts/ModelTypes#LogicalModel']
 	*/
 	
-<<<<<<< HEAD
-	
-=======
->>>>>>> development
 	function displayResult(filterpath)
 	{// hent katalog, hent stylesheet, modificer evt stylesheet med filter, lav transformation og vis resultat
 		// code for Chrome, Firefox, Opera, etc.
@@ -84,11 +69,7 @@
 					$('.enmodel').addClass("klapmodel");//klap alle modeller sammen
 					arrows();//tilføj klap ud/ind pile
 					sideknapper(filterpath);//lav filterknapper
-<<<<<<< HEAD
-					searchClick(document.getElementById('searchField').value);	
-=======
 					searchClick(document.getElementById('searchField').value);
->>>>>>> development
 				}
 			}
 			
@@ -120,11 +101,7 @@
 			
 		})}
 		//console.log(katData) find("Description,rdf\\:Description")..children().length
-<<<<<<< HEAD
-		console.log($(katData).length)
-=======
 		//console.log($(katData).length)
->>>>>>> development
 		$("#knapdiv").empty()
 		
 		$(config).each(function(index,theme){
@@ -183,11 +160,7 @@ function knapfabrik(katData,theme,tdata,kasse){
 	//"modellingLevel,dadk\\:modellingLevel"
 	$.each(_.countBy($(katData).find(theme.tag + "," + theme.prefix + "\\:" + theme.tag).map(function(){return tdata?this.attributes[0].nodeValue:this.textContent})),
 	function(buttonTopicID,count){
-<<<<<<< HEAD
-		console.log(buttonTopicID,count)
-=======
 		//console.log(buttonTopicID,count)
->>>>>>> development
 		var knap = document.createElement("div");
 		knap.className = "knap"
 		$(knap).attr('id',buttonTopicID)
@@ -252,11 +225,7 @@ nedtrykte = $(".nedtrykt").map(function() { //registrer hvilke knapper der er ne
 return this.attributes['id'].value
 })
 //$(nedtrykte).each(function(){console.log(this)});
-<<<<<<< HEAD
-console.log(nedtrykte)
-=======
 //console.log(nedtrykte)
->>>>>>> development
 filterByCategory();
 }
 
@@ -281,11 +250,7 @@ function filterByCategory()
 }
 ).get().join(") and (");
 
-<<<<<<< HEAD
-console.log(nodePath)
-=======
 //console.log(nodePath)
->>>>>>> development
 displayResult(nodePath);
 
 }
@@ -304,35 +269,6 @@ function searchClick(query){
 			var toRemove = $(this).filter(function () {
 				if(!regex.test($(this).text()))
 				{
-<<<<<<< HEAD
-					$(this).remove(); // if it is empty, it removes it
-				}else
-				{/*
-					input = $(this).html();
-					matches = input.match(regex);
-					console.log(matches);
-
-
-					for (let i = 0; i < matches.length; i++) {
-						console.log(`Found ${matches[i]} at ${matches.index}`);
-
-						var txt = matches.input.slice(0, matches.index) + "<span class=\"red\">" + matches.input.slice(matches.lastIndex) + "</span>";
-						console.log(txt)
-						console.log(matches.input)
-						$(this).html(txt);
-					}				*/
-					//Highlight query text
-				}
-			});
-		});
-	}
-}
-
-//Removes the search query and restores filters if ant where set.
-function resetSearch()
-{
-	filterByCategory();
-=======
 					$(this).hide(); // if it is empty, it removes it
 					$(this).addClass("hidden");
 				}else
@@ -373,7 +309,6 @@ function resetSearch()
 		test = $(this).find("span").removeClass("red");
 	})
 
->>>>>>> development
 	document.getElementById('searchField').value = "";
 }
 
