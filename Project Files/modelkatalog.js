@@ -1,4 +1,4 @@
-	//Hent URL-parametre - ikke pt.
+﻿	//Hent URL-parametre - ikke pt.
 	//var params={};window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(str,key,value){params[key] = value;});
 	var xml; //inputfil - selve kataloget
 	var xsl; //inputfil - transformations-stylesheet
@@ -33,14 +33,17 @@
 					xsltProcessor = new XSLTProcessor();
 					//  console.log ($(xsl).find('BODY')[0].firstChild)
 					xsltProcessor.importStylesheet(xsl);
-					var resultFragment = xsltProcessor.transformToFragment(xml, document);
-					$("#resultatdiv").empty();
-					//indsæt resultat i dokument
-					document.getElementById("resultatdiv").appendChild(resultFragment);
-					$('.enmodel').addClass("klapmodel");//klap alle modeller sammen
-					arrows();//tilføj klap ud/ind pile
-					sideknapper(filterpath);//lav filterknapper
-					searchClick(document.getElementById('searchField').value);							   
+					//Server side xslt processing
+					var resultFragment = $.post("xmlParser.php", 
+					function(data){
+						$("#resultatdiv").empty();
+						//indsæt resultat i dokument
+						$("#resultatdiv").html(data);
+						$('.enmodel').addClass("klapmodel");//klap alle modeller sammen
+						arrows();//tilføj klap ud/ind pile
+						sideknapper(filterpath);//lav filterknapper
+						searchClick(document.getElementById('searchField').value);
+					}, "html");		   
 				})
 			})
 		}
@@ -170,6 +173,7 @@ function knapfabrik(katData,theme,tdata,kasse){
 			//console.log(kasse.id,buttonTopicID,topicLocator, theme.topicNameLocator)
 			
 			var title = $(tdata).find(topicLocator).find(theme.topicNameLocator)[0].textContent;
+		
 			$(knap).attr('title', title);
 		}
 		var label = document.createTextNode(tdata?buttonTopicID.split(theme.splitLocation)[1]:buttonTopicID);

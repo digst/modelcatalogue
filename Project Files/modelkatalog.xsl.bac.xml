@@ -45,7 +45,7 @@ xmlns:dadk="http://data.gov.dk/model/vocabular/modelcat#"  >
 			    	  			<xsl:value-of select="."/>&#160;
 			    	  	</xsl:for-each> 
                <xsl:for-each select="dct:title[@xml:lang='en']"> 
-			    	  			<i>(<xsl:value-of select="."/></i>)
+			    	  			<i><xsl:value-of select="."/></i>
 			    	  	</xsl:for-each></h2>
 
 			    	  	<table>
