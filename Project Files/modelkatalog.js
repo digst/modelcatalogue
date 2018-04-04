@@ -7,6 +7,8 @@
 	/*$(document).ready(function() {
 		displayResult();//vis kataloget
 	})*/
+
+    //Test Comment
 		
 	/*
 	* Knaptræ:
