@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>  
-<?xml-stylesheet type="text/xml" href="./modelkatalog.xsl.xml"?>
+<?xml-stylesheet type="text/xml" href="./modelkatalog.xsl"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
 	xmlns:dadk="http://data.gov.dk/model/vocabular/modelcat#" xmlns:vann="http://purl.org/vocab/vann/" xmlns:cc="hhttp://creativecommons.org/ns#"
 	xmlns:owl="https://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#"
@@ -15,7 +15,7 @@
 		<dct:title xml:lang="en">Modelkataloget</dct:title>
 		<dct:description xml:lang="da">Katalog over relevante modeller for dansk modellering</dct:description>
 
-		<dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/><!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
+		<dct:publisher rdf:resource="http://digst.dk" /><!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<foaf:homepage rdf:resource="http://data.gov.dk/model/modelkatalog.rdf.xml" />
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-01</dct:issued>
 
@@ -27,6 +27,80 @@
 	<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 	
+	<rdf:Description rdf:about="http://purl.org/vocommons/voaf">
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+
+		<!-- dataobjektets typificering (modelreference) -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" /><!-- som er et ADMS:Asset -->
+		<dct:title xml:lang="en">Vocabulary of a Friend</dct:title>
+		<dct:description xml:lang="en">A vocabulary to describe linked data vocabularies and their relations.
+		</dct:description>
+
+		<!--EIRA artefakttype - krævet i ADMS se https://joinup.ec.europa.eu/svn/eia/taxonomy/EIRA_SKOS.rdf og https://joinup.ec.europa.eu/catalogue/distribution/eira_v1_1_0_overviewpdf 
+			der findes DataModel http://data.europa.eu/dr8/DataModel og Core Data Model http://data.europa.eu/dr8/CoreDataModel - jeg 
+			bruger DataModel til alt andet end kernemodeller og vocabularer -->
+		<dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel" />
+
+		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
+		<vann:preferredNamespacePrefix>voaf</vann:preferredNamespacePrefix>
+		<vann:preferredNamespaceUri>http://purl.org/vocommons/voaf#</vann:preferredNamespaceUri>
+
+		<dcat:keyword>Nobel prize</dcat:keyword>
+		<!-- giver det mening? det er distributions, som udgives tror jeg -->
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-12-21</dct:issued>
+		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-11-16</dct:modified>
+		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</owl:versionInfo>
+		<adms:versionNotes xml:lang="en">-Version 1.1: depreciation of voaf:exampleDataset replaced by
+			voaf:dataset -Version 1: creation
+		</adms:versionNotes>
+		<!-- Publisher er mandatory i ADMS -->
+		<dct:publisher rdf:resource="http://digst.dk" /><!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
+
+		<!-- rettigheder og licens ikke ADMS-compliant - Her er ADMS lidt bøvlet; tilpasser senere -->
+		<dct:rights>Copyright © 2011 Mondeca</dct:rights>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/" />
+
+		<!--'Web page that provides access to the asset,its releases, distributions and/or additional information. It is intended 
+			to point to a landing page at the original asset provider, not to a page on a site of a third party, such as a catalogue 
+			or repository' -->
+		<dcat:landingPage rdf:resource="LPhttp://data.gov.dk/model/" />
+
+		<!--'documentation that contains information related to the asset' - jeg tænker menneskevendt info, fx grunddata-diagram, 
+			grunddata-xmi i et andet katalog -->
+		<foaf:page rdf:resource="Phttp://data.gov.dk/model" />
+
+		<!--'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
+			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
+			se osse http://publications.europa.eu/mdr/resource/authority/data-theme/html/data-theme-dan.html#description -->
+		<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI" />
+
+		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
+			og formaliseres i en AP -->
+
+		<!-- modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes -->
+		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Model" />
+		<!-- modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels -->
+		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Genbrug" />
+		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes -->
+		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
+		<dadk:businessArea>Fiskerikontrol</dadk:businessArea>
+		<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
+		<dadk:businessAreaCode>34.25.25.09</dadk:businessAreaCode>
+		<!-- INSPIRE tema - bruger https://inspire.ec.europa.eu/theme - skal undersøges om der findes en standardiseret egenskab 
+			og om værdierne er korrekt anvendt... -->
+		<dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/oi" />
+		<!-- kontaktinformation udeladt for nu <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#lrozat"/> 
+			</dc:contributor> <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#pyv"/> </dc:contributor> 
+			<dc:creator> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#bvatant"/> </dc:creator> <dc:publisher> <foaf:Organization 
+			rdf:about="http://dbpedia.org/resource/Mondeca"/> </dc:publisher> -->
+		<!-- pt ingen angivelse af sprog - ADMS bruger dct:LinguisticSystem(label) som er bred; kan indeholde tegnsprog, programmeringssprog 
+			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
+		<dcat:distribution rdf:resource="http://purl.org/vocommons/voaf/dist#01" />
+		<dcat:distribution rdf:resource="http://purl.org/vocommons/voaf/dist#02" />
+	</rdf:Description>
+
 
 
 
@@ -39,8 +113,8 @@
 		<!-- dataobjektets typificering: et DCAT:Dataset - som er et som er et ADMS:Asset -->
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 		<!-- navn -->
-		<dct:title xml:lang="da">Bygninger og Boliger</dct:title>
-		<dct:title xml:lang="en">The Central Register of Buildings and Dwellings</dct:title>
+		<dct:title xml:lang="da">BBR - Bygninger og Boliger</dct:title>
+		<dct:title xml:lang="en">Ukvalificeret: BBR - Buildings register</dct:title>
 		<!-- beskrivelse -->
 		<dct:description xml:lang="da">Ved realiseringen af BBR 2.0 er der langt vægt på stor genkendelighed mellem datamodellerne i BBR 1.7 og BBR 2.0.
 
@@ -141,7 +215,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 <!--  navn -->
 		<dct:title xml:lang="da">Det Centrale Virksomhedsregister</dct:title>
-		<dct:title xml:lang="en">The Danish Central Business Register</dct:title>
+		<dct:title xml:lang="en">Central Business Register</dct:title>
 <!--  beskrivelse -->
 		<dct:description xml:lang="da">Model af Virksomhedsdata i CVR
 		</dct:description>
@@ -248,8 +322,8 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
-		<dct:title xml:lang="da">Danmarks Administrative Grænser</dct:title>
-		<dct:title xml:lang="en">Denmark's Administrative Boundaries</dct:title>
+		<dct:title xml:lang="da">Danmarks Administrative Grænser (DAGI)</dct:title>
+		<dct:title xml:lang="en">Denmark's Administrative Boundaries (DAGI)</dct:title>
 	<!--  beskrivelse -->
 		<dct:description xml:lang="da">Hvor ligger sognene, hvor går kommunegrænserne og hvor skal vi stemme henne? Det kan du se i grunddataregistret Danmarks Administrative Geografiske Inddeling (DAGI)
 		</dct:description>
@@ -269,10 +343,10 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<vann:preferredNamespacePrefix>dagi</vann:preferredNamespacePrefix>
 		<vann:preferredNamespaceUri>http://data.gov.dk/model/CentralBusinessRegister</vann:preferredNamespaceUri>
 		<!-- keywords - gerne flere -->
-		<dcat:keyword>kommunegrænser</dcat:keyword>
-		<dcat:keyword>sogne</dcat:keyword>
-		<dcat:keyword>afstemning</dcat:keyword>
-		<dcat:keyword>grænser</dcat:keyword>		
+		<dcat:keyword>Kommunegrænser</dcat:keyword>
+		<dcat:keyword>Sogne</dcat:keyword>
+		<dcat:keyword>Afstemning</dcat:keyword>
+		<dcat:keyword></dcat:keyword>
 		<!-- giver det mening? det er distributions, som udgives tror jeg -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-02-26</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
@@ -376,17 +450,18 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<vann:preferredNamespacePrefix>dar</vann:preferredNamespacePrefix>
 		<vann:preferredNamespaceUri>http://data.gov.dk/model/DAR</vann:preferredNamespaceUri>
 <!-- keywords - gerne flere -->
-		<dcat:keyword>adresser</dcat:keyword>
-		<dcat:keyword>vejnavne</dcat:keyword>
-		<dcat:keyword>husnummer</dcat:keyword>
-		<dcat:keyword>etage</dcat:keyword>
+		<dcat:keyword>Adresser</dcat:keyword>
+		<dcat:keyword>Vejnavne</dcat:keyword>
+		<dcat:keyword>Husnummer</dcat:keyword>
+		<dcat:keyword>Etage</dcat:keyword>
 		<!-- giver det mening? det er distributions, som udgives tror jeg -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-7-7</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0.0</owl:versionInfo>
 		<adms:versionNotes xml:lang="en">Se http://data.gov.dk/model/xmi/Domaenemodeller/DanmarksAdresser/DanmarksAdresser%20%C3%A6ndringer%201.0.0%20-%202.0.0.pdf
 		</adms:versionNotes>
-		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="Styrelsen for Dataforsyning og Effektivisering" />
@@ -466,7 +541,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
 		<dct:title xml:lang="da">Ejendomsbeliggenhed</dct:title>
-		<dct:title xml:lang="en">The Register of Danish Property Locations</dct:title>
+		<dct:title xml:lang="en"></dct:title>
 <!--  beskrivelse -->
 		<dct:description xml:lang="da">Udstillingsmodel for Ejendomsbeliggenhedsregisteret
 		</dct:description>
@@ -488,8 +563,8 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!-- keywords - gerne flere -->
 		<dcat:keyword>beliggenhed</dcat:keyword>
 		<dcat:keyword>placering</dcat:keyword>
-		<dcat:keyword>ejendom</dcat:keyword>		
-		
+		<dcat:keyword></dcat:keyword>
+		<dcat:keyword></dcat:keyword>
 		<!-- giver det mening? det er distributions, som udgives tror jeg -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-3-8</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
@@ -575,7 +650,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
 		<dct:title xml:lang="da">Ejendomsvurdering</dct:title>
-		<dct:title xml:lang="en">The Danish Register of assessment of property units for housing</dct:title>
+		<dct:title xml:lang="en"></dct:title>
 <!--  beskrivelse -->
 		<dct:description xml:lang="da">Udstillingsmodel for Ejendomsvurdering </dct:description>
 		<dct:description xml:lang="en"></dct:description>
@@ -597,13 +672,15 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<dcat:keyword>vurdering</dcat:keyword>
 		<dcat:keyword>ejendomsskat</dcat:keyword>
 		<dcat:keyword>ejendom</dcat:keyword>
-		
+		<dcat:keyword></dcat:keyword>
 		<!-- giver det mening? det er distributions, som udgives tror jeg -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-7-24</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.0</owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
-		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="SKAT" />
@@ -683,7 +760,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
 		<dct:title xml:lang="da">Ejerfortegnelsen</dct:title>
-		<dct:title xml:lang="en">The Danish Register of assessment of property units for housing</dct:title>
+		<dct:title xml:lang="en"></dct:title>
 <!--  beskrivelse -->
 		<dct:description xml:lang="da"> Udstillingsmodel af Ejerfortegnelsen, som skal være et nyt autoritativt register over de faktiske ejere af al fast ejendom i Danmark. 
 		</dct:description>
@@ -705,13 +782,14 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!-- keywords - gerne flere -->
 		<dcat:keyword>ejendomsejer</dcat:keyword>
 		<dcat:keyword>ejer</dcat:keyword>
-		
-		
+		<dcat:keyword></dcat:keyword>
+		<dcat:keyword></dcat:keyword>
 		<!-- giver det mening? det er distributions, som udgives tror jeg -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-7-1</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3.0</owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
 		<adms:versionNotes xml:lang="da">se: http://data.gov.dk/model/xmi/Domaenemodeller/Ejerfortegnelsen/Ejerfortegnelsen%20%C3%A6ndringer%201.2.1%20-%201.3.0.pdf
 		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
@@ -766,10 +844,10 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		Grunddata 
 		International -->
 		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#Grunddata" />
-<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference
-		<dadk:businessArea></dadk:businessArea> -->
-<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference 
-		<dadk:businessAreaCode></dadk:businessAreaCode>-->
+<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
+		<dadk:businessArea></dadk:businessArea>
+<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
+		<dadk:businessAreaCode></dadk:businessAreaCode>
 <!-- INSPIRE tema - bruger https://inspire.ec.europa.eu/theme - skal undersøges om der findes en standardiseret egenskab 
 			og om værdierne er korrekt anvendt... https://inspire.ec.europa.eu/theme/oi -->
 		<dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/bu" />
@@ -793,7 +871,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
 		<dct:title xml:lang="da">GeoDanmark</dct:title>
-		<dct:title xml:lang="en">The Danish Register of Topographic Basic Data</dct:title>
+		<dct:title xml:lang="en"></dct:title>
 <!--  beskrivelse -->
 		<dct:description xml:lang="da"> Udstillingsmodel for GeoDanmark - kommunernes og statens fælles kortlægning
 		</dct:description>
@@ -816,12 +894,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<dcat:keyword>kortlægning</dcat:keyword>
 		<dcat:keyword>kortforsyningen</dcat:keyword>
 		<dcat:keyword>kortgrundlag</dcat:keyword>
-		
+		<dcat:keyword></dcat:keyword>
 		<!-- giver det mening? det er distributions, som udgives tror jeg -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-8-15</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0.0</owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
 		<adms:versionNotes xml:lang="da">se: http://data.gov.dk/model/xmi/Domaenemodeller/GeoDanmark/GeoDanmark%20%C3%A6ndringer%201.1.0%20-%202.0.0.pdf
 		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
@@ -903,7 +982,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
 		<dct:title xml:lang="da">Matrikel</dct:title>
-		<dct:title xml:lang="en">The Danish Cadastre</dct:title>
+		<dct:title xml:lang="en"></dct:title>
 <!--  beskrivelse -->
 		<dct:description xml:lang="da">Udstillingsmodel for Matrikelregisteret
 		</dct:description>
@@ -926,12 +1005,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<dcat:keyword>grund</dcat:keyword>
 		<dcat:keyword>parcel</dcat:keyword>
 		<dcat:keyword>jordlod</dcat:keyword>
-		
+		<dcat:keyword></dcat:keyword>
 		<!-- giver det mening? det er distributions, som udgives tror jeg -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-8-19</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2.3</owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
 		<adms:versionNotes xml:lang="da">se: http://data.gov.dk/model/xmi/Domaenemodeller/Matrikel/Matrikel%20%C3%A6ndringer%201.1.0%20-%201.2.3.pdf
 		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
@@ -1013,7 +1093,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
 		<dct:title xml:lang="da">Person</dct:title>
-		<dct:title xml:lang="en">The Danish Central Person Register</dct:title>
+		<dct:title xml:lang="en"></dct:title>
 <!--  beskrivelse -->
 		<dct:description xml:lang="da">Personregistrering 
 		</dct:description>
@@ -1041,7 +1121,8 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-6-20</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2.0</owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
 		<adms:versionNotes xml:lang="da"> se: http://data.gov.dk/model/xmi/Domaenemodeller/Person/Person%20%C3%A6ndringer%201.1.0%20-%201.2.0.txt
 		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
@@ -1123,7 +1204,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
 		<dct:title xml:lang="da">Stednavne</dct:title>
-		<dct:title xml:lang="en">The Register of Place-Names of Denmark</dct:title>
+		<dct:title xml:lang="en"></dct:title>
 <!--  beskrivelse -->
 		<dct:description xml:lang="da"> Udstillingsmodel for registeret Danske Stednavne
 		</dct:description>
@@ -1144,14 +1225,15 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<vann:preferredNamespaceUri>http://data.gov.dk/model/STED</vann:preferredNamespaceUri>
 <!-- keywords - gerne flere -->
 		<dcat:keyword>sted</dcat:keyword>
-		<dcat:keyword>lokationsnavne</dcat:keyword>		
-		
-		
+		<dcat:keyword></dcat:keyword>
+		<dcat:keyword></dcat:keyword>
+		<dcat:keyword></dcat:keyword>
 		<!-- giver det mening? det er distributions, som udgives tror jeg -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-6-3</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.0</owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
 		<adms:versionNotes xml:lang="da">
 		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
@@ -1223,262 +1305,6 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<dcat:distribution rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/Stednavne/Stednavne.xml" />
 	</rdf:Description>	
 
-
-
-<!-- Anvendelsesprofil for klassifikation -->	
-<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-	
-	<rdf:Description rdf:about="https:/data.gov.dk/model/profile/classification#">
-
-		<!-- dataobjektets typificering (modelreference) -->
-		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" /> <!--som er et ADMS:Asset -->
-		<dct:title xml:lang="en">Application Profile for Classification</dct:title>
-		<dct:title xml:lang="da">Anvendelsesprofil for klassifikation</dct:title>		
-		<dct:description xml:lang="da">Dette dokument definerer en anvendelsesprofil af den international standard for simple vidensorganiserende systemer (SKOS) til brug i danske offentlige organisationers arbejde med klassifikationer.
-		</dct:description>		
-		<dct:description xml:lang="en">This document defines an application profile of an international standard for Simple Knowledge Organization System (SKOS) to be used by for classification purposes by Danish public organisations
-		</dct:description>
-
-		<!--EIRA artefakttype - krævet i ADMS se https://joinup.ec.europa.eu/svn/eia/taxonomy/EIRA_SKOS.rdf og https://joinup.ec.europa.eu/catalogue/distribution/eira_v1_1_0_overviewpdf 
-			der findes DataModel http://data.europa.eu/dr8/DataModel og Core Data Model http://data.europa.eu/dr8/CoreDataModel - jeg 
-			bruger DataModel til alt andet end kernemodeller og vocabularer 
-		<dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel" />-->
-
-		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
-		<vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
-		<vann:preferredNamespaceUri>https:/data.gov.dk/model/profile/classification#</vann:preferredNamespaceUri>
-
-		<dcat:keyword>klassifikation</dcat:keyword>
-		<dcat:keyword>vidensorganisation</dcat:keyword>
-		<dcat:keyword>SKOS-RDF</dcat:keyword>
-		<dcat:keyword>tesaurus</dcat:keyword>
-		<dcat:keyword>taxonomi</dcat:keyword>
-		<dcat:keyword>taksonomi</dcat:keyword>
-		<dcat:keyword>vokabular</dcat:keyword>
-		<dcat:keyword>skema</dcat:keyword>
-		<!-- giver det mening? det er distributions, som udgives tror jeg -->
-		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-15</dct:issued>
-		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
-		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9.1</owl:versionInfo>
-		<adms:versionNotes xml:lang="en">Development</adms:versionNotes>
-		<adms:versionNotes xml:lang="da">Under udvikling</adms:versionNotes>		
-		<!-- Publisher er mandatory i ADMS -->
-		<dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/><!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
-
-		<!-- rettigheder og licens ikke ADMS-compliant - Her er ADMS lidt bøvlet; tilpasser senere -->
-		<dct:rights></dct:rights>
-		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/" />
-
-		<!--'Web page that provides access to the asset,its releases, distributions and/or additional information. It is intended 
-			to point to a landing page at the original asset provider, not to a page on a site of a third party, such as a catalogue 
-			or repository' -->
-		<dcat:landingPage rdf:resource="https://arkitektur.digst.dk/sites/default/files/anvendelsesprofil_for_klassifikation_-_2018-01-15.pdf" />
-
-		<!--'documentation that contains information related to the asset' - jeg tænker menneskevendt info, fx grunddata-diagram, 
-			grunddata-xmi i et andet katalog -->
-		<foaf:page rdf:resource="" />
-
-		<!--'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
-			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
-			se osse http://publications.europa.eu/mdr/resource/authority/data-theme/html/data-theme-dan.html#description 
-		<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI" />-->
-
-		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
-			og formaliseres i en AP -->
-
-		<!-- modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#ApplicationProfile" />
-		<!-- modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
-		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#FODS" />
-		<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
-		<dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
-		<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
-		<dadk:businessAreaCode>06.38.10.10 </dadk:businessAreaCode>
-		<!-- INSPIRE tema - bruger https://inspire.ec.europa.eu/theme - skal undersøges om der findes en standardiseret egenskab 
-			og om værdierne er korrekt anvendt... 
-		<dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/oi" />-->
-		<!-- kontaktinformation udeladt for nu <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#lrozat"/> 
-			</dc:contributor> <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#pyv"/> </dc:contributor> 
-			<dc:creator> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#bvatant"/> </dc:creator> <dc:publisher> <foaf:Organization 
-			rdf:about="http://dbpedia.org/resource/Mondeca"/> </dc:publisher> -->
-		<!-- pt ingen angivelse af sprog - ADMS bruger dct:LinguisticSystem(label) som er bred; kan indeholde tegnsprog, programmeringssprog 
-			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
-
-	</rdf:Description>
-
-	
-	
-	
-
-<!-- Anvendelsesprofil for organisation -->	
-<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-	
-	<rdf:Description rdf:about="https:/data.gov.dk/model/profile/organisation#">
-
-		<!-- dataobjektets typificering (modelreference) -->
-		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" /> <!--som er et ADMS:Asset -->
-		<dct:title xml:lang="en">Application Profile for Organisation</dct:title>
-		<dct:title xml:lang="da">Anvendelsesprofil for organisation</dct:title>		
-		<dct:description xml:lang="da">Dette dokument definerer en anvendelsesprofil med udgangspunkt i Organization Ontology (ORG) og Core Public Organization Vocabulary (CPOV) til modellering af data om organisationer.
-		</dct:description>		
-		<dct:description xml:lang="en">This document defines an application profile based on Organization Ontology (ORG) and Core Public Organization Vocabulary (CPOV) for modeling data about organisations.
-		</dct:description>
-
-		<!--EIRA artefakttype - krævet i ADMS se https://joinup.ec.europa.eu/svn/eia/taxonomy/EIRA_SKOS.rdf og https://joinup.ec.europa.eu/catalogue/distribution/eira_v1_1_0_overviewpdf 
-			der findes DataModel http://data.europa.eu/dr8/DataModel og Core Data Model http://data.europa.eu/dr8/CoreDataModel - jeg 
-			bruger DataModel til alt andet end kernemodeller og vocabularer 
-		<dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel" />-->
-
-		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
-		<vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
-		<vann:preferredNamespaceUri>https:/data.gov.dk/model/profile/organisation#</vann:preferredNamespaceUri>
-
-		<dcat:keyword>organisation</dcat:keyword>
-		<dcat:keyword>myndighed</dcat:keyword>
-		<dcat:keyword>organisationsstruktur</dcat:keyword>
-		<dcat:keyword>virksomhed</dcat:keyword>
-		<dcat:keyword>selskab</dcat:keyword>
-		<dcat:keyword>organisationshierarki</dcat:keyword>
-		
-		<!-- giver det mening? det er distributions, som udgives tror jeg -->
-		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-15</dct:issued>
-		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
-		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9.1</owl:versionInfo>
-		<adms:versionNotes xml:lang="en">Development</adms:versionNotes>
-		<adms:versionNotes xml:lang="da">Under udvikling</adms:versionNotes>		
-		<!-- Publisher er mandatory i ADMS -->
-		<dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/><!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
-
-		<!-- rettigheder og licens ikke ADMS-compliant - Her er ADMS lidt bøvlet; tilpasser senere -->
-		<dct:rights></dct:rights>
-		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/" />
-
-		<!--'Web page that provides access to the asset,its releases, distributions and/or additional information. It is intended 
-			to point to a landing page at the original asset provider, not to a page on a site of a third party, such as a catalogue 
-			or repository' -->
-		<dcat:landingPage rdf:resource="https://arkitektur.digst.dk/sites/default/files/anvendelsesprofil_for_organisation_-_2018-01-15.pdf" />
-
-		<!--'documentation that contains information related to the asset' - jeg tænker menneskevendt info, fx grunddata-diagram, 
-			grunddata-xmi i et andet katalog -->
-		<foaf:page rdf:resource="" />
-
-		<!--'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
-			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
-			se osse http://publications.europa.eu/mdr/resource/authority/data-theme/html/data-theme-dan.html#description 
-		<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI" />-->
-
-		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
-			og formaliseres i en AP -->
-
-		<!-- modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#ApplicationProfile" />
-		<!-- modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
-		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#FODS" />
-		<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
-		<dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
-		<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
-		<dadk:businessAreaCode>06.38.10.10 </dadk:businessAreaCode>
-		<!-- INSPIRE tema - bruger https://inspire.ec.europa.eu/theme - skal undersøges om der findes en standardiseret egenskab 
-			og om værdierne er korrekt anvendt... 
-		<dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/oi" />-->
-		<!-- kontaktinformation udeladt for nu <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#lrozat"/> 
-			</dc:contributor> <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#pyv"/> </dc:contributor> 
-			<dc:creator> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#bvatant"/> </dc:creator> <dc:publisher> <foaf:Organization 
-			rdf:about="http://dbpedia.org/resource/Mondeca"/> </dc:publisher> -->
-		<!-- pt ingen angivelse af sprog - ADMS bruger dct:LinguisticSystem(label) som er bred; kan indeholde tegnsprog, programmeringssprog 
-			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
-
-	</rdf:Description>	
-	
-	
-<!-- VOAF -->	
-<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-	
-	<rdf:Description rdf:about="http://purl.org/vocommons/voaf">
-
-		<!-- dataobjektets typificering (modelreference) -->
-		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" /><!-- som er et ADMS:Asset -->
-		<dct:title xml:lang="en">Vocabulary of a Friend</dct:title>
-		<dct:description xml:lang="da">Et vokabular til beskrivelse af 'linked data'-vokabularer og deres relationer.
-		</dct:description>		
-		<dct:description xml:lang="en">A vocabulary to describe linked data vocabularies and their relations.
-		</dct:description>
-
-		<!--EIRA artefakttype - krævet i ADMS se https://joinup.ec.europa.eu/svn/eia/taxonomy/EIRA_SKOS.rdf og https://joinup.ec.europa.eu/catalogue/distribution/eira_v1_1_0_overviewpdf 
-			der findes DataModel http://data.europa.eu/dr8/DataModel og Core Data Model http://data.europa.eu/dr8/CoreDataModel - jeg 
-			bruger DataModel til alt andet end kernemodeller og vocabularer -->
-		<dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel" />
-
-		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
-		<vann:preferredNamespacePrefix>voaf</vann:preferredNamespacePrefix>
-		<vann:preferredNamespaceUri>http://purl.org/vocommons/voaf#</vann:preferredNamespaceUri>
-
-		<dcat:keyword>Nobel prize</dcat:keyword>
-		<dcat:keyword>Afstemning</dcat:keyword>
-		<!-- giver det mening? det er distributions, som udgives tror jeg -->
-		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-12-21</dct:issued>
-		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-11-16</dct:modified>
-		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</owl:versionInfo>
-		<adms:versionNotes xml:lang="en">-Version 1.1: depreciation of voaf:exampleDataset replaced by voaf:dataset -Version 1: creation
-		</adms:versionNotes>
-		<!-- Publisher er mandatory i ADMS -->
-		<dct:publisher rdf:resource="http://www.mondeca.com/" /><!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
-
-		<!-- rettigheder og licens ikke ADMS-compliant - Her er ADMS lidt bøvlet; tilpasser senere -->
-		<dct:rights>Copyright © 2011 Mondeca</dct:rights>
-		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/" />
-
-		<!--'Web page that provides access to the asset,its releases, distributions and/or additional information. It is intended 
-			to point to a landing page at the original asset provider, not to a page on a site of a third party, such as a catalogue 
-			or repository' -->
-		<dcat:landingPage rdf:resource="" />
-
-		<!--'documentation that contains information related to the asset' - jeg tænker menneskevendt info, fx grunddata-diagram, 
-			grunddata-xmi i et andet katalog -->
-		<foaf:page rdf:resource="" />
-
-		<!--'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
-			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
-			se osse http://publications.europa.eu/mdr/resource/authority/data-theme/html/data-theme-dan.html#description -->
-		<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI" />
-
-		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
-			og formaliseres i en AP -->
-
-		<!-- modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
-		<!-- modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Genbrug" />
-		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
-		<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
-		<dadk:businessArea></dadk:businessArea>
-		<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
-		<dadk:businessAreaCode></dadk:businessAreaCode>
-		<!-- INSPIRE tema - bruger https://inspire.ec.europa.eu/theme - skal undersøges om der findes en standardiseret egenskab 
-			og om værdierne er korrekt anvendt... -->
-		<dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/oi" />
-		<!-- kontaktinformation udeladt for nu <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#lrozat"/> 
-			</dc:contributor> <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#pyv"/> </dc:contributor> 
-			<dc:creator> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#bvatant"/> </dc:creator> <dc:publisher> <foaf:Organization 
-			rdf:about="http://dbpedia.org/resource/Mondeca"/> </dc:publisher> -->
-		<!-- pt ingen angivelse af sprog - ADMS bruger dct:LinguisticSystem(label) som er bred; kan indeholde tegnsprog, programmeringssprog 
-			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
-
-	</rdf:Description>
-
-	
-	
-	
-	
-	
 <!-- GeoSparql -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -1491,7 +1317,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<dct:title xml:lang="da">Geolokation</dct:title>
 		<dct:title xml:lang="en">GeoSPARQL</dct:title>
 <!--  beskrivelse -->
-		<dct:description xml:lang="da">GeoSPARQL-standarden fra OGC understøtter repræsentation og forespørgsel af geospatiale data på det semantiske web. GeoSPARQL definerer et vokabular til at repræsentere geospatiale data med RDF, og definerer en udvidelse af SPARQL-spørgesproget til behandling af geospatiale data. Derudover er GeoSPARQL designet til at imødekomme løsninger baseret på kvalitativ spatial ræsonnering og kvantitative spatiale beregninger.
+		<dct:description xml:lang="da">
 		</dct:description>
 		<dct:description xml:lang="en">The OGC GeoSPARQL standard supports representing and querying geospatial data on the Semantic Web. GeoSPARQL defines a vocabulary for representing geospatial data in RDF, and it defines an extension to the SPARQL query language for processing geospatial data. In addition, GeoSPARQL is designed to accommodate systems based on qualitative spatial reasoning and systems based on quantitative spatial computations.
 		</dct:description>
@@ -1512,13 +1338,15 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<dcat:keyword>geografiske data</dcat:keyword>
 		<dcat:keyword>geospatiale data</dcat:keyword>
 		<dcat:keyword>geospatial</dcat:keyword>
-		<dcat:keyword>geodata</dcat:keyword>		
+		<dcat:keyword></dcat:keyword>
 		<!-- giver det mening? det er distributions, som udgives tror jeg -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-04-30</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.1</owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
-		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="Open Geospatial Consortium" />
@@ -1599,7 +1427,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<dct:title xml:lang="da">Geofeature</dct:title>
 		<dct:title xml:lang="en">OpenGIS Simple Feature</dct:title>
 <!--  beskrivelse -->
-		<dct:description xml:lang="da">En specification af GeoSPARQL til 'simple features' geometrier (punkter, linjer, polygoner ...)
+		<dct:description xml:lang="da">
 		</dct:description>
 		<dct:description xml:lang="en">A specification of GeoSPARQL for simple features geometries (points, lines, polygons ...)
 		</dct:description>
@@ -1618,16 +1446,17 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<vann:preferredNamespaceUri>http://www.opengis.net/ont/</vann:preferredNamespaceUri>
 <!-- keywords - gerne flere -->
 		<dcat:keyword>geometri</dcat:keyword>
-		<dcat:keyword>geografiske data</dcat:keyword>
-		<dcat:keyword>geospatiale data</dcat:keyword>
-		<dcat:keyword>geospatial</dcat:keyword>
-		<dcat:keyword>geodata</dcat:keyword>		
+		<dcat:keyword></dcat:keyword>
+		<dcat:keyword></dcat:keyword>
+		<dcat:keyword></dcat:keyword>
 		<!-- giver det mening? det er distributions, som udgives tror jeg -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.1</owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
-		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="Open Geospatial Consortium" />
@@ -1706,12 +1535,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
-		<dct:title xml:lang="da">SKOS</dct:title>
+		<dct:title xml:lang="da"></dct:title>
 		<dct:title xml:lang="en">SKOS Vocabulary</dct:title>
 <!--  beskrivelse -->
-		<dct:description xml:lang="da"> SKOS Simple Knowledge Organization System (SKOS) er en W3C-anbefaling der er designet til repræsentation af tesaurusser, klassifikationssystemer, taksonmier og emnetaksonomier, og andre typer af strukturerede kontrollerede ordlister. SKOS er en del af stakken af standarder til det semantiske web som bygger på RDF og RDFS, og det primære formål er at facilitere publicering og anvendelse af vidensorganiserende systemer som linked data. 
+		<dct:description xml:lang="da"> 
 		</dct:description>
 		<dct:description xml:lang="en"> The Simple Knowledge Organization System (SKOS) is a W3C recommendation designed for representation of thesauri, classification schemes, taxonomies, subject-heading systems, or any other type of structured controlled vocabulary. SKOS is part of the Semantic Web family of standards built upon RDF and RDFS, and its main objective is to enable easy publication and use of such vocabularies as linked data.
+
 		</dct:description>
 <!--EIRA artefakttype - krævet i ADMS se https://joinup.ec.europa.eu/svn/eia/taxonomy/EIRA_SKOS.rdf og 
 		https://joinup.ec.europa.eu/catalogue/distribution/eira_v1_1_0_overviewpdf 
@@ -1727,21 +1557,21 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<vann:preferredNamespacePrefix>skos</vann:preferredNamespacePrefix>
 		<vann:preferredNamespaceUri>http://www.w3.org/2004/02/skos/core#</vann:preferredNamespaceUri>
 <!-- keywords - gerne flere -->
-		<dcat:keyword>klassifikation</dcat:keyword>
-		<dcat:keyword>vidensorganisation</dcat:keyword>
+		<dcat:keyword>Klassifikation</dcat:keyword>
+		<dcat:keyword>Vidensorganisation</dcat:keyword>
 		<dcat:keyword>SKOS-RDF</dcat:keyword>
-		<dcat:keyword>tesaurus</dcat:keyword>
-		<dcat:keyword>taxonomi</dcat:keyword>
-		<dcat:keyword>taksonomi</dcat:keyword>
-		<dcat:keyword>vokabular</dcat:keyword>
-		<dcat:keyword>skema</dcat:keyword>
-		<dcat:keyword>glosar</dcat:keyword>		
+		<dcat:keyword>Tesaurus</dcat:keyword>
+		<dcat:keyword>Taxonomi</dcat:keyword>
+		<dcat:keyword>Vokabular</dcat:keyword>
+		<dcat:keyword>Skema</dcat:keyword>
 		<!-- giver det mening? det er distributions, som udgives tror jeg -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-08-18</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
-		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="W3C" />
@@ -1821,12 +1651,12 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
-		<dct:title xml:lang="da">SKOS XL </dct:title>
+		<dct:title xml:lang="da"></dct:title>
 		<dct:title xml:lang="en">SKOS XL Vocabulary</dct:title>
 <!--  beskrivelse -->
-		<dct:description xml:lang="da">SKOS XL definerer en udvidelse af vokabualret Simple Knowledge Organization System (SKOS) som giver yderligere understøttelse af beskrivelse af og relation mellem leksikalske enheder.
+		<dct:description xml:lang="da"> 
 		</dct:description>
-		<dct:description xml:lang="en">SKOS XL defines an extension for the Simple Knowledge Organization System (SKOS), providing additional support for describing and linking lexical entities.
+		<dct:description xml:lang="en"> SKOS XL defines an extension for the Simple Knowledge Organization System (SKOS), providing additional support for describing and linking lexical entities.
 
 		</dct:description>
 <!--EIRA artefakttype - krævet i ADMS se https://joinup.ec.europa.eu/svn/eia/taxonomy/EIRA_SKOS.rdf og 
@@ -1843,25 +1673,24 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<vann:preferredNamespacePrefix>skos-xl</vann:preferredNamespacePrefix>
 		<vann:preferredNamespaceUri>http://www.w3.org/2008/05/skos-xl</vann:preferredNamespaceUri>
 <!-- keywords - gerne flere -->
-		<dcat:keyword>klassifikation</dcat:keyword>
-		<dcat:keyword>vidensorganisation</dcat:keyword>
+		<dcat:keyword>Klassifikation</dcat:keyword>
+		<dcat:keyword>Vidensorganisation</dcat:keyword>
+		<dcat:keyword>SKOS</dcat:keyword>
 		<dcat:keyword>SKOS-RDF</dcat:keyword>
-		<dcat:keyword>tesaurus</dcat:keyword>
-		<dcat:keyword>taxonomi</dcat:keyword>
-		<dcat:keyword>taksonomi</dcat:keyword>
-		<dcat:keyword>vokabular</dcat:keyword>
-		<dcat:keyword>skema</dcat:keyword>
-		<dcat:keyword>glosar</dcat:keyword>	
-		<dcat:keyword>label</dcat:keyword>
-		<dcat:keyword>termer</dcat:keyword>
-		<dcat:keyword>leksikalsk</dcat:keyword>
-		<dcat:keyword>teminologi</dcat:keyword>
+		<dcat:keyword>Tesaurus</dcat:keyword>
+		<dcat:keyword>Taxonomi</dcat:keyword>
+		<dcat:keyword>Vokabular</dcat:keyword>
+		<dcat:keyword>Skema</dcat:keyword>
+		<dcat:keyword>Label</dcat:keyword>
+		<dcat:keyword>Leksikalsk</dcat:keyword>
 		<!-- giver det mening? det er distributions, som udgives tror jeg -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-08-18</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
-		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="W3C" />
@@ -1941,10 +1770,10 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
-		<dct:title xml:lang="da">Organisationsontologien</dct:title>
+		<dct:title xml:lang="da"></dct:title>
 		<dct:title xml:lang="en">The Organization Ontology</dct:title>
 <!--  beskrivelse -->
-		<dct:description xml:lang="da">En kerneontologi for organisatoriske strukturer målrettet publisering af informationer om organisationer på tværs af domæner som linked data. Den er designet således at den tillader domænespecifikke udvideleser der tilføjer klassifikationer af organisationer og roller, såvel som udvidelser der kan understøtte beslægtede informationer såsom organisatoriske aktiviteter.
+		<dct:description xml:lang="da">
 		</dct:description>
 		<dct:description xml:lang="en">A core ontology for organizational structures, aimed at supporting linked data publishing of organizational information across a number of domains. It is designed to allow domain-specific extensions to add classification of organizations and roles, as well as extensions to support neighbouring information such as organizational activities.
 		</dct:description>
@@ -1962,16 +1791,18 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<vann:preferredNamespacePrefix>org</vann:preferredNamespacePrefix>
 		<vann:preferredNamespaceUri>http://www.w3.org/ns/org</vann:preferredNamespaceUri>
 <!-- keywords - gerne flere -->
-		<dcat:keyword>organisation</dcat:keyword>
-		<dcat:keyword>virksomhed</dcat:keyword>		
-		<dcat:keyword>selskab</dcat:keyword>			
-		<dcat:keyword>business</dcat:keyword>			
+		<dcat:keyword>Organisation</dcat:keyword>
+		<dcat:keyword></dcat:keyword>
+		<dcat:keyword></dcat:keyword>
+		<dcat:keyword></dcat:keyword>
 		<!-- giver det mening? det er distributions, som udgives tror jeg -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-01-16</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
-		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="W3C" />
@@ -2050,10 +1881,10 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
-		<dct:title xml:lang="da">FOAF</dct:title>
+		<dct:title xml:lang="da"></dct:title>
 		<dct:title xml:lang="en">FOAF Vocabulary Specification</dct:title>
 <!--  beskrivelse -->
-		<dct:description xml:lang="da">FOAD er et projekt som er dedikeret til at forbinde mennesker og information på nettet. Uanset om information eksisterer i menneskers bevidsthed, i fysisk eller i digitale dokumenter, eller i form af faktuelle data, så kan informationerne forbindes. FOAF integrerer tre typer af netværk: sociale netværk omkring menneskelige samarbejder, venskaber og forbindelser, repræsentative netværk der beskriver forenklede visninger af et fiktivt univers med faktuelle temer og informationsnetværk der anvender web-baserede forbindelser til at dele beskrivelser der er publicereret af forskellige kilder.
+		<dct:description xml:lang="da">
 		</dct:description>
 		<dct:description xml:lang="en">FOAF is a project devoted to linking people and information using the Web. Regardless of whether information is in people's heads, in physical or digital documents, or in the form of factual data, it can be linked. FOAF integrates three kinds of network: social networks of human collaboration, friendship and association; representational networks that describe a simplified view of a cartoon universe in factual terms, and information networks that use Web-based linking to share independently published descriptions of this inter-connected world. 
 		</dct:description>
@@ -2071,22 +1902,18 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<vann:preferredNamespacePrefix>foaf</vann:preferredNamespacePrefix>
 		<vann:preferredNamespaceUri>http://xmlns.com/foaf/0.1/</vann:preferredNamespaceUri>
 <!-- keywords - gerne flere -->
-		<dcat:keyword>mennesker</dcat:keyword>
-		<dcat:keyword>personer</dcat:keyword>		
-		<dcat:keyword>individer</dcat:keyword>		
 		<dcat:keyword>netværk</dcat:keyword>
-		<dcat:keyword>sociale netværk</dcat:keyword>		
-		<dcat:keyword>fiktive netværk</dcat:keyword>	
-		<dcat:keyword>informationsnetværk</dcat:keyword>
 		<dcat:keyword>friend of a friend</dcat:keyword>
-		<dcat:keyword>informationsnetværk</dcat:keyword>		
-		
+		<dcat:keyword></dcat:keyword>
+		<dcat:keyword></dcat:keyword>
 		<!-- giver det mening? det er distributions, som udgives tror jeg -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-01-14</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.99</owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
-		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="https://plus.google.com/+DanBrickley" />
@@ -2165,10 +1992,10 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
-		<dct:title xml:lang="da">EUs Budgetvokabular</dct:title>
+		<dct:title xml:lang="da"></dct:title>
 		<dct:title xml:lang="en">EU Budget Vocabulary</dct:title>
 <!--  beskrivelse -->
-		<dct:description xml:lang="da">Vokabularet for EU Budgetter specificerer en RDF-datamodel til formiding af det årlige EU-budget.
+		<dct:description xml:lang="da">
 		</dct:description>
 		<dct:description xml:lang="en">The EU Budget Vocabulary specifies an RDF data model for disseminating the European annual budget.
 		</dct:description>
@@ -2186,16 +2013,18 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<vann:preferredNamespacePrefix>bud</vann:preferredNamespacePrefix>
 		<vann:preferredNamespaceUri>https://joinup.ec.europa.eu/site/core_vocabularies/registry/eubudget/eu_budget_vocabulary_1.01.ttl</vann:preferredNamespaceUri>
 <!-- keywords - gerne flere -->
-		
-		
-		
-		
+		<dcat:keyword></dcat:keyword>
+		<dcat:keyword></dcat:keyword>
+		<dcat:keyword></dcat:keyword>
+		<dcat:keyword></dcat:keyword>
 		<!-- giver det mening? det er distributions, som udgives tror jeg -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-09-28</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.01</owl:versionInfo>
-		<adms:versionNotes xml:lang="en">Under Development</adms:versionNotes>
-		<adms:versionNotes xml:lang="da">Under udvikling</adms:versionNotes>
+		<adms:versionNotes xml:lang="en">Under Development
+		</adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/PUBL" />
@@ -2274,10 +2103,10 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
-		<dct:title xml:lang="da">Datasætkatalog-vokabular</dct:title>
+		<dct:title xml:lang="da">Datasætkatalog vokabular</dct:title>
 		<dct:title xml:lang="en">The data catalog vocabulary</dct:title>
 <!--  beskrivelse -->
-		<dct:description xml:lang="da">DCAT er et RDF-vokabular der er designet til at understøtte interoperabilitet mellem datakataloger der er publiceret på nettet.
+		<dct:description xml:lang="da">
 		</dct:description>
 		<dct:description xml:lang="en">DCAT is an RDF vocabulary designed to facilitate interoperability between data catalogs published on the Web
 		</dct:description>
@@ -2304,8 +2133,10 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-02-13</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
-		<adms:versionNotes xml:lang="da"></adms:versionNotes>>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="http://www.w3.org/" />
@@ -2385,10 +2216,10 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
-		<dct:title xml:lang="da">Vokabularet for sammenhængende datasæt</dct:title>
-		<dct:title xml:lang="en">The Vocabulary of Interlinked Datasets</dct:title>
+		<dct:title xml:lang="da"></dct:title>
+		<dct:title xml:lang="en">The Vocabulary of Interlinked Datasets (VoID)</dct:title>
 <!--  beskrivelse -->
-		<dct:description xml:lang="da">VoID er et RDFS-vokabular der understøtter angivelse af metadata om RDF-datasæt. Det er tanken at vokabularet skal bygge bro mellem dem der udstiller og anvender RDF-data med anvendelser fra dataduforskning og datakatalogisering og dataarkivering.
+		<dct:description xml:lang="da">
 		</dct:description>
 		<dct:description xml:lang="en">VoID is an RDF Schema vocabulary for expressing metadata about RDF datasets. It is intended as a bridge between the publishers and users of RDF data, with applications ranging from data discovery to cataloging and archiving of datasets.
 		</dct:description>
@@ -2416,7 +2247,8 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
 		<adms:versionNotes xml:lang="en">A first version of this document was developed and published by the authors, starting in 2008. This is an extended and improved version, based on community feedback received since the original publication.
 		</adms:versionNotes>
-		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="http://www.w3.org/" />
@@ -2495,12 +2327,12 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
-		<dct:title xml:lang="da">DCMI-metadatatermer</dct:title>
+		<dct:title xml:lang="da"></dct:title>
 		<dct:title xml:lang="en">DCMI Metadata Terms</dct:title>
 <!--  beskrivelse -->
-		<dct:description xml:lang="da">Dette dokument er en opdateret specification af samtlige metadatatemer som vedligeholdes af Dublin Core Metadata Initiative, herunder egenskaber, klasser samt vokabular- og syntaksrelaterede systemer. 
+		<dct:description xml:lang="da">
 		</dct:description>
-		<dct:description xml:lang="en">	This document is an up-to-date specification of all metadata terms maintained by the Dublin Core Metadata Initiative, including properties, vocabulary encoding schemes, syntax encoding schemes, and classes.
+		<dct:description xml:lang="en">
 		</dct:description>
 <!--EIRA artefakttype - krævet i ADMS se https://joinup.ec.europa.eu/svn/eia/taxonomy/EIRA_SKOS.rdf og 
 		https://joinup.ec.europa.eu/catalogue/distribution/eira_v1_1_0_overviewpdf 
@@ -2519,13 +2351,15 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<dcat:keyword>Dublin Core</dcat:keyword>
 		<dcat:keyword>metadata</dcat:keyword>
 		<dcat:keyword>ressourcebeskrivelse</dcat:keyword>
-		
+		<dcat:keyword></dcat:keyword>
 		<!-- giver det mening? det er distributions, som udgives tror jeg -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-14</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
-		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="http://dublincore.org/usage/" />
@@ -2604,12 +2438,12 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
-		<dct:title xml:lang="da">DCMI-typevokabular</dct:title>
+		<dct:title xml:lang="da"></dct:title>
 		<dct:title xml:lang="en">DCMI Type Vocabulary</dct:title>
 <!--  beskrivelse -->
-		<dct:description xml:lang="da">DCMI typevokabularet specificerer en mængde af klasser som anvendes til at klassificere ressourcer ift. træk eller genrer.
+		<dct:description xml:lang="da">
 		</dct:description>
-		<dct:description xml:lang="en">The set of classes specified by the DCMI Type Vocabulary, used to categorize the nature or genre of the resource.
+		<dct:description xml:lang="en">
 		</dct:description>
 <!--EIRA artefakttype - krævet i ADMS se https://joinup.ec.europa.eu/svn/eia/taxonomy/EIRA_SKOS.rdf og 
 		https://joinup.ec.europa.eu/catalogue/distribution/eira_v1_1_0_overviewpdf 
@@ -2633,8 +2467,10 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-14</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
-		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="http://dublincore.org/usage/" />
@@ -2713,10 +2549,10 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
-		<dct:title xml:lang="da">SmOD INSPIRE-vokabularer</dct:title>
+		<dct:title xml:lang="da"></dct:title>
 		<dct:title xml:lang="en">SmOD INSPIRE Vocabularies</dct:title>
 <!--  beskrivelse -->
-		<dct:description xml:lang="da">Linked datamodel baseret på EUs INSPIRE dataspecifikationer udviklet af The Smart Open Data Project (SmOD)
+		<dct:description xml:lang="da">
 		</dct:description>
 		<dct:description xml:lang="en"> Linked Data model based on the European Union's INSPIRE data specifications developed by The Smart Open Data Project (SmOD)
 		</dct:description>
@@ -2742,8 +2578,10 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">19-08-2015</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
-		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="http://www.smartopendata.eu/" />
@@ -2826,7 +2664,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<dct:title xml:lang="da">Schema: Handling</dct:title>
 		<dct:title xml:lang="en">Schema: Action</dct:title>
 <!--  beskrivelse -->
-		<dct:description xml:lang="da">En handling som udøves af en direkte aktør eller indirekte deltagere på et direkte objekt. Handlingen foregår eventuelt på en stedbestemt lokation ved hjælp af et redskab. Udførelsen af handlingen kan producere et resultat. Forskellige dokumentationsmuligheder for undertyper af handlinger kan specificere de nøjagtige forventninger til hvert argument/rolle.
+		<dct:description xml:lang="da">
 		</dct:description>
 		<dct:description xml:lang="en">An action performed by a direct agent and indirect participants upon a direct object. Optionally happens at a location with the help of an inanimate instrument. The execution of the action may produce a result. Specific action sub-type documentation specifies the exact expectation of each argument/role.
 		</dct:description>
@@ -2845,15 +2683,17 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<vann:preferredNamespaceUri>http://schema.org/Action</vann:preferredNamespaceUri>
 <!-- keywords - gerne flere -->
 		<dcat:keyword>handling</dcat:keyword>
-		
-		
-		
+		<dcat:keyword></dcat:keyword>
+		<dcat:keyword></dcat:keyword>
+		<dcat:keyword></dcat:keyword>
 		<!-- giver det mening? det er distributions, som udgives tror jeg -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
-		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="http://schema.org/" />
@@ -2934,7 +2774,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<dct:title xml:lang="da">Schema: Værk</dct:title>
 		<dct:title xml:lang="en">Schema: CreativeWork</dct:title>
 <!--  beskrivelse -->
-		<dct:description xml:lang="da">Den mest generiske typer af værker, herunder bøger, film, fotografier, sofwareprogrammel, etc.
+		<dct:description xml:lang="da">
 		</dct:description>
 		<dct:description xml:lang="en">The most generic kind of creative work, including books, movies, photographs, software programs, etc.
 		</dct:description>
@@ -2953,15 +2793,17 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<vann:preferredNamespaceUri>http://schema.org/CreativeWork</vann:preferredNamespaceUri>
 <!-- keywords - gerne flere -->
 		<dcat:keyword>værk</dcat:keyword>
-		
-		
-		
+		<dcat:keyword></dcat:keyword>
+		<dcat:keyword></dcat:keyword>
+		<dcat:keyword></dcat:keyword>
 		<!-- giver det mening? det er distributions, som udgives tror jeg -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
-		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="http://schema.org/" />
@@ -3042,7 +2884,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<dct:title xml:lang="da">Europærisk identifikator for juridiske ressourcer</dct:title>
 		<dct:title xml:lang="en">The European Legislation Identifier</dct:title>
 <!--  beskrivelse -->
-		<dct:description xml:lang="da">En ontologi til bskrivelse af lovgivning - baseret på FRBR-modellen, som anvender ELI-metadatafelterne, Jf. klasserne "LegalResource", "LegalExpression" og "Format".
+		<dct:description xml:lang="da">
 		</dct:description>
 		<dct:description xml:lang="en">An ontology to describe legislation, based on the FRBR model, that encodes the ELI metadata fields. See the classes "LegalResource", "LegalExpression" and "Format" as entry points.
 		</dct:description>
@@ -3062,7 +2904,6 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!-- keywords - gerne flere -->
 		<dcat:keyword>jura</dcat:keyword>
 		<dcat:keyword>lovgivning</dcat:keyword>
-		<dcat:keyword>bekendtgørelser</dcat:keyword>		
 		<dcat:keyword>lov</dcat:keyword>
 		<dcat:keyword>EU</dcat:keyword>
 		<!-- giver det mening? det er distributions, som udgives tror jeg -->
@@ -3108,7 +2949,8 @@ V1.1 is backward compatible with v1.0, with 1 following exception :
 Additionnally, ELI implementers are strongly encouraged to use applies / applied_by instead of implements / implemented_by; note however that implements/implemented_by currently remain in the ontology so publishers can take the time to transition smoothly.
 
 		</adms:versionNotes>
-		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="ELI task force (http://eur-lex.europa.eu/eli-register/about.html)" />
@@ -3186,10 +3028,10 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
-		<dct:title xml:lang="da">Bibliografiontologi</dct:title>
+		<dct:title xml:lang="da"></dct:title>
 		<dct:title xml:lang="en">Bibliographic Ontology Specification</dct:title>
 <!--  beskrivelse -->
-		<dct:description xml:lang="da">Bibliografisontologi som specificerer de centrale begreber og egenskaber til beskrivelse af henvisninger og bibliografiske referencer (fx. citater, bøger, artikler, etc) på det semantiske web.
+		<dct:description xml:lang="da">
 		</dct:description>
 		<dct:description xml:lang="en">The Bibliographic Ontology Specification provides main concepts and properties for describing citations and bibliographic references (i.e. quotes, books, articles, etc) on the Semantic Web.
 		</dct:description>
@@ -3215,8 +3057,10 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-11-04</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3</owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
-		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="http://www.structureddynamics.com/" />
@@ -3295,10 +3139,10 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
-		<dct:title xml:lang="da">ISA-programmets kernevokabular for lokation</dct:title>
+		<dct:title xml:lang="da"></dct:title>
 		<dct:title xml:lang="en">ISA Programme Location Core Vocabulary</dct:title>
 <!--  beskrivelse -->
-		<dct:description xml:lang="da">ISA-programmets Location Core Vocabulary specificerer de basale klasser og egenskaber til beskrivelse af ethvert sted ved dets navn, adresse eller geometri. Vokabularet er er specifikt designet til at understøtte publiceringen af data der er interoperable med EUs INSPIRE-direktiv. Det er tæt forbundet ISA-programmets vokabularer Registered Organization Vocabulary og ISA Person Core Vocabulary, som nu også er tilgængelige i W3C-regi.
+		<dct:description xml:lang="da">
 		</dct:description>
 		<dct:description xml:lang="en">The ISA Programme Location Core Vocabulary provides a minimum set of classes and properties for describing any place in terms of its name, address or geometry. The vocabulary is specifically designed to aid the publication of data that is interoperable with EU INSPIRE Directive. It is closely integrated with the Business and Person Core Vocabularies of the EU ISA Programme, now available in W3C space as, respectively, the Registered Organization vocabulary and ISA Person Core Vocabulary.
 		</dct:description>
@@ -3324,8 +3168,10 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-03-23</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
-		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="https://joinup.ec.europa.eu/node/42444" />
@@ -3405,10 +3251,10 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
-		<dct:title xml:lang="da">Vokabular for formelle organisationer</dct:title>
+		<dct:title xml:lang="da"></dct:title>
 		<dct:title xml:lang="en">Registered Organization Vocabulary</dct:title>
 <!--  beskrivelse -->
-		<dct:description xml:lang="da">Registered Organization Vocabulary er en profil af Organization Ontology som beskriver organisationer der har opnået status som en juridisk entitet ved en formel registreringsproces, typisk i et nationalt eller regionalt register.
+		<dct:description xml:lang="da">
 		</dct:description>
 		<dct:description xml:lang="en">The Registered Organization Vocabulary is a profile of the Organization Ontology for describing organizations that have gained legal entity status through a formal registration process, typically in a national or regional register.
 		</dct:description>
@@ -3429,13 +3275,15 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<dcat:keyword>virksomhed</dcat:keyword>
 		<dcat:keyword>registreret virksomhed</dcat:keyword>
 		<dcat:keyword>virksregistration</dcat:keyword>
-		
+		<dcat:keyword></dcat:keyword>
 		<!-- giver det mening? det er distributions, som udgives tror jeg -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-08-01</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
-		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="http://www.w3.org/" />
@@ -3514,10 +3362,10 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
-		<dct:title xml:lang="da">ISA-programmets kernevokabular for person</dct:title>
+		<dct:title xml:lang="da"></dct:title>
 		<dct:title xml:lang="en">ISA Programme Person Core Vocabulary</dct:title>
 <!--  beskrivelse -->
-		<dct:description xml:lang="da">ISA-programmets Person Core Vocabulary specificerer de basale klasser og egenskaber til beskrivelse af en fysisk person, dvs. individet modsat roller som individer har i samfundet eller de relationer de måtte have til hinanden, organisationer eller ejendom; som hver især bidrager til den brede betydning af identitet.
+		<dct:description xml:lang="da">
 		</dct:description>
 		<dct:description xml:lang="en">The Person Core Vocabulary provides a minimum set of classes and properties for describing a natural person, i.e. the individual as opposed to any role they may play in society or the relationships they have to other people, organisations and property; all of which contribute significantly to the broader concept of identity.
 		</dct:description>
@@ -3537,14 +3385,16 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 <!-- keywords - gerne flere -->
 		<dcat:keyword>person</dcat:keyword>
 		<dcat:keyword>persondata</dcat:keyword>
-		
-		
+		<dcat:keyword></dcat:keyword>
+		<dcat:keyword></dcat:keyword>
 		<!-- giver det mening? det er distributions, som udgives tror jeg -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
-		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="http://ec.europa.eu/isa/" />
@@ -3622,10 +3472,10 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
-		<dct:title xml:lang="da">Proveniensontologien</dct:title>
-		<dct:title xml:lang="en">The PROV Ontology</dct:title>
+		<dct:title xml:lang="da"></dct:title>
+		<dct:title xml:lang="en">PROV-O: The PROV Ontology</dct:title>
 <!--  beskrivelse -->
-		<dct:description xml:lang="da">PROV-ontologien (PROV-O) specificerer en mængde af klasser, egenskaber og restriktioner der kan anvendes til at repræsenterer udvekslingen af proveniensinformation som genereres i forskellige systemer og i forskellige kontekster. Den kan også anvendes til at oprette nye klasser og egenskaber til at modellere modelproveniens for forskellige anvendelser og domæner. 
+		<dct:description xml:lang="da">
 		</dct:description>
 		<dct:description xml:lang="en">The PROV Ontology (PROV-O) expresses the PROV Data Model [PROV-DM] using the OWL2 Web Ontology Language (OWL2) [OWL2-OVERVIEW]. It provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance information generated in different systems and under different contexts. It can also be specialized to create new classes and properties to model provenance information for different applications and domains. The PROV Document Overview describes the overall state of PROV, and should be read before other PROV documents. 
 		</dct:description>
@@ -3651,8 +3501,10 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-30</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
-		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="http://www.w3.org/" />
@@ -3730,10 +3582,10 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
-		<dct:title xml:lang="da">Vokabularet for projektbeskrivelse </dct:title>
-		<dct:title xml:lang="en">Description of a Project vocabulary</dct:title>
+		<dct:title xml:lang="da"></dct:title>
+		<dct:title xml:lang="en">Description of a Project (DOAP) vocabulary</dct:title>
 <!--  beskrivelse -->
-		<dct:description xml:lang="da">Vokabularet for projektbeskrivelse (DOAP) udtrykt med W3C RDFS og OWL.
+		<dct:description xml:lang="da">
 		</dct:description>
 		<dct:description xml:lang="en">The Description of a Project (DOAP) vocabulary, described using W3C RDF Schema and the Web Ontology Language.
 		</dct:description>
@@ -3754,13 +3606,15 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<dcat:keyword>projekt</dcat:keyword>
 		<dcat:keyword>software</dcat:keyword>
 		<dcat:keyword>softwareprojekt</dcat:keyword>
-		
+		<dcat:keyword></dcat:keyword>
 		<!-- giver det mening? det er distributions, som udgives tror jeg -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
-		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="http://lov.okfn.org/dataset/lov/agents/Edd%20Dumbill" />
@@ -3838,10 +3692,10 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
-		<dct:title xml:lang="da">Vokabularet for offentlig organisation</dct:title>
+		<dct:title xml:lang="da"></dct:title>
 		<dct:title xml:lang="en">Core Public Organisation Vocabulary (CPOV)</dct:title>
 <!--  beskrivelse -->
-		<dct:description xml:lang="da">Core Public Organization Vocabulary (CPOV) er designet til at understøtte udvekslingen af basisinformation omkring enkelte offentlige organisationer.
+		<dct:description xml:lang="da">
 		</dct:description>
 		<dct:description xml:lang="en">The Core Public Organization Vocabulary (CPOV) is designed to support the exchange of basic information about individual public organizations.
 		</dct:description>
@@ -3862,13 +3716,15 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<dcat:keyword>offentlig organisation</dcat:keyword>
 		<dcat:keyword>myndighed</dcat:keyword>
 		<dcat:keyword>offentlig administration</dcat:keyword>
-		
+		<dcat:keyword></dcat:keyword>
 		<!-- giver det mening? det er distributions, som udgives tror jeg -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-12-15</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.0</owl:versionInfo>
-		<adms:versionNotes xml:lang="en"></adms:versionNotes>
-		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+		<adms:versionNotes xml:lang="en">
+		</adms:versionNotes>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
 		<dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/DIGIT" />
@@ -4263,7 +4119,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 <!-- Access ULR -->
 		<dcat:accessURL rdf:resource="http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf" />
 <!-- Beskrivelse -->
-		<dct:description xml:lang="da">Vokabular til 'simple features' geometrier (OpenGIS)</dct:description>
+		<dct:description xml:lang="da"></dct:description>
 		<dct:description xml:lang="en">Vocabulary for simple features geometries (OpenGIS) </dct:description>
 <!-- Udgivelsesdato -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:issued>

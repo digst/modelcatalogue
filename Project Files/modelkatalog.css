@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+/*TEST CSS*/
+=======
+/*New comment*/
+>>>>>>> 83c7189db929390652e43efdbf34e1a24f612345
+
 * {
     box-sizing: border-box;
 }
@@ -147,14 +153,13 @@ input {
 .model{}
 
 .klapmodel:hover {
-    border-top: 1px solid #d0d0d0;
     padding-top:0;
 	background-color: #C8C8C8;
 }
 
 .klapmodel{
 	max-height:4em;
-	background-color: #f3f3f3;
+	border: thin grey solid;
 	margin: .5em;	
 	padding-top:1px;
 
@@ -204,8 +209,6 @@ a:hover{
 }
 
 .knap:hover {
-    
- 
 	background-color: #C8C8C8;
 }
 .nedtrykt{
@@ -237,17 +240,24 @@ a:hover{
 form{
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: row;
 }
 
 form input{
-	flex: 1 1 0;
+	flex: 1 1 0%;
 }
 
 form input:first-child{
-	width: 50%;
-	flex: 1 1 auto;
+	flex: 1 1 70%;
 }
 
+.red{
+	color: #b30000;
+}
+
+.klapud_description{
+	font-style: italic;
+}
 
 		
 
