@@ -33,11 +33,14 @@
 					
 					if (filterpath ) {$(xsl).find('BODY')[0].firstChild.attributes[0].value = "//rdf:Description[(" + filterpath + ")]";}							
 					xsltProcessor = new XSLTProcessor();
-					//  console.log ($(xsl).find('BODY')[0].firstChild)
+					console.log ($(xsl).find('BODY')[0].firstChild)
+					console.log ($(xsl).find('BODY')[0].firstChild.attributes[0].value)
+					console.log (filterpath)
 					xsltProcessor.importStylesheet(xsl);
 					//Server side xslt processing
-					var resultFragment = $.post("xmlParser.php", 
-					function(data){
+					var json = JSON.stringify(xsl, null, 2)
+					var resultFragment = $.post("xmlParser.php", {xsl: filterpath}, 
+					function(data, status){
 						$("#resultatdiv").empty();
 						//indsæt resultat i dokument
 						$("#resultatdiv").html(data);
