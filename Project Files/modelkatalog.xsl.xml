@@ -311,18 +311,7 @@ xmlns:schema="http://schema.org/">
 
 								<!--Distibution type-->
 								<xsl:if test="$distType != ''">
-									<xsl:variable name="mType">
-										<xsl:value-of select="document('modelkatalog.rdf.xml')/rdf:RDF/rdf:Description/rdf:type[@rdf:resource=$distType]/rdf:type/@rdf:resource"/>
-									</xsl:variable> 
-									<xsl:variable name="mLabel">
-										<xsl:value-of select="document('ModelTypes.rdf.xml')/rdf:RDF/rdf:Description/rdf:type[@rdf:resource=$distType]/rdfs:label"/>
-									</xsl:variable> 
-										<tr><td>Type:</td>
-										<td> <span  title="{$mLabel}">  
-										<xsl:value-of select="document('ModelTypes.rdf.xml')/rdf:RDF/rdf:Description/rdfs:label"/> 
-									</span></td></tr>
-									<xsl:comment><xsl:value-of select="$mLabel"/></xsl:comment>
-									<tr><td>Type:</td><td> <xsl:value-of select="$distType"/></td></tr>
+									<tr><td>Type:</td><td><xsl:value-of select="document('ModelTypes.rdf.xml')/rdf:RDF/rdf:Description/rdfs:label"/> </td></tr>
 								</xsl:if>
 
 								<!--Distibution issue date-->
