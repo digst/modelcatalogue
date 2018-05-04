@@ -145,7 +145,7 @@ input {
 
 }
 #knapdiv{
-
+	font-weight:bold;
 }
 .model{}
 
@@ -256,5 +256,11 @@ form input:first-child{
 	font-style: italic;
 }
 
-		
+
+.buttonlink{
+	display:block;
+	text-decoration:none;
+	font-size: 16px;
+    color: #ffffff;
+}
 

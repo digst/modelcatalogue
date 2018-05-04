@@ -17,8 +17,7 @@ xmlns:adms="http://www.w3.org/ns/adms#"
 xmlns:cc="http://www.sparxsystems.com/profiles/GML/1.0"
 xmlns:foaf="http://xmlns.com/foaf/0.1/"  
 xmlns:skos="http://www.w3.org/2004/02/skos/core#" 
-xmlns:dadk="http://data.gov.dk/model/vocabular/modelcat#"  
-xmlns:schema="http://schema.org/">
+xmlns:dadk="http://data.gov.dk/model/vocabular/modelcat#"  >
   <xsl:output method="html"/>
 <!--  //rdf:Description/rdf:type[@rdf:resource='http://www.w3.org/ns/dcat#Dataset' ]/../dcat:theme[@rdf:resource='http://publications.europa.eu/resource/authority/data-theme/ECON']/.. -->   	        	
   
@@ -41,7 +40,7 @@ xmlns:schema="http://schema.org/">
 	    <BODY><xsl:for-each select="//rdf:type[@rdf:resource='http://www.w3.org/ns/dcat#Dataset' ]/..">
 	    
 	    		
-		    	  	<div class="enmodel"><h2><xsl:if test="vann:preferredNamespacePrefix"><xsl:value-of select="vann:preferredNamespacePrefix"/>:</xsl:if>
+		    	  	<div class="enmodel"><h2><xsl:if test="vann:preferredNamespacePrefix != ''"><xsl:value-of select="vann:preferredNamespacePrefix"/>:</xsl:if>
 			  <xsl:for-each select="dct:title[@xml:lang='da']"> 
 			    	  			<xsl:value-of select="."/>&#160;
 			    	  	</xsl:for-each> 
@@ -54,8 +53,19 @@ xmlns:schema="http://schema.org/">
 			    	  	  		<tr class="klapud_description"><td colspan="2">  <xsl:value-of select="."/>&#160;</td></tr>
 			    	  	 	</xsl:for-each>
 
-<!-- 			    	  		<tr><td>Prefix:</td><td> <xsl:value-of select="vann:preferredNamespacePrefix"/></td></tr>-->
-			    	  	 	<tr><td>Namespace:</td><td>  <xsl:value-of select="vann:preferredNamespaceUri"/></td></tr>
+<!-- 			    	    <tr><td>Prefix:</td><td> <xsl:value-of select="vann:preferredNamespacePrefix"/></td></tr> 
+			    	  	 	<tr><td>Namespace:</td><td>  <xsl:value-of select="vann:preferredNamespaceUri"/></td></tr>-->
+							
+
+							<xsl:if test="vann:preferredNamespaceUri != ''"> 
+								<xsl:variable name="namespace">
+									<xsl:value-of select="vann:preferredNamespaceUri"/>
+								</xsl:variable> 
+								<tr><td>Namespace:</td><td><a href="{$namespace}" target="_blank"> <xsl:value-of select="$namespace"/></a></td></tr>
+							</xsl:if>
+							
+							
+							
 <!-- nøgleord -->
 							<xsl:if test="dcat:keyword">
 							<tr><td>Nøgleord:</td><td>
@@ -116,7 +126,25 @@ xmlns:schema="http://schema.org/">
 								</xsl:variable> 
 			    	  	  		<tr><td>Infoside:</td><td><a href="{$infSide}" target="_blank"> <xsl:value-of select="$infSide"/></a></td></tr>
 			    	  	 	</xsl:if>
-			    	  	 </xsl:for-each>				    	  	 	
+			    	  	 </xsl:for-each>
+
+<!-- udgivelser 
+
+						<xsl:for-each select="dcat:distribution">
+							<xsl:if test="@rdf:resource != ''">  
+				    	  	  		<tr><td>Udgivelse:</td><td>  <xsl:value-of select="@rdf:resource"/></td></tr>
+				    	  	 </xsl:if>
+				    	</xsl:for-each> 
+-->
+
+						<xsl:for-each select="dcat:distribution"> 
+							<xsl:if test="@rdf:resource != ''"> 
+								<xsl:variable name="distribution">
+								    <xsl:value-of select="@rdf:resource"/>
+								</xsl:variable> 
+			    	  	  		<tr><td>Udgivelse:</td><td><a href="{$distribution}" target="_blank"> <xsl:value-of select="$distribution"/></a></td></tr>
+			    	  	 	</xsl:if>
+			    	  	 </xsl:for-each>						
 
 		    	  	<!-- 
 
@@ -236,113 +264,17 @@ xmlns:schema="http://schema.org/">
 									</span></td></tr>
 								</xsl:if>
 			    	  	 </xsl:for-each>
-						</table>
-
-						   <!-- udgivelser -->
-
-						<xsl:for-each select="dcat:distribution">
-							<xsl:if test="@rdf:resource != ''">  
-								<div class="enmodel">
-									<table>
-									<tr><td>Udgivelse:</td></tr>
-
-								<!--Distribution variables-->
-
-								<!--Base distibution reference-->
-								<xsl:variable name="distRef">
-								    <xsl:value-of select="@rdf:resource"/>
-								</xsl:variable>
-
-								<!--Distibution title-->
-								<xsl:variable name="distTitle">
-								    <xsl:value-of select="document('modelkatalog.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$distRef]/dct:title[@xml:lang='da']"/>
-								</xsl:variable>
-
-								<!--Distibution description-->
-								<xsl:variable name="distDesc">
-								    <xsl:value-of select="document('modelkatalog.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$distRef]/dct:description[@xml:lang='da']"/>
-								</xsl:variable>
-
-								<!--Distibution URL-->			
-								<xsl:variable name="distURL">
-								    <xsl:value-of select="document('modelkatalog.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$distRef]/dcat:accessURL/@rdf:resource"/>
-								</xsl:variable>
-
-								<!--Distibution Type-->
-								<xsl:variable name="distType">
-								    <xsl:value-of select="document('modelkatalog.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$distRef]/rdf:type/@rdf:resource"/>
-								</xsl:variable>
-
-								<!--Distibution Issue Date-->
-								<xsl:variable name="distIssued">
-								    <xsl:value-of select="document('modelkatalog.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$distRef]/dct:issued"/>
-								</xsl:variable>
-
-								<!--Distibution License-->
-								<xsl:variable name="distLicense">
-								    <xsl:value-of select="document('modelkatalog.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$distRef]/dct:license/@rdf:resource"/>
-								</xsl:variable>
-
-								<!--Distibution Format-->
-								<xsl:variable name="distFormat">
-								    <xsl:value-of select="document('modelkatalog.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$distRef]/dct:format"/>
-								</xsl:variable>
-
-								<!--Distibution Size-->
-								<xsl:variable name="distSize">
-								    <xsl:value-of select="document('modelkatalog.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$distRef]/schema:fileSize"/>
-								</xsl:variable>
-								
-
-								<!--Display distribution variables-->
-								<xsl:if test="$distTitle != ''">
-									<tr><td>Titel:</td><td> <xsl:value-of select="$distTitle"/></td></tr>
-								</xsl:if>
-
-								<!--Distibution description-->
-								<xsl:if test="$distDesc != ''">
-									<tr><td>Beskrivelse:</td><td> <xsl:value-of select="$distDesc"/></td></tr>
-								</xsl:if>
-
-								<!--Distibution URL-->
-								<xsl:if test="$distURL != ''">
-									<tr><td>Download:</td><td> <xsl:value-of select="$distURL"/></td></tr>
-								</xsl:if>
-
-								<!--Distibution type-->
-								<xsl:if test="$distType != ''">
-									<tr><td>Type:</td><td><xsl:value-of select="document('ModelTypes.rdf.xml')/rdf:RDF/rdf:Description/rdfs:label"/> </td></tr>
-								</xsl:if>
-
-								<!--Distibution issue date-->
-								<xsl:if test="$distIssued != ''">
-									<tr><td>Udgivelsesdato:</td><td> <xsl:value-of select="$distIssued"/></td></tr>
-								</xsl:if>
-
-								<!--Distibution license-->
-								<xsl:if test="$distLicense != ''">
-									<tr><td>Licens:</td><td> <xsl:value-of select="$distLicense"/></td></tr>
-								</xsl:if>
-
-								<!--Distibution format-->
-								<xsl:if test="$distFormat != ''">
-									<tr><td>Format:</td><td> <xsl:value-of select="$distFormat"/></td></tr>
-								</xsl:if>
-
-								<!--Distibution size-->
-								<xsl:if test="$distSize != ''">
-									<tr><td>Fil størelse:</td><td> <xsl:value-of select="$distSize"/></td></tr>
-								</xsl:if>
-								</table>
-								</div>
-							</xsl:if>
-				    	</xsl:for-each> 
+			    	  	</table>
 		  	     	  	    	  	    	  	 
 	    	  	 	</div>
+	    
+	  
 	    	</xsl:for-each>
 	    
 	        	</BODY>
     </HTML>
 </xsl:template>	    	 
 	    		  
+
+
 </xsl:stylesheet>

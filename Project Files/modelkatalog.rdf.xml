@@ -95,6 +95,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			 -->
 		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/index.htm?goto=2:28" />
 		<foaf:page rdf:resource="http://bbr.dk/" />
+		<foaf:page rdf:resource="http://data.gov.dk/gdvariantdiagrammer/index.htm?goto=2:19" />
 
 		<!--  Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
 			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
@@ -109,7 +110,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			http://data.gov.dk/model/concepts/ModelTypes#Model -->
 		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#CoreModel" />
 		<!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels http://data.gov.dk/model/concepts/ModellingLevels#Genbrug -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Genbrug" />
+		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Formidling" />
 		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes http://data.gov.dk/model/concepts/ModellingRegimes#International -->
 		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#Grunddata" />
 		<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -127,6 +128,8 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
 		<!-- distributions - reference til Description elementer i dette doc -->
 		<dcat:distribution rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/BygningerOgBoliger/2.1.0_BygningerOgBoliger.xml" />
+		<dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_2.1.0_Bygninger_og_boliger.xml" />
+		<dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap" />
 		
 	</rdf:Description>
 
@@ -187,6 +190,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			-->
 		<foaf:page rdf:resource="https://datacvr.virk.dk/data/" />
 		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/index.htm?goto=3:121" />
+		<foaf:page rdf:resource="http://data.gov.dk/gdvariantdiagrammer/index.htm?goto=3:134" />
 
 		<!-- Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
 			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
@@ -235,6 +239,9 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
 		<!-- distributions - reference til Description elementer i dette doc -->
 		<dcat:distribution rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/CentraleVirksomhedsregister/1.0.0_CentraleVirksomhedsregister.xml" />
+		<dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_1.0.0_CentraleVirksomhedregister.xml" />
+		<dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap" />
+		
 		
 	</rdf:Description>
 
@@ -295,6 +302,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			-->
 		<foaf:page rdf:resource="http://sdfe.dk/hent-data/danmarks-administrative-graenser-dagi/" />
 		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA4/EA167.htm" />
+		<foaf:page rdf:resource="http://data.gov.dk/gdvariantdiagrammer/index.htm?goto=4:277" />
 
 <!-- Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
 			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
@@ -343,6 +351,8 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
 		<!-- distributions - reference til Description elementer i dette doc -->
 		<dcat:distribution rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/DAGI/1.0.1_DAGI.xml" />
+		<dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_1.0.1_DAGI.xml" />
+		<dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap" />
 	</rdf:Description>
 
 <!-- Grunddata: DAR -->
@@ -406,6 +416,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			-->
 		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/index.htm?goto=5:219" />
 		<foaf:page rdf:resource="http://danmarksadresser.dk/" />
+		<foaf:page rdf:resource="http://data.gov.dk/gdvariantdiagrammer/index.htm?goto=5:342" />
 
 <!-- Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
 			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
@@ -454,6 +465,8 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
 <!-- distributions - reference til Description elementer i dette doc -->
 		<dcat:distribution rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/DanmarksAdresser/2.0.0_DanmarksAdresser.xml" />
+		<dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_2.0.0_Danmarks_adresser.xml" />
+		<dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap" />
 	</rdf:Description>
 
 <!-- Grunddata: Ejendomsbeliggenhed -->
@@ -514,6 +527,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			For grunddata: Registerets side (har ofte ikke modellen) samt data.gov.dk/model/diagram-link
 			-->
 		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA7/EA304.htm" />
+		<foaf:page rdf:resource="http://data.gov.dk/gdvariantdiagrammer/index.htm?goto=7:537" />
 
 <!-- Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
 			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
@@ -562,6 +576,8 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
 <!-- distributions - reference til Description elementer i dette doc -->
 		<dcat:distribution rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/Ejendomsbeliggenhed/1.3.0_Ejendomsbeliggenhed.xml" />
+		<dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_1.3.0_Ejendomsbeliggenhed.xml" />
+		<dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap" />
 	</rdf:Description>
 
 	
@@ -622,6 +638,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			For grunddata: Registerets side (har ofte ikke modellen) samt data.gov.dk/model/diagram-link
 			-->
 		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA8/EA329.htm" />
+		<foaf:page rdf:resource="http://data.gov.dk/gdvariantdiagrammer/index.htm?goto=8:583" />
 
 <!-- Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
 			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
@@ -669,6 +686,8 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- pt ingen angivelse af sprog - ADMS bruger dct:LinguisticSystem(label) som er bred; kan indeholde tegnsprog, programmeringssprog 
 			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
 <!-- distributions - reference til Description elementer i dette doc -->
+		<dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap" />
+		<dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_1.0.0_Ejendomsvurdering.xml" />
 		<dcat:distribution rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/Ejendomsvurdering/1.0.0_Ejendomsvurdering.xmi" />
 	</rdf:Description>	
 	
@@ -683,7 +702,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
 		<dct:title xml:lang="da">Ejerfortegnelsen</dct:title>
-		<dct:title xml:lang="en">The Danish Register of assessment of property units for housing</dct:title>
+		<dct:title xml:lang="en">The Danish Register of Property Owners</dct:title>
 <!--  beskrivelse -->
 		<dct:description xml:lang="da"> Udstillingsmodel af Ejerfortegnelsen, som skal være et nyt autoritativt register over de faktiske ejere af al fast ejendom i Danmark. 
 		</dct:description>
@@ -700,7 +719,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel" />
 <!--  Namespace og Prefix -->
 		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
-		<vann:preferredNamespacePrefix>ejer	</vann:preferredNamespacePrefix>
+		<vann:preferredNamespacePrefix>ejer</vann:preferredNamespacePrefix>
 		<vann:preferredNamespaceUri>http://data.gov.dk/model/EJER</vann:preferredNamespaceUri>
 <!-- keywords - gerne flere -->
 		<dcat:keyword>ejendomsejer</dcat:keyword>
@@ -733,6 +752,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			-->
 		<foaf:page rdf:resource="http://gst.dk/matriklen/ejendomsdataprogrammet/ejerfortegnelsen/" />
 		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA6/EA262.htm" />
+		<foaf:page rdf:resource="http://data.gov.dk/gdvariantdiagrammer/index.htm?goto=8:583" />
 
 <!-- Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
 			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
@@ -780,7 +800,10 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- pt ingen angivelse af sprog - ADMS bruger dct:LinguisticSystem(label) som er bred; kan indeholde tegnsprog, programmeringssprog 
 			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
 <!-- distributions - reference til Description elementer i dette doc -->
+		<dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_1.3.0_Ejerfortegnelsen.xml" />
 		<dcat:distribution rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/Ejerfortegnelsen/1.3.0_Ejerfortegnelsen.xml" />
+		<dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap" />
+		
 	</rdf:Description>
 
 <!-- Grunddata: GeoDanmark -->
@@ -843,6 +866,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			-->
 		<foaf:page rdf:resource="http://sdfe.dk/saadan-arbejder-vi-med-data/danske-samarbejder/geodanmark/" />
 		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA9/EA361.htm" />
+		<foaf:page rdf:resource="http://data.gov.dk/gdvariantdiagrammer/index.htm?goto=8:583" />
 		
 <!-- Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
 			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
@@ -891,6 +915,8 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
 <!-- distributions - reference til Description elementer i dette doc -->
 		<dcat:distribution rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/GeoDanmark/2.0.0_GeoDanmark.xml" />
+		<dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_2.0.0_GeoDanmark.xml" />
+		<dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap" />
 	</rdf:Description>
 
 <!-- Grunddata: Matrikel -->
@@ -953,6 +979,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			-->
 		<foaf:page rdf:resource="http://gst.dk/matriklen/om-matriklen/" />
 		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA11/EA548.htm" />
+		<foaf:page rdf:resource="http://data.gov.dk/gdvariantdiagrammer/index.htm?goto=8:583" />
 
 <!-- Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
 			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
@@ -1001,6 +1028,8 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
 <!-- distributions - reference til Description elementer i dette doc -->
 		<dcat:distribution rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/Matrikel/1.2.3_Matrikel.xml" />
+		<dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_1.2.3_Matrikel.xml" />
+		<dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap" />
 	</rdf:Description>
 	
 <!-- Grunddata: Person -->
@@ -1062,6 +1091,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			For grunddata: Registerets side (har ofte ikke modellen) samt data.gov.dk/model/diagram-link
 			-->
 		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA12/EA668.htm" />
+		<foaf:page rdf:resource="http://data.gov.dk/gdvariantdiagrammer/index.htm?goto=8:583" />
 
 <!-- Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
 			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
@@ -1109,7 +1139,9 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- pt ingen angivelse af sprog - ADMS bruger dct:LinguisticSystem(label) som er bred; kan indeholde tegnsprog, programmeringssprog 
 			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
 <!-- distributions - reference til Description elementer i dette doc -->
+		<dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_1.2.0_Person.xml" />
 		<dcat:distribution rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/Person/1.2.0_Person.xml" />
+		<dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap" />
 	</rdf:Description>
 	
 
@@ -1173,6 +1205,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			-->
 		<foaf:page rdf:resource="http://sdfe.dk/hent-data/danske-stednavne/" />
 		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA13/EA821.htm" />
+		<foaf:page rdf:resource="http://data.gov.dk/gdvariantdiagrammer/index.htm?goto=8:583" />
 
 <!-- Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
 			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
@@ -1221,6 +1254,8 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
 <!-- distributions - reference til Description elementer i dette doc -->
 		<dcat:distribution rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/Stednavne/Stednavne.xml" />
+		<dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_1.0.0_Stednavne.xml" />
+		<dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap" />
 	</rdf:Description>	
 
 
@@ -1396,6 +1431,168 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 
 	</rdf:Description>	
 	
+
+
+
+<!-- Begrebsmodel for brugerstyring -->	
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	
+	<rdf:Description rdf:about="http://data.gov.dk/model/concept/usermanagement#">
+
+		<!-- dataobjektets typificering (modelreference) -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" /> <!--som er et ADMS:Asset -->
+		<dct:title xml:lang="en">User management</dct:title>
+		<dct:title xml:lang="da">Brugerstyring</dct:title>		
+		<dct:description xml:lang="da">Denne begrebsmodel defineres ifm. Referencearkitektur for brugerstyring
+		</dct:description>		
+		<dct:description xml:lang="en">
+		</dct:description>
+
+		<!--EIRA artefakttype - krævet i ADMS se https://joinup.ec.europa.eu/svn/eia/taxonomy/EIRA_SKOS.rdf og https://joinup.ec.europa.eu/catalogue/distribution/eira_v1_1_0_overviewpdf 
+			der findes DataModel http://data.europa.eu/dr8/DataModel og Core Data Model http://data.europa.eu/dr8/CoreDataModel - jeg 
+			bruger DataModel til alt andet end kernemodeller og vocabularer 
+		<dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel" />-->
+
+		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
+		<vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
+		<vann:preferredNamespaceUri>http://data.gov.dk/model/concept/usermanagement#</vann:preferredNamespaceUri>
+
+		<dcat:keyword>brugerstyring</dcat:keyword>
+		<dcat:keyword>identitet</dcat:keyword>
+		
+		<!-- giver det mening? det er distributions, som udgives tror jeg -->
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-01</dct:issued>
+		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
+		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.0</owl:versionInfo>
+		<adms:versionNotes xml:lang="en">Stable</adms:versionNotes>
+		<adms:versionNotes xml:lang="da">Stabil</adms:versionNotes>		
+		<!-- Publisher er mandatory i ADMS -->
+		<dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/><!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
+
+		<!-- rettigheder og licens ikke ADMS-compliant - Her er ADMS lidt bøvlet; tilpasser senere -->
+		<dct:rights></dct:rights>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/" />
+
+		<!--'Web page that provides access to the asset,its releases, distributions and/or additional information. It is intended 
+			to point to a landing page at the original asset provider, not to a page on a site of a third party, such as a catalogue 
+			or repository' -->
+		<dcat:landingPage rdf:resource="https://arkitektur.digst.dk/sites/default/files/123_referencearkitektur_for_brugerstyring_pdfa.pdf" />
+
+		<!--'documentation that contains information related to the asset' - jeg tænker menneskevendt info, fx grunddata-diagram, 
+			grunddata-xmi i et andet katalog -->
+		<foaf:page rdf:resource="http://data.gov.dk/model/concept/usermanagement.htm" />
+
+		<!--'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
+			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
+			se osse http://publications.europa.eu/mdr/resource/authority/data-theme/html/data-theme-dan.html#description 
+		<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI" />-->
+
+		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
+			og formaliseres i en AP -->
+
+		<!-- modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes -->
+		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#ConceptModel" />
+		<!-- modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels -->
+		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Reuse" />
+		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes -->
+		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#FODS" />
+		<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
+		<dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
+		<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
+		<dadk:businessAreaCode>06.38.10.10 </dadk:businessAreaCode>
+		<!-- INSPIRE tema - bruger https://inspire.ec.europa.eu/theme - skal undersøges om der findes en standardiseret egenskab 
+			og om værdierne er korrekt anvendt... 
+		<dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/oi" />-->
+		<!-- kontaktinformation udeladt for nu <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#lrozat"/> 
+			</dc:contributor> <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#pyv"/> </dc:contributor> 
+			<dc:creator> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#bvatant"/> </dc:creator> <dc:publisher> <foaf:Organization 
+			rdf:about="http://dbpedia.org/resource/Mondeca"/> </dc:publisher> -->
+		<!-- pt ingen angivelse af sprog - ADMS bruger dct:LinguisticSystem(label) som er bred; kan indeholde tegnsprog, programmeringssprog 
+			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
+
+	</rdf:Description>	
+	
+
+<!-- Begrebsmodel for brugerstyring -->	
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	
+	<rdf:Description rdf:about="http://data.gov.dk/model/concept/digitalselfservice#">
+
+		<!-- dataobjektets typificering (modelreference) -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" /> <!--som er et ADMS:Asset -->
+		<dct:title xml:lang="en">Digital Self-Service</dct:title>
+		<dct:title xml:lang="da">Digital selvbetjening</dct:title>		
+		<dct:description xml:lang="da">Denne begrebsmodel defineres ifm. Referencearkitektur for selvbetjening
+		</dct:description>		
+		<dct:description xml:lang="en">
+		</dct:description>
+
+		<!--EIRA artefakttype - krævet i ADMS se https://joinup.ec.europa.eu/svn/eia/taxonomy/EIRA_SKOS.rdf og https://joinup.ec.europa.eu/catalogue/distribution/eira_v1_1_0_overviewpdf 
+			der findes DataModel http://data.europa.eu/dr8/DataModel og Core Data Model http://data.europa.eu/dr8/CoreDataModel - jeg 
+			bruger DataModel til alt andet end kernemodeller og vocabularer 
+		<dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel" />-->
+
+		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
+		<vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
+		<vann:preferredNamespaceUri>http://data.gov.dk/model/concept/digitalselfservice#</vann:preferredNamespaceUri>
+
+		<dcat:keyword>selvbetjening</dcat:keyword>
+		<dcat:keyword>selvbetjeningsløsning</dcat:keyword>
+		<dcat:keyword>selvbetjeningsforløb</dcat:keyword>	
+		
+		<!-- giver det mening? det er distributions, som udgives tror jeg -->
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-02-01</dct:issued>
+		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
+		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.0</owl:versionInfo>
+		<adms:versionNotes xml:lang="en">Stable</adms:versionNotes>
+		<adms:versionNotes xml:lang="da">Stabil</adms:versionNotes>		
+		<!-- Publisher er mandatory i ADMS -->
+		<dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/><!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
+
+		<!-- rettigheder og licens ikke ADMS-compliant - Her er ADMS lidt bøvlet; tilpasser senere -->
+		<dct:rights></dct:rights>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/" />
+
+		<!--'Web page that provides access to the asset,its releases, distributions and/or additional information. It is intended 
+			to point to a landing page at the original asset provider, not to a page on a site of a third party, such as a catalogue 
+			or repository' -->
+		<dcat:landingPage rdf:resource="https://arkitektur.digst.dk/sites/default/files/referencearkitektur_for_selvbetjening_version_1.0.pdf" />
+
+		<!--'documentation that contains information related to the asset' - jeg tænker menneskevendt info, fx grunddata-diagram, 
+			grunddata-xmi i et andet katalog -->
+		<foaf:page rdf:resource="http://data.gov.dk/model/concept/digitalselfservice.htm" />
+
+		<!--'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
+			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
+			se osse http://publications.europa.eu/mdr/resource/authority/data-theme/html/data-theme-dan.html#description 
+		<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI" />-->
+
+		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
+			og formaliseres i en AP -->
+
+		<!-- modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes -->
+		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#ConceptModel" />
+		<!-- modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels -->
+		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Reuse" />
+		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes -->
+		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#FODS" />
+		<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
+		<dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
+		<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
+		<dadk:businessAreaCode>06.38.10.10 </dadk:businessAreaCode>
+		<!-- INSPIRE tema - bruger https://inspire.ec.europa.eu/theme - skal undersøges om der findes en standardiseret egenskab 
+			og om værdierne er korrekt anvendt... 
+		<dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/oi" />-->
+		<!-- kontaktinformation udeladt for nu <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#lrozat"/> 
+			</dc:contributor> <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#pyv"/> </dc:contributor> 
+			<dc:creator> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#bvatant"/> </dc:creator> <dc:publisher> <foaf:Organization 
+			rdf:about="http://dbpedia.org/resource/Mondeca"/> </dc:publisher> -->
+		<!-- pt ingen angivelse af sprog - ADMS bruger dct:LinguisticSystem(label) som er bred; kan indeholde tegnsprog, programmeringssprog 
+			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
+
+	</rdf:Description>	
 	
 <!-- VOAF -->	
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -2892,14 +3089,14 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#CoreModel" />
+		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Genbrug" />
+		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
@@ -3000,14 +3197,14 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#CoreModel" />
+		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Genbrug" />
+		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
@@ -3937,10 +4134,612 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 <!-- distributions - reference til Description elementer i dette doc -->
 		<dcat:distribution rdf:resource="https://joinup.ec.europa.eu/sites/default/files/distribution/2017-02/cpov_rdf_schema_turtle_v0.03_0.ttl" />
 	</rdf:Description>
+
+<!-- XML Schema Datatypes -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	
+	<rdf:Description rdf:about="https://www.w3.org/2001/05/datatypes.xsd">
+
+		<!-- dataobjektets typificering: et DCAT:Dataset - som er et som er et ADMS:Asset -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
+		<!-- navn -->
+		<dct:title xml:lang="da"></dct:title>
+		<dct:title xml:lang="en">XML Schema: Datatypes</dct:title>
+		<!-- beskrivelse -->
+		<dct:description xml:lang="da">Vokabular for datatyper der er en del xml-skema specifikationen
+		</dct:description>
+		<dct:description xml:lang="en">XML Schema: Datatypes is part 2 of the specification of the XML Schema language. It defines facilities for defining datatypes to be used in XML Schemas as well as other XML specifications.
+		</dct:description>
+
+		<!--EIRA artefakttype - krævet i ADMS se https://joinup.ec.europa.eu/svn/eia/taxonomy/EIRA_SKOS.rdf og 
+		https://joinup.ec.europa.eu/catalogue/distribution/eira_v1_1_0_overviewpdf 
+			der findes DataModel http://data.europa.eu/dr8/DataModel 
+			og Core Data Model http://data.europa.eu/dr8/CoreDataModel - 
+			jeg bruger DataModel til alt andet end kernemodeller og vocabularer 
+			
+			http://data.europa.eu/dr8/CoreDataModel
+			http://data.europa.eu/dr8/DataModel, -->
+		<dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel" />
+
+		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
+		<vann:preferredNamespacePrefix>xsd</vann:preferredNamespacePrefix>
+		<vann:preferredNamespaceUri>http://www.w3.org/2001/XMLSchema</vann:preferredNamespaceUri>
+		<!-- keywords - gerne flere -->
+		<dcat:keyword>data</dcat:keyword>
+		<dcat:keyword>datatyper</dcat:keyword>
+		<dcat:keyword>dataspecifikation</dcat:keyword>
+		<dcat:keyword></dcat:keyword>
+		<!-- giver det mening? det er distributions, som udgives tror jeg -->
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-05-02</dct:issued>
+		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
+		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
+		<!-- Publisher er mandatory i ADMS -->
+		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
+		<dct:publisher rdf:resource="http://www.w3.org/" ></dct:publisher>
+		<!-- rettigheder og licens ikke ADMS-compliant - Her er ADMS lidt bøvlet; tilpasser senere -->
+		<dct:rights>Copyright 2001 W3C</dct:rights>
+		<cc:license rdf:resource="http://www.w3.org/Consortium/Legal/ipr-notice-20000612#Copyright" />
+
+		<!--Hjemmeside; 'Web page that provides access to the asset,its releases, distributions and/or additional information. 
+			It is intended to point to a landing page at the original asset provider, not to a page on a site of a third party, such 
+			as a catalogue or repository' -->
+		<dcat:landingPage rdf:resource="https://www.w3.org/2001/XMLSchema" ></dcat:landingPage>
+
+		<!-- Infoside; 'documentation that contains information related to the asset' - jeg tænker menneskevendt info, fx grunddata-diagram, 
+			 -->
+		<foaf:page rdf:resource="https://www.w3.org/TR/2001/REC-xmlschema-2-20010502/datatypes" />
+		<foaf:page rdf:resource="" />
+		<foaf:page rdf:resource="" />
+
+		<!--  Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
+			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
+			se osse http://publications.europa.eu/mdr/resource/authority/data-theme/html/data-theme-dan.html#description
+			http://publications.europa.eu/resource/authority/data-theme/AGRI -->
+		<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TECH" />
+
+		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
+			og formaliseres i en AP -->
+
+		<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+			http://data.gov.dk/model/concepts/ModelTypes#Model -->
+		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels http://data.gov.dk/model/concepts/ModellingLevels#Genbrug -->
+		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes http://data.gov.dk/model/concepts/ModellingRegimes#International -->
+		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
+		<dadk:businessArea>Digital infrastruktur</dadk:businessArea>
+		<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
+		<dadk:businessAreaCode>06.38.10</dadk:businessAreaCode>
+		<!-- INSPIRE tema - bruger https://inspire.ec.europa.eu/theme - skal undersøges om der findes en standardiseret egenskab 
+			og om værdierne er korrekt anvendt... https://inspire.ec.europa.eu/theme/oi -->
+		<dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/" />
+		<!-- kontaktinformation udeladt for nu <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#lrozat"/> 
+			</dc:contributor> <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#pyv"/> </dc:contributor> 
+			<dc:creator> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#bvatant"/> </dc:creator> <dc:publisher> <foaf:Organization 
+			rdf:about="http://dbpedia.org/resource/Mondeca"/> </dc:publisher> -->
+		<!-- pt ingen angivelse af sprog - ADMS bruger dct:LinguisticSystem(label) som er bred; kan indeholde tegnsprog, programmeringssprog 
+			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
+		<!-- distributions - reference til Description elementer i dette doc -->
+		<dcat:distribution rdf:resource="https://www.w3.org/2001/05/datatypes.xsd" />
+
+		
+	</rdf:Description>	
+	
+<!-- GMLOWL  -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	
+	<rdf:Description rdf:about="http://www.opengis.net/ont/gml">
+
+		<!-- dataobjektets typificering: et DCAT:Dataset - som er et som er et ADMS:Asset -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
+		<!-- navn -->
+		<dct:title xml:lang="da"></dct:title>
+		<dct:title xml:lang="en">Geography Markup Language Schema</dct:title>
+		<!-- beskrivelse -->
+		<dct:description xml:lang="da"> Vokabular til beskrivelse af geografi og lokationer.
+		</dct:description>
+		<dct:description xml:lang="en">Vocabulary for describing geography developed bu Open Geospatial Consortium
+		</dct:description>
+
+		<!--EIRA artefakttype - krævet i ADMS se https://joinup.ec.europa.eu/svn/eia/taxonomy/EIRA_SKOS.rdf og 
+		https://joinup.ec.europa.eu/catalogue/distribution/eira_v1_1_0_overviewpdf 
+			der findes DataModel http://data.europa.eu/dr8/DataModel 
+			og Core Data Model http://data.europa.eu/dr8/CoreDataModel - 
+			jeg bruger DataModel til alt andet end kernemodeller og vocabularer 
+			
+			http://data.europa.eu/dr8/CoreDataModel
+			http://data.europa.eu/dr8/DataModel, -->
+		<dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel" />
+
+		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
+		<vann:preferredNamespacePrefix>gmlowl</vann:preferredNamespacePrefix>
+		<vann:preferredNamespaceUri>http://www.opengis.net/ont/gml#</vann:preferredNamespaceUri>
+		<!-- keywords - gerne flere -->
+		<dcat:keyword>geografi</dcat:keyword>
+		<dcat:keyword>geografiske data</dcat:keyword>
+		<dcat:keyword>geodata</dcat:keyword>
+		<dcat:keyword>lokation</dcat:keyword>
+		<!-- giver det mening? det er distributions, som udgives tror jeg -->
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012</dct:issued>
+		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
+		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.2.1</owl:versionInfo>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
+		<!-- Publisher er mandatory i ADMS -->
+		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
+		<dct:publisher rdf:resource="" >http://www.opengeospatial.org</dct:publisher>
+		<!-- rettigheder og licens ikke ADMS-compliant - Her er ADMS lidt bøvlet; tilpasser senere -->
+		<dct:rights>Copyright 2012 Open Geospatial Consortium</dct:rights>
+		<cc:license rdf:resource="http://www.opengeospatial.org/legal/" />
+
+		<!--Hjemmeside; 'Web page that provides access to the asset,its releases, distributions and/or additional information. 
+			It is intended to point to a landing page at the original asset provider, not to a page on a site of a third party, such 
+			as a catalogue or repository' -->
+		<dcat:landingPage rdf:resource="http://schemas.opengis.net/gml/" ></dcat:landingPage>
+
+		<!-- Infoside; 'documentation that contains information related to the asset' - jeg tænker menneskevendt info, fx grunddata-diagram, 
+			 -->
+		<foaf:page rdf:resource="" />
+		<foaf:page rdf:resource="" />
+		<foaf:page rdf:resource="" />
+
+		<!--  Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
+			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
+			se osse http://publications.europa.eu/mdr/resource/authority/data-theme/html/data-theme-dan.html#description
+			http://publications.europa.eu/resource/authority/data-theme/AGRI -->
+		<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI" />
+
+		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
+			og formaliseres i en AP -->
+
+		<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+			http://data.gov.dk/model/concepts/ModelTypes#Model -->
+		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels http://data.gov.dk/model/concepts/ModellingLevels#Genbrug -->
+		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes http://data.gov.dk/model/concepts/ModellingRegimes#International -->
+		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
+		<dadk:businessArea></dadk:businessArea>
+		<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
+		<dadk:businessAreaCode></dadk:businessAreaCode>
+		<!-- INSPIRE tema - bruger https://inspire.ec.europa.eu/theme - skal undersøges om der findes en standardiseret egenskab 
+			og om værdierne er korrekt anvendt... https://inspire.ec.europa.eu/theme/oi -->
+		<dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/" />
+		<!-- kontaktinformation udeladt for nu <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#lrozat"/> 
+			</dc:contributor> <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#pyv"/> </dc:contributor> 
+			<dc:creator> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#bvatant"/> </dc:creator> <dc:publisher> <foaf:Organization 
+			rdf:about="http://dbpedia.org/resource/Mondeca"/> </dc:publisher> -->
+		<!-- pt ingen angivelse af sprog - ADMS bruger dct:LinguisticSystem(label) som er bred; kan indeholde tegnsprog, programmeringssprog 
+			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
+		<!-- distributions - reference til Description elementer i dette doc -->
+		<dcat:distribution rdf:resource="http://schemas.opengis.net/gml/3.2.1/gml_32_geometries.rdf" />
+		<dcat:distribution rdf:resource="" />
+		<dcat:distribution rdf:resource="" />
+		
+	</rdf:Description>
+
+<!-- OWL Time Ontology -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	
+	<rdf:Description rdf:about="http://www.w3.org/2006/time">
+
+		<!-- dataobjektets typificering: et DCAT:Dataset - som er et som er et ADMS:Asset -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
+		<!-- navn -->
+		<dct:title xml:lang="da"></dct:title>
+		<dct:title xml:lang="en">Time Ontology in OWL</dct:title>
+		<!-- beskrivelse -->
+		<dct:description xml:lang="da">Owl vokabular til beskrivelse af tid.
+		</dct:description>
+		<dct:description xml:lang="en">OWL-Time is an OWL-2 DL ontology of temporal concepts, for describing the temporal properties of resources in the world or described in Web pages. The ontology provides a vocabulary for expressing facts about topological (ordering) relations among instants and intervals, together with information about durations, and about temporal position including date-time information. Time positions and durations may be expressed using either the conventional (Gregorian) calendar and clock, or using another temporal reference system such as Unix-time, geologic time, or different calendars.
+		</dct:description>
+
+		<!--EIRA artefakttype - krævet i ADMS se https://joinup.ec.europa.eu/svn/eia/taxonomy/EIRA_SKOS.rdf og 
+		https://joinup.ec.europa.eu/catalogue/distribution/eira_v1_1_0_overviewpdf 
+			der findes DataModel http://data.europa.eu/dr8/DataModel 
+			og Core Data Model http://data.europa.eu/dr8/CoreDataModel - 
+			jeg bruger DataModel til alt andet end kernemodeller og vocabularer 
+			
+			http://data.europa.eu/dr8/CoreDataModel
+			http://data.europa.eu/dr8/DataModel, -->
+		<dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel" />
+
+		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
+		<vann:preferredNamespacePrefix>time</vann:preferredNamespacePrefix>
+		<vann:preferredNamespaceUri>http://www.w3.org/2006/time#</vann:preferredNamespaceUri>
+		<!-- keywords - gerne flere -->
+		<dcat:keyword>tid</dcat:keyword>
+		<dcat:keyword>interval</dcat:keyword>
+		<dcat:keyword>periode</dcat:keyword>
+		<dcat:keyword>kalender</dcat:keyword>
+		<!-- giver det mening? det er distributions, som udgives tror jeg -->
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-10-19</dct:issued>
+		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
+		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
+		<adms:versionNotes xml:lang="da">
+		</adms:versionNotes>
+		<!-- Publisher er mandatory i ADMS -->
+		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
+		<dct:publisher rdf:resource="" >https://www.w3.org/</dct:publisher>
+		<!-- rettigheder og licens ikke ADMS-compliant - Her er ADMS lidt bøvlet; tilpasser senere -->
+		<dct:rights></dct:rights>
+		<cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/" />
+
+		<!--Hjemmeside; 'Web page that provides access to the asset,its releases, distributions and/or additional information. 
+			It is intended to point to a landing page at the original asset provider, not to a page on a site of a third party, such 
+			as a catalogue or repository' -->
+		<dcat:landingPage rdf:resource="https://www.w3.org/TR/owl-time/" ></dcat:landingPage>
+
+		<!-- Infoside; 'documentation that contains information related to the asset' - jeg tænker menneskevendt info, fx grunddata-diagram, 
+			 -->
+		<foaf:page rdf:resource="https://www.w3.org/TR/owl-time/" />
+		<foaf:page rdf:resource="" />
+		<foaf:page rdf:resource="" />
+
+		<!--  Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
+			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
+			se osse http://publications.europa.eu/mdr/resource/authority/data-theme/html/data-theme-dan.html#description
+			http://publications.europa.eu/resource/authority/data-theme/AGRI -->
+		<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/" />
+
+		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
+			og formaliseres i en AP -->
+
+		<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+			http://data.gov.dk/model/concepts/ModelTypes#Model -->
+		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels http://data.gov.dk/model/concepts/ModellingLevels#Genbrug -->
+		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes http://data.gov.dk/model/concepts/ModellingRegimes#International -->
+		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
+		<dadk:businessArea></dadk:businessArea>
+		<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
+		<dadk:businessAreaCode></dadk:businessAreaCode>
+		<!-- INSPIRE tema - bruger https://inspire.ec.europa.eu/theme - skal undersøges om der findes en standardiseret egenskab 
+			og om værdierne er korrekt anvendt... https://inspire.ec.europa.eu/theme/oi -->
+		<dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/" />
+		<!-- kontaktinformation udeladt for nu <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#lrozat"/> 
+			</dc:contributor> <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#pyv"/> </dc:contributor> 
+			<dc:creator> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#bvatant"/> </dc:creator> <dc:publisher> <foaf:Organization 
+			rdf:about="http://dbpedia.org/resource/Mondeca"/> </dc:publisher> -->
+		<!-- pt ingen angivelse af sprog - ADMS bruger dct:LinguisticSystem(label) som er bred; kan indeholde tegnsprog, programmeringssprog 
+			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
+		<!-- distributions - reference til Description elementer i dette doc -->
+		<dcat:distribution rdf:resource="http://www.w3.org/2006/time" />
+		<dcat:distribution rdf:resource="" />
+		<dcat:distribution rdf:resource="" />
+		
+	</rdf:Description>
+
+	
+<!-- INSPIRE Base Schema -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	
+	<rdf:Description rdf:about="https://inspire.ec.europa.eu/schemas/base/3.3/BaseTypes.xsd">
+
+		<!-- dataobjektets typificering: et DCAT:Dataset - som er et som er et ADMS:Asset -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
+		<!-- navn -->
+		<dct:title xml:lang="da">INSPIREs Base-vokabular</dct:title>
+		<dct:title xml:lang="en">INSPIRE Base Vocabulary</dct:title>
+		<!-- beskrivelse -->
+		<dct:description xml:lang="da">
+		</dct:description>
+		<dct:description xml:lang="en">
+		</dct:description>
+
+		<!--EIRA artefakttype - krævet i ADMS se https://joinup.ec.europa.eu/svn/eia/taxonomy/EIRA_SKOS.rdf og 
+		https://joinup.ec.europa.eu/catalogue/distribution/eira_v1_1_0_overviewpdf 
+			der findes DataModel http://data.europa.eu/dr8/DataModel 
+			og Core Data Model http://data.europa.eu/dr8/CoreDataModel - 
+			jeg bruger DataModel til alt andet end kernemodeller og vocabularer 
+			
+			http://data.europa.eu/dr8/CoreDataModel
+			http://data.europa.eu/dr8/DataModel, -->
+		<dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel" />
+
+		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
+		<vann:preferredNamespacePrefix>base</vann:preferredNamespacePrefix>
+		<vann:preferredNamespaceUri>http://inspire.ec.europa.eu/ont/base#</vann:preferredNamespaceUri>
+		<!-- keywords - gerne flere -->
+		<dcat:keyword></dcat:keyword>
+		<dcat:keyword></dcat:keyword>
+		<dcat:keyword></dcat:keyword>
+		<dcat:keyword></dcat:keyword>
+		<!-- giver det mening? det er distributions, som udgives tror jeg -->
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:issued>
+		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
+		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.3.1</owl:versionInfo>
+		<adms:versionNotes xml:lang="da">Bugfix version 3.3.1
+		 - The SpatialDataSet, SpatialDataSetType and SpatialDataSetPropertyType elements are deprecated (in accordance with D2.7 v3.3 Recommendation 11 stating that wfs:FeatureCollection should be used instead)
+		 - The (optional) member element, which was accidentally removed in v3.3(.0), is re-included inside the (deprecated) SpatialDataSet element. 
+		</adms:versionNotes>
+		<!-- Publisher er mandatory i ADMS -->
+		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
+		<dct:publisher rdf:resource="" ></dct:publisher>
+		<!-- rettigheder og licens ikke ADMS-compliant - Her er ADMS lidt bøvlet; tilpasser senere -->
+		<dct:rights></dct:rights>
+		<cc:license rdf:resource="" />
+
+		<!--Hjemmeside; 'Web page that provides access to the asset,its releases, distributions and/or additional information. 
+			It is intended to point to a landing page at the original asset provider, not to a page on a site of a third party, such 
+			as a catalogue or repository' -->
+		<dcat:landingPage rdf:resource="https://inspire.ec.europa.eu/schemas/base/" ></dcat:landingPage>
+
+		<!-- Infoside; 'documentation that contains information related to the asset' - jeg tænker menneskevendt info, fx grunddata-diagram, 
+			 -->
+		<foaf:page rdf:resource="" />
+		<foaf:page rdf:resource="" />
+		<foaf:page rdf:resource="" />
+
+		<!--  Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
+			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
+			se osse http://publications.europa.eu/mdr/resource/authority/data-theme/html/data-theme-dan.html#description
+			http://publications.europa.eu/resource/authority/data-theme/AGRI -->
+		<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/" />
+
+		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
+			og formaliseres i en AP -->
+
+		<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+			http://data.gov.dk/model/concepts/ModelTypes#Model -->
+		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels http://data.gov.dk/model/concepts/ModellingLevels#Genbrug -->
+		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes http://data.gov.dk/model/concepts/ModellingRegimes#International -->
+		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
+		<dadk:businessArea></dadk:businessArea>
+		<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
+		<dadk:businessAreaCode></dadk:businessAreaCode>
+		<!-- INSPIRE tema - bruger https://inspire.ec.europa.eu/theme - skal undersøges om der findes en standardiseret egenskab 
+			og om værdierne er korrekt anvendt... https://inspire.ec.europa.eu/theme/oi -->
+		<dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/" />
+		<!-- kontaktinformation udeladt for nu <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#lrozat"/> 
+			</dc:contributor> <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#pyv"/> </dc:contributor> 
+			<dc:creator> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#bvatant"/> </dc:creator> <dc:publisher> <foaf:Organization 
+			rdf:about="http://dbpedia.org/resource/Mondeca"/> </dc:publisher> -->
+		<!-- pt ingen angivelse af sprog - ADMS bruger dct:LinguisticSystem(label) som er bred; kan indeholde tegnsprog, programmeringssprog 
+			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
+		<!-- distributions - reference til Description elementer i dette doc -->
+		<dcat:distribution rdf:resource="https://inspire.ec.europa.eu/schemas/base/3.3/BaseTypes.xsd" />
+		<dcat:distribution rdf:resource="" />
+		<dcat:distribution rdf:resource="" />
+		
+	</rdf:Description>
+	
+	
+	
+	
+
+<!-- VOAG -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	<rdf:Description rdf:about="http://voag.linkedmodel.org/schema/voag">
+
+	<!-- dataobjektets typificering: et DCAT:Dataset - som er et som er et ADMS:Asset -->
+		
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
+	<!--  navn -->
+		<dct:title xml:lang="da">VOAG</dct:title>
+		<dct:title xml:lang="en">Vocabulary Of Attribution and Governance</dct:title>
+<!--  beskrivelse -->
+		<dct:description xml:lang="da">Vokabular til beskrivelse af licensbetingelser, proveniens, egenskaber og styring ift. en ontologi </dct:description>
+		<dct:description xml:lang="en">VOAG stands for "Vocabulary Of Attribution and Governance". The ontology is intended to specify licensing, attribution, provenance and governance of an ontology. VOAG captures many common license types and their restrictions. Where a license requires attribution, VOAG provides resources that allow the attribution should be made. Provenance is defined in terms of source and pedigree. A miminal model of governance is provided based on how issues, releases and changes are managed. VOAG does not import, but makes uses of some concepts from VOID (http://vocab.deri.ie/void), notably void:Dataset.
+		</dct:description>
+<!--EIRA artefakttype - krævet i ADMS se https://joinup.ec.europa.eu/svn/eia/taxonomy/EIRA_SKOS.rdf og 
+		https://joinup.ec.europa.eu/catalogue/distribution/eira_v1_1_0_overviewpdf 
+			der findes DataModel http://data.europa.eu/dr8/DataModel 
+			og Core Data Model http://data.europa.eu/dr8/CoreDataModel - 
+			jeg bruger DataModel til alt andet end kernemodeller og vocabularer 
+			
+			http://data.europa.eu/dr8/CoreDataModel, 
+			http://data.europa.eu/dr8/DataModel, -->
+		<dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel" />
+<!--  Namespace og Prefix -->
+		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
+		<vann:preferredNamespacePrefix>voag</vann:preferredNamespacePrefix>
+		<vann:preferredNamespaceUri>http://linkedmodel.org/doc/voag</vann:preferredNamespaceUri>
+<!-- keywords - gerne flere -->
+		<dcat:keyword>ontologi</dcat:keyword>
+		<dcat:keyword>proveniens</dcat:keyword>	
+		
+		<!-- giver det mening? det er distributions, som udgives tror jeg -->
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-29</dct:issued>
+		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
+		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+		<adms:versionNotes xml:lang="en"></adms:versionNotes>
+		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+<!-- Publisher er mandatory i ADMS -->
+		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
+		<dct:publisher rdf:resource="http://topquadrant.com/+Ralph Hodgson" />
+<!-- rettigheder og licens ikke ADMS-compliant - Her er ADMS lidt bøvlet; tilpasser senere -->
+		<dct:rights>http://creativecommons.org/licenses/by-sa/3.0/us/</dct:rights>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/1.0/" />
+
+<!--Hjemmeside; 'Web page that provides access to the asset,its releases, distributions and/or additional information. 
+			It is intended to point to a landing page at the original asset provider, not to a page on a site of a third party, such 
+			as a catalogue or repository' 
+			For grunddata: data.gov.dk/model/xmi-sider
+			-->
+		<dcat:landingPage rdf:resource="http://linkedmodel.org/doc/voag/1.0/" />
+
+<!-- Infoside; 'documentation that contains information related to the asset' - jeg tænker menneskevendt info, fx grunddata-diagram, 
+			For grunddata: Registerets side (har ofte ikke modellen) samt data.gov.dk/model/diagram-link
+			-->
+		<foaf:page rdf:resource="" />
+
+<!-- Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
+			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
+			se osse http://publications.europa.eu/mdr/resource/authority/data-theme/html/data-theme-dan.html#description
+			http://publications.europa.eu/resource/authority/data-theme/AGRI -->
+		<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TECH" />
+
+		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
+			og formaliseres i en AP -->
+
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+			
+			Model
+			ConceptModel
+			LogicalModel
+			CoreModel
+			Vocabulary
+			ApplicationModel
+			ApplicationProfile
+			 -->
+		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+<!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
+		 beskrevet i klassifikationen ModellingLevels 
+		 Formidling
+		 Genbrug
+		 Sammenhæng 
+		 -->
+		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
+		FODS
+		Grunddata 
+		International -->
+		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
+		<dadk:businessArea>Tele og internet</dadk:businessArea>
+<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
+		<dadk:businessAreaCode>34.45</dadk:businessAreaCode>
+<!-- INSPIRE tema - bruger https://inspire.ec.europa.eu/theme - skal undersøges om der findes en standardiseret egenskab 
+			og om værdierne er korrekt anvendt... https://inspire.ec.europa.eu/theme/oi -->
+		<dadk:INSPIRETheme rdf:resource="" />
+<!-- kontaktinformation udeladt for nu <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#lrozat"/> 
+			</dc:contributor> <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#pyv"/> </dc:contributor> 
+			<dc:creator> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#bvatant"/> </dc:creator> <dc:publisher> <foaf:Organization 
+			rdf:about="http://dbpedia.org/resource/Mondeca"/> </dc:publisher> -->
+		<!-- pt ingen angivelse af sprog - ADMS bruger dct:LinguisticSystem(label) som er bred; kan indeholde tegnsprog, programmeringssprog 
+			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
+<!-- distributions - reference til Description elementer i dette doc -->
+<!--		<dcat:distribution rdf:resource="" />-->
+	</rdf:Description>
 	
 
 
 
+<!-- DQV -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	<rdf:Description rdf:about="https://www.w3.org/ns/dqv">
+
+	<!-- dataobjektets typificering: et DCAT:Dataset - som er et som er et ADMS:Asset -->
+		
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
+	<!--  navn -->
+		<dct:title xml:lang="da">Vokabular om Datakvalitet</dct:title>
+		<dct:title xml:lang="en">Data Quality Vocabulary</dct:title>
+<!--  beskrivelse -->
+		<dct:description xml:lang="da">Vokabular til beskrivelse af et datasæts kvalitet. Vokabularet levere ikke en komplet definition af kvalitet, men har til formål at fastlægge konsistente rammer for hvordan beskrivende informationer kan tilføjes således at potentielle brugere af et datasæt kan afgøre om et givet datasæt opfylder netop deres behov.
+		</dct:description>
+		<dct:description xml:lang="en">This document provides a framework in which the quality of a dataset can be described, whether by the dataset publisher or by a broader community of users. It does not provide a formal, complete definition of quality, rather, it sets out a consistent means by which information can be provided such that a potential user of a dataset can make his/her own judgment about its fitness for purpose.</dct:description>
+<!--EIRA artefakttype - krævet i ADMS se https://joinup.ec.europa.eu/svn/eia/taxonomy/EIRA_SKOS.rdf og 
+		https://joinup.ec.europa.eu/catalogue/distribution/eira_v1_1_0_overviewpdf 
+			der findes DataModel http://data.europa.eu/dr8/DataModel 
+			og Core Data Model http://data.europa.eu/dr8/CoreDataModel - 
+			jeg bruger DataModel til alt andet end kernemodeller og vocabularer 
+			
+			http://data.europa.eu/dr8/CoreDataModel, 
+			http://data.europa.eu/dr8/DataModel, -->
+		<dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel" />
+<!--  Namespace og Prefix -->
+		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
+		<vann:preferredNamespacePrefix>dqv</vann:preferredNamespacePrefix>
+		<vann:preferredNamespaceUri>https://www.w3.org/ns/dqv</vann:preferredNamespaceUri>
+<!-- keywords - gerne flere -->
+		<dcat:keyword>datakvalitet</dcat:keyword>
+
+		<!-- giver det mening? det er distributions, som udgives tror jeg -->
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-12-15</dct:issued>
+		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
+		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
+		<adms:versionNotes xml:lang="en"></adms:versionNotes>
+		<adms:versionNotes xml:lang="da"></adms:versionNotes>
+<!-- Publisher er mandatory i ADMS -->
+		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
+		<dct:publisher rdf:resource="" />
+<!-- rettigheder og licens ikke ADMS-compliant - Her er ADMS lidt bøvlet; tilpasser senere -->
+		<dct:rights>Copyright © 2016 W3C® (MIT, ERCIM, Keio, Beihang). W3C liability, trademark and document use rules apply. </dct:rights>
+		<cc:license rdf:resource="" />
+
+<!--Hjemmeside; 'Web page that provides access to the asset,its releases, distributions and/or additional information. 
+			It is intended to point to a landing page at the original asset provider, not to a page on a site of a third party, such 
+			as a catalogue or repository' 
+			For grunddata: data.gov.dk/model/xmi-sider
+			-->
+		<dcat:landingPage rdf:resource="https://www.w3.org/TR/vocab-dqv/" />
+
+<!-- Infoside; 'documentation that contains information related to the asset' - jeg tænker menneskevendt info, fx grunddata-diagram, 
+			For grunddata: Registerets side (har ofte ikke modellen) samt data.gov.dk/model/diagram-link
+			-->
+		<foaf:page rdf:resource="https://www.w3.org/TR/vocab-dqv/DataQuality0.2.9.svg" />
+
+<!-- Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
+			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
+			se osse http://publications.europa.eu/mdr/resource/authority/data-theme/html/data-theme-dan.html#description
+			http://publications.europa.eu/resource/authority/data-theme/AGRI -->
+		<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TECH" />
+
+		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
+			og formaliseres i en AP -->
+
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+			
+			Model
+			ConceptModel
+			LogicalModel
+			CoreModel
+			Vocabulary
+			ApplicationModel
+			ApplicationProfile
+			 -->
+		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+<!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
+		 beskrevet i klassifikationen ModellingLevels 
+		 Formidling
+		 Genbrug
+		 Sammenhæng 
+		 -->
+		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
+		FODS
+		Grunddata 
+		International -->
+		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
+		<dadk:businessArea>Tele og internet</dadk:businessArea>
+<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
+		<dadk:businessAreaCode>34.45</dadk:businessAreaCode>
+<!-- INSPIRE tema - bruger https://inspire.ec.europa.eu/theme - skal undersøges om der findes en standardiseret egenskab 
+			og om værdierne er korrekt anvendt... https://inspire.ec.europa.eu/theme/oi -->
+		<dadk:INSPIRETheme rdf:resource="" />
+<!-- kontaktinformation udeladt for nu <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#lrozat"/> 
+			</dc:contributor> <dc:contributor> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#pyv"/> </dc:contributor> 
+			<dc:creator> <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#bvatant"/> </dc:creator> <dc:publisher> <foaf:Organization 
+			rdf:about="http://dbpedia.org/resource/Mondeca"/> </dc:publisher> -->
+		<!-- pt ingen angivelse af sprog - ADMS bruger dct:LinguisticSystem(label) som er bred; kan indeholde tegnsprog, programmeringssprog 
+			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
+<!-- distributions - reference til Description elementer i dette doc -->
+		<dcat:distribution rdf:resource="https://www.w3.org/ns/dqv.rdf" />
+		<dcat:distribution rdf:resource="https://www.w3.org/ns/dqv.ttl" />		
+	</rdf:Description>
+		
+	
+	
+	
+	
 <!-- Udgivelse:BBR 2.1.0 -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -3960,6 +4759,32 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
 		<!-- string her osse - undersøges -->
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2M</schema:fileSize>
+	</rdf:Description>	
+	
+	
+	
+	
+	
+	
+<!-- Udgivelse:BBR 2.1.0 FODS-variant -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	<rdf:Description rdf:about="http://data.gov.dk/model/profile/FODS-variant_2.1.0_Bygninger_og_boliger.xml">
+		<!-- dataobjektets typificering - en DCAT:Distribution, som er en ADMS:AssetDistribution -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution" />
+		<dcat:accessURL rdf:resource="http://data.gov.dk/model/profile/FODS-variant_2.1.0_Bygninger_og_boliger.xml" />
+		<dct:description xml:lang="da">FODS-variant af BBR-modellen</dct:description>
+		<dct:description xml:lang="en"></dct:description>
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-19</dct:issued>
+		<dct:title xml:lang="da">BBR FODS-variant 2.1.0 XMI</dct:title>
+		<dct:title xml:lang="en">BBR FODS-variant 2.1.0 XMI</dct:title>
+
+		<dct:license rdf:resource="" />
+		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
+			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
+		<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
+		<!-- string her osse - undersøges -->
+		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.1M</schema:fileSize>
 	</rdf:Description>
 	
 <!-- Udgivelse: CVR 1.0.0 -->
@@ -3982,6 +4807,27 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- string her osse - undersøges -->
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">815K</schema:fileSize>
 	</rdf:Description>
+	
+<!-- Udgivelse: CVR 1.0.0 FODS-variant -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	<rdf:Description rdf:about="http://data.gov.dk/model/profile/FODS-variant_1.0.0_CentraleVirksomhedregister.xml">
+		<!-- dataobjektets typificering - en DCAT:Distribution, som er en ADMS:AssetDistribution -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution" />
+		<dcat:accessURL rdf:resource="http://data.gov.dk/model/profile/FODS-variant_1.0.0_CentraleVirksomhedregister.xml" />
+		<dct:description xml:lang="da">FODS-variant af CVR-modellen i XMI-format</dct:description>
+		<dct:description xml:lang="en"></dct:description>
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-19</dct:issued>
+		<dct:title xml:lang="da">CVR FODS-variant 1.0.0 XMI</dct:title>
+		<dct:title xml:lang="en">CVR FODS-variant 1.0.0 XMI</dct:title>
+
+		<dct:license rdf:resource="" />
+		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
+			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
+		<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
+		<!-- string her osse - undersøges -->
+		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.7M</schema:fileSize>
+	</rdf:Description>
 
 <!-- Udgivelse: DAGI 1.0.1 -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4002,6 +4848,27 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
 		<!-- string her osse - undersøges -->
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">516K</schema:fileSize>
+	</rdf:Description>
+	
+	<!-- Udgivelse: DAGI 1.0.1 FODS-variant -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	<rdf:Description rdf:about="http://data.gov.dk/model/profile/FODS-variant_1.0.1_DAGI.xml">
+		<!-- dataobjektets typificering - en DCAT:Distribution, som er en ADMS:AssetDistribution -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution" />
+		<dcat:accessURL rdf:resource="http://data.gov.dk/model/profile/FODS-variant_1.0.1_DAGI.xml" />
+		<dct:description xml:lang="da">FODS-variant af DAGI-modellen i XMI-format</dct:description>
+		<dct:description xml:lang="en"></dct:description>
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-19</dct:issued>
+		<dct:title xml:lang="da">DAGI FODS-variant 1.0.0 XMI</dct:title>
+		<dct:title xml:lang="en">DAGI FODS-variant1.0.0 XMI</dct:title>
+
+		<dct:license rdf:resource="" />
+		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
+			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
+		<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
+		<!-- string her osse - undersøges -->
+		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.1M</schema:fileSize>
 	</rdf:Description>
 	
 <!-- Udgivelse: DAR 2.0.0 -->
@@ -4031,7 +4898,35 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">556K</schema:fileSize>
 	</rdf:Description>
 	
-<!-- Udgivelse: Ejendomsbeliggehnedsregisteret 1.3.0 -->
+		
+	<!-- Udgivelse: DAR 2.0.0 FODS-variant -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	<rdf:Description rdf:about="http://data.gov.dk/model/profile/FODS-variant_2.0.0_Danmarks_adresser.xml">
+		<!-- dataobjektets typificering - en DCAT:Distribution, som er en ADMS:AssetDistribution -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution" />
+<!-- Access ULR -->
+		<dcat:accessURL rdf:resource="http://data.gov.dk/model/profile/FODS-variant_2.0.0_Danmarks_adresser.xml" />
+<!-- Beskrivelse -->
+		<dct:description xml:lang="da">FODS-variant af DAR-modellen i XMI-format</dct:description>
+		<dct:description xml:lang="en"></dct:description>
+<!-- Udgivelsesdato -->
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-19</dct:issued>
+<!-- Navn -->		
+		<dct:title xml:lang="da">DAR FODS-variant 2.0.0 XMI</dct:title>
+		<dct:title xml:lang="en">DAR FODS-variant 2.0.0 XMI</dct:title>
+<!-- licens  -->
+		<dct:license rdf:resource="" />
+		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
+			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
+<!-- Format -->		
+		<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
+		<!-- string her osse - undersøges -->
+<!-- Størrelse -->
+		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">924K</schema:fileSize>
+	</rdf:Description>
+	
+<!-- Udgivelse: Ejendomsbeliggenhedsregisteret 1.3.0 -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 	<rdf:Description rdf:about="http://data.gov.dk/model/xmi/Domaenemodeller/Ejendomsbeliggenhed/1.3.0_Ejendomsbeliggenhed.xml">
@@ -4058,19 +4953,46 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">199K</schema:fileSize>
 	</rdf:Description>
 	
-	<!-- Udgivelse: Ejendomsvurdering 1.0.0 -->
+<!-- Udgivelse: Ejendomsbeliggenhedsregisteret 1.3.0 FODS-variant -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-	<rdf:Description rdf:about="http://data.gov.dk/model/xmi/Domaenemodeller/Ejendomsvurdering/1.0.0_Ejendomsvurdering.xmi">
+	<rdf:Description rdf:about="http://data.gov.dk/model/profile/FODS-variant_1.3.0_Ejendomsbeliggenhed.xml">
 		<!-- dataobjektets typificering - en DCAT:Distribution, som er en ADMS:AssetDistribution -->
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution" />
 <!-- Access ULR -->
-		<dcat:accessURL rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/Ejendomsvurdering/1.0.0_Ejendomsvurdering.xmi" />
+		<dcat:accessURL rdf:resource="http://data.gov.dk/model/profile/FODS-variant_1.3.0_Ejendomsbeliggenhed.xml" />
+<!-- Beskrivelse -->
+		<dct:description xml:lang="da">FODS-variant af Ejendomsbeliggenhedsregister-modellen i XMI-format</dct:description>
+		<dct:description xml:lang="en"></dct:description>
+<!-- Udgivelsesdato -->
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-19</dct:issued>
+<!-- Navn -->		
+		<dct:title xml:lang="da">Ejendomsbeliggenhed FODS-variant 1.3.0 XMI</dct:title>
+		<dct:title xml:lang="en">Ejendomsbeliggenhed FODS-variant 1.3.0 XMI</dct:title>
+<!-- licens  -->
+		<dct:license rdf:resource="" />
+		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
+			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
+<!-- Format -->		
+		<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
+		<!-- string her osse - undersøges -->
+<!-- Størrelse -->
+		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">458K</schema:fileSize>
+	</rdf:Description>
+	
+	<!-- Udgivelse: Ejendomsvurdering 1.0.0 -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	<rdf:Description rdf:about="http://data.gov.dk/model/profile/FODS-variant_1.0.0_Ejendomsvurdering.xml">
+		<!-- dataobjektets typificering - en DCAT:Distribution, som er en ADMS:AssetDistribution -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution" />
+<!-- Access ULR -->
+		<dcat:accessURL rdf:resource="http://data.gov.dk/model/profile/FODS-variant_1.0.0_Ejendomsvurdering.xml" />
 <!-- Beskrivelse -->
 		<dct:description xml:lang="da">Ejendomsvurderingsmodellen i XMI-format</dct:description>
 		<dct:description xml:lang="en"></dct:description>
 <!-- Udgivelsesdato -->
-		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-7-24</dct:issued>
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-19</dct:issued>
 <!-- Navn -->		
 		<dct:title xml:lang="da">Ejendomsvurdering 1.0.0 XMI</dct:title>
 		<dct:title xml:lang="en">Ejendomsvurdering 1.0.0 XMI</dct:title>
@@ -4113,8 +5035,35 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">779.5K</schema:fileSize>
 	</rdf:Description>	
 	
+<!-- Udgivelse: Ejerfortegnelsen 1.3.0 FODS-variant -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	<rdf:Description rdf:about="http://data.gov.dk/model/profile/FODS-variant_1.3.0_Ejerfortegnelsen.xml">
+		<!-- dataobjektets typificering - en DCAT:Distribution, som er en ADMS:AssetDistribution -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution" />
+<!-- Access ULR -->
+		<dcat:accessURL rdf:resource="http://data.gov.dk/model/profile/FODS-variant_1.3.0_Ejerfortegnelsen.xml" />
+<!-- Beskrivelse -->
+		<dct:description xml:lang="da">FODS-variant af Ejerfortegnelsen i XMI-format</dct:description>
+		<dct:description xml:lang="en"></dct:description>
+<!-- Udgivelsesdato -->
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-19</dct:issued>
+<!-- Navn -->		
+		<dct:title xml:lang="da">Ejerfortegnelsen FODS-variant 1.3.0 XMI</dct:title>
+		<dct:title xml:lang="en">Ejerfortegnelsen FODS-variant 1.3.0 XMI</dct:title>
+<!-- licens  -->
+		<dct:license rdf:resource="" />
+		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
+			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
+<!-- Format -->		
+		<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
+		<!-- string her osse - undersøges -->
+<!-- Størrelse -->
+		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.8M</schema:fileSize>
+	</rdf:Description>	
+	
 
-<!-- Udgivelse: GeoDanmark 1.3.0 -->
+<!-- Udgivelse: GeoDanmark 2.0.0 -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 	<rdf:Description rdf:about="http://data.gov.dk/model/xmi/Domaenemodeller/GeoDanmark/2.0.0_GeoDanmark.xml">
@@ -4128,8 +5077,8 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 <!-- Udgivelsesdato -->
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-8-15</dct:issued>
 <!-- Navn -->		
-		<dct:title xml:lang="da">GeoDanmark 1.3.0 XMI</dct:title>
-		<dct:title xml:lang="en">GeoDanmark 1.3.0 XMI</dct:title>
+		<dct:title xml:lang="da">GeoDanmark 2.0.0 XMI</dct:title>
+		<dct:title xml:lang="en">GeoDanmark 2.0.0 XMI</dct:title>
 <!-- licens  -->
 		<dct:license rdf:resource="" />
 		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
@@ -4141,6 +5090,33 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.6MB</schema:fileSize>
 	</rdf:Description>	
 	
+	
+<!-- Udgivelse: GeoDanmark 2.0.0 FODS-variant -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	<rdf:Description rdf:about="http://data.gov.dk/model/profile/FODS-variant_2.0.0_GeoDanmark.xml">
+		<!-- dataobjektets typificering - en DCAT:Distribution, som er en ADMS:AssetDistribution -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution" />
+<!-- Access ULR -->
+		<dcat:accessURL rdf:resource="http://data.gov.dk/model/profile/FODS-variant_2.0.0_GeoDanmark.xml" />
+<!-- Beskrivelse -->
+		<dct:description xml:lang="da">FODS-variant GeoDanmarks model i XMI-format</dct:description>
+		<dct:description xml:lang="en"></dct:description>
+<!-- Udgivelsesdato -->
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-19</dct:issued>
+<!-- Navn -->		
+		<dct:title xml:lang="da">GeoDanmark FODS-variant 2.0.0 XMI</dct:title>
+		<dct:title xml:lang="en">GeoDanmark 2.0.0 XMI</dct:title>
+<!-- licens  -->
+		<dct:license rdf:resource="" />
+		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
+			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
+<!-- Format -->		
+		<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
+		<!-- string her osse - undersøges -->
+<!-- Størrelse -->
+		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.1MB</schema:fileSize>
+	</rdf:Description>		
 
 <!-- Udgivelse: Matrikel 1.2.3 -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4167,6 +5143,33 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- string her osse - undersøges -->
 <!-- Størrelse -->
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.8MB</schema:fileSize>
+	</rdf:Description>	
+	
+<!-- Udgivelse: Matrikel 1.2.3 FODS-variant -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	<rdf:Description rdf:about="http://data.gov.dk/model/profile/FODS-variant_1.2.3_Matrikel.xml">
+		<!-- dataobjektets typificering - en DCAT:Distribution, som er en ADMS:AssetDistribution -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution" />
+<!-- Access ULR -->
+		<dcat:accessURL rdf:resource="http://data.gov.dk/model/profile/FODS-variant_1.2.3_Matrikel.xml" />
+<!-- Beskrivelse -->
+		<dct:description xml:lang="da">FODS-variant af Matrikel-modellen i XMI-format</dct:description>
+		<dct:description xml:lang="en"></dct:description>
+<!-- Udgivelsesdato -->
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-19</dct:issued>
+<!-- Navn -->		
+		<dct:title xml:lang="da">Matrikel FODS-variant 1.2.3 XMI</dct:title>
+		<dct:title xml:lang="en">Matrikel FODS-variant 1.2.3 XMI</dct:title>
+<!-- licens  -->
+		<dct:license rdf:resource="" />
+		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
+			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
+<!-- Format -->		
+		<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
+		<!-- string her osse - undersøges -->
+<!-- Størrelse -->
+		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.4MB</schema:fileSize>
 	</rdf:Description>	
 	
 
@@ -4198,6 +5201,33 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.5MB</schema:fileSize>
 	</rdf:Description>
 	
+<!-- Udgivelse: Person 1.2.0 FODS-variant -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	<rdf:Description rdf:about="http://data.gov.dk/model/profile/FODS-variant_1.2.0_Person.xml">
+		<!-- dataobjektets typificering - en DCAT:Distribution, som er en ADMS:AssetDistribution -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution" />
+<!-- Access ULR -->
+		<dcat:accessURL rdf:resource="http://data.gov.dk/model/profile/FODS-variant_1.2.0_Person.xml" />
+<!-- Beskrivelse -->
+		<dct:description xml:lang="da">FODS-variant af Personregistreringsmodellen i XMI-format</dct:description>
+		<dct:description xml:lang="en"></dct:description>
+<!-- Udgivelsesdato -->
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-19</dct:issued>
+<!-- Navn -->		
+		<dct:title xml:lang="da">Person FODS-variant 1.2.0 XMI</dct:title>
+		<dct:title xml:lang="en">Person FODS-variant 1.2.0 XMI</dct:title>
+<!-- licens  -->
+		<dct:license rdf:resource="" />
+		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
+			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
+<!-- Format -->		
+		<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
+		<!-- string her osse - undersøges -->
+<!-- Størrelse -->
+		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.2MB</schema:fileSize>
+	</rdf:Description>
+	
 
 <!-- Udgivelse: Stednavne 1.0.0 -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4224,6 +5254,60 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- string her osse - undersøges -->
 <!-- Størrelse -->
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.6MB</schema:fileSize>
+	</rdf:Description>
+	
+<!-- Udgivelse: Stednavne 1.0.0 FODS-variant -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	<rdf:Description rdf:about="http://data.gov.dk/model/profile/FODS-variant_1.0.0_Stednavne.xml">
+		<!-- dataobjektets typificering - en DCAT:Distribution, som er en ADMS:AssetDistribution -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution" />
+<!-- Access ULR -->
+		<dcat:accessURL rdf:resource="http://data.gov.dk/model/profile/FODS-variant_1.0.0_Stednavne.xml" />
+<!-- Beskrivelse -->
+		<dct:description xml:lang="da">FODS-variant af Stednavnsmodellen i XMI-format</dct:description>
+		<dct:description xml:lang="en"></dct:description>
+<!-- Udgivelsesdato -->
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-19</dct:issued>
+<!-- Navn -->		
+		<dct:title xml:lang="da">Stednavne FODS-variant 1.0.0 XMI</dct:title>
+		<dct:title xml:lang="en">Stednavne FODS-variant 1.0.0 XMI</dct:title>
+<!-- licens  -->
+		<dct:license rdf:resource="" />
+		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
+			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
+<!-- Format -->		
+		<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
+		<!-- string her osse - undersøges -->
+<!-- Størrelse -->
+		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.2MB</schema:fileSize>
+	</rdf:Description>
+	
+<!-- Udgivelse: Grunddatamodellen FODS-variant -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	<rdf:Description rdf:about="http://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap">
+		<!-- dataobjektets typificering - en DCAT:Distribution, som er en ADMS:AssetDistribution -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution" />
+<!-- Access ULR -->
+		<dcat:accessURL rdf:resource="http://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap" />
+<!-- Beskrivelse -->
+		<dct:description xml:lang="da">FODS-variant af Grunddatamodellen som projektfil til Sparx EA</dct:description>
+		<dct:description xml:lang="en"></dct:description>
+<!-- Udgivelsesdato -->
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-19</dct:issued>
+<!-- Navn -->		
+		<dct:title xml:lang="da">FODS-variant af Grunddatamodellen som EAP</dct:title>
+		<dct:title xml:lang="en"></dct:title>
+<!-- licens  -->
+		<dct:license rdf:resource="" />
+		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
+			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
+<!-- Format -->		
+		<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EAP</dct:format>
+		<!-- string her osse - undersøges -->
+<!-- Størrelse -->
+		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100MB</schema:fileSize>
 	</rdf:Description>
 	
 
@@ -4915,7 +5999,171 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 <!-- Størrelse -->
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></schema:fileSize>
 	</rdf:Description>
+	
+<!-- Udgivelse: XML Schema Datatyper -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	<rdf:Description rdf:about="https://www.w3.org/2001/05/datatypes.xsd">
+		<!-- dataobjektets typificering - en DCAT:Distribution, som er en ADMS:AssetDistribution -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution" />
+<!-- Access ULR -->
+		<dcat:accessURL rdf:resource="https://www.w3.org/2001/05/datatypes.xsd" />
+<!-- Beskrivelse -->
+		<dct:description xml:lang="da"></dct:description>
+		<dct:description xml:lang="en">XML Schema Datatypes (XSD)</dct:description>
+<!-- Udgivelsesdato -->
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-05-02</dct:issued>
+<!-- Navn -->		
+		<dct:title xml:lang="da"></dct:title>
+		<dct:title xml:lang="en">XML Schema Datatypes (XSD</dct:title>
+<!-- licens  -->
+		<dct:license rdf:resource="" />
+		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
+			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
+<!-- Format -->		
+		<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XSD/XML</dct:format>
+		<!-- string her osse - undersøges -->
+<!-- Størrelse -->
+		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4KB</schema:fileSize>
+	</rdf:Description>
+	
+<!-- Udgivelse: GML 3.2.1-->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	<rdf:Description rdf:about="http://schemas.opengis.net/gml/3.2.1/gml_32_geometries.rdf">
+		<!-- dataobjektets typificering - en DCAT:Distribution, som er en ADMS:AssetDistribution -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution" />
+<!-- Access ULR -->
+		<dcat:accessURL rdf:resource="http://schemas.opengis.net/gml/3.2.1/gml_32_geometries.rdf" />
+<!-- Beskrivelse -->
+		<dct:description xml:lang="da"></dct:description>
+		<dct:description xml:lang="en">GMLOWL</dct:description>
+<!-- Udgivelsesdato -->
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:issued>
+<!-- Navn -->		
+		<dct:title xml:lang="da"></dct:title>
+		<dct:title xml:lang="en">GMLOWL 3.2.1 RDF</dct:title>
+<!-- licens  -->
+		<dct:license rdf:resource="" />
+		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
+			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
+<!-- Format -->		
+		<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF/XML</dct:format>
+		<!-- string her osse - undersøges -->
+<!-- Størrelse -->
+		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></schema:fileSize>
+	</rdf:Description>
+	
+<!-- Udgivelse: Base Vocabulary -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	<rdf:Description rdf:about="https://inspire.ec.europa.eu/schemas/base/3.3/BaseTypes.xsd">
+		<!-- dataobjektets typificering - en DCAT:Distribution, som er en ADMS:AssetDistribution -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution" />
+<!-- Access ULR -->
+		<dcat:accessURL rdf:resource="https://inspire.ec.europa.eu/schemas/base/3.3/BaseTypes.xsd" />
+<!-- Beskrivelse -->
+		<dct:description xml:lang="da"></dct:description>
+		<dct:description xml:lang="en">INSPIRE base vocabulary</dct:description>
+<!-- Udgivelsesdato -->
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:issued>
+<!-- Navn -->		
+		<dct:title xml:lang="da"></dct:title>
+		<dct:title xml:lang="en">Base 3.3.1 </dct:title>
+<!-- licens  -->
+		<dct:license rdf:resource="" />
+		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
+			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
+<!-- Format -->		
+		<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xsd/xml</dct:format>
+		<!-- string her osse - undersøges -->
+<!-- Størrelse -->
+		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></schema:fileSize>
+	</rdf:Description>
+	
+<!-- Udgivelse: Owl Time Ontology-->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	<rdf:Description rdf:about="http://www.w3.org/2006/time">
+		<!-- dataobjektets typificering - en DCAT:Distribution, som er en ADMS:AssetDistribution -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution" />
+<!-- Access ULR -->
+		<dcat:accessURL rdf:resource="http://www.w3.org/2006/time" />
+<!-- Beskrivelse -->
+		<dct:description xml:lang="da"></dct:description>
+		<dct:description xml:lang="en">Time Ontology in OWL</dct:description>
+<!-- Udgivelsesdato -->
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:issued>
+<!-- Navn -->		
+		<dct:title xml:lang="da"></dct:title>
+		<dct:title xml:lang="en">Time Ontology in OWL</dct:title>
+<!-- licens  -->
+		<dct:license rdf:resource="http://creativecommons.org/licenses/by/1.0/" />
+		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
+			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
+<!-- Format -->		
+		<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rdf</dct:format>
+		<!-- string her osse - undersøges -->
+<!-- Størrelse -->
+		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">61K</schema:fileSize>
+	</rdf:Description>
 
+
+
+<!-- Udgivelse: DQV RDF/XML -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	<rdf:Description rdf:about="https://www.w3.org/ns/dqv.rdf">
+		<!-- dataobjektets typificering - en DCAT:Distribution, som er en ADMS:AssetDistribution -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution" />
+<!-- Access ULR -->
+		<dcat:accessURL rdf:resource="https://www.w3.org/ns/dqv.rdf" />
+<!-- Beskrivelse -->
+		<dct:description xml:lang="da"></dct:description>
+		<dct:description xml:lang="en">Data Quality Vocabulary in RDF-format</dct:description>
+<!-- Udgivelsesdato -->
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:issued>
+<!-- Navn -->		
+		<dct:title xml:lang="da"></dct:title>
+		<dct:title xml:lang="en">DQV RDF/XML</dct:title>
+<!-- licens  -->
+		<dct:license rdf:resource="http://creativecommons.org/licenses/by/1.0/" />
+		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
+			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
+<!-- Format -->		
+		<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
+		<!-- string her osse - undersøges -->
+<!-- Størrelse -->
+		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></schema:fileSize>
+	</rdf:Description>
+	
+
+<!-- Udgivelse: DQV TTL -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+	<rdf:Description rdf:about="https://www.w3.org/ns/dqv.ttl">
+		<!-- dataobjektets typificering - en DCAT:Distribution, som er en ADMS:AssetDistribution -->
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution" />
+<!-- Access ULR -->
+		<dcat:accessURL rdf:resource="https://www.w3.org/ns/dqv.rdf" />
+<!-- Beskrivelse -->
+		<dct:description xml:lang="da"></dct:description>
+		<dct:description xml:lang="en">Data Quality Vocabulary in Turtle format</dct:description>
+<!-- Udgivelsesdato -->
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:issued>
+<!-- Navn -->		
+		<dct:title xml:lang="da"></dct:title>
+		<dct:title xml:lang="en">DQV TTL</dct:title>
+<!-- licens  -->
+		<dct:license rdf:resource="http://creativecommons.org/licenses/by/1.0/" />
+		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
+			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
+<!-- Format -->		
+		<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
+		<!-- string her osse - undersøges -->
+<!-- Størrelse -->
+		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></schema:fileSize>
+	</rdf:Description>	
 	
 
 </rdf:RDF>

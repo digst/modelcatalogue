@@ -1,7 +1,5 @@
 <?php
 
-$filterpath = "";
-
 if(isset($_POST['xsl'])){
     $filterpath = $_POST['xsl'];
 }

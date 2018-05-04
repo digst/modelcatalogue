@@ -1,14 +1,6 @@
 var config = [
 
 	{
-		klassifikationsfil: "ModellingRegimes.rdf.xml",
-		topicNameLocator:"description[lang='da'],dct\\:description[xml\\:lang='da']",
-		prefix: "dadk",
-		tag:"modellingRegime",
-		splitLocation: "/ModellingRegimes#",
-		kasseoverskrift: "Modelleringsregime",
-		boxflex: "ned"
-	},			{
 		klassifikationsfil:"ModelTypes.rdf.xml",
 		topicNameLocator:"description[lang='da'],dct\\:description[xml\\:lang='da']",
 		prefix: "dadk",
@@ -16,10 +8,18 @@ var config = [
 		splitLocation: "/ModelTypes#",
 		kasseoverskrift: "Modeltype",
 		boxflex: "ned"
-	},	{
+	},			{	
 		prefix: "dadk",
 		tag:"businessArea",
 		kasseoverskrift: "FORMområde",
+		boxflex: "ned"
+	},			{	
+		klassifikationsfil: "ModellingRegimes.rdf.xml",
+		topicNameLocator:"description[lang='da'],dct\\:description[xml\\:lang='da']",
+		prefix: "dadk",
+		tag:"modellingRegime",
+		splitLocation: "/ModellingRegimes#",
+		kasseoverskrift: "Modelleringsregime",
 		boxflex: "ned"
 	},			{
 		klassifikationsfil:"ModellingLevels.rdf.xml",

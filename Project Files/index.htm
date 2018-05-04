@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"> 
 <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
-<title>Modelkataloget</title>
+<title>Modelkataloget BETA</title>
 	<script src="jquery-3.2.1.js" type="text/javascript" language="JavaScript"></script>
 	<script src="modelkatalog.js" type="text/javascript" language="JavaScript"></script>
 	<script src="config.js" type="text/javascript" language="JavaScript"></script>
@@ -20,12 +20,17 @@
 
 </div>
 
+<h2><p style="color: #ffffff; background-color: #ff0000">
+BETAVERSION - Denne side er under udvikling </p>
+</h2>
 
 <div class="bar">
-	<div class="barmenu">Søg efter modeller</div>
-	<div class="barmenu">Søg efter modelelementer </div>
-	<div class="barmenu">Registrer en model</div>
+	<div class="barmenu"><a class="buttonlink" href="" title="Gå til forsiden">Søg efter modeller (gå til forsiden)</a></div>
+	<div class="barmenu"><a class="buttonlink" href="" title="Kommer snart">Søg efter modelelementer (kommer snart)</a></div>
+	<div class="barmenu"><a class="buttonlink" href="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering/modelkatalog" title="Læs om modelkataloget på hjemmesiden for Fællesoffentlig Digital Arkitektur (FDA)">Om modelkataloget</a></div>
 </div>
+
+
 
 <div>
 	<h1>Velkommen til det fællesoffentlige katalog over begrebs- og datamodeller</h1>
@@ -34,7 +39,7 @@
 <div class="row">
 
 <div id="introtekst" >
-  <p>Her finder du en oversigt over begrebs- og datamodeller udarbejdet i offentligt regi og som er registret med henblik på videndeling og genbrug. Derudover indeholder dette katalog også oplysninger om en række anderkendte  internationale modeller som kan have en bred anvendelse i dansk administrativ og fællesoffentlig kontekst. Anvendelse af Modelreglerne og genbrug af modeller og data gør os i stand til at skabe en fællesoffentlig dataarkitektur og et fælles datagrundlag, hvor vi kan anvende hinandens modeller og de data, de dokumenterer. </p> <p>Del og genbrug nu!</p>
+  <p>Her finder du en oversigt over begrebs- og datamodeller udarbejdet i offentligt regi og som er registret med henblik på videndeling og genbrug. Derudover indeholder dette katalog også oplysninger om en række anerkendte  internationale modeller som kan have en bred anvendelse i dansk administrativ og fællesoffentlig kontekst. Anvendelse af Modelreglerne og genbrug af modeller og data gør os i stand til at skabe en fællesoffentlig dataarkitektur og et fælles datagrundlag, hvor vi kan anvende hinandens modeller og de data, de dokumenterer. </p> <p>Del og genbrug nu!</p>
 
   <div class="searchinput"><h3>Søg efter modeller</h3>
 		<form method="post" onsubmit="searchClick(document.getElementById('searchField').value); return false;">
@@ -51,30 +56,12 @@
 
 <div class="col-3 right">
 
-	<div class="overkasse" title="">Filterindstillinger
-		<div class="knap" onclick="resetFilter()">Nulstil filter</div>
-	</div>
 
+<!--	<div class="overkasse" title="">Filterindstillinger</div>-->
+<div class="knap" onclick="resetFilter()">Klik her for at nulstille filtreringen</div>
 	<div id="knapdiv">
 		<div id="filtreret"></div>
-	</div>
-<!--
-
-	<hr/>	
-	
-		<div class="menu">
-		<h2>Modelregel-modeltype:</h2>
-		  <ul>
-			<li>begrebsmodel</li>
-			<li>kernemodel</li>
-			<li>vokabular</li>
-			<li>anvendelsesmodel</li>
-			<li>anvendelsesprofil</li>
-		  </ul>
-		</div>
-	<p id="mTyper" class="knapkasse"></p>
--->
-	
+	</div>	
 </div>
 
 </div>
