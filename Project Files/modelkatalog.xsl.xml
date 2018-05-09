@@ -41,7 +41,7 @@ xmlns:schema="http://schema.org/">
 	    <BODY><xsl:for-each select="//rdf:type[@rdf:resource='http://www.w3.org/ns/dcat#Dataset' ]/..">
 	    
 	    		
-		    	  	<div class="enmodel"><h2><xsl:if test="vann:preferredNamespacePrefix != ''"><xsl:value-of select="vann:preferredNamespacePrefix"/>:</xsl:if>
+		    	  	<div class="enmodel outer"><h2><xsl:if test="vann:preferredNamespacePrefix != ''"><xsl:value-of select="vann:preferredNamespacePrefix"/>:</xsl:if>
 			  <xsl:for-each select="dct:title[@xml:lang='da']"> 
 			    	  			<xsl:value-of select="."/>&#160;
 			    	  	</xsl:for-each> 
@@ -134,7 +134,7 @@ xmlns:schema="http://schema.org/">
 				    	  	 </xsl:if>
 				    	</xsl:for-each> 
 -->
-
+<!--
 						<xsl:for-each select="dcat:distribution"> 
 							<xsl:if test="@rdf:resource != ''"> 
 								<xsl:variable name="distribution">
@@ -142,7 +142,8 @@ xmlns:schema="http://schema.org/">
 								</xsl:variable> 
 			    	  	  		<tr><td>Udgivelse:</td><td><a href="{$distribution}" target="_blank"> <xsl:value-of select="$distribution"/></a></td></tr>
 			    	  	 	</xsl:if>
-			    	  	 </xsl:for-each>				    	  	 	
+			    	  	 </xsl:for-each>	
+						   -->			    	  	 	
 
 		    	  	<!-- 
 
@@ -332,7 +333,8 @@ xmlns:schema="http://schema.org/">
 
 								<!--Distibution URL-->
 								<xsl:if test="$distURL != ''">
-									<tr><td>Download:</td><td> <xsl:value-of select="$distURL"/></td></tr>
+									<span id="distURL"><tr><td>Download:</td><td> <a href="{$distURL}" target="_blank"><xsl:value-of select="$distURL"/></a></td></tr></span>
+									<tr><td>Se</td><td> <a href="/t/trans.htm?model={$distRef}&amp;style=htmltransform.xsl" target="_blank"><xsl:value-of select="$distURL"/></a></td></tr>
 								</xsl:if>
 
 								<!--Distibution type-->

@@ -32,11 +32,11 @@
 					//indsæt filter i stylesheet
 					
 					if (filterpath ) {$(xsl).find('BODY')[0].firstChild.attributes[0].value = "//rdf:Description[(" + filterpath + ")]";}							
-					xsltProcessor = new XSLTProcessor();
+					
 					console.log ($(xsl).find('BODY')[0].firstChild)
 					console.log ($(xsl).find('BODY')[0].firstChild.attributes[0].value)
 					console.log (filterpath)
-					xsltProcessor.importStylesheet(xsl);
+					
 					//Server side xslt processing
 					var json = JSON.stringify(xsl, null, 2)
 					var resultFragment = $.post("xmlParser.php", {xsl: filterpath}, 
@@ -271,29 +271,22 @@ function searchClick(query){
 		//Please enter search query
 	}else
 	{
-		$('.klapmodel').each(function(){ // For each element
+		$('.outer').each(function(){ // For each element
 			
 			var regex = new RegExp("(" + query+ ")")
 			
 			var toRemove = $(this).filter(function () {
 				if(!regex.test($(this).text()))
 				{
-					$(this).hide(); // if it is empty, it removes it
+					$(this).hide(); // if it is empty, remove it
 					$(this).addClass("hidden");
 				}else
 				{
 					input = $(this).html();
 					matches = input.match(regex);
 					//console.log(matches);
-
-
-					for (i = 0; i < matches.length; i++) {
-						//console.log(`Found ${matches[i]} at ${matches.index}`);
-						//console.log($(this).html(txt))
-						var txt = matches.input.slice(0, matches.index) + "<span class=\"red\">"+ query +"</span>" + matches.input.slice(matches.index + query.length)
-						//console.log($(this).html(txt))
-						$(this).html(txt);
-					}			
+					
+					$(this).mark(query);
 
 					//Recreate arrows
 					$('.pilopned').each(function(){
