@@ -267,6 +267,7 @@ displayResult(nodePath);
 //Triggers on search button click. Goes through all elements of the DOM that has the class ".klapmodel" 
 //and checks for a substring containing the search query
 function searchClick(query){
+	resetSearch();
 	if(query == ""){
 		//Please enter search query
 	}else
@@ -308,9 +309,11 @@ function resetSearch()
 			$(this).removeClass("hidden");
 		}
 
-		test = $(this).find("span").removeClass("red");
+		mark = ($(this).find("mark")).unmark();
 	})
+}
 
+function clearSearchField(){
 	document.getElementById('searchField').value = "";
 }
 

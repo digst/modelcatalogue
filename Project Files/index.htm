@@ -47,7 +47,7 @@ BETAVERSION - Denne side er under udvikling </p>
 		<form method="post" onsubmit="searchClick(document.getElementById('searchField').value); return false;">
 			<input id="searchField" type="search" value="" placeholder="Indtast søgeord">
 			<input type="button" value="Søg" onclick="searchClick(document.getElementById('searchField').value)">
-			<input type="button" value="Nulstil søgning" onclick="resetSearch()">
+			<input type="button" value="Nulstil søgning" onclick="resetSearch(); clearSearchField();">
 		</form>
 	</div>
 
