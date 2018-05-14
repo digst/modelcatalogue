@@ -512,7 +512,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<adms:versionNotes xml:lang="da">Se  http://data.gov.dk/model/xmi/Domaenemodeller/Ejendomsbeliggenhed/Ejendomsbeliggenhed%20%C3%A6ndringer%201.1.0%20-%201.3.0.pdf		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
-		<dct:publisher rdf:resource="Styrelsen for Dataforsyning og Effektivisering" />
+		<dct:publisher rdf:resource="Geodatastyrelsen" />
 <!-- rettigheder og licens ikke ADMS-compliant - Her er ADMS lidt bøvlet; tilpasser senere -->
 		<dct:rights></dct:rights>
 		<cc:license rdf:resource="" />
@@ -736,7 +736,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
-		<dct:publisher rdf:resource="Styrelsen for Dataforsyning og Effektivisering" />
+		<dct:publisher rdf:resource="Geodatastyrelsen" />
 <!-- rettigheder og licens ikke ADMS-compliant - Her er ADMS lidt bøvlet; tilpasser senere -->
 		<dct:rights></dct:rights>
 		<cc:license rdf:resource="" />
