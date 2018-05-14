@@ -32,12 +32,15 @@
 					//indsæt filter i stylesheet
 					
 					if (filterpath ) {$(xsl).find('BODY')[0].firstChild.attributes[0].value = "//rdf:Description[(" + filterpath + ")]";}							
-					xsltProcessor = new XSLTProcessor();
-					//  console.log ($(xsl).find('BODY')[0].firstChild)
-					xsltProcessor.importStylesheet(xsl);
+					
+					console.log ($(xsl).find('BODY')[0].firstChild)
+					console.log ($(xsl).find('BODY')[0].firstChild.attributes[0].value)
+					console.log (filterpath)
+					
 					//Server side xslt processing
-					var resultFragment = $.post("xmlParser.php", 
-					function(data){
+					var json = JSON.stringify(xsl, null, 2)
+					var resultFragment = $.post("xmlParser.php", {xsl: filterpath}, 
+					function(data, status){
 						$("#resultatdiv").empty();
 						//indsæt resultat i dokument
 						$("#resultatdiv").html(data);
@@ -264,33 +267,27 @@ displayResult(nodePath);
 //Triggers on search button click. Goes through all elements of the DOM that has the class ".klapmodel" 
 //and checks for a substring containing the search query
 function searchClick(query){
+	resetSearch();
 	if(query == ""){
 		//Please enter search query
 	}else
 	{
-		$('.klapmodel').each(function(){ // For each element
+		$('.outer').each(function(){ // For each element
 			
 			var regex = new RegExp("(" + query+ ")")
 			
 			var toRemove = $(this).filter(function () {
 				if(!regex.test($(this).text()))
 				{
-					$(this).hide(); // if it is empty, it removes it
+					$(this).hide(); // if it is empty, remove it
 					$(this).addClass("hidden");
 				}else
 				{
 					input = $(this).html();
 					matches = input.match(regex);
 					//console.log(matches);
-
-
-					for (i = 0; i < matches.length; i++) {
-						//console.log(`Found ${matches[i]} at ${matches.index}`);
-						//console.log($(this).html(txt))
-						var txt = matches.input.slice(0, matches.index) + "<span class=\"red\">"+ query +"</span>" + matches.input.slice(matches.index + query.length)
-						//console.log($(this).html(txt))
-						$(this).html(txt);
-					}			
+					
+					$(this).mark(query);
 
 					//Recreate arrows
 					$('.pilopned').each(function(){
@@ -312,9 +309,11 @@ function resetSearch()
 			$(this).removeClass("hidden");
 		}
 
-		test = $(this).find("span").removeClass("red");
+		mark = ($(this).find("mark")).unmark();
 	})
+}
 
+function clearSearchField(){
 	document.getElementById('searchField').value = "";
 }
 

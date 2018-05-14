@@ -1,6 +1,10 @@
 /*TEST CSS*/
+<<<<<<< HEAD
 
 /*Test 2*/
+=======
+/*New comment*/
+>>>>>>> master
 
 * {
     box-sizing: border-box;
@@ -146,7 +150,7 @@ input {
 
 }
 #knapdiv{
-
+	font-weight:bold;
 }
 .model{}
 
@@ -249,13 +253,25 @@ form input:first-child{
 	flex: 1 1 70%;
 }
 
-.red{
-	color: #b30000;
+.highlight{
+	color: #b35000;
 }
 
 .klapud_description{
 	font-style: italic;
 }
 
-		
+
+.buttonlink{
+	display:block;
+	text-decoration:none;
+	font-size: 16px;
+    color: #ffffff;
+}
+
+mark{
+	color: #b35000;
+	background-color: transparent;
+	font-weight: 700
+}
 

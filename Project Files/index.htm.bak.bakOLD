@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+<title>Modelkataloget BETA</title>
+	<script src="jquery-3.2.1.js" type="text/javascript" language="JavaScript"></script>
+	<script src="modelkatalog.js" type="text/javascript" language="JavaScript"></script>
+	<script src="config.js" type="text/javascript" language="JavaScript"></script>
+	<script src="jquery-ui.min.js" type="text/javascript" language="JavaScript"></script>
+	<script src="underscore-min.js" type="text/javascript" language="JavaScript"></script>
+	<script src="m-xml.min.js" type="text/javascript"  language="JavaScript"></script>
+	<script src="jquery.xpath.js" type="text/javascript" language="JavaScript" ></script>
+<link rel="stylesheet" type="text/css" href="modelkatalog.css"/>
+<link rel="shortcut icon" href="https://arkitektur.digst.dk/sites/default/files/favicon.png" type="image/png" />
+</head>
+<body>
+
+<div class="header">
+
+</div>
+
+<h2><p style="color: #ffffff; background-color: #ff0000">
+BETAVERSION - Denne side er under udvikling </p>
+</h2>
+
+<div class="bar">
+	<div class="barmenu"><a class="buttonlink" href="" title="Gå til forsiden">Søg efter modeller (gå til forsiden)</a></div>
+	<div class="barmenu"><a class="buttonlink" href="" title="Kommer snart">Søg efter modelelementer (kommer snart)</a></div>
+	<div class="barmenu"><a class="buttonlink" href="https://arkitektur.digst.dk/da/metoder/regler-begrebs-og-datamodellering/modelkatalog" title="Læs om modelkataloget på hjemmesiden for Fællesoffentlig Digital Arkitektur (FDA)">Om modelkataloget</a></div>
+</div>
+
+
+
+<div>
+	<h1>Velkommen til det fællesoffentlige katalog over begrebs- og datamodeller</h1>
+<div>
+
+<div class="row">
+
+<div id="introtekst" >
+  <p>Her finder du en oversigt over begrebs- og datamodeller udarbejdet i offentligt regi og som er registret med henblik på videndeling og genbrug. Derudover indeholder dette katalog også oplysninger om en række anerkendte  internationale modeller som kan have en bred anvendelse i dansk administrativ og fællesoffentlig kontekst. Anvendelse af Modelreglerne og genbrug af modeller og data gør os i stand til at skabe en fællesoffentlig dataarkitektur og et fælles datagrundlag, hvor vi kan anvende hinandens modeller og de data, de dokumenterer. </p> <p>Del og genbrug nu!</p>
+
+  <div class="searchinput"><h3>Søg efter modeller</h3>
+		<form method="post" onsubmit="searchClick(document.getElementById('searchField').value); return false;">
+			<input id="searchField" type="search" value="" placeholder="Indtast søgeord">
+			<input type="button" value="Søg" onclick="searchClick(document.getElementById('searchField').value)">
+			<input type="button" value="Nulstil søgning" onclick="resetSearch()">
+		</form>
+	</div>
+
+  <p>Se hele <a href="modelkatalog.rdf.xml">modelkataloget</a></p>  
+</div>  
+
+<div id="resultatdiv" class="col-9"></div>
+
+<div class="col-3 right">
+
+
+<!--	<div class="overkasse" title="">Filterindstillinger</div>-->
+<div class="knap" onclick="resetFilter()">Klik her for at nulstille filtreringen</div>
+	<div id="knapdiv">
+		<div id="filtreret"></div>
+	</div>	
+</div>
+
+</div>
+
+
+<div class="footer">
+  <p>Fællesoffentlig Digital Arkitektur</p>
+</div>
+</body>
+<script>
+	window.onload = function() {
+			displayResult(); // Your function call
+	};
+	</script>
+</html>
