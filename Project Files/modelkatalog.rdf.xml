@@ -93,10 +93,9 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 
 		<!-- Infoside; 'documentation that contains information related to the asset' - jeg tænker menneskevendt info, fx grunddata-diagram, 
 			 -->
-		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/index.htm?goto=2:28" />
+			 
 		<foaf:page rdf:resource="http://bbr.dk/" />
-		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=2:19" />
-
+		
 		<!--  Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
 			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
 			se osse http://publications.europa.eu/mdr/resource/authority/data-theme/html/data-theme-dan.html#description
@@ -4858,6 +4857,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<dct:title xml:lang="da">BBR 2.1.0 XMI</dct:title>
 		<dct:title xml:lang="en">BBR 2.1.0 XMI</dct:title>
 
+		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/index.htm?goto=2:28" />
 		<dct:license rdf:resource="" />
 		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
 			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
@@ -4884,6 +4884,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<dct:title xml:lang="da">Variant af BBR 2.1.0 efter FODS modelreglerne i XMI-format</dct:title>
 		<dct:title xml:lang="en"></dct:title>
 
+		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=2:19" />
 		<dct:license rdf:resource="" />
 		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
 			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
@@ -5431,6 +5432,9 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 <!-- Navn -->		
 		<dct:title xml:lang="da">Variant af den samlede grunddatamodel efter FODS modelreglerne i EAP-format</dct:title>
 		<dct:title xml:lang="en"></dct:title>
+
+		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=1:16" />
+
 <!-- licens  -->
 		<dct:license rdf:resource="" />
 		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
