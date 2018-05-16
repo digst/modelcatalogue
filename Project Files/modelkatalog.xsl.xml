@@ -319,6 +319,11 @@ xmlns:schema="http://schema.org/">
 								<xsl:variable name="distSize">
 								    <xsl:value-of select="document('modelkatalog.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$distRef]/schema:fileSize"/>
 								</xsl:variable>
+
+								<!-- Distribution Info Page -->
+								<xsl:variable name="distInfo">
+								    <xsl:value-of select="document('modelkatalog.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$distRef]/foaf:page/@rdf:resource"/>
+								</xsl:variable>
 								
 
 								<!--Display distribution variables-->
@@ -334,7 +339,10 @@ xmlns:schema="http://schema.org/">
 								<!--Distibution URL-->
 								<xsl:if test="$distURL != ''">
 									<span id="distURL"><tr><td>Download:</td><td> <a href="{$distURL}" target="_blank"><xsl:value-of select="$distURL"/></a></td></tr></span>
-									<tr><td>Se: </td><td> <a href="{$infSide}" target="_blank"><xsl:value-of select="$infSide"/></a></td></tr>
+								</xsl:if>
+
+								<xsl:if test="$distInfo != ''">
+									<tr><td>Se: </td><td> <a href="{$distInfo}" target="_blank"><xsl:value-of select="$distInfo"/></a></td></tr>
 								</xsl:if>
 
 								<!--Distibution type-->
