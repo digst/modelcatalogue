@@ -93,10 +93,9 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 
 		<!-- Infoside; 'documentation that contains information related to the asset' - jeg tænker menneskevendt info, fx grunddata-diagram, 
 			 -->
-		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/index.htm?goto=2:28" />
+			 
 		<foaf:page rdf:resource="http://bbr.dk/" />
-		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=2:19" />
-
+		
 		<!--  Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
 			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
 			se osse http://publications.europa.eu/mdr/resource/authority/data-theme/html/data-theme-dan.html#description
@@ -189,9 +188,6 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- Infoside; 'documentation that contains information related to the asset' - jeg tænker menneskevendt info, fx grunddata-diagram, 
 			-->
 		<foaf:page rdf:resource="https://datacvr.virk.dk/data/" />
-		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/index.htm?goto=3:121" />
-		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=3:134" />
-
 
 		<!-- Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
 			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
@@ -302,8 +298,6 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- Infoside; 'documentation that contains information related to the asset' - jeg tænker menneskevendt info, fx grunddata-diagram, 
 			-->
 		<foaf:page rdf:resource="http://sdfe.dk/hent-data/danmarks-administrative-graenser-dagi/" />
-		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA4/EA167.htm" />
-		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=4:277" />
 
 <!-- Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
 			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
@@ -415,9 +409,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!-- Infoside; 'documentation that contains information related to the asset' - jeg tænker menneskevendt info, fx grunddata-diagram, 
 			For grunddata: Registerets side (har ofte ikke modellen) samt data.gov.dk/model/diagram-link
 			-->
-		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/index.htm?goto=5:219" />
 		<foaf:page rdf:resource="http://danmarksadresser.dk/" />
-		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=5:342" />
 
 <!-- Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
 			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
@@ -527,8 +519,6 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!-- Infoside; 'documentation that contains information related to the asset' - jeg tænker menneskevendt info, fx grunddata-diagram, 
 			For grunddata: Registerets side (har ofte ikke modellen) samt data.gov.dk/model/diagram-link
 			-->
-		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA7/EA304.htm" />
-		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=7:537" />
 
 <!-- Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
 			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
@@ -638,8 +628,6 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!-- Infoside; 'documentation that contains information related to the asset' - jeg tænker menneskevendt info, fx grunddata-diagram, 
 			For grunddata: Registerets side (har ofte ikke modellen) samt data.gov.dk/model/diagram-link
 			-->
-		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA8/EA329.htm" />
-		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=8:583" />
 
 <!-- Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
 			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
@@ -752,8 +740,6 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			For grunddata: Registerets side (har ofte ikke modellen) samt data.gov.dk/model/diagram-link
 			-->
 		<foaf:page rdf:resource="http://gst.dk/matriklen/ejendomsdataprogrammet/ejerfortegnelsen/" />
-		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA6/EA262.htm" />
-		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=6:386" />
 
 <!-- Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
 			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
@@ -866,8 +852,6 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			For grunddata: Registerets side (har ofte ikke modellen) samt data.gov.dk/model/diagram-link
 			-->
 		<foaf:page rdf:resource="http://sdfe.dk/saadan-arbejder-vi-med-data/danske-samarbejder/geodanmark/" />
-		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA9/EA361.htm" />
-		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=9:611" />
 		
 <!-- Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
 			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
@@ -979,8 +963,6 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			For grunddata: Registerets side (har ofte ikke modellen) samt data.gov.dk/model/diagram-link
 			-->
 		<foaf:page rdf:resource="http://gst.dk/matriklen/om-matriklen/" />
-		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA11/EA548.htm" />
-		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=11:1332" />
 
 <!-- Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
 			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
@@ -1091,8 +1073,6 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!-- Infoside; 'documentation that contains information related to the asset' - jeg tænker menneskevendt info, fx grunddata-diagram, 
 			For grunddata: Registerets side (har ofte ikke modellen) samt data.gov.dk/model/diagram-link
 			-->
-		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA12/EA668.htm" />
-		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=12:1797" />
 
 <!-- Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
 			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
@@ -1205,8 +1185,6 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			For grunddata: Registerets side (har ofte ikke modellen) samt data.gov.dk/model/diagram-link
 			-->
 		<foaf:page rdf:resource="http://sdfe.dk/hent-data/danske-stednavne/" />
-		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA13/EA821.htm" />
-		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=13:2025" />
 
 <!-- Data-tema -'theme or sector to which the Asset applies, using a controlled vocabulary' dvs 'Dataset Theme Vocabulary http://publications.europa.eu/resource/authority/data-theme' 
 			Den findes ikke lige der - kaldes osse ' MDR data themes' finde her: http://publications.europa.eu/mdr/resource/authority/data-theme/skos-ap-eu/data-theme-skos-ap-act.rdf 
@@ -4858,6 +4836,8 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<dct:title xml:lang="da">BBR 2.1.0 XMI</dct:title>
 		<dct:title xml:lang="en">BBR 2.1.0 XMI</dct:title>
 
+		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/index.htm?goto=2:28" />
+
 		<dct:license rdf:resource="" />
 		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
 			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
@@ -4884,6 +4864,8 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<dct:title xml:lang="da">Variant af BBR 2.1.0 efter FODS modelreglerne i XMI-format</dct:title>
 		<dct:title xml:lang="en"></dct:title>
 
+		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=2:19" />
+
 		<dct:license rdf:resource="" />
 		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
 			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
@@ -4904,6 +4886,8 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-04</dct:issued>
 		<dct:title xml:lang="da">CVR 1.0.0 XMI</dct:title>
 		<dct:title xml:lang="en">CVR 1.0.0 XMI</dct:title>
+
+		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/index.htm?goto=3:121" />
 
 		<dct:license rdf:resource="" />
 		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
@@ -4926,6 +4910,8 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<dct:title xml:lang="da">Variant af CVR 1.0.0 efter FODS modelreglerne i XMI-format</dct:title>
 		<dct:title xml:lang="en"></dct:title>
 
+		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=3:134" />
+
 		<dct:license rdf:resource="" />
 		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
 			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
@@ -4947,6 +4933,8 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<dct:title xml:lang="da">DAGI 1.0.0 XMI</dct:title>
 		<dct:title xml:lang="en">DAGI 1.0.0 XMI</dct:title>
 
+		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA4/EA167.htm" />
+
 		<dct:license rdf:resource="" />
 		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
 			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
@@ -4967,6 +4955,8 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-19</dct:issued>
 		<dct:title xml:lang="da">Variant af DAGI 1.0.0 efter FODS modelreglerne i XMI-format</dct:title>
 		<dct:title xml:lang="en"></dct:title>
+
+		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=4:277" />
 
 		<dct:license rdf:resource="" />
 		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
@@ -5001,6 +4991,8 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- string her osse - undersøges -->
 <!-- Størrelse -->
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">556K</schema:fileSize>
+
+		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/index.htm?goto=5:219" />
 	</rdf:Description>
 	
 		
@@ -5029,6 +5021,8 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- string her osse - undersøges -->
 <!-- Størrelse -->
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">924K</schema:fileSize>
+
+		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=5:342" />
 	</rdf:Description>
 	
 <!-- Udgivelse: Ejendomsbeliggenhedsregisteret 1.3.0 -->
@@ -5056,6 +5050,8 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- string her osse - undersøges -->
 <!-- Størrelse -->
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">199K</schema:fileSize>
+
+		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA7/EA304.htm" />
 	</rdf:Description>
 	
 <!-- Udgivelse: Ejendomsbeliggenhedsregisteret 1.3.0 FODS-variant -->
@@ -5083,6 +5079,8 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- string her osse - undersøges -->
 <!-- Størrelse -->
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">458K</schema:fileSize>
+
+		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=7:537" />
 	</rdf:Description>
 	
 <!-- Udgivelse: Ejendomsvurdering 1.0.0 -->
@@ -5110,6 +5108,8 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- string her osse - undersøges -->
 <!-- Størrelse -->
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">473.5K</schema:fileSize>
+
+		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA8/EA329.htm" />
 	</rdf:Description>
 	
 <!-- Udgivelse: Ejendomsvurdering 1.0.0 FODS-variant-->
@@ -5137,6 +5137,8 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- string her osse - undersøges -->
 <!-- Størrelse -->
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">923K</schema:fileSize>
+
+		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=8:583" />
 	</rdf:Description>
 
 	
@@ -5165,6 +5167,8 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- string her osse - undersøges -->
 <!-- Størrelse -->
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">779.5K</schema:fileSize>
+
+		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA6/EA262.htm" />
 	</rdf:Description>	
 	
 <!-- Udgivelse: Ejerfortegnelsen 1.3.0 FODS-variant -->
@@ -5192,6 +5196,8 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- string her osse - undersøges -->
 <!-- Størrelse -->
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.8M</schema:fileSize>
+
+		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=6:386" />
 	</rdf:Description>	
 	
 
@@ -5220,6 +5226,8 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- string her osse - undersøges -->
 <!-- Størrelse -->
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.6MB</schema:fileSize>
+
+		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA9/EA361.htm" />
 	</rdf:Description>	
 	
 	
@@ -5248,6 +5256,8 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- string her osse - undersøges -->
 <!-- Størrelse -->
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.1MB</schema:fileSize>
+
+		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=9:611" />
 	</rdf:Description>		
 
 <!-- Udgivelse: Matrikel 1.2.3 -->
@@ -5275,6 +5285,8 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- string her osse - undersøges -->
 <!-- Størrelse -->
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.8MB</schema:fileSize>
+		
+		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA11/EA548.htm" />
 	</rdf:Description>	
 	
 <!-- Udgivelse: Matrikel 1.2.3 FODS-variant -->
@@ -5302,6 +5314,8 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- string her osse - undersøges -->
 <!-- Størrelse -->
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.4MB</schema:fileSize>
+
+		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=11:1332" />
 	</rdf:Description>	
 	
 
@@ -5331,6 +5345,8 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- string her osse - undersøges -->
 <!-- Størrelse -->
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.5MB</schema:fileSize>
+
+		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA12/EA668.htm" />
 	</rdf:Description>
 	
 <!-- Udgivelse: Person 1.2.0 FODS-variant -->
@@ -5358,6 +5374,8 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- string her osse - undersøges -->
 <!-- Størrelse -->
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.2MB</schema:fileSize>
+
+		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=12:1797" />
 	</rdf:Description>
 	
 
@@ -5386,6 +5404,8 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- string her osse - undersøges -->
 <!-- Størrelse -->
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.6MB</schema:fileSize>
+
+		<foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA13/EA821.htm" />
 	</rdf:Description>
 	
 <!-- Udgivelse: Stednavne 1.0.0 FODS-variant -->
@@ -5413,6 +5433,8 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- string her osse - undersøges -->
 <!-- Størrelse -->
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.2MB</schema:fileSize>
+		
+		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=13:2025" />
 	</rdf:Description>
 	
 <!-- Udgivelse: Grunddatamodellen FODS-variant -->
@@ -5431,6 +5453,9 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 <!-- Navn -->		
 		<dct:title xml:lang="da">Variant af den samlede grunddatamodel efter FODS modelreglerne i EAP-format</dct:title>
 		<dct:title xml:lang="en"></dct:title>
+
+		<foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=1:16" />
+
 <!-- licens  -->
 		<dct:license rdf:resource="" />
 		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
