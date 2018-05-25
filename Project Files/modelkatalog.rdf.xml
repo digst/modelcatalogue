@@ -34,7 +34,7 @@
 	<!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 	
-	<rdf:Description rdf:about="http://data.gov.dk/model/BBR">
+	<rdf:Description rdf:about="https://data.gov.dk/model/profile/bbr">
 
 		<!-- dataobjektets typificering: et DCAT:Dataset - som er et som er et ADMS:Asset -->
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
@@ -67,7 +67,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 
 		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
 		<vann:preferredNamespacePrefix>bbr</vann:preferredNamespacePrefix>
-		<vann:preferredNamespaceUri>http://data.gov.dk/model/BBR</vann:preferredNamespaceUri>
+		<vann:preferredNamespaceUri>https://data.gov.dk/model/profile/bbr</vann:preferredNamespaceUri>
 		<!-- keywords - gerne flere -->
 		<dcat:keyword>bygninger</dcat:keyword>
 		<dcat:keyword>boliger</dcat:keyword>
@@ -137,7 +137,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 
-	<rdf:Description rdf:about="http://data.gov.dk/model/CentralBusinessRegister">
+	<rdf:Description rdf:about="https://data.gov.dk/model/profile/cvr">
 
 		<!-- dataobjektets typificering: et DCAT:Dataset - som er et som er et ADMS:Asset -->
 		
@@ -162,7 +162,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 
 		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
 		<vann:preferredNamespacePrefix>cvr</vann:preferredNamespacePrefix>
-		<vann:preferredNamespaceUri>http://data.gov.dk/model/CentralBusinessRegister</vann:preferredNamespaceUri>
+		<vann:preferredNamespaceUri>https://data.gov.dk/model/profile/cvr</vann:preferredNamespaceUri>
 		<!-- keywords - gerne flere -->
 		<dcat:keyword>Virksomheder</dcat:keyword>
 		<dcat:keyword>CVR</dcat:keyword>
@@ -250,7 +250,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 
-	<rdf:Description rdf:about="http://data.gov.dk/model/DAGI">
+	<rdf:Description rdf:about="https://data.gov.dk/model/profile/dagi">
 
 		<!-- dataobjektets typificering: et DCAT:Dataset - som er et som er et ADMS:Asset -->
 		
@@ -275,7 +275,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!--  Namespace og Prefix -->
 		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
 		<vann:preferredNamespacePrefix>dagi</vann:preferredNamespacePrefix>
-		<vann:preferredNamespaceUri>http://data.gov.dk/model/CentralBusinessRegister</vann:preferredNamespaceUri>
+		<vann:preferredNamespaceUri>https://data.gov.dk/model/profile/dagi</vann:preferredNamespaceUri>
 		<!-- keywords - gerne flere -->
 		<dcat:keyword>kommunegrænser</dcat:keyword>
 		<dcat:keyword>sogne</dcat:keyword>
@@ -285,7 +285,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-02-26</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:modified>
 		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.1</owl:versionInfo>
-		<adms:versionNotes xml:lang="da">Se: http://data.gov.dk/model/xmi/Domaenemodeller/DAGI/DAGI%20%C3%A6ndringer%201.0.0%20-%201.0.1.pdf
+		<adms:versionNotes xml:lang="da">Se: http://data.gov.dk/model/profile/xmi/Domaenemodeller/DAGI/DAGI%20%C3%A6ndringer%201.0.0%20-%201.0.1.pdf
 		</adms:versionNotes>
 		<!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
@@ -360,7 +360,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 
-	<rdf:Description rdf:about="http://data.gov.dk/model/DAR">
+	<rdf:Description rdf:about="https://data.gov.dk/model/profile/profile/dar">
 
 	<!-- dataobjektets typificering: et DCAT:Dataset - som er et som er et ADMS:Asset -->
 		
@@ -385,7 +385,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!--  Namespace og Prefix -->
 		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
 		<vann:preferredNamespacePrefix>dar</vann:preferredNamespacePrefix>
-		<vann:preferredNamespaceUri>http://data.gov.dk/model/DAR</vann:preferredNamespaceUri>
+		<vann:preferredNamespaceUri>https://data.gov.dk/model/profile/dar</vann:preferredNamespaceUri>
 <!-- keywords - gerne flere -->
 		<dcat:keyword>adresser</dcat:keyword>
 		<dcat:keyword>vejnavne</dcat:keyword>
@@ -473,7 +473,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!-- Grunddata: Ejendomsbeliggenhed -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-	<rdf:Description rdf:about="http://data.gov.dk/model/EBR">
+	<rdf:Description rdf:about="https://data.gov.dk/model/profile/ejd">
 
 	<!-- dataobjektets typificering: et DCAT:Dataset - som er et som er et ADMS:Asset -->
 		
@@ -497,8 +497,8 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel" />
 <!--  Namespace og Prefix -->
 		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
-		<vann:preferredNamespacePrefix>ebr</vann:preferredNamespacePrefix>
-		<vann:preferredNamespaceUri>http://data.gov.dk/model/EBR</vann:preferredNamespaceUri>
+		<vann:preferredNamespacePrefix>ejd</vann:preferredNamespacePrefix>
+		<vann:preferredNamespaceUri>https://data.gov.dk/model/profile/ejd</vann:preferredNamespaceUri>
 <!-- keywords - gerne flere -->
 		<dcat:keyword>beliggenhed</dcat:keyword>
 		<dcat:keyword>placering</dcat:keyword>
@@ -512,7 +512,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<adms:versionNotes xml:lang="da">Se  http://data.gov.dk/model/xmi/Domaenemodeller/Ejendomsbeliggenhed/Ejendomsbeliggenhed%20%C3%A6ndringer%201.1.0%20-%201.3.0.pdf		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
-		<dct:publisher rdf:resource="Geodatastyrelsen" />
+		<dct:publisher rdf:resource="Styrelsen for Dataforsyning og Effektivisering" />
 <!-- rettigheder og licens ikke ADMS-compliant - Her er ADMS lidt bøvlet; tilpasser senere -->
 		<dct:rights></dct:rights>
 		<cc:license rdf:resource="" />
@@ -585,7 +585,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!-- Grunddata: Ejendomsvurdering -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-	<rdf:Description rdf:about="http://data.gov.dk/model/VUR"> 
+	<rdf:Description rdf:about="https://data.gov.dk/model/profile/vur"> 
 
 	<!-- dataobjektets typificering: et DCAT:Dataset - som er et som er et ADMS:Asset -->
 		
@@ -609,7 +609,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!--  Namespace og Prefix -->
 		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
 		<vann:preferredNamespacePrefix>vur</vann:preferredNamespacePrefix>
-		<vann:preferredNamespaceUri>http://data.gov.dk/model/VUR</vann:preferredNamespaceUri>
+		<vann:preferredNamespaceUri>https://data.gov.dk/model/profile/vur</vann:preferredNamespaceUri>
 <!-- keywords - gerne flere -->
 		<dcat:keyword>vurdering</dcat:keyword>
 		<dcat:keyword>ejendomsskat</dcat:keyword>
@@ -696,7 +696,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!-- Grunddata: Ejerfortegnelsen -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-	<rdf:Description rdf:about="http://data.gov.dk/model/EJER">
+	<rdf:Description rdf:about="https://data.gov.dk/model/profile/ef">
 
 	<!-- dataobjektets typificering: et DCAT:Dataset - som er et som er et ADMS:Asset -->
 		
@@ -720,8 +720,8 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel" />
 <!--  Namespace og Prefix -->
 		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
-		<vann:preferredNamespacePrefix>ejer</vann:preferredNamespacePrefix>
-		<vann:preferredNamespaceUri>http://data.gov.dk/model/EJER</vann:preferredNamespaceUri>
+		<vann:preferredNamespacePrefix>ef</vann:preferredNamespacePrefix>
+		<vann:preferredNamespaceUri>https://data.gov.dk/model/profile/ef</vann:preferredNamespaceUri>
 <!-- keywords - gerne flere -->
 		<dcat:keyword>ejendomsejer</dcat:keyword>
 		<dcat:keyword>ejer</dcat:keyword>
@@ -736,7 +736,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		</adms:versionNotes>
 <!-- Publisher er mandatory i ADMS -->
 		<!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
-		<dct:publisher rdf:resource="Geodatastyrelsen" />
+		<dct:publisher rdf:resource="Styrelsen for Dataforsyning og Effektivisering" />
 <!-- rettigheder og licens ikke ADMS-compliant - Her er ADMS lidt bøvlet; tilpasser senere -->
 		<dct:rights></dct:rights>
 		<cc:license rdf:resource="" />
@@ -810,7 +810,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!-- Grunddata: GeoDanmark -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-	<rdf:Description rdf:about="http://data.gov.dk/model/GDK">
+	<rdf:Description rdf:about="https://data.gov.dk/model/profile/gdk">
 
 	<!-- dataobjektets typificering: et DCAT:Dataset - som er et som er et ADMS:Asset -->
 		
@@ -835,7 +835,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!--  Namespace og Prefix -->
 		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
 		<vann:preferredNamespacePrefix>gdk</vann:preferredNamespacePrefix>
-		<vann:preferredNamespaceUri>http://data.gov.dk/model/GDK</vann:preferredNamespaceUri>
+		<vann:preferredNamespaceUri>https://data.gov.dk/model/profile/gdk</vann:preferredNamespaceUri>
 <!-- keywords - gerne flere -->
 		<dcat:keyword>kortlægning</dcat:keyword>
 		<dcat:keyword>kortforsyningen</dcat:keyword>
@@ -923,7 +923,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!-- Grunddata: Matrikel -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-	<rdf:Description rdf:about="http://data.gov.dk/model/MAT">
+	<rdf:Description rdf:about="https://data.gov.dk/model/profile/mat">
 
 	<!-- dataobjektets typificering: et DCAT:Dataset - som er et som er et ADMS:Asset -->
 		
@@ -948,7 +948,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!--  Namespace og Prefix -->
 		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
 		<vann:preferredNamespacePrefix>mat</vann:preferredNamespacePrefix>
-		<vann:preferredNamespaceUri>http://data.gov.dk/model/MAT</vann:preferredNamespaceUri>
+		<vann:preferredNamespaceUri>https://data.gov.dk/model/profile/mat</vann:preferredNamespaceUri>
 <!-- keywords - gerne flere -->
 		<dcat:keyword>grund</dcat:keyword>
 		<dcat:keyword>parcel</dcat:keyword>
@@ -1036,7 +1036,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!-- Grunddata: Person -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-	<rdf:Description rdf:about="http://data.gov.dk/model/CPR">
+	<rdf:Description rdf:about="https://data.gov.dk/model/profile/cpr">
 
 	<!-- dataobjektets typificering: et DCAT:Dataset - som er et som er et ADMS:Asset -->
 		
@@ -1061,7 +1061,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!--  Namespace og Prefix -->
 		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
 		<vann:preferredNamespacePrefix>cpr</vann:preferredNamespacePrefix>
-		<vann:preferredNamespaceUri>http://data.gov.dk/model/CPR</vann:preferredNamespaceUri>
+		<vann:preferredNamespaceUri>https://data.gov.dk/model/profile/cpr</vann:preferredNamespaceUri>
 <!-- keywords - gerne flere -->
 		<dcat:keyword>cpr</dcat:keyword>
 		<dcat:keyword>persondata</dcat:keyword>
@@ -1149,7 +1149,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!-- Grunddata: Stednavne -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
 <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-	<rdf:Description rdf:about="http://data.gov.dk/model/STED">
+	<rdf:Description rdf:about="https://data.gov.dk/model/profile/st">
 
 	<!-- dataobjektets typificering: et DCAT:Dataset - som er et som er et ADMS:Asset -->
 		
@@ -1173,8 +1173,8 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel" />
 <!--  Namespace og Prefix -->
 		<!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
-		<vann:preferredNamespacePrefix>sted</vann:preferredNamespacePrefix>
-		<vann:preferredNamespaceUri>http://data.gov.dk/model/STED</vann:preferredNamespaceUri>
+		<vann:preferredNamespacePrefix>st</vann:preferredNamespacePrefix>
+		<vann:preferredNamespaceUri>https://data.gov.dk/model/profile/st</vann:preferredNamespaceUri>
 <!-- keywords - gerne flere -->
 		<dcat:keyword>sted</dcat:keyword>
 		<dcat:keyword>lokationsnavne</dcat:keyword>		
