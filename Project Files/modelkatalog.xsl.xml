@@ -328,12 +328,10 @@ xmlns:schema="http://schema.org/">
 
 								<!--Display distribution variables-->
 								<xsl:if test="$distTitle != ''">
-									<tr><td>Titel:</td><td> <xsl:value-of select="$distTitle"/></td></tr>
-								</xsl:if>
-
-								<!--Distibution description-->
-								<xsl:if test="$distDesc != ''">
-									<tr><td>Beskrivelse:</td><td> <xsl:value-of select="$distDesc"/></td></tr>
+									<tr><td>Titel:</td>
+									<td> <span  title="{$distDesc}">
+									 <xsl:value-of select="$distTitle"/>
+									</span></td></tr>
 								</xsl:if>
 
 								<!--Distibution URL-->
