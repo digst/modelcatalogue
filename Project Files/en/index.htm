@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+<title>Modelkataloget BETA</title>
+	<script src="../js/jquery-3.2.1.js" type="text/javascript" language="JavaScript"></script>
+	<script src="../js/modelkatalog.js" type="text/javascript" language="JavaScript"></script>
+	<script src="../js/config.js" type="text/javascript" language="JavaScript"></script>
+	<script src="../js/jquery-ui.min.js" type="text/javascript" language="JavaScript"></script>
+	<script src="../js/underscore-min.js" type="text/javascript" language="JavaScript"></script>
+	<script src="../js/js/m-xml.min.js" type="text/javascript"  language="JavaScript"></script>
+	<script src="../js/jquery.xpath.js" type="text/javascript" language="JavaScript" ></script>
+	<script src="../js/mark.min.js" type="text/javascript" language="JavaScript" ></script>
+	<script src="../js/jquery.mark.min.js" type="text/javascript" language="JavaScript" ></script>
+<link rel="stylesheet" type="text/css" href="../css/modelkatalog.css"/>
+<link rel="shortcut icon" href="https://arkitektur.digst.dk/sites/default/files/favicon.png" type="image/png" />
+</head>
+<body>
+
+<div class="header">
+
+</div>
+
+<h2><p style="color: #ffffff; background-color: #ff0000">
+BETA VERSION - This page is under construction</p>
+</h2>
+
+<div class="bar">
+	<div class="barmenu"><a class="buttonlink" href="" title="Go to the front page">Search for models (go to front page)</a></div>
+	<div class="barmenu"><a class="buttonlink" href="" title="Coming soon">Search for model elements (coming soon)</a></div>
+	<div class="barmenu"><a class="buttonlink" href="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering/modelkatalog" title="Read about our modelecatalogue on the website Fællesoffentlig Digital Arkitektur (FDA)">About the modelecatalogue</a></div>
+	<div class="barmenu right"><a class="buttonlink" id="langSelect" href="../da/index.htm" onclick="selectLanguage()">Dansk</a></div>
+</div>
+
+
+
+<div>
+	<h1>Welcome to the pubicly shared catalogue of concept and datamodels</h1>
+<div>
+
+<div class="row">
+
+<div id="introtekst" >
+  <p>Here you'll find an overview of the concept and datamodels created in the prublic regime and which are registered with a foucs on knowledge sharing and reuse. Furthermore this catalogue contains information about a number of internationally regonized models, which can have a broad use in the Danish administrative and public context. Use of the modelrules and reuse of models and data enables us to create a publicly shared data architecture and a common data... where we can use eachothers models and the data they document. </p> <p>Share and reuse now!</p>
+
+  <div class="searchinput"><h3>Search for models</h3>
+		<form method="post" onsubmit="searchClick(document.getElementById('searchField').value); return false;">
+			<input id="searchField" type="search" value="" placeholder="Insert search term">
+			<input type="button" value="Search" onclick="searchClick(document.getElementById('searchField').value)">
+			<input type="button" value="Reset search" onclick="resetSearch(); clearSearchField();">
+		</form>
+	</div>
+
+  <p>View the entire <a href="../xml/modelkatalog.rdf.xml">model catalogue</a></p>  
+</div>  
+
+<div id="resultatdiv" class="col-9"></div>
+
+<div class="col-3 right">
+
+
+<!--	<div class="overkasse" title="">Filterindstillinger</div>-->
+<div class="knap" onclick="resetFilter()">Click here to reset the filtering</div>
+	<div id="knapdiv">
+		<div id="filtreret"></div>
+	</div>	
+</div>
+
+</div>
+
+
+<div class="footer">
+  <p>Fællesoffentlig Digital Arkitektur</p>
+</div>
+</body>
+<script>
+	window.onload = function() {
+			displayResult(); // Your function call
+	};
+	</script>
+</html>

@@ -3,10 +3,7 @@
 	var xml; //inputfil - selve kataloget
 	var xsl; //inputfil - transformations-stylesheet
 	var nedtrykte = []; //valgte knapper
-
-	/*$(document).ready(function() {
-		displayResult();//vis kataloget
-	})*/
+	var doc;
 
     //Test Comment
 		
@@ -21,12 +18,16 @@
 	function displayResult(filterpath)
 	{// hent katalog, hent stylesheet, modificer evt stylesheet med filter, lav transformation og vis resultat
 		// code for Chrome, Firefox, Opera, etc.
+
+		if(document.getElementById('langSelect').innerHTML == 'English'){doc = '../xml/modelkatalog.xsl.xml'}
+		else if(document.getElementById('langSelect').innerHTML == 'Dansk'){doc = '../xml/modelkatalog_eng.xsl.xml'}
+
 		if (typeof XSLTProcessor !== 'undefined')
 		{ //nesting gør loading synkron ved at lade næste trin køre på success-event
-			$.get( "modelkatalog.rdf.xml",
+			$.get( "../xml/modelkatalog.rdf.xml",
 			function(data1){	
 				xml = data1;
-				$.get( "modelkatalog.xsl.xml",
+				$.get( doc,
 				function(data2){
 					xsl  = data2;
 					//indsæt filter i stylesheet
@@ -36,10 +37,10 @@
 					console.log ($(xsl).find('BODY')[0].firstChild)
 					console.log ($(xsl).find('BODY')[0].firstChild.attributes[0].value)
 					console.log (filterpath)
-					
+
 					//Server side xslt processing
 					var json = JSON.stringify(xsl, null, 2)
-					var resultFragment = $.post("xmlParser.php", {xsl: filterpath}, 
+					var resultFragment = $.post("../php/xmlParser.php", {filter: filterpath, lang: doc}, 
 					function(data, status){
 						$("#resultatdiv").empty();
 						//indsæt resultat i dokument
@@ -57,7 +58,7 @@
 		{
 			var source = new ActiveXObject("Msxml2.DOMDocument.3.0");
 			source.async = false;
-			source.load("modelkatalog.rdf.xml");
+			source.load("../xml/modelkatalog.rdf.xml");
 			if (source.parseError.errorCode != 0) {
 				var myErr = source.parseError;
 			} 
@@ -65,7 +66,7 @@
 				// Load style sheet.
 				var stylesheet = new ActiveXObject("Msxml2.DOMDocument.3.0");
 				stylesheet.async = false
-				stylesheet.load("modelkatalog.xsl.xml");
+				stylesheet.load("../xml/modelkatalog.xsl.xml");
 				if (filterpath ) {$(stylesheet).find('BODY')[0].firstChild.attributes[0].value = "//rdf:Description[(" + filterpath + ")]";}							
 				if (stylesheet.parseError.errorCode != 0) {
 					var myErr = stylesheet.parseError;
@@ -88,7 +89,7 @@
 	
 	function sideknapper(filterpath){
 		
-		$.get( "modelkatalog.rdf.xml",
+		$.get( "../xml/modelkatalog.rdf.xml",
 		function(katData){
 			//console.log(katData)
 			
@@ -327,4 +328,16 @@ function resetFilter()
 	nedtrykte = [];
 
 	displayResult();
+}
+
+function selectLanguage(){
+	if(document.getElementById('langSelect').innerHTML == 'English'){
+		document.getElementById('langSelect').innerHTML = 'Dansk'
+		language = 'English'
+		displayResult()
+	}else if (document.getElementById('langSelect').innerHTML == 'Dansk'){
+		document.getElementById('langSelect').innerHTML = 'English'
+		language = 'Danish'
+		displayResult()
+	}
 }

@@ -1,7 +1,9 @@
 <?php
 
-if(isset($_POST['xsl'])){
-    $filterpath = $_POST['xsl'];
+$xslDoc = $_POST['lang']; 
+
+if(isset($_POST['filter'])){
+    $filterpath = $_POST['filter'];
 }else {
     $filterpath = "";
 }
@@ -9,11 +11,11 @@ if(isset($_POST['xsl'])){
 
 // Load XML file
 $xml = new DOMDocument;
-$xml->load('modelkatalog.rdf.xml');
+$xml->load('../xml/modelkatalog.rdf.xml');
 
 // Load XSL file
 $xsl = new DOMDocument;
-$xsl->load('modelkatalog.xsl.xml');
+$xsl->load($xslDoc);
 
 $xpath = new DOMXPath($xsl);
 
