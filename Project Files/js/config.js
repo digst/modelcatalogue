@@ -1,7 +1,7 @@
 var config = [
 
 	{
-		klassifikationsfil:"ModelTypes.rdf.xml",
+		klassifikationsfil:"../xml/ModelTypes.rdf.xml",
 		topicNameLocator:"description[lang='da'],dct\\:description[xml\\:lang='da']",
 		prefix: "dadk",
 		tag:"modelType",
@@ -14,7 +14,7 @@ var config = [
 		kasseoverskrift: "FORMområde",
 		boxflex: "ned"
 	},			{	
-		klassifikationsfil: "ModellingRegimes.rdf.xml",
+		klassifikationsfil: "../xml/ModellingRegimes.rdf.xml",
 		topicNameLocator:"description[lang='da'],dct\\:description[xml\\:lang='da']",
 		prefix: "dadk",
 		tag:"modellingRegime",
@@ -22,7 +22,7 @@ var config = [
 		kasseoverskrift: "Modelleringsregime",
 		boxflex: "ned"
 	},			{
-		klassifikationsfil:"ModellingLevels.rdf.xml",
+		klassifikationsfil:"../xml/ModellingLevels.rdf.xml",
 		topicNameLocator:"description[lang='da'],dct\\:description[xml\\:lang='da']",
 		prefix: "dadk",
 		tag:"modellingLevel",
@@ -30,7 +30,7 @@ var config = [
 		kasseoverskrift: "Modelleringsniveau",
 		boxflex: "ned"
 	},	{
-		klassifikationsfil:"data-theme-skos-ap-act.rdf",
+		klassifikationsfil:"../xml/data-theme-skos-ap-act.rdf",
 		topicNameLocator:"prefLabel[lang='da'],skos\\:prefLabel[xml\\:lang='da']",
 		prefix: "dcat",
 		tag:"theme",
@@ -39,7 +39,7 @@ var config = [
 		boxflex: "rod",
 		kassetitle: ""
 	},			{
-		klassifikationsfil:"theme.da.rdf",
+		klassifikationsfil:"../xml/theme.da.rdf",
 		topicNameLocator:"title[lang='da'],dct\\:title[xml\\:lang='da']",
 		prefix: "dadk",
 		tag:"INSPIRETheme",
