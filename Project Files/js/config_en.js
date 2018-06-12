@@ -1,11 +1,11 @@
 var config = [
 
 	{
-		klassifikationsfil:"../xml/ModelTypes.rdf.xml",
+		klassifikationsfil:"http://data.gov.dk/model/core/modeltype.rdf",
 		topicNameLocator:"description[lang='en'],dct\\:description[xml\\:lang='en']",
 		prefix: "dadk",
 		tag:"modelType",
-		splitLocation: "/ModelTypes#",
+		splitLocation: "/modeltype#",
 		kasseoverskrift: "Model type",
 		boxflex: "ned"
 	},			{	
@@ -14,19 +14,19 @@ var config = [
 		kasseoverskrift: "Business area",
 		boxflex: "ned"
 	},			{	
-		klassifikationsfil: "../xml/ModellingRegimes.rdf.xml",
+		klassifikationsfil: "http://data.gov.dk/model/core/modellingregime.rdf",
 		topicNameLocator:"description[lang='en'],dct\\:description[xml\\:lang='en']",
 		prefix: "dadk",
 		tag:"modellingRegime",
-		splitLocation: "/ModellingRegimes#",
+		splitLocation: "/modellingregime#",
 		kasseoverskrift: "Modelling regimes",
 		boxflex: "ned"
 	},			{
-		klassifikationsfil:"../xml/ModellingLevels.rdf.xml",
+		klassifikationsfil:"http://data.gov.dk/model/core/modellinglevel.rdf",
 		topicNameLocator:"description[lang='en'],dct\\:description[xml\\:lang='en']",
 		prefix: "dadk",
 		tag:"modellingLevel",
-		splitLocation: "/ModellingLevels#",
+		splitLocation: "/modellinglevel#",
 		kasseoverskrift: "Modelling levels",
 		boxflex: "ned"
 	},	{

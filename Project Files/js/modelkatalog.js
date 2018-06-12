@@ -32,9 +32,9 @@
 				
 				if (filterpath ) {$(xsl).find('BODY')[0].firstChild.attributes[0].value = "//rdf:Description[(" + filterpath + ")]";}							
 				
-				console.log ($(xsl).find('BODY')[0].firstChild)
-				console.log ($(xsl).find('BODY')[0].firstChild.attributes[0].value)
-				console.log (filterpath)
+				//console.log ($(xsl).find('BODY')[0].firstChild)
+				//console.log ($(xsl).find('BODY')[0].firstChild.attributes[0].value)
+				//console.log (filterpath)
 
 				//Server side xslt processing
 				var json = JSON.stringify(xsl, null, 2)
@@ -105,11 +105,10 @@
 			* 
 			*/
 			
-			
-			
 			if(theme.klassifikationsfil){
 				$.get(theme.klassifikationsfil, 
 					function(tdata){
+						console.log(katData);
 						knapfabrik(katData,theme,tdata,knapkasse)
 					})
 				}
@@ -134,8 +133,10 @@ function knapfabrik(katData,theme,tdata,kasse){
 	//for hvert værdi,antal par i (optalt, grupperet array af ((find alle 'theme'), hvorfra extraheret attribut 0))  laves knap 
 	//fremtid: brug _.orderBy til at ordne _countBy efter hyppighed før der each'es
 	//"modellingLevel,dadk\\:modellingLevel"
+	//console.log($(katData).find(theme.tag + "," + theme.prefix + "\\:" + theme.tag))
 	$.each(_.countBy($(katData).find(theme.tag + "," + theme.prefix + "\\:" + theme.tag).map(function(){return tdata?this.attributes[0].nodeValue:this.textContent})),
 	function(buttonTopicID,count){
+		console.log(theme.tag + "," + theme.prefix + "\\:" + theme.tag);
 		//console.log(buttonTopicID,count)
 		var knap = document.createElement("div");
 		knap.className = "knap"

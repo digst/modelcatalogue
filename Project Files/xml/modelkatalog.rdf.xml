@@ -9,7 +9,7 @@
 		Baseret på https://joinup.ec.europa.eu/asset/adms/asset_release/adms-ap-joinup-version-20 Inspireret af https://github.com/SEMICeu/adms-ap_validator/blob/master/tests-data/test-rule-0.rdf 
 		Versionering af modeller er ikke håndteret -kataloget indeholder pt kun nyeste version -->
 	<!-- kataloget as such -->
-	<rdf:Description rdf:about="http://data.gov.dk/model/modelkatalog.rd.xml">
+	<rdf:Description rdf:about="http://data.gov.dk/model/modelkatalog.rdf.xml">
 		<!-- dataobjektets typificering (modelreference) -->
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Catalog" /><!-- som er et ADMS:AssetRepository -->
 		<dct:title xml:lang="en">Modelkataloget</dct:title>
@@ -105,13 +105,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-		<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
-			http://data.gov.dk/model/concepts/ModelTypes#Model -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#CoreModel" />
-		<!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels http://data.gov.dk/model/concepts/ModellingLevels#Genbrug -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Formidling" />
-		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes http://data.gov.dk/model/concepts/ModellingRegimes#International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#Grunddata" />
+		<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
+			https://data.gov.dk/model/core/modeltype#Model -->
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel" />
+		<!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels https://data.gov.dk/model/core/modellinglevel#Reuse -->
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Dissemination" />
+		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes https://data.gov.dk/model/core/modellingregime#International -->
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata" />
 		<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Bygnings- og Boligregistret, BBR</dadk:businessArea>
 		<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -198,7 +198,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-		<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+		<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -208,19 +208,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#CoreModel" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel" />
 		<!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Formidling" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Dissemination" />
 		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#Grunddata" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata" />
 		<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Virksomheds- og erhvervsregistrering </dadk:businessArea>
 		<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -308,7 +308,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 <!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -318,19 +318,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#CoreModel" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Formidling" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Dissemination" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#Grunddata" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Geografisk Informationssystem, GIS</dadk:businessArea>
 		<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -420,7 +420,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -430,19 +430,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#CoreModel" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Formidling" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Dissemination" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#Grunddata" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Danmarks Adresseregister</dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -529,7 +529,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -539,19 +539,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#CoreModel" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Formidling" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Dissemination" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#Grunddata" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Matrikel og ejendomsdannelse</dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -638,7 +638,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -648,19 +648,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#CoreModel" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Formidling" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Dissemination" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#Grunddata" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Ejendomsvurdering</dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -750,7 +750,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -760,19 +760,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#CoreModel" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Formidling" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Dissemination" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#Grunddata" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference
 		<dadk:businessArea></dadk:businessArea> -->
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference 
@@ -862,7 +862,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -872,19 +872,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#CoreModel" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Formidling" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Dissemination" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#Grunddata" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>GeoDanmark</dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -973,7 +973,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -983,19 +983,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#CoreModel" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Formidling" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Dissemination" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#Grunddata" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Matrikel og ejendomsdannelse</dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -1083,7 +1083,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -1093,19 +1093,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#CoreModel" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Formidling" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Dissemination" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#Grunddata" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>CPR-registrering </dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -1195,7 +1195,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -1205,19 +1205,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#CoreModel" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Formidling" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Dissemination" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#Grunddata" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Stednavne</dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -1301,12 +1301,12 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-		<!-- modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#ApplicationProfile" />
+		<!-- modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype -->
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ApplicationProfile" />
 		<!-- modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#FODS" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS" />
 		<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
 		<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -1388,12 +1388,12 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-		<!-- modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#ApplicationProfile" />
+		<!-- modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype -->
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ApplicationProfile" />
 		<!-- modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#FODS" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS" />
 		<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
 		<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -1470,12 +1470,12 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-		<!-- modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#ConceptModel" />
+		<!-- modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype -->
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ConceptModel" />
 		<!-- modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Reuse" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Reuse" />
 		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#FODS" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS" />
 		<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
 		<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -1551,12 +1551,12 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-		<!-- modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#ConceptModel" />
+		<!-- modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype -->
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ConceptModel" />
 		<!-- modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Reuse" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Reuse" />
 		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#FODS" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS" />
 		<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
 		<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -1628,12 +1628,12 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-		<!-- modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<!-- modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype -->
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 		<!-- modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Genbrug" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Reuse" />
 		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 		<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea></dadk:businessArea>
 		<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -1723,7 +1723,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -1733,19 +1733,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Geografisk referencenet og opmåling</dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -1832,7 +1832,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -1842,19 +1842,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea></dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -1946,7 +1946,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -1956,19 +1956,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea> Vidensorganisation </dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -2066,7 +2066,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -2076,19 +2076,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea> Vidensorganisation </dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -2176,7 +2176,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -2186,19 +2186,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea></dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -2291,7 +2291,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -2301,19 +2301,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Tele og internet</dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -2400,7 +2400,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -2410,19 +2410,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea></dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -2510,7 +2510,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -2520,19 +2520,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Samfundsdigitalisering</dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -2621,7 +2621,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -2631,19 +2631,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Samfundsdigitalisering</dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -2730,7 +2730,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -2740,19 +2740,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea></dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -2839,7 +2839,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -2849,19 +2849,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea></dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -2948,7 +2948,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -2958,19 +2958,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea></dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -3058,7 +3058,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -3068,19 +3068,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea></dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -3166,7 +3166,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -3176,19 +3176,19 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea></dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -3313,7 +3313,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -3323,19 +3323,19 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Lovgivning</dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -3421,7 +3421,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -3431,19 +3431,19 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Kultur</dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -3530,7 +3530,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -3540,19 +3540,19 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Fysisk planlægning og geodata</dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -3640,7 +3640,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -3650,19 +3650,19 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Virksomheds- og erhvervsregistrering</dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -3749,7 +3749,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -3759,19 +3759,19 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Folkeregistrering og personnavn </dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -3857,7 +3857,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -3867,19 +3867,19 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Kultur</dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -3965,7 +3965,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -3975,19 +3975,19 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>06.38</dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -4074,7 +4074,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -4084,19 +4084,19 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Offentlig forvaltning og demokrati</dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -4182,13 +4182,13 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-		<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
-			http://data.gov.dk/model/concepts/ModelTypes#Model -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
-		<!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels http://data.gov.dk/model/concepts/ModellingLevels#Genbrug -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
-		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes http://data.gov.dk/model/concepts/ModellingRegimes#International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
+			https://data.gov.dk/model/core/modeltype#Model -->
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
+		<!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels https://data.gov.dk/model/core/modellinglevel#Reuse -->
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
+		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes https://data.gov.dk/model/core/modellingregime#International -->
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 		<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Digital infrastruktur</dadk:businessArea>
 		<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -4276,13 +4276,13 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-		<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
-			http://data.gov.dk/model/concepts/ModelTypes#Model -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
-		<!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels http://data.gov.dk/model/concepts/ModellingLevels#Genbrug -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
-		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes http://data.gov.dk/model/concepts/ModellingRegimes#International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
+			https://data.gov.dk/model/core/modeltype#Model -->
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
+		<!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels https://data.gov.dk/model/core/modellinglevel#Reuse -->
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
+		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes https://data.gov.dk/model/core/modellingregime#International -->
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 		<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea></dadk:businessArea>
 		<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -4371,13 +4371,13 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-		<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
-			http://data.gov.dk/model/concepts/ModelTypes#Model -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
-		<!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels http://data.gov.dk/model/concepts/ModellingLevels#Genbrug -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
-		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes http://data.gov.dk/model/concepts/ModellingRegimes#International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
+			https://data.gov.dk/model/core/modeltype#Model -->
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
+		<!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels https://data.gov.dk/model/core/modellinglevel#Reuse -->
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
+		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes https://data.gov.dk/model/core/modellingregime#International -->
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 		<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea></dadk:businessArea>
 		<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -4466,13 +4466,13 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-		<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
-			http://data.gov.dk/model/concepts/ModelTypes#Model -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
-		<!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels http://data.gov.dk/model/concepts/ModellingLevels#Genbrug -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
-		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes http://data.gov.dk/model/concepts/ModellingRegimes#International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
+			https://data.gov.dk/model/core/modeltype#Model -->
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
+		<!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels https://data.gov.dk/model/core/modellinglevel#Reuse -->
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
+		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes https://data.gov.dk/model/core/modellingregime#International -->
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 		<!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea></dadk:businessArea>
 		<!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -4563,7 +4563,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -4573,19 +4573,19 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Tele og internet</dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -4671,7 +4671,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -4681,19 +4681,19 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Tele og internet</dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->
@@ -4781,7 +4781,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- her følger en række hjemmelavede properties - de skal beskrives i (ikkeeksisterende) http://data.gov.dk/model/vocabular/danskgårdkat# 
 			og formaliseres i en AP -->
 
-<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 http://data.gov.dk/model/concepts/ModelTypes 
+<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			
 			Model
 			ConceptModel
@@ -4791,19 +4791,19 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="http://data.gov.dk/model/concepts/ModelTypes#Vocabulary" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#Vocabulary" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
 		 Genbrug
 		 Sammenhæng 
 		 -->
-		<dadk:modellingLevel rdf:resource="http://data.gov.dk/model/concepts/ModellingLevels#Sammenhæng" />
+		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion" />
 <!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes
 		FODS
 		Grunddata 
 		International -->
-		<dadk:modellingRegime rdf:resource="http://data.gov.dk/model/concepts/ModellingRegimes#International" />
+		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International" />
 <!-- forretningsområde - FORM-reference (pt som notation) - vi skal arbejde med klassifikationsreference -->
 		<dadk:businessArea>Samfundsdigitalisering</dadk:businessArea>
 <!-- forretningsområde-nøglekode - FORM-reference kode (pt som notation) - vi skal arbejde med klassifikationsreference -->

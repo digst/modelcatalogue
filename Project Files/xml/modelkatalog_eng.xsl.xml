@@ -173,11 +173,11 @@ xmlns:schema="http://schema.org/">
 								    <xsl:value-of select="@rdf:resource"/>
 								</xsl:variable> 
 								<xsl:variable name="mDesc">
-								    <xsl:value-of select="document('ModelTypes.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:definition[@xml:lang='en']"/>
+								    <xsl:value-of select="document('http://data.gov.dk/model/core/modeltype.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:definition[@xml:lang='en']"/>
 								</xsl:variable> 
 				    	  	  		<tr><td>Model type:</td>
 									<td> <span  title="{$mDesc}">  
-									<xsl:value-of select="document('ModelTypes.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:prefLabel[@xml:lang='en']"/> 
+									<xsl:value-of select="document('http://data.gov.dk/model/core/modeltype.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:prefLabel[@xml:lang='en']"/> 
 								</span></td></tr>
 							</xsl:if>
 			    	  	 </xsl:for-each>
@@ -188,11 +188,11 @@ xmlns:schema="http://schema.org/">
 								    <xsl:value-of select="@rdf:resource"/>
 								</xsl:variable> 
 								<xsl:variable name="mDesc">
-								    <xsl:value-of select="document('ModellingLevels.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:definition[@xml:lang='en']"/>
+								    <xsl:value-of select="document('http://data.gov.dk/model/core/modellinglevel.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:definition[@xml:lang='en']"/>
 								</xsl:variable> 
 				    	  	  		<tr><td>Modelling level:</td>
-									<td> <span  title="{$mDesc}">  
-									<xsl:value-of select="document('ModellingLevels.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:prefLabel[@xml:lang='en']"/> 
+									<td> <span title="{$mDesc}">								
+									<xsl:value-of select="document('http://data.gov.dk/model/core/modellinglevel.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:prefLabel[@xml:lang='en']"/> 
 								</span></td></tr>
 							</xsl:if>
 			    	  	 </xsl:for-each>
@@ -203,11 +203,11 @@ xmlns:schema="http://schema.org/">
 								    <xsl:value-of select="@rdf:resource"/>
 								</xsl:variable> 
 								<xsl:variable name="mDesc">
-								    <xsl:value-of select="document('ModellingRegimes.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:definition[@xml:lang='en']"/>
+								    <xsl:value-of select="document('http://data.gov.dk/model/core/modellingregime.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:definition[@xml:lang='en']"/>
 								</xsl:variable> 
 				    	  	  		<tr><td>Moddeling regime:</td>
 									<td> <span  title="{$mDesc}">  
-									<xsl:value-of select="document('ModellingRegimes.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:prefLabel[@xml:lang='en']"/> 
+									<xsl:value-of select="document('http://data.gov.dk/model/core/modellingregime.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:prefLabel[@xml:lang='en']"/> 
 								</span></td></tr>
 							</xsl:if>
 		    	  	 	</xsl:for-each>

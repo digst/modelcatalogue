@@ -25,7 +25,7 @@ xmlns:schema="http://schema.org/">
 <xsl:param name="spi" select="//rdf:Description"/>   	  
 <xsl:param name="stix" select="//rdf:type[@rdf:resource='http://www.w3.org/ns/dcat#Dataset' ]/.."/>   	  
 <xsl:param name="stiParam"/>   	  
-<xsl:param name="sub-path"  select="//dcat:theme[@rdf:resource='http://publications.europa.eu/resource/authority/data-theme/ECON']/.."/>
+<xsl:param name="sub-path" select="//dcat:theme[@rdf:resource='http://publications.europa.eu/resource/authority/data-theme/ECON']/.."/>
         
  
         
@@ -173,11 +173,11 @@ xmlns:schema="http://schema.org/">
 								    <xsl:value-of select="@rdf:resource"/>
 								</xsl:variable> 
 								<xsl:variable name="mDesc">
-								    <xsl:value-of select="document('ModelTypes.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:definition[@xml:lang='da']"/>
+								    <xsl:value-of select="document('http://data.gov.dk/model/core/modeltype.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:definition[@xml:lang='da']"/>
 								</xsl:variable> 
 				    	  	  		<tr><td>Modelregel-modeltype:</td>
 									<td> <span  title="{$mDesc}">  
-									<xsl:value-of select="document('ModelTypes.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:prefLabel[@xml:lang='da']"/> 
+									<xsl:value-of select="document('http://data.gov.dk/model/core/modeltype.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:prefLabel[@xml:lang='da']"/> 
 								</span></td></tr>
 							</xsl:if>
 			    	  	 </xsl:for-each>
@@ -188,11 +188,11 @@ xmlns:schema="http://schema.org/">
 								    <xsl:value-of select="@rdf:resource"/>
 								</xsl:variable> 
 								<xsl:variable name="mDesc">
-								    <xsl:value-of select="document('ModellingLevels.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:definition[@xml:lang='da']"/>
+								    <xsl:value-of select="document('http://data.gov.dk/model/core/modellinglevel.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:definition[@xml:lang='da']"/>
 								</xsl:variable> 
 				    	  	  		<tr><td>Modelregel-modelleringsniveau:</td>
-									<td> <span  title="{$mDesc}">  
-									<xsl:value-of select="document('ModellingLevels.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:prefLabel[@xml:lang='da']"/> 
+									<td> <span title="{$mDesc}">  
+									<xsl:value-of select="document('http://data.gov.dk/model/core/modellinglevel.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:prefLabel[@xml:lang='da']"/> 
 								</span></td></tr>
 							</xsl:if>
 			    	  	 </xsl:for-each>
@@ -203,11 +203,11 @@ xmlns:schema="http://schema.org/">
 								    <xsl:value-of select="@rdf:resource"/>
 								</xsl:variable> 
 								<xsl:variable name="mDesc">
-								    <xsl:value-of select="document('ModellingRegimes.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:definition[@xml:lang='da']"/>
+								    <xsl:value-of select="document('http://data.gov.dk/model/core/modellingregime.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:definition[@xml:lang='da']"/>
 								</xsl:variable> 
 				    	  	  		<tr><td>Modelleringsregime:</td>
 									<td> <span  title="{$mDesc}">  
-									<xsl:value-of select="document('ModellingRegimes.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:prefLabel[@xml:lang='da']"/> 
+									<xsl:value-of select="document('http://data.gov.dk/model/core/modellingregime.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:prefLabel[@xml:lang='da']"/> 
 								</span></td></tr>
 							</xsl:if>
 		    	  	 	</xsl:for-each>
