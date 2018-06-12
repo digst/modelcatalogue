@@ -22,67 +22,34 @@
 		if(document.getElementById('langSelect').innerHTML == 'English'){doc = '../xml/modelkatalog.xsl.xml'}
 		else if(document.getElementById('langSelect').innerHTML == 'Dansk'){doc = '../xml/modelkatalog_eng.xsl.xml'}
 
-		if (typeof XSLTProcessor !== 'undefined')
-		{ //nesting gør loading synkron ved at lade næste trin køre på success-event
-			$.get( "../xml/modelkatalog.rdf.xml",
-			function(data1){	
-				xml = data1;
-				$.get( doc,
-				function(data2){
-					xsl  = data2;
-					//indsæt filter i stylesheet
-					
-					if (filterpath ) {$(xsl).find('BODY')[0].firstChild.attributes[0].value = "//rdf:Description[(" + filterpath + ")]";}							
-					
-					console.log ($(xsl).find('BODY')[0].firstChild)
-					console.log ($(xsl).find('BODY')[0].firstChild.attributes[0].value)
-					console.log (filterpath)
+		$.get( "../xml/modelkatalog.rdf.xml",
+		function(data1){	
+			xml = data1;
+			$.get( doc,
+			function(data2){
+				xsl  = data2;
+				//indsæt filter i stylesheet
+				
+				if (filterpath ) {$(xsl).find('BODY')[0].firstChild.attributes[0].value = "//rdf:Description[(" + filterpath + ")]";}							
+				
+				console.log ($(xsl).find('BODY')[0].firstChild)
+				console.log ($(xsl).find('BODY')[0].firstChild.attributes[0].value)
+				console.log (filterpath)
 
-					//Server side xslt processing
-					var json = JSON.stringify(xsl, null, 2)
-					var resultFragment = $.post("../php/xmlParser.php", {filter: filterpath, lang: doc}, 
-					function(data, status){
-						$("#resultatdiv").empty();
-						//indsæt resultat i dokument
-						$("#resultatdiv").html(data);
-						$('.enmodel').addClass("klapmodel");//klap alle modeller sammen
-						arrows();//tilføj klap ud/ind pile
-						sideknapper(filterpath);//lav filterknapper
-						searchClick(document.getElementById('searchField').value);
-					}, "html");		   
-				})
-			})
-		}
-		// code for IE
-		else
-		{
-			var source = new ActiveXObject("Msxml2.DOMDocument.3.0");
-			source.async = false;
-			source.load("../xml/modelkatalog.rdf.xml");
-			if (source.parseError.errorCode != 0) {
-				var myErr = source.parseError;
-			} 
-			else {
-				// Load style sheet.
-				var stylesheet = new ActiveXObject("Msxml2.DOMDocument.3.0");
-				stylesheet.async = false
-				stylesheet.load("../xml/modelkatalog.xsl.xml");
-				if (filterpath ) {$(stylesheet).find('BODY')[0].firstChild.attributes[0].value = "//rdf:Description[(" + filterpath + ")]";}							
-				if (stylesheet.parseError.errorCode != 0) {
-					var myErr = stylesheet.parseError;
-				} 
-				else {
-					$("#resultatdiv").empty()
+				//Server side xslt processing
+				var json = JSON.stringify(xsl, null, 2)
+				var resultFragment = $.post("../php/xmlParser.php", {filter: filterpath, lang: doc}, 
+				function(data, status){
+					$("#resultatdiv").empty();
 					//indsæt resultat i dokument
-					document.getElementById("resultatdiv").innerHTML = source.transformNode(stylesheet);
+					$("#resultatdiv").html(data);
 					$('.enmodel').addClass("klapmodel");//klap alle modeller sammen
 					arrows();//tilføj klap ud/ind pile
 					sideknapper(filterpath);//lav filterknapper
 					searchClick(document.getElementById('searchField').value);
-				}
-			}
-			
-		}
+				}, "html");		   
+			})
+		})
 	}
 	
 	

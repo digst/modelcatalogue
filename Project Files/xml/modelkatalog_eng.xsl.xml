@@ -175,7 +175,7 @@ xmlns:schema="http://schema.org/">
 								<xsl:variable name="mDesc">
 								    <xsl:value-of select="document('ModelTypes.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:definition[@xml:lang='en']"/>
 								</xsl:variable> 
-				    	  	  		<tr><td>Model rules - model type:</td>
+				    	  	  		<tr><td>Model type:</td>
 									<td> <span  title="{$mDesc}">  
 									<xsl:value-of select="document('ModelTypes.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:prefLabel[@xml:lang='en']"/> 
 								</span></td></tr>
@@ -190,7 +190,7 @@ xmlns:schema="http://schema.org/">
 								<xsl:variable name="mDesc">
 								    <xsl:value-of select="document('ModellingLevels.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:definition[@xml:lang='en']"/>
 								</xsl:variable> 
-				    	  	  		<tr><td>Model rule - modelling level:</td>
+				    	  	  		<tr><td>Modelling level:</td>
 									<td> <span  title="{$mDesc}">  
 									<xsl:value-of select="document('ModellingLevels.rdf.xml')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:prefLabel[@xml:lang='en']"/> 
 								</span></td></tr>

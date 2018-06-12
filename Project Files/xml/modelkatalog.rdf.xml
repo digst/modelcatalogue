@@ -52,7 +52,7 @@ Af samme årsag er areal relaterede attributter fastholdt fremfor at anvende fx 
 
 I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forretningsregler, der findes, for hvilke attributter der skal eksistere i hvilke sammenhænge. På grund af denne kompleksitet kan der ikke påføres kardinaliteter på de enkelte attributter. Alle kardinaliteter på attributter er derfor ikke påført nogen specifikt kardinalitet.
 		</dct:description>
-		<dct:description xml:lang="en">1234
+		<dct:description xml:lang="en">
 		</dct:description>
 
 		<!--EIRA artefakttype - krævet i ADMS se https://joinup.ec.europa.eu/svn/eia/taxonomy/EIRA_SKOS.rdf og 
@@ -257,7 +257,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 	<!--  beskrivelse -->
 		<dct:description xml:lang="da">Hvor ligger sognene, hvor går kommunegrænserne og hvor skal vi stemme henne? Det kan du se i grunddataregistret Danmarks Administrative Geografiske Inddeling (DAGI)
 		</dct:description>
-		<dct:description xml:lang="en">Where are all the things?
+		<dct:description xml:lang="en">
 		</dct:description>
 	<!--EIRA artefakttype - krævet i ADMS se https://joinup.ec.europa.eu/svn/eia/taxonomy/EIRA_SKOS.rdf og 
 		https://joinup.ec.europa.eu/catalogue/distribution/eira_v1_1_0_overviewpdf 
