@@ -76,10 +76,10 @@
 			if (prefix == "rdfs"){return "http://www.w3.org/2000/01/rdf-schema#";}
 			
 		})}
-		//console.log(katData) find("Description,rdf\\:Description")..children().length
+		//console.log(katData).find("Description,rdf\\:Description").children().length
 		//console.log($(katData).length)
 		$("#knapdiv").empty()
-		
+
 		$(config).each(function(index,theme){
 			var overkasse = document.createElement("div");
 			var knapkasse = document.createElement("div");
