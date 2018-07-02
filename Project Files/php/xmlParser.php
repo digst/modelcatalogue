@@ -8,7 +8,6 @@ if(isset($_POST['filter'])){
     $filterpath = "";
 }
 
-
 // Load XML file
 $xml = new DOMDocument;
 $xml->load('../xml/modelkatalog.rdf.xml');
