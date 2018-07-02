@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>  
-<?xml-stylesheet type="text/xml" href="./modelkatalog.xsl.xml"?>
+<?xml-stylesheet type="text/xml" href="modelkatalog.xsl.xml"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
 	xmlns:dadk="http://data.gov.dk/model/vocabular/modelcat#" xmlns:vann="http://purl.org/vocab/vann/" xmlns:cc="hhttp://creativecommons.org/ns#"
 	xmlns:owl="https://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#"
@@ -9,14 +9,14 @@
 		Baseret på https://joinup.ec.europa.eu/asset/adms/asset_release/adms-ap-joinup-version-20 Inspireret af https://github.com/SEMICeu/adms-ap_validator/blob/master/tests-data/test-rule-0.rdf 
 		Versionering af modeller er ikke håndteret -kataloget indeholder pt kun nyeste version -->
 	<!-- kataloget as such -->
-	<rdf:Description rdf:about="http://data.gov.dk/model/modelkatalog.rdf.xml">
+	<rdf:Description rdf:about="http://data.gov.dk/catalogue/models/xml/modelkatalog.rdf.xml">
 		<!-- dataobjektets typificering (modelreference) -->
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Catalog" /><!-- som er et ADMS:AssetRepository -->
 		<dct:title xml:lang="en">Modelkataloget</dct:title>
 		<dct:description xml:lang="da">Katalog over relevante modeller for dansk modellering</dct:description>
 
 		<dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/><!-- skal egentlig være en foaf:Agent sådan en må vi lave -->
-		<foaf:homepage rdf:resource="http://data.gov.dk/model/modelkatalog.rdf.xml" />
+		<foaf:homepage rdf:resource="http://data.gov.dk/catalogue/models/xml/modelkatalog.rdf.xml" />
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-01</dct:issued>
 
 		<!-- man kunne lave ref til samtlige assets med <dcat:dataset> - men det gider jeg ikke nu; mit XSLT klarer ærterne -->
