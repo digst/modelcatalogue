@@ -1,7 +1,7 @@
 var config = [
 
 	{
-		klassifikationsfil:"http://data.gov.dk/model/core/modeltype.rdf",
+		klassifikationsfil:"https://data.gov.dk/model/core/modeltype.rdf",
 		topicNameLocator:"description[lang='da'],dct\\:description[xml\\:lang='da']",
 		prefix: "dadk",
 		tag:"modelType",
@@ -14,7 +14,7 @@ var config = [
 		kasseoverskrift: "FORMområde",
 		boxflex: "ned"
 	},			{	
-		klassifikationsfil: "http://data.gov.dk/model/core/modellingregime.rdf",
+		klassifikationsfil: "https://data.gov.dk/model/core/modellingregime.rdf",
 		topicNameLocator:"description[lang='da'],dct\\:description[xml\\:lang='da']",
 		prefix: "dadk",
 		tag:"modellingRegime",
@@ -22,7 +22,7 @@ var config = [
 		kasseoverskrift: "Modelleringsregime",
 		boxflex: "ned"
 	},			{
-		klassifikationsfil:"http://data.gov.dk/model/core/modellinglevel.rdf",
+		klassifikationsfil:"https://data.gov.dk/model/core/modellinglevel.rdf",
 		topicNameLocator:"description[lang='da'],dct\\:description[xml\\:lang='da']",
 		prefix: "dadk",
 		tag:"modellingLevel",
