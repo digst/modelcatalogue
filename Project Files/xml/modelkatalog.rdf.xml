@@ -107,7 +107,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 
 		<!-- Modeltype jvf vor egen definition: https://arkitektur.digst.dk/node/486 https://data.gov.dk/model/core/modeltype 
 			https://data.gov.dk/model/core/modeltype#Model -->
-		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ApplicationModel" />
 		<!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 - beskrevet i klassifikationen ModellingLevels https://data.gov.dk/model/core/modellinglevel#Reuse -->
 		<dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Dissemination" />
 		<!-- modelleringsregime - beskrevet i klassifikationen ModellingRegimes https://data.gov.dk/model/core/modellingregime#International -->
@@ -208,7 +208,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ApplicatinModel" />
 		<!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
@@ -318,7 +318,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ApplicationModel" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
@@ -430,7 +430,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ApplicationModel" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
@@ -539,7 +539,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ApplicationModel" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
@@ -648,7 +648,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ApplicationModel" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
@@ -760,7 +760,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ApplicationModel" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
@@ -872,7 +872,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ApplicationModel" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
@@ -983,7 +983,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ApplicationModel" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
@@ -1025,7 +1025,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 	<!--  navn -->
 		<dct:title xml:lang="da">Person</dct:title>
-		<dct:title xml:lang="en">The Danish Central Person Register</dct:title>
+		<dct:title xml:lang="en">The Danish Civil Registration System</dct:title>
 <!--  beskrivelse -->
 		<dct:description xml:lang="da">Personregistrering 
 		</dct:description>
@@ -1093,7 +1093,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ApplicationModel" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
@@ -1205,7 +1205,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel" />
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ApplicationModel" />
 <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
