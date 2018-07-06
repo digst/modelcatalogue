@@ -5751,7 +5751,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<!-- dataobjektets typificering - en DCAT:Distribution, som er en ADMS:AssetDistribution -->
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution" />
 <!-- Access ULR -->
-		<dcat:accessURL rdf:resource="" />
+		<dcat:accessURL rdf:resource="http://vocab.deri.ie/void.rdf" />
 <!-- Beskrivelse -->
 		<dct:description xml:lang="da"></dct:description>
 		<dct:description xml:lang="en">The Vocabulary of Interlinked Datasets in RDF-format</dct:description>
@@ -5761,7 +5761,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
 		<dct:title xml:lang="da">VoID RDF</dct:title>
 		<dct:title xml:lang="en">VoID RDF</dct:title>
 <!-- licens  -->
-		<dct:license rdf:resource="http://vocab.deri.ie/void.rdf" />
+		<dct:license rdf:resource="" />
 		<!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
 			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
 <!-- Format -->		
