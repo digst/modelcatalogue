@@ -5718,4 +5718,34 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <!-- string her osse - undersøges -->
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24KB</schema:fileSize>
   </rdf:Description>
+  <rdf:Description rdf:about="TEST">
+    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="en"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en"/>
+    <vann:preferredNamespacePrefix/>
+    <vann:preferredNamespaceUri>TEST</vann:preferredNamespaceUri>
+    <skos:altLabel xml:lang="da"/>
+    <skos:altLabel xml:lang="en"/>
+    <dcat:keyword xml:lang="da"/>
+    <dcat:keyword xml:lang="en"/>
+    <adms:versionNotes xml:lang="da"/>
+    <adms:versionNotes xml:lang="en"/>
+    <owl:versionInfo/>
+    <dct:identifier/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
+    <vcard:contactPoint rdf:resource=""/>
+    <adms:page rdf:resource=""/>
+    <adms:landingPage rdf:resource=""/>
+    <dct:publisher rdf:resource=""/>
+    <dcat:dataset rdf:resource=""/>
+    <dct:hasVersion rdf:resource=""/>
+    <dct:isVersionOf rdf:resource=""/>
+    <dct:type rdf:resource=""/>
+    <mreg:modellingRegime rdf:resource=""/>
+    <mlev:modellingLevel rdf:resource=""/>
+    <dcat:theme rdf:resource=""/>
+    <adms:distribution rdf:resource=""/>
+  </rdf:Description>
 </rdf:RDF>
