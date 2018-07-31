@@ -4654,5 +4654,6 @@
             <rdfs:label xml:lang="sv">Tillfälliga uppgifter</rdfs:label>
          </skos-xl:Label>
       </skos-xl:prefLabel>
+      <skos:definition xml:lang="en">Definition.</skos:definition>
    </skos:Concept>
 </rdf:RDF>
