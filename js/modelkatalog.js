@@ -108,7 +108,6 @@
 			if(theme.klassifikationsfil){
 				$.get(theme.klassifikationsfil, 
 					function(tdata){
-						console.log(katData);
 						knapfabrik(katData,theme,tdata,knapkasse)
 					})
 				}
@@ -136,8 +135,6 @@ function knapfabrik(katData,theme,tdata,kasse){
 	//console.log($(katData).find(theme.tag + "," + theme.prefix + "\\:" + theme.tag))
 	$.each(_.countBy($(katData).find(theme.tag + "," + theme.prefix + "\\:" + theme.tag).map(function(){return tdata?this.attributes[0].nodeValue:this.textContent})),
 	function(buttonTopicID,count){
-		console.log(theme.tag + "," + theme.prefix + "\\:" + theme.tag);
-		//console.log(buttonTopicID,count)
 		var knap = document.createElement("div");
 		knap.className = "knap"
 		$(knap).attr('id',buttonTopicID)
