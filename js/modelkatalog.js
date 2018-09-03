@@ -143,8 +143,14 @@ function knapfabrik(katData,theme,tdata,kasse){
 			//genåbnes for debug
 			//console.log(kasse.id,buttonTopicID,topicLocator, theme.topicNameLocator)
 			
-			var title = $(tdata).find(topicLocator).find(theme.topicNameLocator)[0].textContent;
-		
+			//console.log($(tdata).find(topicLocator).find(theme.topicNameLocator)[0]);
+			
+			try {
+				var title = $(tdata).find(topicLocator).find(theme.topicNameLocator)[0].textContent;
+			} catch (error) {
+				console.log(error);
+			}
+
 			$(knap).attr('title', title);
 		}
 		var label = document.createTextNode(tdata?buttonTopicID.split(theme.splitLocation)[1]:buttonTopicID);

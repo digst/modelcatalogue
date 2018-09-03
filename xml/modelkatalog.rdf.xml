@@ -177,7 +177,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
 			ApplicationModel
 			ApplicationProfile
 			 -->
-    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ApplicatinModel"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ApplicationModel"/>
     <!-- Modelleringsniveau jf https://arkitektur.digst.dk/node/483 -
 		 beskrevet i klassifikationen ModellingLevels 
 		 Formidling
