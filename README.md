@@ -4,4 +4,4 @@ Dette repositorium indeholder implementeringen af det fællesoffentlige katalog 
 
 Ydeligere beskrivelse og kontaktoplysninger vedrørende kataloget kan findes her: https://arkitektur.digst.dk/metoder/rules-concept-and-data-modeling/modelkatalog
 
-Modelkataloget indeholder også oplysninger om en række anerkendte internationale modeller, som kan have en bred anvendelse i dansk administrativ og fællesoffentlig kontekst.
+Modelkataloget indeholder en oversigt over begrebs- og datamodeller, som er udarbejdet i offentligt regi og registreret med henblik på videndeling og genbrug. Der indgår også oplysninger om en række anerkendte internationale modeller, som kan have en bred anvendelse i dansk administrativ og fællesoffentlig kontekst.
