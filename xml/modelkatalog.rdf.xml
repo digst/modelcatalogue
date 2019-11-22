@@ -1116,6 +1116,7 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_1.0.0_Stednavne.xml"/>
     <dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap"/>
   </rdf:Description>
+
   <!-- Anvendelsesprofil for klassifikation -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -1260,6 +1261,473 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <!-- pt ingen angivelse af sprog - ADMS bruger dct:LinguisticSystem(label) som er bred; kan indeholde tegnsprog, programmeringssprog 
 			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
   </rdf:Description>
+  
+  
+
+  <!-- Anvendelsesprofil for it-systemer  - Basisprofilen  -->
+  
+  <rdf:Description rdf:about="https:/data.gov.dk/model/profile/itsystemap#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="en">Application Profile for IT Systems - Basic Profile</dct:title>
+    <dct:title xml:lang="da">Anvendelsesprofil for beskrivelse af it-systemer - Basisprofilen</dct:title>
+    <dct:description xml:lang="da">Denne anvendelsesprofil udgør en fællesoffentlig standard for beskrivelse af basisoplysninger om offentlige myndigheders it-systemer. Standarden omfatter basisoplysninger om it-systemer, som fx it-systemnavn, it-systemejer, ibrugtagningsdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om it-systemer på en effektiv måde</dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <vann:preferredNamespacePrefix>sys-ap</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https:/data.gov.dk/model/profile/itsystemap#</vann:preferredNamespaceUri>
+    <dcat:keyword>it-systemer</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-08</dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8.6</owl:versionInfo>
+    <adms:versionNotes xml:lang="en">Development</adms:versionNotes>
+    <adms:versionNotes xml:lang="da">Under udvikling</adms:versionNotes>
+    <dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    <dcat:landingPage rdf:resource="https://arkitektur.digst.dk/rammearkitektur/standard-beskrivelse-af-it-systemer"/>
+    <foaf:page rdf:resource="https://data.gov.dk/test/udkast/ITSystemAP_UDKAST/"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ApplicationProfile"/>
+    <dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
+    <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
+    <dadk:businessAreaCode>06.38.10.10 </dadk:businessAreaCode>
+	<dcat:distribution rdf:resource="https://data.gov.dk/test/udkast/ITSystemAP_UDKAST/"/>
+  </rdf:Description>  
+
+  <!-- Anvendelsesprofil for it-systemer - Arkivprofilen -->  
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/itsystemap-archv#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="en">Application Profile for The Exchange of IT System Details for the National Archives</dct:title>
+    <dct:title xml:lang="da">Anvendelsesprofil for afgivelse af it-systemoplysninger til Rigsarkivet - Arkivprofilen</dct:title>
+    <dct:description xml:lang="da">Dennee anvendelsesprofil udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders it-systemer ifm. afgivelse af it-systemoplysninger til Rigsarkivet. Standarden omfatter basisoplysninger om it-systemer (fra Basisprofilen), som fx it-systemnavn, it-systemejer, anvendelses-formål, ibrugtagningsdato mv., men udvides med arkiveringsspecifikke oplysninger </dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <vann:preferredNamespacePrefix>archv</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://data.gov.dk/model/profile/itsystemap-archv#</vann:preferredNamespaceUri>
+    <dcat:keyword>arkivering</dcat:keyword>
+    <dcat:keyword>Rigsarkivet</dcat:keyword>	
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-08</dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8.6</owl:versionInfo>
+    <adms:versionNotes xml:lang="en">Development</adms:versionNotes>
+    <adms:versionNotes xml:lang="da">Under udvikling</adms:versionNotes>
+    <dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    <dcat:landingPage rdf:resource="https://arkitektur.digst.dk/rammearkitektur/standard-beskrivelse-af-it-systemer"/>
+    <foaf:page rdf:resource="https://data.gov.dk/test/udkast/ITSystemAP_UDKAST/"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ApplicationProfile"/>
+    <dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
+    <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
+    <dadk:businessAreaCode>06.38.10.10 </dadk:businessAreaCode>
+	<dcat:distribution rdf:resource="https://data.gov.dk/test/udkast/ITSystemAP_UDKAST/"/>
+  </rdf:Description>    
+  
+  <!-- Anvendelsesprofil for Fælles sprog for datakvalitet -->
+  
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dataqualitydeclaration#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="en">Application profile for Danish public sector data quality concepts</dct:title>
+    <dct:title xml:lang="da">Anvendelsesprofil for fællesoffentlig datakvalitetsdeklaration</dct:title>
+    <dct:description xml:lang="da">Anvendelsesprofil for fællesoffentligt sprog for datakvalitets datakvalitetsdeklaration samt supplerende metrikkatalog udviklet i regi af den fællesoffentlige digitaliseringsstrategi 2016-2020</dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <vann:preferredNamespacePrefix>dqv-dk-ap</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://data.gov.dk/model/profile/dataqualitydeclaration#</vann:preferredNamespaceUri>
+    <dcat:keyword>data quality</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-09-24</dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9.0</owl:versionInfo>
+    <adms:versionNotes xml:lang="en">Development</adms:versionNotes>
+    <adms:versionNotes xml:lang="da">Under udvikling</adms:versionNotes>
+    <dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    <dcat:landingPage rdf:resource="https://arkitektur.digst.dk/metoder/faelles-sprog-datakvalitet"/>
+    <foaf:page rdf:resource="https://data.gov.dk/test/udkast/SprogForDatakvalitet/"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ApplicationProfile"/>
+    <dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
+    <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
+    <dadk:businessAreaCode>06.38.10.10 </dadk:businessAreaCode>
+	<dcat:distribution rdf:resource="https://data.gov.dk/test/udkast/SprogForDatakvalitet/"/>
+  </rdf:Description>   
+  
+
+  <!-- Anvendelsesprofil for Datasætkataloget 1.0 -->
+  
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-dk-ap#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="en">Application Profil for the Danish Dataset Catalogue (v.1.0)</dct:title>
+    <dct:title xml:lang="da">Anvendelsesprofil det danske Datasætkatalog (v.1.0)</dct:title>
+    <dct:description xml:lang="da"></dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <vann:preferredNamespacePrefix>dcat-ap-dk</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://data.gov.dk/model/profile/dcat-dk-ap#</vann:preferredNamespaceUri>
+    <dcat:keyword>datasæt</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-09-24</dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.0</owl:versionInfo>
+    <adms:versionNotes xml:lang="en">Development</adms:versionNotes>
+    <adms:versionNotes xml:lang="da">Under udvikling</adms:versionNotes>
+    <dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    <dcat:landingPage rdf:resource="https://github.com/digst/DCAT-AP-DK/tree/master/v.1"/>
+    <foaf:page rdf:resource=""/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ApplicationProfile"/>
+    <dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
+    <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
+    <dadk:businessAreaCode>06.38.10.10 </dadk:businessAreaCode>
+	<dcat:distribution rdf:resource=""/>
+  </rdf:Description>    
+ 
+
+  <!-- Begrebsliste for RAD-->
+  
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/rad#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="en">Data Sharing Concept Model</dct:title>
+    <dct:title xml:lang="da">Begrebsmodel for videregivelse af data</dct:title>
+    <dct:description xml:lang="da">Denne begrebsmodel defineres ifm. Referencearkitektur for deling af data og dokumenter</dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://data.gov.dk/concept/core/datasharing#</vann:preferredNamespaceUri>
+    <dcat:keyword>RAD</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">26-04-2018 </dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.0</owl:versionInfo>
+    <adms:versionNotes xml:lang="en">Approved</adms:versionNotes>
+    <adms:versionNotes xml:lang="da">Godkendt</adms:versionNotes>
+    <dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    <dcat:landingPage rdf:resource="https://arkitektur.digst.dk/sites/default/files/20180503_rad_v1.0_-_godkendt_af_sda.pdf"/>
+    <foaf:page rdf:resource=""/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ConceptModel"/>
+    <dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
+    <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
+    <dadk:businessAreaCode>06.38.10.10 </dadk:businessAreaCode>
+	<dcat:distribution rdf:resource=""/>
+  </rdf:Description>    
+   
+
+  <!-- Begrebsliste for Digitalt Overblik--> 
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/digitaloverview#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="en">Digital Overview Concept Model</dct:title>
+    <dct:title xml:lang="da">Begrebsmodel for digitalt overblik for borgere og virksomheder</dct:title>
+    <dct:description xml:lang="da">Denne begrebsmodel defineres ifm. Referencearkitektur for digitalt overblik</dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://data.gov.dk/concept/core/digitaloverview#</vann:preferredNamespaceUri>
+    <dcat:keyword>MitOverblik</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
+    <adms:versionNotes xml:lang="en">Under development</adms:versionNotes>
+    <adms:versionNotes xml:lang="da">Under udvikling</adms:versionNotes>
+    <dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    <dcat:landingPage rdf:resource=""/>
+    <foaf:page rdf:resource=""/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ConceptModel"/>
+    <dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
+    <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
+    <dadk:businessAreaCode>06.38.10.10 </dadk:businessAreaCode>
+	<dcat:distribution rdf:resource=""/>
+  </rdf:Description>    
+      
+
+  <!-- Begrebsliste for Digital Arkivering--> 
+  <rdf:Description rdf:about="http://data.gov.dk/concept/core/digitalarchival/">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="en">Digital Archival Concept Model</dct:title>
+    <dct:title xml:lang="da">Begrebsmodel for digital arkivering</dct:title>
+    <dct:description xml:lang="da">Begrebsmodel der indeholder centrale begreber i forhold til beskrivelse af digital arkivering og myndigheders opgaver vedrørende afleveringer af arkivalier til offentlige arkiver</dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>http://data.gov.dk/concept/core/digitalarchival/</vann:preferredNamespaceUri>
+    <dcat:keyword>archv</dcat:keyword>
+    <dcat:keyword>begrebsliste</dcat:keyword>	
+    <dcat:keyword>begreber</dcat:keyword>	
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">11-11-2019 </dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
+    <adms:versionNotes xml:lang="en">Awaiting approval</adms:versionNotes>
+    <adms:versionNotes xml:lang="da">Afventer godkendelse</adms:versionNotes>
+    <dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    <dcat:landingPage rdf:resource="http://data.gov.dk/concept/core/digitalarchival.html"/>
+    <foaf:page rdf:resource="https://data.gov.dk/document/itsystemspecification/v1/uml/"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ConceptModel"/>
+    <dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
+    <dadk:businessArea>Sagshåndtering og sagsarkivering</dadk:businessArea>
+    <dadk:businessAreaCode>65.50.05.10</dadk:businessAreaCode>
+	<dcat:distribution rdf:resource=""/>
+  </rdf:Description>    
+
+  <!-- Begrebsliste for IT System-->
+  <rdf:Description rdf:about="http://data.gov.dk/concept/core/itsystem/">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="en">IT System Concept Model</dct:title>
+    <dct:title xml:lang="da">Begrebsmodel for it-system</dct:title>
+    <dct:description xml:lang="da">Begrebsmodel der indholder centrale begreber i forhold til beskrivelse af it-systemer</dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>http://data.gov.dk/concept/core/itsystem/</vann:preferredNamespaceUri>
+    <dcat:keyword>sys</dcat:keyword>
+    <dcat:keyword>begrebsliste</dcat:keyword>	
+    <dcat:keyword>begreber</dcat:keyword>			
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">11-11-2019 </dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
+    <adms:versionNotes xml:lang="en">Awaiting approval</adms:versionNotes>
+    <adms:versionNotes xml:lang="da">Afventer godkendelse</adms:versionNotes>
+    <dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    <dcat:landingPage rdf:resource="http://data.gov.dk/concept/core/itsystem.html"/>
+    <foaf:page rdf:resource="https://data.gov.dk/document/itsystemspecification/v1/uml/"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ConceptModel"/>
+    <dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
+    <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
+    <dadk:businessAreaCode>06.38.10.10</dadk:businessAreaCode>
+	<dcat:distribution rdf:resource=""/>
+  </rdf:Description>    
+      
+	  
+	  
+  <!-- Sociale begreber-->
+  <rdf:Description rdf:about="http://www.socialebegreber.dk/">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="en">Social Services Concepts</dct:title>
+    <dct:title xml:lang="da">Sociale begreber</dct:title>
+    <dct:description xml:lang="da">Termer og definitioner på begreber fra det sociale område. Begreberne indgår i forskellige projekter, databaser, værktøjer mv. </dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>http://data.gov.dk/concept/core/itsystem/</vann:preferredNamespaceUri>
+    <dcat:keyword>socialstyrelsen</dcat:keyword>			
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
+    <adms:versionNotes xml:lang="en"></adms:versionNotes>
+    <adms:versionNotes xml:lang="da"></adms:versionNotes>
+    <dct:publisher rdf:resource="http://socialstyrelsen.dk"/>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    <dcat:landingPage rdf:resource="http://www.socialebegreber.dk/begrebsarbejde/begrebsdatabasen/find_begreb"/>
+    <foaf:page rdf:resource="http://www.socialebegreber.dk/"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ConceptModel"/>
+    <dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Dissemination"/>
+    <dadk:modellingRegime rdf:resource=""/>
+    <dadk:businessArea>Social service og omsorg</dadk:businessArea>
+    <dadk:businessAreaCode>26</dadk:businessAreaCode>
+	<dcat:distribution rdf:resource=""/>
+  </rdf:Description>  	  
+
+
+  <!-- Sundhedsbegreber-->
+  <rdf:Description rdf:about="http://www.socialebegreber.dk/">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="en">Health Concepts </dct:title>
+    <dct:title xml:lang="da">Sundhedsvæsenets begrebsbase (NBS)</dct:title>
+    <dct:description xml:lang="da">Begrebsbasen indeholder begreber inden for udvalgte, centrale sundhedsfaglige emneområder. Begreberne og de tilhørende definitioner stilles her til rådighed for det danske sundhedsvæsen og andre interesserede parter. </dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
+    <dcat:keyword>sundhedsdatastyrelsen</dcat:keyword>			
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
+    <adms:versionNotes xml:lang="en"></adms:versionNotes>
+    <adms:versionNotes xml:lang="da"></adms:versionNotes>
+    <dct:publisher rdf:resource="https://sundhedsdatastyrelsen.dk"/>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    <dcat:landingPage rdf:resource="http://sundhedsdata.iterm.dk/"/>
+    <foaf:page rdf:resource="https://sundhedsdatastyrelsen.dk/nbs"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ConceptModel"/>
+    <dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Dissemination"/>
+    <dadk:modellingRegime rdf:resource=""/>
+    <dadk:businessArea>Sundhed</dadk:businessArea>
+    <dadk:businessAreaCode>20</dadk:businessAreaCode>
+	<dcat:distribution rdf:resource=""/>
+  </rdf:Description>  	  
+	  	  
+ 
+  <!-- Topontologien-->
+  <rdf:Description rdf:about="https://blog.cbs.dk/forvir/topontologien/">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="en">FORVIR - Topontologien</dct:title>
+    <dct:title xml:lang="da">FORVIR - Upper Ontology</dct:title>
+    <dct:description xml:lang="da">Topontologien indeholder en struktureret beskrivelse af en række generelle begreber, som er centrale for mange offentlige organisationer, institutioner mv. Ontologiens begreber er beskrevet vha. deres indbyrdes relationer og karakteristiske træk, som danner grundlaget for definitioner. Forum for Videnmodellering i Offentligt Regi (FORVIR) nedsætter efter behov arbejdsgrupper, der arbejder med udvikling af begreber, der med fordel kan udvikles fællesoffentlige definitioner for.</dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
+    <dcat:keyword>FORVIR</dcat:keyword>			
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
+    <adms:versionNotes xml:lang="en"></adms:versionNotes>
+    <adms:versionNotes xml:lang="da"></adms:versionNotes>
+    <dct:publisher rdf:resource="https://sundhedsdatastyrelsen.dk"/>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    <dcat:landingPage rdf:resource="https://blog.cbs.dk/forvir/topontologien/"/>
+    <foaf:page rdf:resource="https://blog.cbs.dk/forvir/"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ConceptModel"/>
+    <dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Dissemination"/>
+    <dadk:modellingRegime rdf:resource=""/>
+    <dadk:businessArea></dadk:businessArea>
+    <dadk:businessAreaCode></dadk:businessAreaCode>
+	<dcat:distribution rdf:resource=""/>
+  </rdf:Description>  	
+
+  <!-- Begrebsliste for Temporale begreber-->
+  
+  <rdf:Description rdf:about="https://geo.data.gov.dk/model/71d084e8-9ec3-4abb-80c9-90dd4da8f0dd#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="en">Temporal concepts</dct:title>
+    <dct:title xml:lang="da">Temporale begreber</dct:title>
+    <dct:description xml:lang="da">Denne model dokumenterer temporale begreber som anvendes i forskellige domæner.</dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://geo.data.gov.dk/model/71d084e8-9ec3-4abb-80c9-90dd4da8f0dd#</vann:preferredNamespaceUri>
+    <dcat:keyword>tid</dcat:keyword>
+    <dcat:keyword>temporalitet</dcat:keyword>	
+    <dcat:keyword>bitemporalitet</dcat:keyword>		
+    <dcat:keyword>dobbelthistorik</dcat:keyword>		
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">03-09-2019 </dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2.0</owl:versionInfo>
+    <adms:versionNotes xml:lang="en">under developement</adms:versionNotes>
+    <adms:versionNotes xml:lang="da">under udvikling</adms:versionNotes>
+    <dct:publisher rdf:resource="http://sdfe.dk"/>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    <dcat:landingPage rdf:resource=""/>
+    <foaf:page rdf:resource=""/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ConceptModel"/>
+    <dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Reuse"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
+    <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
+    <dadk:businessAreaCode>06.38.10.10 </dadk:businessAreaCode>
+	<dcat:distribution rdf:resource=""/>
+  </rdf:Description>   
+  
+
+   <!-- Begrebsliste for Identifikation--> 
+  <rdf:Description rdf:about="https://geo.data.gov.dk/model/9b84f349-b1cc-43ee-a439-c324c7988a9e#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="en">Identification</dct:title>
+    <dct:title xml:lang="da">Identifikation</dct:title>
+    <dct:description xml:lang="da">Begreber vedrørende identifikation.</dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://geo.data.gov.dk/model/71d084e8-9ec3-4abb-80c9-90dd4da8f0dd#</vann:preferredNamespaceUri>
+    <dcat:keyword>tid</dcat:keyword>
+    <dcat:keyword>temporalitet</dcat:keyword>	
+    <dcat:keyword>bitemporalitet</dcat:keyword>		
+    <dcat:keyword>dobbelthistorik</dcat:keyword>		
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">03-09-2019 </dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2.0</owl:versionInfo>
+    <adms:versionNotes xml:lang="en">under developement</adms:versionNotes>
+    <adms:versionNotes xml:lang="da">under udvikling</adms:versionNotes>
+    <dct:publisher rdf:resource="http://sdfe.dk"/>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    <dcat:landingPage rdf:resource=""/>
+    <foaf:page rdf:resource=""/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ConceptModel"/>
+    <dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Reuse"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
+    <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
+    <dadk:businessAreaCode>06.38.10.10 </dadk:businessAreaCode>
+	<dcat:distribution rdf:resource=""/>
+  </rdf:Description>   
+    
+	
+
+   <!-- Begrebsliste for Sletning--> 
+  <rdf:Description rdf:about="https://geo.data.gov.dk/concept/core/deletion#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="en">Begrebsmodel for sletning</dct:title>
+    <dct:title xml:lang="da">Deletion Concept Model</dct:title>
+    <dct:description xml:lang="da">Begreber vedrørende sletning. Forventes behandlet i Arkitekturboard Q4 2019</dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri></vann:preferredNamespaceUri>		
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
+    <adms:versionNotes xml:lang="en">under developement</adms:versionNotes>
+    <adms:versionNotes xml:lang="da">under udvikling</adms:versionNotes>
+    <dct:publisher rdf:resource="http://kl.dk"/>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    <dcat:landingPage rdf:resource=""/>
+    <foaf:page rdf:resource=""/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ConceptModel"/>
+    <dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Reuse"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
+    <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
+    <dadk:businessAreaCode>06.38.10.10 </dadk:businessAreaCode>
+	<dcat:distribution rdf:resource=""/>
+  </rdf:Description>  
+
+	
+   <!-- Begrebsliste for Lineær reference--> 
+  <rdf:Description rdf:about="https://geo.data.gov.dk/model/509D4EBC-F5A5-4e07-9CE7-D4585FE29C8E#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="en">Linear reference model</dct:title>
+    <dct:title xml:lang="da">Lineær referencemodel</dct:title>
+    <dct:description xml:lang="da">Denne begrebsmodel beskriver de elementer, der kræves for at understøtte lineær referering. Dette inkluderer Linear Referencing Systems, lineært stedfæstede hændelser og lineære segmenter.
+Linear Referencing Systems muliggør specifikation af positioner langs lineære objekter og bruges til at specificere hvor - langs det lineære objekt - hver attributværdi gælder. Begrebsmodellen baserer sig på ISO 19148 Geographic Information - Linear Referencing</dct:description>
+    <dct:description xml:lang="en">The concept model is a description of the elements required to support linear referencing. This includes Linear Referencing Systems, linearly located events and linear segments. Linear Referencing Systems enable the specification of positions along linear objects. A Linear Referencing System is used to specify where along the linear object each attribute value applies. The concept model is based on  ISO 19148 Geographic Information - Linear Referencing </dct:description>
+    <vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://geo.data.gov.dk/model/71d084e8-9ec3-4abb-80c9-90dd4da8f0dd#</vann:preferredNamespaceUri>
+    <dcat:keyword>water course</dcat:keyword>	
+	<dcat:keyword>vandløb</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">28-09-2019 </dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.0</owl:versionInfo>
+    <adms:versionNotes xml:lang="en">Aproved</adms:versionNotes>
+    <adms:versionNotes xml:lang="da">Godkendt</adms:versionNotes>
+    <dct:publisher rdf:resource="http://sdfe.dk"/>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    <dcat:landingPage rdf:resource=""/>
+    <foaf:page rdf:resource=""/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ConceptModel"/>
+    <dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
+    <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
+    <dadk:businessAreaCode>52.20.10.05</dadk:businessAreaCode>
+	<dcat:distribution rdf:resource=""/>
+  </rdf:Description>   
+    	
+		
+   <!-- Logisk datamodel for Vandløbsreferencen--> 
+  <rdf:Description rdf:about="https://geo.data.gov.dk/model/C3A6F5B9-232E-430c-B97E-E56E17FF219F#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="en">Vandløbsreferencen</dct:title>
+    <dct:title xml:lang="da">Water course reference</dct:title>
+    <dct:description xml:lang="da">Model skal bruges til systemløsningen, som er en it-løsning, som genererer og vedligeholder data i form af en kobling mellem et generaliseret, nationalt, topologisk netværk med lineære referencer for vandløb og relevante objekter i GeoDanmarks vandløbsmidtegeometri. Med Vandløbsreferencen vil myndigheder og organisationer få et værktøj til at sikre entydig stedfæstelse af vandløbsdata i forhold til vandløbets autoritative geometri (GeoDanmarks Vandløbsmidte). Det muliggør en automatisk sammen-stilling og udveksling af data om vandløb på tværs af myndigheder og it-systemer. Desuden overflødiggøres parallel vedligeholdelse af geometri for vandløb, da Vandløbsmidte – som Vandløbsreferencen baserer sig på – udgør det autoritative geometriske vandløbstema i Danmark.</dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://geo.data.gov.dk/model/C3A6F5B9-232E-430c-B97E-E56E17FF219F#</vann:preferredNamespaceUri>
+    <dcat:keyword>water course</dcat:keyword>	
+	<dcat:keyword>vandløb</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">02-09-2019 </dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.0</owl:versionInfo>
+    <adms:versionNotes xml:lang="en">Aproved</adms:versionNotes>
+    <adms:versionNotes xml:lang="da">Godkendt</adms:versionNotes>
+    <dct:publisher rdf:resource="http://sdfe.dk"/>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    <dcat:landingPage rdf:resource=""/>
+    <foaf:page rdf:resource=""/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>
+    <dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
+    <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
+    <dadk:businessAreaCode>52.20.10.05</dadk:businessAreaCode>
+	<dcat:distribution rdf:resource=""/>
+  </rdf:Description>   
+    			
+  
   <!-- Begrebsmodel for brugerstyring -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -1395,6 +1863,447 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <!-- pt ingen angivelse af sprog - ADMS bruger dct:LinguisticSystem(label) som er bred; kan indeholde tegnsprog, programmeringssprog 
 			etc - måske skal vi tilføje en attrib til sprogangivelse, som bruger standard(tale)sprog -->
   </rdf:Description>
+  
+ 
+
+
+
+  <rdf:Description rdf:about="http://info.rammearkitektur.dk/byggeblokke/Sag/Informationsmodel/Sag.htm">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:title xml:lang="da">Sag</dct:title>
+    <dct:title xml:lang="en">Case</dct:title>
+    <dct:description xml:lang="da"> Formålet med byggeblokken Sag er at gøre det lettere at udveksle oplysninger om sager mellem to eller flere it-systemer, ved at skabe en fælles forståelse af hvad en sag er, og hvilke metadata der beskriver en sag.</dct:description>		
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">05-09-2018 </dct:issued>	
+	<adms:versionNotes xml:lang="da">Godkendt af KL Arkitekturboard</adms:versionNotes>	
+    <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Sag"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
+    <dct:publisher rdf:resource="http://kl.dk"/>	
+  </rdf:Description> 
+  
+  <rdf:Description rdf:about="http://info.rammearkitektur.dk/byggeblokke/Dokument/Informationsmodel/Dokument.htm">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:title xml:lang="da">Dokument</dct:title>
+    <dct:title xml:lang="en">Document</dct:title>
+    <dct:description xml:lang="da">Formålet med byggeblokken Dokument er at gøre det lettere at udveksle oplysninger om dokumenter mellem to eller flere it-systemer ved at skabe en fælles forståelse af metadata for dokumenter. Herved muliggøres, at der kan bygges oversigter og arkiver over dokumenter.</dct:description>	
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">05-09-2018 </dct:issued>	
+	<adms:versionNotes xml:lang="da">Godkendt af KL Arkitekturboard</adms:versionNotes>	
+    <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Dokument"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
+    <dct:publisher rdf:resource="http://kl.dk"/>	
+  </rdf:Description> 
+
+  <rdf:Description rdf:about="http://info.rammearkitektur.dk/byggeblokke/Klassifikation/Informationsmodel/Klassifikation.htm">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:title xml:lang="da">Klassifikation</dct:title>
+    <dct:title xml:lang="en">Classification</dct:title>
+    <dct:description xml:lang="da">Formålet med byggeblokken Klassifikation er, at den skal kunne give en ensartet beskrivelse af forskellige klassifikationssystemer, samt kunne tilføre entydige klassemærker eller journalnøgler til andre byggeblokke som fx Sag, Dokument og Organisation.</dct:description>	
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">05-09-2018 </dct:issued>	
+	<adms:versionNotes xml:lang="da">Godkendt af KL Arkitekturboard</adms:versionNotes>	
+    <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Klassifikation"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
+    <dct:publisher rdf:resource="http://kl.dk"/>	
+  </rdf:Description> 
+
+  <rdf:Description rdf:about="http://info.rammearkitektur.dk/byggeblokke/Organisation/Informationsmodel/Organisation.htm">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:title xml:lang="da">Organisation</dct:title>
+    <dct:title xml:lang="en">Organisation</dct:title>
+    <dct:description xml:lang="da">Formålet med byggeblokken Organisation er at gøre det lettere at udveksle organisationsoplysninger mellem to eller flere it-systemer ved at skabe en fælles forståelse af hvad en organisation er og hvilke informationer, der beskriver en organisation.</dct:description>	
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">05-09-2018 </dct:issued>	
+	<adms:versionNotes xml:lang="da">Godkendt af KL Arkitekturboard</adms:versionNotes>		
+    <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Organisation"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
+    <dct:publisher rdf:resource="http://kl.dk"/>	
+  </rdf:Description> 
+
+  <rdf:Description rdf:about="http://info.rammearkitektur.dk/byggeblokke/Aktivitet/Informationsmodel/Aktivitet.htm">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:title xml:lang="da">Aktivitet</dct:title>
+    <dct:title xml:lang="en">Activity</dct:title>
+    <dct:description xml:lang="da">Byggeblokken har til formål at beskrive og dokumentere de helt centrale karakteristika ved enhver aktivitet – uanset om der er tale om en undervisningsaktivitet, en planlægningsaktivitet eller en analyseaktivitet o. lign.</dct:description>	
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">05-09-2018 </dct:issued>	
+	<adms:versionNotes xml:lang="da">Godkendt af KL Arkitekturboard</adms:versionNotes>	
+    <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Aktivitet"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
+    <dct:publisher rdf:resource="http://kl.dk"/>	
+  </rdf:Description> 
+
+  <rdf:Description rdf:about="http://info.rammearkitektur.dk/byggeblokke/Indsats/Informationsmodel/Indsats.htm">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:title xml:lang="da">Indsats</dct:title>
+    <dct:title xml:lang="en">Action</dct:title>
+    <dct:description xml:lang="da">Byggeblokken Indsats har til formål at give en ensartet måde at arbejde med begrebet indsats, så det er muligt at beskrive og dokumentere indsatser på samme vis, uanset i hvilket forvaltningsområde indsatsen foretages. Dette kan være med til at øge forståelsen, koordineringen samt udvekslingen af indsatser på tværs af forretningsdomæner, hvilket kan bidrage til, at borgere vil opleve en mere sammenhængende service, når indsatserne i højere grad kan koordineres mellem forvaltningsområder og aktører.</dct:description>	
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">05-07-2018 </dct:issued>	
+	<adms:versionNotes xml:lang="da">Godkendt af KL Arkitekturboard</adms:versionNotes>	
+    <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Indsats"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
+    <dct:publisher rdf:resource="http://kl.dk"/>	
+  </rdf:Description>  
+
+
+  <rdf:Description rdf:about="http://info.rammearkitektur.dk/byggeblokke/Tilstand/Informationsmodel/Tilstand.htm">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:title xml:lang="da">Tilstand</dct:title>
+    <dct:title xml:lang="en">State</dct:title>
+    <dct:description xml:lang="da">Byggeblokken Tilstand kan derfor bruges til, at understøtte relevante oplysninger(data) om tilstande. Dette kunne eksempelvis være en borgers uddannelses-, sundheds-, social- eller beskæftigelsesmæssige tilstand. Byggeblokken Tilstand beskæftiger sig helt centralt med de egenskaber, der er med til at beskrive Objekter. Disse egenskaber fortæller noget om objektet, og med byggeblokken Tilstand kan vi beskrive, hvilken værdi disse egenskaber har på specifikke tidspunkter.</dct:description>	
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">12-04-2018 </dct:issued>	
+	<adms:versionNotes xml:lang="da">Godkendt af KL Arkitekturboard</adms:versionNotes>		
+    <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Tilstand"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
+    <dct:publisher rdf:resource="http://kl.dk"/>	
+  </rdf:Description>  
+
+
+  <rdf:Description rdf:about="http://info.rammearkitektur.dk/byggeblokke/Objekt/Informationsmodel/Objekt.htm">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:title xml:lang="da">Objekt</dct:title>
+    <dct:title xml:lang="en">Object</dct:title>
+    <dct:description xml:lang="da">Byggeblokken Objektet har til formål at kunne rumme og beskrive alle "slags objekter", som optræder i den kommunale forretning</dct:description>	
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">05-07-2018 </dct:issued>	
+	<adms:versionNotes xml:lang="da">Godkendt af KL Arkitekturboard</adms:versionNotes>	
+    <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Objekt"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
+    <dct:publisher rdf:resource="http://kl.dk"/>	
+  </rdf:Description>    
+  
+  <rdf:Description rdf:about="http://info.rammearkitektur.dk/index.php/Ydelse">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:title xml:lang="da">Ydelse</dct:title>
+    <dct:title xml:lang="en">Payment</dct:title>
+    <dct:description xml:lang="da">Ydelse er det som borgere eller virksomheder kan få bevilget. Samlingen af ydelser kalder vi et ydelseskatalog.</dct:description>	
+	<adms:versionNotes xml:lang="da">Byggeblok under udarbejdelse til at blive optaget i KLs rammearkitektur</adms:versionNotes>
+    <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Ydelse"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
+    <dct:publisher rdf:resource="http://kl.dk"/>	
+  </rdf:Description>    
+  
+
+  <rdf:Description rdf:about="http://info.rammearkitektur.dk/index.php/Bevilling">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:title xml:lang="da">Bevilling</dct:title>
+    <dct:title xml:lang="en"></dct:title>
+    <dct:description xml:lang="da">Bevillingen er en form for "kontrakt" mellem borgeren og det offentlige om "retten til at modtage" en eller flere ydelser.</dct:description>	
+	<adms:versionNotes xml:lang="da">Byggeblok under udarbejdelse til at blive optaget i KLs rammearkitektur</adms:versionNotes>
+    <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Bevilling"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
+    <dct:publisher rdf:resource="http://kl.dk"/>	
+  </rdf:Description>   
+  
+  <rdf:Description rdf:about="http://info.rammearkitektur.dk/index.php/Effektuering">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:title xml:lang="da">Effektuering</dct:title>
+    <dct:title xml:lang="en">Implementation</dct:title>
+    <dct:description xml:lang="da">Effektuering sikrer at det, der er bevilget også bliver effektueret. Afhængigt af, hvilken slags ydelse der er bevilget, vil det sige: Udbetalt (økonomisk ydelse), Udleveret (Fysisk ydelse) eller udført (Ressourceydelse).
+</dct:description>	
+	<adms:versionNotes xml:lang="da">Byggeblok under udarbejdelse til at blive optaget i KLs rammearkitektur</adms:versionNotes>
+    <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Effektuering"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
+    <dct:publisher rdf:resource="http://kl.dk"/>	
+  </rdf:Description>    
+  
+  <rdf:Description rdf:about="http://info.rammearkitektur.dk/index.php/Myndighed">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:title xml:lang="da">Myndighed</dct:title>
+    <dct:title xml:lang="en">Authority</dct:title>
+    <dct:description xml:lang="da"> </dct:description>	
+	<adms:versionNotes xml:lang="da">Byggeblok under udarbejdelse til at blive optaget i KLs rammearkitektur</adms:versionNotes>
+    <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Myndighed"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
+    <dct:publisher rdf:resource="http://kl.dk"/>	
+  </rdf:Description>    
+  
+  <rdf:Description rdf:about="http://info.rammearkitektur.dk/index.php/Lokation">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:title xml:lang="da">Lokation</dct:title>
+    <dct:title xml:lang="en">Location</dct:title>
+    <dct:description xml:lang="da"> </dct:description>	
+	<adms:versionNotes xml:lang="da">Byggeblok under udarbejdelse til at blive optaget i KLs rammearkitektur</adms:versionNotes>
+    <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Lokation"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
+    <dct:publisher rdf:resource="http://kl.dk"/>	
+  </rdf:Description>    
+
+  <rdf:Description rdf:about="http://info.rammearkitektur.dk/index.php/Aktør">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:title xml:lang="da">Aktør</dct:title>
+    <dct:title xml:lang="en">Agent</dct:title>
+    <dct:description xml:lang="da"> </dct:description>	
+	<adms:versionNotes xml:lang="da">Byggeblok under udarbejdelse til at blive optaget i KLs rammearkitektur</adms:versionNotes>
+    <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Aktør"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
+    <dct:publisher rdf:resource="http://kl.dk"/>	
+  </rdf:Description>  
+
+  <rdf:Description rdf:about="http://info.rammearkitektur.dk/index.php/Facilitet">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:title xml:lang="da">Facilitet</dct:title>
+    <dct:title xml:lang="en">Facility</dct:title>
+    <dct:description xml:lang="da"> </dct:description>	
+	<adms:versionNotes xml:lang="da">Byggeblok under udarbejdelse til at blive optaget i KLs rammearkitektur</adms:versionNotes>
+    <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Facilitet"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
+    <dct:publisher rdf:resource="http://kl.dk"/>	
+  </rdf:Description>  
+  
+  <rdf:Description rdf:about="http://info.rammearkitektur.dk/index.php/NavngivetSted">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:title xml:lang="da">Navngivet sted</dct:title>
+    <dct:title xml:lang="en">Named place</dct:title>
+    <dct:description xml:lang="da"> </dct:description>	
+	<adms:versionNotes xml:lang="da">Byggeblok under udarbejdelse til at blive optaget i KLs rammearkitektur</adms:versionNotes>
+    <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/NavngivetSted"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
+    <dct:publisher rdf:resource="http://kl.dk"/>	
+  </rdf:Description>    
+  
+  <rdf:Description rdf:about="http://info.rammearkitektur.dk/index.php/Samtykke">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:title xml:lang="da">Samtykke</dct:title>
+    <dct:title xml:lang="en">Consent</dct:title>
+    <dct:description xml:lang="da"> </dct:description>	
+	<adms:versionNotes xml:lang="da">Byggeblok under udarbejdelse til at blive optaget i KLs rammearkitektur</adms:versionNotes>
+    <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Consent"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
+    <dct:publisher rdf:resource="http://kl.dk"/>	
+  </rdf:Description> 
+
+  <rdf:Description rdf:about="http://info.rammearkitektur.dk/index.php/Fuldmagt">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:title xml:lang="da">Fuldmagt (Rettighed og Fuldmagt)</dct:title>
+    <dct:title xml:lang="en">Authorisation</dct:title>
+    <dct:description xml:lang="da"> </dct:description>	
+	<adms:versionNotes xml:lang="da">Byggeblok under udarbejdelse til at blive optaget i KLs rammearkitektur</adms:versionNotes>
+    <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Fuldmagt"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
+    <dct:publisher rdf:resource="http://kl.dk"/>	
+  </rdf:Description>    
+
+
+   <!-- Klassifikationsmodeller: -->
+  <rdf:Description rdf:about="https://op.europa.eu/en/web/eu-vocabularies/authority-tables">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:publisher rdf:resource="https://europa.eu"/>	
+    <dct:title xml:lang="da">Klassifikationer: EU kodelister</dct:title>
+    <dct:title xml:lang="en">Classifications: EU Named Authority Lists</dct:title>
+    <dct:description xml:lang="da">Samling af kodelister udgivet af Europa-Kommissionen til anvendelse i forbindelse med dataudveksling</dct:description>
+    <dct:description xml:lang="en">In order to harmonise and standardise the codes and the associated labels used in the Publications Office and for inter-institutional data exchange (i.e.: between the institutions involved in the legal decision-making process gathered in the Interinstitutional Metadata Maintenance Committee [IMMC]), a number of Named Authority Lists (NALs) have been defined.</dct:description>
+    <dcat:keyword>klassifikation</dcat:keyword>	
+    <dcat:keyword>controlled vocabulary</dcat:keyword>		
+    <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>	
+    <dcat:keyword>SKOS</dcat:keyword>		
+    <dcat:landingPage rdf:resource="https://op.europa.eu/en/web/eu-vocabularies/authority-tables"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#ClassificationModel"/>		
+  </rdf:Description>    
+       
+
+  <rdf:Description rdf:about="https://data.gov.dk/concept/profile/db07#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:publisher rdf:resource="http://digst.dk"/>	
+    <dct:title xml:lang="da">Klassifikation: DANSK BRANCHEKODE DB07</dct:title>
+    <dct:title xml:lang="en">Classification: DB07</dct:title>
+    <dct:description xml:lang="da">DB07 er en dansk underopdeling af EU´s fælles branchenomenklatur, den 4-cifrede NACE rev. 2. NACE rev. 2 er en revideret udgave af NACE rev. 1.1 fra 2002. NACE rev. 2 bygger på FN´s branchenomenklatur ISIC rev. 4. NACE rev. 2 gælder fra 1. januar 2008 i alle EU-medlemslande ifølge forordning nr. 1893/2006.</dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <dcat:keyword>klassifikation</dcat:keyword>	
+    <dcat:keyword>controlled vocabulary</dcat:keyword>		
+    <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>	
+    <dcat:keyword>SKOS</dcat:keyword>		
+    <dcat:landingPage rdf:resource=""/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#ClassificationModel"/>		
+  </rdf:Description>    
+
+  <rdf:Description rdf:about="https://data.gov.dk/concept/profile/disco-08#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:publisher rdf:resource="http://digst.dk"/>	
+    <dct:title xml:lang="da">Klassifikation: DANMARKS STATISTIKS FAGKLASSIFIKATION (DISCO-08)</dct:title>
+    <dct:title xml:lang="en">Classification: DISCO-08</dct:title>
+    <dct:description xml:lang="da">DISCO-08 er en sekscifret klassifikation med fem niveauer, til klassificering og aggregering af oplysninger om arbejdsfunktioner fra forskellige statistiske undersøgelser. Klassifikationen er en revideret udgave af fagklassifikationen fra 1988 (DISCO-88), som den erstatter.</dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <dcat:keyword>klassifikation</dcat:keyword>	
+    <dcat:keyword>controlled vocabulary</dcat:keyword>		
+    <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>	
+    <dcat:keyword>SKOS</dcat:keyword>		
+    <dcat:landingPage rdf:resource="https://www.dst.dk/da/Statistik/dokumentation/nomenklaturer/disco-08"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#ClassificationModel"/>		
+  </rdf:Description>          
+  
+  <rdf:Description rdf:about="https://data.gov.dk/concept/profile/form#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:publisher rdf:resource="http://digst.dk"/>	
+    <dct:title xml:lang="da">Klassifikation: FORM</dct:title>
+    <dct:title xml:lang="en">Classification: FORM</dct:title>
+    <dct:description xml:lang="da">FORM (FællesOffentlig ReferenceModel) er et opgavekatalog over det offentliges opgaver, både i forhold til borgere og virksomheder, vedrørende internationale relationer og samfundsforhold, og endelig vedrørende de interne administrative opgaver. Opgavekataloget er et analyse- og struktureringsredskab, som skaber overblik og et fælles sprog på tværs af den offentlige sektor </dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <dcat:keyword>klassifikation</dcat:keyword>	
+    <dcat:keyword>controlled vocabulary</dcat:keyword>		
+    <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>	
+    <dcat:keyword>SKOS</dcat:keyword>		
+    <dcat:landingPage rdf:resource="http://www.kle-online.dk/"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#ClassificationModel"/>		
+  </rdf:Description>    
+    
+  
+   <rdf:Description rdf:about="https://data.gov.dk/concept/profile/kle#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:publisher rdf:resource="http://kl.dk"/>	
+    <dct:title xml:lang="da">Klassifikation: KLE</dct:title>
+    <dct:title xml:lang="en">Classification: KLE</dct:title>
+    <dct:description xml:lang="da">KL Emnesystematik (KLE) er en retskildebaseret kommunal taksonomi (journaliseringsnøgle), der bruges til at registrere de kommunale opgaver (emner) og forvaltningshandlingen ift. opgaven (handlingsfacetterne) på den enkelte sag. KL Emnesystematik tilstræber til enhver tid at reflektere den del af den danske lovgivning, der omfatter den kommunale forvaltning.</dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <dcat:keyword>klassifikation</dcat:keyword>	
+    <dcat:keyword>controlled vocabulary</dcat:keyword>		
+    <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>	
+    <dcat:keyword>SKOS</dcat:keyword>		
+    <dcat:landingPage rdf:resource="http://www.kle-online.dk/"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#ClassificationModel"/>	
+  </rdf:Description>    
+ 
+   <rdf:Description rdf:about="https://data.gov.dk/concept/profile/PublicOrganisationTypes#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:publisher rdf:resource="http://digst.dk"/>	
+    <dct:title xml:lang="da">Klassifikation: Offentlige organisationstyper</dct:title>
+    <dct:title xml:lang="en">Classification: Public Organisation Types</dct:title>
+    <dct:description xml:lang="da">Klassifikation af offentlige organisationer i forhold til styring og forvaltning i dansk administrativ og fællesof-fentlig kontekst</dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">11-11-2019</dct:issued>	
+	<adms:versionNotes xml:lang="da">Afventer godkendelse</adms:versionNotes>		
+    <dcat:keyword>klassifikation</dcat:keyword>	
+    <dcat:keyword>controlled vocabulary</dcat:keyword>		
+    <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>	
+    <dcat:keyword>SKOS</dcat:keyword>		
+	<foaf:page rdf:resource="https://data.gov.dk/document/itsystemspecification/v1/uml/"/>
+    <dcat:landingPage rdf:resource="https://data.gov.dk/concept/profile/PublicOrganisationTypes.rdf"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#ClassificationModel"/>	
+  </rdf:Description>  
+ 
+   <rdf:Description rdf:about="https://data.gov.dk/concept/profile/ITEnvironmentTypes#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:publisher rdf:resource="http://digst.dk"/>	
+    <dct:title xml:lang="da">Klassifikation: IT-systemmiljøtyper</dct:title>
+    <dct:title xml:lang="en">Classification: IT System Environment Types</dct:title>
+    <dct:description xml:lang="da">Klassifikation efter miljø som et it-system instantieres i</dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">11-11-2019</dct:issued>	
+	<adms:versionNotes xml:lang="da">Afventer godkendelse</adms:versionNotes>		
+    <dcat:keyword>klassifikation</dcat:keyword>	
+    <dcat:keyword>controlled vocabulary</dcat:keyword>		
+    <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>	
+    <dcat:keyword>SKOS</dcat:keyword>		
+	<foaf:page rdf:resource="https://data.gov.dk/document/itsystemspecification/v1/uml/"/>
+    <dcat:landingPage rdf:resource="https://data.gov.dk/concept/profile/ITEnvironmentTypes.rdf"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#ClassificationModel"/>	
+  </rdf:Description>  
+  
+   <rdf:Description rdf:about="https://data.gov.dk/concept/profile/OperationelStatuses#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:publisher rdf:resource="http://digst.dk"/>	
+    <dct:title xml:lang="da">Klassifikation: Operationel status</dct:title>
+    <dct:title xml:lang="en">Classification: IT System Operational Status</dct:title>
+    <dct:description xml:lang="da">Klassifikation af tilstande et it-system kan have i forhold til ibrugtagning</dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">11-11-2019</dct:issued>	
+	<adms:versionNotes xml:lang="da">Afventer godkendelse</adms:versionNotes>		
+    <dcat:keyword>klassifikation</dcat:keyword>	
+    <dcat:keyword>controlled vocabulary</dcat:keyword>		
+    <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>	
+    <dcat:keyword>SKOS</dcat:keyword>		
+	<foaf:page rdf:resource="https://data.gov.dk/document/itsystemspecification/v1/uml/"/>
+    <dcat:landingPage rdf:resource="https://data.gov.dk/concept/profile/OperationalStatuses.rdf"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#ClassificationModel"/>	
+  </rdf:Description>   
+  
+   <rdf:Description rdf:about="https://data.gov.dk/concept/profile/PersonalDataCategories#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:publisher rdf:resource="http://digst.dk"/>	
+    <dct:title xml:lang="da">Klassifikation: Personoplysningskategorier</dct:title>
+    <dct:title xml:lang="en">Classification: Personal Data Categories</dct:title>
+    <dct:description xml:lang="da">Klassifikation efter personoplysningers følsomhed idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne </dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">11-11-2019</dct:issued>	
+	<adms:versionNotes xml:lang="da">Afventer godkendelse</adms:versionNotes>		
+    <dcat:keyword>klassifikation</dcat:keyword>	
+    <dcat:keyword>controlled vocabulary</dcat:keyword>		
+    <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>	
+    <dcat:keyword>SKOS</dcat:keyword>		
+	<foaf:page rdf:resource="https://data.gov.dk/document/itsystemspecification/v1/uml/"/>
+    <dcat:landingPage rdf:resource="https://data.gov.dk/concept/profile/PersonalDataCategories.rdf"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#ClassificationModel"/>	
+  </rdf:Description>   
+    
+
+   <rdf:Description rdf:about="https://data.gov.dk/concept/profile/ConfidentialityTypesNatoEU#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:publisher rdf:resource="http://digst.dk"/>	
+    <dct:title xml:lang="da">Klassifikation: Fortrolighedsgrad iht. Sikkerhedscirkulæret</dct:title>
+    <dct:title xml:lang="en">Classification: Confidentiality Types (Nato/EU) </dct:title>
+    <dct:description xml:lang="da">Klassifikation af grader af fortrolighed forstået som i hvilket omfang information kan videregives iht. sikker-hedscirkulæret (EU/NATO)</dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">11-11-2019</dct:issued>	
+	<adms:versionNotes xml:lang="da">Afventer godkendelse</adms:versionNotes>		
+    <dcat:keyword>klassifikation</dcat:keyword>	
+    <dcat:keyword>controlled vocabulary</dcat:keyword>		
+    <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>	
+    <dcat:keyword>SKOS</dcat:keyword>		
+	<foaf:page rdf:resource="https://data.gov.dk/document/itsystemspecification/v1/uml/"/>
+    <dcat:landingPage rdf:resource="https://data.gov.dk/concept/profile/ConfidentialityTypesNatoEU.rdf"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#ClassificationModel"/>	
+  </rdf:Description>   
+  
+
+   <rdf:Description rdf:about="https://data.gov.dk/concept/profile/ITSystemAquisitionTypes">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:publisher rdf:resource="http://digst.dk"/>	
+    <dct:title xml:lang="da">Klassifikation: It-systemanskaffelsestyper</dct:title>
+    <dct:title xml:lang="en">Classification: IT System Aquisition Types </dct:title>
+    <dct:description xml:lang="da">Klassifikation efter hvorledes et it-system er blevet anskaffet, herunder om det er udviklet i egen organisation, bestillingsudviklet (fx ved udbud) eller er anskaffet som et kommercielt (Commercial-of-the-shelf, COTS) eller open source standardsystem.</dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">11-11-2019</dct:issued>	
+	<adms:versionNotes xml:lang="da">Afventer godkendelse</adms:versionNotes>		
+    <dcat:keyword>klassifikation</dcat:keyword>	
+    <dcat:keyword>controlled vocabulary</dcat:keyword>		
+    <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>	
+    <dcat:keyword>SKOS</dcat:keyword>		
+	<foaf:page rdf:resource="https://data.gov.dk/document/itsystemspecification/v1/uml/"/>
+    <dcat:landingPage rdf:resource="https://data.gov.dk/concept/profile/ITSystemAquisitionTypes.rdf"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#ClassificationModel"/>	
+  </rdf:Description>   
+        
+   <rdf:Description rdf:about="https://data.gov.dk/concept/profile/ITSystemCriticalityTypes">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:publisher rdf:resource="http://digst.dk"/>	
+    <dct:title xml:lang="da">Klassifikation: It-systemkritikalitetstyper</dct:title>
+    <dct:title xml:lang="en">Classification: IT System Criticality Types </dct:title>
+    <dct:description xml:lang="da">Klassifikation efter, hvorvidt et it-systems anvendelse er forretningskritisk, samfundskritisk eller ikke kritisk</dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">11-11-2019</dct:issued>	
+	<adms:versionNotes xml:lang="da">Afventer godkendelse</adms:versionNotes>		
+    <dcat:keyword>klassifikation</dcat:keyword>	
+    <dcat:keyword>controlled vocabulary</dcat:keyword>		
+    <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>	
+    <dcat:keyword>SKOS</dcat:keyword>		
+	<foaf:page rdf:resource="https://data.gov.dk/document/itsystemspecification/v1/uml/"/>
+    <dcat:landingPage rdf:resource="https://data.gov.dk/concept/profile/ITSystemCriticalityTypes.rdf"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#ClassificationModel"/>	
+  </rdf:Description>   
+              
+
+   <rdf:Description rdf:about="https://data.gov.dk/concept/profile/ITSystemCriticalityTypes">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dct:publisher rdf:resource="http://digst.dk"/>	
+    <dct:title xml:lang="da">Klassifikation: It-systemkritikalitetstyper</dct:title>
+    <dct:title xml:lang="en">Classification: IT System Criticality Types </dct:title>
+    <dct:description xml:lang="da">Klassifikation efter, hvorvidt et it-systems anvendelse er forretningskritisk, samfundskritisk eller ikke kritisk</dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">11-11-2019</dct:issued>	
+	<adms:versionNotes xml:lang="da">Afventer godkendelse</adms:versionNotes>		
+    <dcat:keyword>klassifikation</dcat:keyword>	
+    <dcat:keyword>controlled vocabulary</dcat:keyword>		
+    <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>	
+    <dcat:keyword>SKOS</dcat:keyword>		
+	<foaf:page rdf:resource="https://data.gov.dk/document/itsystemspecification/v1/uml/"/>
+    <dcat:landingPage rdf:resource="https://data.gov.dk/concept/profile/ITSystemCriticalityTypes.rdf"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#ClassificationModel"/>	
+  </rdf:Description>  			  
+  
   <!-- VOAF -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -1414,8 +2323,6 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <!-- vann info er ikke del af ADMS/DCAT men vigtigt her - vi skal lave en egen AP -->
     <vann:preferredNamespacePrefix>voaf</vann:preferredNamespacePrefix>
     <vann:preferredNamespaceUri>http://purl.org/vocommons/voaf#</vann:preferredNamespaceUri>
-    <dcat:keyword>Nobel prize</dcat:keyword>
-    <dcat:keyword>Afstemning</dcat:keyword>
     <!-- giver det mening? det er distributions, som udgives tror jeg -->
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-12-21</dct:issued>
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-11-16</dct:modified>
