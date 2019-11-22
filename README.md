@@ -1,6 +1,6 @@
 # Modelkataloget
 
-Dette repositorium indeholder implementeringen af modelkataloget som det vises på https://data.gov.dk/catalogue/models/.
+Dette repositorium indeholder implementeringen af det fællesoffentlige katalog over begrebs- og datamodeller som det vises på https://data.gov.dk/catalogue/models/.
 
 Ydeligere beskrivelse og kontaktoplysninger vedrørende kataloget kan findes her: https://arkitektur.digst.dk/metoder/rules-concept-and-data-modeling/modelkatalog
 
