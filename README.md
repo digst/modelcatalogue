@@ -6,3 +6,8 @@ Modelkataloget indeholder en oversigt over begrebs- og datamodeller, som er udar
 
 Ydeligere beskrivelse og kontaktoplysninger vedrørende kataloget kan findes her: https://arkitektur.digst.dk/metoder/rules-concept-and-data-modeling/modelkatalog
 
+## Datamodellen modelDCAT-AP
+Den bagvedliggende datamodel for Modelkataloget udgøres af anvendelsesprofilen modelDCAT-AP som er baseret på DCAT-AP.
+https://github.com/digst/modelDCAT-AP
+
+
