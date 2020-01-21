@@ -1,0 +1,39 @@
+		<div class="container">
+			<h1 class="mt-3 mt-md-4">Velkommen til det fællesoffentlige katalog over begrebs- og datamodeller</h1>
+			<p class="font-lead">
+				Her finder du en oversigt over begrebs- og datamodeller udarbejdet i offentligt regi og som er registret med henblik på videndeling og genbrug. 
+				Derudover indeholder dette katalog også oplysninger om en række anerkendte  internationale modeller som kan have en bred anvendelse i dansk administrativ og fællesoffentlig kontekst. 
+				Anvendelse af Modelreglerne og genbrug af modeller og data gør os i stand til at skabe en fællesoffentlig dataarkitektur og et fælles datagrundlag, hvor vi kan anvende hinandens modeller og de data, de dokumenterer.
+				<br /> <strong>Del og genbrug nu!</strong>
+				<button class="js-tippy" data-tippy-content="Tooltip">Text</button>
+			</p>
+			<div class="row mt-5">	
+				<div class="search-bar pt-4 pb-4 pb-md-5 pt-md-5 mt-4 mt-md-9">
+					<div class="col-12">
+						<form method="post" id="search-form">
+							<label for="searchField" class="text-white">Søg i modelkataloget</label>
+							<div class="form-group search">							
+								<input  id="searchField" class="form-input input-char-27" name="search-query" title="Search" type="search" />
+								<button class="button button-search do-search">Søg</button>
+								<button type="button" class="button button-secondary reset-search">Nulstil søgning</button>
+								<input type="hidden" name="language" value="da" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+					<button class="toggleFilter openbtn button button-secondary">&#9776; Åben filtre</button>
+					<div id="mySidepanel" class="sidepanel col-sm-3 filter-col">
+						<button class="toggleFilter openbtn button button-secondary closebtn"><svg class="icon-svg "  focusable="false" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg> Luk</button>
+						<h2 class="mt-1">Filtrering</h2>
+						<button class="button button-secondary mb-4 reset-filter"> Klik her for at nulstille filtreringen </button>
+						<div id="knapdiv">
+							<div id="filtreret"></div>
+						</div>	
+					</div>
+					<div class="col models-col" style="overflow:hidden;">
+						<div id="resultatdiv"></div>
+					</div>
+			</div>
+		</div>

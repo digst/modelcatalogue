@@ -11,7 +11,12 @@
     <!-- som er et ADMS:AssetRepository -->
     <dct:title xml:lang="en">Modelkataloget</dct:title>
     <dct:description xml:lang="da">Katalog over relevante modeller for dansk modellering</dct:description>
-    <dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/>
+    <dct:publisher>
+        <foaf:Organization>
+            <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+            <foaf:homepage>http://digitaliseringsstyrelsen.dk</foaf:homepage>
+        </foaf:Organization>
+    </dct:publisher>
      <foaf:homepage rdf:resource="http://data.gov.dk/catalogue/models/xml/modelkatalog.rdf.xml"/>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-01</dct:issued>
     <!-- man kunne lave ref til samtlige assets med <dcat:dataset> - men det gider jeg ikke nu; mit XSLT klarer ærterne -->
@@ -47,9 +52,15 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-09-09</dct:issued>
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1.0</owl:versionInfo>
-    <adms:versionNotes xml:lang="da">se: http://data.gov.dk/model/xmi/Domaenemodeller/BygningerOgBoliger/BBR%20%C3%A6ndringer%201.1.0%20-%202.1.0.pdf
+    <adms:versionNotes xml:lang="da">http://data.gov.dk/model/xmi/Domaenemodeller/BygningerOgBoliger/BBR%20%C3%A6ndringer%201.1.0%20-%202.1.0.pdf
 	</adms:versionNotes>
-<dct:publisher rdf:resource="SKAT"/>
+	<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>SKAT</foaf:name>
+        <foaf:homepage>https://skat.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights/>
     <cc:license rdf:resource=""/>
     <dcat:landingPage rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/BygningerOgBoliger/"/>
@@ -89,7 +100,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.0</owl:versionInfo>
     <adms:versionNotes xml:lang="en">
 	</adms:versionNotes>
-<dct:publisher rdf:resource="Erhvervsstyrelsen"/>
+<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Erhvervsstyrelsen</foaf:name>
+        <foaf:homepage>https://erhvervsstyrelsen.dk/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights/>
     <cc:license rdf:resource=""/>
     <dcat:landingPage rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/CentraleVirksomhedsregister/"/>
@@ -127,9 +144,15 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-02-26</dct:issued>
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.1</owl:versionInfo>
-    <adms:versionNotes xml:lang="da">Se: http://data.gov.dk/model/profile/xmi/Domaenemodeller/DAGI/DAGI%20%C3%A6ndringer%201.0.0%20-%201.0.1.pdf
+    <adms:versionNotes xml:lang="da">http://data.gov.dk/model/profile/xmi/Domaenemodeller/DAGI/DAGI%20%C3%A6ndringer%201.0.0%20-%201.0.1.pdf
 	</adms:versionNotes>
-<dct:publisher rdf:resource="Styrelsen for Dataforsyning og Effektivisering"/>
+<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Styrelsen for Dataforsyning og Effektivisering</foaf:name>
+        <foaf:homepage>https://sdfe.dk/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights/>
     <cc:license rdf:resource=""/>
     <dcat:landingPage rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/DAGI/"/>
@@ -170,7 +193,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <adms:versionNotes xml:lang="en">Se http://data.gov.dk/model/xmi/Domaenemodeller/DanmarksAdresser/DanmarksAdresser%20%C3%A6ndringer%201.0.0%20-%202.0.0.pdf
 	</adms:versionNotes>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="Styrelsen for Dataforsyning og Effektivisering"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Styrelsen for Dataforsyning og Effektivisering</foaf:name>
+        <foaf:homepage>https://sdfe.dk/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights/>
     <cc:license rdf:resource=""/>
     <dcat:landingPage rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/DanmarksAdresser/"/>
@@ -209,7 +238,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3.0</owl:versionInfo>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da">Se  http://data.gov.dk/model/xmi/Domaenemodeller/Ejendomsbeliggenhed/Ejendomsbeliggenhed%20%C3%A6ndringer%201.1.0%20-%201.3.0.pdf	</adms:versionNotes>
-<dct:publisher rdf:resource="Styrelsen for Dataforsyning og Effektivisering"/>
+<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Styrelsen for Dataforsyning og Effektivisering</foaf:name>
+        <foaf:homepage>https://sdfe.dk/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights/>
     <cc:license rdf:resource=""/>
     <dcat:landingPage rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/Ejendomsbeliggenhed/"/>
@@ -245,7 +280,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.0</owl:versionInfo>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="SKAT"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>SKAT</foaf:name>
+        <foaf:homepage>https://skat.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights/>
     <cc:license rdf:resource=""/>
     <dcat:landingPage rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/Ejendomsvurdering/"/>
@@ -281,9 +322,15 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3.0</owl:versionInfo>
     <adms:versionNotes xml:lang="en"/>
-    <adms:versionNotes xml:lang="da">se: http://data.gov.dk/model/xmi/Domaenemodeller/Ejerfortegnelsen/Ejerfortegnelsen%20%C3%A6ndringer%201.2.1%20-%201.3.0.pdf
+    <adms:versionNotes xml:lang="da">http://data.gov.dk/model/xmi/Domaenemodeller/Ejerfortegnelsen/Ejerfortegnelsen%20%C3%A6ndringer%201.2.1%20-%201.3.0.pdf
 	</adms:versionNotes>
-<dct:publisher rdf:resource="Styrelsen for Dataforsyning og Effektivisering"/>
+<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Styrelsen for Dataforsyning og Effektivisering</foaf:name>
+        <foaf:homepage>https://sdfe.dk/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights/>
     <cc:license rdf:resource=""/>
     <dcat:landingPage rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/Ejerfortegnelsen/"/>
@@ -323,9 +370,15 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0.0</owl:versionInfo>
     <adms:versionNotes xml:lang="en"/>
-    <adms:versionNotes xml:lang="da">se: http://data.gov.dk/model/xmi/Domaenemodeller/GeoDanmark/GeoDanmark%20%C3%A6ndringer%201.1.0%20-%202.0.0.pdf
+    <adms:versionNotes xml:lang="da">http://data.gov.dk/model/xmi/Domaenemodeller/GeoDanmark/GeoDanmark%20%C3%A6ndringer%201.1.0%20-%202.0.0.pdf
 	</adms:versionNotes>
-<dct:publisher rdf:resource="Styrelsen for Dataforsyning og Effektivisering"/>
+<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Styrelsen for Dataforsyning og Effektivisering</foaf:name>
+        <foaf:homepage>https://sdfe.dk/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights/>
     <cc:license rdf:resource=""/>
     <dcat:landingPage rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/GeoDanmark/"/>
@@ -363,9 +416,15 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2.3</owl:versionInfo>
     <adms:versionNotes xml:lang="en"/>
-    <adms:versionNotes xml:lang="da">se: http://data.gov.dk/model/xmi/Domaenemodeller/Matrikel/Matrikel%20%C3%A6ndringer%201.1.0%20-%201.2.3.pdf
+    <adms:versionNotes xml:lang="da">http://data.gov.dk/model/xmi/Domaenemodeller/Matrikel/Matrikel%20%C3%A6ndringer%201.1.0%20-%201.2.3.pdf
 	</adms:versionNotes>
-<dct:publisher rdf:resource="Geodatastyrelsen"/>
+<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Geodatastyrelsen</foaf:name>
+        <foaf:homepage>https://gst.dk/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights/>
     <cc:license rdf:resource=""/>
     <dcat:landingPage rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/Matrikel/"/>
@@ -404,9 +463,15 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2.0</owl:versionInfo>
     <adms:versionNotes xml:lang="en"/>
-    <adms:versionNotes xml:lang="da"> se: http://data.gov.dk/model/xmi/Domaenemodeller/Person/Person%20%C3%A6ndringer%201.1.0%20-%201.2.0.txt
+    <adms:versionNotes xml:lang="da"> http://data.gov.dk/model/xmi/Domaenemodeller/Person/Person%20%C3%A6ndringer%201.1.0%20-%201.2.0.txt
 	</adms:versionNotes>
-<dct:publisher rdf:resource="CPR-kontoret"/>
+<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>CPR-kontoret</foaf:name>
+        <foaf:homepage>https://cpr.dk/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
         <dct:rights/>
     <cc:license rdf:resource=""/>
     <dcat:landingPage rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/Person/"/>
@@ -444,7 +509,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da">
 	</adms:versionNotes>
-<dct:publisher rdf:resource="Styrelsen for Dataforsyning og Effektivisering"/>
+	<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Styrelsen for Dataforsyning og Effektivisering</foaf:name>
+        <foaf:homepage>https://sdfe.dk/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
         <dct:rights/>
     <cc:license rdf:resource=""/>
     <dcat:landingPage rdf:resource="http://data.gov.dk/model/xmi/Domaenemodeller/Stednavne/"/>
@@ -460,6 +531,54 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_1.0.0_Stednavne.xml"/>
     <dcat:distribution rdf:resource="http://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap"/>
   </rdf:Description>
+ 
+
+  <!--SVR-->
+  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/svr">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="da">Skatteforvaltningens Virksomhedsregister</dct:title>
+    <dct:title xml:lang="en">The Danish Business Register for Tax Administration</dct:title>
+    <dct:description xml:lang="da">Model af Virksomhedsdata i SVR
+	</dct:description>
+    <dct:description xml:lang="en">Modelling data on businesses in tax administration
+	</dct:description>
+    <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
+    <vann:preferredNamespacePrefix>svr</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://data.gov.dk/model/profile/cvr</vann:preferredNamespaceUri>
+    <dcat:keyword>Virksomheder</dcat:keyword>
+    <dcat:keyword>CVR</dcat:keyword>
+    <dcat:keyword>Forretning</dcat:keyword>
+    <dcat:keyword>UFST</dcat:keyword>
+    <dcat:keyword>skat</dcat:keyword>	
+    <dcat:keyword>moms</dcat:keyword>	
+	<dcat:keyword>se-nummer</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-11</dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.0</owl:versionInfo>
+    <adms:versionNotes xml:lang="en">
+	</adms:versionNotes>
+	<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Udviklings- og Forenklingsstyrelsen</foaf:name>
+        <foaf:homepage>https://www.ufst.dk/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
+    <dct:rights/>
+    <cc:license rdf:resource=""/>
+    <dcat:landingPage rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/SkatteforvaltningensVirksomhedsregister/"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ECON"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ApplicationModel"/>
+    <dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Dissemination"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata"/>
+    <dadk:businessArea>Virksomheds- og erhvervsregistrering </dadk:businessArea>
+    <dadk:businessAreaCode>30.06.15</dadk:businessAreaCode>
+    <dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/pf"/>
+    <dcat:distribution rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/SkatteforvaltningensVirksomhedsregister/1.0.0_SkatteforvaltningensVirksomhedsregister.xml"/>
+  </rdf:Description>
+  
  
   <!-- Anvendelsesprofil for klassifikation -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -488,7 +607,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9.1</owl:versionInfo>
     <adms:versionNotes xml:lang="en">Development</adms:versionNotes>
     <adms:versionNotes xml:lang="da">Under udvikling</adms:versionNotes>
-<dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/>
+<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+        <foaf:homepage>https://digst.dk/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
         <dct:rights/>
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     <dcat:landingPage rdf:resource="https://arkitektur.digst.dk/sites/default/files/anvendelsesprofil_for_klassifikation_-_2018-01-15.pdf"/>
@@ -526,7 +651,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9.1</owl:versionInfo>
     <adms:versionNotes xml:lang="en">Development</adms:versionNotes>
     <adms:versionNotes xml:lang="da">Under udvikling</adms:versionNotes>
-<dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/>
+<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+        <foaf:homepage>https://digst.dk/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
         <dct:rights/>
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     <dcat:landingPage rdf:resource="https://arkitektur.digst.dk/sites/default/files/anvendelsesprofil_for_organisation_-_2018-01-15.pdf"/>
@@ -554,7 +685,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8.6</owl:versionInfo>
     <adms:versionNotes xml:lang="en">Development</adms:versionNotes>
     <adms:versionNotes xml:lang="da">Under udvikling</adms:versionNotes>
-    <dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+        <foaf:homepage>https://digst.dk/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     <dcat:landingPage rdf:resource="https://arkitektur.digst.dk/rammearkitektur/standard-beskrivelse-af-it-systemer"/>
     <foaf:page rdf:resource="https://data.gov.dk/test/udkast/ITSystemAP_UDKAST/"/>
@@ -581,7 +718,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8.6</owl:versionInfo>
     <adms:versionNotes xml:lang="en">Development</adms:versionNotes>
     <adms:versionNotes xml:lang="da">Under udvikling</adms:versionNotes>
-    <dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+        <foaf:homepage>https://digst.dk/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     <dcat:landingPage rdf:resource="https://arkitektur.digst.dk/rammearkitektur/standard-beskrivelse-af-it-systemer"/>
     <foaf:page rdf:resource="https://data.gov.dk/test/udkast/ITSystemAP_UDKAST/"/>
@@ -608,7 +751,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9.0</owl:versionInfo>
     <adms:versionNotes xml:lang="en">Development</adms:versionNotes>
     <adms:versionNotes xml:lang="da">Under udvikling</adms:versionNotes>
-    <dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+        <foaf:homepage>https://digst.dk/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     <dcat:landingPage rdf:resource="https://arkitektur.digst.dk/metoder/faelles-sprog-datakvalitet"/>
     <foaf:page rdf:resource="https://data.gov.dk/test/udkast/SprogForDatakvalitet/"/>
@@ -635,7 +784,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.0</owl:versionInfo>
     <adms:versionNotes xml:lang="en">Development</adms:versionNotes>
     <adms:versionNotes xml:lang="da">Under udvikling</adms:versionNotes>
-    <dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+        <foaf:homepage>https://digst.dk/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     <dcat:landingPage rdf:resource="https://github.com/digst/DCAT-AP-DK/"/>
     <foaf:page rdf:resource=""/>
@@ -662,7 +817,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.0</owl:versionInfo>
     <adms:versionNotes xml:lang="en">Approved</adms:versionNotes>
     <adms:versionNotes xml:lang="da">Godkendt</adms:versionNotes>
-    <dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+        <foaf:homepage>https://digst.dk/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     <dcat:landingPage rdf:resource="https://arkitektur.digst.dk/sites/default/files/20180503_rad_v1.0_-_godkendt_af_sda.pdf"/>
     <foaf:page rdf:resource=""/>
@@ -689,7 +850,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
     <adms:versionNotes xml:lang="en">Under development</adms:versionNotes>
     <adms:versionNotes xml:lang="da">Under udvikling</adms:versionNotes>
-    <dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+        <foaf:homepage>https://digst.dk/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     <dcat:landingPage rdf:resource=""/>
     <foaf:page rdf:resource=""/>
@@ -718,7 +885,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
     <adms:versionNotes xml:lang="en">Awaiting approval</adms:versionNotes>
     <adms:versionNotes xml:lang="da">Afventer godkendelse</adms:versionNotes>
-    <dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+        <foaf:homepage>https://digst.dk/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     <dcat:landingPage rdf:resource="http://data.gov.dk/concept/core/digitalarchival.html"/>
     <foaf:page rdf:resource="https://data.gov.dk/document/itsystemspecification/v1/uml/"/>
@@ -747,7 +920,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
     <adms:versionNotes xml:lang="en">Awaiting approval</adms:versionNotes>
     <adms:versionNotes xml:lang="da">Afventer godkendelse</adms:versionNotes>
-    <dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+        <foaf:homepage>https://digst.dk/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     <dcat:landingPage rdf:resource="http://data.gov.dk/concept/core/itsystem.html"/>
     <foaf:page rdf:resource="https://data.gov.dk/document/itsystemspecification/v1/uml/"/>
@@ -774,7 +953,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
     <adms:versionNotes xml:lang="en"></adms:versionNotes>
     <adms:versionNotes xml:lang="da"></adms:versionNotes>
-    <dct:publisher rdf:resource="http://socialstyrelsen.dk"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Socialstyrelsen</foaf:name>
+        <foaf:homepage>http://socialstyrelsen.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     <dcat:landingPage rdf:resource="http://www.socialebegreber.dk/begrebsarbejde/begrebsdatabasen/find_begreb"/>
     <foaf:page rdf:resource="http://www.socialebegreber.dk/"/>
@@ -800,7 +985,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
     <adms:versionNotes xml:lang="en"></adms:versionNotes>
     <adms:versionNotes xml:lang="da"></adms:versionNotes>
-    <dct:publisher rdf:resource="https://sundhedsdatastyrelsen.dk"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Sundhedsdatastyrelsen</foaf:name>
+        <foaf:homepage>https://sundhedsdatastyrelsen.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     <dcat:landingPage rdf:resource="http://sundhedsdata.iterm.dk/"/>
     <foaf:page rdf:resource="https://sundhedsdatastyrelsen.dk/nbs"/>
@@ -827,7 +1018,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
     <adms:versionNotes xml:lang="en"></adms:versionNotes>
     <adms:versionNotes xml:lang="da"></adms:versionNotes>
-    <dct:publisher rdf:resource="https://sundhedsdatastyrelsen.dk"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Sundhedsdatastyrelsen</foaf:name>
+        <foaf:homepage>https://sundhedsdatastyrelsen.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     <dcat:landingPage rdf:resource="https://blog.cbs.dk/forvir/topontologien/"/>
     <foaf:page rdf:resource="https://blog.cbs.dk/forvir/"/>
@@ -857,7 +1054,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2.0</owl:versionInfo>
     <adms:versionNotes xml:lang="en">under developement</adms:versionNotes>
     <adms:versionNotes xml:lang="da">under udvikling</adms:versionNotes>
-    <dct:publisher rdf:resource="http://sdfe.dk"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Styrelsen for Dataforsyning og Effektivisering</foaf:name>
+        <foaf:homepage>https://sdfe.dk/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     <dcat:landingPage rdf:resource=""/>
     <foaf:page rdf:resource=""/>
@@ -887,7 +1090,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2.0</owl:versionInfo>
     <adms:versionNotes xml:lang="en">under developement</adms:versionNotes>
     <adms:versionNotes xml:lang="da">under udvikling</adms:versionNotes>
-    <dct:publisher rdf:resource="http://sdfe.dk"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Styrelsen for Dataforsyning og Effektivisering</foaf:name>
+        <foaf:homepage>https://sdfe.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     <dcat:landingPage rdf:resource=""/>
     <foaf:page rdf:resource=""/>
@@ -912,7 +1121,13 @@ I BBR 2.0 er der implementeret en regelmotor til håndtering af de ca. 750 forre
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
     <adms:versionNotes xml:lang="en">under developement</adms:versionNotes>
     <adms:versionNotes xml:lang="da">under udvikling</adms:versionNotes>
-    <dct:publisher rdf:resource="http://kl.dk"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>KL</foaf:name>
+        <foaf:homepage>http://kl.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     <dcat:landingPage rdf:resource=""/>
     <foaf:page rdf:resource=""/>
@@ -941,17 +1156,24 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.0</owl:versionInfo>
     <adms:versionNotes xml:lang="en">Aproved</adms:versionNotes>
     <adms:versionNotes xml:lang="da">Godkendt</adms:versionNotes>
-    <dct:publisher rdf:resource="http://sdfe.dk"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Styrelsen for Dataforsyning og Effektivisering</foaf:name>
+        <foaf:homepage>https://sdfe.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     <dcat:landingPage rdf:resource=""/>
     <foaf:page rdf:resource=""/>
     <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ConceptModel"/>
-    <dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion"/>
+    <dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Reuse"/>
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
     <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
     <dadk:businessAreaCode>52.20.10.05</dadk:businessAreaCode>
 	<dcat:distribution rdf:resource=""/>
   </rdf:Description>   
+  
    <!-- Logisk datamodel for Vandløbsreferencen--> 
   <rdf:Description rdf:about="https://geo.data.gov.dk/model/C3A6F5B9-232E-430c-B97E-E56E17FF219F#">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
@@ -968,18 +1190,100 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.0</owl:versionInfo>
     <adms:versionNotes xml:lang="en">Aproved</adms:versionNotes>
     <adms:versionNotes xml:lang="da">Godkendt</adms:versionNotes>
-    <dct:publisher rdf:resource="http://sdfe.dk"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Styrelsen for Dataforsyning og Effektivisering</foaf:name>
+        <foaf:homepage>https://sdfe.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     <dcat:landingPage rdf:resource=""/>
     <foaf:page rdf:resource=""/>
     <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>
-    <dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Cohesion"/>
+    <dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Reuse"/>
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
     <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
     <dadk:businessAreaCode>52.20.10.05</dadk:businessAreaCode>
 	<dcat:distribution rdf:resource=""/>
   </rdf:Description>   
-  
+ 
+
+   <!-- Logisk datamodel for LER--> 
+  <rdf:Description rdf:about="https://geo.data.gov.dk/model/f6eda88e-08dc-4188-ac4a-3dfd0a2ec61e#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="en"></dct:title>
+    <dct:title xml:lang="da">Ledningsejerregisteret - Udveksling af ledningsoplysninger </dct:title>
+    <dct:description xml:lang="da">Datamodellen for udveksling af ledningsoplysninger benyttes til udveksling af informationer om nedgravet infrastruktur, fra ledningsejere til LER-systemet, som svar på en graveforespørgsel</dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
+    <dcat:keyword>ledninger</dcat:keyword>	
+	<dcat:keyword>rørføring</dcat:keyword>
+	<dcat:keyword>LER</dcat:keyword>	
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
+    <adms:versionNotes xml:lang="en"></adms:versionNotes>
+    <adms:versionNotes xml:lang="da"></adms:versionNotes>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Styrelsen for Dataforsyning og Effektivisering</foaf:name>
+        <foaf:homepage>https://sdfe.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    <dcat:landingPage rdf:resource=""/>
+    <foaf:page rdf:resource=""/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>
+    <dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Reuse"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
+    <dadk:businessArea>Ledningsejerregistret, LER </dadk:businessArea>
+    <dadk:businessAreaCode>54.15.15.05</dadk:businessAreaCode>
+	<dcat:distribution rdf:resource=""/>
+  </rdf:Description>  
+
+
+
+   <!-- Logisk datamodel for MEMO--> 
+  <rdf:Description rdf:about="https://geo.data.gov.dk/model/ea0120d7-141e-4116-afcb-e4b1db84c182">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="en">Meddelelsesmodel</dct:title>
+    <dct:title xml:lang="da">Message Model</dct:title>
+    <dct:description xml:lang="da">I forbindelse med den nye Digital Post-løsning udvikles et nyt format for afsendelse og modtagelse af meddelelser. Det nye format forkortes MeMo (MeddelelsesModel).</dct:description>
+    <dct:description xml:lang="en"></dct:description>
+    <vann:preferredNamespacePrefix>memo</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
+    <dcat:keyword>messages</dcat:keyword>	
+	<dcat:keyword>model</dcat:keyword>
+	<dcat:keyword>digital post</dcat:keyword>	
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></owl:versionInfo>
+    <adms:versionNotes xml:lang="en"></adms:versionNotes>
+    <adms:versionNotes xml:lang="da"></adms:versionNotes>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+        <foaf:homepage>https://digst.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    <dcat:landingPage rdf:resource="https://digst.dk/it-loesninger/digital-post/naeste-generation-digital-post/det-nye-meddelelsesformat-memo/"/>
+    <foaf:page rdf:resource=""/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>
+    <dadk:modellingLevel rdf:resource="https://data.gov.dk/model/core/modellinglevel#Reuse"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
+    <dadk:businessArea>Tværgående it-løsninger til den digitale infrastruktur</dadk:businessArea>
+    <dadk:businessAreaCode>06.38.10.20 </dadk:businessAreaCode>
+	<dcat:distribution rdf:resource=""/>
+  </rdf:Description>  
+ 
+
+ 
+ 
   <!-- Begrebsmodel for brugerstyring -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -1001,7 +1305,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.0</owl:versionInfo>
     <adms:versionNotes xml:lang="en">Stable</adms:versionNotes>
     <adms:versionNotes xml:lang="da">Stabil</adms:versionNotes>
-	<dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/>
+	<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+        <foaf:homepage>https://digst.dk/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights/>
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     <dcat:landingPage rdf:resource="https://arkitektur.digst.dk/sites/default/files/123_referencearkitektur_for_brugerstyring_pdfa.pdf"/>
@@ -1013,7 +1323,7 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <dadk:businessAreaCode>06.38.10.10 </dadk:businessAreaCode>
   </rdf:Description>
  
-  <!-- Begrebsmodel for brugerstyring -->
+  <!-- Begrebsmodel for selvbetjening -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
   <rdf:Description rdf:about="http://data.gov.dk/model/concept/digitalselfservice#">
@@ -1035,7 +1345,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.0</owl:versionInfo>
     <adms:versionNotes xml:lang="en">Stable</adms:versionNotes>
     <adms:versionNotes xml:lang="da">Stabil</adms:versionNotes>
-	<dct:publisher rdf:resource="http://digitaliseringsstyrelsen.dk"/>
+	<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+        <foaf:homepage>https://digst.dk/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights/>
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     <dcat:landingPage rdf:resource="https://arkitektur.digst.dk/sites/default/files/referencearkitektur_for_selvbetjening_version_1.0.pdf"/>
@@ -1056,7 +1372,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 	<adms:versionNotes xml:lang="da">Godkendt af KL Arkitekturboard</adms:versionNotes>	
     <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Sag"/>
     <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
-    <dct:publisher rdf:resource="http://kl.dk"/>	
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>KL</foaf:name>
+        <foaf:homepage>http://kl.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
   </rdf:Description> 
   
   <rdf:Description rdf:about="http://info.rammearkitektur.dk/byggeblokke/Dokument/Informationsmodel/Dokument.htm">
@@ -1068,7 +1390,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 	<adms:versionNotes xml:lang="da">Godkendt af KL Arkitekturboard</adms:versionNotes>	
     <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Dokument"/>
     <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
-    <dct:publisher rdf:resource="http://kl.dk"/>	
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>KL</foaf:name>
+        <foaf:homepage>http://kl.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
   </rdf:Description> 
   
   <rdf:Description rdf:about="http://info.rammearkitektur.dk/byggeblokke/Klassifikation/Informationsmodel/Klassifikation.htm">
@@ -1080,7 +1408,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 	<adms:versionNotes xml:lang="da">Godkendt af KL Arkitekturboard</adms:versionNotes>	
     <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Klassifikation"/>
     <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
-    <dct:publisher rdf:resource="http://kl.dk"/>	
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>KL</foaf:name>
+        <foaf:homepage>http://kl.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
   </rdf:Description> 
   
   <rdf:Description rdf:about="http://info.rammearkitektur.dk/byggeblokke/Organisation/Informationsmodel/Organisation.htm">
@@ -1092,7 +1426,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 	<adms:versionNotes xml:lang="da">Godkendt af KL Arkitekturboard</adms:versionNotes>		
     <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Organisation"/>
     <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
-    <dct:publisher rdf:resource="http://kl.dk"/>	
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>KL</foaf:name>
+        <foaf:homepage>http://kl.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
   </rdf:Description> 
   
   <rdf:Description rdf:about="http://info.rammearkitektur.dk/byggeblokke/Aktivitet/Informationsmodel/Aktivitet.htm">
@@ -1104,7 +1444,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 	<adms:versionNotes xml:lang="da">Godkendt af KL Arkitekturboard</adms:versionNotes>	
     <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Aktivitet"/>
     <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
-    <dct:publisher rdf:resource="http://kl.dk"/>	
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>KL</foaf:name>
+        <foaf:homepage>http://kl.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
   </rdf:Description> 
   
   <rdf:Description rdf:about="http://info.rammearkitektur.dk/byggeblokke/Indsats/Informationsmodel/Indsats.htm">
@@ -1116,7 +1462,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 	<adms:versionNotes xml:lang="da">Godkendt af KL Arkitekturboard</adms:versionNotes>	
     <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Indsats"/>
     <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
-    <dct:publisher rdf:resource="http://kl.dk"/>	
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>KL</foaf:name>
+        <foaf:homepage>http://kl.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
   </rdf:Description>  
   
   <rdf:Description rdf:about="http://info.rammearkitektur.dk/byggeblokke/Tilstand/Informationsmodel/Tilstand.htm">
@@ -1128,7 +1480,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 	<adms:versionNotes xml:lang="da">Godkendt af KL Arkitekturboard</adms:versionNotes>		
     <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Tilstand"/>
     <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
-    <dct:publisher rdf:resource="http://kl.dk"/>	
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>KL</foaf:name>
+        <foaf:homepage>http://kl.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
   </rdf:Description>  
   
   <rdf:Description rdf:about="http://info.rammearkitektur.dk/byggeblokke/Objekt/Informationsmodel/Objekt.htm">
@@ -1140,7 +1498,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 	<adms:versionNotes xml:lang="da">Godkendt af KL Arkitekturboard</adms:versionNotes>	
     <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Objekt"/>
     <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
-    <dct:publisher rdf:resource="http://kl.dk"/>	
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>KL</foaf:name>
+        <foaf:homepage>http://kl.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
   </rdf:Description>  
   
   <rdf:Description rdf:about="http://info.rammearkitektur.dk/index.php/Ydelse">
@@ -1151,7 +1515,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 	<adms:versionNotes xml:lang="da">Byggeblok under udarbejdelse til at blive optaget i KLs rammearkitektur</adms:versionNotes>
     <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Ydelse"/>
     <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
-    <dct:publisher rdf:resource="http://kl.dk"/>	
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>KL</foaf:name>
+        <foaf:homepage>http://kl.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
   </rdf:Description>  
   
   <rdf:Description rdf:about="http://info.rammearkitektur.dk/index.php/Bevilling">
@@ -1162,7 +1532,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 	<adms:versionNotes xml:lang="da">Byggeblok under udarbejdelse til at blive optaget i KLs rammearkitektur</adms:versionNotes>
     <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Bevilling"/>
     <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
-    <dct:publisher rdf:resource="http://kl.dk"/>	
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>KL</foaf:name>
+        <foaf:homepage>http://kl.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
   </rdf:Description>  
   
   <rdf:Description rdf:about="http://info.rammearkitektur.dk/index.php/Effektuering">
@@ -1174,7 +1550,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 	<adms:versionNotes xml:lang="da">Byggeblok under udarbejdelse til at blive optaget i KLs rammearkitektur</adms:versionNotes>
     <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Effektuering"/>
     <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
-    <dct:publisher rdf:resource="http://kl.dk"/>	
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>KL</foaf:name>
+        <foaf:homepage>http://kl.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
   </rdf:Description>    
   
   <rdf:Description rdf:about="http://info.rammearkitektur.dk/index.php/Myndighed">
@@ -1185,7 +1567,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 	<adms:versionNotes xml:lang="da">Byggeblok under udarbejdelse til at blive optaget i KLs rammearkitektur</adms:versionNotes>
     <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Myndighed"/>
     <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
-    <dct:publisher rdf:resource="http://kl.dk"/>	
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>KL</foaf:name>
+        <foaf:homepage>http://kl.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
   </rdf:Description> 
   
   <rdf:Description rdf:about="http://info.rammearkitektur.dk/index.php/Lokation">
@@ -1196,7 +1584,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 	<adms:versionNotes xml:lang="da">Byggeblok under udarbejdelse til at blive optaget i KLs rammearkitektur</adms:versionNotes>
     <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Lokation"/>
     <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
-    <dct:publisher rdf:resource="http://kl.dk"/>	
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>KL</foaf:name>
+        <foaf:homepage>http://kl.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
   </rdf:Description>  
   
   <rdf:Description rdf:about="http://info.rammearkitektur.dk/index.php/Aktør">
@@ -1207,7 +1601,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 	<adms:versionNotes xml:lang="da">Byggeblok under udarbejdelse til at blive optaget i KLs rammearkitektur</adms:versionNotes>
     <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Aktør"/>
     <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
-    <dct:publisher rdf:resource="http://kl.dk"/>	
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>KL</foaf:name>
+        <foaf:homepage>http://kl.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
   </rdf:Description> 
   
   <rdf:Description rdf:about="http://info.rammearkitektur.dk/index.php/Facilitet">
@@ -1218,7 +1618,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 	<adms:versionNotes xml:lang="da">Byggeblok under udarbejdelse til at blive optaget i KLs rammearkitektur</adms:versionNotes>
     <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Facilitet"/>
     <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
-    <dct:publisher rdf:resource="http://kl.dk"/>	
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>KL</foaf:name>
+        <foaf:homepage>http://kl.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
   </rdf:Description>  
   
   <rdf:Description rdf:about="http://info.rammearkitektur.dk/index.php/NavngivetSted">
@@ -1229,7 +1635,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 	<adms:versionNotes xml:lang="da">Byggeblok under udarbejdelse til at blive optaget i KLs rammearkitektur</adms:versionNotes>
     <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/NavngivetSted"/>
     <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
-    <dct:publisher rdf:resource="http://kl.dk"/>	
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>KL</foaf:name>
+        <foaf:homepage>http://kl.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
   </rdf:Description>   
   
   <rdf:Description rdf:about="http://info.rammearkitektur.dk/index.php/Samtykke">
@@ -1240,7 +1652,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 	<adms:versionNotes xml:lang="da">Byggeblok under udarbejdelse til at blive optaget i KLs rammearkitektur</adms:versionNotes>
     <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Consent"/>
     <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
-    <dct:publisher rdf:resource="http://kl.dk"/>	
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>KL</foaf:name>
+        <foaf:homepage>http://kl.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
   </rdf:Description> 
   
   <rdf:Description rdf:about="http://info.rammearkitektur.dk/index.php/Fuldmagt">
@@ -1251,14 +1669,26 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 	<adms:versionNotes xml:lang="da">Byggeblok under udarbejdelse til at blive optaget i KLs rammearkitektur</adms:versionNotes>
     <dcat:landingPage rdf:resource="http://info.rammearkitektur.dk/index.php/Fuldmagt"/>
     <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#InformationModel"/>	
-    <dct:publisher rdf:resource="http://kl.dk"/>	
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>KL</foaf:name>
+        <foaf:homepage>http://kl.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
   </rdf:Description> 
 
   
    <!-- Klassifikationsmodeller: -->
   <rdf:Description rdf:about="https://op.europa.eu/en/web/eu-vocabularies/authority-tables">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-	<dct:publisher rdf:resource="https://europa.eu"/>	
+	<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>EU</foaf:name>
+        <foaf:homepage>https://europa.eu</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
     <dct:title xml:lang="da">Klassifikationer: EU kodelister</dct:title>
     <dct:title xml:lang="en">Classifications: EU Named Authority Lists</dct:title>
     <dct:description xml:lang="da">Samling af kodelister udgivet af Europa-Kommissionen til anvendelse i forbindelse med dataudveksling</dct:description>
@@ -1273,7 +1703,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
   
   <rdf:Description rdf:about="https://data.gov.dk/concept/profile/db07#">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-	<dct:publisher rdf:resource="http://digst.dk"/>	
+	<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Danmarks Statistik</foaf:name>
+        <foaf:homepage>http://dst.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
     <dct:title xml:lang="da">Klassifikation: DANSK BRANCHEKODE DB07</dct:title>
     <dct:title xml:lang="en">Classification: DB07</dct:title>
     <dct:description xml:lang="da">DB07 er en dansk underopdeling af EU´s fælles branchenomenklatur, den 4-cifrede NACE rev. 2. NACE rev. 2 er en revideret udgave af NACE rev. 1.1 fra 2002. NACE rev. 2 bygger på FN´s branchenomenklatur ISIC rev. 4. NACE rev. 2 gælder fra 1. januar 2008 i alle EU-medlemslande ifølge forordning nr. 1893/2006.</dct:description>
@@ -1282,13 +1718,19 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <dcat:keyword>controlled vocabulary</dcat:keyword>		
     <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>	
     <dcat:keyword>SKOS</dcat:keyword>		
-    <dcat:landingPage rdf:resource=""/>
+    <dcat:landingPage rdf:resource="https://www.dst.dk/da/Statistik/dokumentation/nomenklaturer/dansk-branchekode-db07"/>
     <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#ClassificationModel"/>		
   </rdf:Description>  
   
   <rdf:Description rdf:about="https://data.gov.dk/concept/profile/disco-08#">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-	<dct:publisher rdf:resource="http://digst.dk"/>	
+	<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+        <foaf:homepage>https://digst.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
     <dct:title xml:lang="da">Klassifikation: DANMARKS STATISTIKS FAGKLASSIFIKATION (DISCO-08)</dct:title>
     <dct:title xml:lang="en">Classification: DISCO-08</dct:title>
     <dct:description xml:lang="da">DISCO-08 er en sekscifret klassifikation med fem niveauer, til klassificering og aggregering af oplysninger om arbejdsfunktioner fra forskellige statistiske undersøgelser. Klassifikationen er en revideret udgave af fagklassifikationen fra 1988 (DISCO-88), som den erstatter.</dct:description>
@@ -1303,7 +1745,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
   
   <rdf:Description rdf:about="https://data.gov.dk/concept/profile/form#">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-	<dct:publisher rdf:resource="http://digst.dk"/>	
+	<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+        <foaf:homepage>https://digst.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
     <dct:title xml:lang="da">Klassifikation: FORM</dct:title>
     <dct:title xml:lang="en">Classification: FORM</dct:title>
     <dct:description xml:lang="da">FORM (FællesOffentlig ReferenceModel) er et opgavekatalog over det offentliges opgaver, både i forhold til borgere og virksomheder, vedrørende internationale relationer og samfundsforhold, og endelig vedrørende de interne administrative opgaver. Opgavekataloget er et analyse- og struktureringsredskab, som skaber overblik og et fælles sprog på tværs af den offentlige sektor </dct:description>
@@ -1312,13 +1760,19 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <dcat:keyword>controlled vocabulary</dcat:keyword>		
     <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>	
     <dcat:keyword>SKOS</dcat:keyword>		
-    <dcat:landingPage rdf:resource="http://www.kle-online.dk/"/>
+    <dcat:landingPage rdf:resource="http://www.form-online.dk/"/>
     <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#ClassificationModel"/>		
   </rdf:Description>   
   
    <rdf:Description rdf:about="https://data.gov.dk/concept/profile/kle#">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-	<dct:publisher rdf:resource="http://kl.dk"/>	
+	<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>KL</foaf:name>
+        <foaf:homepage>http://kl.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
     <dct:title xml:lang="da">Klassifikation: KLE</dct:title>
     <dct:title xml:lang="en">Classification: KLE</dct:title>
     <dct:description xml:lang="da">KL Emnesystematik (KLE) er en retskildebaseret kommunal taksonomi (journaliseringsnøgle), der bruges til at registrere de kommunale opgaver (emner) og forvaltningshandlingen ift. opgaven (handlingsfacetterne) på den enkelte sag. KL Emnesystematik tilstræber til enhver tid at reflektere den del af den danske lovgivning, der omfatter den kommunale forvaltning.</dct:description>
@@ -1333,7 +1787,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
   
    <rdf:Description rdf:about="https://data.gov.dk/concept/profile/PublicOrganisationTypes#">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-	<dct:publisher rdf:resource="http://digst.dk"/>	
+	<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+        <foaf:homepage>https://digst.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
     <dct:title xml:lang="da">Klassifikation: Offentlige organisationstyper</dct:title>
     <dct:title xml:lang="en">Classification: Public Organisation Types</dct:title>
     <dct:description xml:lang="da">Klassifikation af offentlige organisationer i forhold til styring og forvaltning i dansk administrativ og fællesof-fentlig kontekst</dct:description>
@@ -1351,7 +1811,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
   
    <rdf:Description rdf:about="https://data.gov.dk/concept/profile/ITEnvironmentTypes#">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-	<dct:publisher rdf:resource="http://digst.dk"/>	
+	<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+        <foaf:homepage>https://digst.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
     <dct:title xml:lang="da">Klassifikation: IT-systemmiljøtyper</dct:title>
     <dct:title xml:lang="en">Classification: IT System Environment Types</dct:title>
     <dct:description xml:lang="da">Klassifikation efter miljø som et it-system instantieres i</dct:description>
@@ -1369,7 +1835,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
   
    <rdf:Description rdf:about="https://data.gov.dk/concept/profile/OperationelStatuses#">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-	<dct:publisher rdf:resource="http://digst.dk"/>	
+	<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+        <foaf:homepage>https://digst.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
     <dct:title xml:lang="da">Klassifikation: Operationel status</dct:title>
     <dct:title xml:lang="en">Classification: IT System Operational Status</dct:title>
     <dct:description xml:lang="da">Klassifikation af tilstande et it-system kan have i forhold til ibrugtagning</dct:description>
@@ -1387,7 +1859,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
   
    <rdf:Description rdf:about="https://data.gov.dk/concept/profile/PersonalDataCategories#">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-	<dct:publisher rdf:resource="http://digst.dk"/>	
+	<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+        <foaf:homepage>https://digst.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
     <dct:title xml:lang="da">Klassifikation: Personoplysningskategorier</dct:title>
     <dct:title xml:lang="en">Classification: Personal Data Categories</dct:title>
     <dct:description xml:lang="da">Klassifikation efter personoplysningers følsomhed idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne </dct:description>
@@ -1405,7 +1883,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
   
    <rdf:Description rdf:about="https://data.gov.dk/concept/profile/ConfidentialityTypesNatoEU#">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-	<dct:publisher rdf:resource="http://digst.dk"/>	
+	<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+        <foaf:homepage>https://digst.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
     <dct:title xml:lang="da">Klassifikation: Fortrolighedsgrad iht. Sikkerhedscirkulæret</dct:title>
     <dct:title xml:lang="en">Classification: Confidentiality Types (Nato/EU) </dct:title>
     <dct:description xml:lang="da">Klassifikation af grader af fortrolighed forstået som i hvilket omfang information kan videregives iht. sikker-hedscirkulæret (EU/NATO)</dct:description>
@@ -1423,7 +1907,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
   
    <rdf:Description rdf:about="https://data.gov.dk/concept/profile/ITSystemAquisitionTypes">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-	<dct:publisher rdf:resource="http://digst.dk"/>	
+	<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+        <foaf:homepage>https://digst.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
     <dct:title xml:lang="da">Klassifikation: It-systemanskaffelsestyper</dct:title>
     <dct:title xml:lang="en">Classification: IT System Aquisition Types </dct:title>
     <dct:description xml:lang="da">Klassifikation efter hvorledes et it-system er blevet anskaffet, herunder om det er udviklet i egen organisation, bestillingsudviklet (fx ved udbud) eller er anskaffet som et kommercielt (Commercial-of-the-shelf, COTS) eller open source standardsystem.</dct:description>
@@ -1441,7 +1931,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
   
    <rdf:Description rdf:about="https://data.gov.dk/concept/profile/ITSystemCriticalityTypes">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-	<dct:publisher rdf:resource="http://digst.dk"/>	
+	<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+        <foaf:homepage>https://digst.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
     <dct:title xml:lang="da">Klassifikation: It-systemkritikalitetstyper</dct:title>
     <dct:title xml:lang="en">Classification: IT System Criticality Types </dct:title>
     <dct:description xml:lang="da">Klassifikation efter, hvorvidt et it-systems anvendelse er forretningskritisk, samfundskritisk eller ikke kritisk</dct:description>
@@ -1459,7 +1955,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
   
    <rdf:Description rdf:about="https://data.gov.dk/concept/profile/ITSystemCriticalityTypes">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-	<dct:publisher rdf:resource="http://digst.dk"/>	
+	<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Digitaliseringsstyrelsen</foaf:name>
+        <foaf:homepage>https://digst.dk</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+	
     <dct:title xml:lang="da">Klassifikation: It-systemkritikalitetstyper</dct:title>
     <dct:title xml:lang="en">Classification: IT System Criticality Types </dct:title>
     <dct:description xml:lang="da">Klassifikation efter, hvorvidt et it-systems anvendelse er forretningskritisk, samfundskritisk eller ikke kritisk</dct:description>
@@ -1495,7 +1997,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</owl:versionInfo>
     <adms:versionNotes xml:lang="en">-Version 1.1: depreciation of voaf:exampleDataset replaced by voaf:dataset -Version 1: creation
 	</adms:versionNotes>
-<dct:publisher rdf:resource="http://www.mondeca.com/"/>
+<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Mondeca</foaf:name>
+        <foaf:homepage>http://www.mondeca.com/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights>Copyright © 2011 Mondeca</dct:rights>
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     <dcat:landingPage rdf:resource=""/>
@@ -1532,7 +2040,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.1</owl:versionInfo>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="Open Geospatial Consortium"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Open Geospatial Consortium</foaf:name>
+        <foaf:homepage>https://www.opengeospatial.org/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights>Copyright (c) 2012 Open Geospatial Consortium</dct:rights>
     <cc:license rdf:resource=""/>
     <dcat:landingPage rdf:resource="http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf"/>
@@ -1571,7 +2085,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.1</owl:versionInfo>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="Open Geospatial Consortium"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Open Geospatial Consortium</foaf:name>
+        <foaf:homepage>https://www.opengeospatial.org/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights>Copyright (c) 2012 Open Geospatial Consortium</dct:rights>
     <cc:license rdf:resource="http://www.opengeospatial.org/legal/"/>
     <dcat:landingPage rdf:resource="http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf"/>
@@ -1614,7 +2134,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"/>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="W3C"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>W3C</foaf:name>
+        <foaf:homepage>https://www.w3.org/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
         <dct:rights/>
     <cc:license rdf:resource=""/>
     <dcat:landingPage rdf:resource="https://www.w3.org/2009/08/skos-reference/skos.rdf"/>
@@ -1661,7 +2187,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"/>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="W3C"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>W3C</foaf:name>
+        <foaf:homepage>https://www.w3.org/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
         <dct:rights/>
     <cc:license rdf:resource=""/>
     <dcat:landingPage rdf:resource="https://www.w3.org/2009/08/skos-reference/skos-xl.rdf"/>
@@ -1699,7 +2231,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"/>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="W3C"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>W3C</foaf:name>
+        <foaf:homepage>https://www.w3.org/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights>Copyright © 2012-2014 W3C</dct:rights>
     <cc:license rdf:resource="http://www.opendatacommons.org/licenses/pddl/1.0/"/>
     <dcat:landingPage rdf:resource="https://www.w3.org/ns/org.rdf"/>
@@ -1742,7 +2280,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.99</owl:versionInfo>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="https://plus.google.com/+DanBrickley"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Dan Brickley</foaf:name>
+        <foaf:homepage>https://plus.google.com/+DanBrickley</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights>Copyright © 2000-2014 Dan Brickley and Libby Miller</dct:rights>
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/1.0/"/>
     <dcat:landingPage rdf:resource="http://xmlns.com/foaf/spec/20140114.rdf"/>
@@ -1776,7 +2320,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.01</owl:versionInfo>
     <adms:versionNotes xml:lang="en">Under Development</adms:versionNotes>
     <adms:versionNotes xml:lang="da">Under udvikling</adms:versionNotes>
-<dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/PUBL"/>
+<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>EU</foaf:name>
+        <foaf:homepage>http://publications.europa.eu/resource/authority/corporate-body/PUBL</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
         <dct:rights/>
     <cc:license rdf:resource="ISA Open Metadata Licence v1.1"/>
     <dcat:landingPage rdf:resource="https://joinup.ec.europa.eu/site/core_vocabularies/registry/eubudget/eu_budget_vocabulary_1.01.ttl"/>
@@ -1815,7 +2365,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="http://www.w3.org/"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>W3C</foaf:name>
+        <foaf:homepage>http://www.w3.org/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights>Copyright © 2012-2014 W3C</dct:rights>
     <cc:license rdf:resource="http://www.w3.org/Consortium/Legal/copyright-documents"/>
     <dcat:landingPage rdf:resource="https://www.w3.org/ns/dcat"/>
@@ -1855,7 +2411,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <adms:versionNotes xml:lang="en">A first version of this document was developed and published by the authors, starting in 2008. This is an extended and improved version, based on community feedback received since the original publication.
 	</adms:versionNotes>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="http://www.w3.org/"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>W3C</foaf:name>
+        <foaf:homepage>http://www.w3.org/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights>Copyright © 2010 W3C</dct:rights>
     <cc:license rdf:resource="http://www.w3.org/Consortium/Legal/copyright-documents"/>
     <dcat:landingPage rdf:resource="http://rdfs.org/ns/void"/>
@@ -1893,7 +2455,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"/>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="http://dublincore.org/usage/"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Dublin Core</foaf:name>
+        <foaf:homepage>http://dublincore.org/usage/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
         <dct:rights/>
     <cc:license rdf:resource=""/>
     <dcat:landingPage rdf:resource="http://purl.org/dc/terms"/>
@@ -1931,7 +2499,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"/>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="http://dublincore.org/usage/"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Dublin Core</foaf:name>
+        <foaf:homepage>http://dublincore.org/usage/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
         <dct:rights/>
     <cc:license rdf:resource=""/>
     <dcat:landingPage rdf:resource="http://purl.org/dc/dcmitype/"/>
@@ -1969,7 +2543,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"/>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="http://www.smartopendata.eu/"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>SmartOpenData</foaf:name>
+        <foaf:homepage>http://www.smartopendata.eu/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
         <dct:rights/>
     <cc:license rdf:resource=""/>
     <dcat:landingPage rdf:resource="https://www.w3.org/2015/03/inspire/"/>
@@ -2005,7 +2585,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"/>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="http://schema.org/"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Schema.org</foaf:name>
+        <foaf:homepage>http://schema.org/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
         <dct:rights/>
     <cc:license rdf:resource=""/>
     <dcat:landingPage rdf:resource="http://schema.org/Action"/>
@@ -2040,7 +2626,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"/>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="http://schema.org/"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Schema.org</foaf:name>
+        <foaf:homepage>http://schema.org/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
         <dct:rights/>
     <cc:license rdf:resource=""/>
     <dcat:landingPage rdf:resource="http://schema.org/CreativeWork"/>
@@ -2107,7 +2699,13 @@ V1.1 is backward compatible with v1.0, with 1 following exception :
 Additionnally, ELI implementers are strongly encouraged to use applies / applied_by instead of implements / implemented_by; note however that implements/implemented_by currently remain in the ontology so publishers can take the time to transition smoothly.
 	</adms:versionNotes>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="http://eur-lex.europa.eu/eli-register/about.html"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>EU</foaf:name>
+        <foaf:homepage>http://eur-lex.europa.eu/eli-register/about.html</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
         <dct:rights/>
     <cc:license rdf:resource=""/>
     <dcat:landingPage rdf:resource="http://publications.europa.eu/mdr/resource/eli/eli.owl"/>
@@ -2145,7 +2743,13 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3</owl:versionInfo>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="http://www.structureddynamics.com/"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Structured Dynamics</foaf:name>
+        <foaf:homepage>http://www.structureddynamics.com/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights>Copyright © 2008-2013 by Structured Dynamics LLC.</dct:rights>
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/1.0/"/>
     <dcat:landingPage rdf:resource="https://github.com/structureddynamics/Bibliographic-Ontology-BIBO"/>
@@ -2183,7 +2787,13 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</owl:versionInfo>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="https://joinup.ec.europa.eu/node/42444"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>EU</foaf:name>
+        <foaf:homepage>https://joinup.ec.europa.eu/node/42444</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights>Copyright © European Union, 2012-2015</dct:rights>
     <cc:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
     <dcat:landingPage rdf:resource="https://www.w3.org/ns/locn"/>
@@ -2222,7 +2832,13 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"/>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="http://www.w3.org/"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>W3C</foaf:name>
+        <foaf:homepage>http://www.w3.org/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights>Copyright © 2013 W3C® (MIT, ERCIM, Keio, Beihang)</dct:rights>
     <cc:license rdf:resource="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"/>
     <dcat:landingPage rdf:resource="https://www.w3.org/TR/vocab-regorg"/>
@@ -2259,7 +2875,13 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"/>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="http://ec.europa.eu/isa/"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>EU</foaf:name>
+        <foaf:homepage>http://ec.europa.eu/isa/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights>Copyright © 2012 European Commission</dct:rights>
     <cc:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
     <dcat:landingPage rdf:resource="https://www.w3.org/ns/person"/>
@@ -2297,7 +2919,13 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"/>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="http://www.w3.org/"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>W3C</foaf:name>
+        <foaf:homepage>http://www.w3.org/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights>Copyright © 2011-2013 W3C® (MIT, ERCIM, Keio, Beihang)</dct:rights>
     <cc:license rdf:resource="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"/>
     <dcat:landingPage rdf:resource="http://www.w3.org/ns/prov-o"/>
@@ -2334,7 +2962,13 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"/>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="http://lov.okfn.org/dataset/lov/agents/Edd%20Dumbill"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Edd Dumbil</foaf:name>
+        <foaf:homepage>http://lov.okfn.org/dataset/lov/agents/Edd%20Dumbill</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights>Copyright Â© 2004-2016 Edd Dumbill, 2016-2017 Edd Wilder-James</dct:rights>
     <cc:license rdf:resource=""/>
     <dcat:landingPage rdf:resource="http://usefulinc.com/ns/doap"/>
@@ -2371,7 +3005,13 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0.0</owl:versionInfo>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/DIGIT"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>EU</foaf:name>
+        <foaf:homepage>http://publications.europa.eu/resource/authority/corporate-body/DIGIT</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights>© 2016 European Union</dct:rights>
     <cc:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
     <dcat:landingPage rdf:resource="https://joinup.ec.europa.eu/release/core-public-organisation-vocabulary-v100"/>
@@ -2410,7 +3050,13 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.01.0</owl:versionInfo>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/DIGIT"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>EU</foaf:name>
+        <foaf:homepage>http://publications.europa.eu/resource/authority/corporate-body/DIGIT</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights>© 2013 European Union</dct:rights>
     <cc:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
     <dcat:landingPage rdf:resource="https://joinup.ec.europa.eu/solution/core-public-service-vocabulary?f%5B0%5D=solution_content_bundle%3Aasset_release"/>
@@ -2450,7 +3096,13 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.01.0</owl:versionInfo>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/DIGIT"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>EU</foaf:name>
+        <foaf:homepage>http://publications.europa.eu/resource/authority/corporate-body/DIGIT</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights>© 2019 European Union</dct:rights>
     <cc:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
     <dcat:landingPage rdf:resource="https://ec.europa.eu/isa2/solutions/core-public-service-vocabulary-application-profile-cpsv-ap_en"/>
@@ -2491,7 +3143,13 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"/>
     <adms:versionNotes xml:lang="da">
 	</adms:versionNotes>
-<dct:publisher rdf:resource="http://www.w3.org/"/>
+<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>W3C</foaf:name>
+        <foaf:homepage>http://www.w3.org/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights>Copyright 2001 W3C</dct:rights>
     <cc:license rdf:resource="http://www.w3.org/Consortium/Legal/ipr-notice-20000612#Copyright"/>
     <dcat:landingPage rdf:resource="https://www.w3.org/2001/XMLSchema"/>
@@ -2533,7 +3191,13 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.2.1</owl:versionInfo>
     <adms:versionNotes xml:lang="da">
 	</adms:versionNotes>
-<dct:publisher rdf:resource="http://www.opengeospatial.org"/>
+<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>Open Geospatial Consortium</foaf:name>
+        <foaf:homepage>http://www.opengeospatial.org</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights>Copyright 2012 Open Geospatial Consortium</dct:rights>
     <cc:license rdf:resource="http://www.opengeospatial.org/legal/"/>
     <dcat:landingPage rdf:resource="http://schemas.opengis.net/gml/"/>
@@ -2578,7 +3242,13 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"/>
     <adms:versionNotes xml:lang="da">
 	</adms:versionNotes>
-<dct:publisher rdf:resource="https://www.w3.org/"/>
+<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>W3C</foaf:name>
+        <foaf:homepage>https://www.w3.org/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
         <dct:rights/>
     <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
     <dcat:landingPage rdf:resource="https://www.w3.org/TR/owl-time/"/>
@@ -2620,7 +3290,13 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">beta</owl:versionInfo>
     <adms:versionNotes xml:lang="da">
 	</adms:versionNotes>
-<dct:publisher rdf:resource=""/>
+<dct:publisher>
+    <foaf:Organization>
+        <foaf:name>EU</foaf:name>
+        <foaf:homepage>https://inspire.ec.europa.eu/theme/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
         <dct:rights/>
     <cc:license rdf:resource=""/>
     <dcat:landingPage rdf:resource="http://inspire.ec.europa.eu/ont/base"/>
@@ -2657,7 +3333,13 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="http://topquadrant.com/+Ralph Hodgson"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>TopQuadrant</foaf:name>
+        <foaf:homepage>http://topquadrant.com/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights>http://creativecommons.org/licenses/by-sa/3.0/us/</dct:rights>
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/1.0/"/>
     <dcat:landingPage rdf:resource="http://linkedmodel.org/doc/voag/1.0/"/>
@@ -2691,7 +3373,13 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"/>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource=""/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>W3C</foaf:name>
+        <foaf:homepage>https://www.w3.org/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights>Copyright © 2016 W3C® (MIT, ERCIM, Keio, Beihang). W3C liability, trademark and document use rules apply. </dct:rights>
     <cc:license rdf:resource=""/>
     <dcat:landingPage rdf:resource="https://www.w3.org/TR/vocab-dqv/"/>
@@ -2730,7 +3418,13 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"/>
     <adms:versionNotes xml:lang="en"/>
     <adms:versionNotes xml:lang="da"/>
-    <dct:publisher rdf:resource="http://www.w3.org/"/>
+    <dct:publisher>
+    <foaf:Organization>
+        <foaf:name>W3C</foaf:name>
+        <foaf:homepage>http://www.w3.org/</foaf:homepage>
+    </foaf:Organization>
+</dct:publisher>
+
     <dct:rights>Copyright © 2012 W3C® (MIT, ERCIM, Keio), All Rights Reserved. W3C liability, trademark and document use rules apply. </dct:rights>
     <cc:license rdf:resource="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"/>
     <dcat:landingPage rdf:resource="http://www.w3.org/2002/07/owl"/>
@@ -2779,7 +3473,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-19</dct:issued>
     <dct:title xml:lang="da">Variant af BBR 2.1.0 efter FODS modelreglerne i XMI-format</dct:title>
     <dct:title xml:lang="en"/>
-    <foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=2:19"/>
+    <foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA2/EA20.htm"/>
     <dct:license rdf:resource=""/>
     <!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
 			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
@@ -2821,7 +3515,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-19</dct:issued>
     <dct:title xml:lang="da">Variant af CVR 1.0.0 efter FODS modelreglerne i XMI-format</dct:title>
     <dct:title xml:lang="en"/>
-    <foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=3:134"/>
+    <foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA3/EA135.htm"/>
     <dct:license rdf:resource=""/>
     <!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
 			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
@@ -2863,7 +3557,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-19</dct:issued>
     <dct:title xml:lang="da">Variant af DAGI 1.0.0 efter FODS modelreglerne i XMI-format</dct:title>
     <dct:title xml:lang="en"/>
-    <foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=4:277"/>
+    <foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA4/EA278.htm"/>
     <dct:license rdf:resource=""/>
     <!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
 			en ref til dct:mediaTypeOrExtent som er ret upræcis - jeg bruger en string - det er helt sikkert forkert -->
@@ -2897,7 +3591,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <!-- string her osse - undersøges -->
     <!-- Størrelse -->
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">556K</schema:fileSize>
-    <foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/index.htm?goto=5:219"/>
+    <foaf:page rdf:resource="https://data.gov.dk/model/diagrammer/EARoot/EA5/EA318.htm"/>
   </rdf:Description>
  
   <!-- Udgivelse: DAR 2.0.0 FODS-variant -->
@@ -2925,7 +3619,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <!-- string her osse - undersøges -->
     <!-- Størrelse -->
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">924K</schema:fileSize>
-    <foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=5:342"/>
+    <foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA5/EA343.htm"/>
   </rdf:Description>
  
   <!-- Udgivelse: Ejendomsbeliggenhedsregisteret 1.3.0 -->
@@ -2953,7 +3647,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <!-- string her osse - undersøges -->
     <!-- Størrelse -->
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">199K</schema:fileSize>
-    <foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA7/EA304.htm"/>
+    <foaf:page rdf:resource="https://data.gov.dk/model/diagrammer/EARoot/EA7/EA415.htm"/>
   </rdf:Description>
  
   <!-- Udgivelse: Ejendomsbeliggenhedsregisteret 1.3.0 FODS-variant -->
@@ -2981,7 +3675,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <!-- string her osse - undersøges -->
     <!-- Størrelse -->
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">458K</schema:fileSize>
-    <foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=7:537"/>
+    <foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA7/EA538.htm"/>
   </rdf:Description>
  
   <!-- Udgivelse: Ejendomsvurdering 1.0.0 -->
@@ -3009,7 +3703,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <!-- string her osse - undersøges -->
     <!-- Størrelse -->
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">473.5K</schema:fileSize>
-    <foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA8/EA329.htm"/>
+    <foaf:page rdf:resource="https://data.gov.dk/model/diagrammer/EARoot/EA8/EA431.htm"/>
   </rdf:Description>
  
   <!-- Udgivelse: Ejendomsvurdering 1.0.0 FODS-variant-->
@@ -3037,7 +3731,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <!-- string her osse - undersøges -->
     <!-- Størrelse -->
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">923K</schema:fileSize>
-    <foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=8:583"/>
+    <foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA8/EA584.htm"/>
   </rdf:Description>
  
   <!-- Udgivelse: Ejerfortegnelsen 1.3.0 -->
@@ -3065,7 +3759,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <!-- string her osse - undersøges -->
     <!-- Størrelse -->
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">779.5K</schema:fileSize>
-    <foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA6/EA262.htm"/>
+    <foaf:page rdf:resource="https://data.gov.dk/model/diagrammer/EARoot/EA6/EA362.htm"/>
   </rdf:Description>
  
   <!-- Udgivelse: Ejerfortegnelsen 1.3.0 FODS-variant -->
@@ -3093,7 +3787,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <!-- string her osse - undersøges -->
     <!-- Størrelse -->
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.8M</schema:fileSize>
-    <foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=6:386"/>
+    <foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA6/EA387.htm"/>
   </rdf:Description>
  
   <!-- Udgivelse: GeoDanmark 2.0.0 -->
@@ -3121,7 +3815,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <!-- string her osse - undersøges -->
     <!-- Størrelse -->
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.6MB</schema:fileSize>
-    <foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA9/EA361.htm"/>
+    <foaf:page rdf:resource="https://data.gov.dk/model/diagrammer/EARoot/EA9/EA459.htm"/>
   </rdf:Description>
  
   <!-- Udgivelse: GeoDanmark 2.0.0 FODS-variant -->
@@ -3149,7 +3843,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <!-- string her osse - undersøges -->
     <!-- Størrelse -->
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.1MB</schema:fileSize>
-    <foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=9:611"/>
+    <foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA9/EA612.htm"/>
   </rdf:Description>
  
   <!-- Udgivelse: Matrikel 1.2.3 -->
@@ -3177,7 +3871,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <!-- string her osse - undersøges -->
     <!-- Størrelse -->
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.8MB</schema:fileSize>
-    <foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA11/EA548.htm"/>
+    <foaf:page rdf:resource="https://data.gov.dk/model/diagrammer/EARoot/EA11/EA648.htm"/>
   </rdf:Description>
  
   <!-- Udgivelse: Matrikel 1.2.3 FODS-variant -->
@@ -3205,7 +3899,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <!-- string her osse - undersøges -->
     <!-- Størrelse -->
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.4MB</schema:fileSize>
-    <foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=11:1332"/>
+    <foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA11/EA1333.htm"/>
   </rdf:Description>
  
   <!-- Udgivelse: Person 1.2.0 -->
@@ -3233,7 +3927,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <!-- string her osse - undersøges -->
     <!-- Størrelse -->
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.5MB</schema:fileSize>
-    <foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA12/EA668.htm"/>
+    <foaf:page rdf:resource="https://data.gov.dk/model/diagrammer/EARoot/EA12/EA768.htm"/>
   </rdf:Description>
  
   <!-- Udgivelse: Person 1.2.0 FODS-variant -->
@@ -3261,7 +3955,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <!-- string her osse - undersøges -->
     <!-- Størrelse -->
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.2MB</schema:fileSize>
-    <foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=12:1797"/>
+    <foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA12/EA1798.htm"/>
   </rdf:Description>
  
   <!-- Udgivelse: Stednavne 1.0.0 -->
@@ -3289,7 +3983,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <!-- string her osse - undersøges -->
     <!-- Størrelse -->
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.6MB</schema:fileSize>
-    <foaf:page rdf:resource="http://data.gov.dk/model/diagrammer/EARoot/EA13/EA821.htm"/>
+    <foaf:page rdf:resource="https://data.gov.dk/model/diagrammer/EARoot/EA14/EA889.htm"/>
   </rdf:Description>
  
   <!-- Udgivelse: Stednavne 1.0.0 FODS-variant -->
@@ -3317,7 +4011,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <!-- string her osse - undersøges -->
     <!-- Størrelse -->
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.2MB</schema:fileSize>
-    <foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=13:2025"/>
+    <foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA13/EA2026.htm"/>
   </rdf:Description>
  
   <!-- Udgivelse: Grunddatamodellen FODS-variant -->
@@ -3336,7 +4030,7 @@ Additionnally, ELI implementers are strongly encouraged to use applies / applied
     <!-- Navn -->
     <dct:title xml:lang="da">Variant af den samlede grunddatamodel efter FODS modelreglerne i EAP-format</dct:title>
     <dct:title xml:lang="en"/>
-    <foaf:page rdf:resource="http://data.gov.dk/FODS-varianter_grunddata/diagrammer/index.htm?goto=1:16"/>
+    <foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA1/EA17.htm"/>
     <!-- licens  -->
     <dct:license rdf:resource=""/>
     <!-- der er noget galt med ADMS her: Uklart om der er tale om et lukket vocab og i det tilfælde hvilket. Ellers er det 
