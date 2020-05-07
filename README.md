@@ -15,6 +15,8 @@ FDA Modelkataloget realiserer et behov for webudstilling af et fællesoffentligt
 
 Løsningen består af metadata om modeller (modeldatasæt) samt en transformationsapplikation der konverterer datasættet serialiseret som RDF/XML til HTML.
 
+## Implementeringen
+
 ## Modelmetadataindhold
 Modelmetadata distribueres i et maskinlæsbart format (en RDF/XML-fil) på følgende link: https://data.gov.dk/catalogue/models/xml/modelkatalog.rdf.xml
 
