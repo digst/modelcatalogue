@@ -21,4 +21,4 @@ Løsningen består af metadata om modeller (modeldatasæt) samt en transformatio
 Modelmetadata distribueres i et maskinlæsbart format (en RDF/XML-fil) på følgende link: https://data.gov.dk/catalogue/models/xml/modelkatalog.rdf.xml
 
 ## Datamodellen modelDCAT-AP
-Den bagvedliggende datamodel for Modelkataloget udgøres af anvendelsesprofilen modelDCAT-AP som er udarbejdet som en profil af den internationale datakatalogstandard DCAT-AP. https://github.com/digst/modelDCAT-AP
+Den bagvedliggende datamodel for Modelkataloget udgøres af anvendelsesprofilen [modelDCAT-AP](https://github.com/digst/modelDCAT-AP) som er udarbejdet som en profil af den internationale datakatalogstandard [DCAT-AP](https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe). 
