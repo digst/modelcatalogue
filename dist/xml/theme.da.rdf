@@ -1,0 +1,2028 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:adms="http://www.w3.org/ns/adms#"
+         xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+         xmlns:vann="http://purl.org/vocab/vann/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/">
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">theme</dct:identifier>
+      <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+      <dct:title xml:lang="da">INSPIRE temaregister</dct:title>
+      <dct:description xml:lang="da">INSPIRE temaregistret indeholder alle geodatatemaer, som defineret i bilagene til INSPIRE-direktivet (Europa-Parlamentets og Rådets direktiv 2007/2/EF af 14. marts 2007 om opbygning af en infrastruktur for geografisk information i Det Europæiske Fællesskab (INSPIRE)). Beskrivelserne af temaerne er baseret på version 3.0 af "Definition of Annex Themes and Scope (D 2.3)" af arbejdsgruppen for dataspecifikationer og efterfølgende opdateringer af INSPIRE tematiske arbejdsgrupper (TWGs).</dct:description>
+      <skos:prefLabel xml:lang="da">INSPIRE temaregister</skos:prefLabel>
+      <skos:definition xml:lang="da">INSPIRE temaregistret indeholder alle geodatatemaer, som defineret i bilagene til INSPIRE-direktivet (Europa-Parlamentets og Rådets direktiv 2007/2/EF af 14. marts 2007 om opbygning af en infrastruktur for geografisk information i Det Europæiske Fællesskab (INSPIRE)). Beskrivelserne af temaerne er baseret på version 3.0 af "Definition of Annex Themes and Scope (D 2.3)" af arbejdsgruppen for dataspecifikationer og efterfølgende opdateringer af INSPIRE tematiske arbejdsgrupper (TWGs).</skos:definition>
+      <dct:rightsHolder>
+         <foaf:Agent>
+            <foaf:name xml:lang="da">Den Europæiske Union</foaf:name>
+         </foaf:Agent>
+      </dct:rightsHolder>
+      <dct:publisher>
+         <foaf:Agent>
+            <foaf:name xml:lang="da">Europa-Kommissionen, Det Fælles Forskningscenter</foaf:name>
+         </foaf:Agent>
+      </dct:publisher>
+      <dct:creator>
+         <foaf:Agent>
+            <foaf:name xml:lang="da">INSPIRE gruppe til vedligeholdelse og implementering (MIG)</foaf:name>
+         </foaf:Agent>
+      </dct:creator>
+      <dcat:contactPoint>
+         <vcard:Kind>
+            <vcard:fn xml:lang="da">JRC INSPIRE Registry Team</vcard:fn>
+            <vcard:hasMail rdf:resource="mailto:inspire-registry-dev@jrc.ec.europa.eu"/>
+         </vcard:Kind>
+      </dcat:contactPoint>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/ad"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/au"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/rs"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/gg"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/cp"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/gn"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/hy"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/ps"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/tn"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/el"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/ge"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/lc"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/oi"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/af"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/am"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/ac"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/br"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/bu"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/er"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/ef"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/hb"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/hh"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/lu"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/mr"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/nz"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/of"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/pd"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/pf"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/sr"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/so"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/sd"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/su"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/us"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/mf"/>
+      <dct:hasPart rdf:resource="https://inspire.ec.europa.eu/theme/ac-mf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme">
+      <dcat:distribution rdf:resource="https://inspire.ec.europa.eu/theme/theme.da.html"/>
+      <dcat:distribution rdf:resource="https://inspire.ec.europa.eu/theme/theme.da.csv"/>
+      <dcat:distribution rdf:resource="https://inspire.ec.europa.eu/theme/theme.da.json"/>
+      <dcat:distribution rdf:resource="https://inspire.ec.europa.eu/theme/theme.da.xml"/>
+      <dcat:distribution rdf:resource="https://inspire.ec.europa.eu/theme/theme.da.19135.xml"/>
+      <dcat:distribution rdf:resource="https://inspire.ec.europa.eu/theme/theme.da.atom"/>
+      <dcat:distribution rdf:resource="https://inspire.ec.europa.eu/theme/theme.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/theme.da.html">
+      <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+      <dct:license rdf:resource="http://ec.europa.eu/geninfo/legal_notices_da.htm"/>
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/theme.da.csv">
+      <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+      <dct:license rdf:resource="http://ec.europa.eu/geninfo/legal_notices_da.htm"/>
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/theme.da.json">
+      <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+      <dct:license rdf:resource="http://ec.europa.eu/geninfo/legal_notices_da.htm"/>
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/theme.da.xml">
+      <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+      <dct:license rdf:resource="http://ec.europa.eu/geninfo/legal_notices_da.htm"/>
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/theme.da.19135.xml">
+      <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+      <dct:license rdf:resource="http://ec.europa.eu/geninfo/legal_notices_da.htm"/>
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/theme.da.atom">
+      <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+      <dct:license rdf:resource="http://ec.europa.eu/geninfo/legal_notices_da.htm"/>
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/theme.da.rdf">
+      <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+      <dct:license rdf:resource="http://ec.europa.eu/geninfo/legal_notices_da.htm"/>
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ad">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">ad</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/ad:1"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/ad"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Adresser</dct:title>
+      <dct:description xml:lang="da">Lokalisering af ejendomme på grundlag af adresseidenter, normalt ved hjælp af vejnavn, husnummer og postnummer.</dct:description>
+      <vann:usageNote xml:lang="en">An address is an identification of the fixed location of a property. The full address is a hierarchy consisting of components such as geographic names, with an increasing level of detail, e.g.: town, then street name, then house number or name. It may also include a post code or other postal descriptors. The address may include a path of access but this depends on the function of the address. \n\nAddresses serve several purposes, these include the four uses described in the Dutch Address Registration catalogue: \n(i) location (e.g. for visits or the delivery of mail), \n(ii) identification (e.g. in context of a building registration), \n(iii) jurisdiction (e.g. authority responsible for the property identified by the address), \n(iv) sorting and ordering (VROM 2006). There may be other uses identified in the INSPIRE user requirements survey, for example, to aid emergency response.\n\n A number of different object types can be related to property. The most commonly recognised types that have addresses are land parcels and buildings (including flats or apartments). However, other object types, such as water pumping stations, and agricultural buildings, are also types of property. Although they do not receive post they may need to have an address for other functions. This is true in both rural and urban areas. Some other property types that might have addresses include a sports ground, a foothold or a mooring place. Collectively, objects which can have addresses are referred to as addressable objects.\n\n The location of an address is most often defined so that it characterises the location of the related addressable object. \n\nAlthough all national or local address systems share similar concepts and general properties, differences exist in formal and informal standards, rules, schemas and data models within Europe. Differences also exist in the extent of the address system, for example, it may be simplified in rural areas. (From revised D2.3)</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ad">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ad/ad.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ad/ad.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ad/ad.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ad/ad.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ad/ad.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ad/ad.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ad/ad.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ad/ad.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ad/ad.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ad/ad.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ad/ad.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ad/ad.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ad/ad.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ad/ad.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/au">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">au</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/au:2"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/au"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Administrative enheder</dct:title>
+      <dct:description xml:lang="da">Forvaltningsenheder, der inddeler områder, hvor medlemsstaterne har og/eller udøver jurisdiktionelle rettigheder på lokalt, regionalt og nationalt plan, adskilt af administrative grænser.</dct:description>
+      <vann:usageNote xml:lang="en">Each national territory is divided into administrative units. The administrative units are separated by administrative boundaries. Administrative units and administrative boundaries form a partition of space. According to user requirements it will be distinguished between land and (coastal) water parts of administrative units. The INSPIRE theme 'Administrative units' refers to the division of areas where Member States have and/or exercise jurisdictional rights, for local, regional and national governance, i.e. units at the cadastral parcel level are excluded as well as territorial waters, which are in fact assigned to the INSPIRE themes 'Cadastral parcels', 'Hydrography' (Annex I) and/or 'Sea regions' (Annex III). It does not include related systems such as census districts, post office regions and other sector-specific regions, but it will contain a reference to national statistical units at local level (LAU) and to the Nomenclature of Territorial Units for Statistics (NUTS) established by Eurostat.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/au">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/au/au.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/au/au.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/au/au.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/au/au.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/au/au.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/au/au.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/au/au.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/au/au.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/au/au.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/au/au.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/au/au.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/au/au.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/au/au.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/au/au.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/rs">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">rs</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/rs:1"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/rs"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Koordinatsystemer</dct:title>
+      <dct:description xml:lang="da">Systemer for entydig rumlig stedfæstelse af geografiske informationer ved hjælp af et sæt koordinater (x, y, z) og/eller længde, bredde og højde, baseret på et horisontalt og vertikalt geodætisk datum.</dct:description>
+      <vann:usageNote xml:lang="en">The theme establishes a structure for spatial referencing of features by coordinates. This topic shall link to appropriate standards for information technology and data where possible, and provide a framework for the development of sector-specific applications using geographic data.\n\n ISO 19111 describes the conceptual schema and defines the description for a minimum data to two cases for which 1-, 2- and 3- dimensional coordinates reference system information shall be given. The first case is given by a coordinate reference system to which a set of coordinates is related. The second case consists of a coordinate operation (coordinate transformation, coordinate conversion, concatenated coordinate operation) to change coordinate values from one coordinate reference system to another. \n\nThere are no explicit accuracy numbers given in ISO 19111. We must consider that it has been developed for geographic information in general, but not for precise positioning. Spatial information may be referenced to the earth surface with an improving accuracy on the global scale for the future. Such high accuracy level may be required for some themes of the Directive, e.g., the trans-European railway transport network. Spatial referencing could no longer be considered as constant in time, if we reach the sub-centimetre level. We need additional parameters compared to ISO 19111 in that case, because that document considers changes in time of the coordinate reference only system through the "date of realisation". This model is not suitable to describe continuous movements of the spatial reference. Kinematic models or so-called "loading models" are examples to incorporate such dynamics. A re-iteration of accuracy aspects may be needed, if specifications for Annex I and II are ready.\n\n The spatial referencing is usually referred to selected points of the earth surface. Such point are, e.g., given by geodetic markers, stations performing permanent satellite observations, levelling benchmarks, or tide gauges. As soon as the marker coordinates are given, they provide a direct access to the realisation of the coordinate reference system.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/rs">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/rs/rs.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/rs/rs.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/rs/rs.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/rs/rs.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/rs/rs.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/rs/rs.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/rs/rs.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/rs/rs.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/rs/rs.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/rs/rs.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/rs/rs.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/rs/rs.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/rs/rs.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/rs/rs.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/gg">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">gg</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/gg:1"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/gg"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Geografiske kvadratnetsystemer</dct:title>
+      <dct:description xml:lang="da">Et harmoniseret kvadratnet med flere cellestørrelser samt fælles nulpunkt og standardiseret cellelokalisering og -størrelse.</dct:description>
+      <vann:usageNote xml:lang="en">Geographical grids are an agreed, defined and harmonised grid net for Pan-Europe with standardised location and size of grid cells. Examples of cell sizes could be 10x10 m, 100x100 m, 1x1 km, 16x16 km. A good candidate for the INSPIRE-focused Pan-European grid has been proposed as a result of the Workshop on "European Reference Grids". \n\nThe grid - proposed as Pan_European standard - is based on the ETRS89 Lambert Azimuthal Equal Area coordinate reference system with the centre of the projection at the point N 52o, E 10o. The grid is defined as hierarchical one in metric coordinates in power of 10. \n\nThe detail description of the proposed grid is available at the Proceedings of the Workshop on the European Reference Grids, EUR Report 21494 EN, 2005. The Proposal for a European Grid System is presented from page 39 to 46 of that document.\n\n Other grids could be also used, however they need a lot of harmonisation work, as well as a number of conversion tools. Some international organisations, like WMO, perform their operations, using their own and purpose-oriented grid construction.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/gg">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/gg/gg.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/gg/gg.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/gg/gg.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/gg/gg.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/gg/gg.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/gg/gg.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/gg/gg.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/gg/gg.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/gg/gg.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/gg/gg.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/gg/gg.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/gg/gg.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/gg/gg.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/gg/gg.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/cp">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">cp</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/cp:2"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/cp"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Matrikulære parceller</dct:title>
+      <dct:description xml:lang="da">Arealer, der er defineret i matrikelregistre eller lignende.</dct:description>
+      <vann:usageNote xml:lang="en">The INSPIRE Directive focuses on the geographical part of cadastral data. In the INSPIRE context, cadastral parcels will be mainly used as locators for geo-information in general, including environmental data. \nAs much as possible, in the INSPIRE context, cadastral parcels should be forming a partition of national territory. Cadastral parcel should be considered as a single area of Earth surface, under homogeneous real property rights and unique ownership (adapted from UN ECE 2004 and WG-CPI, 2006).  Remark: By unique ownership is meant that the ownership is held by one or several owners for the whole parcel. By homogeneous property rights is meant that rights of ownership, leases and mortgages affect the whole parcel. This does not apply to specific rights as servitudes which may only affect part of the parcel. \n\nIn the definition given by the INSPIRE directive, "or equivalent" refers to all public agencies and institutions other than the main traditional/nominal cadastre or land registry, that register parts of the Earth's surface such as special domains, urban cadastres, public lands, which spatially complement the registrations by the main cadastre or land registry.\n Cadastral parcels are considered in the INSPIRE scope if they are available as vector data.\nRights and owners are out of the INSPIRE scope.\n Buildings, land use, addresses are considered in other INSPIRE themes.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/cp">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/cp/cp.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/cp/cp.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/cp/cp.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/cp/cp.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/cp/cp.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/cp/cp.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/cp/cp.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/cp/cp.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/cp/cp.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/cp/cp.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/cp/cp.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/cp/cp.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/cp/cp.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/cp/cp.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/gn">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">gn</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/gn:2"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/gn"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Stednavne</dct:title>
+      <dct:description xml:lang="da">Navne på områder, regioner, lokaliteter, byer, forstæder, bebyggelser og alle former for geografiske og topografiske objekter af offentlig eller historisk interesse.</dct:description>
+      <vann:usageNote xml:lang="en">A geographical name is a proper noun applied to a natural, man-made or cultural feature on Earth. \n\nA feature can have different names in one or several languages and the names may be provided, together with appropriate information on the feature, in different products like maps and gazetteers as well as respective services. \n\nAn endonym is a name for a geographical feature in an official or well-established language occurring in that area where the feature is situated. An exonym is a name used in a specific language for a geographical feature situated outside the area where that language is widely spoken, and differing in form from the respective endonym(s) in the area where the geographical feature is situated. (UNGEGN, 2007).\n\n In some cases names can be applied as attributes of appropriately modeled spatial objects. However, often the definition, classification, geometry and other attributes of these objects do not correspond with the respective named features. Besides, commonly named features such as elevations, islands, natural shoreline features and stretches of water bodies are seldom modeled as objects in spatial data sets. \n\nA geographical name serves as a means to identify a location. Gazetteers and gazetteer services associate the names with corresponding features – or locations – by means of co-ordinates, feature types and/or other necessary information. A multi-lingual gazetteer (service) shall most probably be established as a part of INSPIRE.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/gn">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/gn/gn.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/gn/gn.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/gn/gn.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/gn/gn.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/gn/gn.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/gn/gn.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/gn/gn.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/gn/gn.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/gn/gn.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/gn/gn.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/gn/gn.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/gn/gn.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/gn/gn.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/gn/gn.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hy">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">hy</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/hy:1"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/hy"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Hydrograf</dct:title>
+      <dct:description xml:lang="da">Hydrografiske elementer, herunder havområder og alle andre vandområder og dertil knyttede forekomster, herunder også vandløbsoplande og vandløbsdeloplande. I givet fald i henhold til definitionerne i Europa-Parlamentets og Rådets direktiv 2000/60/EF af 23. oktober 2000 om fastlæggelse af en ramme for Fællesskabets vandpolitiske foranstaltninger [2] og i form af net.</dct:description>
+      <vann:usageNote xml:lang="en">The theme "Hydrography" is a basic reference component and, therefore, of interest for many users and uses.\n\n For mapping purposes (to provide a map background for orientation and to understand place relationships), it includes the representation of all main hydrographic elements – both natural and artificial. To fulfill reporting requirements of EC water-related directives it includes the river and channel network; surface water bodies within river basin districts are categorised as rivers, lakes, transitional waters or coastal waters, or as artificial surface water bodies or heavily modified surface water bodies. Furthermore, a topologically-sound river network is necessary for GIS-based spatial analysis and modeling. \n\nGeographically, the theme "Hydrography" covers all inland water and marine areas covered by river basin districts as defined by WFD.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hy">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/hy/hy.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/hy/hy.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/hy/hy.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/hy/hy.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/hy/hy.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/hy/hy.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/hy/hy.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hy/hy.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hy/hy.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hy/hy.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hy/hy.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hy/hy.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hy/hy.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hy/hy.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ps">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">ps</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/ps:2"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/ps"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Beskyttede lokaliteter</dct:title>
+      <dct:description xml:lang="da">Områder, der er udpeget eller forvaltes inden for en ramme af international, fællesskabs- og medlemsstatslovgivning for at nå bestemte bevaringsmål.</dct:description>
+      <vann:usageNote xml:lang="en">Area designated or managed within a framework of international, Community and Member States' legislation to achieve specific conservation objectives. \nAccording to IUCN and adopted for the INSPIRE context a protected site is: An area of land and/or sea especially dedicated to the protection and maintenance of biological diversity, and of natural and associated cultural resources, and managed through legal or other effective means. \n\nProtected sites may be located in terrestrial, aquatic and/or marine environments, and may be under either public or private ownership. They may include localities with protection targets defined by different sectors and based on different objectives, especially dedicated to the conservation of nature, the protection and maintenance of biological diversity and of natural and where appropriate associated cultural resources. The sites may receive protection due to more than one type of objectives, and may have a double or multifarious designation status. Protected sites differ from environmentally founded classifications of natural or cultural objects and also from "area covering" designations as included in CDDA, as localisation, boundary and area of protected sites are based on formal, legal or administrative agreements or decisions. \nAlthough all protected sites meet the general purposes contained in this definition, in practise the precise purposes for which protected sites are managed differ greatly. The main purposes of designation are specified in categories of CDDA (4.5.2 National designation type category) and according to the typology developed in the Standard Data Form for Natura2000 under the Habitat Directive, furthermore, categories of IUCN for Protected Sites and other international designation types have to be applied.\n\n A new classification system of protected sites with an overall set of categories under the INSPIRE directive, therefore, has to include Sites of Community Importance (SCI) under the Habitat directive and Special Protection Areas (SPA) under the Birds directive, as well as further designation types on a global level. This definition of protected sites does not exclude man-made objects or other kinds of cultural heritage sites – protected sites may therefore include where formal protection is given to buildings, archaeological sites of all pre-historic and historic times, including medieval sites/constructions or other cultural objects. This may also be applied to protected sites comprising specific geological, hydrogeological or geomorphological values. \n\nProtected sites in many cases have a formal delineation documentation in cadastral databases. However, delineation injunctions for protected sites are manifold and may just as often not follow cadastral boundaries (e.g. for reasons of generalisation in small scale maps for Natura2000). Being spatial objects under the INSPIRE directive, however, protected sites need to have distinct boundaries of their own, rather than being a mere specific category of some other spatial object type.\n\n Examples of legislation and policies regulating protected sites are Habitat directive (1992) (Directive 92/43/EEC), Birds directive (Directive 79/409/EEC), World Heritage, Ramsar Convention, Barcelona Convention, Helsinki Convention, OSPAR Convention, national law and other international sector policies.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ps">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ps/ps.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ps/ps.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ps/ps.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ps/ps.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ps/ps.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ps/ps.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ps/ps.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ps/ps.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ps/ps.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ps/ps.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ps/ps.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ps/ps.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ps/ps.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ps/ps.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/tn">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">tn</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/tn:2"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/tn"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Transportnet</dct:title>
+      <dct:description xml:lang="da">Transportnet for biler, tog, fly og skibe med tilhørende infrastruktur. Omfatter forbindelser mellem de forskellige net. Omfatter også det transeuropæiske transportnet som defineret i Europa-Parlamentets og Rådets beslutning nr. 1692/96/EF af 23. juli 1996 om Fællesskabets retningslinjer for udvikling af det transeuropæiske transportnet [1] og fremtidige ændringer af denne beslutning.</dct:description>
+      <vann:usageNote xml:lang="en">The transport component should comprise an integrated transport network, and related features, that are seamless within each national border. In accordance with article 10.2 of the Directive, national transport networks may also be seamless at European level, i.e. connected at national borders. Transportation data includes topographic features related to transport by road, rail, water, and air. It is important that the features form networks where appropriate, and that links between different networks are established, i.e multi-modal nodes, especially at the local level, in order to satisfy the requirements for intelligent transport systems such as location based services (LBS) and telematics. The transport network should also support the referencing of transport flow to enable our navigation services.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/tn">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/tn/tn.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/tn/tn.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/tn/tn.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/tn/tn.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/tn/tn.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/tn/tn.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/tn/tn.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/tn/tn.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/tn/tn.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/tn/tn.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/tn/tn.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/tn/tn.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/tn/tn.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/tn/tn.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/el">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">el</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/el:1"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/el"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Højde</dct:title>
+      <dct:description xml:lang="da">Digitale højdemodeller for land, is og havoverflade. Omfatter landhøjder, havdybder og kystlinje.</dct:description>
+      <vann:usageNote xml:lang="en">The Elevation of a terrain surface, whether land based or bathymetric in nature described the Earth's morphology. The Elevation data theme includes digital elevation models for land, ice and ocean surfaces both for terrestrial elevation and bathymetry, as well as shorelines.\nThe main purpose of a Digital Elevation Model is to provide an elevation property with reference to a specified origin (vertical reference or datum). This property may be height (when the value is measured opposite to the gravity field of the Earth) or depth (when the value is measured in the direction of the gravity field). In line with existing technologies three spatial representation methods have been provided: grid, vector and triangulated irregular network (TIN). Regarding provision of data, the grid spatial representation type is mandatory for the description of land elevation, whereas the other ones are optional. Finally, either the grid or the vector spatial representation type is mandatory for the provision of data describing the bathymetry, whereas the other ones are optional.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/el">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/el/el.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/el/el.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/el/el.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/el/el.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/el/el.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/el/el.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/el/el.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/el/el.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/el/el.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/el/el.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/el/el.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/el/el.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/el/el.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/el/el.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ge">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">ge</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/ge:1"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/ge"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Geologi</dct:title>
+      <dct:description xml:lang="da">Geologi karakteriseret ved sammensætning og struktur. Omfatter grundfjeld, grundvandsmagasiner og geomorfologi.</dct:description>
+      <vann:usageNote xml:lang="en">In the INSPIRE context the Geology data theme can be seen as a &amp;quot;reference data theme” as it provides information for several other INSPIRE data themes e.g. Mineral resources; Area Management, Restriction and Regulation Zones; Natural Risk Zones; Soil; Energy resources. In Geology there is a specific relationship with one of the most important natural resources, water, through groundwater bodies contained in aquifers. The theme also covers geomorphology that describes the Earth’s present-day surface, and the location of the geophysical campaigns and measurements that provide valuable information on the physical properties of rocks (like density, porosity, magnetic susceptibility, etc.) regardless of their organization as geologic units.\nThe INSPIRE Geology Theme is split into the following sub-themes:\n• Geology: provides basic knowledge about the physical properties and composition of geologic materials (rocks and sediments), their structure and their age as depicted in geological maps, as well as landforms (geomorphological features). The model also covers boreholes - another important source of information for interpreting the subsurface geology. \n• Hydrogeology: describes the flow, occurrence, and behaviour of water in the subsurface environment. The two basic elements are the rock system (including aquifers) and the groundwater system (including groundwater bodies). Man-made or natural hydrogeological objects/features (such as groundwater wells and natural springs) are also included.\n• Geophysics: focuses on the availability and location of key geophysical features. It includes metadata on high rank gravity, magnetic and seismological stations that are part of international and national observation networks as well as metadata on 2D and 3D seismic measurements that are most often requested by third party users. It also provides collective metadata on gravity, magnetic  and airborne geophysical campaigns that cover large areas and provide basic geological information for scientific research and more detailed applied studies e.g. exploring earth resources (hydrocarbons, mineral deposits, ground water, geothermal energy...).</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ge">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ge/ge.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ge/ge.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ge/ge.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ge/ge.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ge/ge.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ge/ge.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ge/ge.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ge/ge.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ge/ge.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ge/ge.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ge/ge.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ge/ge.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ge/ge.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ge/ge.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/lc">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">lc</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/lc:2"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/lc"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Arealdække</dct:title>
+      <dct:description xml:lang="da">Jordens fysiske og biologiske overflade, herunder kunstige overflader, landbrugsarealer, skove, (halv-)naturlige områder, vådområder, vandområder.</dct:description>
+      <vann:usageNote xml:lang="en">Land cover data is a physical or biological description of the earth surface. In this way it is different from the land use data (Annex III, theme number 4), dedicated to the description of the use of the Earth surface.\n Land cover information has to be homogenous and comparable between different locations in Europe, based on the infrastructures for Land Cover information created by the Member States (if existing), and made available and maintained at the most appropriate level.\nA land cover data set consists of a collection of land cover units. These units may be points, polygons or raster cells (resulting in two core models, one for vector data and one for raster data). The land cover data set is also linked to a code list (e.g. the CORINE Land Cover code list). CORINE Land Cover as well as most regional and national land cover data sets, can be represented using one of the core models.\nLand cover information used in monitoring linked to EU agricultural policy (IACS), in carbon monitoring (LULUCF) and used in land and ecosystem accounting based on CORINE Land Cover (LEAC).</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/lc">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/lc/lc.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/lc/lc.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/lc/lc.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/lc/lc.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/lc/lc.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/lc/lc.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/lc/lc.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/lc/lc.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/lc/lc.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/lc/lc.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/lc/lc.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/lc/lc.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/lc/lc.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/lc/lc.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/oi">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">oi</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/oi:1"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/oi"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Ortofoto</dct:title>
+      <dct:description xml:lang="da">Georefererede billeddata om Jordens overflade optaget fra enten satellit- eller flybaserede sensorer.</dct:description>
+      <vann:usageNote xml:lang="en">The Orthoimagery data theme includes orthorectified image data of the earth's surface, from either satellite or airborne sensors. An orthoimage is a raster image that has been geometrically corrected ("orthorectified") to remove distortion caused by differences in elevation, sensor tilt and, optionally, by sensor optics. Data is orthorectified to achieve an accuracy commensurate with a given topographic map equivalent. The data theme includes orthorectified imagery from the radio, through the visible, to the ultraviolet region of the electromagnetic spectrum.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/oi">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/oi/oi.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/oi/oi.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/oi/oi.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/oi/oi.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/oi/oi.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/oi/oi.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/oi/oi.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/oi/oi.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/oi/oi.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/oi/oi.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/oi/oi.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/oi/oi.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/oi/oi.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/oi/oi.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/af">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">af</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/af:2"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/af"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Landbrugs- og akvakulturanlæg</dct:title>
+      <dct:description xml:lang="da">Landbrugsudstyr og -produktionsanlæg (herunder vandingssystemer, drivhuse og stalde).</dct:description>
+      <vann:usageNote xml:lang="en">The theme "Agricultural and Aquaculture Facilities" concerns the description of all the physical instruments and constructions with permanent or semi-permanent emplacement (inland or outland) that are related to agricultural and aquaculture activities.\nAgriculture refers to the set of process and activities consisting in cultivating soils, producing crops and rearing animals; it includes harvesting, milking, breeding animals, keeping animals for farming purposes, and, according to Council Regulation 73/2009, maintaining the land in good agricultural and environmental condition. Agricultural facilities include facilities ranging from entire holdings to installations such as irrigation systems, drainage systems,  greenhouses, stables, barns, silos and tanks.\nAquaculture covers activities and techniques related to the production, breeding and treatment of fish, molluscs, seaweed and other kinds of aquatic resources (vegetables or animal). Aquaculture facilities only include permanent or semi-permanent systems  or constructions  for breeding, treatment and raising of organisms. Aquaculture facilities may exist both in marine waters, inland water environments and as terrestrial production systems.\nCatching, hunting or collection of natural resources (vegetables or animal) on their natural environment is not considered as an agricultural activity, unless it is supported by relevant physical instruments and constructions. Similarly, forestry is not considered as an agricultural activity, with the exception of tree nurseries.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/af">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/af/af.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/af/af.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/af/af.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/af/af.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/af/af.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/af/af.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/af/af.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/af/af.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/af/af.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/af/af.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/af/af.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/af/af.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/af/af.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/af/af.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/am">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">am</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/am:2"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/am"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Forvaltede og regulerede områder samt områder med brugsbegrænsning og indberetningsenheder</dct:title>
+      <dct:description xml:lang="da">Områder, der forvaltes, reguleres eller benyttes som indberetningsenheder på internationalt, europæisk, nationalt, regionalt og lokalt plan. Omfatter affaldsdepoter, områder med brugsbegrænsninger af hensyn til drikkevandsindvinding, nitratfølsomme områder, regulerede sejlruter til søs og på større indlandsvandområder, områder for dumpning af affald, områder med støjbegrænsning, områder, hvor der er tilladelse til efterforskning og minedrift, vandområdedistrikter, relevante indberetningsenheder samt områder for kystzoneforvaltning.</dct:description>
+      <vann:usageNote xml:lang="en">The theme &amp;quot;Area management/restriction/regulation zones and reporting units” is thematically broad and encompasses any zones that are established in accordance with a legislative requirement related to an environmental policy or a policy or activity that may have an impact on the environment at any level of administration (international, European, national and sub-national).\nThe zones are typically established to deliver specific objectives related to any environmental media, for example, air, water, soil and biota (plants and animals). This includes, but is not limited to, objectives established to protect and improve environmental quality (includes reducing pollution levels), protect and conserve environmental and natural resources, protect and control risk from natural and man-made hazards, protect plant, animal and human health or control development.\nThe theme also addresses reporting units, which are defined as &amp;quot;spatial objects that provide the spatial reference for any non-spatial data exchanged under environmental reporting obligations.” The reported non-spatial data must include a property that contains a reference to the spatial object. This is typically an identifier, code or name and is a join key between the spatial and non-spatial objects enabling the data to be combined. This allows the non-spatial data to be visualised as a map or enable spatial analysis.\nDifferent INSPIRE spatial object types can perform the role of &amp;quot;Reporting Unit”. For example, surface waters (rivers, lakes and canals from the Annex I theme Hydrography) are &amp;quot;Reporting Units” for indicators of chemical and ecological status. Thus, Reporting units cannot be modelled as a distinct spatial object type and no specific reporting units data model is defined. Instead, the theme defines obligations on how to make reporting units spatial data available under INSPIRE.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/am">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/am/am.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/am/am.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/am/am.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/am/am.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/am/am.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/am/am.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/am/am.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/am/am.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/am/am.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/am/am.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/am/am.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/am/am.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/am/am.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/am/am.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ac">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">ac</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/ac:2"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/ac"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Atmosfæriske forhold</dct:title>
+      <dct:description xml:lang="da">Fysiske forhold i atmosfæren. Omfatter geodata, der bygger på målinger, modeller eller begge dele; omfatter også målepunkternes placering.</dct:description>
+      <vann:usageNote xml:lang="en">The INSPIRE themes &amp;quot;Atmospheric Conditions” and &amp;quot;Meteorological Features” are covered together in one Data specification. These themes provide basic concepts and data models for environmental protection related activities requiring information on atmospheric conditions like weather, climate and air quality.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ac">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ac/ac.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ac/ac.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ac/ac.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ac/ac.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ac/ac.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ac/ac.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ac/ac.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ac/ac.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ac/ac.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ac/ac.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ac/ac.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ac/ac.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ac/ac.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ac/ac.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/br">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">br</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/br:2"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/br"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Biogeografiske regioner</dct:title>
+      <dct:description xml:lang="da">Områder, der har relativt ensartede økologiske forhold med fælles egenskaber.</dct:description>
+      <vann:usageNote xml:lang="en">Bio-geographical Regions describe areas of relatively homogeneous ecological conditions with common characteristics. The INSPIRE theme Bio-geographical Regions has a strong linkage to other &amp;quot;biodiversity themes”.\nThe Habitats Directive (EEC/92/43) is the most important guiding document regarding to Bio-geographical Regions, which contains a list of &amp;apos;bio-geographical regions’ (Article 1.iii). These bio-geographical regions are the basis of a series of seminars evaluating the Natura 2000 network and for reporting on the conservation status of the habitats and species protected by the Directive. \nHowever, the theme was specified in a more generic way to allow for other concepts of BR (e.g. European map of natural vegetation, environmental stratification) to be shared via INSPIRE.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/br">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/br/br.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/br/br.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/br/br.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/br/br.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/br/br.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/br/br.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/br/br.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/br/br.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/br/br.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/br/br.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/br/br.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/br/br.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/br/br.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/br/br.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/bu">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">bu</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/bu:1"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/bu"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Bygninger</dct:title>
+      <dct:description xml:lang="da">Geografisk stedfæstelse af bygninger.</dct:description>
+      <vann:usageNote xml:lang="en">A building is a covered facility, usable for the protection of humans, animals, things or the production of economic goods. A building refers to any structure permanently constructed or erected on its site. Information on location of buildings may be supplied as points or with the actual basic form of the building. Usually buildings are part of cadastre. On the local level buildings are available within the large scale cadastral maps or cadastral data sets and are geometrically represented as surfaces.\nMost buildings can be identified (geocoded) by address (separate theme in INSPIRE).</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/bu">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/bu/bu.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/bu/bu.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/bu/bu.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/bu/bu.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/bu/bu.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/bu/bu.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/bu/bu.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/bu/bu.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/bu/bu.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/bu/bu.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/bu/bu.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/bu/bu.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/bu/bu.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/bu/bu.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/er">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">er</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/er:2"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/er"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Energiressourcer</dct:title>
+      <dct:description xml:lang="da">Energiressourcer, herunder kulbrinter, vandkraft, bioenergi, sol, vind osv. samt, hvis det er relevant, dybde-/højdeoplysninger om ressourcens omfang.</dct:description>
+      <vann:usageNote xml:lang="en">Energy Resources in INSPRE covers historic, current and future energy resources and the entire lifecycle of energy resources, irrespective of its viability in terms of economic, social and technological aspects. It takes into account resources that are depleted due to exploitation in the past and resources currently not viable but may become so in the future.  Information about location and the potential of energy resources have a significant impact on the environment. This impact can have both positive and negative implications, therefore appropriate knowledge about the extent, distribution and volumes of the resources is of great value.\nThere is a main distinction between fossil fuels and renewable energy resources. The concept of energy resources provides focus to the resource aspect and the extent/distribution of the resources. Energy use, e.g. petrol consumption, is not covered by this theme.  Fossil fuel resources include oil accumulation, natural gas accumulations, coal, lignite or peat deposits and Uranium ore deposits.\nRenewable energy resources include Hydropower in which water resources mapped according to energy potential. \nBio-energy resources contains forest resources, cereals or agricultural residues which can be used for energy purposes, Wind energy - estimated by wind measurement together with topographical information. Geothermal energy the natural heat flow is of high interest as a renewable and clean energy source.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/er">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/er/er.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/er/er.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/er/er.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/er/er.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/er/er.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/er/er.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/er/er.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/er/er.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/er/er.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/er/er.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/er/er.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/er/er.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/er/er.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/er/er.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ef">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">ef</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/ef:2"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/ef"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Miljøovervågningsfaciliteter</dct:title>
+      <dct:description xml:lang="da">Lokalisering og drift af miljøovervågningsfaciliteter omfatter observation og måling af emissioner, af miljøelementernes tilstand og af andre økosystemparametre (biodiversitet, plantevækstens økologiske betingelser, osv.) foretaget af eller på vegne af offentlige myndigheder.</dct:description>
+      <vann:usageNote xml:lang="en">The theme scope includes two main aspects; the first is the environmental monitoring facility as a spatial object, the second is the data obtained through observations and measurements taken at this facility, encoded using the ISO 19156 standard. This information is complemented by further administrative information pertaining to the facility and activities undertaken there such as networks the facility is part of or programmes the facility provides data to. The Environmental Monitoring Facilities theme is cross-cutting to environmental domains; thus, the generic model allows the necessary freedom to bring in thematic specific needs while keeping a shared data structure.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ef">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ef/ef.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ef/ef.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ef/ef.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ef/ef.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ef/ef.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ef/ef.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ef/ef.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ef/ef.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ef/ef.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ef/ef.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ef/ef.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ef/ef.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ef/ef.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ef/ef.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hb">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">hb</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/hb:2"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/hb"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Levesteder og biotoper</dct:title>
+      <dct:description xml:lang="da">Geografiske områder, der er kendetegnet ved særlige økologiske forhold, processer, strukturer og (livsunderstøttende) funktioner, og som er det fysiske grundlag for de organismer, der lever der. Omfatter land- og vandområder, som er kendetegnet ved særlige geografiske, abiotiske eller biotiske forhold, uanset om de er helt eller delvis naturlige.</dct:description>
+      <vann:usageNote xml:lang="en">Habitats and Biotopes is a biodiversity theme that deals with habitats and biotopes as areas and their distinct boundaries.  Spatial data model provides characterisation of geographical areas being functional for living organisms: biotopes being the spatial environment of a biotic community; habitats being the spatial environment of specific species. To achieve harmonization on local, national and international level, habitat types should refer to the the European Nature Information System habitat classification in the first place, but could also use Habitats Directive 92/43/EEC and Marine Strategy Framework Directive 2008/56/EC as a reference.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hb">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/hb/hb.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/hb/hb.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/hb/hb.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/hb/hb.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/hb/hb.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/hb/hb.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/hb/hb.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hb/hb.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hb/hb.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hb/hb.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hb/hb.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hb/hb.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hb/hb.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hb/hb.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hh">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">hh</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/hh:2"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/hh"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Sikkerhed</dct:title>
+      <dct:description xml:lang="da">og sundhed Geografisk fordeling af dominansen af patologier (allergier, kræft, luftvejssygdomme, osv.), oplysninger om indvirkningen på menneskers sundhed (biologiske markører, nedsat frugtbarhed, epidemier) eller trivsel (træthed, stress, osv.), der er direkte (luftforurening, kemikalier, udtynding af ozonlaget, støj, osv.) eller indirekte (fødevarer, genmodificerede organismer, osv.) knyttet til miljøkvaliteten.</dct:description>
+      <vann:usageNote xml:lang="en">The INSPIRE Human Health and Safety (HH) theme describes the geographical distribution of dominance of pathologies, the effect on health or well-being of humans linked to the quality of the environment.\nThematic components are human health data, biomarkers, health care/health services data, health determinant measurement data and events related to safety.\nDirect or indirect links between pathologies and the quality of the environment, the HH data model is able to accommodate all health data, while linkage of specific health issues and the environment is a matter of a user decision.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hh">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/hh/hh.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/hh/hh.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/hh/hh.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/hh/hh.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/hh/hh.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/hh/hh.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/hh/hh.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hh/hh.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hh/hh.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hh/hh.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hh/hh.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hh/hh.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hh/hh.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/hh/hh.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/lu">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">lu</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/lu:2"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/lu"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Arealanvendelse</dct:title>
+      <dct:description xml:lang="da">Området karakteriseret ved dets nuværende og fremtidige planlagte funktion eller samfundsøkonomiske formål (f.eks. beboelse, industri, handel, landbrug, skovbrug, rekreation).</dct:description>
+      <vann:usageNote xml:lang="en">Land Use theme is defined as the use and functions of a territory and it is description of land in terms of its socio-economic and ecological purpose. Land use theme is itself split in two different types: \n- The Existing Land Use which objectively depicts the use and functions of a territory as it has been and effectively still is in real life \n- The Planned Land Use which corresponds to spatial plans, defined by spatial planning authorities, depicting the possible utilization of the land in the future.\nTwo types of classification systems are supported by Land Use theme, the (obligatory) Hierarchical INSPIRE Land Use Classification System which is a multi-level, classification system that will apply to the existing and planned land use; the (optional) specific classification system in use in a member state.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/lu">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/lu/lu.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/lu/lu.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/lu/lu.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/lu/lu.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/lu/lu.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/lu/lu.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/lu/lu.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/lu/lu.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/lu/lu.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/lu/lu.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/lu/lu.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/lu/lu.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/lu/lu.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/lu/lu.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/mr">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">mr</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/mr:2"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/mr"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Mineralressourcer</dct:title>
+      <dct:description xml:lang="da">Mineralressourcer, herunder metalmalme, industrmineraler osv. samt, hvis det er relevant, dybde-/højdeoplysninger om ressourcens omfang.</dct:description>
+      <vann:usageNote xml:lang="en">The Mineral resources data theme refers to the description of natural concentrations of very diverse mineral resources of potential or proven economic interest. The important attributes such as the nature, genesis, location, extent, mining and distribution of resources reflect the two main identified categories of potential use. These are:\n• Management of resources and their exploitation and exploration activities: provision of information on inventoried mineral resources as well as on the quantitative assessment of undiscovered mineral resources and the modelling of mineral deposits.\n• Environmental impact assessments: mapping and measuring environmental geological parameters for assessing geological material to be used for construction and rehabilitation at the mine site.\n\nThe Mineral resources data model is organised around two major categories of information: description and location of mines and mining activities; the description and location of &amp;quot;earth resources” including their classification, estimates of amount, as well as a description of the main market commodities. The energy resources such as coal, oil and gas are excluded in this theme, as they are found in theme "energy resources".</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/mr">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/mr/mr.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/mr/mr.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/mr/mr.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/mr/mr.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/mr/mr.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/mr/mr.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/mr/mr.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/mr/mr.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/mr/mr.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/mr/mr.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/mr/mr.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/mr/mr.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/mr/mr.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/mr/mr.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/nz">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">nz</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/nz:2"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/nz"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Områder med naturlige risici</dct:title>
+      <dct:description xml:lang="da">Sårbare områder, karakteriseret efter naturlige risici (alle atmosfæriske, hydrologiske, seismiske og vulkanske fænomener samt brande, som på grund af stedet, hvor de forekommer, deres omfang og hyppighed kan få alvorlige følger for samfundet), f.eks. oversvømmelser, jordskred og sammensynkning, laviner, skovbrande, jordskælv og vulkanudbrud.</dct:description>
+      <vann:usageNote xml:lang="en">Natural risk zones are zones where natural hazards areas intersect with highly populated areas and/or areas of particular environmental/ cultural/ economic value. \nTo define or pre-estimate a Risk following parameter are necessary: potential hazard, probability of its occurrence and vulnerability of the exposed populations and of the environmental, cultural and economic assets in a specific zone. \nNatural hazards can be classified by origin namely: geological, hydro-meteorological or biological. Hazardous events can vary in magnitude or intensity, frequency, duration, area of extent, speed of onset, spatial dispersion and temporal spacing. Specific examples for different types of hazard were identified: Floods (calculation of flood impact, reporting and flood hazard/risk mapping), Risk Management Scenario (an example from a national perspective), Landslides (hazard mapping, vulnerability assessment and risk assessment), Forest fires (danger, vulnerability and risk mapping) and Earthquake insurance. \nFollowing four key spatial object types that are modelled, Hazard area, Observed event, Risk zone and Exposed element.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/nz">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/nz/nz.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/nz/nz.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/nz/nz.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/nz/nz.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/nz/nz.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/nz/nz.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/nz/nz.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/nz/nz.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/nz/nz.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/nz/nz.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/nz/nz.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/nz/nz.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/nz/nz.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/nz/nz.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/of">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">of</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/of:2"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/of"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Oceanografiske/geografiske forhold</dct:title>
+      <dct:description xml:lang="da">Fysiske forhold til havs (strømme, saltholdighed, bølgehøjde osv.)</dct:description>
+      <vann:usageNote xml:lang="en">An Ocean Geographical Feature (OF) represents the (physical or chemical) properties of a Sea Region. This type of information is essentially a coverage describing the ocean and could be presented as a set of point data, gridded data, but also as vertical profiles through ocean depths and trajectories along the ocean surface. The Ocean Geographical Features theme employs the ISO 19156 Observations and Measurements standard for consistent encoding of measured, modelled or simulated data.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/of">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/of/of.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/of/of.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/of/of.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/of/of.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/of/of.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/of/of.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/of/of.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/of/of.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/of/of.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/of/of.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/of/of.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/of/of.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/of/of.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/of/of.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/pd">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">pd</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/pd:3"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/pd"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Befolkningsfordeling — demografi</dct:title>
+      <dct:description xml:lang="da">Den geografiske fordeling af befolkningen, herunder befolkningskarakteristika og aktivitetsniveauer, i kvadratnetceller, forvaltningsenheder eller andre analytiske enheder.</dct:description>
+      <vann:usageNote xml:lang="en">Population Distribution deals with datasets of statistical information describing how some phenomenon regarding human population is spread within some part of the 2D space. The theme has no direct spatial features, only contains attributes allowing to describe population phenomenon related to statistical units. Population data is linked to spatial object (statistical units) through their common identifier, e.g. NUTS codes.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/pd">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/pd/pd.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/pd/pd.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/pd/pd.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/pd/pd.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/pd/pd.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/pd/pd.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/pd/pd.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/pd/pd.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/pd/pd.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/pd/pd.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/pd/pd.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/pd/pd.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/pd/pd.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/pd/pd.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/pf">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">pf</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/pf:2"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/pf"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Produktions- og industrifaciliteter</dct:title>
+      <dct:description xml:lang="da">Industrielle produktionsanlæg, herunder de anlæg, der er omfattet af Rådets direktiv 96/61/EF af 24. september 1996 om forebyggelse og bekæmpelse af forurening [1], og vandudvindingsanlæg, miner, oplagspladser.</dct:description>
+      <vann:usageNote xml:lang="en">The theme "Production and Industrial Facilities" comprises information about industrial facilities and activities of production (focusing on extraction, transformation or storage of resources, including energy production) and the main related environmental issues.\nThe description of production and industrial facilities, e.g. types or activities, in INSPIRE is based on the Integrated pollution prevention and control Directive (2008/1/EC), as recently amended by Industrial Emissions Directive (2010/75/EU), the European pollution and transfer register regulation (166/2006/EC), the SEVESO Directive, its amendments (96/82/EC-A), the NACE regulation (1893/2006/EC) and other relevant legislation and industrial standards.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/pf">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/pf/pf.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/pf/pf.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/pf/pf.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/pf/pf.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/pf/pf.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/pf/pf.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/pf/pf.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/pf/pf.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/pf/pf.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/pf/pf.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/pf/pf.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/pf/pf.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/pf/pf.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/pf/pf.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/sr">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">sr</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/sr:2"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/sr"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Havområder</dct:title>
+      <dct:description xml:lang="da">Fysiske forhold i have og saltholdige søer, opdelt på områder og delområder med fælles egenskaber.</dct:description>
+      <vann:usageNote xml:lang="en">A Sea Region (SR) is a 2D geometry of an area or line with common (physical or chemical) characteristics that is covered by an ocean, sea or similar salt water body. The model allows the concept of named seas, as well subdivisions and aggregation of seas according to physical or chemical properties. The Sea Regions theme provides mechanisms to describe both the sea bed and sea surface as well as inter-tidal areas and the shoreline.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/sr">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/sr/sr.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/sr/sr.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/sr/sr.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/sr/sr.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/sr/sr.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/sr/sr.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/sr/sr.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/sr/sr.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/sr/sr.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/sr/sr.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/sr/sr.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/sr/sr.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/sr/sr.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/sr/sr.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/so">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">so</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/so:1"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/so"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Jord</dct:title>
+      <dct:description xml:lang="da">Jordbund og underjord karakteriseret efter dybde, tekstur, struktur og indhold af partikler og organisk materiale, stenindhold, erosion, i givet fald gennemsnitlig hældning og forventet vandlagringskapacitet.</dct:description>
+      <vann:usageNote xml:lang="en">Soil represents the upper part of the earth’s crust, formed by mineral particles, organic matter, water, air and living organisms. It is the interface between rock, air and water which hosts most of the biosphere.  \nINSPIRE Soil data theme comprises information on:\n• Soil inventories that provide one-off assessments of soil conditions and/or soil properties at certain locations and at a specific point in time, and allow soil monitoring, providing a series of assessments showing how soil conditions and/or properties change over time.\n• Soil mapping that provides a spatial representation of the properties linked to the soils, including soil types; typically, soil maps are derived with the help of data available in soil inventories. Also other soil related information derived from soil properties, possibly in combination with non-soil data are within the scope.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/so">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/so/so.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/so/so.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/so/so.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/so/so.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/so/so.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/so/so.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/so/so.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/so/so.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/so/so.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/so/so.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/so/so.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/so/so.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/so/so.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/so/so.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/sd">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">sd</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/sd:2"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/sd"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Artsfordeling</dct:title>
+      <dct:description xml:lang="da">Den geografiske fordeling af forekomsten af dyre- og plantearter i kvadratnetceller, forvaltningsenheder eller andre analytiske enheder.</dct:description>
+      <vann:usageNote xml:lang="en">Species Distribution is a biodiversity theme focused on geographical distribution of occurrence of biological organisms aggregated by grid, region, or any administrative or analytical unit.  Distributions may be represented in a wide range of formats, such as points, grid cells at different scales or polygons of specifically defined areas. To achieve harmonization EU-Nomen is the preferred reference list for species (taxon) names to be used, the second choice is European Nature Information System and finally Natura2000.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/sd">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/sd/sd.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/sd/sd.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/sd/sd.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/sd/sd.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/sd/sd.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/sd/sd.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/sd/sd.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/sd/sd.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/sd/sd.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/sd/sd.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/sd/sd.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/sd/sd.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/sd/sd.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/sd/sd.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/su">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">su</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/su:2"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/su"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Statistiske enheder</dct:title>
+      <dct:description xml:lang="da">Enheder for formidling eller anvendelse af statistiske oplysninger.</dct:description>
+      <vann:usageNote xml:lang="en">Statistical unit informs on the location of statistical data and information. The principle of this theme is to provide stable and identified representations of the statistical units – and statistical data refers to these objects through their identifier. Recommendations are provided on how to give stable identifiers to statistical unit and use these identifiers to attach statistical information on them. This is particularly important if the responsibility for geometry and statistical data are shared between different institutions e.g. mapping agency and statistical offices. Other INSPIRE data specifications such as Population Distribution use this referencing mechanism.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/su">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/su/su.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/su/su.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/su/su.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/su/su.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/su/su.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/su/su.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/su/su.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/su/su.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/su/su.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/su/su.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/su/su.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/su/su.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/su/su.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/su/su.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/us">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">us</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/us:2"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/us"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Offentlig forsyningsvirksomhed og offentlige tjenesteydelser</dct:title>
+      <dct:description xml:lang="da">Omfatter forsyningsvirksomhed så som kloakering, affaldshåndtering, energiforsyning og vandforsyning, administrative og sociale offentlige tjenester som f.eks. offentlige administrationer, civilbeskyttelsesanlæg, skoler og hospitaler.</dct:description>
+      <vann:usageNote xml:lang="en">The theme "Utility and Government Services" provides basic information (e.g. the location, basic technical characteristics or involved parties) on a wide range of administrative and social services of public interest.\nThe theme is split in the following subthemes:\n• Utility Networks: Node-link-node structured networks for collection, transmission and distribution, including electricity, oil/gas and chemicals, sewer,  thermal, water or (not mandatory) telecommunications networks;\n• Administrative and social governmental services: Local and governmental services and social infrastructures, selected with respect to the INSPIRE scope (focused on public &amp;amp; environmental aspects), represented as "points of interest”;\n• Environmental management facilities: Generic facility descriptions for waste management sites, water treatment plants and regulated or illegal areas for dumping.</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/us">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/us/us.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/us/us.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/us/us.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/us/us.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/us/us.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/us/us.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/us/us.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/us/us.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/us/us.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/us/us.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/us/us.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/us/us.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/us/us.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/us/us.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/mf">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">mf</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/mf:1"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/mf"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="da">Meteorologisk-geografiske forhold</dct:title>
+      <dct:description xml:lang="da">Vejrforhold og målinger heraf; nedbør, temperatur, evapotranspiration, vindhastighed og -retning.</dct:description>
+      <vann:usageNote xml:lang="en">Historical versions of the theme definition are found in the INSPIRE IMS and Scoping papers: \n\n• Weather conditions and their measurements; precipitation, temperature, evapotranspiration, wind. (INSPIRE IMS, 2003) \n• Weather conditions and their measurements; precipitation, temperature, evapotranspiration, wind speed and direction (INSPIRE Scoping, 2004) In order to place into context the range of spatial data types relevant to this theme, we consider the typical 'forecast cycle' of a national meteorological service (NMS). \nThis will: \n(a) collect meteorological observations over (say) a six-hour interval, \n(b) 'assimilate' these into a numerical model to produce an estimate of the current atmospheric state, \n(c) use this analysis as the initial condition for a model forecast run forward in time (typically out to several days). \nFour broad types of data are involved at different phases of the cycle: \n\n1. Observations: around 11000 surface stations globally make up the Global Observing System, reporting such atmospheric parameters as weather, cloud, temperature, humidity, wind, visibility, pressure. A subset of these stations make 'climate observations' which include daily temperature minimum and maximum, sunshine hours, rainfall amount etc. In addition, around 1000 'upper-air' stations make radiosonde (free-rising balloon) observations of pressure, wind, temperature and humidity. Voluntary observing ship and drifting buoys make marine observations including sea surface temperature, and wave height and period. Several hundred thousand reports per day of pressure, winds and temperature are made from aircraft observations. \n2. Synoptic analysis: Gridded wind, temperature, humidity, geopotential height, precipitation, etc. Also, 'sensible weather' elements (fronts, cloud, thunderstorm activity etc) will be analysed. \n3. Forecasts: Numerous forecast products are produced operationally. A conventional weather forecast contains similar elements to the synoptic analysis. \n4. Climatological data: Long-term time-series' of data (either observations or analyses) may be analysed statistically to create climatologies (e.g. 20th century decadal averages, seasonal/monthly minimum or maximum, etc.). There is considerable overlap and ambiguity between the themes 'Atmospheric conditions' and 'Meteorological geographical features' – e.g. weather conditions ('Meteorological geographical features') including precipitation, temperature, wind etc. are precisely components of the atmospheric state ('Atmospheric conditions'). \nNumerous suggestions have been made by stakeholders to resolve this ambiguity. They include: \n• merging the themes (it is impossible to amend the Directive, but it would be sensible to consider the themes jointly during data specification development) \n• distinguishing 'field-based data' (Atmospheric conditions) from 'point-based data' (Meteorological geographical features) \n• distinguishing 'time-series &amp;amp; near-real-time data' (Atmospheric conditions) from 'gridded climate data' (Meteorological geographical features) \n• distinguishing 'climate data' (Atmospheric conditions) from 'observations and forecasts' (Meteorological geographical features). \nTo resolve the ambiguity between themes, we consider the multi-level approach to data needs assessment applied in the INSPIRE 'Environmental Thematic User Needs Position Paper' (2002). Data at local or regional level are often needed for management and policy implementation, while lower resolution ('smaller scale') data are often required for reporting and policy development/evaluation. The latter includes summaries and integrated data products. \nThe scope of 'Meteorological geographical features' thematic data should be limited to local-level high-resolution (weather-related) data, typically observations. \n• This includes synoptic observations from stations making up the WMO RA VI (European) Regional Basic Synoptic Network. The WMO operates a dedicated network (the Global Telecommunications System) to distribute observations and data products. Data exchange is governed by WMO Resolution 40, which provides for free and unrestricted exchange of observational data 'essential' for forecast activities. 'Additional' nominated data and products may be provided with charge, while all data must be supplied free of charge (excluding costs of reproduction and delivery) for research and education. The ECOMET Catalogue (http://www.meteo.oma.be/ECOMET/Categories of data and products.htm) provides a 'one-stop shop' index of both 'essential' and chargeable data and product offerings from European NMSs. A similar catalogue is available for the European Centre for Medium-range Weather Forecasting (ECMWF) (http://www.ecmwf.int/products/catalogue/).</vann:usageNote>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/mf">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/mf/mf.da.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/mf/mf.da.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/mf/mf.da.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/mf/mf.da.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/mf/mf.da.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/mf/mf.da.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/mf/mf.da.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/mf/mf.da.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/mf/mf.da.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/mf/mf.da.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/mf/mf.da.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/mf/mf.da.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/mf/mf.da.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/mf/mf.da.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ac-mf">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">ac-mf</dct:identifier>
+      <owl:sameAs rdf:resource="https://inspire.ec.europa.eu/theme/ac-mf:1"/>
+      <adms:last rdf:resource="https://inspire.ec.europa.eu/theme/ac-mf"/>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <dct:title xml:lang="en">Atmospheric Conditions and meteorological geographical features</dct:title>
+      <dct:description xml:lang="en">Physical conditions in the atmosphere. Includes spatial data based on measurements, on models or on a combination thereof and includes measurement locations. Weather conditions and their measurements; precipitation, temperature, evapotranspiration, wind speed and direction.</dct:description>
+      <adms:status rdf:resource="https://inspire.ec.europa.eu/registry/status/invalid"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ac-mf">
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ac-mf/ac-mf.en.html"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ac-mf/ac-mf.en.csv"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ac-mf/ac-mf.en.json"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ac-mf/ac-mf.en.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ac-mf/ac-mf.en.19135.xml"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ac-mf/ac-mf.en.atom"/>
+      <dct:hasFormat rdf:resource="https://inspire.ec.europa.eu/theme/ac-mf/ac-mf.en.rdf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ac-mf/ac-mf.en.html">
+      <rdfs:label xml:lang="en">HTML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ac-mf/ac-mf.en.csv">
+      <rdfs:label xml:lang="en">CSV</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ac-mf/ac-mf.en.json">
+      <rdfs:label xml:lang="en">JSON</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ac-mf/ac-mf.en.xml">
+      <rdfs:label xml:lang="en">XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ac-mf/ac-mf.en.19135.xml">
+      <rdfs:label xml:lang="en">ISO 19135</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ac-mf/ac-mf.en.atom">
+      <rdfs:label xml:lang="en">Atom</rdfs:label>
+      <dct:format rdf:resource="http://www.iana.org/assignments/media-types/application/atom+xml"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://inspire.ec.europa.eu/theme/ac-mf/ac-mf.en.rdf">
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+   </rdf:Description>
+   <dct:LicenseDocument rdf:about="http://ec.europa.eu/geninfo/legal_notices_da.htm">
+      <dct:title xml:lang="da">Europa Legal Notice</dct:title>
+   </dct:LicenseDocument>
+</rdf:RDF>
