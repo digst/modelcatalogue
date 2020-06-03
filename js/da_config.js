@@ -1,4 +1,4 @@
-
+﻿
 var da_config = [
 
 	{
@@ -22,7 +22,7 @@ var da_config = [
 		splitLocation: "/modellingregime#",
 		kasseoverskrift: "Modelleringsregime",
 		boxflex: "ned"
-	},			{
+	},			/*{
 		klassifikationsfil:"../../../model/core/modellinglevel.rdf",
 		topicNameLocator:"description[lang='da'],dct\\:description[xml\\:lang='da']",
 		prefix: "dadk",
@@ -30,7 +30,7 @@ var da_config = [
 		splitLocation: "/modellinglevel#",
 		kasseoverskrift: "Modelleringsniveau",
 		boxflex: "ned"
-	},	{
+	},*/	{
 		klassifikationsfil:"xml/data-theme-skos-ap-act.rdf",
 		topicNameLocator:"prefLabel[lang='da'],skos\\:prefLabel[xml\\:lang='da']",
 		prefix: "dcat",

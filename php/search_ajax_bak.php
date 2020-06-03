@@ -23,9 +23,6 @@ if(isset( $_POST["filtersAll"])){
     $filtersAll = $_POST["filtersAll"];
 }
 
-
-	session_start();
-	$_SESSION['langID'] = $language;
 //Globals
 $searchHits = 0;
 
@@ -55,8 +52,6 @@ function applySearch($xml = "../xml/modelkatalog.rdf.xml"){
     global $searchHits;
 
     $counter = 0;
-	
-
     
     $xslDoc = ($language == 'da'? '../xml/modelkatalog.xsl.xml': '../xml/modelkatalog_eng.xsl.xml');
     //$xslDoc = '../xml/modelkatalog.xsl.xml';

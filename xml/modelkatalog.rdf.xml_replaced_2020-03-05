@@ -135,7 +135,8 @@
 			<dct:title xml:lang="en">Model Catalogue - international models for reuse and inspiration</dct:title>	
 			<dct:description xml:lang="da">Modelkataloget - internationale modeller til genbrug og inspiration</dct:description>
 			<dct:description xml:lang="en">Model Catalogue - international models for reuse and inspiration</dct:description>				
-
+			<dcat:dataset rdf:resource="http://www.w3.org/ns/person"/>		
+			<dcat:dataset rdf:resource="https://www.w3.org/ns/locn"/>	
 			<dct:publisher>
 				<foaf:Agent>
 					<foaf:name>Digitaliseringsstyrelsen</foaf:name>
@@ -147,41 +148,7 @@
 					<vcard:fn>FDA-Modelsekretariatet</vcard:fn>
 					<vcard:hasEmail rdf:resource="mailto:arkitektur@digst.dk"/>				
 				</vcard:Kind>
-			</dcat:contactPoint>	
-			<dcat:dataset rdf:resource="http://www.w3.org/2002/07/owl"/>
-			<dcat:dataset rdf:resource="http://purl.org/vocommons/voaf"/>
-			<dcat:dataset rdf:resource="http://usefulinc.com/ns/doap"/>
-			<dcat:dataset rdf:resource="http://voag.linkedmodel.org/schema/voag"/>
-			<dcat:dataset rdf:resource="http://purl.org/dc/terms"/>
-			<dcat:dataset rdf:resource="http://www.w3.org/ns/person"/>
-			<dcat:dataset rdf:resource="https://www.w3.org/ns/locn"/>
-			<dcat:dataset rdf:resource="http://data.europa.eu/eli/ontology#"/>
-			<dcat:dataset rdf:resource="http://www.opengis.net/ont/geosparql"/>
-			<dcat:dataset rdf:resource="http://www.opengis.net/ont/gml"/>
-			<dcat:dataset rdf:resource="http://www.opengis.net/ont/sf"/>
-			<dcat:dataset rdf:resource="http://www.w3.org/2006/time"/>
-			<dcat:dataset rdf:resource="http://www.w3.org/2008/05/skos-xl"/>
-			<dcat:dataset rdf:resource="http://purl.org/dc/dcmitype/"/>
-			<dcat:dataset rdf:resource="http://purl.org/ontology/bibo/"/>
-			<dcat:dataset rdf:resource="http://data.europa.eu/bud/"/>
-			<dcat:dataset rdf:resource="http://xmlns.com/foaf/spec/"/>
-			<dcat:dataset rdf:resource="http://inspire.ec.europa.eu/ont/base"/>
-			<dcat:dataset rdf:resource="http://schema.org/Action"/>
-			<dcat:dataset rdf:resource="http://schema.org/CreativeWork"/>
-			<dcat:dataset rdf:resource="https://joinup.ec.europa.eu/release/core-public-organisation-vocabulary-v100"/>
-			<dcat:dataset rdf:resource="https://joinup.ec.europa.eu/solution/core-public-service-vocabulary"/>
-			<dcat:dataset rdf:resource="https://ec.europa.eu/isa2/solutions/core-public-service-vocabulary-application-profile-cpsv-ap_en"/>
-			<dcat:dataset rdf:resource="https://www.w3.org/2001/05/datatypes.xsd"/>
-			<dcat:dataset rdf:resource="https://www.w3.org/2009/08/skos-reference/skos.rdf"/>
-			<dcat:dataset rdf:resource="https://www.w3.org/2015/03/inspire/smod"/>
-			<dcat:dataset rdf:resource="https://www.w3.org/TR/vocab-org/"/>
-			<dcat:dataset rdf:resource="https://www.w3.org/TR/vocab-regorg/"/>
-			<dcat:dataset rdf:resource="https://www.w3.org/TR/void/"/>
-			<dcat:dataset rdf:resource="https://www.w3.org/ns/dcat"/>
-			<dcat:dataset rdf:resource="https://www.w3.org/ns/dqv"/>
-			<dcat:dataset rdf:resource="https://op.europa.eu/en/web/eu-vocabularies/authority-tables"/>
-			<dcat:dataset rdf:resource="https://www.w3.org/TR/void/"/>
-			<dcat:dataset rdf:resource="http://purl.org/dc/dcmitype/dcmitype"/>
+			</dcat:contactPoint>			
 		</rdf:Description>			
 	 </dct:hasPart>
 	 
@@ -2463,7 +2430,7 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/>
     <dadk:businessArea>Tele og internet</dadk:businessArea>
     <dadk:businessAreaCode>34.45</dadk:businessAreaCode>
-    
+    <dadk:INSPIRETheme/>
     <dcat:distribution rdf:resource="http://xmlns.com/foaf/spec/20140114.rdf"/>
   </rdf:Description>
  
@@ -3310,7 +3277,7 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/>
     <dadk:businessArea>Tele og internet</dadk:businessArea>
     <dadk:businessAreaCode>34.45</dadk:businessAreaCode>
-    
+    <dadk:INSPIRETheme/>
     <!--		<dcat:distribution />-->
   </rdf:Description>
  
@@ -3343,7 +3310,7 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/>
     <dadk:businessArea>Tele og internet</dadk:businessArea>
     <dadk:businessAreaCode>34.45</dadk:businessAreaCode>
-    
+    <dadk:INSPIRETheme/>
     <dcat:distribution rdf:resource="https://www.w3.org/ns/dqv.rdf"/>
     <dcat:distribution rdf:resource="https://www.w3.org/ns/dqv.ttl"/>
   </rdf:Description>
@@ -3382,7 +3349,7 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/>
     <dadk:businessArea>Samfundsdigitalisering</dadk:businessArea>
     <dadk:businessAreaCode>06.38</dadk:businessAreaCode>
-    
+    <dadk:INSPIRETheme/>
     <dcat:distribution rdf:resource="http://www.w3.org/2002/07/owl"/>
   </rdf:Description>
  

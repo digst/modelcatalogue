@@ -48,8 +48,13 @@ symbol id="add" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d
                         </a>
                     </li>
                     <li>
-                        <a href="../xml/modelkatalog.rdf.xml" class="nav-link" target="_blank">
+                        <a href="../models/xml/servecatalog.php" class="nav-link" target="_blank">
                             <span>Se hele modelkataloget</span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="../models/xml/serverdf.php" class="nav-link" target="_blank">
+                            <span>Hent modelkataloget som RDF</span>
                         </a>
                     </li>
                 </ul>
@@ -77,15 +82,13 @@ symbol id="add" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d
 				Derudover indeholder dette katalog også oplysninger om en række anerkendte  internationale modeller som kan have en bred anvendelse i dansk administrativ og fællesoffentlig kontekst. 
 				Anvendelse af Modelreglerne og genbrug af modeller og data gør os i stand til at skabe en fællesoffentlig dataarkitektur og et fælles datagrundlag, hvor vi kan anvende hinandens modeller og de data, de dokumenterer.
 				<br /> <strong>Del og genbrug nu!</strong>
-				<button class="js-tippy" data-tippy-content="Tooltip">Text</button>
 			</p>
 			<div class="row mt-5">
-				
 				<div class="search-bar pt-4 pb-4 pb-md-5 pt-md-5 mt-4 mt-md-9">
 					<div class="col-12">
 						<form method="post" id="search-form">
 							<label for="searchField" class="text-white">Søg i modelkataloget</label>
-							<div class="form-group search">							
+							<div class="form-group search">					
 								<input  id="searchField" class="form-input input-char-27" name="search-query" title="Search" type="search" required>
 								<button class="button button-search do-search">Søg</button>
 								<button type="button" class="button button-secondary reset-search">Nulstil søgning</button>
@@ -103,7 +106,7 @@ symbol id="add" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d
 						<button class="button button-secondary mb-4 reset-filter"> Klik her for at nulstille filtreringen </button>
 						<div id="knapdiv">
 							<div id="filtreret"></div>
-						</div>	
+						</div>
 					</div>
 					<div class="col models-col" style="overflow:hidden;">
 						<div id="resultatdiv"></div>

@@ -31,7 +31,7 @@ xmlns:schema="http://schema.org/">
 		<HTML>
 			<HEAD>
 				<TITLE>Modelkataloget</TITLE>
-				<link rel="stylesheet" type="text/css" href="../css/modelkatalog.css"/>
+				<!--<link rel="stylesheet" type="text/css" href="../css/modelkatalog.css"/>-->
 			</HEAD>
 			<BODY>
 				<xsl:for-each select="//rdf:type[@rdf:resource='http://www.w3.org/ns/dcat#Dataset' ]/..">
@@ -126,6 +126,7 @@ xmlns:schema="http://schema.org/">
 														<!-- RESSOURCE LINK -->
 														<xsl:if test="$distURL != ''">
 															<span id="distURL">
+															<!--https://data.gov.dk/catalogue/models_new/php/resource_downloader.php?url=-->
 																<a href="{$distURL}" class="button button-unstyled" target="_blank" title="Download">
 																	<svg style="width:30px;height:30px" viewBox="0 0 24 24">
 																		<path fill="#000000" d="M14,2L20,8V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V4A2,2 0 0,1 6,2H14M18,20V9H13V4H6V20H18M12,19L8,15H10.5V12H13.5V15H16L12,19Z" />
@@ -247,7 +248,7 @@ xmlns:schema="http://schema.org/">
 									</xsl:if>
 								</xsl:for-each>-->
 								
-								<xsl:for-each select="dct:publisher/foaf:Organization">
+								<xsl:for-each select="dct:publisher/foaf:Agent">
 										<xsl:variable name="OrghjSide">
 											<xsl:value-of select="foaf:homepage"/>
 										</xsl:variable> 

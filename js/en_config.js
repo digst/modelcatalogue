@@ -21,7 +21,7 @@ var en_config = [
 		splitLocation: "/modellingregime#",
 		kasseoverskrift: "Modelling regimes",
 		boxflex: "ned"
-	},			{
+	},			/*{
 		klassifikationsfil:"../../../model/core/modellinglevel.rdf",
 		topicNameLocator:"description[lang='en'],dct\\:description[xml\\:lang='en']",
 		prefix: "dadk",
@@ -29,7 +29,7 @@ var en_config = [
 		splitLocation: "/modellinglevel#",
 		kasseoverskrift: "Modelling levels",
 		boxflex: "ned"
-	},	{
+	},*/	{
 		klassifikationsfil:"xml/data-theme-skos-ap-act.rdf",
 		topicNameLocator:"prefLabel[lang='en'],skos\\:prefLabel[xml\\:lang='en']",
 		prefix: "dcat",
