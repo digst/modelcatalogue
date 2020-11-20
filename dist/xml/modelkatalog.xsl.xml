@@ -259,6 +259,15 @@ xmlns:schema="http://schema.org/">
 										</tr>
 									
 								</xsl:for-each>
+
+								<xsl:for-each select="dcat:contactPoint/vcard:Kind">
+									<xsl:if test=". != ''"> 
+										<tr>
+											<td>Kontapunkt:</td>
+											<td><xsl:value-of select="."/></td>
+										</tr>
+									</xsl:if>
+								</xsl:for-each>									
 								
 								<xsl:for-each select="dct:rights">
 									<xsl:if test=". != ''"> 
