@@ -260,10 +260,15 @@ xmlns:schema="http://schema.org/">
 									
 								</xsl:for-each>
 
+										<tr>
+											<td>Kontaktpunkt:</td>
+											<td></td>
+										</tr>	
+								
 								<xsl:for-each select="dcat:contactPoint/vcard:Kind">
 									<xsl:if test=". != ''"> 
 										<tr>
-											<td>Kontapunkt:</td>
+											<td>Kontaktpunkt:</td>
 											<td><xsl:value-of select="."/></td>
 										</tr>
 									</xsl:if>
