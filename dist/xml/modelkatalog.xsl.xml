@@ -18,6 +18,8 @@ xmlns:cc="http://www.sparxsystems.com/profiles/GML/1.0"
 xmlns:foaf="http://xmlns.com/foaf/0.1/"  
 xmlns:skos="http://www.w3.org/2004/02/skos/core#" 
 xmlns:dadk="http://data.gov.dk/model/vocabular/modelcat#"  
+xmlns:mdl="https://data.gov.dk/model/core/modelling#"	
+xmlns:vcard="http://www.w3.org/2006/vcard/ns#" 
 xmlns:schema="http://schema.org/">
 
 	<xsl:output method="html"/>
@@ -169,7 +171,7 @@ xmlns:schema="http://schema.org/">
 
 													<!--Distibution size-->
 													<xsl:if test="$distSize != ''">
-														<tr><td>Fil størelse:</td><td> <xsl:value-of select="$distSize"/></td></tr>
+														<tr><td>Filstørrelse:</td><td> <xsl:value-of select="$distSize"/></td></tr>
 													</xsl:if>
 												</table>
 											</div>
@@ -179,7 +181,23 @@ xmlns:schema="http://schema.org/">
 							</xsl:for-each> 
 
 							<!-- MODEL METADATA -->
+							
+
+								
 							<table style="margin-top: 3em;">
+							
+								<xsl:for-each select="dcat:landingPage">
+									<xsl:if test="@rdf:resource != ''"> 
+										<xsl:variable name="hjSide">
+											<xsl:value-of select="@rdf:resource"/>
+										</xsl:variable> 
+										<tr>
+											<td>Destinationsside:</td>
+											<td><a href="{$hjSide}" target="_blank"> <xsl:value-of select="$hjSide"/></a></td>
+										</tr>
+									</xsl:if>
+								</xsl:for-each>
+								
 								<xsl:if test="vann:preferredNamespaceUri != ''"> 
 									<xsl:variable name="namespace">
 										<xsl:value-of select="vann:preferredNamespaceUri"/>
@@ -189,17 +207,76 @@ xmlns:schema="http://schema.org/">
 										<td><a href="{$namespace}" target="_blank"> <xsl:value-of select="$namespace"/></a></td>
 									</tr>
 								</xsl:if>
-						
-								<xsl:if test="dcat:keyword">
-									<tr>
-										<td>Nøgleord:</td>
-										<td>
-											<xsl:for-each select="dcat:keyword"> 
-												<xsl:value-of select="."/>;
-											</xsl:for-each>
-										</td>
-									</tr>
-								</xsl:if>
+
+								<xsl:for-each select="dadk:modelType/dct:type"> 
+									<xsl:if test="@rdf:resource != ''"> 
+										<xsl:variable name="mType">
+											<xsl:value-of select="@rdf:resource"/>
+										</xsl:variable> 
+										<xsl:variable name="mDesc">
+											<xsl:value-of select="document('../../../model/core/modeltype.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:definition[@xml:lang='da']"/>
+										</xsl:variable> 
+										<tr>
+											<td>Modeltype:</td>
+											<td>
+												<span  title="{$mDesc}">  
+													<xsl:value-of select="document('../../../model/core/modeltype.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:prefLabel[@xml:lang='da']"/> 
+												</span>
+											</td>
+										</tr>
+									</xsl:if>
+								</xsl:for-each>
+
+								<xsl:for-each select="mdl:modelScope"> 
+									<xsl:if test="@rdf:resource != ''"> 
+										<xsl:variable name="mScope">
+											<xsl:value-of select="@rdf:resource"/>
+										</xsl:variable> 
+										<xsl:variable name="mDesc">
+											<xsl:value-of select="document('../../../model/core/modelscope.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mScope]/skos:definition[@xml:lang='da']"/>
+										</xsl:variable> 
+										<tr>
+											<td>Modelomfang:</td>
+											<td>
+												<span  title="{$mDesc}">  
+													<xsl:value-of select="document('../../../model/core/modelscope.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mScope]/skos:prefLabel[@xml:lang='da']"/> 
+												</span>
+											</td>
+										</tr>
+									</xsl:if>
+								</xsl:for-each>								
+								
+
+								<xsl:for-each select="dcat:contactPoint/vcard:Kind/vcard:hasEmail">
+									<xsl:if test="@rdf:resource != ''"> 
+										<tr>
+											<td>Kontaktpunkt:</td>
+											<td><xsl:value-of select="@rdf:resource"/></td>
+										</tr>
+									</xsl:if>
+								</xsl:for-each>	
+								
+								<xsl:for-each select="dct:publisher/foaf:Agent">
+										<xsl:variable name="OrghjSide">
+											<xsl:value-of select="foaf:homepage"/>
+										</xsl:variable> 
+									
+										<tr>
+											<td>Udgiver:</td>
+											<td><a href="{$OrghjSide}" target="_blank"><xsl:value-of select="foaf:name"/></a></td>
+										</tr>
+								</xsl:for-each>
+								
+								<!--
+								<xsl:for-each select="dct:publisher">
+									
+									<xsl:if test="@rdf:resource != ''"> 
+										<tr>
+											<td>Udgiver:</td>
+											<td><xsl:value-of select="@rdf:resource"/></td>
+										</tr>
+									</xsl:if>
+								</xsl:for-each>-->								
 								
 								<xsl:if test="dct:issued != ''"> 
 									<tr>
@@ -211,7 +288,7 @@ xmlns:schema="http://schema.org/">
 								<xsl:for-each select="dct:modified">
 									<xsl:if test=". != ''"> 
 										<tr>
-											<td>Ændringsdato:</td>
+											<td>Seneste ændringsdato:</td>
 											<td>  <xsl:value-of select="."/></td>
 										</tr>
 									</xsl:if>
@@ -232,43 +309,37 @@ xmlns:schema="http://schema.org/">
 											<xsl:value-of select="."/>
 										</xsl:variable> 
 										<tr>
-											<td>Versioneringsnoter:</td>
+											<td>Versionsnoter:</td>
 											<td><a href="{$versionNotes}" target="_blank"> <xsl:value-of select="."/></a></td>
 										</tr>
 									</xsl:if>
 								</xsl:for-each>								
-								<!--
-								<xsl:for-each select="dct:publisher">
-									
+
+
+								<xsl:for-each select="dct:isVersionOf">
 									<xsl:if test="@rdf:resource != ''"> 
+										<xsl:variable name="IsVersionOf">
+											<xsl:value-of select="@rdf:resource"/>
+										</xsl:variable> 
 										<tr>
-											<td>Udgiver:</td>
-											<td><xsl:value-of select="@rdf:resource"/></td>
+											<td>Er version af:</td>
+											<td><a href="{$IsVersionOf}" target="_blank"> <xsl:value-of select="$IsVersionOf"/></a></td>
 										</tr>
 									</xsl:if>
-								</xsl:for-each>-->
-								
-								<xsl:for-each select="dct:publisher/foaf:Agent">
-										<xsl:variable name="OrghjSide">
-											<xsl:value-of select="foaf:homepage"/>
-										</xsl:variable> 
-									
-										<tr>
-											<td>Udgiver:</td>
-											<td><a href="{$OrghjSide}" target="_blank"><xsl:value-of select="foaf:name"/></a></td>
-										</tr>
-									
 								</xsl:for-each>
 
-								<xsl:for-each select="dcat:contactPoint/vcard:Kind/vcard:hasEmail">
-									<xsl:if test=". != ''"> 
+								<xsl:for-each select="dct:hasVersion">
+									<xsl:if test="@rdf:resource != ''"> 
+										<xsl:variable name="HasVersion">
+											<xsl:value-of select="@rdf:resource"/>
+										</xsl:variable> 
 										<tr>
-											<td>Kontaktpunkt:</td>
-											<td><xsl:value-of select="."/></td>
+											<td>Har version:</td>
+											<td><a href="{$HasVersion}" target="_blank"> <xsl:value-of select="$HasVersion"/></a></td>
 										</tr>
 									</xsl:if>
-								</xsl:for-each>									
-								
+								</xsl:for-each>								
+
 								<xsl:for-each select="dct:rights">
 									<xsl:if test=". != ''"> 
 										<tr>
@@ -287,17 +358,6 @@ xmlns:schema="http://schema.org/">
 									</xsl:if>
 								</xsl:for-each>
 
-								<xsl:for-each select="dcat:landingPage">
-									<xsl:if test="@rdf:resource != ''"> 
-										<xsl:variable name="hjSide">
-											<xsl:value-of select="@rdf:resource"/>
-										</xsl:variable> 
-										<tr>
-											<td>Hjemmeside:</td>
-											<td><a href="{$hjSide}" target="_blank"> <xsl:value-of select="$hjSide"/></a></td>
-										</tr>
-									</xsl:if>
-								</xsl:for-each>
 
 								<xsl:for-each select="foaf:page"> 
 									<xsl:if test="@rdf:resource != ''"> 
@@ -305,12 +365,24 @@ xmlns:schema="http://schema.org/">
 											<xsl:value-of select="@rdf:resource"/>
 										</xsl:variable> 
 										<tr>
-											<td>Infoside:</td>
+											<td>Dokumentation:</td>
 											<td><a href="{$infSide}" target="_blank"> <xsl:value-of select="$infSide"/></a></td>
 										</tr>
 									</xsl:if>
 								</xsl:for-each>
 
+
+								<xsl:if test="dcat:keyword">
+									<tr>
+										<td>Nøgleord:</td>
+										<td>
+											<xsl:for-each select="dcat:keyword"> 
+												<xsl:value-of select="."/>;
+											</xsl:for-each>
+										</td>
+									</tr>
+								</xsl:if>
+								
 								<xsl:for-each select="dcat:theme"> 
 									<xsl:if test="@rdf:resource != ''"> 
 										<xsl:variable name="mThemeRef">
@@ -320,7 +392,7 @@ xmlns:schema="http://schema.org/">
 											<xsl:value-of select="document('data-theme-skos-ap-act.rdf')/rdf:RDF/skos:Concept[@rdf:about=$mThemeRef]/skos:prefLabel[@xml:lang='da']"/>
 										</xsl:variable> 
 										<tr>
-											<td>MDR data tema:</td>
+											<td>Emne (EU datatema):</td>
 											<td>
 												<span  title="{$themeFull}">
 													<xsl:value-of select="document('data-theme-skos-ap-act.rdf')/rdf:RDF/skos:Concept[@rdf:about=$mThemeRef]/dc:identifier"/> 
@@ -329,87 +401,32 @@ xmlns:schema="http://schema.org/">
 										</tr>
 									</xsl:if>
 								</xsl:for-each>
-
-								<xsl:for-each select="dadk:modelType"> 
-									<xsl:if test="@rdf:resource != ''"> 
-										<xsl:variable name="mType">
-											<xsl:value-of select="@rdf:resource"/>
-										</xsl:variable> 
-										<xsl:variable name="mDesc">
-											<xsl:value-of select="document('../../../model/core/modeltype.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:definition[@xml:lang='da']"/>
-										</xsl:variable> 
-										<tr>
-											<td>Modelregel-modeltype:</td>
-											<td>
-												<span  title="{$mDesc}">  
-													<xsl:value-of select="document('../../../model/core/modeltype.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:prefLabel[@xml:lang='da']"/> 
-												</span>
-											</td>
-										</tr>
-									</xsl:if>
-								</xsl:for-each>
-
-								<xsl:for-each select="dadk:modellingLevel"> 
-									<xsl:if test="@rdf:resource != ''"> 
-										<xsl:variable name="mType">
-											<xsl:value-of select="@rdf:resource"/>
-										</xsl:variable> 
-										<xsl:variable name="mDesc">
-											<xsl:value-of select="document('../../../model/core/modellinglevel.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:definition[@xml:lang='da']"/>
-										</xsl:variable> 
-										<tr>
-											<td>Modelregel-modelleringsniveau:</td>
-											<td>
-												<span title="{$mDesc}">  
-													<xsl:value-of select="document('../../../model/core/modellinglevel.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:prefLabel[@xml:lang='da']"/> 
-												</span>
-											</td>
-										</tr>
-									</xsl:if>
-								</xsl:for-each>
-
-								<xsl:for-each select="dadk:modellingRegime">
-									<xsl:if test="@rdf:resource != ''">  
-										<xsl:variable name="mType">
-											<xsl:value-of select="@rdf:resource"/>
-										</xsl:variable> 
-										<xsl:variable name="mDesc">
-											<xsl:value-of select="document('../../../model/core/modellingregime.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:definition[@xml:lang='da']"/>
-										</xsl:variable> 
-										<tr>
-											<td>Modelleringsregime:</td>
-											<td>
-												<span  title="{$mDesc}">  
-													<xsl:value-of select="document('../../../model/core/modellingregime.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:prefLabel[@xml:lang='da']"/> 
-												</span>
-											</td>
-										</tr>
-									</xsl:if>
-								</xsl:for-each>
-
-								<xsl:for-each select="dadk:businessArea">
-									<xsl:if test=". != ''">  
-										<xsl:variable name="FORMopgave">
-											<xsl:value-of select="."/> 
-										</xsl:variable> 
-										<tr>
-											<td>FORM-forretningsområde:</td>
-											<td><a href="http://www.form-online.dk/soegning?action=search&amp;tekst={$FORMopgave}" target="_blank"> <xsl:value-of select="$FORMopgave"/></a></td>
-										</tr>
-									</xsl:if>
-								</xsl:for-each>
-
+								
 								<xsl:for-each select="dadk:businessAreaCode">
 									<xsl:if test=". != ''">  
 										<xsl:variable name="FORMopgaveKode">
 											<xsl:value-of select="."/> 
 										</xsl:variable> 
 										<tr>
-											<td>FORM-kode:</td>
-											<td><a href="http://www.form-online.dk:8080/FORM-REST/resources/{$FORMopgaveKode}" target="_blank"> <xsl:value-of select="$FORMopgaveKode"/></a></td>
+											<td>Emne (FORM):</td>
+											<td><a href="http://www.form-online.dk:8080/FORM-REST/resources/{$FORMopgaveKode}" target="_blank"> <xsl:value-of select="$FORMopgaveKode"/></a>
+											
+									<xsl:if test="../dadk:businessArea != ''">  
+										<xsl:variable name="FORMopgave">
+											<xsl:value-of select="../dadk:businessArea"/> 
+										</xsl:variable> 
+										<a href="http://www.form-online.dk/soegning?action=search&amp;tekst={$FORMopgave}" target="_blank"> <xsl:value-of select="$FORMopgave"/></a>
+									</xsl:if>
+											
+											
+											</td>
 										</tr>
 								  </xsl:if>
 								</xsl:for-each>
+								
+
+
+								
 
 								<xsl:for-each select="dadk:INSPIRETheme">
 									<xsl:if test="@rdf:resource != ''">  
@@ -448,6 +465,49 @@ xmlns:schema="http://schema.org/">
 										</tr>
 									</xsl:if>
 								</xsl:for-each>
+								
+								<xsl:for-each select="dadk:modellingRegime">
+									<xsl:if test="@rdf:resource != ''">  
+										<xsl:variable name="mType">
+											<xsl:value-of select="@rdf:resource"/>
+										</xsl:variable> 
+										<xsl:variable name="mDesc">
+											<xsl:value-of select="document('../../../model/core/modellingregime.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:definition[@xml:lang='da']"/>
+										</xsl:variable> 
+										<tr>
+											<td>Modelleringsregime:</td>
+											<td>
+												<span  title="{$mDesc}">  
+													<xsl:value-of select="document('../../../model/core/modellingregime.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:prefLabel[@xml:lang='da']"/> 
+												</span>
+											</td>
+										</tr>
+									</xsl:if>
+								</xsl:for-each>
+
+
+								<!-- 
+								<xsl:for-each select="dadk:modellingLevel"> 
+									<xsl:if test="@rdf:resource != ''"> 
+										<xsl:variable name="mType">
+											<xsl:value-of select="@rdf:resource"/>
+										</xsl:variable> 
+										<xsl:variable name="mDesc">
+											<xsl:value-of select="document('../../../model/core/modellinglevel.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:definition[@xml:lang='da']"/>
+										</xsl:variable> 
+										<tr>
+											<td>Modelregel-modelleringsniveau:</td>
+											<td>
+												<span title="{$mDesc}">  
+													<xsl:value-of select="document('../../../model/core/modellinglevel.rdf')/rdf:RDF/rdf:Description[@rdf:about=$mType]/skos:prefLabel[@xml:lang='da']"/> 
+												</span>
+											</td>
+										</tr>
+									</xsl:if>
+								</xsl:for-each>
+								-->								
+								
+								
 							</table>
 						
 						</div><!-- ONE MODEL -->
