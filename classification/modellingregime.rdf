@@ -63,14 +63,13 @@ SUBCLASS OF SKOS CONCEPT
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">modelleringsregime</prefLabel>	
 	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="da">modelling regime</prefLabel>		
 	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en"></definition>	
-    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/modellingregime#" />	
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/modellingregime#"/>	
 </owl:Class>
    
 <!--
 INSTANCES OF SKOS CONCEPT
 ==================================================================================================================================================================================
 -->	
-
 
    <rdf:Description rdf:about="https://data.gov.dk/model/core/modellingregime#International">
       <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Int</dct:identifier>
@@ -82,13 +81,13 @@ INSTANCES OF SKOS CONCEPT
 	  <dct:title xml:lang="en">International</dct:title>
       <dct:description xml:lang="da">Modeller, udfærdiget udenfor de danske modelleringsregimer - kan bruges som reference og inspiration.</dct:description>
       <skos:definition xml:lang="da">Modeller, udfærdiget udenfor de danske modelleringsregimer - kan bruges som reference og inspiration.</skos:definition>
-      <dct:description xml:lang="en">a level...</dct:description>
-      <skos:definition xml:lang="en">a level...</skos:definition>
+      <dct:description xml:lang="en"></dct:description>
+      <skos:definition xml:lang="en"></skos:definition>
       <skos:prefLabel xml:lang="en">International</skos:prefLabel>
       <skos:prefLabel xml:lang="da">Internationalt</skos:prefLabel>
       <dcat:theme rdf:resource="tbd"/>
       <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid"/>
-	  <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/modellingregime#" />
+	  <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/modellingregime#"/>
    </rdf:Description>
 
     <rdf:Description rdf:about="https://data.gov.dk/model/core/modellingregime#FODS">
@@ -101,13 +100,13 @@ INSTANCES OF SKOS CONCEPT
       <dct:title xml:lang="en">FODS</dct:title>
       <dct:description xml:lang="da">Modeller udfærdiget inden for styring af digitaliseringsstrategien, konformerer med Fællesoffentlige regler for begrebs- og datamodellering.</dct:description>
       <skos:definition xml:lang="da">Modeller udfærdiget inden for styring af digitaliseringsstrategien, konformerer med Fællesoffentlige regler for begrebs- og datamodellering.</skos:definition>
-      <dct:description xml:lang="en">a level...</dct:description>
-      <skos:definition xml:lang="en">a level...</skos:definition>
+      <dct:description xml:lang="en"></dct:description>
+      <skos:definition xml:lang="en"></skos:definition>
       <skos:prefLabel xml:lang="en">FODS</skos:prefLabel>
       <skos:prefLabel xml:lang="da">FODS</skos:prefLabel>
       <dcat:theme rdf:resource="tbd"/>
       <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid"/>
-	  <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/modellingregime#" />
+	  <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/modellingregime#"/>
    </rdf:Description>
 
     <rdf:Description rdf:about="https://data.gov.dk/model/core/modellingregime#Grunddata">
@@ -120,14 +119,32 @@ INSTANCES OF SKOS CONCEPT
       <dct:title xml:lang="en">International</dct:title>
       <dct:description xml:lang="da">Modeller udfærdiget i overensstemmelse med Modelregler for grunddata.</dct:description>
       <skos:definition xml:lang="da">Modeller udfærdiget i overensstemmelse med Modelregler for grunddata.</skos:definition>
-      <dct:description xml:lang="en">a level...</dct:description>
-      <skos:definition xml:lang="en">a level...</skos:definition>
+      <dct:description xml:lang="en"></dct:description>
+      <skos:definition xml:lang="en"></skos:definition>
       <skos:prefLabel xml:lang="en">Grunddata</skos:prefLabel>
       <skos:prefLabel xml:lang="da">Grunddata</skos:prefLabel>
       <dcat:theme rdf:resource="tbd"/>
       <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid"/>
-	  <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/modellingregime#" />
+	  <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/modellingregime#"/>
    </rdf:Description>
 
+    <rdf:Description rdf:about="https://data.gov.dk/model/core/modellingregime#RDF">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">RDF</dct:identifier>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	  <rdf:type rdf:resource="https://data.gov.dk/model/core/modellingregime#ModellingRegime"/>
+      <skos:inScheme rdf:resource="https://data.gov.dk/model/core/modellingregime#ModellingRegimes"/>
+	  <skos:topConceptOf rdf:resource="https://data.gov.dk/model/core/modellingregime#ModellingRegimes"/>
+      <dct:title xml:lang="en">RDF</dct:title>
+      <dct:description xml:lang="da">Modeller udfærdiget i overensstemmelse med Resource Description Framework (RDF).</dct:description>
+      <skos:definition xml:lang="da">Modeller udfærdiget i overensstemmelse med Resource Description Framework (RDF)</skos:definition>
+      <dct:description xml:lang="en"></dct:description>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:prefLabel xml:lang="en">RDF</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">RDF</skos:prefLabel>
+      <dcat:theme rdf:resource="tbd"/>
+      <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid"/>
+	  <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/modellingregime#"/>
+   </rdf:Description>
 </rdf:RDF>
 
