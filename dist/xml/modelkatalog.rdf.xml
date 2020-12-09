@@ -215,6 +215,9 @@ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
  
   <!-- katalogets modeller -->
   
+<!-- OBS: Følgende filer skal være i overensstemmelse:
+Link til placering på GitHub: https://github.com/digst/modelcatalogue/blob/master/dist/xml/modelkatalog.rdf.xml
+Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkatalog.rdf.xml -->
 
 
 <!-- =======================================================   -->
