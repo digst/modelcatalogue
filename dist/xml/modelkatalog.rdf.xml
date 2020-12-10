@@ -81,7 +81,7 @@ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 					<vcard:hasEmail rdf:resource="arkitektur@digst.dk"/>				
 				</vcard:Kind>
 			</dcat:contactPoint>	
-			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/basicdata"/>
+			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/basicdata/"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/bbr"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/cpr"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/cvr"/>
