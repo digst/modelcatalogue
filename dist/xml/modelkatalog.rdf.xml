@@ -81,6 +81,7 @@ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 					<vcard:hasEmail rdf:resource="arkitektur@digst.dk"/>				
 				</vcard:Kind>
 			</dcat:contactPoint>	
+
 			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/basicdata/"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/bbr"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/cpr"/>
@@ -314,7 +315,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 
 
 
-	<rdf:Description rdf:about="https://data.gov.dk/model/profile/basicdata">
+	<rdf:Description rdf:about="https://data.gov.dk/model/profile/basicdata/">
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>	
 		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
 		<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>			
@@ -2349,8 +2350,8 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
 	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>	
-    <dct:title xml:lang="en">Meddelelsesmodel</dct:title>
-    <dct:title xml:lang="da">Message Model</dct:title>
+    <dct:title xml:lang="da">Meddelelsesmodel</dct:title>
+    <dct:title xml:lang="en">Message Model</dct:title>
     <dct:description xml:lang="da">I forbindelse med den nye Digital Post-løsning udvikles et nyt format for afsendelse og modtagelse af meddelelser. Det nye format forkortes MeMo (MeddelelsesModel).</dct:description>
     <vann:preferredNamespacePrefix>memo</vann:preferredNamespacePrefix>
     <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
@@ -2366,7 +2367,7 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 		</foaf:Agent>
 	</dct:publisher>
     <dcat:landingPage rdf:resource="https://www.digitaliser.dk/resource/5248921"/>
-    <foaf:page rdf:resource="https://digst.dk/it-loesninger/digital-post/naeste-generation-digital-post/det-nye-meddelelsesformat-memo/"/>
+    <foaf:page rdf:resource="https://digst.dk/it-loesninger/naeste-generation-digital-post/for-myndigheder-og-it-leverandoerer/det-nye-meddelelsesformat/"/>
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
 	<dct:conformsTo rdf:resource="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering"/>
     <dadk:businessArea>Tværgående it-løsninger til den digitale infrastruktur</dadk:businessArea>
