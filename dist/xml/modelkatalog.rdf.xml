@@ -2111,7 +2111,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 	<dcat:contactPoint>
 		<vcard:Kind>
 			<vcard:fn>Begrebssekretariatet</vcard:fn>
-			<vcard:hasEmail rdf:resource="begrebssekretrariatet@socialstyrelsen.dk"/>				
+			<vcard:hasEmail rdf:resource="begrebsbasen@socialstyrelsen.dk"/>				
 		</vcard:Kind>
 	</dcat:contactPoint>	
 	<dct:conformsTo rdf:resource="https://www.iso.org/standard/38109.html"/>	
