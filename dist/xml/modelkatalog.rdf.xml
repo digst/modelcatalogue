@@ -47,7 +47,8 @@ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 	</dcat:contactPoint>	
     <foaf:homepage rdf:resource="https://data.gov.dk/catalogue/models/"/>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-01</dct:issued>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09</dct:modified>	
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09</dct:modified>
+	
 	<dcat:distribution>   <!-- katalogets distribution -->   
 	   <rdf:Description rdf:about="https://data.gov.dk/catalogue/models/xml/modelkatalog.rdf.xml">
 		  <dcat:accessURL rdf:resource="https://data.gov.dk/catalogue/models/xml/modelkatalog.rdf.xml"/>	   
@@ -60,6 +61,8 @@ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 		  <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/EN"/>
 	   </rdf:Description>    
 	 </dcat:distribution>
+
+
 
 	<!-- DELKATALOG 1 MED DANSKE MODELLER -->  	 
 	 <dct:hasPart>
@@ -207,6 +210,8 @@ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 			<dcat:dataset rdf:resource="https://op.europa.eu/en/web/eu-vocabularies/authority-tables"/>
 			<dcat:dataset rdf:resource="https://www.w3.org/TR/void/"/>
 			<dcat:dataset rdf:resource="http://purl.org/dc/dcmitype/dcmitype"/>
+			<dcat:dataset rdf:resource="http://www.estrellaproject.org/lkif-core/lkif-core.owl#"/>
+			<dcat:dataset rdf:resource="http://www.eionet.europa.eu/gemet/"/>
 		</rdf:Description>			
 	 </dct:hasPart>
 	 
@@ -215,6 +220,7 @@ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 
  
   <!-- katalogets modeller -->
+  
   
 <!-- OBS: Følgende filer skal være i overensstemmelse:
 Link til placering på GitHub: https://github.com/digst/modelcatalogue/blob/master/dist/xml/modelkatalog.rdf.xml
@@ -225,6 +231,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 <!--    METADATASKABELON	   								   -->
 <!-- =======================================================  --> 
 
+<!-- husk at tilføje reference til dette datasæt fra enten det danske delkatalog eller det intenationale delkatalog -->
 <!-- 
   <rdf:Description rdf:about="https://data.gov.dk/model/profile/NAVN/">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
@@ -235,6 +242,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <dct:title xml:lang="da"></dct:title>
     <dct:title xml:lang="en"></dct:title>	
     <dct:description xml:lang="da"></dct:description>
+    <dct:description xml:lang="en"></dct:description>	
     <vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
     <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
     <dcat:keyword></dcat:keyword>
@@ -259,17 +267,18 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
     <dadk:businessAreaCode>06.38.10.10 </dadk:businessAreaCode>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>  	
-    <dcat:landingPage rdf:resource="DESTINATIONSSIDE"/>		
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:modified>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></owl:versionInfo>
     <adms:versionNotes xml:lang="da">Endelig (Completed)</adms:versionNotes>
     <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>	
     <voag:approvalStatus rdf:resource="https:/data.gov.dk/concept/approvalStatus/Approved"/>	
     <voag:isApprovedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Udvalget for Arkitektur og Standarder</voag:isApprovedBy> 
+	<foaf:page rdf:resource="DOKUMENATIONSREF"/>
+    <dcat:landingPage rdf:resource="DESTINATIONSSIDE"/>			
 	<dcat:distribution rdf:resource="https://data.gov.dk/model/profile/NAVN-1-0-0-HTML"/>
   </rdf:Description>    
   <rdf:Description rdf:about="https://data.gov.dk/model/profile/NAVN-1-0-0-HTML">
-     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/> 
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/> 
   	<dcat:accessURL rdf:resource="URL"/>
   	<dcat:downloadURL rdf:resource="URL"/>	
 	<dct:title xml:lang="da">NAVN v.1.0.0 HTML</dct:title>	
@@ -4891,25 +4900,106 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
 
 
 
+
+<!-- =======================================================   -->
+<!--   OWL Ontology of Basic Legal Concepts (LKIF-Core)        -->
+<!-- =======================================================  --> 
+
+  <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/lkif-core.owl#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>	
+    <dct:title xml:lang="da">OWL-ontologi for juridske grundbegreber (LKIF-Core)</dct:title>
+    <dct:title xml:lang="en">OWL Ontology of Basic Legal Concepts (LKIF-Core)</dct:title>	
+    <dct:description xml:lang="da">LKIF-Core er en del af det europæiske ESTRELLA projekt. Ontologien definerer juridiske grundbegreber i OWL. Anvendelse af denne ontologi er omfattet af GNU Lesser General Public License (LGPL) v.2.1. Læs mere om betingelserne på destinationssiden. </dct:description>
+    <dct:description xml:lang="en">The LKIF-Core ontology is part of Deliverable 1.4 of the European project for Standardised Transparent Representations in order to Extend Legal Accessibility (ESTRELLA, IST-2004-027665), http://www.estrellaproject.org. The LKIF core legal ontology is a library of ontologies relevant for the legal domain. It consists of 15 modules, each of which describes a set of closely related concepts from both legal and commonsense domains.
+	The use of this ontology, and the OWL files through which it is distributed, is covered by the GNU Lesser General Public License (LGPL), version 2.1 (http://www.gnu.org/copyleft/lesser.html) in as far as the copyright is not covered by additional restrictions of the ESTRELLA consortium agreement (info@estrellaproject.org). The LGPL license places copyright restrictions on the ontology itself but does not apply these restrictions to software that merely links with concepts defined in the ontology library. Please read the license restrictions before using this work. </dct:description>	
+    <vann:preferredNamespacePrefix>lkif</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>http://www.estrellaproject.org/lkif-core/lkif-core.owl#</vann:preferredNamespaceUri>
+    <dcat:keyword>jura</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
+    <dct:publisher>
+		<foaf:Agent>
+			<foaf:name>The ESTRELLA project</foaf:name>
+			<foaf:homepage>http://www.estrellaproject.org/?page_id=3</foaf:homepage>
+		</foaf:Agent>
+	</dct:publisher>
+	<dcat:contactPoint>
+		<vcard:Kind>
+			<vcard:hasUrl rdf:resource="https://github.com/RinkeHoekstra/lkif-core/commits?author=RinkeHoekstra"/>				
+		</vcard:Kind>
+	</dcat:contactPoint>	
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/>
+	<dct:conformsTo rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/> 
+    <dadk:businessArea>Lovgivning</dadk:businessArea>
+    <dadk:businessAreaCode>05.10</dadk:businessAreaCode>
+	<foaf:page rdf:resource="http://www.estrellaproject.org/doc/D1.4-OWL-Ontology-of-Basic-Legal-Concepts.pdf"/>
+    <dcat:landingPage rdf:resource="https://github.com/RinkeHoekstra/lkif-core"/>			
+	<dcat:distribution rdf:resource="https://github.com/RinkeHoekstra/lkif-core"/>
+  </rdf:Description>    
+  <rdf:Description rdf:about="https://github.com/RinkeHoekstra/lkif-core">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/> 
+  	<dcat:accessURL rdf:resource="https://github.com/RinkeHoekstra/lkif-core"/>
+  	<dcat:downloadURL rdf:resource="https://github.com/RinkeHoekstra/lkif-core/blob/master/lkif-core.owl"/>	
+	<dct:title xml:lang="da">lkif-core.owl</dct:title>	
+	<dct:title xml:lang="en">lkif-core.owl</dct:title>	
+    <dct:license rdf:resource="http://www.gnu.org/copyleft/lesser.html"/>	
+	<dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/OWL"/>				
+  </rdf:Description>
+  
+
+
+
+<!-- =======================================================   -->
+<!--   GEneral Multilingual Environmental Thesaurus        -->
+<!-- =======================================================  --> 
+
+  <rdf:Description rdf:about="http://www.eionet.europa.eu/gemet/">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ClassificationModel"/>			
+	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>	
+    <dct:title xml:lang="da">GEMET - Multilingval Miljøtesaurus </dct:title>
+    <dct:title xml:lang="en">GEneral Multilingual Environmental Thesaurus</dct:title>	
+    <dct:description xml:lang="da">GEMET, the GEneral Multilingual Environmental Thesaurus, er en multilingval tesaurus med miljøbegreber som er udviklet af European Topic Centre on Catalogue of Data Sources (ETC/CDS og European Environment Agency (Det Europæiske Miljøagentur), København. </dct:description>
+    <dct:description xml:lang="en">GEMET, the GEneral Multilingual Environmental Thesaurus, has been developed as an indexing, retrieval and control tool for the European Topic Centre on Catalogue of Data Sources (ETC/CDS) and the European Environment Agency (EEA), Copenhagen. The work has been carried out through a contract between the EEA and the ETC/CDS which is led by the Ministry of the Environment of Lower Saxony, includes members of Germany, Austria, Italy, Sweden and benefits of the collaboration of other member countries of the European Union (EU), as well as of UNEP Infoterra. </dct:description>	
+    <vann:preferredNamespacePrefix>gemet</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>http://www.eionet.europa.eu/gemet/</vann:preferredNamespaceUri>
+    <dcat:keyword>miljø</dcat:keyword><dcat:keyword>tesaurus</dcat:keyword><dcat:keyword>ordbog</dcat:keyword><dcat:keyword>skos</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2001</dct:issued>
+    <dct:publisher>
+		<foaf:Agent>
+			<foaf:name>EIONET - European Environment Information and Observation Network</foaf:name>
+			<foaf:homepage>https://www.eionet.europa.eu/</foaf:homepage>
+		</foaf:Agent>
+	</dct:publisher>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/>
+	<dct:conformsTo rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/> 
+    <dadk:businessArea>Miljø</dadk:businessArea>
+    <dadk:businessAreaCode>37</dadk:businessAreaCode>
+	<foaf:page rdf:resource="https://www.eionet.europa.eu/gemet/en/about/"/>
+    <dcat:landingPage rdf:resource="https://www.eionet.europa.eu/gemet/en/groups/"/>			
+	<dcat:distribution rdf:resource="https://www.eionet.europa.eu/gemet/latest/gemet.rdf.gz"/>
+	<dcat:distribution rdf:resource="https://www.eionet.europa.eu/gemet/en/themes/"/>	
+  </rdf:Description>    
+  <rdf:Description rdf:about="https://www.eionet.europa.eu/gemet/en/themes/">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/> 
+  	<dcat:accessURL rdf:resource="https://www.eionet.europa.eu/gemet/en/themes/"/>	
+	<dct:title xml:lang="da">GEMET i HTML-format</dct:title>	
+	<dct:title xml:lang="en">GEMET i HTML-format</dct:title>	
+	<dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>				
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.eionet.europa.eu/gemet/latest/gemet.rdf.gz">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/> 
+  	<dcat:accessURL rdf:resource="https://www.eionet.europa.eu/gemet/en/exports/rdf/latest"/>
+  	<dcat:downloadURL rdf:resource="https://www.eionet.europa.eu/gemet/latest/gemet.rdf.gz"/>	
+	<dct:title xml:lang="da">Den fulde GEMET tesaurus i SKOS-format</dct:title>	
+	<dct:title xml:lang="en">Entire GEMET thesaurus in SKOS format</dct:title>	
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/2.5/dk/"/>	
+	<dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF"/>				
+  </rdf:Description>  
+
   <!--UDGIVELSER-->
   
-  
-
- 
-
- 
-
- 
-
-
- 
-
-
- 
-
-
-
-
  
   <!-- Udgivelse: GeoSPARQL 1.0.1 -->
 
