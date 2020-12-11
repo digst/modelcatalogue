@@ -213,10 +213,12 @@ xmlns:schema="http://schema.org/">
 									<td><xsl:value-of select="dadk:modelType/@rdf:resource"/></td>
 								</tr>								
 								
-								<tr>
+<!--							<tr>
 									<td>Model scope:</td>
 									<td><xsl:value-of select="mdl:modelScope/@rdf:resource"/></td>								
 								</tr>
+								
+-->
 
 <!--										
 								<xsl:for-each select="dadk:modelType"> 
@@ -237,7 +239,7 @@ xmlns:schema="http://schema.org/">
 										</tr>
 									</xsl:if>
 								</xsl:for-each>
-								-->
+-->
 													
 								<xsl:for-each select="dcat:contactPoint/vcard:Kind/vcard:hasEmail">
 									<xsl:if test="@rdf:resource != ''"> 
