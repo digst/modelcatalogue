@@ -4956,7 +4956,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
 
   <rdf:Description rdf:about="http://www.eionet.europa.eu/gemet/">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ClassificationModel"/>			
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#ClassificationModel"/>		
 	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>	
     <dct:title xml:lang="da">GEMET - Multilingval Miljøtesaurus </dct:title>
     <dct:title xml:lang="en">GEneral Multilingual Environmental Thesaurus</dct:title>	
