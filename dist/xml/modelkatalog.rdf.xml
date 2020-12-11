@@ -212,6 +212,7 @@ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 			<dcat:dataset rdf:resource="http://purl.org/dc/dcmitype/dcmitype"/>
 			<dcat:dataset rdf:resource="http://www.estrellaproject.org/lkif-core/lkif-core.owl#"/>
 			<dcat:dataset rdf:resource="http://www.eionet.europa.eu/gemet/"/>
+			<dcat:dataset rdf:resource="https://github.com/catalogue-of-services-isa/SDG-model/"/>
 		</rdf:Description>			
 	 </dct:hasPart>
 	 
@@ -4998,6 +4999,55 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
 	<dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF"/>				
   </rdf:Description>  
 
+	
+<!-- =======================================================   -->
+<!--   SDG metadatamodel til beskrivelse af offentlige services (Pre-release)       -->
+<!-- =======================================================  --> 
+	
+  <rdf:Description rdf:about="https://github.com/catalogue-of-services-isa/SDG-model/">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dx/prof/Profile"/>	
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>	
+	<prof:isProfileOf rdf:resource="http://purl.org/vocab/cpsv#"/>	
+    <dct:title xml:lang="da">SDG metadatamodel til beskrivelse af offentlige services (Pre-release)</dct:title>
+    <dct:title xml:lang="en">SDG metadata model (Pre-release)</dct:title>	
+    <dct:description xml:lang="da">Pre-release af datamodel til beskrivelse af offentlige services. Udkastet er udviklet af ISA² Catalogues of Services team til understøttelse af Single Digital Gateway regulartiverne.</dct:description>
+    <dct:description xml:lang="en">Pre-release of draft for SDG metadata model for the article 10 and the descriptions of the public services. The first proposal for an SDG model was proposed by the ISA² Catalogues of Services team. The SDG model is based on CPSV-AP, but adapted to comply to the Single Digital Gateway Regulation (SDGR). </dct:description>	
+    <dcat:keyword>SDG</dcat:keyword>
+    <dct:publisher>
+		<foaf:Agent>
+			<foaf:name>ISA² - Interoperability solutions for public administrations, businesses and citizens</foaf:name>
+			<foaf:homepage>https://ec.europa.eu/isa2/</foaf:homepage>
+		</foaf:Agent>
+	</dct:publisher>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/>
+	<dct:conformsTo rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/> 
+    <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
+    <dadk:businessAreaCode>06.38.10.10 </dadk:businessAreaCode>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>  	
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:modified>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></owl:versionInfo>
+    <adms:versionNotes xml:lang="da">Under udvikling (Development)</adms:versionNotes>
+    <adms:status rdf:resource="http://purl.org/adms/status/Development"/>	
+	<foaf:page rdf:resource="https://joinup.ec.europa.eu/collection/catalogue-services"/>
+	<foaf:page rdf:resource="https://github.com/catalogue-of-services-isa/SDG-model/wiki/SDG-model-Home-Page"/>
+    <dcat:landingPage rdf:resource="https://github.com/catalogue-of-services-isa/SDG-model"/>			
+  </rdf:Description>  	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
   <!--UDGIVELSER-->
   
  
