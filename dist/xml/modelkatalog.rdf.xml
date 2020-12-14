@@ -3742,6 +3742,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#ClassificationModel"/>		
 	</rdf:Description> 
 	
+	
   
   <!-- VOAF -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -3811,6 +3812,19 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/rs"/>
     <dcat:distribution rdf:resource="http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf"/>
   </rdf:Description>
+    <!-- Udgivelse: GeoSPARQL 1.0.1 -->
+  <rdf:Description rdf:about="http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">GeoSPARQL Vocabulary</dct:description>
+    <dct:title xml:lang="da">GeoSPARQL 1.0.1 RDF</dct:title>
+    <dct:title xml:lang="en">GeoSPARQL 1.0.1 RDF</dct:title>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">46K</schema:fileSize>
+  </rdf:Description>
+ 
+
  
   <!-- Simplified Features Geometry / OpenGIS simple feature -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -3847,6 +3861,24 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:distribution rdf:resource="http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf"/>
   </rdf:Description>
  
+   <!-- Udgivelse: OpenGIS simple features geometries 1.0.1 -->
+
+  <rdf:Description rdf:about="http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf"/>
+    <dct:description xml:lang="da">Vokabular til 'simple features' geometrier (OpenGIS)</dct:description>
+    <dct:description xml:lang="en">Vocabulary for simple features geometries (OpenGIS) </dct:description>
+    <dct:title xml:lang="da">Simple features geometries 1.0.1 RDF</dct:title>
+    <dct:title xml:lang="en">Simple features geometries 1.0.1 RDF</dct:title>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17K</schema:fileSize>
+  </rdf:Description>
+ 
+ 
+ 
+ 
+
+
   <!-- SKOS -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -3886,6 +3918,21 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
     <dcat:distribution rdf:resource="https://www.w3.org/2009/08/skos-reference/skos.rdf"/>
   </rdf:Description>
+  <!-- Udgivelse: SKOS Aug 2009 -->
+
+  <rdf:Description rdf:about="https://www.w3.org/2009/08/skos-reference/skos.rdf">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://www.w3.org/2009/08/skos-reference/skos.rdf"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">SKOS Vocabulary in RDF-format</dct:description>
+    <dct:title xml:lang="da">SKOS RDF</dct:title>
+    <dct:title xml:lang="en">SKOS RDF</dct:title>
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">29K</schema:fileSize>
+  </rdf:Description>
+ 
+
+  
  
   <!-- Klassifikation (SKOS-XL) -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -3930,6 +3977,19 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
     <dcat:distribution rdf:resource="https://www.w3.org/2009/08/skos-reference/skos-xl.rdf"/>
   </rdf:Description>
+  <!-- Udgivelse: SKOS-XL Aug 2009 -->
+
+  <rdf:Description rdf:about="https://www.w3.org/2009/08/skos-reference/skos-xl.rdf">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://www.w3.org/2009/08/skos-reference/skos-xl.rdf"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">SKOS XL Vocabulary in RDF-format</dct:description>
+    <dct:title xml:lang="da">SKOS-XL RDF</dct:title>
+    <dct:title xml:lang="en">SKOS-XL RDF</dct:title>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8K</schema:fileSize>
+  </rdf:Description>
+ 
  
   <!-- ORG - Organization ontology -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4019,9 +4079,25 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/>
 	<dadk:businessArea>Tele og internet</dadk:businessArea>
     <dadk:businessAreaCode>34.45</dadk:businessAreaCode>
-    
     <dcat:distribution rdf:resource="http://xmlns.com/foaf/spec/20140114.rdf"/>
   </rdf:Description>
+  <!-- Udgivelse: FOAF 20140114 -->
+
+  <rdf:Description rdf:about="http://xmlns.com/foaf/spec/20140114.rdf">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://xmlns.com/foaf/spec/20140114.rdf"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">FOAF Vocabulary Specification in RDF-format</dct:description>
+    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="en">FOAF Vocabulary 20140114 RDF</dct:title>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/1.0/"/>
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">44K</schema:fileSize>
+  </rdf:Description>
+  
+
+
+    
  
   <!-- EU Budget -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4053,6 +4129,21 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
 	<dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
     <dcat:distribution rdf:resource="https://joinup.ec.europa.eu/site/core_vocabularies/registry/eubudget/eu_budget_vocabulary_1.01.ttl"/>
   </rdf:Description>
+  <!-- Udgivelse: EU Budget Vocabulary 1.0.1 -->
+
+  <!--
+  <rdf:Description rdf:about="https://joinup.ec.europa.eu/site/core_vocabularies/registry/eubudget/eu_budget_vocabulary_1.01.ttl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://joinup.ec.europa.eu/site/core_vocabularies/registry/eubudget/eu_budget_vocabulary_1.01.ttl"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">EU Budget Vocabulary in Turtle-format</dct:description>
+    <dct:title xml:lang="da">EU Budget Vocabulary 1.0.1 TTL</dct:title>
+    <dct:title xml:lang="en">EU Budget Vocabulary 1.0.1 TTL</dct:title>
+    <dct:license rdf:resource="ISA Open Metadata Licence v1.1"/>
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30K</schema:fileSize>
+  </rdf:Description>
+  -->   
  
   <!-- DCAT -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4092,6 +4183,28 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:distribution rdf:resource="https://www.w3.org/ns/dcat.rdf"/>
     <dcat:distribution rdf:resource="https://www.w3.org/ns/dcat.ttl"/>
   </rdf:Description>
+  <!-- Udgivelse: DCAT 1.0 Turtle -->
+  <rdf:Description rdf:about="https://www.w3.org/ns/dcat.ttl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://www.w3.org/ns/dcat.ttl"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">Data Catalog Vocabulary in Turtle-format</dct:description>
+    <dct:title xml:lang="da">DCAT 1.0 TTL</dct:title>
+    <dct:title xml:lang="en">DCAT 1.0 TTL</dct:title>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">46K</schema:fileSize>
+  </rdf:Description>
+  <!-- Udgivelse: DCAT 1.0 RDF -->
+  <rdf:Description rdf:about="https://www.w3.org/ns/dcat.rdf">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://www.w3.org/ns/dcat.rdf"/>
+    <dct:description xml:lang="da">Data Catalog Vocabulary in RDF-format</dct:description>
+    <dct:description xml:lang="en"/>
+    <dct:title xml:lang="da">DCAT 1.0 RDF/XML</dct:title>
+    <dct:title xml:lang="en">DCAT 1.0 RDF/XML</dct:title>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">57K</schema:fileSize>
+  </rdf:Description>  
  
   <!-- Datasætmetadata (VoID) -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4132,6 +4245,28 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:distribution rdf:resource="http://vocab.deri.ie/void.rdf"/>
     <dcat:distribution rdf:resource="http://vocab.deri.ie/void.ttl"/>
   </rdf:Description>
+  <!-- Udgivelse: VoID Turtle-format -->
+  <rdf:Description rdf:about="http://vocab.deri.ie/void.ttl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://vocab.deri.ie/void.ttl"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">The Vocabulary of Interlinked Datasets i Turtle-format</dct:description>
+    <dct:title xml:lang="da">VoID TTL</dct:title>
+    <dct:title xml:lang="en">VoID TTL</dct:title>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12K</schema:fileSize>
+  </rdf:Description>
+  <!-- Udgivelse: VoID RDF-format -->
+  <rdf:Description rdf:about="http://vocab.deri.ie/void.rdf">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://vocab.deri.ie/void.rdf"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">The Vocabulary of Interlinked Datasets in RDF-format</dct:description>
+    <dct:title xml:lang="da">VoID RDF</dct:title>
+    <dct:title xml:lang="en">VoID RDF</dct:title>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18K</schema:fileSize>
+  </rdf:Description>  
  
   <!-- DCMI Metadata -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4163,6 +4298,19 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/><dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
     <dcat:distribution rdf:resource="http://purl.org/dc/terms/dctterms"/>
   </rdf:Description>
+  <!-- Udgivelse: DCMI Metadata terms -->
+  <rdf:Description rdf:about="http://purl.org/dc/terms/dctterms">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://purl.org/dc/terms/dctterms"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">DCMI Metadata Terms i Turtle-format</dct:description>
+    <dct:title xml:lang="da">DCMI TTL</dct:title>
+    <dct:title xml:lang="en">DCMI TTL</dct:title>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">59K</schema:fileSize>
+  </rdf:Description>
+   
+
  
   <!-- DCMI Type Vocabulary -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4195,6 +4343,17 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/><dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
     <dcat:distribution rdf:resource="http://purl.org/dc/dcmitype/dcmitype"/>
   </rdf:Description>
+  <!-- Udgivelse: DCMI Type Vocabulary -->
+  <rdf:Description rdf:about="http://purl.org/dc/dcmitype/dcmitype">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://purl.org/dc/dcmitype/dcmitype"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">DCMI Type Vocabulary in Turtle-format</dct:description>
+    <dct:title xml:lang="da">DCMI Type TTL</dct:title>
+    <dct:title xml:lang="en">DCMI Type TTL</dct:title>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9K</schema:fileSize>
+  </rdf:Description>    
  
   <!-- Geoinformation INSPIRE -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4228,6 +4387,29 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:distribution rdf:resource="https://www.w3.org/2015/03/inspire/Overview.ttl"/>
     <dcat:distribution rdf:resource="https://www.w3.org/2015/03/inspire/Overview.rdf"/>
   </rdf:Description>
+  <!-- Udgivelse: Geoinformation INSPIRE i RDF -->
+  <rdf:Description rdf:about="https://www.w3.org/2015/03/inspire/Overview.rdf">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://www.w3.org/2015/03/inspire/Overview.rdf"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">SmOD INSPIRE Vocabularies</dct:description>
+    <dct:title xml:lang="da">SmOD INSPIRE RDF/XML</dct:title>
+    <dct:title xml:lang="en">SmOD INSPIRE RDF/XML</dct:title>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4K</schema:fileSize>
+  </rdf:Description>
+  <!-- Udgivelse: Geoinformation INSPIRE i Turtle -->
+  <rdf:Description rdf:about="https://www.w3.org/2015/03/inspire/Overview.ttl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://www.w3.org/2015/03/inspire/Overview.ttl"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">SmOD INSPIRE Vocabularies in Turtle-format</dct:description>
+    <dct:title xml:lang="da">SmOD INSPIRE TTL</dct:title>
+    <dct:title xml:lang="en">SmOD INSPIRE TTL</dct:title>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3K</schema:fileSize>
+  </rdf:Description>  
+  
  
   <!-- Schema: Action -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4345,6 +4527,18 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
     <dcat:distribution rdf:resource="http://publications.europa.eu/mdr/resource/eli/eli.owl"/>
   </rdf:Description>
+  <!-- Udgivelse: European Legislation Identifier 1.1 -->
+  <rdf:Description rdf:about="http://publications.europa.eu/mdr/resource/eli/eli.owl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://publications.europa.eu/mdr/resource/eli/eli.owl"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">European Legislation Identifier in RDF-format</dct:description>
+    <dct:title xml:lang="da">European Legislation Identifier 1.1 RDF/XML</dct:title>
+    <dct:title xml:lang="en">European Legislation Identifier 1.1 RDF/XML</dct:title>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XML</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">114K</schema:fileSize>
+  </rdf:Description>  
+  
  
   <!-- Bibliographic Ontology Specification (BIBO) -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4382,6 +4576,18 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
     <dcat:distribution rdf:resource="https://github.com/structureddynamics/Bibliographic-Ontology-BIBO/blob/master/bibo.owl"/>
   </rdf:Description>
+  <!-- Udgivelse: BIBO 1.0 -->
+  <rdf:Description rdf:about="https://github.com/structureddynamics/Bibliographic-Ontology-BIBO/blob/master/bibo.owl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://github.com/structureddynamics/Bibliographic-Ontology-BIBO/blob/master/bibo.owl"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">Bibliograpic Ontology (BIBO) in OWL/XML displayed in HTML</dct:description>
+    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="en">Bibliograpic Ontology 1.0</dct:title>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/1.0/"/>
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTML</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>  
  
   <!-- ISA Location Core Vocabulary -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4421,6 +4627,30 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:distribution rdf:resource="https://www.w3.org/ns/locn.rdf"/>
     <dcat:distribution rdf:resource="https://www.w3.org/ns/locn.ttl"/>
   </rdf:Description>
+  <!-- Udgivelse: ISA Location Core Vocabulary 2.0 RDF/XML -->
+  <rdf:Description rdf:about="https://www.w3.org/ns/locn.rdf">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://www.w3.org/ns/locn.rdf"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">ISA Programme Location Core Vocabulary in RDF/XML-format</dct:description>
+    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="en">ISA Programme Location Core Vocabulary 2.0 RDF</dct:title>
+    <dct:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF/XML</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">27K</schema:fileSize>
+  </rdf:Description>
+  <!-- Udgivelse: ISA Location Core Vocabulary 2.0 Turtle -->
+  <rdf:Description rdf:about="https://www.w3.org/ns/locn.ttl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://www.w3.org/ns/locn.ttl"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">ISA Programme Location Core Vocabulary in Turtle-format</dct:description>
+    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="en">ISA Programme Location Core Vocabulary 2.0 TTL</dct:title>
+    <dct:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20K</schema:fileSize>
+  </rdf:Description>  
  
   <!-- W3C Registered Organization Vocabulary -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4457,6 +4687,31 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:distribution rdf:resource="http://www.w3.org/ns/regorg.rdf"/>
     <dcat:distribution rdf:resource="http://www.w3.org/ns/regorg.ttl"/>
   </rdf:Description>
+  <!-- Udgivelse: Registered Organization Vocabulary RDF/XML -->
+  <rdf:Description rdf:about="http://www.w3.org/ns/regorg.rdf">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://www.w3.org/ns/regorg.rdf"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">Registered Organization Vocabulary in RDF/XML-format</dct:description>
+    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="en">Registered Organization Vocabulary RDF</dct:title>
+    <dct:license rdf:resource="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"/>
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF/XML</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11K</schema:fileSize>
+  </rdf:Description>
+  <!-- Udgivelse: Registered Organization Vocabulary Turtle -->
+  <rdf:Description rdf:about="http://www.w3.org/ns/regorg.ttl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://www.w3.org/ns/regorg.ttl"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">Registered Organization Vocabulary in Turtle-format</dct:description>
+    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="en">Registered Organization Vocabulary TTL</dct:title>
+    <dct:license rdf:resource="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"/>
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8K</schema:fileSize>
+  </rdf:Description>
+   
  
   <!-- ISA Person Core Vocabulary -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4490,6 +4745,17 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
     <dcat:distribution rdf:resource="https://www.w3.org/ns/person.ttl"/>
   </rdf:Description>
+  <!-- Ugivelse: ISA Programme Person Core Vocabulary -->
+  <rdf:Description rdf:about="https://www.w3.org/ns/person.ttl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://www.w3.org/ns/person.ttl"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">ISA Programme Person Core Vocabulary in Turtle-format</dct:description>
+    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="en">ISA Programme Person Core Vocabulary TTL</dct:title>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7K</schema:fileSize>
+  </rdf:Description>  
  
   <!-- Proveniens PROV-O -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4526,6 +4792,19 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
     <dcat:distribution rdf:resource="http://www.w3.org/ns/prov-o"/>
   </rdf:Description>
+  <!-- Udgivelse: PROV-O -->
+  <rdf:Description rdf:about="http://www.w3.org/ns/prov-o">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://www.w3.org/ns/prov-o"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">The PROV Ontology in Turtle-format</dct:description>
+    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="en">The PROV Ontology TTL</dct:title>
+    <dct:license rdf:resource="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"/>
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">68K</schema:fileSize>
+  </rdf:Description>  
+  
  
   <!-- Description of a Project (DOAP) vocabulary -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4559,6 +4838,19 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
     <dcat:distribution rdf:resource="http://usefulinc.com/ns/doap"/>
   </rdf:Description>
+  <!-- Udgivelse -->
+  <rdf:Description rdf:about="http://usefulinc.com/ns/doap">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://usefulinc.com/ns/doap"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">Description of a Project (DOAP) vocabulary in Turtle-format</dct:description>
+    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="en">Description of a Project (DOAP) vocabulary</dct:title>
+    <dct:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turtle/TXT</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">53K</schema:fileSize>
+  </rdf:Description>
+   
  
   <!-- CPOV -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4671,6 +4963,18 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
     <dcat:distribution rdf:resource="https://joinup.ec.europa.eu/sites/default/files/distribution/2017-02/cpov_rdf_schema_turtle_v0.03_0.ttl"/>
   </rdf:Description>
+  <!-- Udgivelse: CPOV 0.3_0 ttl -->
+  <rdf:Description rdf:about="https://joinup.ec.europa.eu/sites/default/files/distribution/2017-02/cpov_rdf_schema_turtle_v0.03_0.ttl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://joinup.ec.europa.eu/sites/default/files/distribution/2017-02/cpov_rdf_schema_turtle_v0.03_0.ttl"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">Core Public Organisation Vocabulary (CPOV) in Turtle-format</dct:description>
+    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="en">CPOV 0.3_0 </dct:title>
+    <dct:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">215K</schema:fileSize>
+  </rdf:Description>  
  
   <!-- XML Schema Datatypes -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4707,6 +5011,18 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
     <dcat:distribution rdf:resource="https://www.w3.org/2001/05/datatypes.xsd"/>
   </rdf:Description>
+  <!-- Udgivelse: XML Schema Datatyper -->
+  <rdf:Description rdf:about="https://www.w3.org/2001/05/datatypes.xsd">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://www.w3.org/2001/05/datatypes.xsd"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">XML Schema Datatypes (XSD)</dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2001-05-02</dct:issued>
+    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="en">XML Schema Datatypes (XSD</dct:title>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XSD/XML</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4KB</schema:fileSize>
+  </rdf:Description>  
  
   <!-- GMLOWL  -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4744,6 +5060,16 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/><dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
     <dcat:distribution rdf:resource="http://schemas.opengis.net/gml/3.2.1/gml_32_geometries.rdf"/>
   </rdf:Description>
+  <!-- Udgivelse: GML 3.2.1-->
+  <rdf:Description rdf:about="http://schemas.opengis.net/gml/3.2.1/gml_32_geometries.rdf">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/><dcat:accessURL rdf:resource="http://schemas.opengis.net/gml/3.2.1/gml_32_geometries.rdf"/>
+    <dct:description xml:lang="da">Schema for geografisk opmærkningsprog</dct:description>
+    <dct:description xml:lang="en">Geography Markup Language Schema</dct:description>
+    <dct:title xml:lang="da">GMLOWL 3.2.1 RDF</dct:title>
+    <dct:title xml:lang="en">GMLOWL 3.2.1 RDF</dct:title>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF/XML</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14KB</schema:fileSize>
+  </rdf:Description>  
  
   <!-- OWL Time Ontology -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4780,6 +5106,17 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/><dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
     <dcat:distribution rdf:resource="http://www.w3.org/2006/time"/>
   </rdf:Description>
+  <!-- Udgivelse: Owl Time Ontology-->
+  <rdf:Description rdf:about="http://www.w3.org/2006/time">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/><dcat:accessURL rdf:resource="http://www.w3.org/2006/time"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">Time Ontology in OWL</dct:description>
+    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="en">Time Ontology in OWL</dct:title>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/1.0/"/>
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XML/RDF</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">61K</schema:fileSize>
+  </rdf:Description>  
  
   <!-- INSPIRE Base Schema -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4870,11 +5207,32 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TECH"/>
     <mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/><dadk:businessArea>Tele og internet</dadk:businessArea>
-    <dadk:businessAreaCode>34.45</dadk:businessAreaCode>
-    
+    <dadk:businessAreaCode>34.45</dadk:businessAreaCode> 
     <dcat:distribution rdf:resource="https://www.w3.org/ns/dqv.rdf"/>
     <dcat:distribution rdf:resource="https://www.w3.org/ns/dqv.ttl"/>
   </rdf:Description>
+  <!-- Udgivelse: DQV RDF/XML -->
+  <rdf:Description rdf:about="https://www.w3.org/ns/dqv.rdf">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/><dcat:accessURL rdf:resource="https://www.w3.org/ns/dqv.rdf"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">Data Quality Vocabulary in RDF-format</dct:description>
+    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="en">DQV RDF/XML</dct:title>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/1.0/"/>
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <!-- Udgivelse: DQV TTL -->
+  <rdf:Description rdf:about="https://www.w3.org/ns/dqv.ttl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/><dcat:accessURL rdf:resource="https://www.w3.org/ns/dqv.ttl"/><dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">Data Quality Vocabulary in Turtle format</dct:description>
+    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="en">DQV TTL</dct:title>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/1.0/"/>
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+   
  
   <!-- OWL -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4908,10 +5266,23 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TECH"/>
     <mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/><dadk:businessArea>Samfundsdigitalisering</dadk:businessArea>
-    <dadk:businessAreaCode>06.38</dadk:businessAreaCode>
-   
+    <dadk:businessAreaCode>06.38</dadk:businessAreaCode>  
     <dcat:distribution rdf:resource="http://www.w3.org/2002/07/owl"/>
   </rdf:Description>
+  <!-- Udgivelse: OWL -->
+
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://www.w3.org/2002/07/owl"/>
+    <dct:description xml:lang="da">OWL 2 Schema vocabularet (OWL 2)</dct:description>
+    <dct:description xml:lang="en">The OWL 2 Schema vocabulary (OWL 2)</dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-12-11</dct:issued>
+    <dct:title xml:lang="da">OWL</dct:title>
+    <dct:title xml:lang="en">OWL</dct:title>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24KB</schema:fileSize>
+  </rdf:Description>
+  
  
 
 
@@ -5050,431 +5421,6 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:landingPage rdf:resource="https://github.com/catalogue-of-services-isa/SDG-model"/>			
   </rdf:Description>  	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-  <!--UDGIVELSER-->
-  
- 
-  <!-- Udgivelse: GeoSPARQL 1.0.1 -->
 
-  <rdf:Description rdf:about="http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">GeoSPARQL Vocabulary</dct:description>
-    <dct:title xml:lang="da">GeoSPARQL 1.0.1 RDF</dct:title>
-    <dct:title xml:lang="en">GeoSPARQL 1.0.1 RDF</dct:title>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">46K</schema:fileSize>
-  </rdf:Description>
- 
-  <!-- Udgivelse: OpenGIS simple features geometries 1.0.1 -->
-
-  <rdf:Description rdf:about="http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf"/>
-    <dct:description xml:lang="da">Vokabular til 'simple features' geometrier (OpenGIS)</dct:description>
-    <dct:description xml:lang="en">Vocabulary for simple features geometries (OpenGIS) </dct:description>
-    <dct:title xml:lang="da">Simple features geometries 1.0.1 RDF</dct:title>
-    <dct:title xml:lang="en">Simple features geometries 1.0.1 RDF</dct:title>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17K</schema:fileSize>
-  </rdf:Description>
- 
- 
- 
- 
-  <!-- Udgivelse: SKOS Aug 2009 -->
-
-  <rdf:Description rdf:about="https://www.w3.org/2009/08/skos-reference/skos.rdf">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://www.w3.org/2009/08/skos-reference/skos.rdf"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">SKOS Vocabulary in RDF-format</dct:description>
-    <dct:title xml:lang="da">SKOS RDF</dct:title>
-    <dct:title xml:lang="en">SKOS RDF</dct:title>
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">29K</schema:fileSize>
-  </rdf:Description>
- 
-  <!-- Udgivelse: SKOS-XL Aug 2009 -->
-
-  <rdf:Description rdf:about="https://www.w3.org/2009/08/skos-reference/skos-xl.rdf">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://www.w3.org/2009/08/skos-reference/skos-xl.rdf"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">SKOS XL Vocabulary in RDF-format</dct:description>
-    <dct:title xml:lang="da">SKOS-XL RDF</dct:title>
-    <dct:title xml:lang="en">SKOS-XL RDF</dct:title>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8K</schema:fileSize>
-  </rdf:Description>
- 
-
- 
-  <!-- Udgivelse: FOAF 20140114 -->
-
-  <rdf:Description rdf:about="http://xmlns.com/foaf/spec/20140114.rdf">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="http://xmlns.com/foaf/spec/20140114.rdf"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">FOAF Vocabulary Specification in RDF-format</dct:description>
-    <dct:title xml:lang="da"/>
-    <dct:title xml:lang="en">FOAF Vocabulary 20140114 RDF</dct:title>
-    <dct:license rdf:resource="http://creativecommons.org/licenses/by/1.0/"/>
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">44K</schema:fileSize>
-  </rdf:Description>
-  
-
-
-  <!-- Udgivelse: DCAT 1.0 Turtle -->
-
-  <rdf:Description rdf:about="https://www.w3.org/ns/dcat.ttl">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://www.w3.org/ns/dcat.ttl"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">Data Catalog Vocabulary in Turtle-format</dct:description>
-    <dct:title xml:lang="da">DCAT 1.0 TTL</dct:title>
-    <dct:title xml:lang="en">DCAT 1.0 TTL</dct:title>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">46K</schema:fileSize>
-  </rdf:Description>
- 
-  <!-- Udgivelse: DCAT 1.0 RDF -->
-
-  <rdf:Description rdf:about="https://www.w3.org/ns/dcat.rdf">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://www.w3.org/ns/dcat.rdf"/>
-    <dct:description xml:lang="da">Data Catalog Vocabulary in RDF-format</dct:description>
-    <dct:description xml:lang="en"/>
-    <dct:title xml:lang="da">DCAT 1.0 RDF/XML</dct:title>
-    <dct:title xml:lang="en">DCAT 1.0 RDF/XML</dct:title>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">57K</schema:fileSize>
-  </rdf:Description>
-  
- 
-  <!-- Udgivelse: VoID Turtle-format -->
-
-  <rdf:Description rdf:about="http://vocab.deri.ie/void.ttl">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="http://vocab.deri.ie/void.ttl"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">The Vocabulary of Interlinked Datasets i Turtle-format</dct:description>
-    <dct:title xml:lang="da">VoID TTL</dct:title>
-    <dct:title xml:lang="en">VoID TTL</dct:title>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12K</schema:fileSize>
-  </rdf:Description>
- 
-  <!-- Udgivelse: VoID RDF-format -->
-
-  <rdf:Description rdf:about="http://vocab.deri.ie/void.rdf">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="http://vocab.deri.ie/void.rdf"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">The Vocabulary of Interlinked Datasets in RDF-format</dct:description>
-    <dct:title xml:lang="da">VoID RDF</dct:title>
-    <dct:title xml:lang="en">VoID RDF</dct:title>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18K</schema:fileSize>
-  </rdf:Description>
- 
-  <!-- Udgivelse: DCMI Metadata terms -->
-
-  <rdf:Description rdf:about="http://purl.org/dc/terms/dctterms">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="http://purl.org/dc/terms/dctterms"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">DCMI Metadata Terms i Turtle-format</dct:description>
-    <dct:title xml:lang="da">DCMI TTL</dct:title>
-    <dct:title xml:lang="en">DCMI TTL</dct:title>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">59K</schema:fileSize>
-  </rdf:Description>
- 
-  <!-- Udgivelse: DCMI Type Vocabulary -->
-
-  <rdf:Description rdf:about="http://purl.org/dc/dcmitype/dcmitype">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="http://purl.org/dc/dcmitype/dcmitype"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">DCMI Type Vocabulary in Turtle-format</dct:description>
-    <dct:title xml:lang="da">DCMI Type TTL</dct:title>
-    <dct:title xml:lang="en">DCMI Type TTL</dct:title>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9K</schema:fileSize>
-  </rdf:Description>
- 
-  <!-- Udgivelse: Geoinformation INSPIRE i RDF -->
-
-  <rdf:Description rdf:about="https://www.w3.org/2015/03/inspire/Overview.rdf">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://www.w3.org/2015/03/inspire/Overview.rdf"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">SmOD INSPIRE Vocabularies</dct:description>
-    <dct:title xml:lang="da">SmOD INSPIRE RDF/XML</dct:title>
-    <dct:title xml:lang="en">SmOD INSPIRE RDF/XML</dct:title>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4K</schema:fileSize>
-  </rdf:Description>
- 
-  <!-- Udgivelse: Geoinformation INSPIRE i Turtle -->
-
-  <rdf:Description rdf:about="https://www.w3.org/2015/03/inspire/Overview.ttl">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://www.w3.org/2015/03/inspire/Overview.ttl"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">SmOD INSPIRE Vocabularies in Turtle-format</dct:description>
-    <dct:title xml:lang="da">SmOD INSPIRE TTL</dct:title>
-    <dct:title xml:lang="en">SmOD INSPIRE TTL</dct:title>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3K</schema:fileSize>
-  </rdf:Description>
- 
-  <!-- Udgivelse: European Legislation Identifier 1.1 -->
-
-  <rdf:Description rdf:about="http://publications.europa.eu/mdr/resource/eli/eli.owl">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="http://publications.europa.eu/mdr/resource/eli/eli.owl"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">European Legislation Identifier in RDF-format</dct:description>
-    <dct:title xml:lang="da">European Legislation Identifier 1.1 RDF/XML</dct:title>
-    <dct:title xml:lang="en">European Legislation Identifier 1.1 RDF/XML</dct:title>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XML</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">114K</schema:fileSize>
-  </rdf:Description>
- 
-  <!-- Udgivelse: ISA Location Core Vocabulary 2.0 RDF/XML -->
-
-  <rdf:Description rdf:about="https://www.w3.org/ns/locn.rdf">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://www.w3.org/ns/locn.rdf"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">ISA Programme Location Core Vocabulary in RDF/XML-format</dct:description>
-    <dct:title xml:lang="da"/>
-    <dct:title xml:lang="en">ISA Programme Location Core Vocabulary 2.0 RDF</dct:title>
-    <dct:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF/XML</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">27K</schema:fileSize>
-  </rdf:Description>
- 
-  <!-- Udgivelse: ISA Location Core Vocabulary 2.0 Turtle -->
-
-  <rdf:Description rdf:about="https://www.w3.org/ns/locn.ttl">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://www.w3.org/ns/locn.ttl"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">ISA Programme Location Core Vocabulary in Turtle-format</dct:description>
-    <dct:title xml:lang="da"/>
-    <dct:title xml:lang="en">ISA Programme Location Core Vocabulary 2.0 TTL</dct:title>
-    <dct:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20K</schema:fileSize>
-  </rdf:Description>
- 
-  <!-- Udgivelse: Registered Organization Vocabulary RDF/XML -->
-
-  <rdf:Description rdf:about="http://www.w3.org/ns/regorg.rdf">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="http://www.w3.org/ns/regorg.rdf"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">Registered Organization Vocabulary in RDF/XML-format</dct:description>
-    <dct:title xml:lang="da"/>
-    <dct:title xml:lang="en">Registered Organization Vocabulary RDF</dct:title>
-    <dct:license rdf:resource="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"/>
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF/XML</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11K</schema:fileSize>
-  </rdf:Description>
- 
-  <!-- Udgivelse: Registered Organization Vocabulary Turtle -->
-
-  <rdf:Description rdf:about="http://www.w3.org/ns/regorg.ttl">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="http://www.w3.org/ns/regorg.ttl"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">Registered Organization Vocabulary in Turtle-format</dct:description>
-    <dct:title xml:lang="da"/>
-    <dct:title xml:lang="en">Registered Organization Vocabulary TTL</dct:title>
-    <dct:license rdf:resource="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"/>
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8K</schema:fileSize>
-  </rdf:Description>
- 
-  <!-- Ugivelse: ISA Programme Person Core Vocabulary -->
-
-  <rdf:Description rdf:about="https://www.w3.org/ns/person.ttl">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://www.w3.org/ns/person.ttl"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">ISA Programme Person Core Vocabulary in Turtle-format</dct:description>
-    <dct:title xml:lang="da"/>
-    <dct:title xml:lang="en">ISA Programme Person Core Vocabulary TTL</dct:title>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7K</schema:fileSize>
-  </rdf:Description>
- 
-  <!-- Udgivelse: PROV-O -->
-
-  <rdf:Description rdf:about="http://www.w3.org/ns/prov-o">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="http://www.w3.org/ns/prov-o"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">The PROV Ontology in Turtle-format</dct:description>
-    <dct:title xml:lang="da"/>
-    <dct:title xml:lang="en">The PROV Ontology TTL</dct:title>
-    <dct:license rdf:resource="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"/>
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">68K</schema:fileSize>
-  </rdf:Description>
- 
-  <!-- Udgivelse -->
-
-  <rdf:Description rdf:about="http://usefulinc.com/ns/doap">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="http://usefulinc.com/ns/doap"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">Description of a Project (DOAP) vocabulary in Turtle-format</dct:description>
-    <dct:title xml:lang="da"/>
-    <dct:title xml:lang="en">Description of a Project (DOAP) vocabulary</dct:title>
-    <dct:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turtle/TXT</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">53K</schema:fileSize>
-  </rdf:Description>
- 
-  <!-- Udgivelse: CPOV 0.3_0 ttl -->
-
-  <rdf:Description rdf:about="https://joinup.ec.europa.eu/sites/default/files/distribution/2017-02/cpov_rdf_schema_turtle_v0.03_0.ttl">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://joinup.ec.europa.eu/sites/default/files/distribution/2017-02/cpov_rdf_schema_turtle_v0.03_0.ttl"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">Core Public Organisation Vocabulary (CPOV) in Turtle-format</dct:description>
-    <dct:title xml:lang="da"/>
-    <dct:title xml:lang="en">CPOV 0.3_0 </dct:title>
-    <dct:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">215K</schema:fileSize>
-  </rdf:Description>
- 
-  <!-- Udgivelse: BIBO 1.0 -->
-
-  <rdf:Description rdf:about="https://github.com/structureddynamics/Bibliographic-Ontology-BIBO/blob/master/bibo.owl">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://github.com/structureddynamics/Bibliographic-Ontology-BIBO/blob/master/bibo.owl"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">Bibliograpic Ontology (BIBO) in OWL/XML displayed in HTML</dct:description>
-    <dct:title xml:lang="da"/>
-    <dct:title xml:lang="en">Bibliograpic Ontology 1.0</dct:title>
-    <dct:license rdf:resource="http://creativecommons.org/licenses/by/1.0/"/>
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTML</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
- 
-  <!-- Udgivelse: XML Schema Datatyper -->
-
-  <rdf:Description rdf:about="https://www.w3.org/2001/05/datatypes.xsd">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://www.w3.org/2001/05/datatypes.xsd"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">XML Schema Datatypes (XSD)</dct:description>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2001-05-02</dct:issued>
-    <dct:title xml:lang="da"/>
-    <dct:title xml:lang="en">XML Schema Datatypes (XSD</dct:title>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XSD/XML</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4KB</schema:fileSize>
-  </rdf:Description>
- 
-  <!-- Udgivelse: GML 3.2.1-->
-
-  <rdf:Description rdf:about="http://schemas.opengis.net/gml/3.2.1/gml_32_geometries.rdf">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/><dcat:accessURL rdf:resource="http://schemas.opengis.net/gml/3.2.1/gml_32_geometries.rdf"/>
-    <dct:description xml:lang="da">Schema for geografisk opmærkningsprog</dct:description>
-    <dct:description xml:lang="en">Geography Markup Language Schema</dct:description>
-    <dct:title xml:lang="da">GMLOWL 3.2.1 RDF</dct:title>
-    <dct:title xml:lang="en">GMLOWL 3.2.1 RDF</dct:title>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF/XML</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14KB</schema:fileSize>
-  </rdf:Description>
- 
-  <!-- Udgivelse: Owl Time Ontology-->
-
-  <rdf:Description rdf:about="http://www.w3.org/2006/time">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/><dcat:accessURL rdf:resource="http://www.w3.org/2006/time"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">Time Ontology in OWL</dct:description>
-    <dct:title xml:lang="da"/>
-    <dct:title xml:lang="en">Time Ontology in OWL</dct:title>
-    <dct:license rdf:resource="http://creativecommons.org/licenses/by/1.0/"/>
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XML/RDF</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">61K</schema:fileSize>
-  </rdf:Description>
- 
-  <!-- Udgivelse: DQV RDF/XML -->
-
-  <rdf:Description rdf:about="https://www.w3.org/ns/dqv.rdf">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/><dcat:accessURL rdf:resource="https://www.w3.org/ns/dqv.rdf"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">Data Quality Vocabulary in RDF-format</dct:description>
-    <dct:title xml:lang="da"/>
-    <dct:title xml:lang="en">DQV RDF/XML</dct:title>
-    <dct:license rdf:resource="http://creativecommons.org/licenses/by/1.0/"/>
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
- 
-  <!-- Udgivelse: DQV TTL -->
-
-  <rdf:Description rdf:about="https://www.w3.org/ns/dqv.ttl">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/><dcat:accessURL rdf:resource="https://www.w3.org/ns/dqv.ttl"/><dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">Data Quality Vocabulary in Turtle format</dct:description>
-    <dct:title xml:lang="da"/>
-    <dct:title xml:lang="en">DQV TTL</dct:title>
-    <dct:license rdf:resource="http://creativecommons.org/licenses/by/1.0/"/>
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
- 
-  <!-- Udgivelse: OWL -->
-
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="http://www.w3.org/2002/07/owl"/>
-    <dct:description xml:lang="da">OWL 2 Schema vocabularet (OWL 2)</dct:description>
-    <dct:description xml:lang="en">The OWL 2 Schema vocabulary (OWL 2)</dct:description>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-12-11</dct:issued>
-    <dct:title xml:lang="da">OWL</dct:title>
-    <dct:title xml:lang="en">OWL</dct:title>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24KB</schema:fileSize>
-  </rdf:Description>
-
-
-  <!-- Udgivelse: EU Budget Vocabulary 1.0.1 -->
-
-  <!--
-  <rdf:Description rdf:about="https://joinup.ec.europa.eu/site/core_vocabularies/registry/eubudget/eu_budget_vocabulary_1.01.ttl">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://joinup.ec.europa.eu/site/core_vocabularies/registry/eubudget/eu_budget_vocabulary_1.01.ttl"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">EU Budget Vocabulary in Turtle-format</dct:description>
-    <dct:title xml:lang="da">EU Budget Vocabulary 1.0.1 TTL</dct:title>
-    <dct:title xml:lang="en">EU Budget Vocabulary 1.0.1 TTL</dct:title>
-    <dct:license rdf:resource="ISA Open Metadata Licence v1.1"/>
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30K</schema:fileSize>
-  </rdf:Description>
-  --> 
  
 </rdf:RDF>
