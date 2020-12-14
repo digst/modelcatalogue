@@ -4032,7 +4032,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:title xml:lang="en">The Organization Ontology RDF</dct:title>	  
     <dct:description xml:lang="da">The Organization Ontology in RDF-format</dct:description>
     <dct:description xml:lang="en">The Organization Ontology in RDF-format</dct:description>
-    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="da">The Organization Ontology RDF/XML</dct:title>
     <dct:title xml:lang="en">The Organization Ontology RDF/XML</dct:title>
     <dct:license rdf:resource="http://www.opendatacommons.org/licenses/pddl/1.0/"/>
     <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
@@ -4088,7 +4088,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:accessURL rdf:resource="http://xmlns.com/foaf/spec/20140114.rdf"/>
     <dct:description xml:lang="da"/>
     <dct:description xml:lang="en">FOAF Vocabulary Specification in RDF-format</dct:description>
-    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="da">FOAF Vocabulary 20140114 RDF</dct:title>
     <dct:title xml:lang="en">FOAF Vocabulary 20140114 RDF</dct:title>
     <dct:license rdf:resource="http://creativecommons.org/licenses/by/1.0/"/>
     <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
@@ -4582,7 +4582,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:accessURL rdf:resource="https://github.com/structureddynamics/Bibliographic-Ontology-BIBO/blob/master/bibo.owl"/>
     <dct:description xml:lang="da"/>
     <dct:description xml:lang="en">Bibliograpic Ontology (BIBO) in OWL/XML displayed in HTML</dct:description>
-    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="da">Bibliograpic Ontology 1.0</dct:title>
     <dct:title xml:lang="en">Bibliograpic Ontology 1.0</dct:title>
     <dct:license rdf:resource="http://creativecommons.org/licenses/by/1.0/"/>
     <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTML</dct:format>
@@ -4645,7 +4645,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:accessURL rdf:resource="https://www.w3.org/ns/locn.ttl"/>
     <dct:description xml:lang="da"/>
     <dct:description xml:lang="en">ISA Programme Location Core Vocabulary in Turtle-format</dct:description>
-    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="da">ISA Programme Location Core Vocabulary 2.0 TTL</dct:title>
     <dct:title xml:lang="en">ISA Programme Location Core Vocabulary 2.0 TTL</dct:title>
     <dct:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
     <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
@@ -4693,7 +4693,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:accessURL rdf:resource="http://www.w3.org/ns/regorg.rdf"/>
     <dct:description xml:lang="da"/>
     <dct:description xml:lang="en">Registered Organization Vocabulary in RDF/XML-format</dct:description>
-    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="da">Registered Organization Vocabulary RDF</dct:title>
     <dct:title xml:lang="en">Registered Organization Vocabulary RDF</dct:title>
     <dct:license rdf:resource="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"/>
     <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF/XML</dct:format>
@@ -4705,7 +4705,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:accessURL rdf:resource="http://www.w3.org/ns/regorg.ttl"/>
     <dct:description xml:lang="da"/>
     <dct:description xml:lang="en">Registered Organization Vocabulary in Turtle-format</dct:description>
-    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="da">Registered Organization Vocabulary TTL</dct:title>
     <dct:title xml:lang="en">Registered Organization Vocabulary TTL</dct:title>
     <dct:license rdf:resource="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"/>
     <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
@@ -4751,7 +4751,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:accessURL rdf:resource="https://www.w3.org/ns/person.ttl"/>
     <dct:description xml:lang="da"/>
     <dct:description xml:lang="en">ISA Programme Person Core Vocabulary in Turtle-format</dct:description>
-    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="da">ISA Programme Person Core Vocabulary TTL</dct:title>  
     <dct:title xml:lang="en">ISA Programme Person Core Vocabulary TTL</dct:title>    
     <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7K</schema:fileSize>
@@ -4798,7 +4798,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:accessURL rdf:resource="http://www.w3.org/ns/prov-o"/>
     <dct:description xml:lang="da"/>
     <dct:description xml:lang="en">The PROV Ontology in Turtle-format</dct:description>
-    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="da">The PROV Ontology TTL</dct:title>
     <dct:title xml:lang="en">The PROV Ontology TTL</dct:title>
     <dct:license rdf:resource="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"/>
     <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
@@ -4844,7 +4844,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:accessURL rdf:resource="http://usefulinc.com/ns/doap"/>
     <dct:description xml:lang="da"/>
     <dct:description xml:lang="en">Description of a Project (DOAP) vocabulary in Turtle-format</dct:description>
-    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="da">DOAP TTL</dct:title>
     <dct:title xml:lang="en">Description of a Project (DOAP) vocabulary</dct:title>
     <dct:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
     <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turtle/TXT</dct:format>
@@ -4969,7 +4969,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:accessURL rdf:resource="https://joinup.ec.europa.eu/sites/default/files/distribution/2017-02/cpov_rdf_schema_turtle_v0.03_0.ttl"/>
     <dct:description xml:lang="da"/>
     <dct:description xml:lang="en">Core Public Organisation Vocabulary (CPOV) in Turtle-format</dct:description>
-    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="da">CPOV 0.3_0 </dct:title>
     <dct:title xml:lang="en">CPOV 0.3_0 </dct:title>
     <dct:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
     <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
@@ -5018,7 +5018,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:description xml:lang="da"/>
     <dct:description xml:lang="en">XML Schema Datatypes (XSD)</dct:description>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2001-05-02</dct:issued>
-    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="da">XML Schema Datatypes (XSD</dct:title>   
     <dct:title xml:lang="en">XML Schema Datatypes (XSD</dct:title>    
     <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XSD/XML</dct:format>
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4KB</schema:fileSize>
@@ -5111,7 +5111,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/><dcat:accessURL rdf:resource="http://www.w3.org/2006/time"/>
     <dct:description xml:lang="da"/>
     <dct:description xml:lang="en">Time Ontology in OWL</dct:description>
-    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="da">Time Ontology -  OWL</dct:title>
     <dct:title xml:lang="en">Time Ontology in OWL</dct:title>
     <dct:license rdf:resource="http://creativecommons.org/licenses/by/1.0/"/>
     <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XML/RDF</dct:format>
@@ -5216,7 +5216,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/><dcat:accessURL rdf:resource="https://www.w3.org/ns/dqv.rdf"/>
     <dct:description xml:lang="da"/>
     <dct:description xml:lang="en">Data Quality Vocabulary in RDF-format</dct:description>
-    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="da">DQV RDF/XML</dct:title>
     <dct:title xml:lang="en">DQV RDF/XML</dct:title>
     <dct:license rdf:resource="http://creativecommons.org/licenses/by/1.0/"/>
     <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
@@ -5270,15 +5270,14 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:distribution rdf:resource="http://www.w3.org/2002/07/owl"/>
   </rdf:Description>
   <!-- Udgivelse: OWL -->
-
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
     <dcat:accessURL rdf:resource="http://www.w3.org/2002/07/owl"/>
     <dct:description xml:lang="da">OWL 2 Schema vocabularet (OWL 2)</dct:description>
     <dct:description xml:lang="en">The OWL 2 Schema vocabulary (OWL 2)</dct:description>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-12-11</dct:issued>
-    <dct:title xml:lang="da">OWL</dct:title>
-    <dct:title xml:lang="en">OWL</dct:title>    
+    <dct:title xml:lang="da">OWL TTL</dct:title>
+    <dct:title xml:lang="en">OWL TTL</dct:title>    
     <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24KB</schema:fileSize>
   </rdf:Description>
