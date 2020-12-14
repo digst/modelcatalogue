@@ -3964,6 +3964,21 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
 	<dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
     <dcat:distribution rdf:resource="https://www.w3.org/ns/org.rdf"/>
   </rdf:Description>
+  <!-- Udgivelse: Organization Ontology -->
+  <rdf:Description rdf:about="https://www.w3.org/ns/org.rdf">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://www.w3.org/ns/org.rdf"/>
+    <dct:title xml:lang="da">Organisationsontologien - RDF</dct:title>
+    <dct:title xml:lang="en">The Organization Ontology RDF</dct:title>	  
+    <dct:description xml:lang="da">The Organization Ontology in RDF-format</dct:description>
+    <dct:description xml:lang="en">The Organization Ontology in RDF-format</dct:description>
+    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="en">The Organization Ontology RDF/XML</dct:title>
+    <dct:license rdf:resource="http://www.opendatacommons.org/licenses/pddl/1.0/"/>
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">102K</schema:fileSize>
+  </rdf:Description>	
+	
  
   <!-- FOAF -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -5106,19 +5121,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8K</schema:fileSize>
   </rdf:Description>
  
-  <!-- Udgivelse: Organization Ontology -->
 
-  <rdf:Description rdf:about="https://www.w3.org/ns/org.rdf">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://www.w3.org/ns/org.rdf"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">The Organization Ontology in RDF-format</dct:description>
-    <dct:title xml:lang="da"/>
-    <dct:title xml:lang="en">The Organization Ontology RDF/XML</dct:title>
-    <dct:license rdf:resource="http://www.opendatacommons.org/licenses/pddl/1.0/"/>
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">102K</schema:fileSize>
-  </rdf:Description>
  
   <!-- Udgivelse: FOAF 20140114 -->
 
