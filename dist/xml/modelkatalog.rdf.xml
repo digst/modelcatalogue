@@ -213,6 +213,13 @@ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 			<dcat:dataset rdf:resource="http://www.estrellaproject.org/lkif-core/lkif-core.owl#"/>
 			<dcat:dataset rdf:resource="http://www.eionet.europa.eu/gemet/"/>
 			<dcat:dataset rdf:resource="https://github.com/catalogue-of-services-isa/SDG-model/"/>
+			<dcat:dataset rdf:resource="https://www.w3.org/ns/odrl/2/"/>
+			<dcat:dataset rdf:resource="http://www.w3.org/ns/ssn/"/>
+			<dcat:dataset rdf:resource="http://purl.org/linked-data/cube#"/>
+			<dcat:dataset rdf:resource="http://www.w3.org/ns/sosa/"/>
+			<dcat:dataset rdf:resource="http://data.europa.eu/m8g/cccev"/>
+			<dcat:dataset rdf:resource="http://lkg.lynx-project.eu/def/"/>
+			<dcat:dataset rdf:resource="http://www.metalex.eu/metalex/1.0"/>
 		</rdf:Description>			
 	 </dct:hasPart>
 	 
@@ -5419,7 +5426,515 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
 	<foaf:page rdf:resource="https://github.com/catalogue-of-services-isa/SDG-model/wiki/SDG-model-Home-Page"/>
     <dcat:landingPage rdf:resource="https://github.com/catalogue-of-services-isa/SDG-model"/>			
   </rdf:Description>  	
-	
+  
+<!-- =======================================================   -->	
+<!-- ODRL - OPen Digital Rights Language -->
+<!-- =======================================================   -->
+ 
+  <rdf:Description rdf:about="https://www.w3.org/ns/odrl/2/">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="da"></dct:title>   
+    <dct:title xml:lang="en">ODRL Vocabulary and Expression</dct:title>
+    <dct:description xml:lang="da">ODRL (Sprog for åbne digitale rettigheder) er et sprog til at udtrykke politikker, som indeholder en fleksibel og interoperabel informationsmodel, vokabular og kodningmekansimer til at repræsentere udsagn om brug af indhold og tjenester. </dct:description>   
+    <dct:description xml:lang="en">The Open Digital Rights Language (ODRL) is a policy expression language that provides a flexible and interoperable information model, vocabulary, and encoding mechanisms for representing statements about the usage of content and services. </dct:description>
+    <vann:preferredNamespacePrefix>odrl</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>http://www.w3.org/ns/odrl/2/</vann:preferredNamespaceUri>
+    <dcat:keyword>rettigheder</dcat:keyword>
+	<dcat:keyword>intellektuelle rettigheder</dcat:keyword>
+    <dcat:keyword>licens</dcat:keyword>
+    <dcat:keyword>brugsrettigheder</dcat:keyword>
+    <dcat:keyword>digitale rettigheder</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-16</dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.2</owl:versionInfo>
+    <adms:versionNotes xml:lang="da"></adms:versionNotes>
+	<dct:publisher>
+    <foaf:Agent>
+        <foaf:name>W3C</foaf:name>
+        <foaf:homepage>https://www.w3.org</foaf:homepage>
+    </foaf:Agent>
+	</dct:publisher>
+    <cc:license rdf:resource="https://www.w3.org/Consortium/Legal/2002/ipr-notice-20021231#Copyright"/>
+    <dcat:landingPage rdf:resource="https://www.w3.org/ns/odrl/2/"/>
+    <foaf:page rdf:resource="https://www.w3.org/TR/odrl-vocab/"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/JUST"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel"/>
+    <dct:conformsTo rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <dadk:businessArea>Samfundsdigitalisering</dadk:businessArea>
+    <dadk:businessAreaCode>06.38</dadk:businessAreaCode>
+    <dcat:distribution rdf:resource="https://www.w3.org/ns/odrl/2/ODRL22.nt"/>
+    <dcat:distribution rdf:resource="https://www.w3.org/ns/odrl/2/ODRL22.json"/>
+    <dcat:distribution rdf:resource="https://www.w3.org/ns/odrl/2/ODRL22.xsd"/>
+	<dcat:distribution rdf:resource="https://www.w3.org/ns/odrl/2/ODRL22.ttl"/>
+	<dcat:distribution rdf:resource="https://www.w3.org/ns/odrl/2/ODRL22.rdf"/>
+  </rdf:Description>
+  
+  <!-- Udgivelse: ODRL 2.2 TTL -->
 
+  <rdf:Description rdf:about="https://www.w3.org/ns/odrl/2/ODRL22.ttl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://www.w3.org/ns/odrl/2/ODRL22.ttl"/>
+    <dct:description xml:lang="da">ODRL ontologi i Turtle format</dct:description>
+    <dct:description xml:lang="en">ODRL ontology in Turtle format</dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-16</dct:issued>
+    <dct:title xml:lang="da">ODRL22.ttl</dct:title>
+    <dct:title xml:lang="en">ODRL22.ttl</dct:title>
+    <cc:license>https://www.w3.org/Consortium/Legal/2002/ipr-notice-20021231#Copyright</cc:license>   
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL/tekst</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">89K</schema:fileSize>
+  </rdf:Description>
+
+  <!-- Udgivelse: ODRL 2.2 RDF/XML -->
+
+  <rdf:Description rdf:about="https://www.w3.org/ns/odrl/2/ODRL22.rdf">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://www.w3.org/ns/odrl/2/ODRL22.rdf"/>
+    <dct:description xml:lang="da">ODRL ontologi i RDF/XML format</dct:description>
+    <dct:description xml:lang="en">ODRL ontology in RDF/XML format</dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-16</dct:issued>
+    <dct:title xml:lang="da">ODRL22.rdf</dct:title>
+    <dct:title xml:lang="en">ODRL22.rdf</dct:title>
+    <cc:license>https://www.w3.org/Consortium/Legal/2002/ipr-notice-20021231#Copyright</cc:license>   
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF/XML</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">179K</schema:fileSize>
+  </rdf:Description>  
+  
+<!-- =======================================================   -->	
+<!-- Semantic Sensor Network Ontology -->
+<!-- =======================================================   -->	
+
+	<rdf:Description rdf:about="http://www.w3.org/ns/ssn/">
+		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+		<dct:title xml:lang="da">Semantisk sensornetværksontologi</dct:title>   
+		<dct:title xml:lang="en">Semantic Sensor Network Ontology</dct:title>
+		<dct:description xml:lang="da">Den semantisk sensornetværksontologi (SSN) er en ontologi der beskriver sensore og deres observationer, de involverede procedurer, de undersøgte features, de dertil anvendte prøver, de observerede egenskaber og  aktuatorer. SSN følger en horisontalt og vertikalt modulariseret arkitektur ved at inkludere en let, men selvstændig kerneontologi kaldet SOSA (Sensor, Obeservation, Prøve og Aktuator) til dets grundlæggende klasser og egenskaber. Med deres forskellige scope og grad af aksiomisering, kan SSN og SOSA uderstøtte en bred vifte and anvendelser og use cases, herunder satellitfotografering, omfattende videnskabelig overvågning, infrastruktur til industri og hjem, sociale sonsore, borgerdrevet videnskab, observationsdrevet ontologiudarbejdelse og IoT</dct:description>   
+		<dct:description xml:lang="en">The Semantic Sensor Network (SSN) ontology is an ontology for describing sensors and their observations, the involved procedures, the studied features of interest, the samples used to do so, and the observed properties, as well as actuators. SSN follows a horizontal and vertical modularization architecture by including a lightweight but self-contained core ontology called SOSA (Sensor, Observation, Sample, and Actuator) for its elementary classes and properties. With their different scope and different degrees of axiomatization, SSN and SOSA are able to support a wide range of applications and use cases, including satellite imagery, large-scale scientific monitoring, industrial and household infrastructures, social sensing, citizen science, observation-driven ontology engineering, and the Web of Things.</dct:description>
+		<dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
+		<vann:preferredNamespacePrefix>ssn</vann:preferredNamespacePrefix>
+		<vann:preferredNamespaceUri>http://www.w3.org/ns/ssn/</vann:preferredNamespaceUri>
+		<dcat:keyword>sensore</dcat:keyword>
+		<dcat:keyword>sensornetværk</dcat:keyword>
+		<dcat:keyword>IoT</dcat:keyword>
+		<dcat:keyword>observation</dcat:keyword>
+		<dcat:keyword>observerbar egenskab</dcat:keyword>
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-19</dct:issued>
+		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-08</dct:modified>
+		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">New modular version of the SSN ontology</owl:versionInfo> <!-- Det er den værdi de selv giver for owl:versionInfo - og den eneste versionsinformation der er -->
+		<adms:versionNotes xml:lang="da">Link errors corrected 08 December 2017</adms:versionNotes>
+		<dct:publisher>
+		<foaf:Agent>
+			<foaf:name>W3C</foaf:name>
+			<foaf:homepage>https://www.w3.org/</foaf:homepage>
+		</foaf:Agent>
+		</dct:publisher>
+		<cc:license rdf:resource="http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document"/>
+		<cc:license rdf:resource="http://www.opengeospatial.org/ogc/Software"/>
+		<dcat:landingPage rdf:resource="https://www.w3.org/TR/vocab-ssn/"/>
+		<foaf:page rdf:resource="https://www.w3.org/TR/vocab-ssn/"/>
+		<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TECH"/>
+		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel"/>
+		<dct:conformsTo rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+		<dadk:businessArea>06.38</dadk:businessArea>
+		<dadk:businessAreaCode>Samfundsdigitalisering</dadk:businessAreaCode>
+		<dcat:distribution rdf:resource="http://www.w3.org/ns/ssn.ttl"/>
+  </rdf:Description>  
+  
+<!-- Udgivelse: SSN -->
+	
+  <rdf:Description rdf:about="http://www.w3.org/ns/ssn.ttl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://www.w3.org/TR/vocab-ssn/"/>
+    <dct:description xml:lang="da">Semantisk sensornetværksontologi i ttl-format</dct:description>
+    <dct:description xml:lang="en">Semantic Sensor Network Ontology in ttl-format</dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
+    <dct:title xml:lang="da">Semantisk sensornetværksontologi</dct:title>   
+    <dct:title xml:lang="en">Semantic Sensor Network Ontology</dct:title>
+    <foaf:page rdf:resource="https://www.w3.org/TR/vocab-ssn/"/>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL/tekst</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23K</schema:fileSize>
+  </rdf:Description> 
+  
+<!-- =======================================================   -->  
+<!-- SOSA -->
+<!-- =======================================================   -->  
+
+<rdf:Description rdf:about="http://www.w3.org/ns/sosa/">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="da">Sensor, observation, prøve og aktuator</dct:title>   
+    <dct:title xml:lang="en">Sensor, Observation, Sample, and Actuator</dct:title>
+    <dct:description xml:lang="da">Letvægtsontologi der definerer centrale klasser og egenskaber for sensore, observationer, prøver og aktuatorer. Beregnet til at fungere i sammenhæng med SSN-ontologien (den semantisk netværksontologi).</dct:description>   
+    <dct:description xml:lang="en">This ontology is based on the SSN Ontology by the W3C Semantic Sensor Networks Incubator Group (SSN-XG), together with considerations from the W3C/OGC Spatial Data on the Web Working Group.</dct:description>
+    <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
+    <vann:preferredNamespacePrefix>sosa</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>http://www.w3.org/ns/sosa/</vann:preferredNamespaceUri>
+    <dcat:keyword>måling</dcat:keyword>
+    <dcat:keyword>IoT</dcat:keyword>
+    <dcat:keyword>observerbar egenskab</dcat:keyword>
+    <dcat:keyword>resultat</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-1</dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></owl:versionInfo>
+    <adms:versionNotes xml:lang="da"></adms:versionNotes>
+	<dct:publisher>
+    <foaf:Agent>
+        <foaf:name>W3C</foaf:name>
+        <foaf:homepage>https://www.w3.org/</foaf:homepage>
+    </foaf:Agent>
+	</dct:publisher>
+    <cc:license rdf:resource="http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document"/>
+	<cc:license rdf:resource="http://www.opengeospatial.org/ogc/Software"/>
+    <dcat:landingPage rdf:resource="https://www.w3.org/TR/vocab-ssn/"/>
+    <foaf:page rdf:resource="https://www.w3.org/TR/vocab-ssn/"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TECH"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel"/>
+    <dct:conformsTo rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <dadk:businessArea>06.38</dadk:businessArea>
+    <dadk:businessAreaCode>Samfundsdigitalisering</dadk:businessAreaCode>
+    <dcat:distribution rdf:resource="http://www.w3.org/ns/sosa.ttl"/>
+  </rdf:Description>
+  
+<!-- Udgivelse: SOSA -->
+
+ <rdf:Description rdf:about="http://www.w3.org/ns/sosa.ttl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://www.w3.org/ns/sosa/"/>
+    <dct:description xml:lang="da">Sensor, observation, prøve og aktuator i ttl-format</dct:description>
+    <dct:description xml:lang="en">Sensor, Observation, Sample, and Actuator in ttl-format</dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
+    <dct:title xml:lang="da">Sensor, observation, prøve og aktuator</dct:title>
+    <dct:title xml:lang="en">Sensor, Observation, Sample, and Actuator</dct:title>
+    <foaf:page rdf:resource="https://www.w3.org/TR/vocab-ssn/"/>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL/tekst</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">27K</schema:fileSize>
+  </rdf:Description>
+
+<!-- =======================================================   -->    
+<!-- RDF Data Cube -->
+<!-- =======================================================   -->  
+  
+<rdf:Description rdf:about="http://purl.org/linked-data/cube#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="da">RDF vokabular for flerdimensionelle data</dct:title>   
+    <dct:title xml:lang="en">The RDF Data Cube Vocabulary</dct:title>
+    <dct:description xml:lang="da">Vokabular til beskrivelse af flerdimensionelle data, fx statistik, publiceret på internettet, og links til relaterede datasæt og begreber. Vokabularet anvender RDF-standarden og den underliggende model er kombatible med SMDX (Statistical Data and Metadata eXchange), der er en ISO-standard for udveksling og deling af statitiske data og metadata mellem organisationer.</dct:description>   
+    <dct:description xml:lang="en">There are many situations where it would be useful to be able to publish multi-dimensional data, such as statistics, on the web in such a way that it can be linked to related data sets and concepts. The Data Cube vocabulary provides a means to do this using the W3C RDF (Resource Description Framework) standard. The model underpinning the Data Cube vocabulary is compatible with the cube model that underlies SDMX (Statistical Data and Metadata eXchange), an ISO standard for exchanging and sharing statistical data and metadata among organizations. The Data Cube vocabulary is a core foundation which supports extension vocabularies to enable publication of other aspects of statistical data flows or other multi-dimensional data set</dct:description>
+    <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
+    <vann:preferredNamespacePrefix>qb</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>http://purl.org/linked-data/cube#</vann:preferredNamespaceUri>
+    <dcat:keyword>multidimensionelle data</dcat:keyword>
+    <dcat:keyword>flerdimensionelle data</dcat:keyword>
+    <dcat:keyword>data</dcat:keyword>
+    <dcat:keyword>statistik</dcat:keyword>
+	<dcat:keyword>statitiske data</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-01-16</dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></owl:versionInfo> <!-- Turtle filen angiver 0.2, men det er optaget som recommendation. Jeg tror det forvirrer mindst at lade feltet være tomt. /maybo -->
+    <adms:versionNotes xml:lang="da"></adms:versionNotes>
+	<dct:publisher>
+    <foaf:Agent>
+        <foaf:name>W3C</foaf:name>
+        <foaf:homepage>https://www.w3.org/</foaf:homepage>
+    </foaf:Agent>
+	</dct:publisher>
+    <cc:license rdf:resource="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"/>
+    <dcat:landingPage rdf:resource="https://www.w3.org/TR/vocab-data-cube/"/>
+    <foaf:page rdf:resource="https://www.w3.org/TR/vocab-data-cube/"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TECH"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel"/>
+    <dct:conformsTo rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <dadk:businessArea>06.40</dadk:businessArea>
+    <dadk:businessAreaCode>Statistik</dadk:businessAreaCode>
+    <dcat:distribution rdf:resource="http://purl.org/linked-data/cube.ttl"/>
+  </rdf:Description>
+  
+<!-- Udgivelse: RDF Data Cube -->
+
+   <rdf:Description rdf:about="http://purl.org/linked-data/cube.ttl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/UKGovLD/publishing-statistical-data/master/specs/src/main/vocab/cube.ttl"/>
+    <dct:description xml:lang="da">RDF vokabular for flerdimensionelle data i ttl-format</dct:description>
+    <dct:description xml:lang="en">The RDF Data Cube Vocabulary in ttl-format</dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
+    <dct:title xml:lang="da">RDF vokabular for flerdimensionelle data</dct:title>
+    <dct:title xml:lang="en">The RDF Data Cube Vocabulary</dct:title>
+    <foaf:page rdf:resource="https://www.w3.org/TR/vocab-data-cube/"/>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL/tekst</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15K</schema:fileSize>
+  </rdf:Description>
+
+<!-- =======================================================   -->    
+<!-- Core Criterion and Core Evidence -->
+<!-- =======================================================   -->  
+
+<rdf:Description rdf:about="http://data.europa.eu/m8g/cccev">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="da">Kernevokabular for kriterie og bevis</dct:title>   
+    <dct:title xml:lang="en">Core Criterion and Core Evidence Vocabulary</dct:title>
+    <dct:description xml:lang="da">Vokabular for kriterie - det der bruges som basis for en afgørelse eller en beslutning, fx et krav i et offentligt udbud eller en betingelse der skal være opfyldt for at modtage en offentlig ydelse, og bevis - det der dokumenterer at noget eksisterer eller er sandt, specifikt bevis for at et specifikt kriterie er opfyldt.</dct:description>   
+    <dct:description xml:lang="en">The Core Criterion and Core Evidence Vocabulary (CCCEV) contains two basic and complementary core concepts: the criterion, something used as the basis for making a judgement or decision, e.g. a requirement set in a public tender or a condition that has to be fulfilled for a public service to be executed; and the evidence, something which proves that something else exists or is true, in particular an evidence is used to prove that a specific criterion is met by someone of by something.</dct:description>
+    <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
+    <vann:preferredNamespacePrefix>cccev</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>http://data.europa.eu/m8g/cccev</vann:preferredNamespaceUri>
+    <dcat:keyword>kriterie</dcat:keyword>
+	<dcat:keyword>kriterium</dcat:keyword>
+    <dcat:keyword>krav</dcat:keyword>
+    <dcat:keyword>bevis</dcat:keyword>
+    <dcat:keyword>betingelse</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-12-15</dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.0</owl:versionInfo>
+    <adms:versionNotes xml:lang="da"></adms:versionNotes>
+	<dct:publisher>
+    <foaf:Agent>
+        <foaf:name>EU</foaf:name>
+        <foaf:homepage>http://publications.europa.eu/resource/authority/corporate-body/DIGIT</foaf:homepage>
+    </foaf:Agent>
+	</dct:publisher>
+    <cc:license rdf:resource="https://joinup.ec.europa.eu/licence/isa-open-metadata-licence-v11"/>
+    <dcat:landingPage rdf:resource="https://joinup.ec.europa.eu/release/core-criterion-and-core-evidence-vocabulary-v100"/>
+    <foaf:page rdf:resource="https://joinup.ec.europa.eu/release/core-criterion-and-core-evidence-vocabulary-v100"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/GOVE"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ApplicationModel"/>
+    <dct:conformsTo rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <dadk:businessArea>Kontraktforvaltning, udbud og outsourcing </dadk:businessArea>
+    <dadk:businessAreaCode>67.50.56</dadk:businessAreaCode>
+    <dcat:distribution rdf:resource="http://data.europa.eu/m8g/cccev.ttl"/>
+    <dcat:distribution rdf:resource="http://data.europa.eu/m8g/cccev.jsonld"/>
+    <dcat:distribution rdf:resource="http://data.europa.eu/m8g/cccev.pdf"/>
+	<dcat:distribution rdf:resource="http://data.europa.eu/m8g/cccev.docx"/>
+	<dcat:distribution rdf:resource="http://data.europa.eu/m8g/cccev.png"/>
+	<dcat:distribution rdf:resource="http://data.europa.eu/m8g/cccev.eap"/>
+  </rdf:Description> 
+  
+
+<!-- Udgivelse: Core Criterion and Core Evidence TTL -->
+
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/cccev.ttl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://joinup.ec.europa.eu/sites/default/files/distribution/2017-02/cccev_rdf_schema_turtle_v0.03.ttl"/>
+    <dct:description xml:lang="da">Kernevokabular for kriterie og bevis i ttl-format</dct:description>
+    <dct:description xml:lang="en">Core Criterion and Core Evidence Vocabulary in ttl-format</dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
+    <dct:title xml:lang="da">Kernevokabular for kriterie og bevis</dct:title>
+    <dct:title xml:lang="en">Core Criterion and Core Evidence Vocabulary</dct:title>
+    <foaf:page rdf:resource="https://joinup.ec.europa.eu/release/core-criterion-and-core-evidence-vocabulary-v100"/>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL/tekst</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19K</schema:fileSize>
+  </rdf:Description>
+  
+<!-- Udgivelse: Core Criterion and Core Evidence JSON-LD -->
+
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/cccev.jsonld">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/SEMICeu/CCCEV/master/releases/1.00/cccev.jsonld"/>
+    <dct:description xml:lang="da">Kernevokabular for kriterie og bevis JSON-LD kontekst</dct:description>
+    <dct:description xml:lang="en">Core Criterion and Core Evidence Vocabulary JSON-LD Context</dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
+    <dct:title xml:lang="da">Kernevokabular for kriterie og bevis</dct:title>
+    <dct:title xml:lang="en">Core Criterion and Core Evidence Vocabulary</dct:title>
+    <foaf:page rdf:resource="https://joinup.ec.europa.eu/release/core-criterion-and-core-evidence-vocabulary-v100"/>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSON-LD</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5K</schema:fileSize>
+  </rdf:Description>
+
+<!-- Udgivelse: Core Criterion and Core Evidence PDF -->
+
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/cccev.pdf">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://joinup.ec.europa.eu/sites/default/files/distribution/2016-12/core_evidence_and_core_criterion_vocabulary_version_1.0.0.pdf"/>
+    <dct:description xml:lang="da">Kernevokabular for kriterie og bevis i PDF-format</dct:description>
+    <dct:description xml:lang="en">Core Criterion and Core Evidence Vocabulary in PDF-format</dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
+    <dct:title xml:lang="da">Kernevokabular for kriterie og bevis</dct:title>
+    <dct:title xml:lang="en">Core Criterion and Core Evidence Vocabulary</dct:title>
+    <foaf:page rdf:resource="https://joinup.ec.europa.eu/release/core-criterion-and-core-evidence-vocabulary-v100"/>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PDF</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1116K</schema:fileSize>
+  </rdf:Description>
+
+<!-- Udgivelse: Core Criterion and Core Evidence Word -->
+
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/cccev.docx">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://joinup.ec.europa.eu/sites/default/files/distribution/2016-12/core_evidence_and_core_criterion_vocabulary_version_1.0.0.docx"/>
+    <dct:description xml:lang="da">Kernevokabular for kriterie og bevis i MS Word-format</dct:description>
+    <dct:description xml:lang="en">Core Criterion and Core Evidence Vocabulary in MS Word-format</dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-12-15</dct:issued>
+    <dct:title xml:lang="da">Kernevokabular for kriterie og bevis</dct:title>
+    <dct:title xml:lang="en">Core Criterion and Core Evidence Vocabulary</dct:title>
+    <foaf:page rdf:resource="https://joinup.ec.europa.eu/release/core-criterion-and-core-evidence-vocabulary-v100"/>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MS Word</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">456KK</schema:fileSize>
+  </rdf:Description>
+
+<!-- Udgivelse: Core Criterion and Core Evidence PNG -->
+
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/cccev.png">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://joinup.ec.europa.eu/sites/default/files/distribution/2016-12/core_evidence_and_core_criterion_vocabulary_version_1.0.0.png"/>
+    <dct:description xml:lang="da">Diagram af kernevokabular for kriterie og bevis i png-format</dct:description>
+    <dct:description xml:lang="en">Diagramme of Core Criterion and Core Evidence Vocabulary in png-format</dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
+    <dct:title xml:lang="da">Kernevokabular for kriterie og bevis</dct:title>
+    <dct:title xml:lang="en">Core Criterion and Core Evidence Vocabulary</dct:title>
+    <foaf:page rdf:resource="https://joinup.ec.europa.eu/release/core-criterion-and-core-evidence-vocabulary-v100"/>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PNG</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">81K</schema:fileSize>
+  </rdf:Description>
+  
+<!-- Udgivelse: Core Criterion and Core Evidence EAP-->
+
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/cccev.eap">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://joinup.ec.europa.eu/sites/default/files/distribution/2016-12/core_evidence_and_core_criterion_vocabulary_version_1.0.0.eap"/>
+    <dct:description xml:lang="da">Kernevokabular for kriterie og bevis som eap-projektfil til Sparx Enterprise Architect</dct:description>
+    <dct:description xml:lang="en">Core Criterion and Core Evidence Vocabulary as eap-project file for Sparx Enterprise Architect</dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
+    <dct:title xml:lang="da">Kernevokabular for kriterie og bevis</dct:title>
+    <dct:title xml:lang="en">Core Criterion and Core Evidence Vocabulary</dct:title>
+    <foaf:page rdf:resource="https://joinup.ec.europa.eu/release/core-criterion-and-core-evidence-vocabulary-v100"/>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EAP</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1239K</schema:fileSize>
+  </rdf:Description>
+  
+<!-- =======================================================   -->  
+<!-- Legal Knowledge Graph Ontology -->
+<!-- =======================================================   -->  
+
+  <rdf:Description rdf:about="http://lkg.lynx-project.eu/def/">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="da">Ontologi for juridiske vidensgrafer</dct:title>   
+    <dct:title xml:lang="en">Legal Knowledge Graph Ontology</dct:title>
+    <dct:description xml:lang="da">Ontologien er udarbejdet for at understøtte representation af Lynx dokumenter, fx dokumenter relateret til compliance, som er værd at medtage i en juridisk vidensgraf. Denne specifikation fungerer som datamodel for dokumenter i Lynx-projektet. Lynx-dokumenter følger NIF (NLP Interchange Format) specifikationen og genbruger i høj graf metadata elementer fra ELI</dct:description>   
+    <dct:description xml:lang="en">This ontology has been made with the purpose of supporting the representation of Lynx Documents, e.g., any document related to compliance worth to be in a Legal Knowledge Graph. This specification serves as a data model for documents in the Lynx project.Lynx Documents are compliant with NIF (NLP Interchange Format) specification and heavily reuses ELI metadata elements.</dct:description>
+    <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
+    <vann:preferredNamespacePrefix>lkg</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>http://lkg.lynx-project.eu/def/</vann:preferredNamespaceUri>
+    <dcat:keyword>Lynx</dcat:keyword>
+    <dcat:keyword>jura</dcat:keyword>
+    <dcat:keyword>dokument</dcat:keyword>
+    <dcat:keyword>compliance</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2.0</owl:versionInfo>
+    <adms:versionNotes xml:lang="da"></adms:versionNotes>
+	<dct:publisher>
+    <foaf:Agent>
+        <foaf:name>The Lynx Project Consortium</foaf:name>
+        <foaf:homepage>http://lynx-project.eu/</foaf:homepage>
+    </foaf:Agent>
+	</dct:publisher>
+    <cc:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+    <dcat:landingPage rdf:resource="https://lynx-project.eu/doc/lkg/"/>
+    <foaf:page rdf:resource=""/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/JUST"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel"/>
+    <dct:conformsTo rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <dadk:businessArea>Lovgivning</dadk:businessArea>
+    <dadk:businessAreaCode>05.10</dadk:businessAreaCode>
+    <dcat:distribution rdf:resource="http://lynx-project.eu/doc/lkg.ttl"/>
+    <dcat:distribution rdf:resource="http://lynx-project.eu/doc/lkg.json"/> 
+  </rdf:Description>
+  
+<!-- Udgivelse: Legal Knowledge Graph Ontology TTL -->
+
+  <rdf:Description rdf:about="http://lynx-project.eu/doc/lkg.ttl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://lynx-project.eu/doc/lkg.ttl"/>
+    <dct:description xml:lang="da">Ontologi for juridiske vidensgrafer i ttl-format</dct:description>
+    <dct:description xml:lang="en">Legal Knowledge Graph Ontology in ttl-format</dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
+    <dct:title xml:lang="da">Ontologi for juridiske vidensgrafer</dct:title>
+    <dct:title xml:lang="en">Legal Knowledge Graph Ontology</dct:title>
+    <foaf:page rdf:resource="https://lynx-project.eu/doc/lkg/"/>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL/tekst</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13K</schema:fileSize>
+  </rdf:Description>
+  
+<!-- Udgivelse: Legal Knowledge Graph Ontology JSON-LD-->
+
+  <rdf:Description rdf:about="http://lynx-project.eu/doc/lkg.json">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://lynx-project.eu/doc/jsonld/lynxdocument.json"/>
+    <dct:description xml:lang="da">JSON-LD kontekstfilfor Lynx-dokumenter der følger ontologi for juridiske vidensgrafer</dct:description>
+    <dct:description xml:lang="en">JSON-LD context file for Lynx Documents according to Legal Knowledge Graph Ontology</dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
+    <dct:title xml:lang="da">JSON-LD kontekstfil for Lynx-dokumenter</dct:title>
+    <dct:title xml:lang="en">JSON-LD context file for Lynx Documents</dct:title>
+    <foaf:page rdf:resource="https://lynx-project.eu/doc/lkg/"/>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JSON</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4K</schema:fileSize>
+  </rdf:Description>
+
+<!-- =======================================================   -->    
+<!-- CEN Metalex -->
+<!-- =======================================================   -->  
+
+<rdf:Description rdf:about="http://www.metalex.eu/metalex/1.0">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<rdf:type rdf:resource="http://www.w3.org/ns/dx/prof/Profile"/>	
+    <dct:title xml:lang="da">CEN MetaLex</dct:title>   
+    <dct:title xml:lang="en">CEN MetaLex</dct:title>
+    <dct:description xml:lang="da">Åbent XML-udvekslingsformat for juridiske ressourcer. CEN MetaLex standardiserer måden hvorpå juridiske kilder og henvisninger til juridiske kilder repræsenteres i XML.</dct:description>   
+    <dct:description xml:lang="en">Open XML Interchange Format for Legal and Legislative Resources. CEN MetaLex standardizes the way in which sources of law and references to sources of law are to be represented in XML.</dct:description>
+    <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
+    <vann:preferredNamespacePrefix>metalex</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>http://www.metalex.eu/metalex/1.0</vann:preferredNamespaceUri>
+    <dcat:keyword>juridisk</dcat:keyword>
+    <dcat:keyword>udvekslingsformat</dcat:keyword>
+    <dcat:keyword>lovgivning</dcat:keyword>
+    <dcat:keyword>XML</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-05-02</dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</owl:versionInfo>
+    <adms:versionNotes xml:lang="da"></adms:versionNotes>
+	<dct:publisher>
+    <foaf:Agent>
+        <foaf:name>CEN - European Committee for Standardization</foaf:name>
+        <foaf:homepage>https://www.cen.eu/Pages/default.aspx</foaf:homepage>
+    </foaf:Agent>
+	</dct:publisher>
+    <cc:license rdf:resource=""/>
+    <dcat:landingPage rdf:resource="http://www.metalex.eu/"/>
+    <foaf:page rdf:resource="http://www.metalex.eu/"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/JUST"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>
+	<dadk:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>
+    <dct:conformsTo rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <dadk:businessArea>Lovgivning</dadk:businessArea>
+    <dadk:businessAreaCode>05.10</dadk:businessAreaCode>
+    <dcat:distribution rdf:resource="http://www.metalex.eu/metalex/1.0.owl"/>
+    <dcat:distribution rdf:resource="http://www.metalex.eu/metalex/1.0.xsd"/>
+  </rdf:Description>
+  
+<!-- Udgivelse: CEN Metalex OWL -->
+
+<rdf:Description rdf:about="http://www.metalex.eu/metalex/1.0.owl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://www.metalex.eu/metalex-cen.owl"/>
+    <dct:description xml:lang="da">OWL-ontologi for CEN MetaLex - Åbent XML-udvekslingsformat for juridiske ressourcer</dct:description>
+    <dct:description xml:lang="en">OWL ontology for CEN MetaLex - Open XML Interchange Format for Legal and Legislative Resources</dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-05-02</dct:issued>
+    <dct:title xml:lang="da">CEN MetaLex OWL-ontologi</dct:title>
+    <dct:title xml:lang="en">CEN MetaLex OWL Ontology</dct:title>
+    <foaf:page rdf:resource="http://www.metalex.eu/"/>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OWL/tekst</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">56K</schema:fileSize>
+ </rdf:Description>
+
+<!-- Udgivelse: CEN Metalex XSD -->
+
+<rdf:Description rdf:about="http://www.metalex.eu/metalex/1.0.xsd">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://www.metalex.eu/e.xsd"/>
+    <dct:description xml:lang="da">XML-schema for CEN MetaLex - Åbent XML-udvekslingsformat for juridiske ressourcer</dct:description>
+    <dct:description xml:lang="en">XML schema for CEN MetaLex - Open XML Interchange Format for Legal and Legislative Resources</dct:description>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
+    <dct:title xml:lang="da">CEN MetaLex XML-schema</dct:title>
+    <dct:title xml:lang="en">CEN MetaLex XML Schema</dct:title>
+    <foaf:page rdf:resource="http://www.metalex.eu/"/>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XSD/XML</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32K</schema:fileSize>
+ </rdf:Description>
  
 </rdf:RDF>
