@@ -141,8 +141,10 @@ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 			<dcat:dataset rdf:resource="https://blog.cbs.dk/forvir/topontologien/"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/concept/profile/db07#"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/concept/profile/disco-08#"/>
-			<dcat:dataset rdf:resource="https://data.gov.dk/concept/profile/form#"/>
-			<dcat:dataset rdf:resource="https://data.gov.dk/concept/profile/kle#"/>
+			<dcat:dataset rdf:resource="https://data.gov.dk/concept/profile/form/"/>
+			<dcat:dataset rdf:resource="https://data.gov.dk/concept/profile/kle/"/>
+			<dcat:dataset rdf:resource="https://data.gov.dk/concept/profile/social/ffb/funktionsevnekatalog/"/> 
+			<dcat:dataset rdf:resource="https://data.gov.dk/concept/profile/social/ffb/indsatskatalog/"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/concept/profile/public-org-types"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/concept/profile/tech-env-types"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/concept/profile/op-status-types"/>
@@ -2180,9 +2182,10 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ConceptModel"/>			
 	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>		
-    <dct:title xml:lang="en">FORVIR - Topontologien</dct:title>
-    <dct:title xml:lang="da">FORVIR - Upper Ontology</dct:title>
+    <dct:title xml:lang="da">FORVIR - Topontologien</dct:title>
+    <dct:title xml:lang="en">FORVIR - Upper Ontology</dct:title>
     <dct:description xml:lang="da">Topontologien indeholder en struktureret beskrivelse af en række generelle begreber, som er centrale for mange offentlige organisationer, institutioner mv. Ontologiens begreber er beskrevet vha. deres indbyrdes relationer og karakteristiske træk, som danner grundlaget for definitioner. Forum for Videnmodellering i Offentligt Regi (FORVIR) nedsætter efter behov arbejdsgrupper, der arbejder med udvikling af begreber, der med fordel kan udvikles fællesoffentlige definitioner for.</dct:description>
+    <dct:description xml:lang="en">The FORVIR Upper Ontology contains a structured description of a number of general concepts relevant for many public organisations. </dct:description>
     <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
     <dcat:keyword>FORVIR</dcat:keyword>			
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
@@ -3460,12 +3463,91 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:description xml:lang="da">KL Emnesystematik (KLE) er en retskildebaseret kommunal taksonomi (journaliseringsnøgle), der bruges til at registrere de kommunale opgaver (emner) og forvaltningshandlingen ift. opgaven (handlingsfacetterne) på den enkelte sag. KL Emnesystematik tilstræber til enhver tid at reflektere den del af den danske lovgivning, der omfatter den kommunale forvaltning.</dct:description>
     <dcat:keyword>klassifikation</dcat:keyword>	
     <dcat:keyword>controlled vocabulary</dcat:keyword>		
-    <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>	
-    <dcat:keyword>SKOS</dcat:keyword>		
+    <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>		
     <dcat:landingPage rdf:resource="http://www.kle-online.dk/"/>
   </rdf:Description>  
  
  
+   <!-- ==================================================  -->  
+   <!--  Klassifikation: FBB funktionsevnekatalog		 					    -->
+   <!-- ==================================================  -->   
+   <rdf:Description rdf:about="https://data.gov.dk/concept/profile/social/ffb/funktionsevnekatalog/">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#ClassificationModel"/>	
+	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>		
+	<dct:publisher>
+		<foaf:Agent>
+			<foaf:name>KL</foaf:name>
+			<foaf:homepage>http://kl.dk</foaf:homepage>
+		</foaf:Agent>
+	</dct:publisher>
+	<dcat:contactPoint>
+		<vcard:Kind>
+			<vcard:fn>KL Begreber</vcard:fn>
+			<vcard:hasEmail rdf:resource="begreber@kl.dk"/>				
+		</vcard:Kind>	
+	</dcat:contactPoint>		
+    <dct:title xml:lang="da">Klassifikation: (FFB) Fælleskommunalt funktionsevnekatalog</dct:title>
+    <dct:title xml:lang="en">Classification: (FBB) Municipal catalogue of functional abilities</dct:title>
+    <dct:description xml:lang="da">Fælles og klassificerede begreber mellem myndighed og drift på det specialiserede socialområde for voksne. Anvendes ifm. dokumentationsopgaver under sagsbehandling og levering af sociale indsatser, så der etableres fælles sprog og produktion af strukturerede data.</dct:description>	   
+    <dct:description xml:lang="en">Concepts concerning functional abilities in the social area.</dct:description>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-01</dct:modified>  		   
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.10.0</owl:versionInfo>	
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>		   
+    <voag:approvalStatus rdf:resource="https:/data.gov.dk/concept/approvalStatus/Approved"/>	
+    <voag:isApprovedBy>KL Arkitekturråd</voag:isApprovedBy> 		   
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL_2"/>	
+    <dadk:businessArea>Social</dadk:businessArea>
+    <dadk:businessAreaCode>26</dadk:businessAreaCode>	   
+    <dcat:keyword>klassifikation</dcat:keyword>	
+    <dcat:keyword>controlled vocabulary</dcat:keyword>		
+    <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>	
+    <dcat:keyword>social</dcat:keyword>		
+    <dcat:keyword>funktionsevner</dcat:keyword>		 
+    <dcat:keyword>Fælles Faglige Begreber</dcat:keyword>		   
+    <dcat:landingPage rdf:resource="https://www.kl.dk/kommunale-opgaver/socialomraadet/faelles-faglige-begreber/materialer/"/>
+  </rdf:Description>  
+ 
+
+   <!-- ==================================================  -->  
+   <!--  Klassifikation: FBB indsatskatalog							    -->
+   <!-- ==================================================  -->   
+   <rdf:Description rdf:about="https://data.gov.dk/concept/profile/social/ffb/indsatskatalog/ ">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#ClassificationModel"/>	
+	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>		
+	<dct:publisher>
+		<foaf:Agent>
+			<foaf:name>KL</foaf:name>
+			<foaf:homepage>http://kl.dk</foaf:homepage>
+		</foaf:Agent>
+	</dct:publisher>
+	<dcat:contactPoint>
+		<vcard:Kind>
+			<vcard:fn>KL Begreber</vcard:fn>
+			<vcard:hasEmail rdf:resource="begreber@kl.dk"/>				
+		</vcard:Kind>	
+	</dcat:contactPoint>		
+    <dct:title xml:lang="da">Klassifikation: (FFB) Fælleskommunalt indsatskatalog</dct:title>
+    <dct:title xml:lang="en">Classification: (FBB) Municipal catalogue of social initiatives</dct:title>
+    <dct:description xml:lang="da">Fælles og klassificerede begreber mellem myndighed og drift på det specialiserede socialområde for voksne. Anvendes ifm. dokumentationsopgaver under sagsbehandling og levering af sociale indsatser, så der etableres fælles sprog og produktion af strukturerede data.</dct:description>
+    <dct:description xml:lang="en">Concepts related to social initiatives for adults</dct:description>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-01</dct:modified>  		   
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.10.0</owl:versionInfo>		
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>		   
+    <voag:approvalStatus rdf:resource="https:/data.gov.dk/concept/approvalStatus/Approved"/>	
+    <voag:isApprovedBy>KL Arkitekturråd</voag:isApprovedBy> 		   
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL_2"/>	
+    <dadk:businessArea>Social</dadk:businessArea>
+    <dadk:businessAreaCode>26</dadk:businessAreaCode>	   
+    <dcat:keyword>klassifikation</dcat:keyword>	
+    <dcat:keyword>controlled vocabulary</dcat:keyword>		
+    <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>	
+    <dcat:keyword>social</dcat:keyword>	
+    <dcat:keyword>indsatser</dcat:keyword>		
+    <dcat:keyword>Fælles Faglige Begreber</dcat:keyword>		   
+    <dcat:landingPage rdf:resource="https://www.kl.dk/kommunale-opgaver/socialomraadet/faelles-faglige-begreber/materialer/"/>
+  </rdf:Description>  
 
    <!-- ==================================================  -->  
    <!--  Klassifikation: Offentlige organisationstyper	    -->
