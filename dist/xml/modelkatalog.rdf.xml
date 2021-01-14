@@ -3461,8 +3461,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:title xml:lang="da">Klassifikation: KLE</dct:title>
     <dct:title xml:lang="en">Classification: KLE</dct:title>
     <dct:description xml:lang="da">KL Emnesystematik (KLE) er en retskildebaseret kommunal taksonomi (journaliseringsnøgle), der bruges til at registrere de kommunale opgaver (emner) og forvaltningshandlingen ift. opgaven (handlingsfacetterne) på den enkelte sag. KL Emnesystematik tilstræber til enhver tid at reflektere den del af den danske lovgivning, der omfatter den kommunale forvaltning.</dct:description>
-    <dcat:keyword>klassifikation</dcat:keyword>	
-    <dcat:keyword>controlled vocabulary</dcat:keyword>		
+    <dcat:keyword>klassifikation</dcat:keyword>		
     <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>		
     <dcat:landingPage rdf:resource="http://www.kle-online.dk/"/>
   </rdf:Description>  
@@ -3491,6 +3490,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:title xml:lang="en">Classification: (FBB) Municipal catalogue of functional abilities</dct:title>
     <dct:description xml:lang="da">Fælles og klassificerede begreber mellem myndighed og drift på det specialiserede socialområde for voksne. Anvendes ifm. dokumentationsopgaver under sagsbehandling og levering af sociale indsatser, så der etableres fælles sprog og produktion af strukturerede data.</dct:description>	   
     <dct:description xml:lang="en">Concepts concerning functional abilities in the social area.</dct:description>
+    <vann:preferredNamespaceUri>https://data.gov.dk/concept/profile/social/ffb/funktionsevnekatalog/</vann:preferredNamespaceUri>		   
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-01</dct:modified>  		   
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.10.0</owl:versionInfo>	
     <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>		   
@@ -3499,8 +3499,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL_2"/>	
     <dadk:businessArea>Social</dadk:businessArea>
     <dadk:businessAreaCode>26</dadk:businessAreaCode>	   
-    <dcat:keyword>klassifikation</dcat:keyword>	
-    <dcat:keyword>controlled vocabulary</dcat:keyword>		
+    <dcat:keyword>klassifikation</dcat:keyword>		
     <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>	
     <dcat:keyword>social</dcat:keyword>		
     <dcat:keyword>funktionsevner</dcat:keyword>		 
@@ -3532,7 +3531,8 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:title xml:lang="en">Classification: (FBB) Municipal catalogue of social initiatives</dct:title>
     <dct:description xml:lang="da">Fælles og klassificerede begreber mellem myndighed og drift på det specialiserede socialområde for voksne. Anvendes ifm. dokumentationsopgaver under sagsbehandling og levering af sociale indsatser, så der etableres fælles sprog og produktion af strukturerede data.</dct:description>
     <dct:description xml:lang="en">Concepts related to social initiatives for adults</dct:description>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-01</dct:modified>  		   
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-01</dct:modified>  
+    <vann:preferredNamespaceUri>https://data.gov.dk/concept/profile/social/ffb/indsatskatalog/</vann:preferredNamespaceUri>	   
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.10.0</owl:versionInfo>		
     <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>		   
     <voag:approvalStatus rdf:resource="https:/data.gov.dk/concept/approvalStatus/Approved"/>	
@@ -3540,8 +3540,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL_2"/>	
     <dadk:businessArea>Social</dadk:businessArea>
     <dadk:businessAreaCode>26</dadk:businessAreaCode>	   
-    <dcat:keyword>klassifikation</dcat:keyword>	
-    <dcat:keyword>controlled vocabulary</dcat:keyword>		
+    <dcat:keyword>klassifikation</dcat:keyword>		
     <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>	
     <dcat:keyword>social</dcat:keyword>	
     <dcat:keyword>indsatser</dcat:keyword>		
