@@ -1,1 +1,62 @@
+<!-- =======================================================   -->
+<!--    METADATASKABELON	   								   -->
+<!-- =======================================================  --> 
+
+<!-- husk at tilføje reference til dette datasæt fra enten det danske delkatalog eller det intenationale delkatalog -->
+<!-- 
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/NAVN/">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dx/prof/Profile"/>	
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>	
+	<prof:isProfileOf rdf:resource="NAMESPACE"/>	
+    <dct:title xml:lang="da"></dct:title>
+    <dct:title xml:lang="en"></dct:title>	
+    <dct:description xml:lang="da"></dct:description>
+    <dct:description xml:lang="en"></dct:description>	
+    <vann:preferredNamespacePrefix></vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
+    <dcat:keyword></dcat:keyword>
+    <foaf:page rdf:resource=""/>	
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
+    <dct:publisher>
+		<foaf:Agent>
+			<foaf:name>Digitaliseringsstyrelsen</foaf:name>
+			<foaf:homepage>https://digst.dk/</foaf:homepage>
+		</foaf:Agent>
+	</dct:publisher>
+	<dcat:contactPoint>
+		<vcard:Kind>
+			<vcard:fn>FDA-Modelsekretariatet</vcard:fn>
+			<vcard:hasEmail rdf:resource="arkitektur@digst.dk"/>				
+		</vcard:Kind>
+	</dcat:contactPoint>	
+	<dct:isPartOf>FDA rammearkitekturen</dct:isPartOf>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
+	<dct:conformsTo rdf:resource="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering"/>
+	<dct:conformsTo rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/> 
+    <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
+    <dadk:businessAreaCode>06.38.10.10 </dadk:businessAreaCode>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>  	
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:modified>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></owl:versionInfo>
+    <adms:versionNotes xml:lang="da">Endelig (Completed)</adms:versionNotes>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>	
+    <voag:approvalStatus rdf:resource="https:/data.gov.dk/concept/approvalStatus/Approved"/>	
+    <voag:isApprovedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Udvalget for Arkitektur og Standarder</voag:isApprovedBy> 
+	<foaf:page rdf:resource="DOKUMENATIONSREF"/>
+    <dcat:landingPage rdf:resource="DESTINATIONSSIDE"/>			
+	<dcat:distribution rdf:resource="https://data.gov.dk/model/profile/NAVN-1-0-0-HTML"/>
+  </rdf:Description>    
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/NAVN-1-0-0-HTML">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/> 
+  	<dcat:accessURL rdf:resource="URL"/>
+  	<dcat:downloadURL rdf:resource="URL"/>	
+	<dct:title xml:lang="da">NAVN v.1.0.0 HTML</dct:title>	
+	<dct:title xml:lang="en">NAVN v.2.0.0 HTML</dct:title>	
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>	
+	<dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>				
+  </rdf:Description>
+ 
+--> 
 
