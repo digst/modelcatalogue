@@ -3980,8 +3980,8 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
 	</dct:publisher>
     <dct:rights>Copyright © 2011 Mondeca</dct:rights>
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-    <dcat:landingPage/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI"/>
+    <dcat:landingPage rdf:resource="https://lov.linkeddata.es/vocommons/voaf/v2.3"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TECH"/>
     <mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/>
 	<dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/oi"/>
