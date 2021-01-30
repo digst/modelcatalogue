@@ -47,7 +47,7 @@ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 	</dcat:contactPoint>	
     <foaf:homepage rdf:resource="https://data.gov.dk/catalogue/models/"/>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-01</dct:issued>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-09</dct:modified>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-30</dct:modified>
 	
 	<dcat:distribution>   <!-- katalogets distribution -->   
 	   <rdf:Description rdf:about="https://data.gov.dk/catalogue/models/xml/modelkatalog.rdf.xml">
@@ -86,26 +86,26 @@ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 			</dcat:contactPoint>	
 
 			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/basicdata/"/>
-			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/bbr"/>
-			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/cpr"/>
-			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/cvr"/>
-			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/dagi"/>
-			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/ef"/>
-			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/ejd"/>
-			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/gdk"/>
-			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/mat"/>
-			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/dar"/>
-			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/st"/>
-			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/svr"/>
-			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/vur"/>		
+			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/bbr/"/>
+			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/cpr/"/>
+			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/cvr/"/>
+			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/dagi/"/>
+			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/ef/"/>
+			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/ejd/"/>
+			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/gdk/"/>
+			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/mat/"/>
+			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/dar/"/>
+			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/st/"/>
+			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/svr/"/>
+			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/vur/"/>		
 			<dcat:dataset rdf:resource="https://geo.data.gov.dk/model/509D4EBC-F5A5-4e07-9CE7-D4585FE29C8E#"/>
 			<dcat:dataset rdf:resource="https://geo.data.gov.dk/model/71d084e8-9ec3-4abb-80c9-90dd4da8f0dd#"/>
 			<dcat:dataset rdf:resource="https://geo.data.gov.dk/model/9b84f349-b1cc-43ee-a439-c324c7988a9e#"/>
 			<dcat:dataset rdf:resource="https://geo.data.gov.dk/model/C3A6F5B9-232E-430c-B97E-E56E17FF219F#"/>
 			<dcat:dataset rdf:resource="https://geo.data.gov.dk/model/ea0120d7-141e-4116-afcb-e4b1db84c182"/>
 			<dcat:dataset rdf:resource="https://geo.data.gov.dk/model/f6eda88e-08dc-4188-ac4a-3dfd0a2ec61e#"/>
-			<dcat:dataset rdf:resource="https:/data.gov.dk/model/profile/organisation#"/>
-			<dcat:dataset rdf:resource="https:/data.gov.dk/model/profile/itsystemap#"/>
+			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/organisation#"/> 
+			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/itsystemap#"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/itsystemap-archv#"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/dataqualitydeclaration#"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/dcat-dk-ap#"/>
@@ -113,9 +113,17 @@ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/digitaloverview#"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/concept/core/digitalarchival/"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/concept/core/itsystem/"/>
+			<dcat:dataset rdf:resource="https://geo.data.gov.dk/model/71d084e8-9ec3-4abb-80c9-90dd4da8f0dd#"/>
+			<dcat:dataset rdf:resource="https://geo.data.gov.dk/model/9b84f349-b1cc-43ee-a439-c324c7988a9e#"/>
+			<dcat:dataset rdf:resource="https://geo.data.gov.dk/model/509D4EBC-F5A5-4e07-9CE7-D4585FE29C8E#"/>
+			<dcat:dataset rdf:resource="https://geo.data.gov.dk/model/C3A6F5B9-232E-430c-B97E-E56E17FF219F#"/>
+			<dcat:dataset rdf:resource="https://geo.data.gov.dk/model/profile/hydrometri#"/>
+			<dcat:dataset rdf:resource="https://geo.data.gov.dk/model/profile/watercourseshape#"/>
+			<dcat:dataset rdf:resource="https://geo.data.gov.dk/model/f6eda88e-08dc-4188-ac4a-3dfd0a2ec61e#"/>
+			<dcat:dataset rdf:resource="https://DigitalPost.dk/MeMo-1"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/profile/langDCAT-AP/"/>
-			<dcat:dataset rdf:resource="https://data.gov.dk/profile/modelDCAT-AP/"/>			
-			<dcat:dataset rdf:resource="https://data.gov.dk/model/concept/usermanagement#"/>
+			<dcat:dataset rdf:resource="https://data.gov.dk/profile/modelDCAT-AP/"/>
+			<dcat:dataset rdf:resource="https://data.gov.dk/concept/core/brugeradgangsstyring/"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/model/concept/digitalselfservice#"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/concept/core/deletion#"/>
 			<dcat:dataset rdf:resource="http://info.rammearkitektur.dk/byggeblokke/Sag/Informationsmodel/Sag.htm"/>
@@ -159,7 +167,7 @@ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 
 	<!-- DELKATALOG 2 MED INTERNATIONALE MODELLER -->  	 
 	<dct:hasPart>
-		<rdf:Description rdf:about="https://data.gov.dk/catalogue/models/fda/int">
+		<rdf:Description rdf:about="https://data.gov.dk/catalogue/models/fda/int/">
 			<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>	
 			<dct:title xml:lang="da">Modelkataloget - internationale modeller til genbrug og inspiration</dct:title>
 			<dct:title xml:lang="en">Model Catalogue - international models for reuse and inspiration</dct:title>	
@@ -222,6 +230,11 @@ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 			<dcat:dataset rdf:resource="http://data.europa.eu/m8g/cccev"/>
 			<dcat:dataset rdf:resource="http://lkg.lynx-project.eu/def/"/>
 			<dcat:dataset rdf:resource="http://www.metalex.eu/metalex/1.0"/>
+			<dcat:dataset rdf:resource="http://www.w3.org/ns/shacl#"/>
+			<dcat:dataset rdf:resource="http://purl.org/linked-data/cube#"/>
+			<dcat:dataset rdf:resource="http://qudt.org/2.1/vocab/"/>
+			<dcat:dataset rdf:resource="https://spec.edmcouncil.org/fibo/vocabulary/"/>
+			<dcat:dataset rdf:resource="https://spec.edmcouncil.org/fibo/ontology/"/>
 		</rdf:Description>			
 	 </dct:hasPart>
 	 
@@ -433,7 +446,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 	  	
 	-->	  
 
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/bbr">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/bbr/">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
 	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>	
@@ -523,7 +536,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 <!--    Grunddata CVR					      -->
 <!-- =======================================  -->
   
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/cvr">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/cvr/">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
 	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>	
@@ -620,7 +633,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 <!--    Grunddata DAGI					      -->
 <!-- =======================================  -->
 
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dagi">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dagi/">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
 	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>		
@@ -700,7 +713,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 <!-- =======================================  -->
 <!--    Grunddata DAR					      -->
 <!-- =======================================  -->
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dar">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dar/">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
 	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>		
@@ -781,7 +794,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 <!--    Grunddata Ejendomsbeliggenhed		  -->
 <!-- =======================================  --> 
 
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/ejd">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/ejd/">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
 	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>	
@@ -819,7 +832,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>	   
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-3-8</dct:modified>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.3.0</owl:versionInfo>	
-    <adms:versionNotes xml:lang="da">Se  https://data.gov.dk/model/xmi/Domaenemodeller/Ejendomsbeliggenhed/Ejendomsbeliggenhed%20%C3%A6ndringer%201.1.0%20-%201.3.0.pdf	</adms:versionNotes>	
+    <adms:versionNotes xml:lang="da">Se https://data.gov.dk/model/xmi/Domaenemodeller/Ejendomsbeliggenhed/Ejendomsbeliggenhed%20%C3%A6ndringer%201.1.0%20-%201.3.0.pdf	</adms:versionNotes>	
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/ejd-1-3-0-xmi"/>
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.3.0_Ejendomsbeliggenhed.xml"/>
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap"/>
@@ -860,7 +873,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 <!--    Grunddata Ejendomsvurdering  		  -->
 <!-- =======================================  --> 
 
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/vur">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/vur/">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
 	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>	
@@ -938,7 +951,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 <!-- =======================================  --> 
  
 
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/ef">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/ef/">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
 	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>	
@@ -1032,7 +1045,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 <!--    Grunddata GeoDanmark  				  -->
 <!-- =======================================  --> 
 
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/gdk">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/gdk/">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
 	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>		
@@ -1112,7 +1125,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 <!--    Grunddata Matrikel  				  -->
 <!-- =======================================  --> 
  
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/mat">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/mat/">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
 	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>	
@@ -1192,7 +1205,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 <!-- =======================================  --> 
   
 
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/cpr">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/cpr/">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
 	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>		
@@ -1271,7 +1284,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 <!--    Grunddata Stednavne  				  -->
 <!-- =======================================  --> 
 
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/st">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/st/">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
 	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>		
@@ -1346,7 +1359,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 <!--    Grunddata Skatteforvaltningens Virksomhedsregister    -->
 <!-- =======================================  --> 
 
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/svr">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/svr/">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
 	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>	
@@ -2296,13 +2309,24 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 			<foaf:homepage>https://sdfe.dk</foaf:homepage>
 		</foaf:Agent>
 	</dct:publisher>
-    <dcat:landingPage/>
+	<dcat:contactPoint>
+		<vcard:Kind>
+			<vcard:fn>Konktaktpunkt</vcard:fn>
+<!--			<vcard:hasEmail rdf:resource="?"/>		 Indsæt kontaktpunkt--> 		
+		</vcard:Kind>
+	</dcat:contactPoint> 	
+    <voag:isApprovedBy>Styregruppe for TKV</voag:isApprovedBy> 
+    <voag:approvalStatus rdf:resource="https:/data.gov.dk/concept/approvalStatus/Approved"/>	
+ <!--    <dcat:landingPage rdf:resource="?"/>	Indsæt evt. destinationsside--> 	
+
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
 	<dct:conformsTo rdf:resource="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering"/>
-    <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
-    <dadk:businessAreaCode>52.20.10.05</dadk:businessAreaCode>
-	
+    <dadk:businessArea>Vandløb og søer til afledning af vand </dadk:businessArea>
+    <dadk:businessAreaCode>37.25.26</dadk:businessAreaCode>
+    <dcat:landingPage rdf:resource="?"/>		
   </rdf:Description>   
+
+  
 
    <!-- ==================================================   -->   
    <!-- Logisk datamodel for Vandløbsreferencen--> 
@@ -2326,14 +2350,106 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 			<foaf:homepage>https://sdfe.dk</foaf:homepage>
 		</foaf:Agent>
 		</dct:publisher>
-    <dcat:landingPage/>
+	<dcat:contactPoint>
+		<vcard:Kind>
+			<vcard:fn>Konktaktpunkt</vcard:fn>
+	<!--		<vcard:hasEmail rdf:resource="?"/>		 Indsæt kontaktpunkt--> 		
+		</vcard:Kind>
+	</dcat:contactPoint> 	
+    <voag:isApprovedBy>Styregruppe for TKV</voag:isApprovedBy> 
+    <voag:approvalStatus rdf:resource="https:/data.gov.dk/concept/approvalStatus/Approved"/>		
+    <dcat:landingPage rdf:resource="http://www2.sdfe.dk/tkv-modeller/"/>	<!-- Indsæt evt. destinationsside--> 	
+
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
 	<dct:conformsTo rdf:resource="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering"/>
-    <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
-    <dadk:businessAreaCode>52.20.10.05</dadk:businessAreaCode>
-	
-  </rdf:Description>   
+    <dadk:businessArea>Vandløb og søer til afledning af vand </dadk:businessArea>
+    <dadk:businessAreaCode>37.25.26</dadk:businessAreaCode>
+    <dcat:landingPage rdf:resource="http://www2.sdfe.dk/tkv-modeller/"/>	
+    <dcat:distribution rdf:resource="https://geo.data.gov.dk/model/C3A6F5B9-232E-430c-B97E-E56E17FF219F-xmi"/>	
+    <dcat:distribution rdf:resource="https://geo.data.gov.dk/model/C3A6F5B9-232E-430c-B97E-E56E17FF219F-html"/>		
+  </rdf:Description>  
+  
+  
+   <!-- ==================================================   -->   
+   <!-- Logisk datamodel for Vandløbsskikkelse--> 
+   <!-- ==================================================   -->    
+    <rdf:Description rdf:about="https://geo.data.gov.dk/model/profile/watercourseshape#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>	
+    <dct:title xml:lang="da">Vandløbsskikkelse</dct:title>
+    <dct:title xml:lang="en">Water Course Shape</dct:title>
+    <dct:description xml:lang="da">Denne anvendelsesmodel beskriver de elementer der indgår i beskrivelsen af en vandløbsskikkelse. Modellen er lavet i forbindelse med TKV-projektet "Samling af Vandløbsdata" SaV under FODS initiativ 6.1.</dct:description>
+    <dct:description xml:lang="en">This application model describes the elements that are included in the description of a watercourse shape. The model is made in connection with the TKV project "Collection of Watercourse Data" SaV.</dct:description>	
+    <vann:preferredNamespaceUri>https://geo.data.gov.dk/model/profile/watercourseshape#</vann:preferredNamespaceUri>
+	<dcat:keyword>vandløb</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"> </dct:issued>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></owl:versionInfo>
+    <adms:versionNotes xml:lang="da">Godkendt (approved)</adms:versionNotes>
+    <dct:publisher>
+		<foaf:Agent>
+			<foaf:name>Styrelsen for Dataforsyning og Effektivisering</foaf:name>
+			<foaf:homepage>https://sdfe.dk</foaf:homepage>
+		</foaf:Agent>
+		</dct:publisher>
+	<dcat:contactPoint>
+		<vcard:Kind>
+			<vcard:fn>Konktaktpunkt</vcard:fn>
+		<!--	<vcard:hasEmail rdf:resource="?"/>		 Indsæt kontaktpunkt--> 		
+		</vcard:Kind>
+	</dcat:contactPoint> 	
+    <voag:isApprovedBy>Styregruppe for TKV</voag:isApprovedBy> 
+    <voag:approvalStatus rdf:resource="https:/data.gov.dk/concept/approvalStatus/Approved"/>		
+    <dcat:landingPage rdf:resource="http://www2.sdfe.dk/tkv-modeller/"/>	<!-- Indsæt evt. destinationsside--> 	
+
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
+	<dct:conformsTo rdf:resource="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering"/>
+    <dadk:businessArea>Vandløb og søer til afledning af vand </dadk:businessArea>
+    <dadk:businessAreaCode>37.25.26</dadk:businessAreaCode>
+    <dcat:landingPage rdf:resource="http://www2.sdfe.dk/tkv-modeller/"/>	
+  </rdf:Description>  
+
+  
  
+   <!-- ==================================================   -->   
+   <!-- Logisk datamodel for Hydrometri--> 
+   <!-- ==================================================   -->    
+    <rdf:Description rdf:about="https://geo.data.gov.dk/model/profile/hydrometri#">	<!-- Bekræft venligst namepace -->
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>	
+    <dct:title xml:lang="da">Hydrometri</dct:title>
+    <dct:title xml:lang="en">Hydrometri</dct:title>
+    <dct:description xml:lang="da">Denne anvendelsesmodel beskriver de elementer der indgår i måling af  vandløbshydrometri. Modellen er lavet i forbindelse med TKV-projektet "Samling af Vandløbsdata" SaV under FODS initiativ 6.1.</dct:description>
+    <dct:description xml:lang="en">This application model describes the elements that are included in the description of a watercourse shape. The model is made in connection with the TKV project "Collection of Watercourse Data" SaV.</dct:description>	
+    <vann:preferredNamespaceUri>https://geo.data.gov.dk/model/</vann:preferredNamespaceUri>
+	<dcat:keyword>vandløb</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"> </dct:issued>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></owl:versionInfo>
+    <adms:versionNotes xml:lang="da">Godkendt (approved)</adms:versionNotes>
+    <dct:publisher>
+		<foaf:Agent>
+			<foaf:name>Styrelsen for Dataforsyning og Effektivisering</foaf:name>
+			<foaf:homepage>https://sdfe.dk</foaf:homepage>
+		</foaf:Agent>
+		</dct:publisher>
+	<dcat:contactPoint>
+		<vcard:Kind>
+			<vcard:fn>Konktaktpunkt</vcard:fn>
+		<!--	<vcard:hasEmail rdf:resource="?"/>		 Indsæt kontaktpunkt--> 		
+		</vcard:Kind>
+	</dcat:contactPoint> 	
+    <voag:isApprovedBy>Styregruppe for TKV</voag:isApprovedBy> 
+    <voag:approvalStatus rdf:resource="https:/data.gov.dk/concept/approvalStatus/Approved"/>		
+  <!--   <dcat:landingPage rdf:resource="http://www2.sdfe.dk/tkv-modeller/"/>	Indsæt evt. destinationsside--> 	
+
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
+	<dct:conformsTo rdf:resource="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering"/>
+    <dadk:businessArea>Vandløb og søer til afledning af vand </dadk:businessArea>
+    <dadk:businessAreaCode>37.25.26</dadk:businessAreaCode>
+    <dcat:landingPage rdf:resource="http://www2.sdfe.dk/tkv-modeller/"/>	
+  </rdf:Description>  
+
    <!-- ==================================================   -->  
    <!-- Logisk datamodel for LER--> 
    <!-- ==================================================   -->     
@@ -2355,7 +2471,15 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 			<foaf:homepage>https://sdfe.dk</foaf:homepage>
 		</foaf:Agent>
 	</dct:publisher>
-    <dcat:landingPage/>
+	<dcat:contactPoint>
+		<vcard:Kind>
+			<vcard:fn>Konktaktpunkt</vcard:fn>
+	<!-- 			<vcard:hasEmail rdf:resource="?"/>	Indsæt kontaktpunkt--> 		
+		</vcard:Kind>
+	</dcat:contactPoint> 	
+    <voag:approvalStatus rdf:resource="https:/data.gov.dk/concept/approvalStatus/Approved"/>		
+  <!--  <dcat:landingPage rdf:resource=""/>	 Indsæt evt. destinationsside--> 	
+	
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
 	<dct:conformsTo rdf:resource="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering"/>
     <dadk:businessArea>Ledningsejerregistret, LER </dadk:businessArea>
@@ -3811,11 +3935,11 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
  
 	<rdf:Description rdf:about="https://op.europa.eu/en/web/eu-vocabularies/authority-tables">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ClassificationModel"/>			
 	<dct:publisher>
 		<foaf:Agent>
-			<foaf:name>EU</foaf:name>
-			<foaf:homepage>https://europa.eu</foaf:homepage>
+			<foaf:name>Publications Office of the European Union</foaf:name>
+			<foaf:homepage>https://op.europa.eu/</foaf:homepage>
 		</foaf:Agent>
 	</dct:publisher>
     <dct:title xml:lang="da">Klassifikationer: EU kodelister</dct:title>
@@ -3827,7 +3951,6 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>	
     <dcat:keyword>SKOS</dcat:keyword>		
     <dcat:landingPage rdf:resource="https://op.europa.eu/en/web/eu-vocabularies/authority-tables"/>
-    <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#ClassificationModel"/>		
 	</rdf:Description> 
 	
 	
@@ -5981,6 +6104,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/JUST"/>
     <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>
 	<dadk:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/>	
     <dct:conformsTo rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <dadk:businessArea>Lovgivning</dadk:businessArea>
     <dadk:businessAreaCode>05.10</dadk:businessAreaCode>
@@ -6017,5 +6141,231 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XSD/XML</dct:format>
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32K</schema:fileSize>
  </rdf:Description>
+ 
+ 
+ 
+<!-- =======================================================   -->
+<!--    The Financial Industry Business Ontology	   		 -->
+<!-- =======================================================  --> 
+
+
+  <rdf:Description rdf:about="https://spec.edmcouncil.org/fibo/ontology/">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>	
+    <dct:title xml:lang="da">Finansbranchens forretningsontologi</dct:title>
+    <dct:title xml:lang="en"> The Financial Industry Business Ontology</dct:title>	
+    <dct:description xml:lang="da">Finansbranchens forretningsontologi (The Financial Industry Business Ontology (FIBO)) definerer logiske modelementer og deres indbyrdes relationer med OWL til anvendelse i finansbranchens økonomisystemer. FIBO udgives af og sponsoreres af Enterprise Data Management Council (EDMC) og udgives en række forskellige formater. </dct:description>
+    <dct:description xml:lang="en">The Financial Industry Business Ontology (FIBO) defines the sets of things that are of interest in financial business applications and the ways that those things can relate to one another. FIBO is hosted and sponsored by the Enterprise Data Management Council (EDMC) and is published in a number of formats for operating use and business definitions. FIBO is a trademark of EDM Council, Inc. It is also standardized by the Object Management Group (OMG).</dct:description>	
+    <vann:preferredNamespacePrefix>fibo</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://spec.edmcouncil.org/fibo/ontology/</vann:preferredNamespaceUri>
+    <dcat:keyword>finans</dcat:keyword>
+    <dcat:keyword>økonomi</dcat:keyword>
+	<dcat:keyword>betaling</dcat:keyword>
+	<dcat:keyword>gæld</dcat:keyword>
+	<dcat:keyword>regnskab</dcat:keyword>
+    <dct:publisher>
+		<foaf:Agent>
+			<foaf:name>EDM Counccil</foaf:name>
+			<foaf:homepage>https://edmcouncil.org/</foaf:homepage>
+		</foaf:Agent>
+	</dct:publisher>
+	<dcat:contactPoint>
+		<vcard:Kind>
+			<vcard:fn>edmcouncil.org</vcard:fn>
+			<vcard:hasEmail rdf:resource="info@edmcouncil.org"/>				
+		</vcard:Kind>
+	</dcat:contactPoint>	
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/>
+	<dct:conformsTo rdf:resource="http://www.w3.org/2002/07/owl#"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ECON"/>
+    <dadk:businessArea>Samfundsøkonomi, samfundsdigitalisering og statistik</dadk:businessArea>
+    <dadk:businessAreaCode>06</dadk:businessAreaCode>
+	<foaf:page rdf:resource="https://spec.edmcouncil.org/fibo/"/>
+    <dcat:landingPage rdf:resource="https://spec.edmcouncil.org/fibo/ontology"/>	
+  </rdf:Description>    
+  
+<!-- =======================================================   -->
+<!--    The Financial Industry Business Vocabulary	   		   -->
+<!-- =======================================================  --> 
+
+
+  <rdf:Description rdf:about="https://spec.edmcouncil.org/fibo/vocabulary/">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ConceptModel"/>			
+	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>	
+    <dct:title xml:lang="da">FIBO Begreber</dct:title>
+    <dct:title xml:lang="en">The FIBO Vocabulary</dct:title>	
+    <dct:description xml:lang="da">FIBO-vokabularet definerer begreber og deres indbyrdes relationer med SKOS. Se også den logiske model FIBO (Finansbranchens forretningsontologi).</dct:description>
+    <dct:description xml:lang="en">The FIBO vocabulary is distributed using the Simple Knowledge Organization System (SKOS). SKOS is a W3C Recommendation that supports the use of knowledge organization systems (KOS) such as thesauri, classification schemes, subject heading lists, and taxonomies within the framework of the Semantic Web. The FIBO vocabulary is distributed as a machine-readable file in which the FIBO class hierarchy is rendered as a tree structure of broader and narrower terms. Properties in FIBO appear as properties in the FIBO vocabulary. Logical restrictions relating pairs of FIBO classes are rendered as simple relationships between corresponding concepts in FIBO Vocabulary. The FIBO Vocabulary, therefore, does not reflect the full richness of the FIBO Ontologies and is provided to support knowledge organization applications that do not require the full logic of FIBO.</dct:description>	
+    <vann:preferredNamespacePrefix>fibo-vocabulary</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://spec.edmcouncil.org/fibo/ontology/</vann:preferredNamespaceUri>
+    <dcat:keyword>finans</dcat:keyword>
+    <dcat:keyword>økonomi</dcat:keyword>
+	<dcat:keyword>betaling</dcat:keyword>
+	<dcat:keyword>gæld</dcat:keyword>
+	<dcat:keyword>regnskab</dcat:keyword>
+    <dct:publisher>
+		<foaf:Agent>
+			<foaf:name>EDM Counccil</foaf:name>
+			<foaf:homepage>https://edmcouncil.org/</foaf:homepage>
+		</foaf:Agent>
+	</dct:publisher>
+	<dcat:contactPoint>
+		<vcard:Kind>
+			<vcard:fn>edmcouncil.org</vcard:fn>
+			<vcard:hasEmail rdf:resource="info@edmcouncil.org"/>				
+		</vcard:Kind>
+	</dcat:contactPoint>	
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/>
+	<dct:conformsTo rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ECON"/>
+    <dadk:businessArea>Samfundsøkonomi, samfundsdigitalisering og statistik</dadk:businessArea>
+    <dadk:businessAreaCode>06</dadk:businessAreaCode>
+	<foaf:page rdf:resource="https://spec.edmcouncil.org/fibo/"/>
+    <dcat:landingPage rdf:resource="https://spec.edmcouncil.org/fibo/vocabulary"/>	
+  </rdf:Description>      
+
+
+ 
+<!-- =======================================================   -->
+<!--    QUDT	   		   -->
+<!-- =======================================================  --> 
+
+
+  <rdf:Description rdf:about="http://qudt.org/2.1/vocab/">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>	
+    <dct:title xml:lang="da">QUDT - mængder, måleenheder, dimensioner og datatyper</dct:title>
+    <dct:title xml:lang="en">QUDT - Quantities, Units, Dimensions and Data Types Ontologies</dct:title>	
+    <dct:description xml:lang="da">QUDT-modellerne leverer specifikationer for måleenheder, mængdetyper, dimensioner og datatyper.  </dct:description>
+    <dct:description xml:lang="en">QUDT CATALOG - Quantities, Units, Dimensions and Data Types Ontologies. QUDT.org is a 501(c)(3) public charity nonprofit organization founded to provide semantic specifications for units of measure, quantity kind, dimensions and data types.   QUDT is an advocate for the development and implementation of standards to quantify data expressed in RDF and JSON.</dct:description>	
+    <vann:preferredNamespacePrefix>qudt</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>http://qudt.org/2.1/vocab/</vann:preferredNamespaceUri>
+    <dcat:keyword>måleenheder</dcat:keyword>
+    <dct:publisher>
+		<foaf:Agent>
+			<foaf:name>QUDT.org</foaf:name>
+			<foaf:homepage>QUDT.org</foaf:homepage>
+		</foaf:Agent>
+	</dct:publisher>
+	<dcat:contactPoint>
+		<vcard:Kind>
+			<vcard:fn>QUDT.org</vcard:fn>
+			<vcard:hasEmail rdf:resource="info@QUDT.org"/>				
+		</vcard:Kind>
+	</dcat:contactPoint>	
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/>
+	<dct:conformsTo rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI"/>
+    <dadk:businessArea>38</dadk:businessArea>
+    <dadk:businessAreaCode>Natur og klima</dadk:businessAreaCode>
+	<foaf:page rdf:resource="http://www.qudt.org/"/>
+    <dcat:landingPage rdf:resource="http://www.qudt.org/2.1/catalog/qudt-catalog.html"/>	
+  </rdf:Description>  
+
+
+<!-- =======================================================   -->
+<!--    	   	The RDF Data Cube Vocabulary	   -->
+<!-- =======================================================  --> 
+
+
+  <rdf:Description rdf:about="http://purl.org/linked-data/cube#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>	
+    <dct:title xml:lang="da">The RDF Data Cube Vocabulary</dct:title>
+    <dct:title xml:lang="en">The RDF Data Cube Vocabulary</dct:title>	
+    <dct:description xml:lang="da">RDF-vokabular der definerer centrale modelelementer relevante i forbindelse med udstilling af multi-dimensionale data såsom statistik. Kompatibel med SDMX-modellen (Statistical Data and Metadata eXchange)</dct:description>
+    <dct:description xml:lang="en">There are many situations where it would be useful to be able to publish multi-dimensional data, such as statistics, on the web in such a way that it can be linked to related data sets and concepts. The Data Cube vocabulary provides a means to do this using the W3C RDF (Resource Description Framework) standard. The model underpinning the Data Cube vocabulary is compatible with the cube model that underlies SDMX (Statistical Data and Metadata eXchange), an ISO standard for exchanging and sharing statistical data and metadata among organizations. The Data Cube vocabulary is a core foundation which supports extension vocabularies to enable publication of other aspects of statistical data flows or other multi-dimensional data sets.</dct:description>	
+    <vann:preferredNamespacePrefix>qb</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>http://purl.org/linked-data/cube#</vann:preferredNamespaceUri>
+    <dcat:keyword>statistik</dcat:keyword>
+
+    <dct:publisher>
+		<foaf:Agent>
+			<foaf:name>W3C</foaf:name>
+			<foaf:homepage>https://www.w3.org/</foaf:homepage>
+		</foaf:Agent>
+	</dct:publisher>
+
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/>
+	<dct:conformsTo rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ECON"/>
+    <dadk:businessArea>Samfundsøkonomi, samfundsdigitalisering og statistik</dadk:businessArea>
+    <dadk:businessAreaCode>06</dadk:businessAreaCode>
+    <dcat:landingPage rdf:resource="https://www.w3.org/TR/vocab-data-cube/"/>	
+  </rdf:Description>  
+
+<!-- =======================================================   -->
+<!--    Shapes Constraint Language (SHACL)	   		   -->
+<!-- =======================================================  --> 
+
+
+  <rdf:Description rdf:about="http://www.w3.org/ns/shacl#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>	
+    <dct:title xml:lang="da">Shapes Constraint Language (SHACL)</dct:title>
+    <dct:title xml:lang="en">Shapes Constraint Language (SHACL)</dct:title>	
+    <dct:description xml:lang="da">SHACL Shapes Constraint Language definerer et sprog til validering af RDF-grafer.</dct:description>
+    <dct:description xml:lang="en">SHACL Shapes Constraint Language, a language for validating RDF graphs against a set of conditions</dct:description>	
+    <vann:preferredNamespacePrefix>sh</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>http://www.w3.org/ns/shacl#</vann:preferredNamespaceUri>
+    <dcat:keyword>validering</dcat:keyword>
+    <dcat:keyword>rdf</dcat:keyword>
+    <dct:publisher>
+		<foaf:Agent>
+			<foaf:name>W3C</foaf:name>
+			<foaf:homepage>https://www.w3.org/</foaf:homepage>
+		</foaf:Agent>
+	</dct:publisher>	
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/>
+	<dct:conformsTo rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ECON"/>
+    <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
+    <dadk:businessAreaCode>06.38.10.10 </dadk:businessAreaCode>
+	<foaf:page rdf:resource="https://www.w3.org/TR/shacl/"/>
+    <dcat:landingPage rdf:resource="https://www.w3.org/ns/shacl#"/>	
+  </rdf:Description>  
+
+
+
+<!-- =======================================================  unofficial drafts	   / group notes  
+
+
+
+
+  <rdf:Description rdf:about="http://www.w3.org/ns/dpv#">
+    <dct:title xml:lang="da">Data Privacy Vocabulary - Unofficial draft</dct:title>
+    <dct:title xml:lang="en">Data Privacy Vocabulary - Unofficial draft</dct:title>	
+    <vann:preferredNamespacePrefix>dpv</vann:preferredNamespacePrefix>	
+    <vann:preferredNamespaceUri>http://www.w3.org/ns/dpv#</vann:preferredNamespaceUri>	
+    <dct:description xml:lang="da">The Data Privacy Vocabulary (DPV) provides terms (classes and properties) to describe and represent information related to processing of personal data based on established requirements such as for the EU General Data Protection Regulation (GDPR). </dct:description>
+    <dct:description xml:lang="en">The Data Privacy Vocabulary (DPV) provides terms (classes and properties) to describe and represent information related to processing of personal data based on established requirements such as for the EU General Data Protection Regulation (GDPR). </dct:description>		
+    <dcat:landingPage rdf:resource="https://dpvcg.github.io/dpv/"/>	
+  </rdf:Description>  
+  
+  <rdf:Description rdf:about="https://w3id.org/bot#">
+    <dct:title xml:lang="da">Building Topology Ontology - Unofficial draft</dct:title>
+    <dct:title xml:lang="en">Building Topology Ontology - Unofficial draft</dct:title>	
+    <vann:preferredNamespacePrefix>bot</vann:preferredNamespacePrefix>	
+    <vann:preferredNamespaceUri>http://www.w3.org/ns/dpv#</vann:preferredNamespaceUri>	
+    <dct:description xml:lang="da">The Building Topology Ontology (BOT) is a minimal ontology for describing the core topological concepts of a building. </dct:description>
+    <dct:description xml:lang="en">The Building Topology Ontology (BOT) is a minimal ontology for describing the core topological concepts of a building.</dct:description>		
+    <dcat:landingPage rdf:resource="https://w3c-lbd-cg.github.io/bot/index.html#"/>	
+  </rdf:Description>    
+  
+  <rdf:Description rdf:about="http://www.w3.org/ns/duv#">
+    <dct:title xml:lang="da">Dataset Usage Vocabulary - Working Group Note</dct:title>
+    <dct:title xml:lang="en">Dataset Usage Vocabulary - Working Group Note</dct:title>	
+    <vann:preferredNamespacePrefix>duv</vann:preferredNamespacePrefix>	
+    <vann:preferredNamespaceUri>http://www.w3.org/ns/duv#</vann:preferredNamespaceUri>	
+    <dct:description xml:lang="da">Dataset Usage Vocabulary (DUV) is used to describe consumer experiences, citations, and feedback about the dataset from the human perspective.</dct:description>
+    <dct:description xml:lang="en">Dataset Usage Vocabulary (DUV) is used to describe consumer experiences, citations, and feedback about the dataset from the human perspective.</dct:description>		
+    <dcat:landingPage rdf:resource="https://www.w3.org/TR/vocab-duv/"/>	
+  </rdf:Description>   
+ -->
  
 </rdf:RDF>
