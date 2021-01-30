@@ -47,7 +47,7 @@ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 	</dcat:contactPoint>	
     <foaf:homepage rdf:resource="https://data.gov.dk/catalogue/models/"/>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-01</dct:issued>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-30</dct:modified>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-01-30</dct:modified>
 	
 	<dcat:distribution>   <!-- katalogets distribution -->   
 	   <rdf:Description rdf:about="https://data.gov.dk/catalogue/models/xml/modelkatalog.rdf.xml">
@@ -5637,7 +5637,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
  
   <rdf:Description rdf:about="https://www.w3.org/ns/odrl/2/">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-    <dct:title xml:lang="da"></dct:title>   
+    <dct:title xml:lang="da">ODRL Vocabulary and Expression</dct:title>   
     <dct:title xml:lang="en">ODRL Vocabulary and Expression</dct:title>
     <dct:description xml:lang="da">ODRL (Sprog for åbne digitale rettigheder) er et sprog til at udtrykke politikker, som indeholder en fleksibel og interoperabel informationsmodel, vokabular og kodningmekansimer til at repræsentere udsagn om brug af indhold og tjenester. </dct:description>   
     <dct:description xml:lang="en">The Open Digital Rights Language (ODRL) is a policy expression language that provides a flexible and interoperable information model, vocabulary, and encoding mechanisms for representing statements about the usage of content and services. </dct:description>
