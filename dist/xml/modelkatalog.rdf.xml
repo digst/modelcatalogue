@@ -6338,29 +6338,31 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:title xml:lang="en">Data Privacy Vocabulary - Unofficial draft</dct:title>	
     <vann:preferredNamespacePrefix>dpv</vann:preferredNamespacePrefix>	
     <vann:preferredNamespaceUri>http://www.w3.org/ns/dpv#</vann:preferredNamespaceUri>	
-    <dct:description xml:lang="da">The Data Privacy Vocabulary (DPV) provides terms (classes and properties) to describe and represent information related to processing of personal data based on established requirements such as for the EU General Data Protection Regulation (GDPR). </dct:description>
+    <dct:description xml:lang="da">The Data Privacy Vocabulary (DPV) specificerer klasser og egenskaber der kan anvendes til at beskrive og repræsentere information relateret til behandling af persondataoplysninger iht. GDPR. </dct:description>
     <dct:description xml:lang="en">The Data Privacy Vocabulary (DPV) provides terms (classes and properties) to describe and represent information related to processing of personal data based on established requirements such as for the EU General Data Protection Regulation (GDPR). </dct:description>		
     <dcat:landingPage rdf:resource="https://dpvcg.github.io/dpv/"/>	
   </rdf:Description>  
 
 
-
- 
 <!-- =======================================================   -->
-<!--    Dataset Usage Vocabulary   		   -->
+<!--    Dataset Usage Vocabulary    		   -->
 <!-- =======================================================  --> 
 
+
   <rdf:Description rdf:about="http://www.w3.org/ns/duv#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>  
     <dct:title xml:lang="da">Dataset Usage Vocabulary - Working Group Note</dct:title>
     <dct:title xml:lang="en">Dataset Usage Vocabulary - Working Group Note</dct:title>	
     <vann:preferredNamespacePrefix>duv</vann:preferredNamespacePrefix>	
     <vann:preferredNamespaceUri>http://www.w3.org/ns/duv#</vann:preferredNamespaceUri>	
-    <dct:description xml:lang="da">Dataset Usage Vocabulary (DUV) is used to describe consumer experiences, citations, and feedback about the dataset from the human perspective.</dct:description>
+    <dct:description xml:lang="da">Vokabular for datasætanvendelse (DUV) kan bruges til at beskrive brugeroplevelser, henvisninger og feedback omkring et datasæt fra et brugerperspektiv.</dct:description>
     <dct:description xml:lang="en">Dataset Usage Vocabulary (DUV) is used to describe consumer experiences, citations, and feedback about the dataset from the human perspective.</dct:description>		
     <dcat:landingPage rdf:resource="https://www.w3.org/TR/vocab-duv/"/>	
   </rdf:Description>   
 
-	
+
 <!-- =======================================================   -->
 <!--    Building Topology Ontology    		   -->
 <!-- =======================================================  --> 
@@ -6368,16 +6370,18 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
   
   <rdf:Description rdf:about="https://w3id.org/bot#">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
-    <mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>	  
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>	  
     <dct:title xml:lang="da">Building Topology Ontology - Unofficial draft</dct:title>
     <dct:title xml:lang="en">Building Topology Ontology - Unofficial draft</dct:title>	
     <vann:preferredNamespacePrefix>bot</vann:preferredNamespacePrefix>	
     <vann:preferredNamespaceUri>http://www.w3.org/ns/dpv#</vann:preferredNamespaceUri>	
-    <dct:description xml:lang="da">The Building Topology Ontology (BOT) is a minimal ontology for describing the core topological concepts of a building. </dct:description>
+    <dct:description xml:lang="da">Ontologien for bygningstypologi (BOT) er en mindre ontologi til beskrivelse af de centrale bygningstypologiske begreber.  </dct:description>
     <dct:description xml:lang="en">The Building Topology Ontology (BOT) is a minimal ontology for describing the core topological concepts of a building.</dct:description>		
     <dcat:landingPage rdf:resource="https://w3c-lbd-cg.github.io/bot/index.html#"/>	
   </rdf:Description>    
+
+
 
  
 </rdf:RDF>
