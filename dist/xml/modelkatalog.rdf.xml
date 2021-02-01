@@ -4456,8 +4456,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:title xml:lang="en">Asset Description Metadata Schema (ADMS) - Working Group Note</dct:title>	
     <vann:preferredNamespacePrefix>adms</vann:preferredNamespacePrefix>	
     <vann:preferredNamespaceUri>http://www.w3.org/ns/duv#</vann:preferredNamespaceUri>	
-    <dct:description xml:lang="da">ADMS er en profil af DCAT som kan anvendes til at beskrive semantiske aktiver (eller blot aktiver), der defineres som særdeles genbrugelige metadata (fx. xml schemaer, generiske datamodeller, og referencedata (fx kodelister, taksonomier, ordbøger, vokabularer) som anvendes ifm. eGovernment systemudvikling.
-	Vokabular for datasætanvendelse (DUV) kan bruges til at beskrive brugeroplevelser, henvisninger og feedback omkring et datasæt fra et brugerperspektiv.</dct:description>
+    <dct:description xml:lang="da">ADMS er en profil af DCAT som kan anvendes til at beskrive semantiske aktiver (eller blot aktiver), der defineres som særdeles genbrugelige metadata (fx. xml schemaer, generiske datamodeller, og referencedata (fx kodelister, taksonomier, ordbøger, vokabularer) som anvendes ifm. eGovernment systemudvikling.</dct:description>
     <dct:description xml:lang="en">ADMS is a profile of DCAT, used to describe semantic assets (or just 'Assets'), defined as highly reusable metadata (e.g. xml schemata, generic data models) and reference data (e.g. code lists, taxonomies, dictionaries, vocabularies) that are used for eGovernment system development.</dct:description>		
     <dcat:landingPage rdf:resource="https://www.w3.org/TR/vocab-adms/"/>	
     <dcat:distribution rdf:resource="http://www.w3.org/ns/adms.rdf"/>
