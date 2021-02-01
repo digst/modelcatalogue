@@ -6298,6 +6298,8 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:landingPage rdf:resource="https://www.w3.org/TR/vocab-data-cube/"/>	
   </rdf:Description>  
 
+
+
 <!-- =======================================================   -->
 <!--    Shapes Constraint Language (SHACL)	   		   -->
 <!-- =======================================================  --> 
@@ -6330,14 +6332,16 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:landingPage rdf:resource="https://www.w3.org/ns/shacl#"/>	
   </rdf:Description>  
 
-
-
-<!-- =======================================================  unofficial drafts	   / group notes  
-
+<!-- =======================================================   -->
+<!--    Data Privacy Vocabulary - Unofficial draft   		   -->
+<!-- =======================================================  --> 
 
 
 
   <rdf:Description rdf:about="http://www.w3.org/ns/dpv#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>	  
     <dct:title xml:lang="da">Data Privacy Vocabulary - Unofficial draft</dct:title>
     <dct:title xml:lang="en">Data Privacy Vocabulary - Unofficial draft</dct:title>	
     <vann:preferredNamespacePrefix>dpv</vann:preferredNamespacePrefix>	
@@ -6346,8 +6350,17 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:description xml:lang="en">The Data Privacy Vocabulary (DPV) provides terms (classes and properties) to describe and represent information related to processing of personal data based on established requirements such as for the EU General Data Protection Regulation (GDPR). </dct:description>		
     <dcat:landingPage rdf:resource="https://dpvcg.github.io/dpv/"/>	
   </rdf:Description>  
+
+
+<!-- =======================================================   -->
+<!--    Building Topology Ontology    		   -->
+<!-- =======================================================  --> 
+
   
   <rdf:Description rdf:about="https://w3id.org/bot#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>	  
     <dct:title xml:lang="da">Building Topology Ontology - Unofficial draft</dct:title>
     <dct:title xml:lang="en">Building Topology Ontology - Unofficial draft</dct:title>	
     <vann:preferredNamespacePrefix>bot</vann:preferredNamespacePrefix>	
@@ -6356,7 +6369,9 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:description xml:lang="en">The Building Topology Ontology (BOT) is a minimal ontology for describing the core topological concepts of a building.</dct:description>		
     <dcat:landingPage rdf:resource="https://w3c-lbd-cg.github.io/bot/index.html#"/>	
   </rdf:Description>    
-  
+
+ 
+<!--  
   <rdf:Description rdf:about="http://www.w3.org/ns/duv#">
     <dct:title xml:lang="da">Dataset Usage Vocabulary - Working Group Note</dct:title>
     <dct:title xml:lang="en">Dataset Usage Vocabulary - Working Group Note</dct:title>	
@@ -6366,6 +6381,6 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:description xml:lang="en">Dataset Usage Vocabulary (DUV) is used to describe consumer experiences, citations, and feedback about the dataset from the human perspective.</dct:description>		
     <dcat:landingPage rdf:resource="https://www.w3.org/TR/vocab-duv/"/>	
   </rdf:Description>   
- -->
+-->
  
 </rdf:RDF>
