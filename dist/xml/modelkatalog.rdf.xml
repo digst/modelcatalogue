@@ -4442,6 +4442,69 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">57K</schema:fileSize>
   </rdf:Description>  
  
+ 
+<!-- =======================================================   -->
+<!--    Asset Description Metadata Schema (ADMS)    		   -->
+<!-- =======================================================  --> 
+
+
+  <rdf:Description rdf:about="http://www.w3.org/ns/adms#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>  
+    <dct:title xml:lang="da">Asset Description Metadata Schema (ADMS) - Working Group Note</dct:title>
+    <dct:title xml:lang="en">Asset Description Metadata Schema (ADMS) - Working Group Note</dct:title>	
+    <vann:preferredNamespacePrefix>adms</vann:preferredNamespacePrefix>	
+    <vann:preferredNamespaceUri>http://www.w3.org/ns/duv#</vann:preferredNamespaceUri>	
+    <dct:description xml:lang="da">ADMS er en profil af DCAT som kan anvendes til at beskrive semantiske aktiver (eller blot aktiver), der defineres som særdeles genbrugelige metadata (fx. xml schemaer, generiske datamodeller, og referencedata (fx kodelister, taksonomier, ordbøger, vokabularer) som anvendes ifm. eGovernment systemudvikling.
+	Vokabular for datasætanvendelse (DUV) kan bruges til at beskrive brugeroplevelser, henvisninger og feedback omkring et datasæt fra et brugerperspektiv.</dct:description>
+    <dct:description xml:lang="en">ADMS is a profile of DCAT, used to describe semantic assets (or just 'Assets'), defined as highly reusable metadata (e.g. xml schemata, generic data models) and reference data (e.g. code lists, taxonomies, dictionaries, vocabularies) that are used for eGovernment system development.</dct:description>		
+    <dcat:landingPage rdf:resource="https://www.w3.org/TR/vocab-adms/"/>	
+    <dcat:distribution rdf:resource="http://www.w3.org/ns/adms.rdf"/>
+    <dcat:distribution rdf:resource="http://www.w3.org/ns/adms.ttl"/>	
+  </rdf:Description>   
+
+  <!-- Udgivelse: ADMS Turtle -->
+  <rdf:Description rdf:about="http://www.w3.org/ns/adms.ttl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://www.w3.org/ns/adms.ttl"/>
+    <dct:title xml:lang="da">ADMS TTL</dct:title>
+    <dct:title xml:lang="en">ADMS  TTL</dct:title>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">46K</schema:fileSize>
+  </rdf:Description>
+  <!-- Udgivelse: ADMS RDF -->
+  <rdf:Description rdf:about="http://www.w3.org/ns/adms.rdf">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://www.w3.org/ns/adms.rdf"/>
+    <dct:title xml:lang="da">ADMS RDF/XML</dct:title>
+    <dct:title xml:lang="en">ADMS RDF/XML</dct:title>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">57K</schema:fileSize>
+  </rdf:Description>  
+ 
+ 
+<!-- =======================================================   -->
+<!--    ADMS-AP for JoinUp 									    -->
+<!-- =======================================================  --> 
+
+
+  <rdf:Description rdf:about="http://data.europa.eu/w21/">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>  
+    <dct:title xml:lang="da">ADMS-AP til JoinUp</dct:title>
+    <dct:title xml:lang="en">ADMS-AP til JoinUp</dct:title>	
+    <vann:preferredNamespacePrefix>adms-ap</vann:preferredNamespacePrefix>	
+    <vann:preferredNamespaceUri>http://data.europa.eu/w21/</vann:preferredNamespaceUri>	
+    <dct:description xml:lang="da">Udvidelse af ADMS-AP til beskrivelse af interoperabilitetsløsninger som forstået i kontekst af EIF (European Interoperability Framework)</dct:description>
+    <dct:description xml:lang="en">The Asset Description Metadata Schema (ADMS) specification was originally drafted to describe semantic interoperability solutions (previously referred to as semantic assets). This application profile of ADMS aims to extend the use of ADMS for the description of other types of interoperability solutions, meaning solutions covering the political, legal, organisational and technical interoperability layers defined by the European Interoperability Framework.</dct:description>		
+    <dcat:landingPage rdf:resource="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/asset-description-metadata-schema-adms/release/20"/>		
+	<foaf:page rdf:resource="https://github.com/SEMICeu/ADMS-AP"/>
+  </rdf:Description>   
+
+ 
+ 
   <!-- Datasætmetadata (VoID) -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
