@@ -2361,14 +2361,21 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <dcat:landingPage rdf:resource="http://www2.sdfe.dk/tkv-modeller/"/>	<!-- Indsæt evt. destinationsside--> 	
 
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
-	<dct:conformsTo rdf:resource="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering"/>
+    <dct:conformsTo rdf:resource="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering"/>
     <dadk:businessArea>Vandløb og søer til afledning af vand </dadk:businessArea>
     <dadk:businessAreaCode>37.25.26</dadk:businessAreaCode>
     <dcat:landingPage rdf:resource="http://www2.sdfe.dk/tkv-modeller/"/>	
     <dcat:distribution rdf:resource="https://geo.data.gov.dk/model/C3A6F5B9-232E-430c-B97E-E56E17FF219F-xmi"/>	
-    <dcat:distribution rdf:resource="https://geo.data.gov.dk/model/C3A6F5B9-232E-430c-B97E-E56E17FF219F-html"/>		
   </rdf:Description>  
-  
+	
+  <!-- Udgivelse: XMI -->
+  <rdf:Description rdf:about="https://geo.data.gov.dk/model/C3A6F5B9-232E-430c-B97E-E56E17FF219F-xmi">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://www2.sdfe.dk/tkv-modeller/Vandl%C3%B8bsreferencen.xmi"/>
+    <dct:title xml:lang="da">Vandløbsreferencen.xmi</dct:title>
+    <dct:title xml:lang="en">Vandløbsreferencen.xmi</dct:title>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
+  </rdf:Description>   	
   
    <!-- ==================================================   -->   
    <!-- Logisk datamodel for Vandløbsskikkelse--> 
@@ -2400,15 +2407,22 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 	</dcat:contactPoint> 	
     <voag:isApprovedBy>Styregruppe for TKV</voag:isApprovedBy> 
     <voag:approvalStatus rdf:resource="https:/data.gov.dk/concept/approvalStatus/Approved"/>		
-    <dcat:landingPage rdf:resource="http://www2.sdfe.dk/tkv-modeller/"/>	<!-- Indsæt evt. destinationsside--> 	
-
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
 	<dct:conformsTo rdf:resource="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering"/>
     <dadk:businessArea>Vandløb og søer til afledning af vand </dadk:businessArea>
     <dadk:businessAreaCode>37.25.26</dadk:businessAreaCode>
-    <dcat:landingPage rdf:resource="http://www2.sdfe.dk/tkv-modeller/"/>	
+    <dcat:landingPage rdf:resource="http://www2.sdfe.dk/tkv-modeller/"/>
+    <dcat:distribution rdf:resource="https://geo.data.gov.dk/model/C3A6F5B9-232E-430c-B97E-E56E17FF219F-xmi"/>		    
   </rdf:Description>  
-
+	
+  <!-- Udgivelse: XMI -->
+  <rdf:Description rdf:about="https://geo.data.gov.dk/model/profile/watercourseshape-xmi">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://www2.sdfe.dk/tkv-modeller/Vandl%C3%B8bsskikkelse.xmi"/>
+    <dct:title xml:lang="da">Vandløbsskikkelse.xmi</dct:title>
+    <dct:title xml:lang="en">Vandløbsskikkelse.xmi</dct:title>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
+  </rdf:Description>   
   
  
    <!-- ==================================================   -->   
@@ -2444,11 +2458,22 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
   <!--   <dcat:landingPage rdf:resource="http://www2.sdfe.dk/tkv-modeller/"/>	Indsæt evt. destinationsside--> 	
 
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
-	<dct:conformsTo rdf:resource="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering"/>
+    <dct:conformsTo rdf:resource="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering"/>
     <dadk:businessArea>Vandløb og søer til afledning af vand </dadk:businessArea>
     <dadk:businessAreaCode>37.25.26</dadk:businessAreaCode>
     <dcat:landingPage rdf:resource="http://www2.sdfe.dk/tkv-modeller/"/>	
+    <dcat:distribution rdf:resource="https://geo.data.gov.dk/model/profile/hydrometri-xmi"/>		    
   </rdf:Description>  
+	
+  <!-- Udgivelse: XMI -->
+  <rdf:Description rdf:about="https://geo.data.gov.dk/model/profile/hydrometri-xmi">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://www2.sdfe.dk/tkv-modeller/Hydrometri.xmi"/>
+    <dct:title xml:lang="da">Hydrometri.xmi</dct:title>
+    <dct:title xml:lang="en">Hydrometri.xmi</dct:title>    
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
+  </rdf:Description>   
+  
 
    <!-- ==================================================   -->  
    <!-- Logisk datamodel for LER--> 
