@@ -6344,26 +6344,12 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
   </rdf:Description>  
 
 
-<!-- =======================================================   -->
-<!--    Building Topology Ontology    		   -->
-<!-- =======================================================  --> 
-
-  
-  <rdf:Description rdf:about="https://w3id.org/bot#">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
-	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>	  
-    <dct:title xml:lang="da">Building Topology Ontology - Unofficial draft</dct:title>
-    <dct:title xml:lang="en">Building Topology Ontology - Unofficial draft</dct:title>	
-    <vann:preferredNamespacePrefix>bot</vann:preferredNamespacePrefix>	
-    <vann:preferredNamespaceUri>http://www.w3.org/ns/dpv#</vann:preferredNamespaceUri>	
-    <dct:description xml:lang="da">The Building Topology Ontology (BOT) is a minimal ontology for describing the core topological concepts of a building. </dct:description>
-    <dct:description xml:lang="en">The Building Topology Ontology (BOT) is a minimal ontology for describing the core topological concepts of a building.</dct:description>		
-    <dcat:landingPage rdf:resource="https://w3c-lbd-cg.github.io/bot/index.html#"/>	
-  </rdf:Description>    
 
  
-<!--  
+<!-- =======================================================   -->
+<!--    Dataset Usage Vocabulary   		   -->
+<!-- =======================================================  --> 
+
   <rdf:Description rdf:about="http://www.w3.org/ns/duv#">
     <dct:title xml:lang="da">Dataset Usage Vocabulary - Working Group Note</dct:title>
     <dct:title xml:lang="en">Dataset Usage Vocabulary - Working Group Note</dct:title>	
@@ -6373,6 +6359,25 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:description xml:lang="en">Dataset Usage Vocabulary (DUV) is used to describe consumer experiences, citations, and feedback about the dataset from the human perspective.</dct:description>		
     <dcat:landingPage rdf:resource="https://www.w3.org/TR/vocab-duv/"/>	
   </rdf:Description>   
--->
+
+	
+<!-- =======================================================   -->
+<!--    Building Topology Ontology    		   -->
+<!-- =======================================================  --> 
+
+  
+  <rdf:Description rdf:about="https://w3id.org/bot#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+    <mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>	  
+    <dct:title xml:lang="da">Building Topology Ontology - Unofficial draft</dct:title>
+    <dct:title xml:lang="en">Building Topology Ontology - Unofficial draft</dct:title>	
+    <vann:preferredNamespacePrefix>bot</vann:preferredNamespacePrefix>	
+    <vann:preferredNamespaceUri>http://www.w3.org/ns/dpv#</vann:preferredNamespaceUri>	
+    <dct:description xml:lang="da">The Building Topology Ontology (BOT) is a minimal ontology for describing the core topological concepts of a building. </dct:description>
+    <dct:description xml:lang="en">The Building Topology Ontology (BOT) is a minimal ontology for describing the core topological concepts of a building.</dct:description>		
+    <dcat:landingPage rdf:resource="https://w3c-lbd-cg.github.io/bot/index.html#"/>	
+  </rdf:Description>    
+
  
 </rdf:RDF>
