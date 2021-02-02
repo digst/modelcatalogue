@@ -2358,8 +2358,6 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 	</dcat:contactPoint> 	
     <voag:isApprovedBy>Styregruppe for TKV</voag:isApprovedBy> 
     <voag:approvalStatus rdf:resource="https:/data.gov.dk/concept/approvalStatus/Approved"/>		
-    <dcat:landingPage rdf:resource="http://www2.sdfe.dk/tkv-modeller/"/>	<!-- Indsæt evt. destinationsside--> 	
-
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
     <dct:conformsTo rdf:resource="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering"/>
     <dadk:businessArea>Vandløb og søer til afledning af vand </dadk:businessArea>
@@ -2436,7 +2434,7 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <dct:title xml:lang="en">Hydrometri</dct:title>
     <dct:description xml:lang="da">Denne anvendelsesmodel beskriver de elementer der indgår i måling af  vandløbshydrometri. Modellen er lavet i forbindelse med TKV-projektet "Samling af Vandløbsdata" SaV under FODS initiativ 6.1.</dct:description>
     <dct:description xml:lang="en">This application model describes the elements that are included in the description of a watercourse shape. The model is made in connection with the TKV project "Collection of Watercourse Data" SaV.</dct:description>	
-    <vann:preferredNamespaceUri>https://geo.data.gov.dk/model/</vann:preferredNamespaceUri>
+    <vann:preferredNamespaceUri>https://geo.data.gov.dk/model/profile/hydrometri#</vann:preferredNamespaceUri>
 	<dcat:keyword>vandløb</dcat:keyword>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"> </dct:issued>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></owl:versionInfo>
@@ -2485,7 +2483,8 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <dct:title xml:lang="en">Model for Danish Register of Underground Cable Owners</dct:title>
     <dct:title xml:lang="da">Ledningsejerregisteret - Udveksling af ledningsoplysninger </dct:title>
     <dct:description xml:lang="da">Datamodellen for udveksling af ledningsoplysninger benyttes til udveksling af informationer om nedgravet infrastruktur, fra ledningsejere til LER-systemet, som svar på en graveforespørgsel</dct:description>
-    <dcat:keyword>ledninger</dcat:keyword>	
+    <vann:preferredNamespaceUri>https://geo.data.gov.dk/model/f6eda88e-08dc-4188-ac4a-3dfd0a2ec61e#</vann:preferredNamespaceUri>	
+	  <dcat:keyword>ledninger</dcat:keyword>	
 	<dcat:keyword>rørføring</dcat:keyword>
 	<dcat:keyword>LER</dcat:keyword>	
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
