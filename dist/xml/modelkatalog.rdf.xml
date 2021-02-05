@@ -3959,7 +3959,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
  
 	<rdf:Description rdf:about="https://op.europa.eu/en/web/eu-vocabularies/authority-tables">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ClassificationModel"/>			
+        <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#ClassificationModel"/>				
 	<dct:publisher>
 		<foaf:Agent>
 			<foaf:name>Publications Office of the European Union</foaf:name>
@@ -5727,6 +5727,8 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:title xml:lang="en">ODRL Vocabulary and Expression</dct:title>
     <dct:description xml:lang="da">ODRL (Sprog for åbne digitale rettigheder) er et sprog til at udtrykke politikker, som indeholder en fleksibel og interoperabel informationsmodel, vokabular og kodningmekansimer til at repræsentere udsagn om brug af indhold og tjenester. </dct:description>   
     <dct:description xml:lang="en">The Open Digital Rights Language (ODRL) is a policy expression language that provides a flexible and interoperable information model, vocabulary, and encoding mechanisms for representing statements about the usage of content and services. </dct:description>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>
     <vann:preferredNamespacePrefix>odrl</vann:preferredNamespacePrefix>
     <vann:preferredNamespaceUri>http://www.w3.org/ns/odrl/2/</vann:preferredNamespaceUri>
     <dcat:keyword>rettigheder</dcat:keyword>
@@ -5748,7 +5750,6 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:landingPage rdf:resource="https://www.w3.org/ns/odrl/2/"/>
     <foaf:page rdf:resource="https://www.w3.org/TR/odrl-vocab/"/>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/JUST"/>
-    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel"/>
     <dct:conformsTo rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <dadk:businessArea>Samfundsdigitalisering</dadk:businessArea>
     <dadk:businessAreaCode>06.38</dadk:businessAreaCode>
@@ -5800,7 +5801,8 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
 		<dct:description xml:lang="da">Den semantisk sensornetværksontologi (SSN) er en ontologi der beskriver sensore og deres observationer, de involverede procedurer, de undersøgte features, de dertil anvendte prøver, de observerede egenskaber og  aktuatorer. SSN følger en horisontalt og vertikalt modulariseret arkitektur ved at inkludere en let, men selvstændig kerneontologi kaldet SOSA (Sensor, Obeservation, Prøve og Aktuator) til dets grundlæggende klasser og egenskaber. Med deres forskellige scope og grad af aksiomisering, kan SSN og SOSA uderstøtte en bred vifte and anvendelser og use cases, herunder satellitfotografering, omfattende videnskabelig overvågning, infrastruktur til industri og hjem, sociale sonsore, borgerdrevet videnskab, observationsdrevet ontologiudarbejdelse og IoT</dct:description>   
 		<dct:description xml:lang="en">The Semantic Sensor Network (SSN) ontology is an ontology for describing sensors and their observations, the involved procedures, the studied features of interest, the samples used to do so, and the observed properties, as well as actuators. SSN follows a horizontal and vertical modularization architecture by including a lightweight but self-contained core ontology called SOSA (Sensor, Observation, Sample, and Actuator) for its elementary classes and properties. With their different scope and different degrees of axiomatization, SSN and SOSA are able to support a wide range of applications and use cases, including satellite imagery, large-scale scientific monitoring, industrial and household infrastructures, social sensing, citizen science, observation-driven ontology engineering, and the Web of Things.</dct:description>
 		<dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
-		<vann:preferredNamespacePrefix>ssn</vann:preferredNamespacePrefix>
+	        <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+	        <mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>
 		<vann:preferredNamespaceUri>http://www.w3.org/ns/ssn/</vann:preferredNamespaceUri>
 		<dcat:keyword>sensore</dcat:keyword>
 		<dcat:keyword>sensornetværk</dcat:keyword>
@@ -5822,7 +5824,6 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
 		<dcat:landingPage rdf:resource="https://www.w3.org/TR/vocab-ssn/"/>
 		<foaf:page rdf:resource="https://www.w3.org/TR/vocab-ssn/"/>
 		<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TECH"/>
-		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel"/>
 		<dct:conformsTo rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
 		<dadk:businessArea>06.38</dadk:businessArea>
 		<dadk:businessAreaCode>Samfundsdigitalisering</dadk:businessAreaCode>
@@ -5855,6 +5856,8 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:description xml:lang="da">Letvægtsontologi der definerer centrale klasser og egenskaber for sensore, observationer, prøver og aktuatorer. Beregnet til at fungere i sammenhæng med SSN-ontologien (den semantisk netværksontologi).</dct:description>   
     <dct:description xml:lang="en">This ontology is based on the SSN Ontology by the W3C Semantic Sensor Networks Incubator Group (SSN-XG), together with considerations from the W3C/OGC Spatial Data on the Web Working Group.</dct:description>
     <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+    <mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>	
     <vann:preferredNamespacePrefix>sosa</vann:preferredNamespacePrefix>
     <vann:preferredNamespaceUri>http://www.w3.org/ns/sosa/</vann:preferredNamespaceUri>
     <dcat:keyword>måling</dcat:keyword>
@@ -5876,7 +5879,6 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:landingPage rdf:resource="https://www.w3.org/TR/vocab-ssn/"/>
     <foaf:page rdf:resource="https://www.w3.org/TR/vocab-ssn/"/>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TECH"/>
-    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel"/>
     <dct:conformsTo rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <dadk:businessArea>06.38</dadk:businessArea>
     <dadk:businessAreaCode>Samfundsdigitalisering</dadk:businessAreaCode>
@@ -5909,6 +5911,8 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:description xml:lang="da">Vokabular til beskrivelse af flerdimensionelle data, fx statistik, publiceret på internettet, og links til relaterede datasæt og begreber. Vokabularet anvender RDF-standarden og den underliggende model er kombatible med SMDX (Statistical Data and Metadata eXchange), der er en ISO-standard for udveksling og deling af statitiske data og metadata mellem organisationer.</dct:description>   
     <dct:description xml:lang="en">There are many situations where it would be useful to be able to publish multi-dimensional data, such as statistics, on the web in such a way that it can be linked to related data sets and concepts. The Data Cube vocabulary provides a means to do this using the W3C RDF (Resource Description Framework) standard. The model underpinning the Data Cube vocabulary is compatible with the cube model that underlies SDMX (Statistical Data and Metadata eXchange), an ISO standard for exchanging and sharing statistical data and metadata among organizations. The Data Cube vocabulary is a core foundation which supports extension vocabularies to enable publication of other aspects of statistical data flows or other multi-dimensional data set</dct:description>
     <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+    <mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>	
     <vann:preferredNamespacePrefix>qb</vann:preferredNamespacePrefix>
     <vann:preferredNamespaceUri>http://purl.org/linked-data/cube#</vann:preferredNamespaceUri>
     <dcat:keyword>multidimensionelle data</dcat:keyword>
@@ -5930,7 +5934,6 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:landingPage rdf:resource="https://www.w3.org/TR/vocab-data-cube/"/>
     <foaf:page rdf:resource="https://www.w3.org/TR/vocab-data-cube/"/>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TECH"/>
-    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel"/>
     <dct:conformsTo rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <dadk:businessArea>06.40</dadk:businessArea>
     <dadk:businessAreaCode>Statistik</dadk:businessAreaCode>
@@ -5963,6 +5966,8 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:description xml:lang="da">Vokabular for kriterie - det der bruges som basis for en afgørelse eller en beslutning, fx et krav i et offentligt udbud eller en betingelse der skal være opfyldt for at modtage en offentlig ydelse, og bevis - det der dokumenterer at noget eksisterer eller er sandt, specifikt bevis for at et specifikt kriterie er opfyldt.</dct:description>   
     <dct:description xml:lang="en">The Core Criterion and Core Evidence Vocabulary (CCCEV) contains two basic and complementary core concepts: the criterion, something used as the basis for making a judgement or decision, e.g. a requirement set in a public tender or a condition that has to be fulfilled for a public service to be executed; and the evidence, something which proves that something else exists or is true, in particular an evidence is used to prove that a specific criterion is met by someone of by something.</dct:description>
     <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+    <mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>	
     <vann:preferredNamespacePrefix>cccev</vann:preferredNamespacePrefix>
     <vann:preferredNamespaceUri>http://data.europa.eu/m8g/cccev</vann:preferredNamespaceUri>
     <dcat:keyword>kriterie</dcat:keyword>
@@ -5984,7 +5989,6 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:landingPage rdf:resource="https://joinup.ec.europa.eu/release/core-criterion-and-core-evidence-vocabulary-v100"/>
     <foaf:page rdf:resource="https://joinup.ec.europa.eu/release/core-criterion-and-core-evidence-vocabulary-v100"/>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/GOVE"/>
-    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ApplicationModel"/>
     <dct:conformsTo rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <dadk:businessArea>Kontraktforvaltning, udbud og outsourcing </dadk:businessArea>
     <dadk:businessAreaCode>67.50.56</dadk:businessAreaCode>
@@ -6098,6 +6102,8 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:description xml:lang="da">Ontologien er udarbejdet for at understøtte representation af Lynx dokumenter, fx dokumenter relateret til compliance, som er værd at medtage i en juridisk vidensgraf. Denne specifikation fungerer som datamodel for dokumenter i Lynx-projektet. Lynx-dokumenter følger NIF (NLP Interchange Format) specifikationen og genbruger i høj graf metadata elementer fra ELI</dct:description>   
     <dct:description xml:lang="en">This ontology has been made with the purpose of supporting the representation of Lynx Documents, e.g., any document related to compliance worth to be in a Legal Knowledge Graph. This specification serves as a data model for documents in the Lynx project.Lynx Documents are compliant with NIF (NLP Interchange Format) specification and heavily reuses ELI metadata elements.</dct:description>
     <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
+    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+    <mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>	  
     <vann:preferredNamespacePrefix>lkg</vann:preferredNamespacePrefix>
     <vann:preferredNamespaceUri>http://lkg.lynx-project.eu/def/</vann:preferredNamespaceUri>
     <dcat:keyword>Lynx</dcat:keyword>
@@ -6118,7 +6124,6 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:landingPage rdf:resource="https://lynx-project.eu/doc/lkg/"/>
     <foaf:page rdf:resource=""/>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/JUST"/>
-    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#CoreModel"/>
     <dct:conformsTo rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <dadk:businessArea>Lovgivning</dadk:businessArea>
     <dadk:businessAreaCode>05.10</dadk:businessAreaCode>
