@@ -3616,7 +3616,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
  
  
    <!-- ==================================================  -->  
-   <!--  Klassifikation: FBB funktionsevnekatalog		 					    -->
+   <!--  Klassifikation: FFB funktionsevnekatalog		 					    -->
    <!-- ==================================================  -->   
    <rdf:Description rdf:about="https://data.gov.dk/concept/profile/social/ffb/funktionsevnekatalog/">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
@@ -3635,7 +3635,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
 		</vcard:Kind>	
 	</dcat:contactPoint>		
     <dct:title xml:lang="da">Klassifikation: (FFB) Fælleskommunalt funktionsevnekatalog</dct:title>
-    <dct:title xml:lang="en">Classification: (FBB) Municipal catalogue of functional abilities</dct:title>
+    <dct:title xml:lang="en">Classification: (FFB) Municipal catalogue of functional abilities</dct:title>
     <dct:description xml:lang="da">Fælles og klassificerede begreber mellem myndighed og drift på det specialiserede socialområde for voksne. Anvendes ifm. dokumentationsopgaver under sagsbehandling og levering af sociale indsatser, så der etableres fælles sprog og produktion af strukturerede data.</dct:description>	   
     <dct:description xml:lang="en">Concepts concerning functional abilities in the social area.</dct:description>
     <vann:preferredNamespaceUri>https://data.gov.dk/concept/profile/social/ffb/funktionsevnekatalog/</vann:preferredNamespaceUri>		   
@@ -3657,9 +3657,9 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
  
 
    <!-- ==================================================  -->  
-   <!--  Klassifikation: FBB indsatskatalog							    -->
+   <!--  Klassifikation: FFB indsatskatalog							    -->
    <!-- ==================================================  -->   
-   <rdf:Description rdf:about="https://data.gov.dk/concept/profile/social/ffb/indsatskatalog/ ">
+   <rdf:Description rdf:about="https://data.gov.dk/concept/profile/social/ffb/indsatskatalog/">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
     <dadk:modelType rdf:resource="https://data.gov.dk/concept/core/modeltype#ClassificationModel"/>	
 	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>		
@@ -3676,7 +3676,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
 		</vcard:Kind>	
 	</dcat:contactPoint>		
     <dct:title xml:lang="da">Klassifikation: (FFB) Fælleskommunalt indsatskatalog</dct:title>
-    <dct:title xml:lang="en">Classification: (FBB) Municipal catalogue of social initiatives</dct:title>
+    <dct:title xml:lang="en">Classification: (FFB) Municipal catalogue of social initiatives</dct:title>
     <dct:description xml:lang="da">Fælles og klassificerede begreber mellem myndighed og drift på det specialiserede socialområde for voksne. Anvendes ifm. dokumentationsopgaver under sagsbehandling og levering af sociale indsatser, så der etableres fælles sprog og produktion af strukturerede data.</dct:description>
     <dct:description xml:lang="en">Concepts related to social initiatives for adults</dct:description>
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-01</dct:modified>  
