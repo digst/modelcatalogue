@@ -2444,8 +2444,8 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <dadk:businessArea>Vandløb og søer til afledning af vand </dadk:businessArea>
     <dadk:businessAreaCode>37.25.26</dadk:businessAreaCode>
     <dcat:landingPage rdf:resource="http://www2.sdfe.dk/tkv-modeller/"/>
-    <dcat:distribution rdf:resource="https://geo.data.gov.dk/model/C3A6F5B9-232E-430c-B97E-E56E17FF219F-xmi"/>		
-    <dcat:distribution rdf:resource="https://geo.data.gov.dk/model/C3A6F5B9-232E-430c-B97E-E56E17FF219F-html"/>	    
+    <dcat:distribution rdf:resource="https://geo.data.gov.dk/model/profile/watercourseshape-xmi"/>		
+    <dcat:distribution rdf:resource="https://geo.data.gov.dk/model/profile/watercourseshape-html"/>	    
   </rdf:Description>  
 	
   <!-- Udgivelse: XMI -->
