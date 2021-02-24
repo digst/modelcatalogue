@@ -2330,13 +2330,23 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 	</dcat:contactPoint>
     <voag:isApprovedBy>Styregruppe for TKV</voag:isApprovedBy> 
     <voag:approvalStatus rdf:resource="https:/data.gov.dk/concept/approvalStatus/Approved"/>
-    <dcat:landingPage rdf:resource="http://www2.sdfe.dk/tkv-modeller/LinearReference"/>
+    <dcat:landingPage rdf:resource="http://www2.sdfe.dk/tkv-modeller/"/>
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
 	<dct:conformsTo rdf:resource="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering"/>
     <dadk:businessArea>Vandløb og søer til afledning af vand </dadk:businessArea>
-    <dadk:businessAreaCode>37.25.26</dadk:businessAreaCode>
-    <dcat:landingPage rdf:resource="?"/>		
+    <dadk:businessAreaCode>37.25.26</dadk:businessAreaCode>	
+    <dcat:distribution rdf:resource="https://geo.data.gov.dk/model/509D4EBC-F5A5-4e07-9CE7-D4585FE29C8E-html"/>			  
   </rdf:Description>   
+	
+  <!-- Udgivelse: HTML -->
+  <rdf:Description rdf:about="https://geo.data.gov.dk/model/509D4EBC-F5A5-4e07-9CE7-D4585FE29C8E-html">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://www2.sdfe.dk/tkv-modeller/LinearReference/"/>
+    <dct:title xml:lang="da">LinearReference</dct:title>
+    <dct:title xml:lang="en">LinearReference</dct:title>    
+    <dct:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTML</dct:format>
+  </rdf:Description>  	
 
   
 
