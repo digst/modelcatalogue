@@ -1084,7 +1084,6 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <voag:approvalStatus rdf:resource="https:/data.gov.dk/concept/approvalStatus/Approved"/>
     <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>	   
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-7-01</dct:issued> 
-
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0.0</owl:versionInfo>	
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/gdk-2-0-0-xmi"/>
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_2.0.0_GeoDanmark.xml"/>
@@ -2246,12 +2245,18 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 			<foaf:homepage>https://sdfe.dk/</foaf:homepage>
 		</foaf:Agent>
 	</dct:publisher>
-    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    <cc:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcat:contactPoint>
+		<vcard:Kind>
+			<vcard:fn>SDFE</vcard:fn>
+			<vcard:hasEmail rdf:resource="dat@sdfe.dk"/>				
+		</vcard:Kind>
+	</dcat:contactPoint>
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
 	<dct:conformsTo rdf:resource="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering"/>
     <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
     <dadk:businessAreaCode>06.38.10.10 </dadk:businessAreaCode>
-  </rdf:Description>   
+  </rdf:Description>     
  
   <!-- ==================================================   --> 
   <!-- Begrebsliste for Identifikation--> 
@@ -2264,10 +2269,10 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <dct:title xml:lang="da">Identifikation </dct:title>
     <dct:description xml:lang="da">Begreber vedrørende identifikation.</dct:description>
     <vann:preferredNamespaceUri>https://geo.data.gov.dk/model/71d084e8-9ec3-4abb-80c9-90dd4da8f0dd#</vann:preferredNamespaceUri>
-    <dcat:keyword>tid</dcat:keyword>
-    <dcat:keyword>temporalitet</dcat:keyword>	
-    <dcat:keyword>bitemporalitet</dcat:keyword>		
-    <dcat:keyword>dobbelthistorik</dcat:keyword>		
+    <dcat:keyword>identifikation</dcat:keyword>
+    <dcat:keyword>identifikator</dcat:keyword>	
+    <dcat:keyword>ident</dcat:keyword>		
+    <dcat:keyword>id</dcat:keyword>		
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">03-09-2019 </dct:issued>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.2.0</owl:versionInfo>
     <adms:versionNotes xml:lang="da">Under udvikling (development)</adms:versionNotes>
@@ -2277,7 +2282,14 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 			<foaf:homepage>https://sdfe.dk</foaf:homepage>
 		</foaf:Agent>
 	</dct:publisher>
-    <dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ConceptModel"/>
+    <dct:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcat:contactPoint>
+		<vcard:Kind>
+			<vcard:fn>SDFE</vcard:fn>
+			<vcard:hasEmail rdf:resource="dat@sdfe.dk"/>				
+		</vcard:Kind>
+	</dcat:contactPoint>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ConceptModel"/>
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
 	<dct:conformsTo rdf:resource="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering"/>
     <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
@@ -2298,8 +2310,8 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 Linear Referencing Systems muliggør specifikation af positioner langs lineære objekter og bruges til at specificere hvor - langs det lineære objekt - hver attributværdi gælder. Begrebsmodellen baserer sig på ISO 19148 Geographic Information - Linear Referencing</dct:description>
     <dct:description xml:lang="en">The concept model is a description of the elements required to support linear referencing. This includes Linear Referencing Systems, linearly located events and linear segments. Linear Referencing Systems enable the specification of positions along linear objects. A Linear Referencing System is used to specify where along the linear object each attribute value applies. The concept model is based on  ISO 19148 Geographic Information - Linear Referencing </dct:description>
     <vann:preferredNamespaceUri>https://geo.data.gov.dk/model/71d084e8-9ec3-4abb-80c9-90dd4da8f0dd#</vann:preferredNamespaceUri>
-    <dcat:keyword>water course</dcat:keyword>	
-	<dcat:keyword>vandløb</dcat:keyword>
+    <dcat:keyword>lineær referering</dcat:keyword>	
+	<dcat:keyword>linear referencing</dcat:keyword>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">28-09-2019 </dct:issued>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.0</owl:versionInfo>
     <adms:versionNotes xml:lang="da">Godkendt (approved)</adms:versionNotes>
@@ -2309,16 +2321,16 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 			<foaf:homepage>https://sdfe.dk</foaf:homepage>
 		</foaf:Agent>
 	</dct:publisher>
-	<dcat:contactPoint>
+	<dct:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+    <dcat:contactPoint>
 		<vcard:Kind>
-			<vcard:fn>Konktaktpunkt</vcard:fn>
-<!--			<vcard:hasEmail rdf:resource="?"/>		 Indsæt kontaktpunkt--> 		
+			<vcard:fn>SDFE</vcard:fn>
+			<vcard:hasEmail rdf:resource="dat@sdfe.dk"/>				
 		</vcard:Kind>
-	</dcat:contactPoint> 	
+	</dcat:contactPoint>
     <voag:isApprovedBy>Styregruppe for TKV</voag:isApprovedBy> 
-    <voag:approvalStatus rdf:resource="https:/data.gov.dk/concept/approvalStatus/Approved"/>	
- <!--    <dcat:landingPage rdf:resource="?"/>	Indsæt evt. destinationsside--> 	
-
+    <voag:approvalStatus rdf:resource="https:/data.gov.dk/concept/approvalStatus/Approved"/>
+    <dcat:landingPage rdf:resource="http://www2.sdfe.dk/tkv-modeller/LinearReference"/>
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
 	<dct:conformsTo rdf:resource="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering"/>
     <dadk:businessArea>Vandløb og søer til afledning af vand </dadk:businessArea>
@@ -2350,12 +2362,12 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 			<foaf:homepage>https://sdfe.dk</foaf:homepage>
 		</foaf:Agent>
 		</dct:publisher>
-	<dcat:contactPoint>
+    <dcat:contactPoint>
 		<vcard:Kind>
-			<vcard:fn>Konktaktpunkt</vcard:fn>
-	<!--		<vcard:hasEmail rdf:resource="?"/>		 Indsæt kontaktpunkt--> 		
+			<vcard:fn>SDFE</vcard:fn>
+			<vcard:hasEmail rdf:resource="geo@sdfe.dk"/>				
 		</vcard:Kind>
-	</dcat:contactPoint> 	
+	</dcat:contactPoint>	
     <voag:isApprovedBy>Styregruppe for TKV</voag:isApprovedBy> 
     <voag:approvalStatus rdf:resource="https:/data.gov.dk/concept/approvalStatus/Approved"/>		
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
@@ -2371,9 +2383,20 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
     <dcat:accessURL rdf:resource="http://www2.sdfe.dk/tkv-modeller/Vandl%C3%B8bsreferencen.xmi"/>
     <dct:title xml:lang="da">Vandløbsreferencen.xmi</dct:title>
-    <dct:title xml:lang="en">Vandløbsreferencen.xmi</dct:title>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
-  </rdf:Description>   	
+    <dct:title xml:lang="en">WaterCourseReference.xmi</dct:title>    
+    <dct:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
+  </rdf:Description>
+  
+  <!-- Udgivelse: HTML -->
+  <rdf:Description rdf:about="https://geo.data.gov.dk/model/C3A6F5B9-232E-430c-B97E-E56E17FF219F-html">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://www2.sdfe.dk/tkv-modeller/FeaturekatalogForVandloebsreferencen/"/>
+    <dct:title xml:lang="da">FeaturekatalogForVandloebsreferencen</dct:title>
+    <dct:title xml:lang="en">FeaturekatalogForVandloebsreferencen</dct:title>    
+    <dct:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTML</dct:format>
+  </rdf:Description>  
   
    <!-- ==================================================   -->   
    <!-- Logisk datamodel for Vandløbsskikkelse--> 
@@ -2397,12 +2420,12 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 			<foaf:homepage>https://sdfe.dk</foaf:homepage>
 		</foaf:Agent>
 		</dct:publisher>
-	<dcat:contactPoint>
+    <dcat:contactPoint>
 		<vcard:Kind>
-			<vcard:fn>Konktaktpunkt</vcard:fn>
-		<!--	<vcard:hasEmail rdf:resource="?"/>		 Indsæt kontaktpunkt--> 		
+			<vcard:fn>SDFE</vcard:fn>
+			<vcard:hasEmail rdf:resource="geo@sdfe.dk"/>				
 		</vcard:Kind>
-	</dcat:contactPoint> 	
+	</dcat:contactPoint>	
     <voag:isApprovedBy>Styregruppe for TKV</voag:isApprovedBy> 
     <voag:approvalStatus rdf:resource="https:/data.gov.dk/concept/approvalStatus/Approved"/>		
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
@@ -2410,7 +2433,8 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <dadk:businessArea>Vandløb og søer til afledning af vand </dadk:businessArea>
     <dadk:businessAreaCode>37.25.26</dadk:businessAreaCode>
     <dcat:landingPage rdf:resource="http://www2.sdfe.dk/tkv-modeller/"/>
-    <dcat:distribution rdf:resource="https://geo.data.gov.dk/model/C3A6F5B9-232E-430c-B97E-E56E17FF219F-xmi"/>		    
+    <dcat:distribution rdf:resource="https://geo.data.gov.dk/model/C3A6F5B9-232E-430c-B97E-E56E17FF219F-xmi"/>		
+    <dcat:distribution rdf:resource="https://geo.data.gov.dk/model/C3A6F5B9-232E-430c-B97E-E56E17FF219F-html"/>	    
   </rdf:Description>  
 	
   <!-- Udgivelse: XMI -->
@@ -2419,23 +2443,35 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <dcat:accessURL rdf:resource="http://www2.sdfe.dk/tkv-modeller/Vandl%C3%B8bsskikkelse.xmi"/>
     <dct:title xml:lang="da">Vandløbsskikkelse.xmi</dct:title>
     <dct:title xml:lang="en">Vandløbsskikkelse.xmi</dct:title>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
-  </rdf:Description>   
+    <dct:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
+  </rdf:Description> 
   
+  <!-- Udgivelse: HTML -->
+  <rdf:Description rdf:about="https://geo.data.gov.dk/model/profile/watercourseshape-html">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://www2.sdfe.dk/tkv-modeller/FeaturekatalogForSkikkelsesdataForVandloeb/"/>
+    <dct:title xml:lang="da">WaterCourseShapeFeatureCatalog</dct:title>
+    <dct:title xml:lang="en">WaterCourseShapeFeatureCatalog</dct:title>    
+    <dct:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTML</dct:format>
+  </rdf:Description> 
+    
  
    <!-- ==================================================   -->   
    <!-- Logisk datamodel for Hydrometri--> 
    <!-- ==================================================   -->    
-    <rdf:Description rdf:about="https://geo.data.gov.dk/model/profile/hydrometri#">	<!-- Bekræft venligst namepace -->
+    <rdf:Description rdf:about="https://geo.data.gov.dk/model/profile/hydrometri#">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
 	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>	
     <dct:title xml:lang="da">Hydrometri</dct:title>
-    <dct:title xml:lang="en">Hydrometri</dct:title>
+    <dct:title xml:lang="en">Hydrometry</dct:title>
     <dct:description xml:lang="da">Denne anvendelsesmodel beskriver de elementer der indgår i måling af  vandløbshydrometri. Modellen er lavet i forbindelse med TKV-projektet "Samling af Vandløbsdata" SaV under FODS initiativ 6.1.</dct:description>
     <dct:description xml:lang="en">This application model describes the elements that are included in the description of a watercourse shape. The model is made in connection with the TKV project "Collection of Watercourse Data" SaV.</dct:description>	
     <vann:preferredNamespaceUri>https://geo.data.gov.dk/model/profile/hydrometri#</vann:preferredNamespaceUri>
 	<dcat:keyword>vandløb</dcat:keyword>
+	<dcat:keyword>hydrometri</dcat:keyword>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"> </dct:issued>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></owl:versionInfo>
     <adms:versionNotes xml:lang="da">Godkendt (approved)</adms:versionNotes>
@@ -2445,16 +2481,14 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 			<foaf:homepage>https://sdfe.dk</foaf:homepage>
 		</foaf:Agent>
 		</dct:publisher>
-	<dcat:contactPoint>
+    <dcat:contactPoint>
 		<vcard:Kind>
-			<vcard:fn>Konktaktpunkt</vcard:fn>
-		<!--	<vcard:hasEmail rdf:resource="?"/>		 Indsæt kontaktpunkt--> 		
+			<vcard:fn>SDFE</vcard:fn>
+			<vcard:hasEmail rdf:resource="dat@sdfe.dk"/>				
 		</vcard:Kind>
 	</dcat:contactPoint> 	
     <voag:isApprovedBy>Styregruppe for TKV</voag:isApprovedBy> 
     <voag:approvalStatus rdf:resource="https:/data.gov.dk/concept/approvalStatus/Approved"/>		
-  <!--   <dcat:landingPage rdf:resource="http://www2.sdfe.dk/tkv-modeller/"/>	Indsæt evt. destinationsside--> 	
-
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
     <dct:conformsTo rdf:resource="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering"/>
     <dadk:businessArea>Vandløb og søer til afledning af vand </dadk:businessArea>
@@ -2469,11 +2503,22 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <dcat:accessURL rdf:resource="http://www2.sdfe.dk/tkv-modeller/Hydrometri.xmi"/>
     <dct:title xml:lang="da">Hydrometri.xmi</dct:title>
     <dct:title xml:lang="en">Hydrometri.xmi</dct:title>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
+    <dct:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
   </rdf:Description>   
-  
 
-   <!-- ==================================================   -->  
+  <!-- Udgivelse: XMI -->
+
+  <rdf:Description rdf:about="https://geo.data.gov.dk/model/profile/hydrometri-html">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="http://www2.sdfe.dk/tkv-modeller/FeaturekatalogForHydrologiskeModelberegninger/"/>
+    <dct:title xml:lang="da">FeaturekatalogForHydrologiskeModelberegninger</dct:title>
+    <dct:title xml:lang="en">FeaturekatalogForHydrologiskeModelberegninger</dct:title>    
+    <dct:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTML</dct:format>
+  </rdf:Description>   
+
+  <!-- ==================================================   -->  
    <!-- Logisk datamodel for LER--> 
    <!-- ==================================================   -->     
   <rdf:Description rdf:about="https://geo.data.gov.dk/model/f6eda88e-08dc-4188-ac4a-3dfd0a2ec61e#">
@@ -2484,7 +2529,7 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <dct:title xml:lang="da">Ledningsejerregisteret - Udveksling af ledningsoplysninger </dct:title>
     <dct:description xml:lang="da">Datamodellen for udveksling af ledningsoplysninger benyttes til udveksling af informationer om nedgravet infrastruktur, fra ledningsejere til LER-systemet, som svar på en graveforespørgsel</dct:description>
     <vann:preferredNamespaceUri>https://geo.data.gov.dk/model/f6eda88e-08dc-4188-ac4a-3dfd0a2ec61e#</vann:preferredNamespaceUri>	
-	  <dcat:keyword>ledninger</dcat:keyword>	
+    <dcat:keyword>ledninger</dcat:keyword>	
 	<dcat:keyword>rørføring</dcat:keyword>
 	<dcat:keyword>LER</dcat:keyword>	
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
@@ -2495,20 +2540,30 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
 			<foaf:homepage>https://sdfe.dk</foaf:homepage>
 		</foaf:Agent>
 	</dct:publisher>
-	<dcat:contactPoint>
+    <dcat:contactPoint>
 		<vcard:Kind>
-			<vcard:fn>Konktaktpunkt</vcard:fn>
-	<!-- 			<vcard:hasEmail rdf:resource="?"/>	Indsæt kontaktpunkt--> 		
+			<vcard:fn>SDFE</vcard:fn>
+			<vcard:hasEmail rdf:resource="fdd@sdfe.dk"/>				
 		</vcard:Kind>
-	</dcat:contactPoint> 	
+	</dcat:contactPoint>	
     <voag:approvalStatus rdf:resource="https:/data.gov.dk/concept/approvalStatus/Approved"/>		
-  <!--  <dcat:landingPage rdf:resource=""/>	 Indsæt evt. destinationsside--> 	
-	
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
 	<dct:conformsTo rdf:resource="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering"/>
     <dadk:businessArea>Ledningsejerregistret, LER </dadk:businessArea>
     <dadk:businessAreaCode>54.15.15.05</dadk:businessAreaCode>
+	<dcat:landingPage rdf:resource="https://ler.dk/Portal/Subsides/P.9.NytLER/P.9.5.Bekendtgoerelse.aspx"/>	
+	<dcat:distribution rdf:resource="https://geo.data.gov.dk/model/profile/ler-xmi"/>	
   </rdf:Description>  
+  
+    <!-- Udgivelse: XMI -->
+  <rdf:Description rdf:about="https://geo.data.gov.dk/model/profile/ler-xmi">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://ler.dk/Files/1.0_LER.xml"/>
+    <dct:title xml:lang="da">LER.xmi</dct:title>
+    <dct:title xml:lang="en">LER.xmi</dct:title>    
+    <dct:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
+  </rdf:Description>   
 
 
    <!-- ==================================================   --> 
