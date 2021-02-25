@@ -353,7 +353,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 		<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>			
 		<dct:title xml:lang="da">Grunddatamodellen</dct:title>   
 		<dct:title xml:lang="en">The Basic Data Model</dct:title>	
-		<dct:description xml:lang="da">Grunddatamodellen er den samlede datamodel for grunddata. Grunddatamyndighederne har i samarbejde skabt én samlet og sammenhængende datamodel for alle grunddata. Datamodellen viser de grunddata, som udstilles på Datafordeleren. Datamodellen kan du bruge til, at få overblik over grunddata og de informationer, grunddata indeholder og til at se hvordan data hænger sammen på tværs af registrene. Destinationssiden giver adgang til Grunddatamodellen som en html- eller eap-distribution. </dct:description>
+		<dct:description xml:lang="da">Grunddatamodellen er den samlede datamodel for grunddata. Grunddatamyndighederne har i samarbejde skabt én samlet og sammenhængende datamodel for alle grunddata. Datamodellen viser de grunddata, som udstilles på Datafordeleren. Datamodellen kan du bruge til, at få overblik over grunddata og de informationer, grunddata indeholder og til at se hvordan data hænger sammen på tværs af registrene. Destinationssiden giver adgang til Grunddatamodellen som diagrammer (html) eller xmi-dokumenter.</dct:description>
 		<dct:description xml:lang="en">The Basic Data Model is the aggregated model for data in the Danish basic registries. The landing page provides access to the Basic Data Model as diagrams or xmi documents.</dct:description>		
 			<dct:hasPart rdf:resource="https://data.gov.dk/model/profile/bbr"/>
 			<dct:hasPart rdf:resource="https://data.gov.dk/model/profile/cpr"/>
@@ -369,36 +369,37 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 			<dct:hasPart rdf:resource="https://data.gov.dk/model/profile/vur"/>			
 		<dct:publisher>
 			<foaf:Agent>
-				<foaf:name>Digitaliseringsstyrelsen</foaf:name>
+				<foaf:name>Styrelsen for Dataforsyning og Effektivisering</foaf:name>
 			</foaf:Agent>
 		</dct:publisher>
 		<dcat:contactPoint>
 			<vcard:Kind>
-				<vcard:fn>Modelsekretariatet</vcard:fn>
-				<vcard:hasEmail rdf:resource="arkitektur@digst.dk"/>				
+				<vcard:fn>SDFE Grunddata</vcard:fn>
+				<vcard:hasEmail rdf:resource="grunddata@sdfe.dk "/>				
 			</vcard:Kind>
 		</dcat:contactPoint>	
+		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-01</dct:issued>
 		<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-10-09</dct:modified>			
-		<dcat:landingPage rdf:resource="https://data.gov.dk/model/"/>	
+		<dcat:landingPage rdf:resource="https://datafordeler.dk/vejledning/datamodel/"/>	
 		<dct:conformsTo>Modelregler for Grunddata, https://datafordeler.dk/media/1128/grunddata-modelregler.pdf</dct:conformsTo>	
 		<dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata"/>			
-		<foaf:page rdf:resource="https://data.gov.dk/model/info.htm"/>		
+		<foaf:page rdf:resource="https://datafordeler.dk/vejledning/datamodel/"/>		
 		<dcat:keyword>grunddata</dcat:keyword><dcat:keyword>grunddataregistre</dcat:keyword>
 		<adms:versionNotes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seneste ændring: patch-opdatering af CVR (v.2.2.1)</adms:versionNotes>			
 		<dcat:distribution rdf:resource="https://data.gov.dk/model/profile/basicdatamodel-20201009-html"/>		
-		<dcat:distribution rdf:resource="https://data.gov.dk/model/profile/basicdatamodel-20201009-eap"/>
+	<!--	<dcat:distribution rdf:resource="https://data.gov.dk/model/profile/basicdatamodel-20201009-eap"/> -->
 	</rdf:Description>	
 	
 		  <rdf:Description rdf:about="https://data.gov.dk/model/profile/basicdatamodel-20201009-html">
 			<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-			<dcat:accessURL rdf:resource="https://data.gov.dk/model/diagrammer/"/>
+			<dcat:accessURL rdf:resource="http://grunddatamodel.datafordeler.dk/"/>
 			<dct:title xml:lang="da">Grunddatamodellen i HTML-format</dct:title>
 			<dct:title xml:lang="en">The Basic Data Model as HTML</dct:title>  			
 			<dct:description xml:lang="da">Den samlede grunddatamodel efter Grunddatamodelreglerne i HTML-format</dct:description>
 			<dct:description xml:lang="en">The Basic Data Model according to the Basic Data Model Rules as HTML</dct:description>  
 			<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTML</dct:format>
 		  </rdf:Description>
-		  
+		  <!--
 		  <rdf:Description rdf:about="https://data.gov.dk/model/profile/basicdatamodel-20201009-eap">
 			<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
 			<dcat:accessURL rdf:resource="https://data.gov.dk/model/20201009_Grunddatamodellen.eap"/>		
@@ -407,7 +408,8 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 			<dct:description xml:lang="da">Den samlede grunddatamodel efter Grunddatamodelreglerne i EAP-format</dct:description>
 			<dct:description xml:lang="en">The Basic Data Model according to the Basic Data Model Rules as EAP</dct:description>  			
 			<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EAP</dct:format>
-		  </rdf:Description>		  
+		  </rdf:Description>	
+		-->		  
 		  
 		   <!-- Udgivelse: Grunddatamodellen FODS-variant --> 
 		  <rdf:Description rdf:about="https://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap">
@@ -469,7 +471,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 			<vcard:hasEmail rdf:resource="Dorte.Holm@UFST.dk"/>				
 		</vcard:Kind>
 	</dcat:contactPoint>	
-    <dcat:landingPage rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/BygningerOgBoliger/"/>
+    <dcat:landingPage rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/BygningerOgBoliger/"/>
     <foaf:page rdf:resource="http://bbr.dk/"/>
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata"/>	
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ECON"/>
@@ -487,15 +489,15 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>	  
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-15</dct:modified>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.4.0</owl:versionInfo>	
-    <adms:versionNotes xml:lang="da">https://data.gov.dk/model/xmi/Domaenemodeller/BygningerOgBoliger/BBR%20ændringer%202.1.0%20-%202.4.0.pdf</adms:versionNotes>		
+    <adms:versionNotes xml:lang="da">http://grunddatamodel.datafordeler.dk/domaenemodeller/BygningerOgBoliger/BBR%20ændringer%202.1.0%20-%202.4.0.pdf</adms:versionNotes>		
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/bbr-2-4-0/"/>
   </rdf:Description>
   
 	<!-- Udgivelse:BBR 2.4.0 -->
   	  <rdf:Description rdf:about="https://data.gov.dk/model/profile/bbr-2-4-0/">
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-		<dcat:accessURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/BygningerOgBoliger/"/>
-		<dcat:downloadURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/BygningerOgBoliger/2.4.0_BygningerOgBoliger.xml"/>		
+		<dcat:accessURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/BygningerOgBoliger/"/>
+		<dcat:downloadURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/BygningerOgBoliger/2.4.0_BygningerOgBoliger.xml"/>		
 		<dct:description xml:lang="da">BBR-modellen i XMI-format</dct:description>
 		<dct:description xml:lang="en"/>
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-09-09</dct:issued>
@@ -505,9 +507,9 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 	  </rdf:Description>
 	 
 	<!-- Udgivelse:BBR 2.1.0 -->
-	  <rdf:Description rdf:about="https://data.gov.dk/model/xmi/Domaenemodeller/BygningerOgBoliger/2.1.0_BygningerOgBoliger.xml">
+	  <rdf:Description rdf:about="http://grunddatamodel.datafordeler.dk/domaenemodeller/BygningerOgBoliger/2.1.0_BygningerOgBoliger.xml">
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-		<dcat:accessURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/BygningerOgBoliger/2.1.0_BygningerOgBoliger.xml"/>
+		<dcat:accessURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/BygningerOgBoliger/2.1.0_BygningerOgBoliger.xml"/>
 		<dct:description xml:lang="da">BBR-modellen i XMI-format</dct:description>
 		<dct:description xml:lang="en"/>
 		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-09-09</dct:issued>
@@ -563,7 +565,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 			<vcard:hasEmail rdf:resource="petnie@erst.dk"/>				
 		</vcard:Kind>
 	</dcat:contactPoint>
-    <dcat:landingPage rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/CentraleVirksomhedsregister/"/>
+    <dcat:landingPage rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/CentraleVirksomhedsregister/"/>
     <foaf:page rdf:resource="https://datacvr.virk.dk/data/"/>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ECON"/>
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata"/>
@@ -583,8 +585,8 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
   <!-- Udgivelse: CVR 2.2.1 -->
   <rdf:Description rdf:about="https://data.gov.dk/model/profile/cvr-2-2-1-xmi/">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/CentraleVirksomhedsregister/"/>
-    <dcat:downloadURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/CentraleVirksomhedsregister/1.0.0_CentraleVirksomhedsregister.xml"/>	
+    <dcat:accessURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/CentraleVirksomhedsregister/"/>
+    <dcat:downloadURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/CentraleVirksomhedsregister/1.0.0_CentraleVirksomhedsregister.xml"/>	
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-10-01</dct:modified> 
     <dct:title xml:lang="da">CVR 2.2.1 XMI</dct:title>
     <dct:title xml:lang="en">CVR 2.2.1 XMI</dct:title> 
@@ -594,8 +596,8 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
   <!-- Udgivelse: CVR 2.2.0 -->
   <rdf:Description rdf:about="https://data.gov.dk/model/profile/cvr-2-2-0-xmi/">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/CentraleVirksomhedsregister/"/>
-    <dcat:downloadURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/CentraleVirksomhedsregister/1.0.0_CentraleVirksomhedsregister.xml"/>	
+    <dcat:accessURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/CentraleVirksomhedsregister/"/>
+    <dcat:downloadURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/CentraleVirksomhedsregister/1.0.0_CentraleVirksomhedsregister.xml"/>	
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-02-27</dct:modified>
     <dct:title xml:lang="da">CVR 2.2.0 XMI</dct:title>
     <dct:title xml:lang="en">CVR 2.2.0 XMI</dct:title> 
@@ -603,9 +605,9 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
   </rdf:Description>
 
   <!-- Udgivelse: CVR 1.0.0 -->
-  <rdf:Description rdf:about="https://data.gov.dk/model/xmi/Domaenemodeller/CentraleVirksomhedsregister/1.0.0_CentraleVirksomhedsregister.xml">
+  <rdf:Description rdf:about="http://grunddatamodel.datafordeler.dk/domaenemodeller/CentraleVirksomhedsregister/1.0.0_CentraleVirksomhedsregister.xml">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/CentraleVirksomhedsregister/1.0.0_CentraleVirksomhedsregister.xml"/>
+    <dcat:accessURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/CentraleVirksomhedsregister/1.0.0_CentraleVirksomhedsregister.xml"/>
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-12-04</dct:modified>
     <dct:title xml:lang="da">CVR 1.0.0 XMI</dct:title>
     <dct:title xml:lang="en">CVR 1.0.0 XMI</dct:title>
@@ -660,7 +662,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 			<vcard:hasEmail rdf:resource="dagiregistret@sdfe.dk"/>				
 		</vcard:Kind>
 	</dcat:contactPoint>	
-    <dcat:landingPage rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/DAGI/"/>
+    <dcat:landingPage rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/DAGI/"/>
     <foaf:page rdf:resource="http://sdfe.dk/hent-data/danmarks-administrative-graenser-dagi/"/>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/GOVE"/>
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata"/>
@@ -682,8 +684,8 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
    <!-- Udgivelse: DAGI 1.0.1 -->
   <rdf:Description rdf:about="https://data.gov.dk/model/profile/dagi-1-0-1-xmi">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/DAGI/"/>	
-    <dcat:downloadURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/DAGI/1.0.1_DAGI.xml"/>
+    <dcat:accessURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/DAGI/"/>	
+    <dcat:downloadURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/DAGI/1.0.1_DAGI.xml"/>
     <dct:description xml:lang="da">DAGI-modellen i XMI-format</dct:description>
     <dct:description xml:lang="en"/>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-2-26</dct:issued>
@@ -741,7 +743,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 		</vcard:Kind>
 	</dcat:contactPoint>	
     <cc:license/>
-    <dcat:landingPage rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/DanmarksAdresser/"/>
+    <dcat:landingPage rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/DanmarksAdresser/"/>
     <foaf:page rdf:resource="http://danmarksadresser.dk/"/>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI"/>
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata"/>
@@ -754,7 +756,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>	   
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-07-15</dct:modified>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0.0</owl:versionInfo>	
-    <adms:versionNotes xml:lang="en">Se https://data.gov.dk/model/xmi/Domaenemodeller/DanmarksAdresser/DanmarksAdresser%20%C3%A6ndringer%201.0.0%20-%202.0.0.pdf</adms:versionNotes>	
+    <adms:versionNotes xml:lang="en">Se http://grunddatamodel.datafordeler.dk/domaenemodeller/DanmarksAdresser/DanmarksAdresser%20%C3%A6ndringer%201.0.0%20-%202.0.0.pdf</adms:versionNotes>	
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/dar-2-0-0-xmi/"/>
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_2.0.0_Danmarks_adresser.xml"/>
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap"/>
@@ -763,8 +765,8 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
    <!-- Udgivelse: DAR 2.0.0 -->
   <rdf:Description rdf:about="https://data.gov.dk/model/profile/dar-2-0-0-xmi/">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:downloadURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/DanmarksAdresser/2.0.0_DanmarksAdresser.xml"/>	
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/DanmarksAdresser/"/>
+    <dcat:downloadURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/DanmarksAdresser/2.0.0_DanmarksAdresser.xml"/>	
+    <dcat:accessURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/DanmarksAdresser/"/>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-7-7</dct:issued>
     <dct:title xml:lang="da">DAR 2.0.0 XMI</dct:title>
     <dct:title xml:lang="en">DAR 2.0.0 XMI</dct:title>    
@@ -820,7 +822,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 			<vcard:hasEmail rdf:resource="eju@gst.dk"/>				
 		</vcard:Kind>
 	</dcat:contactPoint>    
-	<dcat:landingPage rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/Ejendomsbeliggenhed/"/>
+	<dcat:landingPage rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/Ejendomsbeliggenhed/"/>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ECON"/>
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata"/>
     <dadk:businessArea>Matrikel og ejendomsdannelse</dadk:businessArea>
@@ -832,7 +834,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>	   
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-3-8</dct:modified>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.3.0</owl:versionInfo>	
-    <adms:versionNotes xml:lang="da">Se https://data.gov.dk/model/xmi/Domaenemodeller/Ejendomsbeliggenhed/Ejendomsbeliggenhed%20%C3%A6ndringer%201.1.0%20-%201.3.0.pdf	</adms:versionNotes>	
+    <adms:versionNotes xml:lang="da">Se http://grunddatamodel.datafordeler.dk/domaenemodeller/Ejendomsbeliggenhed/Ejendomsbeliggenhed%20%C3%A6ndringer%201.1.0%20-%201.3.0.pdf	</adms:versionNotes>	
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/ejd-1-3-0-xmi"/>
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.3.0_Ejendomsbeliggenhed.xml"/>
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap"/>
@@ -841,8 +843,8 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
   <!-- Udgivelse: Ejendomsbeliggenhedsregisteret 1.3.0 -->
   <rdf:Description rdf:about="https://data.gov.dk/model/profile/ejd-1-3-0-xmi">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/Ejendomsbeliggenhed"/>
-    <dcat:downloadURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/Ejendomsbeliggenhed/1.3.0_Ejendomsbeliggenhed.xml"/>	
+    <dcat:accessURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/Ejendomsbeliggenhed"/>
+    <dcat:downloadURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/Ejendomsbeliggenhed/1.3.0_Ejendomsbeliggenhed.xml"/>	
     <dct:description xml:lang="da">Ejendomsbeliggenhedsregister-modellen i XMI-format</dct:description>
     <dct:description xml:lang="en"/>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-3-8</dct:issued>
@@ -898,7 +900,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 			<vcard:hasEmail rdf:resource="Tommy.Modeweg@VURDST.dk"/>				
 		</vcard:Kind>
 	</dcat:contactPoint> 	
-    <dcat:landingPage rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/Ejendomsvurdering/"/>
+    <dcat:landingPage rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/Ejendomsvurdering/"/>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ECON"/>
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata"/>
     <dadk:businessArea>Ejendomsvurdering</dadk:businessArea>
@@ -918,8 +920,8 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
   <!-- Udgivelse: Ejendomsvurdering 1.0.0 -->
   <rdf:Description rdf:about="https://data.gov.dk/model/profile/vur-1-0-0-xmi">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/Ejendomsvurdering/"/>
-    <dcat:downloadURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/Ejendomsvurdering/1.0.0_Ejendomsvurdering.xmi"/>	
+    <dcat:accessURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/Ejendomsvurdering/"/>
+    <dcat:downloadURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/Ejendomsvurdering/1.0.0_Ejendomsvurdering.xmi"/>	
     <dct:description xml:lang="da">Ejendomsvurderingsmodellen i XMI-format</dct:description>
     <dct:description xml:lang="en"/>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-04-19</dct:issued>
@@ -976,7 +978,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 			<vcard:hasEmail rdf:resource="eju@gst.dk"/>				
 		</vcard:Kind>
 	</dcat:contactPoint> 	
-    <dcat:landingPage rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/Ejerfortegnelsen/"/>
+    <dcat:landingPage rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/Ejerfortegnelsen/"/>
     <foaf:page rdf:resource="http://gst.dk/matriklen/ejendomsdataprogrammet/ejerfortegnelsen/"/>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ECON"/>
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata"/>
@@ -995,16 +997,16 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
  
     <!-- Vedrørende version 1.3.1	
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.3.0</owl:versionInfo>
-    <adms:versionNotes xml:lang="da">https://data.gov.dk/model/xmi/Domaenemodeller/Ejerfortegnelsen/Ejerfortegnelsen%20%C3%A6ndringer%201.2.1%20-%201.3.0.pdf</adms:versionNotes>
+    <adms:versionNotes xml:lang="da">http://grunddatamodel.datafordeler.dk/domaenemodeller/Ejerfortegnelsen/Ejerfortegnelsen%20%C3%A6ndringer%201.2.1%20-%201.3.0.pdf</adms:versionNotes>
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.3.0_Ejerfortegnelsen.xml"/>
-    <dcat:distribution rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/Ejerfortegnelsen/1.3.0_Ejerfortegnelsen.xml"/>
+    <dcat:distribution rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/Ejerfortegnelsen/1.3.0_Ejerfortegnelsen.xml"/>
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap"/> -->
 
   <!-- Udgivelse: Ejerfortegnelsen 1.3.1 -->
   <rdf:Description rdf:about="https://data.gov.dk/model/profile/ef-1-3-1-xmi">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/Ejerfortegnelsen/"/>
-    <dcat:downloadURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/Ejerfortegnelsen/1.3.1_Ejerfortegnelsen.xml"/>	
+    <dcat:accessURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/Ejerfortegnelsen/"/>
+    <dcat:downloadURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/Ejerfortegnelsen/1.3.1_Ejerfortegnelsen.xml"/>	
     <dct:description xml:lang="da">Model for Ejerfortegnelsen i XMI-format</dct:description>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-11-13</dct:issued>
     <dct:title xml:lang="da">Ejerfortegnelsen 1.3.1 XMI</dct:title>
@@ -1013,9 +1015,9 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
   </rdf:Description>	
  
   <!-- Udgivelse: Ejerfortegnelsen 1.3.0 -->
-  <rdf:Description rdf:about="https://data.gov.dk/model/xmi/Domaenemodeller/Ejerfortegnelsen/1.3.0_Ejerfortegnelsen.xml">
+  <rdf:Description rdf:about="http://grunddatamodel.datafordeler.dk/domaenemodeller/Ejerfortegnelsen/1.3.0_Ejerfortegnelsen.xml">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/Ejerfortegnelsen/1.3.0_Ejerfortegnelsen.xml"/>
+    <dcat:accessURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/Ejerfortegnelsen/1.3.0_Ejerfortegnelsen.xml"/>
     <dct:description xml:lang="da">Model for Ejerfortegnelsen i XMI-format</dct:description> 	
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-7-1</dct:issued>
     <dct:title xml:lang="da">Ejerfortegnelsen 1.3.0 XMI</dct:title>
@@ -1059,7 +1061,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <dcat:keyword>kortlægning</dcat:keyword>
     <dcat:keyword>kortforsyningen</dcat:keyword>
     <dcat:keyword>kortgrundlag</dcat:keyword>
-    <adms:versionNotes xml:lang="da">https://data.gov.dk/model/xmi/Domaenemodeller/GeoDanmark/GeoDanmark%20%C3%A6ndringer%201.1.0%20-%202.0.0.pdf</adms:versionNotes>
+    <adms:versionNotes xml:lang="da">http://grunddatamodel.datafordeler.dk/domaenemodeller/GeoDanmark/GeoDanmark%20%C3%A6ndringer%201.1.0%20-%202.0.0.pdf</adms:versionNotes>
 	<dct:publisher>
 		<foaf:Agent>
 			<foaf:name>Styrelsen for Dataforsyning og Effektivisering</foaf:name>
@@ -1072,7 +1074,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 			<vcard:hasEmail rdf:resource="andec@sdfe.dk"/>				
 		</vcard:Kind>
 	</dcat:contactPoint> 	
-    <dcat:landingPage rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/GeoDanmark/"/>
+    <dcat:landingPage rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/GeoDanmark/"/>
     <foaf:page rdf:resource="http://sdfe.dk/saadan-arbejder-vi-med-data/danske-samarbejder/geodanmark/"/>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI"/>
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata"/>
@@ -1093,7 +1095,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
   <!-- Udgivelse: GeoDanmark 2.0.0 -->
   <rdf:Description rdf:about="https://data.gov.dk/model/profile/gdk-2-0-0-xmi">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/GeoDanmark/2.0.0_GeoDanmark.xml"/>
+    <dcat:accessURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/GeoDanmark/2.0.0_GeoDanmark.xml"/>
     <dct:description xml:lang="da">GeoDanmarks model i XMI-format</dct:description>
     <dct:description xml:lang="en"/>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-8-15</dct:issued>
@@ -1150,7 +1152,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 			<vcard:hasEmail rdf:resource="eju@gst.dk"/>				
 		</vcard:Kind>
 	</dcat:contactPoint> 		
-    <dcat:landingPage rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/Matrikel/"/>
+    <dcat:landingPage rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/Matrikel/"/>
     <foaf:page rdf:resource="http://gst.dk/matriklen/om-matriklen/"/>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI"/>
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata"/>
@@ -1162,7 +1164,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <voag:approvalStatus rdf:resource="https:/data.gov.dk/concept/approvalStatus/Approved"/>
     <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>	
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2.3</owl:versionInfo>
-    <adms:versionNotes xml:lang="da">https://data.gov.dk/model/xmi/Domaenemodeller/Matrikel/Matrikel%20%C3%A6ndringer%201.1.0%20-%201.2.3.pdf</adms:versionNotes>  
+    <adms:versionNotes xml:lang="da">http://grunddatamodel.datafordeler.dk/domaenemodeller/Matrikel/Matrikel%20%C3%A6ndringer%201.1.0%20-%201.2.3.pdf</adms:versionNotes>  
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/mat-1-2-3-xmi"/>
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.2.3_Matrikel.xml"/>
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap"/>
@@ -1171,8 +1173,8 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
   <!-- Udgivelse: Matrikel 1.2.3 -->
   <rdf:Description rdf:about="https://data.gov.dk/model/profile/mat-1-2-3-xmi">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/"/>
-    <dcat:downloadURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/Matrikel/1.2.3_Matrikel.xml"/>	
+    <dcat:accessURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/"/>
+    <dcat:downloadURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/Matrikel/1.2.3_Matrikel.xml"/>	
     <dct:description xml:lang="da">Matrikel-modellen i XMI-format</dct:description>
     <dct:description xml:lang="en"/>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-8-19</dct:issued>
@@ -1230,7 +1232,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 			<vcard:hasEmail rdf:resource="cpr@cpr.dk"/>				
 		</vcard:Kind>
 	</dcat:contactPoint> 	
-    <dcat:landingPage rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/Person/"/>
+    <dcat:landingPage rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/Person/"/>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI"/>
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata"/>
     <dadk:businessArea>Registrering i CPR</dadk:businessArea>
@@ -1241,7 +1243,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <voag:approvalStatus rdf:resource="https:/data.gov.dk/concept/approvalStatus/Approved"/>
     <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>	
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2.0</owl:versionInfo>
-    <adms:versionNotes xml:lang="da"> https://data.gov.dk/model/xmi/Domaenemodeller/Person/Person%20%C3%A6ndringer%201.1.0%20-%201.2.0.txt</adms:versionNotes>	
+    <adms:versionNotes xml:lang="da"> http://grunddatamodel.datafordeler.dk/domaenemodeller/Person/Person%20%C3%A6ndringer%201.1.0%20-%201.2.0.txt</adms:versionNotes>	
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/cpr-1-2-0-xmi"/>
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.2.0_Person.xml"/>
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap"/>
@@ -1250,8 +1252,8 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
   <!-- Udgivelse: Person 1.2.0 -->
   <rdf:Description rdf:about="https://data.gov.dk/model/profile/cpr-1-2-0-xmi">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/Person/"/>
-    <dcat:downloadURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/Person/1.2.0_Person.xml"/>	
+    <dcat:accessURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/Person/"/>
+    <dcat:downloadURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/Person/1.2.0_Person.xml"/>	
     <dct:description xml:lang="da">Personregistreringsmodellen i XMI-format</dct:description>
     <dct:description xml:lang="en"/>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-6-20</dct:issued>
@@ -1308,7 +1310,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 			<vcard:hasEmail rdf:resource="danskestednavne@sdfe.dk"/>				
 		</vcard:Kind>
 	</dcat:contactPoint> 	
-    <dcat:landingPage rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/Stednavne/"/>
+    <dcat:landingPage rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/Stednavne/"/>
     <foaf:page rdf:resource="http://sdfe.dk/hent-data/danske-stednavne/"/>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI"/>
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata"/>
@@ -1328,7 +1330,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
   <!-- Udgivelse: Stednavne 1.0.0 -->
   <rdf:Description rdf:about="https://data.gov.dk/model/profile/st-1-0-0-xmi">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/Stednavne/Stednavne.xml"/>
+    <dcat:accessURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/Stednavne/Stednavne.xml"/>
     <dct:description xml:lang="da">Stednavnsmodellen i XMI-format</dct:description>
     <dct:description xml:lang="en"/>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-7-3</dct:issued>
@@ -1388,7 +1390,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 			<vcard:hasEmail rdf:resource="Suzan.Burcu@sktst.dk"/>				
 		</vcard:Kind>
 	</dcat:contactPoint> 	
-    <dcat:landingPage rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/SkatteforvaltningensVirksomhedsregister/"/>
+    <dcat:landingPage rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/SkatteforvaltningensVirksomhedsregister/"/>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ECON"/>
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#Grunddata"/>
     <dadk:businessArea>Virksomheds- og erhvervsregistrering </dadk:businessArea>
@@ -1404,8 +1406,8 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
   <!-- Udgivelse: SVR 1.0.0 -->
   <rdf:Description rdf:about="https://data.gov.dk/model/profile/svr-1-0-0-xmi">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/SkatteforvaltningensVirksomhedsregister/1.0.0_SkatteforvaltningensVirksomhedsregister.xml"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/xmi/Domaenemodeller/SkatteforvaltningensVirksomhedsregister/"/>	
+    <dcat:accessURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/SkatteforvaltningensVirksomhedsregister/1.0.0_SkatteforvaltningensVirksomhedsregister.xml"/>
+    <dcat:accessURL rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/SkatteforvaltningensVirksomhedsregister/"/>	
     <dct:description xml:lang="da">SVR 1.0.0 XMI</dct:description>
     <dct:description xml:lang="en">SVR 1.0.0 XMI</dct:description>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-10-11</dct:issued>
