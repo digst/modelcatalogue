@@ -120,6 +120,7 @@ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 			<dcat:dataset rdf:resource="https://geo.data.gov.dk/model/profile/hydrometri#"/>
 			<dcat:dataset rdf:resource="https://geo.data.gov.dk/model/profile/watercourseshape#"/>
 			<dcat:dataset rdf:resource="https://geo.data.gov.dk/model/f6eda88e-08dc-4188-ac4a-3dfd0a2ec61e#"/>
+			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/os2iot/"/>
 			<dcat:dataset rdf:resource="https://DigitalPost.dk/MeMo-1"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/profile/langDCAT-AP/"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/profile/modelDCAT-AP/"/>
@@ -387,7 +388,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 		<dcat:keyword>grunddata</dcat:keyword><dcat:keyword>grunddataregistre</dcat:keyword>
 		<adms:versionNotes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seneste ændring: patch-opdatering af CVR (v.2.2.1)</adms:versionNotes>			
 		<dcat:distribution rdf:resource="https://data.gov.dk/model/profile/basicdatamodel-20201009-html"/>		
-	<!--	<dcat:distribution rdf:resource="https://data.gov.dk/model/profile/basicdatamodel-20201009-eap"/> -->
+		<dcat:distribution rdf:resource="https://data.gov.dk/model/profile/basicdatamodel-20201009-eap"/> 
 	</rdf:Description>	
 	
 		  <rdf:Description rdf:about="https://data.gov.dk/model/profile/basicdatamodel-20201009-html">
@@ -399,17 +400,17 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 			<dct:description xml:lang="en">The Basic Data Model according to the Basic Data Model Rules as HTML</dct:description>  
 			<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTML</dct:format>
 		  </rdf:Description>
-		  <!--
+		  
 		  <rdf:Description rdf:about="https://data.gov.dk/model/profile/basicdatamodel-20201009-eap">
 			<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-			<dcat:accessURL rdf:resource="https://data.gov.dk/model/20201009_Grunddatamodellen.eap"/>		
+			<dcat:accessURL rdf:resource="http://grunddatamodel.datafordeler.dk/GDmodel_eap/Grunddatamodellen.eap"/>		
 			<dct:title xml:lang="da">Grunddatamodellen i EAP-format</dct:title>
 			<dct:title xml:lang="en">The Basic Data Model as EAP for Sparx EA</dct:title>  
 			<dct:description xml:lang="da">Den samlede grunddatamodel efter Grunddatamodelreglerne i EAP-format</dct:description>
 			<dct:description xml:lang="en">The Basic Data Model according to the Basic Data Model Rules as EAP</dct:description>  			
 			<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EAP</dct:format>
 		  </rdf:Description>	
-		-->		  
+			  
 		  
 		   <!-- Udgivelse: Grunddatamodellen FODS-variant --> 
 		  <rdf:Description rdf:about="https://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap">
@@ -2801,6 +2802,48 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
     <dadk:businessAreaCode>06.38.10.10 </dadk:businessAreaCode>
   </rdf:Description>
+
+
+<!-- =======================================================   -->
+<!--    OS2IoT Logisk datamodel	   								   -->
+<!-- =======================================================  --> 
+
+<!-- husk at tilføje reference til dette datasæt fra enten det danske delkatalog eller det intenationale delkatalog -->
+ 
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/os2iot/">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dx/prof/Profile"/>	
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>	
+    <dct:title xml:lang="da">OS2IoT Logisk datamodel</dct:title>
+    <dct:title xml:lang="en">OS2IoT Logical Datamodel</dct:title>	
+    <dct:description xml:lang="da">Formålet med denne datamodel er at beskrive IoT-løsningsdomænets logiske dataentiteter og deres indbyrdes forhold. Licens: CC-BY-SA 4.0</dct:description>
+    <dct:description xml:lang="en">The purpose of this deliverable is to describe the logical data-entities that are part of the solutions domain together the relationship between them. License: CC-BY-SA 4.0</dct:description>	
+    <vann:preferredNamespacePrefix>os2iot</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://data.gov.dk/model/profile/os2iot/</vann:preferredNamespaceUri>
+    <dcat:keyword>iot</dcat:keyword><dcat:keyword>Internet of Things</dcat:keyword>
+    <foaf:page rdf:resource="https://github.com/OS2iot/OS2IoT-docs"/>	
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020</dct:issued>
+    <dct:publisher>
+		<foaf:Agent>
+			<foaf:name>OS2</foaf:name>
+			<foaf:homepage>https://os2.eu/</foaf:homepage>
+		</foaf:Agent>
+	</dct:publisher>
+	<dcat:contactPoint>
+		<vcard:Kind>
+			<vcard:fn>OS2</vcard:fn>
+			<vcard:hasEmail rdf:resource="os2@os2.eu"/>				
+		</vcard:Kind>
+	</dcat:contactPoint>	
+    <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
+    <dadk:businessAreaCode>06.38.10.10 </dadk:businessAreaCode>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>  	
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>	
+    <dcat:landingPage rdf:resource="https://os2iot.readthedocs.io/en/latest/logical-data-model/logical-datamodel.html"/>			
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+  </rdf:Description>    
+
 
 
    <!-- ==================================================   -->  
