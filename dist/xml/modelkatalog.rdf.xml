@@ -2841,7 +2841,7 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>  	
     <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>	
     <dcat:landingPage rdf:resource="https://os2iot.readthedocs.io/en/latest/logical-data-model/logical-datamodel.html"/>			
-    <dct:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+  <!--  <dct:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/> -->
   </rdf:Description>    
 
 
