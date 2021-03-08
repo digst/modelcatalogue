@@ -109,6 +109,7 @@ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/itsystemap-archv#"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/dataqualitydeclaration#"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/dcat-dk-ap#"/>
+			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/digital-architecture/"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/rad#"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/model/profile/digitaloverview#"/>
 			<dcat:dataset rdf:resource="https://data.gov.dk/concept/core/digitalarchival/"/>
@@ -1974,6 +1975,64 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
   </rdf:Description>  
    
 
+
+<!-- =======================================================  -->
+<!--    BEGREBSLISTE DIGITAL ARKITKTUR	   			          -->
+<!-- =======================================================  --> 
+
+ 
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/digital-architecture/">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dx/prof/Profile"/>	
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ConceptModel"/>			
+	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>		
+    <dct:title xml:lang="da">Begrebsmodel for digital arkitektur</dct:title>
+    <dct:title xml:lang="en">Digital Architecture Concept Model </dct:title>	
+    <dct:description xml:lang="da">Denne begrebsmodel indeholder begreber indenfor emnet ‘digital arkitektur’ samt deres indbyrdes relationer. </dct:description>
+    <dct:description xml:lang="en">This concept model contains concepts within the domain of "digital architecture" and their interrelations.</dct:description>	
+    <vann:preferredNamespaceUri>https://data.gov.dk/model/profile/digital-architecture/</vann:preferredNamespaceUri>
+    <dcat:keyword>arkitektur</dcat:keyword><dcat:keyword>FDA</dcat:keyword>
+    <foaf:page rdf:resource=""/>	
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
+    <dct:publisher>
+		<foaf:Agent>
+			<foaf:name>Digitaliseringsstyrelsen</foaf:name>
+			<foaf:homepage>https://digst.dk/</foaf:homepage>
+		</foaf:Agent>
+	</dct:publisher>
+	<dcat:contactPoint>
+		<vcard:Kind>
+			<vcard:fn>FDA-Modelsekretariatet</vcard:fn>
+			<vcard:hasEmail rdf:resource="arkitektur@digst.dk"/>				
+		</vcard:Kind>
+	</dcat:contactPoint>	
+	<dct:isPartOf>FDA rammearkitekturen</dct:isPartOf>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#FODS"/>
+	<dct:conformsTo rdf:resource="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering"/>
+	<dct:conformsTo rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/> 
+    <dadk:businessArea>Arkitektur for den digitale infrastruktur</dadk:businessArea>
+    <dadk:businessAreaCode>06.38.10.10 </dadk:businessAreaCode>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>  	
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:modified>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></owl:versionInfo>
+    <adms:versionNotes xml:lang="da">Under udvikling (Development)</adms:versionNotes>
+    <adms:status rdf:resource="http://purl.org/adms/status/Development"/>	
+    <voag:approvalStatus rdf:resource="https:/data.gov.dk/concept/approvalStatus/AwaitingApproval"/>	
+    <voag:isApprovedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Udvalget for Arkitektur og Standarder</voag:isApprovedBy> 
+	<foaf:page rdf:resource="https://arkitektur.digst.dk/rammearkitektur/fda-begreber"/>
+    <dcat:landingPage rdf:resource="https://arkitektur.digst.dk/fda-begreber-til-formidling-og-dokumentation"/>			
+	<dcat:distribution rdf:resource="https://data.gov.dk/model/profile/digital-architecture-0-6-0-DOCX"/>
+  </rdf:Description>    
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/digital-architecture-0-6-0-DOCX">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/> 
+  	<dcat:accessURL rdf:resource="https://arkitektur.digst.dk/sites/default/files/fda-begrebsliste_digital_arkitektur_i_iso-format_paa_dansk_og_engelsk.docx"/>
+  	<dcat:downloadURL rdf:resource="https://arkitektur.digst.dk/sites/default/files/fda-begrebsliste_digital_arkitektur_i_iso-format_paa_dansk_og_engelsk.docx"/>	
+	<dct:title xml:lang="da">digital-architecture-0-6-0-DOCX</dct:title>	
+	<dct:title xml:lang="en">digital-architecture-0-6-0-DOCX</dct:title>	
+	<dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/DOCX"/>				
+  </rdf:Description>
+ 	
+	
   <!-- ==================================================  -->      
   <!-- Begrebsliste for RAD								   -->
   <!-- ==================================================  -->    
