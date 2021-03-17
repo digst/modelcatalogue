@@ -2211,7 +2211,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 	<dct:conformsTo rdf:resource="https://www.iso.org/standard/38109.html"/>	
     <dadk:businessArea>Social service og omsorg</dadk:businessArea>
     <dadk:businessAreaCode>26</dadk:businessAreaCode>
-    <dcat:landingPage rdf:resource="http://www.socialebegreber.dk/begrebsarbejde/begrebsdatabasen/find_begreb"/>
+    <dcat:landingPage rdf:resource="https://socialstyrelsen.dk/tvaergaende-omrader/begrebsbasen"/>
     <foaf:page rdf:resource="http://www.socialebegreber.dk/"/>	
   </rdf:Description>  
 
