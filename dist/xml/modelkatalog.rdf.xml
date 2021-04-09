@@ -6631,7 +6631,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:title xml:lang="da">EIRA begreber </dct:title>
     <dct:title xml:lang="en">EIRA concepts </dct:title>	
     <vann:preferredNamespaceUri>http://data.europa.eu/dr8</vann:preferredNamespaceUri>	
-    <dct:description xml:lang="da">Begrebsliste for den europæiske interoperabilitets referencearkitektur (EIRA)</dct:description>
+    <dct:description xml:lang="da">Begrebsliste for den europæiske interoperabilitetsreferencearkitektur (EIRA)</dct:description>
     <dct:description xml:lang="en">Controlled vocabulary for the European Interoperability Reference Architecture (EIRA)</dct:description>		
     <dcat:landingPage rdf:resource="https://joinup.ec.europa.eu/collection/european-interoperability-reference-architecture-eira/solution/eira/release/v400"/>	
     <foaf:page rdf:resource="https://joinup.ec.europa.eu/collection/european-interoperability-reference-architecture-eira/solution/eira"/>	  
