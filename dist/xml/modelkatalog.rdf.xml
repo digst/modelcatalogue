@@ -237,6 +237,7 @@ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 			<dcat:dataset rdf:resource="http://qudt.org/2.1/vocab/"/>
 			<dcat:dataset rdf:resource="https://spec.edmcouncil.org/fibo/vocabulary/"/>
 			<dcat:dataset rdf:resource="https://spec.edmcouncil.org/fibo/ontology/"/>
+			<dcat:dataset rdf:resource="http://data.europa.eu/dr8/"/>
 		</rdf:Description>			
 	 </dct:hasPart>
 	 
@@ -6616,6 +6617,24 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:description xml:lang="da">Ontologien for bygningstypologi (BOT) er en mindre ontologi til beskrivelse af de centrale bygningstypologiske begreber.  </dct:description>
     <dct:description xml:lang="en">The Building Topology Ontology (BOT) is a minimal ontology for describing the core topological concepts of a building.</dct:description>		
     <dcat:landingPage rdf:resource="https://w3c-lbd-cg.github.io/bot/index.html#"/>	
+  </rdf:Description>    
+
+<!-- =======================================================   -->
+<!--    EIRA begreber                   		   -->
+<!-- =======================================================  --> 
+
+  
+  <rdf:Description rdf:about="http://data.europa.eu/dr8">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ConceptaModel"/>			
+	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>	  
+    <dct:title xml:lang="da">EIRA begreber </dct:title>
+    <dct:title xml:lang="en">EIRA concepts </dct:title>	
+    <vann:preferredNamespaceUri>http://www.w3.org/ns/dpv#</vann:preferredNamespaceUri>	
+    <dct:description xml:lang="da">Begrebsliste for den europæiske interoperabilitets referencearkitektur (EIRA)</dct:description>
+    <dct:description xml:lang="en">Controlled vocabulary for the European Interoperability Reference Architecture (EIRA)</dct:description>		
+    <dcat:landingPage rdf:resource="https://joinup.ec.europa.eu/collection/european-interoperability-reference-architecture-eira/solution/eira/release/v400"/>	
+    <foaf:page rdf:resource="https://joinup.ec.europa.eu/collection/european-interoperability-reference-architecture-eira/solution/eira"/>	  
   </rdf:Description>    
 
 
