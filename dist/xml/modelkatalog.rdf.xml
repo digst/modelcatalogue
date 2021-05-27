@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
 xmlns:dadk="https://data.gov.dk/model/vocabular/modelcat#" 
 xmlns:mreg="https://data.gov.dk/model/vocabular/modelcat#" 
@@ -2767,8 +2767,9 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <vann:preferredNamespaceUri>https://data.gov.dk/concept/core/brugeradgangsstyring/</vann:preferredNamespaceUri>
     <dcat:keyword>brugerstyring</dcat:keyword>
     <dcat:keyword>identitet</dcat:keyword>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.1.0</owl:versionInfo>
-	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-06</dct:issued>	
+	<dcat:keyword>adgang</dcat:keyword>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.1</owl:versionInfo>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-27</dct:issued>	
     <adms:versionNotes xml:lang="da">Endelig (stable)</adms:versionNotes>
 	<dct:publisher>
 		<foaf:Agent>
@@ -2789,13 +2790,13 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
     <dadk:businessAreaCode>06.38.10.10 </dadk:businessAreaCode>
     <foaf:page rdf:resource="https://arkitektur.digst.dk/node/123"/>	
     <dcat:landingPage rdf:resource="https://data.gov.dk/concept/core/brugeradgangsstyring/index.htm"/>	 
-	<dcat:distribution rdf:resource="https://data.gov.dk/concept/core/brugeradgangsstyring-1-1-0-xlsx"/>
-	<dcat:distribution rdf:resource="https://data.gov.dk/concept/core/brugeradgangsstyring-1-1-0-html"/>	
-	<dcat:distribution rdf:resource="https://data.gov.dk/concept/core/brugeradgangsstyring-1-1-0-xmi"/>	
+	<dcat:distribution rdf:resource="https://data.gov.dk/concept/core/brugeradgangsstyring-1-0-1-xlsx"/>
+	<dcat:distribution rdf:resource="https://data.gov.dk/concept/core/brugeradgangsstyring-1-0-1-html"/>	
+	<dcat:distribution rdf:resource="https://data.gov.dk/concept/core/brugeradgangsstyring-1-0-1-xmi"/>	
   </rdf:Description>
 
   <!-- Udgivelse: HTML -->
-  <rdf:Description rdf:about="https://data.gov.dk/concept/core/brugeradgangsstyring-1-1-0-html">
+  <rdf:Description rdf:about="https://data.gov.dk/concept/core/brugeradgangsstyring-1-0-1-html">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
     <dcat:accessURL rdf:resource="https://data.gov.dk/concept/core/brugeradgangsstyring/HTML/index.htm"/>
     <dct:title xml:lang="da">Webudstilling af begrebsmodel</dct:title>
@@ -2804,18 +2805,18 @@ Linear Referencing Systems muliggør specifikation af positioner langs lineære 
   </rdf:Description>  
   
   <!-- Udgivelse: XLSX -->
-  <rdf:Description rdf:about="https://data.gov.dk/concept/core/brugeradgangsstyring-1-1-0-xlsx">
+  <rdf:Description rdf:about="https://data.gov.dk/concept/core/brugeradgangsstyring-1-0-1-xlsx">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/concept/core/brugeradgangsstyring/Begrebsliste_Brugerogadgangsstyring_1_0_0.xlsx"/>
+    <dcat:accessURL rdf:resource="https://data.gov.dk/concept/core/brugeradgangsstyring/Begrebsliste_Brugerogadgangsstyring_1_0_1.xlsx"/>
     <dct:title xml:lang="da">Begrebsliste i Excelark</dct:title>
     <dct:title xml:lang="en">Concept List in XLSX</dct:title>    
     <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLSX</dct:format>
   </rdf:Description> 
 
   <!-- Udgivelse: XMI -->
-  <rdf:Description rdf:about="https://data.gov.dk/concept/core/brugeradgangsstyring-1-1-0-xmi">
+  <rdf:Description rdf:about="https://data.gov.dk/concept/core/brugeradgangsstyring-1-0-1-xmi">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/concept/core/brugeradgangsstyring/brugerogadgangsstyring_1_0_0.xml"/>
+    <dcat:accessURL rdf:resource="https://data.gov.dk/concept/core/brugeradgangsstyring/brugerogadgangsstyring_1_0_1.xml"/>
     <dct:title xml:lang="da">UML-model med digrammer som xmi-fil</dct:title>
     <dct:title xml:lang="en">XMI version</dct:title>    
     <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
