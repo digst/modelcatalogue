@@ -2193,7 +2193,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>	
     <dct:title xml:lang="en">Social Services Concepts</dct:title>
     <dct:title xml:lang="da">Sociale begreber</dct:title>
-    <dct:description xml:lang="da">Termer og definitioner på begreber fra det sociale område. Begreberne indgår i forskellige projekter, databaser, værktøjer mv. </dct:description>
+    <dct:description xml:lang="da">Socialstyrelsens begrebsbase rummer termer og definitioner på udvalgte it-understøttende begreber fra det sociale område, hvor Socialstyrelsen har bidraget til udviklingen eller indgået i samarbejde omkring definitionen af begreberne. Historiske versioner af begrebsbasens indhold kan hentes på destinationssiden. Der arbejdes på at udvikle bedre muligheder for at hente begrebsbasens indhold i maskinlæsbarformat inden for den nærmeste fremtid.</dct:description>
     <dcat:keyword>socialstyrelsen</dcat:keyword>			
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></owl:versionInfo>
@@ -2217,7 +2217,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
   </rdf:Description>  
 
   <!-- ==================================================   -->    
-  <!-- Sundhedsbegreber-->
+  <!-- Sundhedsvæsenets begrebsbase (NBS) -->
   <!-- ==================================================   -->    
   <rdf:Description rdf:about="https://sundhedsdatastyrelsen.dk/nbs">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
@@ -2225,7 +2225,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>		
     <dct:title xml:lang="en">Health Concepts </dct:title>
     <dct:title xml:lang="da">Sundhedsvæsenets begrebsbase (NBS)</dct:title>
-    <dct:description xml:lang="da">Begrebsbasen indeholder begreber inden for udvalgte, centrale sundhedsfaglige emneområder. Begreberne og de tilhørende definitioner stilles her til rådighed for det danske sundhedsvæsen og andre interesserede parter. </dct:description>
+    <dct:description xml:lang="da">Begrebsbasen udarbejdes af det Nationale Begrebsarbejde for Sundhedsvæsenet (NBS). Formålet med begrebsbasen er at skabe en fælles forståelse for sundhedsfaglige begreber på tværs af sundhedsvæsenet. Begrebsbasen indeholder begreber inden for udvalgte, centrale sundhedsfaglige emneområder. Begreberne og de tilhørende definitioner stilles her til rådighed for det danske sundhedsvæsen og andre interesserede parter. De standardiserede begreber er en reference, som de begreber, der anvendes i sundhedsvæsenet, kan sammenlignes med. Det gør, at man kan blive opmærksom på betydningsforskelle og dermed kan blive mere præcis i sin anvendelse af begreberne. Definitionerne i Begrebsbasen er udarbejdet med henblik på entydigt at afdække det enkelte begrebs betydning, så det kan anvendes tværfagligt i sundhedsvæsenet uden tilknytning til særlige processer eller metoder. Begreberne er udarbejdet ved hjælp af terminologiske principper og metoder, der er med til at sikre den sproglige og betydningsmæssige præcision.</dct:description>
     <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
     <dcat:keyword>sundhedsdatastyrelsen</dcat:keyword>			
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
@@ -2238,7 +2238,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 	</dct:publisher>
 	<dcat:contactPoint>
 		<vcard:Kind>
-			<vcard:fn>Begrebssekretariatet</vcard:fn>
+			<vcard:fn>NBS - begrebssekretariatet</vcard:fn>
 			<vcard:hasEmail rdf:resource="begrebssekretariatet@sundhedsdata.dk"/>				
 		</vcard:Kind>
 	</dcat:contactPoint>	
