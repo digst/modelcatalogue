@@ -2192,7 +2192,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#ConceptModel"/>			
 	<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>	
     <dct:title xml:lang="en">Social Services Concepts</dct:title>
-    <dct:title xml:lang="da">Sociale begreber</dct:title>
+    <dct:title xml:lang="da">Sociale Begreber</dct:title>
     <dct:description xml:lang="da">Socialstyrelsens begrebsbase rummer termer og definitioner på udvalgte it-understøttende begreber fra det sociale område, hvor Socialstyrelsen har bidraget til udviklingen eller indgået i samarbejde omkring definitionen af begreberne. Historiske versioner af begrebsbasens indhold kan hentes på destinationssiden. Der arbejdes på at udvikle bedre muligheder for at hente begrebsbasens indhold i maskinlæsbarformat inden for den nærmeste fremtid.</dct:description>
     <dcat:keyword>socialstyrelsen</dcat:keyword>			
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
