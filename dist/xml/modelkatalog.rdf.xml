@@ -3785,6 +3785,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:keyword>klassifikation</dcat:keyword>		
     <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>		
     <dcat:landingPage rdf:resource="http://www.kle-online.dk/"/>
+    <foaf:page rdf:resource="https://www.kl.dk/nyheder/digitalisering-og-teknologi/2020/september/hvad-er-kl-emnesystematik/"/>
   </rdf:Description>  
  
  
