@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
 xmlns:dadk="https://data.gov.dk/model/vocabular/modelcat#" 
 xmlns:mreg="https://data.gov.dk/model/vocabular/modelcat#" 
@@ -403,6 +403,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 			<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTML</dct:format>
 		  </rdf:Description>
 		  
+
 		  <rdf:Description rdf:about="https://data.gov.dk/model/profile/basicdatamodel-20201009-eap">
 			<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
 			<dcat:accessURL rdf:resource="http://grunddatamodel.datafordeler.dk/GDmodel_eap/Grunddatamodellen.eap"/>		
@@ -414,18 +415,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 		  </rdf:Description>	
 			  
 		  
-		   <!-- Udgivelse: Grunddatamodellen FODS-variant --> 
-		  <rdf:Description rdf:about="https://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap">
-			<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-			<dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap"/>
-			<dct:description xml:lang="da">Variant af den den samlede grunddatamodel, der er tilpasset de fællesoffentlige modelregler i tilstrækkelig grad til at elementer herfra kan genbruges i modellering i regi af Den fællesoffentlige digitaliseringsstrategi 2016-2020. Som projektfil til Sparx Enterprise Architect</dct:description>
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-04-19</dct:issued>
-			<dct:title xml:lang="da">Variant af den samlede grunddatamodel efter FODS modelreglerne i EAP-format</dct:title>
-			<dct:title xml:lang="en">The Basic Data Model as an XMI FODS Variant</dct:title> 
-			<foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA1/EA17.htm"/>    
-			<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EAP</dct:format>
-			<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100MB</schema:fileSize>
-		  </rdf:Description>  
+
 
 
 
@@ -523,19 +513,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2M</schema:fileSize>
 	  </rdf:Description>
 	 
-	  <!-- Udgivelse:BBR 2.1.0 FODS-variant -->
-	  <rdf:Description rdf:about="https://data.gov.dk/model/profile/FODS-variant_2.1.0_Bygninger_og_boliger.xml">
-		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-		<dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/FODS-variant_2.1.0_Bygninger_og_boliger.xml"/>
-		<dct:description xml:lang="da">Variant af grunddatamodellen for Bygninger og boliger (BBR), der er tilpasset de fællesoffentlige modelregler i tilstrækkelig grad til at elementer herfra kan genbruges i modellering i regi af Den fællesoffentlige digitaliseringsstrategi 2016-2020.</dct:description>
-		<dct:description xml:lang="en"/>
-		<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-04-19</dct:issued>
-		<dct:title xml:lang="da">Variant af BBR 2.1.0 efter FODS modelreglerne i XMI-format</dct:title>
-		<dct:title xml:lang="en">BBR 2.0.0 XMI FODS Variant</dct:title>  
-		<foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA2/EA20.htm"/>    
-		<dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
-		<schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.1M</schema:fileSize>
-	  </rdf:Description>	
+	
  
 <!-- =======================================  -->
 <!--    Grunddata CVR					      -->
@@ -619,19 +597,8 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">815K</schema:fileSize>
   </rdf:Description>
  
-  <!-- Udgivelse: CVR 1.0.0 FODS-variant -->
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/FODS-variant_1.0.0_CentraleVirksomhedregister.xml">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.0.0_CentraleVirksomhedregister.xml"/>
-    <dct:description xml:lang="da">Variant af grunddatamodellen for det Centrale Virksomhedsregister (CVR), der er tilpasset de fællesoffentlige modelregler i tilstrækkelig grad til at elementer herfra kan genbruges i modellering i regi af Den fællesoffentlige digitaliseringsstrategi 2016-2020.</dct:description>
-    <dct:description xml:lang="en"/>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-04-19</dct:modified>
-    <dct:title xml:lang="da">Variant af CVR 1.0.0 efter FODS modelreglerne i XMI-format</dct:title>
-    <dct:title xml:lang="en">CVR 2.0.0 XMI FODS Variant</dct:title>  
-    <foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA3/EA135.htm"/>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.7M</schema:fileSize>
-  </rdf:Description>
+
+
 	 
  
 <!-- =======================================  -->
@@ -680,8 +647,6 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.1</owl:versionInfo>
     <adms:versionNotes xml:lang="da">https://data.gov.dk/model/profile/xmi/Domaenemodeller/DAGI/DAGI%20%C3%A6ndringer%201.0.0%20-%201.0.1.pdf</adms:versionNotes>	
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/dagi-1-0-1-xmi"/>
-    <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.0.1_DAGI.xml"/>
-    <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap"/>
   </rdf:Description>
  
    <!-- Udgivelse: DAGI 1.0.1 -->
@@ -699,20 +664,8 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">516K</schema:fileSize>
   </rdf:Description>
  
-  <!-- Udgivelse: DAGI 1.0.1 FODS-variant -->
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/FODS-variant_1.0.1_DAGI.xml">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.0.1_DAGI.xml"/>
-    <dcat:downloadURL rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.0.1_DAGI.xml"/>	
-    <dct:description xml:lang="da">Variant af grunddatamodellen for Danmark administrative geografiske inddelinger (DAGI), der er tilpasset de fællesoffentlige modelregler i tilstrækkelig grad til at elementer herfra kan genbruges i modellering i regi af Den fællesoffentlige digitaliseringsstrategi 2016-2020.</dct:description>
-    <dct:description xml:lang="en"/>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-04-19</dct:issued>
-    <dct:title xml:lang="da">Variant af DAGI 1.0.0 efter FODS modelreglerne i XMI-format</dct:title>
-    <dct:title xml:lang="en">DAGI 2.0.0 XMI FODS Variant</dct:title>  
-    <foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA4/EA278.htm"/>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.1M</schema:fileSize>
-  </rdf:Description>
+
+
  
  
 <!-- =======================================  -->
@@ -761,8 +714,6 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0.0</owl:versionInfo>	
     <adms:versionNotes xml:lang="en">Se http://grunddatamodel.datafordeler.dk/domaenemodeller/DanmarksAdresser/DanmarksAdresser%20%C3%A6ndringer%201.0.0%20-%202.0.0.pdf</adms:versionNotes>	
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/dar-2-0-0-xmi/"/>
-    <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_2.0.0_Danmarks_adresser.xml"/>
-    <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap"/>
   </rdf:Description>
  
    <!-- Udgivelse: DAR 2.0.0 -->
@@ -778,19 +729,8 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <foaf:page rdf:resource="https://data.gov.dk/model/diagrammer/EARoot/EA5/EA318.htm"/>
   </rdf:Description>
  
-  <!-- Udgivelse: DAR 2.0.0 FODS-variant -->
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/FODS-variant_2.0.0_Danmarks_adresser.xml">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/FODS-variant_2.0.0_Danmarks_adresser.xml"/>
-    <dct:description xml:lang="da">Variant af grunddatamodellen for Danmarks adresser, der er tilpasset de fællesoffentlige modelregler i tilstrækkelig grad til at elementer herfra kan genbruges i modellering i regi af Den fællesoffentlige digitaliseringsstrategi 2016-2020.</dct:description>
-    <dct:description xml:lang="en"/>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-04-19</dct:issued>
-    <dct:title xml:lang="da">Variant af DAR 2.0.0 efter FODS modelreglerne i XMI-format</dct:title>
-    <dct:title xml:lang="en">DAR 2.0.0 XMI FODS Variant</dct:title>      
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">924K</schema:fileSize>
-    <foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA5/EA343.htm"/>
-  </rdf:Description>
+
+
  
  
  
@@ -839,8 +779,6 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.3.0</owl:versionInfo>	
     <adms:versionNotes xml:lang="da">Se http://grunddatamodel.datafordeler.dk/domaenemodeller/Ejendomsbeliggenhed/Ejendomsbeliggenhed%20%C3%A6ndringer%201.1.0%20-%201.3.0.pdf	</adms:versionNotes>	
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/ejd-1-3-0-xmi"/>
-    <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.3.0_Ejendomsbeliggenhed.xml"/>
-    <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap"/>
   </rdf:Description>
  
   <!-- Udgivelse: Ejendomsbeliggenhedsregisteret 1.3.0 -->
@@ -858,19 +796,8 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <foaf:page rdf:resource="https://data.gov.dk/model/diagrammer/EARoot/EA7/EA415.htm"/>
   </rdf:Description>
   
-  <!-- Udgivelse: Ejendomsbeliggenhedsregisteret 1.3.0 FODS-variant -->
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/FODS-variant_1.3.0_Ejendomsbeliggenhed.xml">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.3.0_Ejendomsbeliggenhed.xml"/>
-    <dcat:downloadURL rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.3.0_Ejendomsbeliggenhed.xml"/>	
-    <dct:description xml:lang="da">Variant af grunddatamodellen for Ejendomsbeliggenhed, der er tilpasset de fællesoffentlige modelregler i tilstrækkelig grad til at elementer herfra kan genbruges i modellering i regi af Den fællesoffentlige digitaliseringsstrategi 2016-2020.</dct:description>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-04-19</dct:issued>
-    <dct:title xml:lang="da">Variant af Ejendomsbeliggenhed 1.3.0 efter FODS modelreglerne i XMI-format</dct:title>
-    <dct:title xml:lang="en">Ejendomsbeliggenhed 2.0.0 XMI FODS Variant</dct:title>     
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">458K</schema:fileSize>
-    <foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA7/EA538.htm"/>
-  </rdf:Description> 
+
+
   
  
  
@@ -915,9 +842,9 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>	  
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-6-17</dct:issued>	
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.0</owl:versionInfo>			
+
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/vur-1-0-0-xmi"/>
-    <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.0.0_Ejendomsvurdering.xml"/>	
-    <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap"/>	
+	
   </rdf:Description>
   
   <!-- Udgivelse: Ejendomsvurdering 1.0.0 -->
@@ -935,20 +862,8 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <foaf:page rdf:resource="https://data.gov.dk/model/diagrammer/EARoot/EA8/EA431.htm"/>
   </rdf:Description>
  
-  <!-- Udgivelse: Ejendomsvurdering 1.0.0 FODS-variant-->
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/FODS-variant_1.0.0_Ejendomsvurdering.xml">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.0.0_Ejendomsvurdering.xml"/>
-    <dcat:downloadURL rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.0.0_Ejendomsvurdering.xml"/>	
-    <dct:description xml:lang="da">Dette er en variant af grunddatamodellen for Ejendomsvurdering, der er tilpasset de fællesoffentlige modelregler i tilstrækkelig grad til at elementer herfra kan genbruges i modellering i regi af Den fællesoffentlige digitaliseringsstrategi 2016-2020.</dct:description>
-    <dct:description xml:lang="en"/>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-04-19</dct:issued>
-    <dct:title xml:lang="da">Variant af Ejendomsvurdering 1.0.0 efter FODS modelreglerne i XMI-format</dct:title>
-    <dct:title xml:lang="en">Ejendomsvurdering 2.0.0 XMI FODS Variant</dct:title>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">923K</schema:fileSize>
-    <foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA8/EA584.htm"/>
-  </rdf:Description>  
+
+
   
  
 <!-- =======================================  -->
@@ -1001,9 +916,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <!-- Vedrørende version 1.3.1	
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.3.0</owl:versionInfo>
     <adms:versionNotes xml:lang="da">http://grunddatamodel.datafordeler.dk/domaenemodeller/Ejerfortegnelsen/Ejerfortegnelsen%20%C3%A6ndringer%201.2.1%20-%201.3.0.pdf</adms:versionNotes>
-    <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.3.0_Ejerfortegnelsen.xml"/>
-    <dcat:distribution rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/Ejerfortegnelsen/1.3.0_Ejerfortegnelsen.xml"/>
-    <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap"/> -->
+    <dcat:distribution rdf:resource="http://grunddatamodel.datafordeler.dk/domaenemodeller/Ejerfortegnelsen/1.3.0_Ejerfortegnelsen.xml"/> -->
 
   <!-- Udgivelse: Ejerfortegnelsen 1.3.1 -->
   <rdf:Description rdf:about="https://data.gov.dk/model/profile/ef-1-3-1-xmi">
@@ -1030,18 +943,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <foaf:page rdf:resource="https://data.gov.dk/model/diagrammer/EARoot/EA6/EA362.htm"/>
   </rdf:Description>
  
-  <!-- Udgivelse: Ejerfortegnelsen 1.3.0 FODS-variant -->
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/FODS-variant_1.3.0_Ejerfortegnelsen.xml">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.3.0_Ejerfortegnelsen.xml"/>
-    <dct:description xml:lang="da">Dette er en variant af grunddatamodellen for Ejerfortegnelsen, der er tilpasset de fællesoffentlige modelregler i tilstrækkelig grad til at elementer herfra kan genbruges i modellering i regi af Den fællesoffentlige digitaliseringsstrategi 2016-2020.</dct:description>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-04-19</dct:issued>
-    <dct:title xml:lang="da">Variant af Ejerfortegnelsen 1.3.0 efter FODS modelreflerne i XMI-format</dct:title>
-    <dct:title xml:lang="en">Ejerfortegnelsen 2.0.0 XMI FODS Variant</dct:title>     
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.8M</schema:fileSize>
-    <foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA6/EA387.htm"/>
-  </rdf:Description>
+
   
   
 
@@ -1091,8 +993,6 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-7-01</dct:issued> 
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0.0</owl:versionInfo>	
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/gdk-2-0-0-xmi"/>
-    <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_2.0.0_GeoDanmark.xml"/>
-    <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap"/>
   </rdf:Description>
  
   <!-- Udgivelse: GeoDanmark 2.0.0 -->
@@ -1109,19 +1009,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <foaf:page rdf:resource="https://data.gov.dk/model/diagrammer/EARoot/EA9/EA459.htm"/>
   </rdf:Description>
  
-  <!-- Udgivelse: GeoDanmark 2.0.0 FODS-variant -->
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/FODS-variant_2.0.0_GeoDanmark.xml">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/FODS-variant_2.0.0_GeoDanmark.xml"/>
-    <dct:description xml:lang="da">Dette er en variant af grunddatamodellen for GeoDanmark, der er tilpasset de fællesoffentlige modelregler i tilstrækkelig grad til at elementer herfra kan genbruges i modellering i regi af Den fællesoffentlige digitaliseringsstrategi 2016-2020.</dct:description>
-    <dct:description xml:lang="en"/>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-04-19</dct:issued>
-    <dct:title xml:lang="da">Variant af GeoDanmark 2.0.0 efter FODS modelreglerne i XMI-format</dct:title>
-    <dct:title xml:lang="en">GeoDanmark 2.0.0 XMI FODS Variant</dct:title>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.1MB</schema:fileSize>
-    <foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA9/EA612.htm"/>
-  </rdf:Description> 
+
   
  
  
@@ -1169,8 +1057,6 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2.3</owl:versionInfo>
     <adms:versionNotes xml:lang="da">http://grunddatamodel.datafordeler.dk/domaenemodeller/Matrikel/Matrikel%20%C3%A6ndringer%201.1.0%20-%201.2.3.pdf</adms:versionNotes>  
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/mat-1-2-3-xmi"/>
-    <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.2.3_Matrikel.xml"/>
-    <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap"/>
   </rdf:Description>
  
   <!-- Udgivelse: Matrikel 1.2.3 -->
@@ -1188,20 +1074,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <foaf:page rdf:resource="https://data.gov.dk/model/diagrammer/EARoot/EA11/EA648.htm"/>
   </rdf:Description>
  
-  <!-- Udgivelse: Matrikel 1.2.3 FODS-variant -->
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/FODS-variant_1.2.3_Matrikel.xml">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.2.3_Matrikel.xml"/>
-    <dcat:downloadURL rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.2.3_Matrikel.xml"/>	
-    <dct:description xml:lang="da">Variant af grunddatamodellen for Matrikel, der er tilpasset de fællesoffentlige modelregler i tilstrækkelig grad til at elementer herfra kan genbruges i modellering i regi af Den fællesoffentlige digitaliseringsstrategi 2016-2020.</dct:description>
-    <dct:description xml:lang="en"/>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-04-19</dct:issued>
-    <dct:title xml:lang="da">Variant af Matrikel 1.2.3 efter FODS modelreglerne i XMI-format</dct:title>
-    <dct:title xml:lang="en">Matrikel 2.0.0 XMI FODS Variant</dct:title>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.4MB</schema:fileSize>
-    <foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA11/EA1333.htm"/>
-  </rdf:Description> 
+
   
  
 <!-- =======================================  -->
@@ -1248,8 +1121,6 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2.0</owl:versionInfo>
     <adms:versionNotes xml:lang="da"> http://grunddatamodel.datafordeler.dk/domaenemodeller/Person/Person%20%C3%A6ndringer%201.1.0%20-%201.2.0.txt</adms:versionNotes>	
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/cpr-1-2-0-xmi"/>
-    <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.2.0_Person.xml"/>
-    <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap"/>
   </rdf:Description>
  
   <!-- Udgivelse: Person 1.2.0 -->
@@ -1267,20 +1138,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <foaf:page rdf:resource="https://data.gov.dk/model/diagrammer/EARoot/EA12/EA768.htm"/>
   </rdf:Description>
  
-  <!-- Udgivelse: Person 1.2.0 FODS-variant -->
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/FODS-variant_1.2.0_Person.xml">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.2.0_Person.xml"/>
-    <dcat:downloadURL rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.2.0_Person.xml"/>	
-    <dct:description xml:lang="da">Variant af grunddatamodellen for Person (CPR), der er tilpasset de fællesoffentlige modelregler i tilstrækkelig grad til at elementer herfra kan genbruges i modellering i regi af Den fællesoffentlige digitaliseringsstrategi 2016-2020.</dct:description>
-    <dct:description xml:lang="en"/>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-04-19</dct:issued>
-    <dct:title xml:lang="da">Variant af Person 1.2.0 efter FODS-modelreglerne XMI</dct:title>
-    <dct:title xml:lang="en">Person 2.0.0 XMI FODS Variant</dct:title>      
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.2MB</schema:fileSize>
-    <foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA12/EA1798.htm"/>
-  </rdf:Description>
+
  
  
  
@@ -1326,8 +1184,6 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-6-3</dct:modified>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.0</owl:versionInfo>	
     <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/st-1-0-0-xmi"/>
-    <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.0.0_Stednavne.xml"/>
-    <dcat:distribution rdf:resource="https://data.gov.dk/model/profile/FODS-variant_Grunddatamodellen.eap"/>
   </rdf:Description>
   
   <!-- Udgivelse: Stednavne 1.0.0 -->
@@ -1344,19 +1200,6 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
     <foaf:page rdf:resource="https://data.gov.dk/model/diagrammer/EARoot/EA14/EA889.htm"/>
   </rdf:Description>
  
-  <!-- Udgivelse: Stednavne 1.0.0 FODS-variant -->
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/FODS-variant_1.0.0_Stednavne.xml">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/FODS-variant_1.0.0_Stednavne.xml"/>
-    <dct:description xml:lang="da">Dette er en variant af grunddatamodellen for Stednavne, der er tilpasset de fællesoffentlige modelregler i tilstrækkelig grad til at elementer herfra kan genbruges i modellering i regi af Den fællesoffentlige digitaliseringsstrategi 2016-2020.</dct:description>
-    <dct:description xml:lang="en"/>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-04-19</dct:issued>
-    <dct:title xml:lang="da">Variant af Stednavne 1.0.0 efter FODS modelreglerne i XMI-format</dct:title>
-    <dct:title xml:lang="en"/>    
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XMI</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.2MB</schema:fileSize>
-    <foaf:page rdf:resource="https://data.gov.dk/FODS-varianter_grunddata/diagrammer/EARoot/EA13/EA2026.htm"/>
-  </rdf:Description>
   
  
 <!-- =======================================  -->
@@ -3782,10 +3625,12 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:title xml:lang="da">Klassifikation: KLE</dct:title>
     <dct:title xml:lang="en">Classification: KLE</dct:title>
     <dct:description xml:lang="da">KL Emnesystematik (KLE) er en retskildebaseret kommunal taksonomi (journaliseringsnøgle), der bruges til at registrere de kommunale opgaver (emner) og forvaltningshandlingen ift. opgaven (handlingsfacetterne) på den enkelte sag. KL Emnesystematik tilstræber til enhver tid at reflektere den del af den danske lovgivning, der omfatter den kommunale forvaltning.</dct:description>
+    <dct:description xml:lang="en">KLE is a municipal taxonomy based on legal resources used for classifying case records.</dct:description>	
+    <dcat:keyword>emnesystematik</dcat:keyword>	
     <dcat:keyword>klassifikation</dcat:keyword>		
     <dcat:keyword>kontrolleret udfaldsrum</dcat:keyword>		
     <dcat:landingPage rdf:resource="http://www.kle-online.dk/"/>
-    <foaf:page rdf:resource="https://www.kl.dk/nyheder/digitalisering-og-teknologi/2020/september/hvad-er-kl-emnesystematik/"/>
+    <foaf:page rdf:resource="https://www.kl.dk/nyheder/digitalisering-og-teknologi/2020/september/hvad-er-kl-emnesystematik/"/>	
   </rdf:Description>  
  
  
@@ -4400,54 +4245,6 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
   </rdf:Description>
  
  
-  <!-- ORG - Organization ontology -->
-  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-  <rdf:Description rdf:about="https://www.w3.org/TR/vocab-org/">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
-    <dct:title xml:lang="da">Organisationsontologien</dct:title>
-    <dct:title xml:lang="en">The Organization Ontology</dct:title>
-    <dct:description xml:lang="da">En kerneontologi for organisatoriske strukturer målrettet publisering af informationer om organisationer på tværs af domæner som linked data. Den er designet således at den tillader domænespecifikke udvideleser der tilføjer klassifikationer af organisationer og roller, såvel som udvidelser der kan understøtte beslægtede informationer såsom organisatoriske aktiviteter.</dct:description>
-    <dct:description xml:lang="en">A core ontology for organizational structures, aimed at supporting linked data publishing of organizational information across a number of domains. It is designed to allow domain-specific extensions to add classification of organizations and roles, as well as extensions to support neighbouring information such as organizational activities.</dct:description>
-    <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
-    <vann:preferredNamespacePrefix>org</vann:preferredNamespacePrefix>
-    <vann:preferredNamespaceUri>http://www.w3.org/ns/org</vann:preferredNamespaceUri>
-    <dcat:keyword>organisation</dcat:keyword>
-    <dcat:keyword>virksomhed</dcat:keyword>
-    <dcat:keyword>selskab</dcat:keyword>
-    <dcat:keyword>business</dcat:keyword>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-01-16</dct:issued>
-    <dct:publisher>
-    <foaf:Agent>
-        <foaf:name>W3C</foaf:name>
-        <foaf:homepage>https://www.w3.org/</foaf:homepage>
-    </foaf:Agent>
-	</dct:publisher>
-    <dct:rights>Copyright © 2012-2014 W3C</dct:rights>
-    <cc:license rdf:resource="http://www.opendatacommons.org/licenses/pddl/1.0/"/>
-    <dcat:landingPage rdf:resource="https://www.w3.org/ns/org.rdf"/>
-    <foaf:page rdf:resource="https://www.w3.org/TR/vocab-org/"/>
-    <mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>
-    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/>
-	<dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
-    <dcat:distribution rdf:resource="https://www.w3.org/ns/org.rdf"/>
-  </rdf:Description>
-  <!-- Udgivelse: Organization Ontology -->
-  <rdf:Description rdf:about="https://www.w3.org/ns/org.rdf">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://www.w3.org/ns/org.rdf"/>
-    <dct:title xml:lang="da">Organisationsontologien - RDF</dct:title>
-    <dct:title xml:lang="en">The Organization Ontology RDF</dct:title>	  
-    <dct:description xml:lang="da">The Organization Ontology in RDF-format</dct:description>
-    <dct:description xml:lang="en">The Organization Ontology in RDF-format</dct:description>
-    <dct:title xml:lang="da">The Organization Ontology RDF/XML</dct:title>
-    <dct:title xml:lang="en">The Organization Ontology RDF/XML</dct:title>
-    <dct:license rdf:resource="http://www.opendatacommons.org/licenses/pddl/1.0/"/>
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">102K</schema:fileSize>
-  </rdf:Description>	
-	
  
   <!-- FOAF -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -4505,54 +4302,6 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
   </rdf:Description>
   
 
-
-    
- 
-  <!-- EU Budget -->
-  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-  <rdf:Description rdf:about="http://data.europa.eu/bud/">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
-    <dct:title xml:lang="da">EUs Budgetvokabular</dct:title>
-    <dct:title xml:lang="en">EU Budget Vocabulary</dct:title>
-    <dct:description xml:lang="da">Vokabularet for EU Budgetter specificerer en RDF-datamodel til formiding af det årlige EU-budget. ISA Open Metadata Licence v1.1</dct:description>
-    <dct:description xml:lang="en">The EU Budget Vocabulary specifies an RDF data model for disseminating the European annual budget. ISA Open Metadata Licence v1.1</dct:description>
-    <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
-    <vann:preferredNamespacePrefix>bud</vann:preferredNamespacePrefix>
-    <vann:preferredNamespaceUri>https://joinup.ec.europa.eu/site/core_vocabularies/registry/eubudget/eu_budget_vocabulary_1.01.ttl</vann:preferredNamespaceUri>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-09-28</dct:issued>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.01</owl:versionInfo>
-    <adms:versionNotes xml:lang="da">Under udvikling (development</adms:versionNotes>
-	<dct:publisher>
-		<foaf:Agent>
-			<foaf:name>EU</foaf:name>
-			<foaf:homepage>http://publications.europa.eu/resource/authority/corporate-body/PUBL</foaf:homepage>
-		</foaf:Agent>
-	</dct:publisher>
-    <dcat:landingPage rdf:resource="https://joinup.ec.europa.eu/site/core_vocabularies/registry/eubudget/eu_budget_vocabulary_1.01.ttl"/>
-    <foaf:page rdf:resource="https://joinup.ec.europa.eu/release/eu-budget-vocabulary-10/10"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ECON"/>
-    <mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>
-    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/>
-	<dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
-    <dcat:distribution rdf:resource="https://joinup.ec.europa.eu/site/core_vocabularies/registry/eubudget/eu_budget_vocabulary_1.01.ttl"/>
-  </rdf:Description>
-  <!-- Udgivelse: EU Budget Vocabulary 1.0.1 -->
-
-  <!--
-  <rdf:Description rdf:about="https://joinup.ec.europa.eu/site/core_vocabularies/registry/eubudget/eu_budget_vocabulary_1.01.ttl">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://joinup.ec.europa.eu/site/core_vocabularies/registry/eubudget/eu_budget_vocabulary_1.01.ttl"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">EU Budget Vocabulary in Turtle-format</dct:description>
-    <dct:title xml:lang="da">EU Budget Vocabulary 1.0.1 TTL</dct:title>
-    <dct:title xml:lang="en">EU Budget Vocabulary 1.0.1 TTL</dct:title>
-    <dct:license rdf:resource="ISA Open Metadata Licence v1.1"/>
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30K</schema:fileSize>
-  </rdf:Description>
-  -->   
  
   <!-- DCAT -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -5059,71 +4808,60 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTML</dct:format>
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>  
- 
-  <!-- ISA Location Core Vocabulary -->
+
+
+
+
+  <!-- ORG - Organization ontology -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-  <rdf:Description rdf:about="https://www.w3.org/ns/locn">
+  <rdf:Description rdf:about="https://www.w3.org/TR/vocab-org/">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
-    <dct:title xml:lang="da">ISA-programmets kernevokabular for lokation</dct:title>
-    <dct:title xml:lang="en">ISA Programme Location Core Vocabulary</dct:title>
-    <dct:description xml:lang="da">ISA-programmets Location Core Vocabulary specificerer de basale klasser og egenskaber til beskrivelse af ethvert sted ved dets navn, adresse eller geometri. Vokabularet er er specifikt designet til at understøtte publiceringen af data der er interoperable med EUs INSPIRE-direktiv. Det er tæt forbundet ISA-programmets vokabularer Registered Organization Vocabulary og ISA Person Core Vocabulary, som nu også er tilgængelige i W3C-regi.</dct:description>
-    <dct:description xml:lang="en">The ISA Programme Location Core Vocabulary provides a minimum set of classes and properties for describing any place in terms of its name, address or geometry. The vocabulary is specifically designed to aid the publication of data that is interoperable with EU INSPIRE Directive. It is closely integrated with the Business and Person Core Vocabularies of the EU ISA Programme, now available in W3C space as, respectively, the Registered Organization vocabulary and ISA Person Core Vocabulary.</dct:description>
+    <dct:title xml:lang="da">Organisationsontologien</dct:title>
+    <dct:title xml:lang="en">The Organization Ontology</dct:title>
+    <dct:description xml:lang="da">En kerneontologi for organisatoriske strukturer målrettet publisering af informationer om organisationer på tværs af domæner som linked data. Den er designet således at den tillader domænespecifikke udvideleser der tilføjer klassifikationer af organisationer og roller, såvel som udvidelser der kan understøtte beslægtede informationer såsom organisatoriske aktiviteter.</dct:description>
+    <dct:description xml:lang="en">A core ontology for organizational structures, aimed at supporting linked data publishing of organizational information across a number of domains. It is designed to allow domain-specific extensions to add classification of organizations and roles, as well as extensions to support neighbouring information such as organizational activities.</dct:description>
     <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
-    <vann:preferredNamespacePrefix>locn</vann:preferredNamespacePrefix>
-    <vann:preferredNamespaceUri>https://www.w3.org/ns/locn</vann:preferredNamespaceUri>
-    <dcat:keyword>lokation</dcat:keyword>
-    <dcat:keyword>adresse</dcat:keyword>
-    <dcat:keyword>sted</dcat:keyword>
-    <dcat:keyword>geografi</dcat:keyword>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-23</dct:issued>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0</owl:versionInfo>
+    <vann:preferredNamespacePrefix>org</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>http://www.w3.org/ns/org</vann:preferredNamespaceUri>
+    <dcat:keyword>organisation</dcat:keyword>
+    <dcat:keyword>virksomhed</dcat:keyword>
+    <dcat:keyword>selskab</dcat:keyword>
+    <dcat:keyword>business</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-01-16</dct:issued>
     <dct:publisher>
-		<foaf:Agent>
-			<foaf:name>EU</foaf:name>
-			<foaf:homepage>https://joinup.ec.europa.eu/node/42444</foaf:homepage>
-		</foaf:Agent>
+    <foaf:Agent>
+        <foaf:name>W3C</foaf:name>
+        <foaf:homepage>https://www.w3.org/</foaf:homepage>
+    </foaf:Agent>
 	</dct:publisher>
-    <dct:rights>Copyright © European Union, 2012-2015</dct:rights>
-    <cc:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
-    <dcat:landingPage rdf:resource="https://www.w3.org/ns/locn"/>
-    <foaf:page rdf:resource="https://www.w3.org/ns/locn"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI"/>
+    <dct:rights>Copyright © 2012-2014 W3C</dct:rights>
+    <cc:license rdf:resource="http://www.opendatacommons.org/licenses/pddl/1.0/"/>
+    <dcat:landingPage rdf:resource="https://www.w3.org/ns/org.rdf"/>
+    <foaf:page rdf:resource="https://www.w3.org/TR/vocab-org/"/>
     <mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>
-    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/><dadk:businessArea>Fysisk planlægning og geodata</dadk:businessArea>
-    <dadk:businessAreaCode>52</dadk:businessAreaCode>
-    <dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/ad"/>
-    <dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/gn"/>
-    <dcat:distribution rdf:resource="https://www.w3.org/ns/locn.rdf"/>
-    <dcat:distribution rdf:resource="https://www.w3.org/ns/locn.ttl"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/>
+	<dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
+    <dcat:distribution rdf:resource="https://www.w3.org/ns/org.rdf"/>
   </rdf:Description>
-  <!-- Udgivelse: ISA Location Core Vocabulary 2.0 RDF/XML -->
-  <rdf:Description rdf:about="https://www.w3.org/ns/locn.rdf">
+  <!-- Udgivelse: Organization Ontology -->
+  <rdf:Description rdf:about="https://www.w3.org/ns/org.rdf">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://www.w3.org/ns/locn.rdf"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">ISA Programme Location Core Vocabulary in RDF/XML-format</dct:description>
-    <dct:title xml:lang="da"/>
-    <dct:title xml:lang="en">ISA Programme Location Core Vocabulary 2.0 RDF</dct:title>
-    <dct:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF/XML</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">27K</schema:fileSize>
-  </rdf:Description>
-  <!-- Udgivelse: ISA Location Core Vocabulary 2.0 Turtle -->
-  <rdf:Description rdf:about="https://www.w3.org/ns/locn.ttl">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://www.w3.org/ns/locn.ttl"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">ISA Programme Location Core Vocabulary in Turtle-format</dct:description>
-    <dct:title xml:lang="da">ISA Programme Location Core Vocabulary 2.0 TTL</dct:title>
-    <dct:title xml:lang="en">ISA Programme Location Core Vocabulary 2.0 TTL</dct:title>
-    <dct:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20K</schema:fileSize>
-  </rdf:Description>  
- 
-  <!-- W3C Registered Organization Vocabulary -->
+    <dcat:accessURL rdf:resource="https://www.w3.org/ns/org.rdf"/>
+    <dct:title xml:lang="da">Organisationsontologien - RDF</dct:title>
+    <dct:title xml:lang="en">The Organization Ontology RDF</dct:title>	  
+    <dct:description xml:lang="da">The Organization Ontology in RDF-format</dct:description>
+    <dct:description xml:lang="en">The Organization Ontology in RDF-format</dct:description>
+    <dct:title xml:lang="da">The Organization Ontology RDF/XML</dct:title>
+    <dct:title xml:lang="en">The Organization Ontology RDF/XML</dct:title>
+    <dct:license rdf:resource="http://www.opendatacommons.org/licenses/pddl/1.0/"/>
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">102K</schema:fileSize>
+  </rdf:Description>	
+
+
+   <!-- W3C Registered Organization Vocabulary -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
   <rdf:Description rdf:about="https://www.w3.org/TR/vocab-regorg/">
@@ -5183,6 +4921,223 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8K</schema:fileSize>
   </rdf:Description>
    
+
+  <!-- CPOV -->
+  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+  <rdf:Description rdf:about="https://joinup.ec.europa.eu/release/core-public-organisation-vocabulary-v100">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+    <dct:title xml:lang="da">e-Government kernevokabular for offentlig organisation</dct:title>
+    <dct:title xml:lang="en">e-Government Core Public Organisation Vocabulary (CPOV)</dct:title>
+    <dct:description xml:lang="da">Core Public Organization Vocabulary (CPOV) er designet til at understøtte udvekslingen af basisinformation omkring enkelte offentlige organisationer.</dct:description>
+    <dct:description xml:lang="en">The Core Public Organization Vocabulary (CPOV) is designed to support the exchange of basic information about individual public organizations.</dct:description>
+    <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
+    <vann:preferredNamespacePrefix>cpov</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>TBA (ikke tildelt endnu)</vann:preferredNamespaceUri>
+    <dcat:keyword>offentlig organisation</dcat:keyword>
+    <dcat:keyword>myndighed</dcat:keyword>
+    <dcat:keyword>offentlig administration</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-12-15</dct:issued>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.0</owl:versionInfo>
+    <dct:publisher>
+		<foaf:Agent>
+			<foaf:name>European Commission - DIGIT</foaf:name>
+			<foaf:homepage>http://publications.europa.eu/resource/authority/corporate-body/DIGIT</foaf:homepage>
+		</foaf:Agent>
+	</dct:publisher>
+    <dct:rights>© 2016 European Union</dct:rights>
+    <cc:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
+    <dcat:landingPage rdf:resource="https://joinup.ec.europa.eu/release/core-public-organisation-vocabulary-v100"/>
+    <foaf:page rdf:resource="https://joinup.ec.europa.eu/release/core-public-organisation-vocabulary-v100"/>
+    <foaf:page rdf:resource="https://joinup.ec.europa.eu/sites/default/files/distribution/2016-12/core_public_organisation_vocabulary_version_1.0.0.eap"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/GOVE"/>
+    <mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/><dadk:businessArea>Offentlig forvaltning og demokrati</dadk:businessArea>
+    <dadk:businessAreaCode>05.05</dadk:businessAreaCode>
+    <dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
+    <dcat:distribution rdf:resource="https://joinup.ec.europa.eu/sites/default/files/distribution/2017-02/cpov_rdf_schema_turtle_v0.03_0.ttl"/>
+  </rdf:Description>
+  
+  
+  <!-- Core Business Vocabulary -->
+  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+  <rdf:Description rdf:about="http://www.w3.org/ns/legal#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+    <dct:title xml:lang="da">e-Government kernevokabular for virksomheder</dct:title>
+    <dct:title xml:lang="en">e-Government Core Business Vocabulary</dct:title>
+    <dct:description xml:lang="da">Core Business er designet til at understøtte udvekslingen af basisinformation omkring virksomheder</dct:description>
+    <dct:description xml:lang="en">The Core Business Vocabulary is a simplified, reusable and extensible data model that captures the fundamental characteristics of a legal entity, e.g. the legal name, the activity, address, etc.</dct:description>
+    <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
+    <vann:preferredNamespacePrefix>legal</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>http://www.w3.org/ns/legal#</vann:preferredNamespaceUri>
+    <dcat:keyword>virksomhed</dcat:keyword>
+    <dcat:keyword>juridisk enhed</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-12-15</dct:issued>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.0</owl:versionInfo>
+    <dct:publisher>
+		<foaf:Agent>
+			<foaf:name>European Commission - DIGIT</foaf:name>
+			<foaf:homepage>http://publications.europa.eu/resource/authority/corporate-body/DIGIT</foaf:homepage>
+		</foaf:Agent>
+	</dct:publisher>
+    <dct:rights>© 2016 European Union</dct:rights>
+    <cc:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
+    <dcat:landingPage rdf:resource="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/e-government-core-vocabularies/core-business-vocabulary"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/GOVE"/>
+    <mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/>
+	<foaf:page rdf:resource="https://github.com/SEMICeu/Core-Business-Vocabulary"/>
+
+  </rdf:Description>
+  	  
+  	
+  <!-- The Core Standards and Specifications Vocabulary (CSSV)-->
+  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+  <rdf:Description rdf:about="http://data.europa.eu/2sa/cssv#">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+    <dct:title xml:lang="da">e-Government kernevokabular for standarder og specifikationer</dct:title>
+    <dct:title xml:lang="en">The Core Standards and Specifications Vocabulary</dct:title>
+    <dct:description xml:lang="da">Core Standards and Specifications Vocabulary er designet til at understøtte udvekslingen af basisinformation omkring standarder og specifikationer</dct:description>
+    <dct:description xml:lang="en">The CSSV is the vocabulary used for the information exchange related to standards and specifications amongst software solutions, and it is the key element for the development of the new release of the EIRA Library of Interoperability Specifications (ELIS).</dct:description>
+    <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
+    <vann:preferredNamespacePrefix>cssv</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>http://data.europa.eu/2sa/cssv#</vann:preferredNamespaceUri>
+    <dcat:keyword>specifikationer</dcat:keyword>
+    <dcat:keyword>standarder</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020</dct:issued>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.0</owl:versionInfo>
+    <dct:publisher>
+		<foaf:Agent>
+			<foaf:name>European Commission - DIGIT</foaf:name>
+			<foaf:homepage>http://publications.europa.eu/resource/authority/corporate-body/DIGIT</foaf:homepage>
+		</foaf:Agent>
+	</dct:publisher>
+    <cc:license rdf:resource="https://www.gnu.org/licenses/gpl-3.0.html"/>
+    <dcat:landingPage rdf:resource="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/e-government-core-vocabularies/core-business-vocabulary"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/GOVE"/>
+    <mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/>
+	<foaf:page rdf:resource="https://github.com/SEMICeu/CAMSS_CSSV"/>
+
+  </rdf:Description>
+  	  
+	  
+ 
+  <!-- EU Budget -->
+  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+  <rdf:Description rdf:about="http://data.europa.eu/bud/">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+    <dct:title xml:lang="da">EUs Budgetvokabular</dct:title>
+    <dct:title xml:lang="en">EU Budget Vocabulary</dct:title>
+    <dct:description xml:lang="da">Vokabularet for EU Budgetter specificerer en RDF-datamodel til formiding af det årlige EU-budget. ISA Open Metadata Licence v1.1</dct:description>
+    <dct:description xml:lang="en">The EU Budget Vocabulary specifies an RDF data model for disseminating the European annual budget. ISA Open Metadata Licence v1.1</dct:description>
+    <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
+    <vann:preferredNamespacePrefix>bud</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://joinup.ec.europa.eu/site/core_vocabularies/registry/eubudget/eu_budget_vocabulary_1.01.ttl</vann:preferredNamespaceUri>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-09-28</dct:issued>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.01</owl:versionInfo>
+    <adms:versionNotes xml:lang="da">Under udvikling (development</adms:versionNotes>
+	<dct:publisher>
+		<foaf:Agent>
+			<foaf:name>EU</foaf:name>
+			<foaf:homepage>http://publications.europa.eu/resource/authority/corporate-body/PUBL</foaf:homepage>
+		</foaf:Agent>
+	</dct:publisher>
+    <dcat:landingPage rdf:resource="https://joinup.ec.europa.eu/site/core_vocabularies/registry/eubudget/eu_budget_vocabulary_1.01.ttl"/>
+    <foaf:page rdf:resource="https://joinup.ec.europa.eu/release/eu-budget-vocabulary-10/10"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ECON"/>
+    <mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/>
+	<dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
+    <dcat:distribution rdf:resource="https://joinup.ec.europa.eu/site/core_vocabularies/registry/eubudget/eu_budget_vocabulary_1.01.ttl"/>
+  </rdf:Description>
+  <!-- Udgivelse: EU Budget Vocabulary 1.0.1 -->
+
+  <!--
+  <rdf:Description rdf:about="https://joinup.ec.europa.eu/site/core_vocabularies/registry/eubudget/eu_budget_vocabulary_1.01.ttl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://joinup.ec.europa.eu/site/core_vocabularies/registry/eubudget/eu_budget_vocabulary_1.01.ttl"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">EU Budget Vocabulary in Turtle-format</dct:description>
+    <dct:title xml:lang="da">EU Budget Vocabulary 1.0.1 TTL</dct:title>
+    <dct:title xml:lang="en">EU Budget Vocabulary 1.0.1 TTL</dct:title>
+    <dct:license rdf:resource="ISA Open Metadata Licence v1.1"/>
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30K</schema:fileSize>
+  </rdf:Description>
+  -->   
+  
+  <!-- ISA Location Core Vocabulary -->
+  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+  <rdf:Description rdf:about="https://www.w3.org/ns/locn">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+    <dct:title xml:lang="da">e-Government kernevokabular for lokation</dct:title>
+    <dct:title xml:lang="en"> e-Government Core Location Vocabulary</dct:title>
+    <dct:description xml:lang="da">ISA-programmets Location Core Vocabulary specificerer de basale klasser og egenskaber til beskrivelse af ethvert sted ved dets navn, adresse eller geometri. Vokabularet er er specifikt designet til at understøtte publiceringen af data der er interoperable med EUs INSPIRE-direktiv. Det er tæt forbundet ISA-programmets vokabularer Registered Organization Vocabulary og ISA Person Core Vocabulary, som nu også er tilgængelige i W3C-regi.</dct:description>
+    <dct:description xml:lang="en">The ISA Programme Location Core Vocabulary provides a minimum set of classes and properties for describing any place in terms of its name, address or geometry. The vocabulary is specifically designed to aid the publication of data that is interoperable with EU INSPIRE Directive. It is closely integrated with the Business and Person Core Vocabularies of the EU ISA Programme, now available in W3C space as, respectively, the Registered Organization vocabulary and ISA Person Core Vocabulary.</dct:description>
+    <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
+    <vann:preferredNamespacePrefix>locn</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://www.w3.org/ns/locn</vann:preferredNamespaceUri>
+    <dcat:keyword>lokation</dcat:keyword>
+    <dcat:keyword>adresse</dcat:keyword>
+    <dcat:keyword>sted</dcat:keyword>
+    <dcat:keyword>geografi</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-23</dct:issued>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0</owl:versionInfo>
+    <dct:publisher>
+		<foaf:Agent>
+			<foaf:name>European Commission - DIGIT</foaf:name>
+			<foaf:homepage>http://publications.europa.eu/resource/authority/corporate-body/DIGIT</foaf:homepage>
+		</foaf:Agent>
+	</dct:publisher>
+    <dct:rights>Copyright © European Union, 2012-2015</dct:rights>
+    <cc:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
+    <dcat:landingPage rdf:resource="https://www.w3.org/ns/locn"/>
+    <foaf:page rdf:resource="https://www.w3.org/ns/locn"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI"/>
+    <mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/><dadk:businessArea>Fysisk planlægning og geodata</dadk:businessArea>
+    <dadk:businessAreaCode>52</dadk:businessAreaCode>
+    <dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/ad"/>
+    <dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/gn"/>
+    <dcat:distribution rdf:resource="https://www.w3.org/ns/locn.rdf"/>
+    <dcat:distribution rdf:resource="https://www.w3.org/ns/locn.ttl"/>
+  </rdf:Description>
+  <!-- Udgivelse: ISA Location Core Vocabulary 2.0 RDF/XML -->
+  <rdf:Description rdf:about="https://www.w3.org/ns/locn.rdf">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://www.w3.org/ns/locn.rdf"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">ISA Programme Location Core Vocabulary in RDF/XML-format</dct:description>
+    <dct:title xml:lang="da"/>
+    <dct:title xml:lang="en">ISA Programme Location Core Vocabulary 2.0 RDF</dct:title>
+    <dct:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RDF/XML</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">27K</schema:fileSize>
+  </rdf:Description>
+  <!-- Udgivelse: ISA Location Core Vocabulary 2.0 Turtle -->
+  <rdf:Description rdf:about="https://www.w3.org/ns/locn.ttl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://www.w3.org/ns/locn.ttl"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">ISA Programme Location Core Vocabulary in Turtle-format</dct:description>
+    <dct:title xml:lang="da">ISA Programme Location Core Vocabulary 2.0 TTL</dct:title>
+    <dct:title xml:lang="en">ISA Programme Location Core Vocabulary 2.0 TTL</dct:title>
+    <dct:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20K</schema:fileSize>
+  </rdf:Description>  
+ 
+
  
   <!-- ISA Person Core Vocabulary -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -5190,9 +5145,9 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
   <rdf:Description rdf:about="http://www.w3.org/ns/person">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
-    <dct:title xml:lang="da">ISA-programmets kernevokabular for person</dct:title>
-    <dct:title xml:lang="en">ISA Programme Person Core Vocabulary</dct:title>
-    <dct:description xml:lang="da">ISA-programmets Person Core Vocabulary specificerer de basale klasser og egenskaber til beskrivelse af en fysisk person, dvs. individet modsat roller som individer har i samfundet eller de relationer de måtte have til hinanden, organisationer eller ejendom; som hver især bidrager til den brede betydning af identitet.</dct:description>
+    <dct:title xml:lang="da">e-Government kernevokabular for person</dct:title>
+    <dct:title xml:lang="en">e-Government Core Person Vocabulary</dct:title>
+    <dct:description xml:lang="da">ISA-programmets Core Person Vocabulary specificerer de basale klasser og egenskaber til beskrivelse af en fysisk person, dvs. individet modsat roller som individer har i samfundet eller de relationer de måtte have til hinanden, organisationer eller ejendom; som hver især bidrager til den brede betydning af identitet.</dct:description>
     <dct:description xml:lang="en">The Person Core Vocabulary provides a minimum set of classes and properties for describing a natural person, i.e. the individual as opposed to any role they may play in society or the relationships they have to other people, organisations and property; all of which contribute significantly to the broader concept of identity.</dct:description>
     <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
     <vann:preferredNamespacePrefix>person</vann:preferredNamespacePrefix>
@@ -5201,8 +5156,8 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dcat:keyword>persondata</dcat:keyword>
     <dct:publisher>
 		<foaf:Agent>
-			<foaf:name>EU</foaf:name>
-			<foaf:homepage>http://ec.europa.eu/isa/</foaf:homepage>
+			<foaf:name>European Commission - DIGIT</foaf:name>
+			<foaf:homepage>http://publications.europa.eu/resource/authority/corporate-body/DIGIT</foaf:homepage>
 		</foaf:Agent>
 	</dct:publisher>
     <dct:rights>Copyright © 2012 European Commission</dct:rights>
@@ -5227,6 +5182,95 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
     <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7K</schema:fileSize>
   </rdf:Description>  
+ 
+
+  
+    <!-- CPSV -->
+  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+  <rdf:Description rdf:about="https://joinup.ec.europa.eu/solution/core-public-service-vocabulary">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+    <dct:title xml:lang="da">e-government kernevokabular for offentlige services</dct:title>
+    <dct:title xml:lang="en">e-government Core Public Service Vocabulary (CPSV)</dct:title>
+    <dct:description xml:lang="da">Core Public Service Vocabulary (CPSV) er designet til at understøtte udvekslingen af basisinformation omkring  offentlige services.</dct:description>
+    <dct:description xml:lang="en">The Core Public Service Vocabulary (CPSV) is designed to support the exchange of basic information about public services.</dct:description>
+    <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
+    <vann:preferredNamespacePrefix>cpsv</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
+    <dcat:keyword>offentlig service</dcat:keyword>
+    <dcat:keyword>myndighed</dcat:keyword>
+    <dcat:keyword>offentlig administration</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.01.0</owl:versionInfo>
+    <dct:publisher>
+		<foaf:Agent>
+			<foaf:name>European Commission - DIGIT</foaf:name>
+			<foaf:homepage>http://publications.europa.eu/resource/authority/corporate-body/DIGIT</foaf:homepage>
+		</foaf:Agent>
+	</dct:publisher>
+    <dct:rights>© 2013 European Union</dct:rights>
+    <cc:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
+    <dcat:landingPage rdf:resource="https://joinup.ec.europa.eu/solution/core-public-service-vocabulary?f%5B0%5D=solution_content_bundle%3Aasset_release"/>
+    <foaf:page rdf:resource="https://joinup.ec.europa.eu/release/core-public-organisation-vocabulary-v100"/>
+    <foaf:page rdf:resource="https://joinup.ec.europa.eu/sites/default/files/distribution/2016-12/core_public_organisation_vocabulary_version_1.0.0.eap"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/GOVE"/>
+    <mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/><dadk:businessArea>Offentlig forvaltning og demokrati</dadk:businessArea>
+    <dadk:businessAreaCode>05.05</dadk:businessAreaCode>
+    <dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
+    <dcat:distribution rdf:resource="https://joinup.ec.europa.eu/sites/default/files/distribution/2017-02/cpov_rdf_schema_turtle_v0.03_0.ttl"/>
+  </rdf:Description>
+  
+  
+    
+    <!-- CPSV-AP -->
+  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
+  <rdf:Description rdf:about="https://ec.europa.eu/isa2/solutions/core-public-service-vocabulary-application-profile-cpsv-ap_en">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
+    <dct:title xml:lang="da">Anvendelsesprofil for offentlige services</dct:title>
+    <dct:title xml:lang="en">Core Public Service Vocabulary Application Profile </dct:title>
+    <dct:description xml:lang="da">Core Public Service Vocabulary Application Profile (CPSV-AP) er designet til at understøtte udvekslingen af basisinformation omkring  offentlige services.</dct:description>
+    <dct:description xml:lang="en">The Core Public Service Vocabulary Application Profile  (CPSV-AP) is designed to support the exchange of basic information about public services.</dct:description>
+    <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
+    <vann:preferredNamespacePrefix>cpsv-ap</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
+    <dcat:keyword>offentlig service</dcat:keyword>
+    <dcat:keyword>myndighed</dcat:keyword>
+    <dcat:keyword>offentlig administration</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.01.0</owl:versionInfo>
+    <dct:publisher>
+		<foaf:Agent>
+			<foaf:name>European Commission - DIGIT</foaf:name>
+			<foaf:homepage>http://publications.europa.eu/resource/authority/corporate-body/DIGIT</foaf:homepage>
+		</foaf:Agent>
+	</dct:publisher>
+    <dct:rights>© 2019 European Union</dct:rights>
+    <cc:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
+    <dcat:landingPage rdf:resource="https://ec.europa.eu/isa2/solutions/core-public-service-vocabulary-application-profile-cpsv-ap_en"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/GOVE"/>
+    <mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>
+    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/><dadk:businessArea>Offentlig forvaltning og demokrati</dadk:businessArea>
+    <dadk:businessAreaCode>05.05</dadk:businessAreaCode>
+    <dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
+    <dcat:distribution rdf:resource="https://joinup.ec.europa.eu/sites/default/files/distribution/2017-02/cpov_rdf_schema_turtle_v0.03_0.ttl"/>
+  </rdf:Description>
+  <!-- Udgivelse: CPOV 0.3_0 ttl -->
+  <rdf:Description rdf:about="https://joinup.ec.europa.eu/sites/default/files/distribution/2017-02/cpov_rdf_schema_turtle_v0.03_0.ttl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <dcat:accessURL rdf:resource="https://joinup.ec.europa.eu/sites/default/files/distribution/2017-02/cpov_rdf_schema_turtle_v0.03_0.ttl"/>
+    <dct:description xml:lang="da"/>
+    <dct:description xml:lang="en">Core Public Organisation Vocabulary (CPOV) in Turtle-format</dct:description>
+    <dct:title xml:lang="da">CPOV 0.3_0 </dct:title>
+    <dct:title xml:lang="en">CPOV 0.3_0 </dct:title>
+    <dct:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
+    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
+    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">215K</schema:fileSize>
+  </rdf:Description>  
+ 
  
   <!-- Proveniens PROV-O -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -5277,7 +5321,8 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
   </rdf:Description>  
   
  
-  <!-- Description of a Project (DOAP) vocabulary -->
+ 
+   <!-- Description of a Project (DOAP) vocabulary -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
   <rdf:Description rdf:about="http://usefulinc.com/ns/doap">
@@ -5323,129 +5368,6 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
   </rdf:Description>
    
  
-  <!-- CPOV -->
-  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-  <rdf:Description rdf:about="https://joinup.ec.europa.eu/release/core-public-organisation-vocabulary-v100">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
-    <dct:title xml:lang="da">Vokabularet for offentlig organisation</dct:title>
-    <dct:title xml:lang="en">Core Public Organisation Vocabulary (CPOV)</dct:title>
-    <dct:description xml:lang="da">Core Public Organization Vocabulary (CPOV) er designet til at understøtte udvekslingen af basisinformation omkring enkelte offentlige organisationer.</dct:description>
-    <dct:description xml:lang="en">The Core Public Organization Vocabulary (CPOV) is designed to support the exchange of basic information about individual public organizations.</dct:description>
-    <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
-    <vann:preferredNamespacePrefix>cpov</vann:preferredNamespacePrefix>
-    <vann:preferredNamespaceUri>TBA (ikke tildelt endnu)</vann:preferredNamespaceUri>
-    <dcat:keyword>offentlig organisation</dcat:keyword>
-    <dcat:keyword>myndighed</dcat:keyword>
-    <dcat:keyword>offentlig administration</dcat:keyword>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-12-15</dct:issued>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.0</owl:versionInfo>
-    <dct:publisher>
-		<foaf:Agent>
-			<foaf:name>EU</foaf:name>
-			<foaf:homepage>http://publications.europa.eu/resource/authority/corporate-body/DIGIT</foaf:homepage>
-		</foaf:Agent>
-	</dct:publisher>
-    <dct:rights>© 2016 European Union</dct:rights>
-    <cc:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
-    <dcat:landingPage rdf:resource="https://joinup.ec.europa.eu/release/core-public-organisation-vocabulary-v100"/>
-    <foaf:page rdf:resource="https://joinup.ec.europa.eu/release/core-public-organisation-vocabulary-v100"/>
-    <foaf:page rdf:resource="https://joinup.ec.europa.eu/sites/default/files/distribution/2016-12/core_public_organisation_vocabulary_version_1.0.0.eap"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/GOVE"/>
-    <mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>
-    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/><dadk:businessArea>Offentlig forvaltning og demokrati</dadk:businessArea>
-    <dadk:businessAreaCode>05.05</dadk:businessAreaCode>
-    <dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
-    <dcat:distribution rdf:resource="https://joinup.ec.europa.eu/sites/default/files/distribution/2017-02/cpov_rdf_schema_turtle_v0.03_0.ttl"/>
-  </rdf:Description>
-  
-  
-    <!-- CPSV -->
-  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-  <rdf:Description rdf:about="https://joinup.ec.europa.eu/solution/core-public-service-vocabulary">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
-    <dct:title xml:lang="da">Vokabularet for offentlig services</dct:title>
-    <dct:title xml:lang="en">Core Public Service Vocabulary (CPSV)</dct:title>
-    <dct:description xml:lang="da">Core Public Service Vocabulary (CPSV) er designet til at understøtte udvekslingen af basisinformation omkring  offentlige services.</dct:description>
-    <dct:description xml:lang="en">The Core Public Service Vocabulary (CPSV) is designed to support the exchange of basic information about public services.</dct:description>
-    <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
-    <vann:preferredNamespacePrefix>cpsv</vann:preferredNamespacePrefix>
-    <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
-    <dcat:keyword>offentlig service</dcat:keyword>
-    <dcat:keyword>myndighed</dcat:keyword>
-    <dcat:keyword>offentlig administration</dcat:keyword>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.01.0</owl:versionInfo>
-    <dct:publisher>
-		<foaf:Agent>
-			<foaf:name>EU</foaf:name>
-			<foaf:homepage>http://publications.europa.eu/resource/authority/corporate-body/DIGIT</foaf:homepage>
-		</foaf:Agent>
-	</dct:publisher>
-    <dct:rights>© 2013 European Union</dct:rights>
-    <cc:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
-    <dcat:landingPage rdf:resource="https://joinup.ec.europa.eu/solution/core-public-service-vocabulary?f%5B0%5D=solution_content_bundle%3Aasset_release"/>
-    <foaf:page rdf:resource="https://joinup.ec.europa.eu/release/core-public-organisation-vocabulary-v100"/>
-    <foaf:page rdf:resource="https://joinup.ec.europa.eu/sites/default/files/distribution/2016-12/core_public_organisation_vocabulary_version_1.0.0.eap"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/GOVE"/>
-    <mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>
-    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/><dadk:businessArea>Offentlig forvaltning og demokrati</dadk:businessArea>
-    <dadk:businessAreaCode>05.05</dadk:businessAreaCode>
-    <dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
-    <dcat:distribution rdf:resource="https://joinup.ec.europa.eu/sites/default/files/distribution/2017-02/cpov_rdf_schema_turtle_v0.03_0.ttl"/>
-  </rdf:Description>
-  
-  
-    
-    <!-- CPSV-AP -->
-  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-  <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
-  <rdf:Description rdf:about="https://ec.europa.eu/isa2/solutions/core-public-service-vocabulary-application-profile-cpsv-ap_en">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-	<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
-    <dct:title xml:lang="da">Anvendelsesprofil for offentlige services</dct:title>
-    <dct:title xml:lang="en">Core Public Service Vocabulary Application Profile (CPSV-AP)</dct:title>
-    <dct:description xml:lang="da">Core Public Service Vocabulary Application Profile (CPSV-AP) er designet til at understøtte udvekslingen af basisinformation omkring  offentlige services.</dct:description>
-    <dct:description xml:lang="en">The Core Public Service Vocabulary Application Profile  (CPSV-AP) is designed to support the exchange of basic information about public services.</dct:description>
-    <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
-    <vann:preferredNamespacePrefix>cpsv-ap</vann:preferredNamespacePrefix>
-    <vann:preferredNamespaceUri></vann:preferredNamespaceUri>
-    <dcat:keyword>offentlig service</dcat:keyword>
-    <dcat:keyword>myndighed</dcat:keyword>
-    <dcat:keyword>offentlig administration</dcat:keyword>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></dct:issued>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.01.0</owl:versionInfo>
-    <dct:publisher>
-		<foaf:Agent>
-			<foaf:name>EU</foaf:name>
-			<foaf:homepage>http://publications.europa.eu/resource/authority/corporate-body/DIGIT</foaf:homepage>
-		</foaf:Agent>
-	</dct:publisher>
-    <dct:rights>© 2019 European Union</dct:rights>
-    <cc:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
-    <dcat:landingPage rdf:resource="https://ec.europa.eu/isa2/solutions/core-public-service-vocabulary-application-profile-cpsv-ap_en"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/GOVE"/>
-    <mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#CoreModel"/>
-    <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/><dadk:businessArea>Offentlig forvaltning og demokrati</dadk:businessArea>
-    <dadk:businessAreaCode>05.05</dadk:businessAreaCode>
-    <dadk:INSPIRETheme rdf:resource="https://inspire.ec.europa.eu/theme/"/>
-    <dcat:distribution rdf:resource="https://joinup.ec.europa.eu/sites/default/files/distribution/2017-02/cpov_rdf_schema_turtle_v0.03_0.ttl"/>
-  </rdf:Description>
-  <!-- Udgivelse: CPOV 0.3_0 ttl -->
-  <rdf:Description rdf:about="https://joinup.ec.europa.eu/sites/default/files/distribution/2017-02/cpov_rdf_schema_turtle_v0.03_0.ttl">
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dcat:accessURL rdf:resource="https://joinup.ec.europa.eu/sites/default/files/distribution/2017-02/cpov_rdf_schema_turtle_v0.03_0.ttl"/>
-    <dct:description xml:lang="da"/>
-    <dct:description xml:lang="en">Core Public Organisation Vocabulary (CPOV) in Turtle-format</dct:description>
-    <dct:title xml:lang="da">CPOV 0.3_0 </dct:title>
-    <dct:title xml:lang="en">CPOV 0.3_0 </dct:title>
-    <dct:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
-    <dct:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TTL</dct:format>
-    <schema:fileSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">215K</schema:fileSize>
-  </rdf:Description>  
  
   <!-- XML Schema Datatypes -->
   <!-- =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? =? -->
@@ -5605,7 +5527,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta</owl:versionInfo>
 	<dct:publisher>
 		<foaf:Agent>
-			<foaf:name>EU</foaf:name>
+			<foaf:name>European Commission</foaf:name>
 			<foaf:homepage>https://inspire.ec.europa.eu/theme/</foaf:homepage>
 		</foaf:Agent>
 	</dct:publisher>
@@ -6109,8 +6031,8 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <foaf:page rdf:resource="https://www.w3.org/TR/vocab-data-cube/"/>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TECH"/>
     <dct:conformsTo rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <dadk:businessArea>06.40</dadk:businessArea>
-    <dadk:businessAreaCode>Statistik</dadk:businessAreaCode>
+    <dadk:businessArea>Statistik</dadk:businessArea>
+    <dadk:businessAreaCode>06.40</dadk:businessAreaCode>
     <dcat:distribution rdf:resource="http://purl.org/linked-data/cube.ttl"/>
   </rdf:Description>
   
@@ -6135,8 +6057,8 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
 
 <rdf:Description rdf:about="http://data.europa.eu/m8g/cccev">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-    <dct:title xml:lang="da">Kernevokabular for kriterie og bevis</dct:title>   
-    <dct:title xml:lang="en">Core Criterion and Core Evidence Vocabulary</dct:title>
+    <dct:title xml:lang="da">e-Government kernevokabular for kriterier og beviser</dct:title>   
+    <dct:title xml:lang="en">e-Government Core Criterion and Core Evidence Vocabulary</dct:title>
     <dct:description xml:lang="da">Vokabular for kriterie - det der bruges som basis for en afgørelse eller en beslutning, fx et krav i et offentligt udbud eller en betingelse der skal være opfyldt for at modtage en offentlig ydelse, og bevis - det der dokumenterer at noget eksisterer eller er sandt, specifikt bevis for at et specifikt kriterie er opfyldt.</dct:description>   
     <dct:description xml:lang="en">The Core Criterion and Core Evidence Vocabulary (CCCEV) contains two basic and complementary core concepts: the criterion, something used as the basis for making a judgement or decision, e.g. a requirement set in a public tender or a condition that has to be fulfilled for a public service to be executed; and the evidence, something which proves that something else exists or is true, in particular an evidence is used to prove that a specific criterion is met by someone of by something.</dct:description>
     <dct:type rdf:resource="http://data.europa.eu/dr8/CoreDataModel"/>
@@ -6155,7 +6077,7 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <adms:versionNotes xml:lang="da"></adms:versionNotes>
 	<dct:publisher>
     <foaf:Agent>
-        <foaf:name>EU</foaf:name>
+        <foaf:name>European Commission - DIGIT</foaf:name>
         <foaf:homepage>http://publications.europa.eu/resource/authority/corporate-body/DIGIT</foaf:homepage>
     </foaf:Agent>
 	</dct:publisher>
@@ -6524,8 +6446,8 @@ Begrebet ’en Sag’ anvendes i mange forskellige sammenhænge og til mange for
     <dadk:modellingRegime rdf:resource="https://data.gov.dk/model/core/modellingregime#International"/>
 	<dct:conformsTo rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI"/>
-    <dadk:businessArea>38</dadk:businessArea>
-    <dadk:businessAreaCode>Natur og klima</dadk:businessAreaCode>
+    <dadk:businessArea>Natur og klima</dadk:businessArea>
+    <dadk:businessAreaCode>38</dadk:businessAreaCode>
 	<foaf:page rdf:resource="http://www.qudt.org/"/>
     <dcat:landingPage rdf:resource="http://www.qudt.org/2.1/catalog/qudt-catalog.html"/>	
   </rdf:Description>  
