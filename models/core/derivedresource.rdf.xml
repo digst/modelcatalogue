@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xml" href="./htmltransform.xsl"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:dc="http://purl.org/dc/terms/"
+		 xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+		 xmlns:fabio="http://purl.org/spar/fabio/"
+		 xmlns:vann="http://purl.org/vocab/vann/"
+		 xmlns:org="http://www.w3.org/ns/org#"
+		 xmlns:voaf="http://purl.org/vocommons/voaf#"
+		 xmlns:frbr="http://purl.org/vocab/frbr/core#"
+		 xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+		 xmlns:voag="http://voag.linkedmodel.org/schema/voag#" 
+		 xmlns:prov="http://www.w3.org/ns/prov#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+		 xmlns:adms="http://www.w3.org/ns/adms#"  
+		 xmlns:plus="https://data.gov.dk/model/core/plus#"  		 
+		 xmlns:vdr="https://data.gov.dk/model/core/derivedresource#">
+		 
+  <rdf:Description rdf:about="https://data.gov.dk/model/core/derivedresource#">
+    <rdf:type rdf:resource="http://labs.mondeca.com/vocab/voaf#Vocabulary"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+	<rdf:type rdf:resource="https://data.gov.dk/model/core/plus#Vocabulary"/>	
+    <dc:title xml:lang="en">Derived Resource</dc:title>
+    <rdfs:label xml:lang="en">Derived Resource</rdfs:label>
+    <dc:title xml:lang="da">Afledt ressource</dc:title>
+    <rdfs:label xml:lang="da">Afledt ressource</rdfs:label>
+	<dct:publisher>Digitaliseringsstyrelsen</dct:publisher>	
+    <rdfs:comment xml:lang="da">Denne model kan anvendes i de tilfælde, hvor en ressource er dannet, enten ved opdeling af en anden ressource eller ved sammenlægning af to eller flere andre ressourcer.</rdfs:comment>	
+	<owl:versionInfo>0.1.0</owl:versionInfo>
+	<dct:modified>30-04-2018</dct:modified>
+	<adms:status>Development</adms:status>
+    <adms:status rdf:resource="https://data.gov.dk/model/core/ModelStatus#Development"/>	 
+	<plus:approvalStatus>afventer godkendelse (awaiting approval)</plus:approvalStatus>
+    <plus:approvalStatus rdf:resource="https://data.gov.dk/model/core/ApprovalStatus#AwaitingApproval"/>		
+	<dct:theme>06.38.10.10 Arkitektur for den digitale infrastruktur</dct:theme>
+	<plus:legalSource></plus:legalSource>
+	<dct:source>http://www.w3.org/ns/prov#</dct:source>
+	<voag:hasOntologyArchitectureDiagram>./derivedresource.png</voag:hasOntologyArchitectureDiagram>	 <!-- skal rettes til absolut sti når namespaces er på plads -->	
+  </rdf:Description>
+  
+  <owl:ObjectProperty rdf:about="https://data.gov.dk/model/core/derivedresource#wasDerivedBySplitting">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>		
+	<skos:definition xml:lang="da">angivelse af en ressource der ved opdeling, er blevet til to eller flere andre ressourcer, hver med et indhold er snævrere i forhold til kilderessourcen</skos:definition>	
+    <skos:definition xml:lang="en"></skos:definition>	
+    <rdfs:label xml:lang="en">was derived by splitting</rdfs:label> 	
+    <skos:prefLabel xml:lang="en">was derived by splitting</skos:prefLabel> 
+    <skos:prefLabel xml:lang="da">blev afledt ved opdeling af</skos:prefLabel>  
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/derivedresource#"/>		
+  </owl:ObjectProperty>  
+ 
+  <owl:ObjectProperty rdf:about="https://data.gov.dk/model/core/derivedresource#wasDerivedByMerging">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>	
+	<skos:definition xml:lang="da">angivelse af en ressource der ved sammenlægning af to eller flere andre ressourcer har fået et indhold der er bredere i forhold til kilderessourcerne</skos:definition>	
+    <skos:definition xml:lang="en"></skos:definition>	
+    <rdfs:label xml:lang="en">was derived by merging</rdfs:label> 	
+    <skos:prefLabel xml:lang="en">was derived by merging</skos:prefLabel> 
+    <skos:prefLabel xml:lang="da">blev afledt ved sammenlægning af</skos:prefLabel>  
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/derivedresource#"/>		
+  </owl:ObjectProperty> 
+ 
+  </rdf:RDF>

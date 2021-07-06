@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xml" href="./htmltransform.xsl"?>
+<rdf:RDF xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:voaf="http://purl.org/vocommons/voaf#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:ns0="http://labs.mondeca.com/vocab/voaf#"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:voag="http://voag.linkedmodel.org/schema/voag#" 
+  xmlns:adms="http://www.w3.org/ns/adms#"  
+  xmlns:plus="https://data.gov.dk/model/core/plus#"  
+  xmlns:fac="https://data.gov.dk/model/core/facet#"> 
+
+<!-- Document metadata -->
+
+  <rdf:Description rdf:about="https://data.gov.dk/model/core/facet#">
+    <rdf:type rdf:resource="http://labs.mondeca.com/vocab/voaf#Vocabulary"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+	<rdf:type rdf:resource="https://data.gov.dk/model/core/plus#Vocabulary"/>
+    <dc:title xml:lang="en">Facet</dc:title>
+    <rdfs:label xml:lang="en">Facet</rdfs:label>
+    <dc:title xml:lang="da">Facet</dc:title>
+    <rdfs:label xml:lang="da">Facet</rdfs:label>	
+	<dct:publisher>Digitaliseringsstyrelsen</dct:publisher>	
+    <rdfs:comment xml:lang="da">Et begrebssystem kan fungere som overordnet, samlende system for to eller flere andre begrebssystemer der hver især afspejler et bestemt aspekt, og derved danne et facetteret begrebssystem.</rdfs:comment>
+	<rdfs:comment xml:lang="en">A concept scheme is able to function as an overall unifing concept system for two or several other concept schemes which individually reflects a certain aspect thus establishing a faceted concept scheme.</rdfs:comment>
+	<owl:versionInfo>0.1.0</owl:versionInfo>
+	<dct:modified>30-04-2018</dct:modified>
+	<adms:status>Development</adms:status>
+    <adms:status rdf:resource="https://data.gov.dk/model/core/ModelStatus#Development"/>	 
+	<plus:approvalStatus>afventer godkendelse (awaiting approval)</plus:approvalStatus>
+    <plus:approvalStatus rdf:resource="https://data.gov.dk/model/core/ApprovalStatus#AwaitingApproval"/>		
+	<dct:theme>06.38.10.10 Arkitektur for den digitale infrastruktur</dct:theme>
+	<plus:legalSource></plus:legalSource>
+	<dct:source>http://www.w3.org/2004/02/skos/core#</dct:source>	
+	<voag:hasOntologyArchitectureDiagram>./facet.png</voag:hasOntologyArchitectureDiagram>	 <!-- skal rettes til absolut sti når namespaces er på plads -->	
+	
+	
+	
+	
+	<voag:hasOntologyArchitectureDiagram>./facet.jpg</voag:hasOntologyArchitectureDiagram>	
+  </rdf:Description>
+
+
+  <rdf:Property rdf:about="https://data.gov.dk/model/core/facet#hasFacet">
+    <skos:prefLabel xml:lang="en">has facet</skos:prefLabel> 
+    <skos:prefLabel xml:lang="da">har facet</skos:prefLabel>    	
+	<skos:definition xml:lang="da">angivelse af et begrebssystem der fungerer som facet i et overordnet samlende begrebssystem</skos:definition>
+	<skos:definition xml:lang="en">specification of a concept scheme that functions as a facet in an overall unifing concept system </skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/> 
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/facet#"/> 
+  </rdf:Property>
+
+  <rdf:Property rdf:about="https://data.gov.dk/model/core/facet#hasPrimaryFacet">
+    <skos:prefLabel xml:lang="en">has primary facet</skos:prefLabel> 
+    <skos:prefLabel xml:lang="da">has primary facet</skos:prefLabel>   
+	<skos:definition xml:lang="da">angivelse af den grundlæggende facet i tilfælde hvor der er flere facetter for et overordnet samlende begrebssystem</skos:definition>
+	<skos:definition xml:lang="en">specification of the highest ranking or most important facet when a facted concept scheme contains several concept schemes</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/> 
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/facet#"/> 
+	<rdfs:subPropertyOf rdf:resource="https://data.gov.dk/model/core/facet#hasFacet"/>	
+  </rdf:Property>  
+
+    <rdf:Property rdf:about="https://data.gov.dk/model/core/facet#facetInScheme">
+    <skos:prefLabel xml:lang="en">facet in scheme</skos:prefLabel> 
+    <skos:prefLabel xml:lang="da">facet i system</skos:prefLabel>   	
+	<skos:definition xml:lang="da">angivelse af et overordnet samlende begrebssystem som begrebssystemet indgår som facet i</skos:definition>
+	<skos:definition xml:lang="en">specification of the overall unifing concept system in which the particular concept scheme functions as a facet</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/> 
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/facet#"/> 
+  </rdf:Property>  
+  
+  
+    <rdf:Property rdf:about="https://data.gov.dk/model/core/facet#index">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    <skos:prefLabel xml:lang="en">index</skos:prefLabel> 
+    <skos:prefLabel xml:lang="da">indeks</skos:prefLabel>   		
+	<skos:definition xml:lang="da">angivelse af den enkelte facets placering i en eventuelt fastsat rækkefølge</skos:definition>
+	<skos:definition xml:lang="en">specification of the position of the facet in an order</skos:definition>
+	<rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#PositiveInteger"/> 
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/facet#"/> 
+   </rdf:Property>
+   
+   </rdf:RDF>

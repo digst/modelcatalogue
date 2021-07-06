@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xml" href="./htmltransform.xsl"?>
+<rdf:RDF xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+xmlns:vann="http://purl.org/vocab/vann/" 
+xmlns:fabio="http://purl.org/spar/fabio/" 
+xmlns:owl="http://www.w3.org/2002/07/owl#" 
+xmlns:org="http://www.w3.org/ns/org#" 
+xmlns:voaf="http://purl.org/vocommons/voaf#" 
+xmlns:frbr="http://purl.org/vocab/frbr/core#" 
+xmlns:cpsv="http://purl.org/vocab/cpsv/" 
+xmlns:prov="http://www.w3.org/ns/prov#" 
+xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#" 
+xmlns:ns0="http://data.europa.eu/m8g/" 
+xmlns:skos="http://www.w3.org/2004/02/skos/core#" 
+xmlns:dc="http://purl.org/dc/terms/" 
+xmlns:dct="http://purl.org/dc/terms/" 
+xmlns:lst="https://data.gov.dk/model/vocabulary/list#" 
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+xmlns:voag="http://voag.linkedmodel.org/schema/voag#" 
+xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+xmlns:adms="http://www.w3.org/ns/adms#"  
+xmlns:plus="https://data.gov.dk/model/core/plus#"  
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+  <rdf:Description rdf:about="https://data.gov.dk/model/core/list#">
+    <rdf:type rdf:resource="http://labs.mondeca.com/vocab/voaf#Vocabulary"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+	<rdf:type rdf:resource="https://data.gov.dk/model/core/plus#Vocabulary"/>	
+	<dct:publisher>Digitaliseringsstyrelsen</dct:publisher>	
+    <rdfs:comment xml:lang="da">Model der specificerer listestrukturer. </rdfs:comment>
+    <dct:title xml:lang="en">List</dct:title>
+    <rdfs:label xml:lang="en">List</rdfs:label>
+    <dct:title xml:lang="da">Liste</dct:title>
+    <rdfs:label xml:lang="da">Liste</rdfs:label>	
+	<owl:versionInfo>0.1.0</owl:versionInfo>
+	<dct:modified>30-04-2018</dct:modified>
+	<adms:status>Development</adms:status>
+    <adms:status rdf:resource="https://data.gov.dk/model/core/ModelStatus#Development"/>	 
+	<plus:approvalStatus>afventer godkendelse (awaiting approval)</plus:approvalStatus>
+    <plus:approvalStatus rdf:resource="https://data.gov.dk/model/core/ApprovalStatus#AwaitingApproval"/>		
+	<dct:theme>06.38.10.10 Arkitektur for den digitale infrastruktur</dct:theme>
+	<plus:legalSource></plus:legalSource>
+	<dct:source></dct:source>
+	<voag:hasOntologyArchitectureDiagram>./list.png</voag:hasOntologyArchitectureDiagram>		
+  </rdf:Description>
+  
+  <owl:Class rdf:about="https://data.gov.dk/model/core/list#List">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>  
+    <skos:definition xml:lang="da">struktur der ordner emner i en rækkefølge</skos:definition>
+    <skos:definition xml:lang="en">structure that places items in an order</skos:definition>	
+    <skos:prefLabel xml:lang="en">list</skos:prefLabel> 
+    <skos:prefLabel xml:lang="da">liste</skos:prefLabel>   
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/list#"/>		
+  </owl:Class>
+  
+  <owl:Class rdf:about="https://data.gov.dk/model/core/list#ListItem">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <skos:definition xml:lang="da">emne som indgår i en listestruktur</skos:definition>
+    <skos:definition xml:lang="en">item which enters into a list structure</skos:definition>	
+    <skos:prefLabel xml:lang="en">list item</skos:prefLabel> 
+    <skos:prefLabel xml:lang="da">listeemne</skos:prefLabel>   
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/list#"/>		
+  </owl:Class>
+  
+  <owl:ObjectProperty rdf:about="https://data.gov.dk/model/core/list#firstListItem"> 
+    <rdfs:domain rdf:resource="https://data.gov.dk/model/core/list#List"/>
+    <rdfs:range rdf:resource="https://data.gov.dk/model/core/list#ListItem"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<skos:definition xml:lang="da">det listeelement der er det første i den ordnede rækkefølge.</skos:definition>	
+    <skos:definition xml:lang="en">the first item in a list structure</skos:definition>	
+    <skos:prefLabel xml:lang="en">first list item</skos:prefLabel> 
+    <skos:prefLabel xml:lang="da">første listeemne</skos:prefLabel>   	
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/list#"/>		
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:about="https://data.gov.dk/model/core/list#nextListItem">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="https://data.gov.dk/model/core/list#ListItem"/>
+    <rdfs:range rdf:resource="https://data.gov.dk/model/core/list#ListItem"/>	
+	<skos:definition xml:lang="da">angivelse af et listeemnes efterfølgende listeemne i en ordnet rækkefølge</skos:definition>
+    <skos:definition xml:lang="en"></skos:definition>		
+    <skos:prefLabel xml:lang="en">next list item</skos:prefLabel> 
+    <skos:prefLabel xml:lang="da">næste listeemne</skos:prefLabel>   	
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/list#"/>		
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://data.gov.dk/model/core/list#previousListItem">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="https://data.gov.dk/model/core/list#ListItem"/>
+    <rdfs:range rdf:resource="https://data.gov.dk/model/core/list#ListItem"/>	
+	<skos:definition xml:lang="da">angivelse af et listeemnes førkommende listeemne i en ordnet rækkefølge</skos:definition>	
+    <skos:definition xml:lang="en"></skos:definition>	
+    <skos:prefLabel xml:lang="en">previous list item</skos:prefLabel> 
+    <skos:prefLabel xml:lang="da">forrige listeemne</skos:prefLabel>   
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/list#"/>	  
+  </owl:ObjectProperty>  
+  
+  <owl:DatatypeProperty rdf:about="https://data.gov.dk/model/core/list#numberOfItems">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="https://data.gov.dk/model/core/list#List"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#NonNegativeInteger"/>	
+    <skos:prefLabel xml:lang="en">number of items</skos:prefLabel> 
+    <skos:prefLabel xml:lang="da">antal listeemner</skos:prefLabel>  
+    <skos:definition xml:lang="da">det samlede antal emner i en listestruktur</skos:definition>	
+    <skos:definition xml:lang="en">the total number of items in a list structure</skos:definition>	
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/list#"/>	
+  </owl:DatatypeProperty>
+  
+  <owl:DatatypeProperty rdf:about="https://data.gov.dk/model/core/list#orderedList">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="https://data.gov.dk/model/core/list#List"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Boolean"/>		
+	<skos:definition xml:lang="da">specification of whether the order of the list items carries meaning</skos:definition>	
+    <skos:definition xml:lang="en">angivelse af om rækkefølgen af listens elementer bærer betydning eller ej</skos:definition>	
+    <skos:prefLabel xml:lang="en">ordered list</skos:prefLabel> 
+    <skos:prefLabel xml:lang="da">ordnet liste</skos:prefLabel>   
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/list#"/>		
+  </owl:DatatypeProperty>
+  
+</rdf:RDF>

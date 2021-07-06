@@ -1,0 +1,130 @@
+html, body {
+	
+  padding: 2em 1em 2em 50px;
+  background: white;
+  font-family: sans-serif;  
+}
+
+dt {
+    float: left;
+    width: 11%;
+    text-align: left;
+    padding: .25em;
+    clear: left;
+}
+
+.usage div {
+	color: #940027;
+	font-style: italic;
+}
+
+
+div.usage {
+	color: #940027;
+	font-style: italic;
+	
+}
+
+
+dd {
+    float: left;
+    width: 60%;
+    padding: .25em 0;
+}
+dl:after {content:"";display:table;clear:both;}
+
+img {
+    max-width: 100%;
+    height: auto;
+	
+}
+
+h1 {
+	color: #940027;
+}
+
+h2 {
+	color: #940027;	
+	padding-top: 20px;
+}
+
+h3 {
+	color: black;	
+	padding-top: 0px;
+}
+
+a{
+	color:#940027;
+	}
+
+span.about {
+  color: #666;
+}
+
+.table {
+	border: thin grey solid;
+	margin: 5px;
+	padding:5px;
+}
+
+.resource {
+	border: thin grey solid;
+	margin: 5px;
+	padding:5px;
+}
+
+/*
+.resource:hover {
+	background-color: #EEE;
+}
+*/
+
+/* BELOW STATUS BOX CSS BASED ON : https://github.com/dgarijo/Widoco
+/* Expansion to add the status*/
+.status {
+    position: fixed;
+    left: 0em;
+    top: 0em;
+    text-align: right;
+    vertical-align: middle;
+    /* Square version of the inside span. Slightly larger */
+    width: 26em;
+    height: 26em;
+    z-index: -1;
+    opacity: 0.8;
+    /** From http://stackoverflow.com/questions/1080792/how-to-draw-vertical-text-with-css-cross-browser */
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    /* also accepts left, right, top, bottom coordinates; not
+    * required, but a good idea for styling */
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    /* Should be unset in IE9+ I think. */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+/* The actual status box */
+ .status div {   
+    display: block;
+    background: #940027;
+    color: white;
+    width: 24em;
+    padding-top: 0.3em;
+    padding-left: 0em;
+    padding-right: 5em;
+    padding-bottom: 0.3em;
+    /* Enable for debugging 
+    border: red thin solid;
+     */
+} 
+/* And text inside, don't confuse fonts as it breaks em above */
+.status div span {
+    font-family: "Tauri";
+    font-size: larger;
+}
+

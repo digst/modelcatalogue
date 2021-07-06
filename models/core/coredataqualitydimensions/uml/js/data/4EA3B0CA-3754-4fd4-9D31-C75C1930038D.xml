@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0:1", "", "Fællesoffentlige datakvalitetsdimensioner", "EARoot/EA1.htm", "175.png", "2874", "0", "", "Logical diagram0","{1C78D0F1-1136-4eef-980F-D094ED840DC0}");
+tocTab[tocTab.length] = new Array("0:2", "", "«OwlClass» CoreDimension", "EARoot/EA4.htm", "5.png", "E29544", "0", "", "Class0","{DB0C5401-B776-4eb1-85B6-EA8025948C8D}");
+tocTab[tocTab.length] = new Array("0:3", "", "«Individual» Currentness", "EARoot/EA5.htm", "25.png", "E24781", "0", "", "Object0","{B2171B79-3B73-4d6b-9B8C-6675AE7A1A35}");
+tocTab[tocTab.length] = new Array("0:4", "", "«Individual» Reusability", "EARoot/EA6.htm", "25.png", "E24782", "0", "", "Object0","{62FB4C6D-49C4-40c0-A78B-E4F937E77FD0}");
+tocTab[tocTab.length] = new Array("0:5", "", "«Individual» Completeness", "EARoot/EA7.htm", "25.png", "E24779", "0", "", "Object0","{EF0AFE85-6A61-427a-886A-9E413B694850}");
+tocTab[tocTab.length] = new Array("0:6", "", "«Individual» Accuracy", "EARoot/EA8.htm", "25.png", "E24780", "0", "", "Object0","{2A3E2AA5-89DB-4735-8ACC-CC6D4309036B}");

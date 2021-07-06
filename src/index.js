@@ -188,7 +188,7 @@ function displayResult()
 				//Updates the view
 				$.ajax({
 					type: "POST",
-					url: 'php/search_ajax.php',
+					url: '/search_ajax.php',
 					
 					data: $('#search-form').serialize(),
 					

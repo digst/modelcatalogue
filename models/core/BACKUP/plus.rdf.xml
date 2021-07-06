@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xml" href="./htmltransform.xsl"?>
+<rdf:RDF xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:dc11="http://purl.org/dc/elements/1.1/"
+  xmlns:voaf="http://purl.org/vocommons/voaf#"
+  xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:dcat="http://www.w3.org/ns/dcat#" 
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:prov="http://www.w3.org/ns/prov#"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:adms="http://www.w3.org/ns/adms#"
+  xmlns:voag="http://voag.linkedmodel.org/schema/voag#" 
+  xmlns:vaem="http://www.linkedmodel.org/schema/vaem#"
+  xmlns:dct="http://purl.org/dc/terms/"   
+  xmlns:plus="https://data.gov.dk/model/core/plus#"> 
+
+  
+<!--
+==================================================================================================================================================================================
+PLUS VOCABULARY
+==================================================================================================================================================================================
+-->  
+<!-- Document metadata -->
+
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/plusprofile#">
+    <rdf:type rdf:resource="https://data.gov.dk/model/core/plus#ApplicationProfile"/>
+    <rdfs:label xml:lang="en">Model Vocabulary</rdfs:label>
+    <rdfs:label xml:lang="da">Model Vocabulary</rdfs:label>	
+    <rdfs:comment xml:lang="da"></rdfs:comment>
+	<rdfs:comment xml:lang="en"></rdfs:comment>
+	<dct:publisher>Digitaliseringsstyrelsen</dct:publisher>
+	<owl:versionInfo>2.0.0</owl:versionInfo>
+	<dct:modified>30-04-2018</dct:modified>
+	<adms:status>Development</adms:status>
+    <adms:status rdf:resource="https://data.gov.dk/model/core/ModelStatus#Development"/>	 
+	<plus:approvalStatus>afventer godkendelse (awaiting approval)</plus:approvalStatus>
+    <plus:approvalStatus rdf:resource="https://data.gov.dk/model/core/ApprovalStatus#AwaitingApproval"/>		
+	<dct:theme>06.38.10.10 Arkitektur for den digitale infrastruktur</dct:theme>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">This vocabulary specifies models and model elements to be applied in modelling in accordance with the Danish Public Rules for Concept and Data Modeling. </comment>
+
+	<legalSource xmlns="https://data.gov.dk/model/core/plus#legalSource"></legalSource>
+	<source xmlns="http://purl.org/dc/terms/"></source>		
+	<voag:hasOntologyArchitectureDiagram>./plus.png</voag:hasOntologyArchitectureDiagram>	 <!-- skal rettes til absolut sti når namespaces er på plads -->
+  </rdf:Description>
+
+  
+<!--
+==================================================================================================================================================================================
+CLASSES
+==================================================================================================================================================================================
+-->    
+    <rdfs:Class rdf:about="https://data.gov.dk/model/core/plus#Model">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
+	<skos:prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">model</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">model</skos:prefLabel>	
+	<skos:definition xml:lang="en">object that represents an entity by possing a proper subset of its properties</skos:definition>
+	<skos:definition xml:lang="da">objekt der repræsenterer en entitet ved at besidde en ægte delmængde af dennes egenskaber</skos:definition>
+	<plus:legalSource></plus:legalSource>
+	<dct:source></dct:source>	
+	<rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/plus#"/>	
+  </rdfs:Class>   
+  
+  <rdfs:Class rdf:about="https://data.gov.dk/model/core/plus#ConceptModel">
+    <rdfs:subClassOf rdf:resource="https://data.gov.dk/model/core/plus#Model" />
+	<skos:prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">concept model</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">begrebsmodel</skos:prefLabel>	
+	<skos:definition xml:lang="en">model that describes the concepts of a domain and their mutual relations</skos:definition>
+	<skos:definition xml:lang="da">model der beskriver et fagområdes begreber og deres indbyrdes relationer</skos:definition>
+	<plus:legalSource></plus:legalSource>
+	<dct:source></dct:source>	
+	<rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/plus#"/>		
+  </rdfs:Class>   
+
+  <rdfs:Class rdf:about="https://data.gov.dk/model/core/plus#LogicalModel">
+    <rdfs:subClassOf rdf:resource="https://data.gov.dk/model/core/plus#Model" />
+	<skos:prefLabel xml:lang="en">logical model</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">logisk model</skos:prefLabel>	
+	<skos:definition xml:lang="en">model that describes what information is relevant in a specific context and how they are logically related</skos:definition>
+	<skos:definition xml:lang="da">model som beskriver, hvilke informationer der indgår i en afgrænset kontekst, og hvordan de logisk hænger sammen</skos:definition>
+
+	<plus:legalSource></plus:legalSource>
+	<dct:source></dct:source>	
+	<rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/plus#"/>		
+  </rdfs:Class>   
+  
+  <rdfs:Class rdf:about="https://data.gov.dk/model/core/plus#CoreModel">
+    <rdfs:subClassOf rdf:resource="https://data.gov.dk/model/core/plus#LogicalModel" />
+	<skos:prefLabel xml:lang="en">core model</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">kernemodel</skos:prefLabel>	
+	<skos:definition xml:lang="en">reusable logical model of a domain with a specific business object in its core, and that does not defines model elements that have defined in other core models </skos:definition>
+	<skos:definition xml:lang="da">genbrugelig logisk model over et emneområde med et centralt forretningsobjekt, og som ikke definerer modelelementer som er defineret i andre kernemodeller</skos:definition>
+	<plus:legalSource></plus:legalSource>
+	<dct:source></dct:source>	
+	<rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/plus#"/>		
+  </rdfs:Class>  
+  
+  <rdfs:Class rdf:about="https://data.gov.dk/model/core/plus#Vocabulary">
+    <rdfs:subClassOf rdf:resource="https://data.gov.dk/model/core/plus#CoreModel" />
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>  
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+	<skos:prefLabel xml:lang="en">vocabulary</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">vokabular</skos:prefLabel>	
+	<skos:altLabel xml:lang="en">RDF vocabulary</skos:altLabel>
+	<skos:altLabel xml:lang="da">RDF-vokabular</skos:altLabel>		
+	<skos:definition xml:lang="en">core model based on RDF that ensures semantic unambiguity and cohesion</skos:definition>
+	<skos:definition xml:lang="da">kernemodel der baseres på en beskrivelsesramme i RDF, og som sikrer semantisk entydighed, sammenhæng og maskintilgængelighed</skos:definition>
+	<plus:legalSource></plus:legalSource>
+	<dct:source></dct:source>	
+	<rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/plus#"/>		
+  </rdfs:Class>  
+    
+  
+  <rdfs:Class rdf:about="https://data.gov.dk/model/core/plus#ApplicationModel">
+    <rdfs:subClassOf rdf:resource="https://data.gov.dk/model/core/plus#LogicalModel" />
+	<skos:prefLabel xml:lang="en">application model</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">anvendelsesmodel</skos:prefLabel>	
+	<skos:definition xml:lang="en">logical model which is oriented towards a specific application situation in a defined context </skos:definition>
+	<skos:definition xml:lang="da">logisk model som er rettet mod en specifik anvendelsessituation i en afgrænset kontekst</skos:definition>
+	<plus:legalSource></plus:legalSource>
+	<dct:source></dct:source>	
+	<rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/plus#"/>		
+  </rdfs:Class>    
+ 
+  <rdfs:Class rdf:about="https://data.gov.dk/model/core/plus#Applicationprofile">
+    <rdfs:subClassOf rdf:resource="https://data.gov.dk/model/core/plus#ApplicationModel" />
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>  
+  	<rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>	
+	<skos:prefLabel xml:lang="en">application profile</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">anvendelseprofil</skos:prefLabel>	
+	<skos:definition xml:lang="en">application model that by profiling reuses selected elements from ore or more vocabularies based on RDF</skos:definition>
+	<skos:definition xml:lang="da">anvendelsesmodel der ved profilering genbruger udvalgte elementer fra et eller flere vokabularer baseret på en beskrivelsesramme i RDF</skos:definition>
+	<plus:legalSource></plus:legalSource>
+	<dct:source></dct:source>	
+	<rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/plus#"/>		
+  </rdfs:Class> 
+ 
+ 
+ 
+<!--
+==================================================================================================================================================================================
+SKOS CONCEPTS AND ASSOCIATED PROPERTIES INCLUDED IN THE PLUS PROFILE 
+==================================================================================================================================================================================
+--> 
+
+ 
+
+<owl:Class rdf:about="https://data.gov.dk/model/core/plus#ModelStatus">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:topConceptOf xmlns="https://data.gov.dk/model/core/plus#ModelStatuses"/>
+	<skos:prefLabel xml:lang="en">model status</skos:prefLabel>	
+	<skos:altLabel xml:lang="en">applied model status</skos:altLabel>		
+	<skos:prefLabel xml:lang="da">modelstatus</skos:prefLabel>	
+	<skos:altLabel xml:lang="da">anvendt modelstatus</skos:altLabel>	
+    <skos:definition xml:lang="da">status som angiver hvor komplet og færdig og dermed gyldig en model er</skos:definition>
+    <skos:definition xml:lang="en">status that specifies the completeness and valitidy of a model</skos:definition>
+    <skos:inScheme rdf:resource="https://data.gov.dk/model/core/plus#ModelStatuses"/>
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/plus#" />	
+</owl:Class>  
+
+<owl:Class rdf:about="https://data.gov.dk/model/core/plus#ApprovalStatus">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:topConceptOf xmlns="https://data.gov.dk/model/core/plus#ApprovalStatuses"/>
+	<skos:prefLabel xml:lang="en">approval status</skos:prefLabel>	
+	<skos:prefLabel xml:lang="da">godkendelsestatus</skos:prefLabel>		
+    <skos:definition xml:lang="da">status som angiver hvorvidt en model er accepteret og erklæret som gældende i et - for forretningsområdet - relevant forum</skos:definition>
+    <skos:definition xml:lang="en">status that specifies whether a model has been accepted and declared to be applicable in a forum - relevant to the business domain</skos:definition>
+    <skos:inScheme rdf:resource="https://data.gov.dk/model/core/plus#ApprovalStatuses"/>
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/plus#" />	
+</owl:Class>   
+
+<owl:Class rdf:about="https://data.gov.dk/model/core/plus#ModelType">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:topConceptOf xmlns="https://data.gov.dk/model/core/plus#ModelTypes"/>
+	<skos:prefLabel xml:lang="en">model type</skos:prefLabel>	
+	<skos:prefLabel xml:lang="da">modeltype</skos:prefLabel>		
+	<skos:definition xml:lang="en">typification of a model in terms of scope, level of technical abstraction and applied description framework</skos:definition>	
+	<skos:definition xml:lang="da">typificering af en model i forhold til omgang, teknisk abstraktionsniveu og anvendt beskrivelsesramme</skos:definition>	
+    <skos:inScheme rdf:resource="https://data.gov.dk/model/core/plus#ModelTypes"/>
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/plus#" />		
+</owl:Class>    
+<owl:ObjectProperty rdf:about="https://data.gov.dk/model/core/plus#modelType">
+    <rdfs:domain rdf:resource="https://data.gov.dk/model/core/plus#Model"/>
+    <rdfs:range rdf:resource="https://data.gov.dk/model/core/plus#ModelType"/>
+	<skos:prefLabel xml:lang="en">model type</skos:prefLabel>	
+	<skos:altLabel xml:lang="en">applied model type</skos:altLabel>		
+	<skos:prefLabel xml:lang="da">modeltype</skos:prefLabel>		
+	<skos:altLabel xml:lang="da">anvendt modeltype</skos:altLabel>			
+	<skos:definition xml:lang="en">specification of the model type of a specific model</skos:definition>	
+	<skos:definition xml:lang="da">angivelse af en bestemt models modeltype</skos:definition>	
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/plus#" />		
+</owl:ObjectProperty>  
+
+<!--
+==================================================================================================================================================================================
+PROPERTIES INCLUDED
+==================================================================================================================================================================================
+--> 
+  
+
+  <owl:ObjectProperty rdf:about="https://data.gov.dk/model/core/plus#legalSource">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>	
+    <rdfs:domain rdf:resource="https://data.gov.dk/model/core/plus#Model"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>  
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/> 	
+  	<skos:prefLabel xml:lang="da">juridisk kilde</skos:prefLabel>	
+  	<skos:prefLabel xml:lang="en">legal ssource</skos:prefLabel>	
+	<skos:definition xml:lang="da">reference til lovgrundlag hvorfra ressourcen er afledt</skos:definition>
+	<skos:definition xml:lang="en">A related legal resource from which the described resource is derived.</skos:definition> 
+	<rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/plus#"/>	
+	<applicationNote>			
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>	
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>	
+    <vann:usageNote xml:lang="da">Range i UML Plusprofilen: String: Udtrykkes for modellen som en overordnet tekstuel beskrivelse af de lovmæssige rammer eller angivelse af ELI-URI-referencer .</vann:usageNote>		
+	</applicationNote><applicationNote>		
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>	
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/> 	
+	<vann:usageNote xml:lang="da">Range i UML Plusprofilen: HTTP-URI: Udtrykkes for ressourcen ideelt som reference til lovtekst ved den mest præcise henvisning til det pågældende begreb i en given lov (f.eks ved angivelse af ELI-reference (European legislation identifier) som præsenteres på Retsinformation.dk)</vann:usageNote>	
+	<!-- End of application profile properties--></applicationNote>	
+  </owl:ObjectProperty> 
+  
+  <owl:DatatypeProperty rdf:about="https://data.gov.dk/model/core/plus#deprecatedLabel">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>	
+	<skos:prefLabel xml:lang="en">deprecated label</skos:prefLabel>	
+	<skos:prefLabel xml:lang="da">frarådet betegnelse</skos:prefLabel>		
+	<skos:definition xml:lang="da">betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet </skos:definition>	
+	<skos:definition xml:lang="en">label which should not be used because it is undesirable, obsolete or wrong  </skos:definition>		
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/plus#" />	
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>	
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>			
+  </owl:DatatypeProperty> 
+
+  <owl:DatatypeProperty rdf:about="https://data.gov.dk/model/core/plus#applicationNote">
+	<rdfs:subClassOf rdf:resource="http://purl.org/vocab/vann/usageNote"/>	
+	<skos:prefLabel xml:lang="en">application note</skos:prefLabel>	
+	<skos:prefLabel xml:lang="da">anvendelsesnote</skos:prefLabel>		
+	<skos:definition xml:lang="en">note som beskriver hvordan et vokabularelement skal anvendes og forstås i en bestemt anvendelsesprofil </skos:definition>	
+	<skos:definition xml:lang="da">note which describes how a vocabulary element should be applied and comprehended in a specific application context  </skos:definition>	
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>	
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>		
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/plus#" />		
+  </owl:DatatypeProperty> 
+  
+<!--
+  <rdf:Property rdf:about="">
+	<skos:prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en"></skos:prefLabel>
+	<skos:prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="da"></skos:prefLabel>	
+	<skos:altLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en"></skos:altLabel>
+	<skos:altLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="da"></skos:altLabel>
+	<skos:hiddenLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en"></skos:hiddenLabel>
+	<skos:hiddenLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="da"></skos:hiddenLabel>
+	<skos:definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en"></skos:definition>
+	<skos:definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="da"></skos:definition>
+	<skos:example xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en"></skos:example>
+	<skos:example xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="da"></skos:example>
+	<rdfs:comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en"></rdfs:comment>
+	<rdfs:comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="da"></rdfs:comment>
+	<plus:legalSource xmlns="https://data.gov.dk/model/core/plus#"></plus:legalSource>
+	<dct:source xmlns="http://purl.org/dc/terms/"></dct:source>
+	<rdfs:domain rdf:resource=""/>
+    <rdfs:range rdf:resource=""/>	
+   </rdf:Property>
+  -->
+  
+   
+   </rdf:RDF>

@@ -1,0 +1,16 @@
+tocTab[tocTab.length] = new Array("0:1", "", "Kontekstdiagram - Datakvalitetsdeklaration", "EARoot/EA1.htm", "175.png", "2891", "0", "", "Logical diagram0","{531D70DB-5D67-47b7-847B-47864656258E}");
+tocTab[tocTab.length] = new Array("0:2", "", "Kontekstdiagram - Metadata", "EARoot/EA3.htm", "175.png", "5313", "0", "", "Logical diagram0","{65589B25-9245-4cec-94D9-AA46AA5863F6}");
+tocTab[tocTab.length] = new Array("0:3", "", "Kontekstdiagram - Metrikker og målinger", "EARoot/EA5.htm", "175.png", "5312", "0", "", "Logical diagram0","{EC1AAC33-BBB5-4fbe-9D1B-54D75776D424}");
+tocTab[tocTab.length] = new Array("0:4", "", "«OwlClass» cdqd:CoreDimension", "EARoot/EA11.htm", "5.png", "E29500", "0", "", "Class0","{D43A02E1-5874-401a-B424-E453AC2E5BFA}");
+tocTab[tocTab.length] = new Array("0:5", "", "«OwlClass» dcat:Dataset", "EARoot/EA12.htm", "5.png", "E29531", "0", "", "Class0","{7D8B2E0A-B260-48a7-B9E1-FEE191A690FD}");
+tocTab[tocTab.length] = new Array("0:6", "", "«OwlClass» dct:Agent", "EARoot/EA13.htm", "5.png", "E29532", "0", "", "Class0","{8D53809B-AA69-45f6-9DD3-BC3499759392}");
+tocTab[tocTab.length] = new Array("0:7", "", "«Individual» dq-dk:Fællesoffentligt sprog for datakvalitet", "EARoot/EA14.htm", "25.png", "E26510", "0", "", "Object0","{0DAE2CDC-E1B9-46a2-93CD-891FC5D9F3B7}");
+tocTab[tocTab.length] = new Array("0:8", "", "«OwlClass» dq-dk:Parameter", "EARoot/EA15.htm", "5.png", "E29527", "0", "", "Class0","{CD4F6C33-D6EC-47f8-9EB5-8DD71F7F2995}");
+tocTab[tocTab.length] = new Array("0:9", "", "«OwlClass» dq-dk:ParameterRange", "EARoot/EA16.htm", "5.png", "E30136", "0", "", "Class0","{82E1CD70-34F1-4896-B086-B66502DDA3E8}");
+tocTab[tocTab.length] = new Array("0:10", "", "«OwlClass» dq-dk:QualityFramework", "EARoot/EA17.htm", "5.png", "E29507", "0", "", "Class0","{80372853-0C1D-45a4-A5CB-4B5F17F31407}");
+tocTab[tocTab.length] = new Array("0:11", "", "«RdfsClass» dqv:Metric", "EARoot/EA18.htm", "5.png", "E29509", "0", "", "Class0","{997626C8-3129-49ef-A4C2-2AD14F574787}");
+tocTab[tocTab.length] = new Array("0:12", "", "«OwlClass» dqv:QualityAnnotation", "EARoot/EA19.htm", "5.png", "E29501", "0", "", "Class0","{FAA0C4B9-4ADD-4089-B4D5-FB1C7D6C9CCF}");
+tocTab[tocTab.length] = new Array("0:13", "", "«RdfsClass» dqv:QualityMeasurement", "EARoot/EA20.htm", "5.png", "E29510", "0", "", "Class0","{B72B4C5A-D001-4b28-908F-BFFBF570E503}");
+tocTab[tocTab.length] = new Array("0:14", "", "«OwlClass» dqv:QualityMetadata", "EARoot/EA21.htm", "5.png", "E29502", "0", "", "Class0","{D4B21760-3A60-4562-B0D3-C712481C3300}");
+tocTab[tocTab.length] = new Array("0:15", "", "«OwlClass» duv:Usage", "EARoot/EA22.htm", "5.png", "E29503", "0", "", "Class0","{F0AF4401-35FD-48e9-A55D-CA86DF128F1B}");
+tocTab[tocTab.length] = new Array("0:16", "", "«OwlClass» skos:ConceptScheme", "EARoot/EA23.htm", "5.png", "E29511", "0", "", "Class0","{69B5582A-8DD0-4d48-8FB7-11E148ED1B69}");
