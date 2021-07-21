@@ -1,3 +1,4 @@
+{{- if .Values.persistence.modelcatalogue.enabled }}
 apiVersion: batch/v1
 kind: Job
 metadata:
@@ -31,14 +32,11 @@ spec:
       restartPolicy: Never
       volumes:
         - name: data
-        {{- if .Values.persistence.modelcatalogue.enabled }}
           persistentVolumeClaim:
           {{- if .Values.persistence.modelcatalogue.existingClaim }}
             claimName: {{ .Values.persistence.modelcatalogue.existingClaim }}
           {{- else }}    
             claimName: {{ .Release.Name }}-modelcatalogue
           {{- end }}
-        {{- else }}
-          emptyDir: {}
-        {{- end }}
 status: {}
+{{- end }}

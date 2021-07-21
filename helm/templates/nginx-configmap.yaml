@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: nginx
 data:
-  default.conf.template: {{ .Files.Get "../nginx/default.conf.template" | quote }}
+  default.conf.template: {{ .Files.Get "nginx/default.conf.template" | quote }}

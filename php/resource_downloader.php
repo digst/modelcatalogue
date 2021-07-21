@@ -1,14 +1,14 @@
 <?php
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
-    
-    //POST Variables
-    if(isset( $_GET["url"])){
-        $url = $_GET["url"];
-    }
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-    /*echo get_domain($url);
+//POST Variables
+if (isset($_GET["url"])) {
+    $url = $_GET["url"];
+}
+
+/*echo get_domain($url);
     echo "Own Domain";
 
     if(get_domain($url) == "https://data.gov.dk"){
@@ -18,23 +18,23 @@
         $file = fopen( $url, 'r' );
     }
     */
-    
-    $file = fopen($url, 'r');
 
-    $name = basename($url);
+$file = fopen($url, 'r');
 
-    header('Content-Description: File Transfer');
-    header('Content-Type: application/octet-stream');
-    header('Content-Disposition: attachment; filename=' . $name);
-    header('Content-Transfer-Encoding: binary');
-    header('Expires: 0');
-    header('Cache-Control: must-revalidate');
-    header('Pragma: public');
-    header('Content-Length: ' . filesize($file));
-    ob_clean();
-    flush();
-    readfile($file);
-    exit;
+$name = basename($url);
+
+header('Content-Description: File Transfer');
+header('Content-Type: application/octet-stream');
+header('Content-Disposition: attachment; filename=' . $name);
+header('Content-Transfer-Encoding: binary');
+header('Expires: 0');
+header('Cache-Control: must-revalidate');
+header('Pragma: public');
+header('Content-Length: ' . filesize($file));
+ob_clean();
+flush();
+readfile($file);
+exit;
 
     /*function get_domain($url)
     {

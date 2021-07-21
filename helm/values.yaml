@@ -54,12 +54,12 @@ service:
   port: 80
 
 ingress:
-  enabled: false
+  enabled: true
   annotations:
-    # kubernetes.io/ingress.class: nginx
+    kubernetes.io/ingress.class: nginx
     kubernetes.io/tls-acme: "true"
   hosts:
-    - host: modelcatalogue.digst.govcloud.dk
+    - host: modelcatalogue-test-123.digst.govcloud.dk
       paths:
       - path: /
         backend:
@@ -99,7 +99,7 @@ affinity: {}
 ## storageClasses: https://kubernetes.io/docs/concepts/storage/storage-classes
 persistence:
   modelcatalogue:
-    enabled: true
+    enabled: false
     storageClass: longhorn
     existingClaim:
     accessMode: ReadWriteOnce

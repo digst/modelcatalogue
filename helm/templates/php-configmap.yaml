@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: php
-data:
-  {{- (.Files.Glob "../php/*.php").AsConfig | nindent 2 }}

@@ -254,15 +254,16 @@ function arrows(){
 
 function toggleOverlay(){
 	$('.overlay').toggleClass('is-visible');
-	
-	
 }
 
 function updateFilterBtns(btns){
 	
 	$("button.tag").each(function(){
-		
 		var count = btns[$(this).attr('data-filter-xpath')];
+
+		if(count === undefined)
+			return;
+
 		var btnText = $(this).html();
 		btnText = btnText.substr(0,btnText.indexOf('('))+ " ("+ count + ")";
 		$(this).html(btnText);

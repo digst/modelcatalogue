@@ -28,7 +28,7 @@ services:
         depends_on: 
             - git
         volumes: 
-            - ./helm/php:/var/www/html/php
+            - ./php:/var/www/html/php
             - ./models/xml:/var/www/html/php/xml
             - ./models/core:/var/www/model/core
         ports:

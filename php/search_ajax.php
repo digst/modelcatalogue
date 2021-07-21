@@ -57,10 +57,10 @@ function applySearch($xml = "xml/modelkatalog.rdf.xml")
 
     $counter = 0;
 
-    $xslDoc = ($language == 'da' ? 'xml/modelkatalog.xsl.xml' : 'xml/modelkatalog_eng.xsl.xml');
+    //$xslDoc = ($language == 'da' ? 'xml/modelkatalog.xsl.xml' : 'xml/modelkatalog_eng.xsl.xml');
     //$xslDoc = 'xml/modelkatalog.xsl.xml';
 
-    $searchResultXML = '<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xml" href="modelkatalog.xsl.xml"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dadk="http://data.gov.dk/model/vocabular/modelcat#" xmlns:mreg="http://data.gov.dk/model/vocabular/modelcat#" xmlns:mlev="http://data.gov.dk/model/vocabular/modelcat#" xmlns:vann="http://purl.org/vocab/vann/" xmlns:cc="hhttp://creativecommons.org/ns#" xmlns:owl="https://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:schema="http://schema.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">';
+    $searchResultXML = '<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xml" href="xml/modelkatalog.xsl.xml"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dadk="http://data.gov.dk/model/vocabular/modelcat#" xmlns:mreg="http://data.gov.dk/model/vocabular/modelcat#" xmlns:mlev="http://data.gov.dk/model/vocabular/modelcat#" xmlns:vann="http://purl.org/vocab/vann/" xmlns:cc="hhttp://creativecommons.org/ns#" xmlns:owl="https://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:schema="http://schema.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">';
 
     $tmp = simplexml_load_file($xml);
 
