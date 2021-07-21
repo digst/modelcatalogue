@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: php
+  labels:
+    {{- include "modelcatalogue.labels" . | nindent 4 }}-php
+spec:
+  ports:
+    - name: "9000"
+      port: 9000
+      targetPort: 9000
+  selector:
+    {{- include "modelcatalogue.selectorLabels" . | nindent 4 }}-php
+status:
+  loadBalancer: {}

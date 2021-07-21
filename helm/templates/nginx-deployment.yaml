@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+  labels:
+    {{- include "modelcatalogue.labels" . | nindent 4 }}-nginx
+spec:
+  {{- if not .Values.autoscaling.enabled }}
+  replicas: {{ .Values.replicaCount }}
+  {{- end }}
+  selector:
+    matchLabels:
+      {{- include "modelcatalogue.selectorLabels" . | nindent 6 }}-nginx
+  template:
+    metadata:
+      labels:
+        {{- include "modelcatalogue.selectorLabels" . | nindent 8 }}-nginx
+    spec:
+      containers:
+        - name: nginx
+          image: "{{ .Values.images.nginx.repository }}:{{ .Values.images.nginx.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.images.nginx.pullPolicy }}
+          resources: {}
+          envFrom:
+            - configMapRef:
+                name: env
+          volumeMounts:
+            - name: config
+              mountPath: /etc/nginx/templates
+              readOnly: true
+              subPath: default.conf.template
+            - name: data
+              mountPath: /usr/share/nginx/html
+              readOnly: true
+              subPath: repos/modelcatalogue
+      volumes:
+        - name: config
+          configMap:
+            name: nginx
+        - name: data
+        {{- if .Values.persistence.modelcatalogue.enabled }}
+          persistentVolumeClaim:
+          {{- if .Values.persistence.modelcatalogue.existingClaim }}
+            claimName: {{ .Values.persistence.modelcatalogue.existingClaim }}
+          {{- else }}    
+            claimName: {{ .Release.Name }}-modelcatalogue
+          {{- end }}
+        {{- else }}
+          emptyDir: {}
+        {{- end }}
+status: {}

@@ -1,0 +1,44 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: git-job-{{ now | date "20060102150405" }}
+spec:
+  completions: 1
+  backoffLimit: 0
+  template:
+    metadata:
+      name: "{{.Release.Name}}-git"
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      containers:
+        - name: git
+          image: "{{ .Values.images.git.repository }}:{{ .Values.images.git.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.images.git.pullPolicy }}
+          command: ["/bin/sh"] 
+          args: ["-c", "git clone -b docker-setup https://github.com/digst/modelcatalogue.git || git -C modelcatalogue pull"]
+          resources: {}
+          envFrom:
+            - configMapRef:
+                name: env
+          volumeMounts:
+            - name: data
+              mountPath: /git
+              readOnly: false
+              subPath: repos
+      restartPolicy: Never
+      volumes:
+        - name: data
+        {{- if .Values.persistence.modelcatalogue.enabled }}
+          persistentVolumeClaim:
+          {{- if .Values.persistence.modelcatalogue.existingClaim }}
+            claimName: {{ .Values.persistence.modelcatalogue.existingClaim }}
+          {{- else }}    
+            claimName: {{ .Release.Name }}-modelcatalogue
+          {{- end }}
+        {{- else }}
+          emptyDir: {}
+        {{- end }}
+status: {}
