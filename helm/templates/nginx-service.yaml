@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx
+  name: modelcatalogue-nginx
   labels:
     {{- include "modelcatalogue.labels" . | nindent 4 }}-nginx
 spec:

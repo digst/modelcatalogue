@@ -63,7 +63,7 @@ ingress:
       paths:
       - path: /
         backend:
-          serviceName: nginx
+          serviceName: modelcatalogue-nginx
           servicePort: 80
     
   tls: []
