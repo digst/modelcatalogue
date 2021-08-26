@@ -22,7 +22,7 @@ images:
     tag: "latest"
 
 imagePullSecrets:
-  - name: regcred
+  - name: sprogressourcen
 
 nameOverride: ""
 fullnameOverride: ""
@@ -59,7 +59,7 @@ ingress:
     kubernetes.io/ingress.class: nginx
     kubernetes.io/tls-acme: "true"
   hosts:
-    - host: modelcatalogue-test-123.digst.govcloud.dk
+    - host: modelcatalogue-prod.digst.govcloud.dk
       paths:
       - path: /
         backend:
