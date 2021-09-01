@@ -1,0 +1,42 @@
+version: "3.8"
+services:
+    nginx:
+        image: nginx
+        volumes: 
+            - ./helm/nginx:/etc/nginx/templates
+            - ./dist/ajax:/usr/share/nginx/html/ajax
+            - ./dist/css:/usr/share/nginx/html/css
+            - ./dist/fonts:/usr/share/nginx/html/fonts
+            - ./dist/images:/usr/share/nginx/html/images
+            - ./dist/js:/usr/share/nginx/html/js
+            - ./dist/index.html:/usr/share/nginx/html/index.html
+            - ./models/core:/usr/share/nginx/html/model/core
+            - ./models/xml:/usr/share/nginx/html/xml
+        ports: 
+            - 80:80
+        links:
+            - php
+        depends_on: 
+            - git
+        environment:
+            - NGINX_PORT=80
+            - NGINX_TIMEOUT=30
+            - NGINX_PHP=php
+            - NGINX_PHP_PORT=9000
+    php:
+        build: .
+        depends_on: 
+            - git
+        volumes: 
+            - ./php:/var/www/html/php
+            - ./models/xml:/var/www/html/php/xml
+            - ./models/core:/var/www/model/core
+        ports:
+            - 9000:9000
+    git:
+        image: alpine/git
+        volumes:
+            - ./repos:/git
+            - ~/.ssh:/root/.ssh
+        entrypoint: ["/bin/sh", "-c"]
+        command: "'git clone -b docker-setup git@github.com:digst/modelcatalogue.git || git -C modelcatalogue pull'"

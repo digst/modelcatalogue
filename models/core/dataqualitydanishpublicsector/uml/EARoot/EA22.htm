@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>duv:Usage</title>
+<link href="../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("duv:Usage", " : "))</script> Anvendelse : Public  &lt;&lt;OwlClass&gt;&gt; Class</span>
+	<!--	
+<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">02-04-2019 21:15:19</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">02-04-2019 23:16:29</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Peter Bruhn Andersen</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{F0AF4401-35FD-48e9-A55D-CA86DF128F1B}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA1.htm">Kontekstdiagram - Datakvalitetsdeklaration</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes"><!--Actions that can be performed on a given dataset or distribution. &lt;br/&gt;--></div>
+
+-->	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+		</ul>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA21.htm">«OwlClass» dqv:QualityMetadata</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> dq-dk:expectedUsage<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink194" onclick="parent.toggleDiv('detailsDIVLink194','DetailsImageLink194')" />Details:
+							<div id="detailsDIVLink194" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">applicationNote (da)</td>
+				<td width="50%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario195" onclick="parent.toggleDiv('detailsDIVScenario195','DetailsImageScenario195')" />Details:
+						<div id="detailsDIVScenario195" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">applicationNote (en)</td>
+				<td width="50%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario196" onclick="parent.toggleDiv('detailsDIVScenario196','DetailsImageScenario196')" />Details:
+						<div id="detailsDIVScenario196" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">comment (da)</td>
+				<td width="50%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario197" onclick="parent.toggleDiv('detailsDIVScenario197','DetailsImageScenario197')" />Details:
+						<div id="detailsDIVScenario197" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">comment (en)</td>
+				<td width="50%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario198" onclick="parent.toggleDiv('detailsDIVScenario198','DetailsImageScenario198')" />Details:
+						<div id="detailsDIVScenario198" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">definition (da)</td>
+				<td width="50%" class="TableRow" valign="top">En nyttig beskrivelse af handlinger der kan foretages på et givet datasæt eller distribution</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario199" onclick="parent.toggleDiv('detailsDIVScenario199','DetailsImageScenario199')" />Details:
+						<div id="detailsDIVScenario199" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">definition (en)</td>
+				<td width="50%" class="TableRow" valign="top">A helpful description of actions that can be performed on a given dataset or distribution</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario200" onclick="parent.toggleDiv('detailsDIVScenario200','DetailsImageScenario200')" />Details:
+						<div id="detailsDIVScenario200" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">example (da)</td>
+				<td width="50%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario201" onclick="parent.toggleDiv('detailsDIVScenario201','DetailsImageScenario201')" />Details:
+						<div id="detailsDIVScenario201" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">example (en)</td>
+				<td width="50%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario202" onclick="parent.toggleDiv('detailsDIVScenario202','DetailsImageScenario202')" />Details:
+						<div id="detailsDIVScenario202" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">isDefinedBy</td>
+				<td width="50%" class="TableRow" valign="top"><a href="http://www.w3.org/ns/duv#" target="_blank" >http://www.w3.org/ns/duv#</a></td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario203" onclick="parent.toggleDiv('detailsDIVScenario203','DetailsImageScenario203')" />Details:
+						<div id="detailsDIVScenario203" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">label (en)</td>
+				<td width="50%" class="TableRow" valign="top">usage</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario204" onclick="parent.toggleDiv('detailsDIVScenario204','DetailsImageScenario204')" />Details:
+						<div id="detailsDIVScenario204" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">prefLabel (da)</td>
+				<td width="50%" class="TableRow" valign="top">anvendelse</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario205" onclick="parent.toggleDiv('detailsDIVScenario205','DetailsImageScenario205')" />Details:
+						<div id="detailsDIVScenario205" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">source</td>
+				<td width="50%" class="TableRow" valign="top"><a href="https://www.w3.org/TR/vocab-duv/" target="_blank" >https://www.w3.org/TR/vocab-duv/</a></td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario206" onclick="parent.toggleDiv('detailsDIVScenario206','DetailsImageScenario206')" />Details:
+						<div id="detailsDIVScenario206" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">URI</td>
+				<td width="50%" class="TableRow" valign="top"><a href="http://www.w3.org/ns/duv#Usage" target="_blank" >http://www.w3.org/ns/duv#Usage</a></td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario207" onclick="parent.toggleDiv('detailsDIVScenario207','DetailsImageScenario207')" />Details:
+						<div id="detailsDIVScenario207" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="CustomPropertiesTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">_tagGroups:</td>
+				<td width="70%" class="TableRow">Identification,Danish annotations,English annotations,Provenance</td>
+			</tr>
+
+			<tr>
+				<td width="30%" class="TableRow">_tagGroupStates:</td>
+				<td width="70%" class="TableRow">Identification=open;Danish annotations=open;English annotations=closed;Provenance=closed</td>
+			</tr>
+
+			<tr>
+				<td width="30%" class="TableRow">_tagGroupings:</td>
+				<td width="70%" class="TableRow">URI=Identification;prefLabel (da)=Danish annotations;altLabel (da)=Danish annotations;deprecatedLabel (da)=Danish annotations;label (da)=Danish annotations;definition (da)=Danish annotations;example (da)=Danish annotations;comment (da)=Danish annotations;applicationNote (da)=Danish annotations;prefLabel (en)=English annotations;altLabel (en)=English annotations;deprecatedLabel (en)=English annotations;label (en)=English annotations;definition (en)=English annotations;example (en)=English annotations;comment (en)=English annotations;applicationNote (en)=English annotations;legalSource=Provenance;source=Provenance;isDefinedBy=Provenance;wasDerivedFrom=Provenance;</td>
+			</tr>
+
+
+			</table>
+		</div>	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

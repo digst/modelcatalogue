@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:dcat="http://www.w3.org/ns/dcat#" 
+		 xmlns:adms="http://www.w3.org/ns/adms#"
+         xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+         xmlns:vann="http://purl.org/vocab/vann/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+		 xmlns:voag="http://voag.linkedmodel.org/schema/voag#" 		 
+		 xmlns:mdl="https://data.gov.dk/model/core/modelling#"		 
+		 xmlns:mtyp="https://data.gov.dk/model/core/modelscope#">
+
+<!--
+==================================================================================================================================================================================
+MODEL SCOPE CLASSIFICATION (SKOS CONCEPT SCHEME)
+==================================================================================================================================================================================
+-->		
+		 
+   <rdf:Description rdf:about="https://data.gov.dk/model/core/modelscope#ModelScopes">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Modelomfang</dct:identifier>
+      <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+      <dct:title xml:lang="da">Modelomfang</dct:title>
+      <skos:prefLabel xml:lang="da">Modelomfang</skos:prefLabel>
+      <skos:altLabel xml:lang="da">Klassifikation over modelomfang</skos:altLabel>	
+ 	  <rdfs:label xml:lang="en">Model types</rdfs:label>
+      <rdfs:label xml:lang="da">Modelomfang</rdfs:label>	
+      <dct:description xml:lang="da">Modelomfang som det forstås i regi af de Fællesoffentlige regler for begrebs- og datamodellering.</dct:description>
+      <skos:definition xml:lang="da">Modelomfang som det forstås i regi af de Fællesoffentlige regler for begrebs- og datamodellering.</skos:definition>
+      <dct:description xml:lang="en">Model scope as used by the danish model regime.</dct:description>
+      <skos:definition xml:lang="en">Model scope as used by the danish model regime.</skos:definition>
+	  <rdfs:comment xml:lang="da">Modelomfang som det forstås i regi af de Fællesoffentlige regler for begrebs- og datamodellering.</rdfs:comment>
+	  <rdfs:comment xml:lang="en">Model scope as used by the danish model regime.</rdfs:comment>	  
+	  <vann:usageNote xml:lang="en"/>
+      <skos:hasTopConcept rdf:resource="https://data.gov.dk/model/core/modelscope#Model"/>  
+      <dcat:theme rdf:resource="tbd"/>
+      <adms:status>development (under udvikling)</adms:status>
+      <voag:hasApprovalStatus>godkendt (approved)</voag:hasApprovalStatus>		
+	  <dct:theme>06.38.10.10 Arkitektur for den digitale infrastruktur</dct:theme>
+	  <dct:publisher>Digitaliseringsstyrelsen</dct:publisher>
+	  <owl:versionInfo>0.2.0</owl:versionInfo>
+	  <dct:modified>02-08-2018</dct:modified>
+	  <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/modelscope#" />	
+   </rdf:Description>
+ 
+   <rdf:Description rdf:about="https://data.gov.dk/model/core/modelscope.rdf">
+      <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+	<dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/EN"/>
+   </rdf:Description>
+ 
+<!--
+SUBCLASS OF SKOS CONCEPT
+==================================================================================================================================================================================
+-->	 
+ 
+	<owl:Class rdf:about="https://data.gov.dk/model/core/modelscope#ModelScope">
+		<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<skos:prefLabel xml:lang="en">model scope</skos:prefLabel>	
+		<skos:prefLabel xml:lang="da">modelscope</skos:prefLabel>		
+		<skos:definition xml:lang="en">typification of a model in terms of scope</skos:definition>	
+		<skos:definition xml:lang="da">typificering af en model i forhold til omfang</skos:definition>	
+		<rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/modelscope#" />		
+	</owl:Class>  
+
+<!--
+INSTANCES OF SKOS CONCEPT
+==================================================================================================================================================================================
+-->	 
+ 
+
+   <rdf:Description rdf:about="https://data.gov.dk/model/core/modelcope#CoreModel">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">CoreModel</dct:identifier>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	  <rdf:type rdf:resource="https://data.gov.dk/model/core/modelscope#ModelScope"/>	  	  
+      <skos:inScheme rdf:resource="https://data.gov.dk/model/core/modelscope#ModelScopes"/>
+      <dct:title xml:lang="en">core model</dct:title>
+      <skos:definition xml:lang="en">reusable model of a domain with a specific business object in its core, which does not define model elements that have defined in other core models </skos:definition>
+      <skos:definition xml:lang="da">genbrugelig model over et forretningsområde med et centralt forretningsobjekt i fokus, som ikke definerer modelelementer, der er defineret i andre kernemodeller</skos:definition>
+	  <dct:description xml:lang="en">reusable model of a domain with a specific business object in its core, which does not define model elements that have defined in other core models </dct:description>
+	  <dct:description xml:lang="da">genbrugelig model over et forretningsområde med et centralt forretningsobjekt i fokus, som ikke definerer modelelementer, der er defineret i andre kernemodeller</dct:description>
+      <skos:prefLabel xml:lang="en">core model</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">kernemodel</skos:prefLabel>
+      <dcat:theme rdf:resource="tbd"/>
+      <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+
+   <rdf:Description rdf:about="https://data.gov.dk/model/core/modelscope#ApplicationModel">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">ApplicationModel</dct:identifier>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	  <rdf:type rdf:resource="https://data.gov.dk/model/core/modelscope#ModelScope"/>	  
+      <skos:inScheme rdf:resource="https://data.gov.dk/model/core/modelscope#ModelScopes"/>
+      <dct:title xml:lang="en">application model</dct:title>
+      <dct:description xml:lang="da">model som er rettet mod en specifik anvendelsesituation i en afgrænset kontekst.</dct:description>
+      <skos:definition xml:lang="da">model som er rettet mod en specifik anvendelsesituation i en afgrænset kontekst.</skos:definition>
+      <dct:description xml:lang="en">model which is oriented towards a specific application situation in a defined context.</dct:description>
+      <skos:definition xml:lang="en">model which is oriented towards a specific application situation in a defined context</skos:definition>
+      <skos:prefLabel xml:lang="en">application model</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">anvendelsesmodel</skos:prefLabel>
+      <dcat:theme rdf:resource="tbd"/>
+      <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+
+
+
+</rdf:RDF>
+

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:dcat="http://www.w3.org/ns/dcat#" 
+		 xmlns:adms="http://www.w3.org/ns/adms#"
+         xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+         xmlns:vann="http://purl.org/vocab/vann/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+		 xmlns:voag="http://voag.linkedmodel.org/schema/voag#" 		 
+		 xmlns:mdl="https://data.gov.dk/model/core/modelling#"				 
+		 xmlns:mapp="https://data.gov.dk/model/core/approvalstatus#">
+
+<!--
+==================================================================================================================================================================================
+APPROVAL STATUS CLASSIFICATION (SKOS CONCEPT SCHEME)
+==================================================================================================================================================================================
+-->	
+		 
+   <rdf:Description rdf:about="https://data.gov.dk/model/core/approvalstatus#ApprovalStatuses">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Godkendelsessstatusser</dct:identifier>
+      <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+      <dct:title xml:lang="da">Godkendelsessstatusser</dct:title>
+      <skos:prefLabel xml:lang="da">Godkendelsessstatusser</skos:prefLabel>
+      <skos:altLabel xml:lang="da">Klassifikation over godkendelsessstatusser</skos:altLabel>
+      <rdfs:label xml:lang="en">Classification of approval statuses</rdfs:label>
+      <rdfs:label xml:lang="da">Klassifikation over godkendelsessstatusser</rdfs:label>		  
+      <dct:description xml:lang="da">Godkendelsessstatusserne som de forstås i regi af de Fællesoffentlige regler for begrebs- og datamodellering.</dct:description>
+      <skos:definition xml:lang="da">Godkendelsessstatusserne som de forstås i regi af de Fællesoffentlige regler for begrebs- og datamodellering.</skos:definition>
+      <dct:description xml:lang="en">Model statuses as used by the danish model regime.</dct:description>
+      <skos:definition xml:lang="en">Model statuses as used by the danish model regime.</skos:definition>
+	  <rdfs:comment xml:lang="da">Godkendelsessstatusserne som de forstås i regi af de Fællesoffentlige regler for begrebs- og datamodellering.</rdfs:comment>
+	  <rdfs:comment xml:lang="en">Model statuses as used by the danish model regime.</rdfs:comment>	  
+	  <vann:usageNote xml:lang="en"/>
+      <skos:hasTopConcept rdf:resource="https://data.gov.dk/model/approvalstatus#ApprovalStatus"/>
+      <dcat:theme rdf:resource="tbd"/>
+      <adms:status rdf:resource="https://data.gov.dk/model/core/modelstatus#Development">development (under udvikling)</adms:status>
+      <voag:hasApprovalStatus rdf:resource="https://data.gov.dk/model/core/approvalstatus#Approved">godkendt (approved)</voag:hasApprovalStatus>		
+	  <dct:theme rdf:resource="http://www.form-online.dk/opgavenoegle/06/#06.38.10.10">06.38.10.10 Arkitektur for den digitale infrastruktur</dct:theme>
+	  <dct:publisher rdf:resource="https://digst.dk">Digitaliseringsstyrelsen</dct:publisher>
+	  <owl:versionInfo>0.2.0</owl:versionInfo>
+	  <dct:modified>02-08-2018</dct:modified>	  
+     <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/approvalstatus#" />	  
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="https://data.gov.dk/model/core/approvalstatus.rdf">
+      <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+	  <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/EN"/>
+   </rdf:Description>    
+   
+<owl:Class rdf:about="https://data.gov.dk/model/core/approvalstatus#ApprovalStatus">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:topConceptOf xmlns="https://data.gov.dk/model/core/approvalstatus#ApprovalStatuses"/>
+	<skos:prefLabel xml:lang="en">approval status</skos:prefLabel>	
+	<skos:prefLabel xml:lang="da">godkendelsestatus</skos:prefLabel>		
+    <skos:definition xml:lang="da">status som angiver hvorvidt en model er accepteret og erklæret som gældende i et - for forretningsområdet - relevant forum</skos:definition>
+    <skos:definition xml:lang="en">status that specifies whether a model has been accepted and declared to be applicable in a forum - relevant to the business domain</skos:definition>
+    <skos:inScheme rdf:resource="https://data.gov.dk/model/core/approvalstatus#ApprovalStatuses"/>
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/approvalstatus#" />	
+</owl:Class> 
+
+   <rdf:Description rdf:about="https://data.gov.dk/model/core/approvalstatus#Approved">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">approved</dct:identifier>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:inScheme rdf:resource="https://data.gov.dk/model/core/approvalstatus#ApprovalStatuses"/>
+      <skos:topConceptOf rdf:resource="https://data.gov.dk/model/core/approvalstatus#ApprovalStatuses"/>
+      <dct:title xml:lang="en">approved</dct:title>
+      <skos:prefLabel xml:lang="en">approved</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">godkendt</skos:prefLabel>	  
+      <dct:description xml:lang="da">status som angiver at en model er accepteret og erklæret som gældende i et - for forretningsområdet - relevant forum</dct:description>
+      <skos:definition xml:lang="da">status som angiver at en model er accepteret og erklæret som gældende i et - for forretningsområdet - relevant forum</skos:definition>
+      <dct:description xml:lang="en">status which indicates that a model has been accepted and declared as applicable and valid by a forum that is relevant in relation to the domain of the model </dct:description>
+      <skos:definition xml:lang="en">status which indicates that a model has been accepted and declared as applicable and valid by a forum that is relevant in relation to the domain of the model </skos:definition>
+      <dcat:theme rdf:resource="tbd"/>
+      <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid"/>
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/approvalstatus#" />	  
+   </rdf:Description>
+
+   
+   <rdf:Description rdf:about="https://data.gov.dk/model/core/approvalstatus#ApprovedWithRemarks">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">approved with remarks</dct:identifier>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:inScheme rdf:resource="https://data.gov.dk/model/core/approvalstatus#ApprovalStatuses"/>
+      <skos:topConceptOf rdf:resource="https://data.gov.dk/model/core/approvalstatus#ApprovalStatuses"/>
+      <dct:title xml:lang="en">approved with remarks</dct:title>
+      <skos:prefLabel xml:lang="en">approved with remarks</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">godkendt med bemærkninger</skos:prefLabel>	  
+      <dct:description xml:lang="da">status som angiver at en model er accepteret og erklæret som gældende i et - for forretningsområdet - relevant forum, men at der er fremhævet bemærkninger der er relevante for godkendelsen</dct:description>
+      <skos:definition xml:lang="da">status som angiver at en model er accepteret og erklæret som gældende i et - for forretningsområdet - relevant forum, men at der er fremhævet bemærkninger der er relevante for godkendelsen</skos:definition>
+      <dct:description xml:lang="en">status which indicates that a model has been accepted and declared as applicable and valid by a forum that is relevant in relation to the domain of the model but that comments relevant for the approval as been highlighted</dct:description>
+      <skos:definition xml:lang="en">status which indicates that a model has been accepted and declared as applicable and valid by a forum that is relevant in relation to the domain of the model but that comments relevant for the approval as been highlighted</skos:definition>
+      <dcat:theme rdf:resource="tbd"/>
+      <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid"/>
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/approvalstatus#" />	  
+   </rdf:Description>	
+
+ 
+
+	
+   <rdf:Description rdf:about="https://data.gov.dk/model/core/approvalstatus#Stable">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">stable</dct:identifier>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:inScheme rdf:resource="https://data.gov.dk/model/core/approvalstatus#ApprovalStatuses"/>
+      <skos:topConceptOf rdf:resource="https://data.gov.dk/model/core/approvalstatus#ApprovalStatuses"/>
+      <dct:title xml:lang="en">awaiting approval</dct:title>
+      <skos:prefLabel xml:lang="en">awaiting approval</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">afventer godkendelse</skos:prefLabel>	  
+      <dct:description xml:lang="da">status som angiver at en model afventer et godkendelsesforløb</dct:description>
+      <skos:definition xml:lang="da">status som angiver at en model afventer et godkendelsesforløb</skos:definition>
+      <dct:description xml:lang="en">status which indicates that a model is waiting to enter into an approval process</dct:description>
+      <skos:definition xml:lang="en">status which indicates that a model is waiting to enter into an approval process</skos:definition>
+      <dcat:theme rdf:resource="tbd"/>
+      <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid"/>
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/approvalstatus#" />	  
+   </rdf:Description>	
+
+
+   <rdf:Description rdf:about="https://data.gov.dk/model/core/approvalstatus#Obsolete">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">obsolete</dct:identifier>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:inScheme rdf:resource="https://data.gov.dk/model/core/approvalstatus#ApprovalStatuses"/>
+      <skos:topConceptOf rdf:resource="https://data.gov.dk/model/core/approvalstatus#ApprovalStatuses"/>
+      <dct:title xml:lang="en">not applicable</dct:title>
+      <skos:prefLabel xml:lang="en">not applicable</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">ikke relevant</skos:prefLabel>	  
+      <dct:description xml:lang="da">status som angiver at en model ikke aktuelt gennemgår et godkendelsesforløb</dct:description>
+      <skos:definition xml:lang="da">status som angiver at en model ikke aktuelt gennemgår et godkendelsesforløb</skos:definition>
+      <dct:description xml:lang="en">status which indicates that a model is currently not going though an approval process</dct:description>
+      <skos:definition xml:lang="en">status which indicates that a model is currently not going though an approval process</skos:definition>
+      <dcat:theme rdf:resource="tbd"/>
+      <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid"/>
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/approvalstatus#" />	  
+   </rdf:Description>	
+
+ 
+ 
+   </rdf:RDF>

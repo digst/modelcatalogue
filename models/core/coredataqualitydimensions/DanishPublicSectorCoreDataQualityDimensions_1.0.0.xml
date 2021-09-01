@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<xmi:XMI xmlns:uml="http://www.omg.org/spec/UML/20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:umldi="http://www.omg.org/spec/UML/20131001/UMLDI" xmlns:dc="http://www.omg.org/spec/UML/20131001/UMLDC" xmlns:thecustomprofile="http://www.sparxsystems.com/profiles/thecustomprofile/1.0" xmlns:FDAprofil="http://www.sparxsystems.com/profiles/FDAprofil/1.0">
+	<xmi:Documentation exporter="Enterprise Architect" exporterVersion="6.5"/>
+	<uml:Model xmi:type="uml:Model" name="EA_Model">
+		<packagedElement xmi:type="uml:Package" xmi:id="EAPK_4EA3B0CA_3754_4fd4_9D31_C75C1930038D" name="Fællesoffentlige datakvalitetsdimensioner">
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D" name="CoreDimension"/>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_324C611C_80B3_4ccc_BD72_E3123514EEE9">
+				<memberEnd xmi:idref="EAID_dst4C611C_80B3_4ccc_BD72_E3123514EEE9"/>
+				<memberEnd xmi:idref="EAID_src4C611C_80B3_4ccc_BD72_E3123514EEE9"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src4C611C_80B3_4ccc_BD72_E3123514EEE9" association="EAID_324C611C_80B3_4ccc_BD72_E3123514EEE9">
+					<type xmi:idref="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_4A14FA2D_E7F0_4446_8E70_1C8EC4456B0B">
+				<memberEnd xmi:idref="EAID_dst14FA2D_E7F0_4446_8E70_1C8EC4456B0B"/>
+				<memberEnd xmi:idref="EAID_src14FA2D_E7F0_4446_8E70_1C8EC4456B0B"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src14FA2D_E7F0_4446_8E70_1C8EC4456B0B" association="EAID_4A14FA2D_E7F0_4446_8E70_1C8EC4456B0B">
+					<type xmi:idref="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_64D27A80_298E_49bf_8F17_59FE7B445351">
+				<memberEnd xmi:idref="EAID_dstD27A80_298E_49bf_8F17_59FE7B445351"/>
+				<memberEnd xmi:idref="EAID_srcD27A80_298E_49bf_8F17_59FE7B445351"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcD27A80_298E_49bf_8F17_59FE7B445351" association="EAID_64D27A80_298E_49bf_8F17_59FE7B445351">
+					<type xmi:idref="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_FEAB34F1_313D_4d4b_AAD8_0F7B42EC0A2C">
+				<memberEnd xmi:idref="EAID_dstAB34F1_313D_4d4b_AAD8_0F7B42EC0A2C"/>
+				<memberEnd xmi:idref="EAID_srcAB34F1_313D_4d4b_AAD8_0F7B42EC0A2C"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcAB34F1_313D_4d4b_AAD8_0F7B42EC0A2C" association="EAID_FEAB34F1_313D_4d4b_AAD8_0F7B42EC0A2C">
+					<type xmi:idref="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35" name="Currentness">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst4C611C_80B3_4ccc_BD72_E3123514EEE9" name="rdf:type" association="EAID_324C611C_80B3_4ccc_BD72_E3123514EEE9">
+					<type xmi:idref="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+				</ownedAttribute>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0" name="Reusability">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstD27A80_298E_49bf_8F17_59FE7B445351" name="rdf:type" association="EAID_64D27A80_298E_49bf_8F17_59FE7B445351">
+					<type xmi:idref="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+				</ownedAttribute>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_EF0AFE85_6A61_427a_886A_9E413B694850" name="Completeness">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstAB34F1_313D_4d4b_AAD8_0F7B42EC0A2C" name="rdf:type" association="EAID_FEAB34F1_313D_4d4b_AAD8_0F7B42EC0A2C">
+					<type xmi:idref="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+				</ownedAttribute>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B" name="Accuracy">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst14FA2D_E7F0_4446_8E70_1C8EC4456B0B" name="rdf:type" association="EAID_4A14FA2D_E7F0_4446_8E70_1C8EC4456B0B">
+					<type xmi:idref="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+				</ownedAttribute>
+			</packagedElement>
+		</packagedElement>
+		<umldi:Diagram xmi:type="umldi:UMLClassDiagram" xmi:id="EAID_1C78D0F1_1136_4eef_980F_D094ED840DC0" isFrame="false" modelElement="EAPK_4EA3B0CA_3754_4fd4_9D31_C75C1930038D">
+			<ownedElement xmi:type="umldi:UMLCompartmentableShape" xmi:id="EAID_1C78D0F1_1136_4eef_886A_9E413B694850" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850">
+				<ownedElement xmi:type="umldi:UMLTypedElementLabel" xmi:id="EAID_NL000000_1136_4eef_886A_9E413B694850" text="Completeness"/>
+				<bounds xmi:type="dc:bounds" xmi:id="EAID_DB000000_1136_4eef_886A_9E413B694850" x="164" y="312" width="90" height="50"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLCompartmentableShape" xmi:id="EAID_1C78D0F1_1136_4eef_8ACC_CC6D4309036B" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B">
+				<ownedElement xmi:type="umldi:UMLTypedElementLabel" xmi:id="EAID_NL000000_1136_4eef_8ACC_CC6D4309036B" text="Accuracy"/>
+				<bounds xmi:type="dc:bounds" xmi:id="EAID_DB000000_1136_4eef_8ACC_CC6D4309036B" x="371" y="312" width="90" height="50"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLCompartmentableShape" xmi:id="EAID_1C78D0F1_1136_4eef_9B8C_6675AE7A1A35" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35">
+				<ownedElement xmi:type="umldi:UMLTypedElementLabel" xmi:id="EAID_NL000000_1136_4eef_9B8C_6675AE7A1A35" text="Currentness"/>
+				<bounds xmi:type="dc:bounds" xmi:id="EAID_DB000000_1136_4eef_9B8C_6675AE7A1A35" x="578" y="312" width="90" height="50"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLCompartmentableShape" xmi:id="EAID_1C78D0F1_1136_4eef_A78B_E4F937E77FD0" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0">
+				<ownedElement xmi:type="umldi:UMLTypedElementLabel" xmi:id="EAID_NL000000_1136_4eef_A78B_E4F937E77FD0" text="Reusability"/>
+				<bounds xmi:type="dc:bounds" xmi:id="EAID_DB000000_1136_4eef_A78B_E4F937E77FD0" x="785" y="312" width="90" height="50"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLClassifierShape" xmi:id="EAID_1C78D0F1_1136_4eef_85B6_EA8025948C8D" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D">
+				<ownedElement xmi:type="umldi:UMLNameLabel" xmi:id="EAID_NL000000_1136_4eef_85B6_EA8025948C8D" text="CoreDimension"/>
+				<bounds xmi:type="dc:bounds" xmi:id="EAID_DB000000_1136_4eef_85B6_EA8025948C8D" x="440" y="80" width="100" height="80"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLEdge" xmi:id="EAID_1C78D0F1_1136_4eef_AAD8_0F7B42EC0A2C" source="EAID_EF0AFE85_6A61_427a_886A_9E413B694850" target="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D" modelElement="EAID_FEAB34F1_313D_4d4b_AAD8_0F7B42EC0A2C">
+				<ownedElement xmi:type="umldi:UMLAssociationEndLabel" xmi:id="EAID_TEL000000_1136_4eef_AAD8_0F7B42EC0A2C" text="(type)&#xA;rdf:type" modelElement="EAID_dstAB34F1_313D_4d4b_AAD8_0F7B42EC0A2C">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTEL000000_1136_4eef_AAD8_0F7B42EC0A2C" x="377" y="160" width="32" height="26"/>
+				</ownedElement>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000000_1136_4eef_AAD8_0F7B42EC0A2C" x="241" y="312"/>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000001_1136_4eef_AAD8_0F7B42EC0A2C" x="440" y="158"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLEdge" xmi:id="EAID_1C78D0F1_1136_4eef_8E70_1C8EC4456B0B" source="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B" target="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D" modelElement="EAID_4A14FA2D_E7F0_4446_8E70_1C8EC4456B0B">
+				<ownedElement xmi:type="umldi:UMLAssociationEndLabel" xmi:id="EAID_TEL000000_1136_4eef_8E70_1C8EC4456B0B" text="(type)&#xA;rdf:type" modelElement="EAID_dst14FA2D_E7F0_4446_8E70_1C8EC4456B0B">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTEL000000_1136_4eef_8E70_1C8EC4456B0B" x="420" y="187" width="32" height="26"/>
+				</ownedElement>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000000_1136_4eef_8E70_1C8EC4456B0B" x="424" y="312"/>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000001_1136_4eef_8E70_1C8EC4456B0B" x="476" y="160"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLEdge" xmi:id="EAID_1C78D0F1_1136_4eef_BD72_E3123514EEE9" source="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35" target="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D" modelElement="EAID_324C611C_80B3_4ccc_BD72_E3123514EEE9">
+				<ownedElement xmi:type="umldi:UMLAssociationEndLabel" xmi:id="EAID_TEL000000_1136_4eef_BD72_E3123514EEE9" text="(type)&#xA;rdf:type" modelElement="EAID_dst4C611C_80B3_4ccc_BD72_E3123514EEE9">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTEL000000_1136_4eef_BD72_E3123514EEE9" x="497" y="183" width="32" height="26"/>
+				</ownedElement>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000000_1136_4eef_BD72_E3123514EEE9" x="607" y="312"/>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000001_1136_4eef_BD72_E3123514EEE9" x="514" y="160"/>
+			</ownedElement>
+			<ownedElement xmi:type="umldi:UMLEdge" xmi:id="EAID_1C78D0F1_1136_4eef_8F17_59FE7B445351" source="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0" target="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D" modelElement="EAID_64D27A80_298E_49bf_8F17_59FE7B445351">
+				<ownedElement xmi:type="umldi:UMLAssociationEndLabel" xmi:id="EAID_TEL000000_1136_4eef_8F17_59FE7B445351" text="(type)&#xA;rdf:type" modelElement="EAID_dstD27A80_298E_49bf_8F17_59FE7B445351">
+					<bounds xmi:type="dc:bounds" xmi:id="EAID_DBTEL000000_1136_4eef_8F17_59FE7B445351" x="582" y="146" width="32" height="26"/>
+				</ownedElement>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000000_1136_4eef_8F17_59FE7B445351" x="790" y="312"/>
+				<waypoint xmi:type="dc:waypoint" xmi:id="EAID_WP000001_1136_4eef_8F17_59FE7B445351" x="540" y="151"/>
+			</ownedElement>
+		</umldi:Diagram>
+		<profileApplication xmi:type="uml:ProfileApplication" xmi:id="profileap_thecustomprofile">
+			<appliedProfile xmi:type="uml:Profile" href="http://www.sparxsystems.com/profiles/thecustomprofile/1.0#thecustomprofile"/>
+		</profileApplication>
+		<profileApplication xmi:type="uml:ProfileApplication" xmi:id="profileap_A7C82B2C-4">
+			<appliedProfile xmi:type="uml:Profile" href="http://www.sparxsystems.com/profiles/FDAprofil/1.0#A7C82B2C-4"/>
+		</profileApplication>
+	</uml:Model>
+	<xmi:Extension extender="Enterprise Architect" extenderID="6.5">
+		<elements>
+			<element xmi:idref="EAPK_4EA3B0CA_3754_4fd4_9D31_C75C1930038D" xmi:type="uml:Package" name="Fællesoffentlige datakvalitetsdimensioner" scope="public">
+				<model package2="EAID_4EA3B0CA_3754_4fd4_9D31_C75C1930038D" package="EAPK_2DF7D9D7_B865_490b_BA9B_7730AB350EAE" tpos="0" ea_localid="2743" ea_eleType="package"/>
+				<properties isSpecification="false" sType="Package" nType="0" scope="public" stereotype="ClassificationModel"/>
+				<project author="Maya Borges" version="1.0" phase="1.0" created="2019-02-08 10:22:37" modified="2019-11-11 15:48:06" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_7FCB66C9_5E39_075e_A653_BCB1A023E23A" name="approvalStatus" value="approved#NOTES#Values: not applicable,awaiting approval,approved with remarks,approved&#xA;" modelElement="EAID_4EA3B0CA_3754_4fd4_9D31_C75C1930038D"/>
+					<tag xmi:id="EAID_2E2BA05C_5FCC_b55f_BC1E_966A937D6415" name="approvedBy" value="Styregruppen for data og arkitektur" modelElement="EAID_4EA3B0CA_3754_4fd4_9D31_C75C1930038D"/>
+					<tag xmi:id="EAID_6D3BD229_B9B9_44b9_BFE2_F128C894C13C" name="comment (da)" value="&lt;memo&gt;#NOTES#Klassifikation for centrale datakvalitetsdimensioner (kernedimenensioner) definineret i forbindelse med Projektet Fælles sprog for datakvalitet,Den fællesoffentlige digitaliseringsstrategi 2016-2020" modelElement="EAID_4EA3B0CA_3754_4fd4_9D31_C75C1930038D"/>
+					<tag xmi:id="EAID_6D3BD817_BFA7_44bf_9B80_CBCDD4E4A632" name="comment (en)" value="&lt;memo&gt;#NOTES#Classification of central data quality dimension defnined bythe Danish public sector data qiuality vocabulary produced in connection with the Digital Strategy 2016-2020" modelElement="EAID_4EA3B0CA_3754_4fd4_9D31_C75C1930038D"/>
+					<tag xmi:id="EAID_A5D15AD6_1E66_5b1e_BC2C_C78B172B2646" name="label (da)" value="Fællesoffentlige kernedatakvaliltetsdimensioner" modelElement="EAID_4EA3B0CA_3754_4fd4_9D31_C75C1930038D"/>
+					<tag xmi:id="EAID_A5D160C4_2454_5b24_9AA0_EB7B31E73C5A" name="label (en)" value="Danish public sector core data quality dimensions" modelElement="EAID_4EA3B0CA_3754_4fd4_9D31_C75C1930038D"/>
+					<tag xmi:id="EAID_DEB7F7C4_9754_db97_B0D9_FC47B7ECE8FB" name="language" value="en" modelElement="EAID_4EA3B0CA_3754_4fd4_9D31_C75C1930038D"/>
+					<tag xmi:id="EAID_CC387636_97A6_5597_90FD_171DEBEA36A8" name="legalSource" value="&lt;memo&gt;" modelElement="EAID_4EA3B0CA_3754_4fd4_9D31_C75C1930038D"/>
+					<tag xmi:id="EAID_E72C40EB_F45B_72f4_84CB_E547DC3E0CED" name="modelScope" value="core model#NOTES#Values: core model,application model&#xA;" modelElement="EAID_4EA3B0CA_3754_4fd4_9D31_C75C1930038D"/>
+					<tag xmi:id="EAID_CDE06515_8685_fd86_99CB_DEBECD90888E" name="modelStatus" value="stable#NOTES#Values: development,stable,withdrawn,obsolete&#xA;" modelElement="EAID_4EA3B0CA_3754_4fd4_9D31_C75C1930038D"/>
+					<tag xmi:id="EAID_E971A201_4191_9541_962E_48CB8FD59BF0" name="modified" value="24-09-2019#NOTES#Default: Type=Date;&#xA;" modelElement="EAID_4EA3B0CA_3754_4fd4_9D31_C75C1930038D"/>
+					<tag xmi:id="EAID_4CEF338D_C51D_86c5_A9C3_1E8464D5DCE1" name="namespace" value="https://data.gov.dk/model/core/CoreDataQualityDimensions#" modelElement="EAID_4EA3B0CA_3754_4fd4_9D31_C75C1930038D"/>
+					<tag xmi:id="EAID_51A6BB5B_24CB_0424_B8AB_E700709F9910" name="namespacePrefix" value="cdqd" modelElement="EAID_4EA3B0CA_3754_4fd4_9D31_C75C1930038D"/>
+					<tag xmi:id="EAID_6BED056E_96FE_8496_BE88_4B9440F118BC" name="publisher" value="Digitaliseringsstyrelsen" modelElement="EAID_4EA3B0CA_3754_4fd4_9D31_C75C1930038D"/>
+					<tag xmi:id="EAID_14B44E23_5B93_a75b_8A7A_73DD55DBF906" name="responsibleEntity" value="Digitaliseringsstyrelsen" modelElement="EAID_4EA3B0CA_3754_4fd4_9D31_C75C1930038D"/>
+					<tag xmi:id="EAID_145BFAB1_7641_f276_A88E_985281394F92" name="source" value="&lt;memo&gt;#NOTES#Bygger delvis på &#xA;ISO 25012 &#xA;(http://iso25000.com/index.php/en/iso-25000-standards/iso-25012) &#xA;samt &#xA;Amrapali Zaveri; Anisa Rula; Andrea Maurino; Ricardo Pietrobon; Jens Lehmann; Sören Auer. Quality assessment for Linked Data:&#8201;A Survey. Semantic Web, vol. 7, no. 1, pp. 63-93, 2015. (https://dx.doi.org/10.3233/SW-150175)" modelElement="EAID_4EA3B0CA_3754_4fd4_9D31_C75C1930038D"/>
+					<tag xmi:id="EAID_086DDDF3_2783_5b27_8B15_EBBB7B1A20AE" name="theme" value=" 06.38.10 Digital infrastruktur" modelElement="EAID_4EA3B0CA_3754_4fd4_9D31_C75C1930038D"/>
+					<tag xmi:id="EAID_AF754732_F0A2_25f0_BACD_96AB1247BE4A" name="versionInfo" value="1.0.0" modelElement="EAID_4EA3B0CA_3754_4fd4_9D31_C75C1930038D"/>
+					<tag xmi:id="EAID_803985A2_5CF2_725c_91B0_EC589E56B9CB" name="wasDerivedFrom" modelElement="EAID_4EA3B0CA_3754_4fd4_9D31_C75C1930038D"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={180E62F1-03E5-4744-8704-C3D9110FCA00}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=ClassificationModel;FQName=FDAprofil::ClassificationModel;@ENDSTEREO;$DES;$CLT={4EA3B0CA-3754-4fd4-9D31-C75C1930038D}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Fælles sprog for datakvalitet (CTD)"/>
+				<packageproperties version="1.0"/>
+				<paths/>
+				<times created="2019-02-08 10:22:37" modified="2019-11-11 15:48:06"/>
+				<flags batchsave="0" batchload="0" logxml="0"/>
+			</element>
+			<element xmi:idref="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D" xmi:type="uml:Class" name="CoreDimension" scope="public">
+				<model package="EAPK_4EA3B0CA_3754_4fd4_9D31_C75C1930038D" tpos="1" ea_localid="29544" ea_eleType="element"/>
+				<properties documentation="datakvalitetsdimension, der anses for central i forbindelse med opmærkning af datasæt med kvalitetsinformation i dansk fællesoffentlig kontekst&#xA;" isSpecification="false" sType="Class" nType="0" alias="Kernedimension" scope="public" stereotype="OwlClass" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="Maya Borges" version="1.0" phase="1.0" created="2019-04-02 22:55:55" modified="2019-04-02 23:02:32" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_CD817B17_7986_6f79_A7F6_8D8DACDD7F60" name="altLabel (da)" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<tag xmi:id="EAID_CD818105_7F74_6f7f_A601_E4545CC1D66A" name="altLabel (en)" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<tag xmi:id="EAID_59BB15E0_C16F_78c1_A51F_87AB6FF0F954" name="applicationNote (da)" value="&lt;memo&gt;" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<tag xmi:id="EAID_59BB1BCE_C75D_78c7_AB2E_B192C66F7D87" name="applicationNote (en)" value="&lt;memo&gt;" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<tag xmi:id="EAID_6D3BD229_5ED8_aa5e_848E_5F219F05C089" name="comment (da)" value="&lt;memo&gt;" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<tag xmi:id="EAID_6D3BD817_64C6_aa64_8D01_47DABC3209A5" name="comment (en)" value="&lt;memo&gt;" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<tag xmi:id="EAID_E4EE217F_23CE_c123_A5D6_F9A7FB2E2400" name="definition (da)" value="&lt;memo&gt;#NOTES#datakvalitetsdimension, der anses for central i forbindelse med opmærkning af datasæt med kvalitetsinformation i dansk fællesoffentlig kontekst" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<tag xmi:id="EAID_E4EE276D_29BC_c129_BD22_9CE540668CAB" name="definition (en)" value="&lt;memo&gt;#NOTES#data quality dimension, which is considered central to providing quality informatin for datasets in the context of the Danish public sector" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<tag xmi:id="EAID_82378FC7_3756_3137_90F8_6247D12E65EE" name="deprecatedLabel (da)" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<tag xmi:id="EAID_823795B5_3D44_313d_8635_57DAEB0954E5" name="deprecatedLabel (en)" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<tag xmi:id="EAID_71567734_7BB1_d07b_93A8_4B63C215C9A3" name="equivalentClass" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<tag xmi:id="EAID_B8C86962_F611_36f6_B26A_1898EE15DB76" name="example (da)" value="&lt;memo&gt;" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<tag xmi:id="EAID_B8C86F50_FBFF_36fb_908F_A86064F780A9" name="example (en)" value="&lt;memo&gt;" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<tag xmi:id="EAID_E2FC29C6_3855_d638_9942_B719E7E1E1D9" name="isDefinedBy" value="https://data.gov.dk/model/core/CoreDataQualityDimensions#" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<tag xmi:id="EAID_A5D15AD6_EFC5_86ef_95E3_6FB0339F83E1" name="label (da)" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<tag xmi:id="EAID_A5D160C4_F5B3_86f5_A973_32C4B7CC2AB4" name="label (en)" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<tag xmi:id="EAID_CC387636_94E5_fb94_B410_BACFFA5C7D63" name="legalSource" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<tag xmi:id="EAID_5D30DBE3_2C32_232c_8FC5_5DE3B9B3A9CF" name="prefLabel (da)" value="kernedimension" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<tag xmi:id="EAID_5D30E1D1_3220_2332_A637_A53EE8837128" name="prefLabel (en)" value="core dimension" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<tag xmi:id="EAID_145BFAB1_7020_0670_A247_133179455B79" name="source" value="Projektet Fælles sprog for datakvalitet,Den fællesoffentlige digitaliseringsstrategi 2016-2020" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<tag xmi:id="EAID_46A14855_2A92_e32a_8410_ADC614C29525" name="subClassOf" value="http://www.w3.org/ns/dqv#Dimension" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<tag xmi:id="EAID_A92CAC17_4427_429b_8A2B_19674F2601A5" name="subClassOf" value="skos:Concept" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<tag xmi:id="EAID_000200D0_483F_a748_B0F9_A85DC9130463" name="URI" value="https://data.gov.dk/model/core/CoreDataQualityDimensions#CoreDimension" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<tag xmi:id="EAID_803985A2_C5D1_d5c5_A8B7_A61016558E58" name="wasDerivedFrom" modelElement="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={C0E0B849-4BC6-443b-85B0-53D067485204}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=OwlClass;FQName=Plusprofil::OwlClass;@ENDSTEREO;$DES;$CLT={DB0C5401-B776-4eb1-85B6-EA8025948C8D}$CLT;$ENDXREF;$XREFPROP=$XID={A46E2EDE-EB70-44ec-BC37-5C5FDF1CBFE0}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_tagGroups@ENDNAME;@TYPE=string@ENDTYPE;@VALU=Identification,Danish annotations,English annotations,Provenance@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;@PROP=@NAME=_tagGroupStates@ENDNAME;@TYPE=string@ENDTYPE;@VALU=Identification=open;Danish annotations=open;English annotations=closed;Provenance=closed@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;@PROP=@NAME=_tagGroupings@ENDNAME;@TYPE=string@ENDTYPE;@VALU=URI=Identification;prefLabel (da)=Danish annotations;altLabel (da)=Danish annotations;deprecatedLabel (da)=Danish annotations;label (da)=Danish annotations;definition (da)=Danish annotations;example (da)=Danish annotations;comment (da)=Danish annotations;applicationNote (da)=Danish annotations;prefLabel (en)=English annotations;altLabel (en)=English annotations;deprecatedLabel (en)=English annotations;label (en)=English annotations;definition (en)=English annotations;example (en)=English annotations;comment (en)=English annotations;applicationNote (en)=English annotations;legalSource=Provenance;source=Provenance;isDefinedBy=Provenance;wasDerivedFrom=Provenance;@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={DB0C5401-B776-4eb1-85B6-EA8025948C8D}$CLT;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Fællesoffentlige datakvalitetsdimensioner"/>
+				<links>
+					<Association xmi:id="EAID_324C611C_80B3_4ccc_BD72_E3123514EEE9" start="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35" end="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<Association xmi:id="EAID_4A14FA2D_E7F0_4446_8E70_1C8EC4456B0B" start="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B" end="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<Association xmi:id="EAID_64D27A80_298E_49bf_8F17_59FE7B445351" start="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0" end="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+					<Association xmi:id="EAID_FEAB34F1_313D_4d4b_AAD8_0F7B42EC0A2C" start="EAID_EF0AFE85_6A61_427a_886A_9E413B694850" end="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35" xmi:type="uml:Object" name="Currentness" scope="public">
+				<model package="EAPK_4EA3B0CA_3754_4fd4_9D31_C75C1930038D" tpos="2" ea_localid="24781" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" alias="Aktualitet" scope="public" stereotype="Individual" isAbstract="false"/>
+				<project author="Maya Borges" version="1.0" phase="1.0" created="2019-02-08 11:42:15" modified="2019-09-24 15:00:26" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=14745599;BorderColor=-1;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_CD817B17_7986_6f79_8837_9633E22D5FBE" name="altLabel (da)" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+					<tag xmi:id="EAID_CD818105_7F74_6f7f_8E9D_CF70669B6BE0" name="altLabel (en)" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+					<tag xmi:id="EAID_59BB15E0_C16F_78c1_8978_A9F5065BF684" name="applicationNote (da)" value="&lt;memo&gt;" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+					<tag xmi:id="EAID_59BB1BCE_C75D_78c7_A938_82F7640323D9" name="applicationNote (en)" value="&lt;memo&gt;" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+					<tag xmi:id="EAID_6D3BD229_5ED8_aa5e_A18F_E38BBED633F9" name="comment (da)" value="&lt;memo&gt;" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+					<tag xmi:id="EAID_6D3BD817_64C6_aa64_810B_7A32D24A474A" name="comment (en)" value="&lt;memo&gt;" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+					<tag xmi:id="EAID_E4EE217F_23CE_c123_9CA3_FCC1B81A6622" name="definition (da)" value="&lt;memo&gt;#NOTES#datakvalitetsdimension der indikerer i hvor høj grad data er tidsmæssigt aktuelle i forhold til den virkelighed de repræsenterer" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+					<tag xmi:id="EAID_E4EE276D_29BC_c129_B0C2_BAF8B0B324F3" name="definition (en)" value="&lt;memo&gt;#NOTES#datakvalitetsdimension der indikerer i hvor høj grad data er tidsmæssigt aktuelle i forhold til den virkelighed de repræsenterer" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+					<tag xmi:id="EAID_82378FC7_3756_3137_985A_CB03E1A7E884" name="deprecatedLabel (da)" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+					<tag xmi:id="EAID_823795B5_3D44_313d_8D22_458FFA62D2AA" name="deprecatedLabel (en)" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+					<tag xmi:id="EAID_B8C86962_F611_36f6_AB64_6FD541298601" name="example (da)" value="&lt;memo&gt;" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+					<tag xmi:id="EAID_B8C86F50_FBFF_36fb_9FC4_772C64A7766A" name="example (en)" value="&lt;memo&gt;" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+					<tag xmi:id="EAID_E2FC29C6_3855_d638_9527_40AEFDDEBE9B" name="isDefinedBy" value="https://data.gov.dk/model/core/CoreDataQualityDimensions#" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+					<tag xmi:id="EAID_A5D15AD6_EFC5_86ef_9561_204D8080C4D0" name="label (da)" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+					<tag xmi:id="EAID_A5D160C4_F5B3_86f5_A5A1_3D5C901A0AC1" name="label (en)" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+					<tag xmi:id="EAID_CC387636_94E5_fb94_B228_AF061C757C03" name="legalSource" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+					<tag xmi:id="EAID_5D30DBE3_2C32_232c_A896_6A5B63DB2C8B" name="prefLabel (da)" value="aktualitet" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+					<tag xmi:id="EAID_5D30E1D1_3220_2332_9803_2C12F36D1188" name="prefLabel (en)" value="currentness" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+					<tag xmi:id="EAID_135A091A_5AFB_f95a_BA4D_5A491E3699AE" name="sameAs" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+					<tag xmi:id="EAID_145BFAB1_7020_0670_9FAF_444F9010CFDD" name="source" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+					<tag xmi:id="EAID_0041AD82_8F43_618f_82E5_6A1252B3E2D0" name="type" value="http://www.w3.org/2002/07/owl#Thing#NOTES#Default: http://www.w3.org/2002/07/owl#Thing&#xA;" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+					<tag xmi:id="EAID_000200D0_483F_a748_A975_020AA86D18F3" name="URI" value="https://data.gov.dk/model/core/CoreDataQualityDimensions#Currentness" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+					<tag xmi:id="EAID_803985A2_C5D1_d5c5_AA8A_582E9B9EE8FA" name="wasDerivedFrom" modelElement="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={4019047B-2DAB-45af-B62A-0AF319E29EF2}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Individual;FQName=Plusprofil::Individual;@ENDSTEREO;$DES;$CLT={B2171B79-3B73-4d6b-9B8C-6675AE7A1A35}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Fællesoffentlige datakvalitetsdimensioner"/>
+				<links>
+					<Association xmi:id="EAID_324C611C_80B3_4ccc_BD72_E3123514EEE9" start="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35" end="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0" xmi:type="uml:Object" name="Reusability" scope="public">
+				<model package="EAPK_4EA3B0CA_3754_4fd4_9D31_C75C1930038D" tpos="3" ea_localid="24782" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" alias="Genbrugelighed" scope="public" stereotype="Individual" isAbstract="false"/>
+				<project author="Maya Borges" version="1.0" phase="1.0" created="2019-02-08 11:42:50" modified="2019-04-02 23:20:39" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=14745599;BorderColor=-1;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_CD817B17_7986_6f79_8074_66AF16840EAF" name="altLabel (da)" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+					<tag xmi:id="EAID_CD818105_7F74_6f7f_9FDC_C2114AAF3EB0" name="altLabel (en)" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+					<tag xmi:id="EAID_59BB15E0_C16F_78c1_B60B_093F30602756" name="applicationNote (da)" value="&lt;memo&gt;" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+					<tag xmi:id="EAID_59BB1BCE_C75D_78c7_B3ED_990DA5FEE21A" name="applicationNote (en)" value="&lt;memo&gt;" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+					<tag xmi:id="EAID_6D3BD229_5ED8_aa5e_ABDD_E06778D2EC5C" name="comment (da)" value="&lt;memo&gt;" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+					<tag xmi:id="EAID_6D3BD817_64C6_aa64_B568_7506995F885B" name="comment (en)" value="&lt;memo&gt;" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+					<tag xmi:id="EAID_E4EE217F_23CE_c123_9FA9_74D25838D9D4" name="definition (da)" value="&lt;memo&gt;#NOTES#datakvalitetsdimension der indikerer i hvor høj grad data er forståelige og uden vanskeligheder kan anvendes af andre" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+					<tag xmi:id="EAID_E4EE276D_29BC_c129_8A54_C13D9136CD9E" name="definition (en)" value="&lt;memo&gt;#NOTES#data quality dimension indicating bthe degree to which data isiunderstandable and without difficulties can be used by others" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+					<tag xmi:id="EAID_82378FC7_3756_3137_AC1D_66996673AC63" name="deprecatedLabel (da)" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+					<tag xmi:id="EAID_823795B5_3D44_313d_AB04_6CCC316E566F" name="deprecatedLabel (en)" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+					<tag xmi:id="EAID_B8C86962_F611_36f6_A32F_D6F5D3C5E216" name="example (da)" value="&lt;memo&gt;" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+					<tag xmi:id="EAID_B8C86F50_FBFF_36fb_A793_CC691CE74AE9" name="example (en)" value="&lt;memo&gt;" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+					<tag xmi:id="EAID_E2FC29C6_3855_d638_AF2A_8110E96F6C3C" name="isDefinedBy" value="https://data.gov.dk/model/core/CoreDataQualityDimensions#" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+					<tag xmi:id="EAID_A5D15AD6_EFC5_86ef_A54E_C88C5F7AE606" name="label (da)" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+					<tag xmi:id="EAID_A5D160C4_F5B3_86f5_B37B_D81F0A548E87" name="label (en)" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+					<tag xmi:id="EAID_CC387636_94E5_fb94_959F_6A742B787CD7" name="legalSource" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+					<tag xmi:id="EAID_5D30DBE3_2C32_232c_9EA8_A68C52F29FE7" name="prefLabel (da)" value="genbruglighed" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+					<tag xmi:id="EAID_5D30E1D1_3220_2332_8DC4_595AF3A8DD34" name="prefLabel (en)" value="reusability" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+					<tag xmi:id="EAID_135A091A_5AFB_f95a_A9A5_A1C7E83CE197" name="sameAs" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+					<tag xmi:id="EAID_145BFAB1_7020_0670_8D26_F83AC2A069F2" name="source" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+					<tag xmi:id="EAID_0041AD82_8F43_618f_BDF2_E12F911DD017" name="type" value="http://www.w3.org/2002/07/owl#Thing#NOTES#Default: http://www.w3.org/2002/07/owl#Thing&#xA;" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+					<tag xmi:id="EAID_000200D0_483F_a748_8F92_A130D78C246A" name="URI" value="https://data.gov.dk/model/core/CoreDataQualityDimensions#Reusability" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+					<tag xmi:id="EAID_803985A2_C5D1_d5c5_8581_F3368C7F3528" name="wasDerivedFrom" modelElement="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={F49FC253-2B02-4ce5-8BDB-AE9CACB3FDE8}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Individual;FQName=Plusprofil::Individual;@ENDSTEREO;$DES;$CLT={62FB4C6D-49C4-40c0-A78B-E4F937E77FD0}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Fællesoffentlige datakvalitetsdimensioner"/>
+				<links>
+					<Association xmi:id="EAID_64D27A80_298E_49bf_8F17_59FE7B445351" start="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0" end="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_EF0AFE85_6A61_427a_886A_9E413B694850" xmi:type="uml:Object" name="Completeness" scope="public">
+				<model package="EAPK_4EA3B0CA_3754_4fd4_9D31_C75C1930038D" tpos="4" ea_localid="24779" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" alias="Komplethed" scope="public" stereotype="Individual" isAbstract="false"/>
+				<project author="Maya Borges" version="1.0" phase="1.0" created="2019-02-08 11:40:15" modified="2019-04-02 23:20:16" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=14745599;BorderColor=-1;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_CD817B17_7986_6f79_AB02_4727367958FA" name="altLabel (da)" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+					<tag xmi:id="EAID_CD818105_7F74_6f7f_A234_14A9C9DDB75E" name="altLabel (en)" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+					<tag xmi:id="EAID_59BB15E0_C16F_78c1_81E1_707AAB74FB6B" name="applicationNote (da)" value="&lt;memo&gt;" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+					<tag xmi:id="EAID_59BB1BCE_C75D_78c7_8DB0_56DFBBAAFC12" name="applicationNote (en)" value="&lt;memo&gt;" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+					<tag xmi:id="EAID_6D3BD229_5ED8_aa5e_AC3F_AE72092D74B9" name="comment (da)" value="&lt;memo&gt;" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+					<tag xmi:id="EAID_6D3BD817_64C6_aa64_87B0_29FF0E2B7802" name="comment (en)" value="&lt;memo&gt;" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+					<tag xmi:id="EAID_E4EE217F_23CE_c123_A4E7_0A6F256C63E2" name="definition (da)" value="&lt;memo&gt;#NOTES#datakvalitetsdimension der indikerer i hvor høj grad datasættet indeholder de dataelementer der er forventede i forhold til datasættets specifikation" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+					<tag xmi:id="EAID_E4EE276D_29BC_c129_9918_2FF567D4A83A" name="definition (en)" value="&lt;memo&gt;#NOTES#data quality dimension indicating the degree to which the data set contains the data elements that are expected based on the specifikatino of the data set" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+					<tag xmi:id="EAID_82378FC7_3756_3137_8FAD_85E99CEF77DA" name="deprecatedLabel (da)" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+					<tag xmi:id="EAID_823795B5_3D44_313d_BD9D_7D96723EF29F" name="deprecatedLabel (en)" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+					<tag xmi:id="EAID_B8C86962_F611_36f6_9385_97BDB2EFFBC2" name="example (da)" value="&lt;memo&gt;" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+					<tag xmi:id="EAID_B8C86F50_FBFF_36fb_8224_CF2DCF04F38B" name="example (en)" value="&lt;memo&gt;" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+					<tag xmi:id="EAID_E2FC29C6_3855_d638_A138_E2B92986BBD0" name="isDefinedBy" value="https://data.gov.dk/model/core/CoreDataQualityDimensions#" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+					<tag xmi:id="EAID_A5D15AD6_EFC5_86ef_B323_0331514FA77D" name="label (da)" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+					<tag xmi:id="EAID_A5D160C4_F5B3_86f5_99C2_E4FC303A7692" name="label (en)" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+					<tag xmi:id="EAID_CC387636_94E5_fb94_94E8_96EB99606D83" name="legalSource" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+					<tag xmi:id="EAID_5D30DBE3_2C32_232c_B2F1_DF0416D21409" name="prefLabel (da)" value="Komplethed" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+					<tag xmi:id="EAID_5D30E1D1_3220_2332_AB26_94C7392E6CAA" name="prefLabel (en)" value="Completeness" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+					<tag xmi:id="EAID_135A091A_5AFB_f95a_8241_2E2D0F80E74A" name="sameAs" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+					<tag xmi:id="EAID_145BFAB1_7020_0670_8616_84A78BAA86DD" name="source" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+					<tag xmi:id="EAID_0041AD82_8F43_618f_9456_CE5EA90723A3" name="type" value="http://www.w3.org/2002/07/owl#Thing#NOTES#Default: http://www.w3.org/2002/07/owl#Thing&#xA;" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+					<tag xmi:id="EAID_000200D0_483F_a748_9C2E_A37A3C57D2A2" name="URI" value="https://data.gov.dk/model/core/CoreDataQualityDimensions#Completeness" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+					<tag xmi:id="EAID_803985A2_C5D1_d5c5_B8FC_3CB4190C0957" name="wasDerivedFrom" modelElement="EAID_EF0AFE85_6A61_427a_886A_9E413B694850"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={B6CF3E4C-0BA3-47fb-855B-9402DC9C9DC1}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Individual;FQName=Plusprofil::Individual;@ENDSTEREO;$DES;$CLT={EF0AFE85-6A61-427a-886A-9E413B694850}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Fællesoffentlige datakvalitetsdimensioner"/>
+				<links>
+					<Association xmi:id="EAID_FEAB34F1_313D_4d4b_AAD8_0F7B42EC0A2C" start="EAID_EF0AFE85_6A61_427a_886A_9E413B694850" end="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B" xmi:type="uml:Object" name="Accuracy" scope="public">
+				<model package="EAPK_4EA3B0CA_3754_4fd4_9D31_C75C1930038D" tpos="5" ea_localid="24780" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" alias="Korrekthed" scope="public" stereotype="Individual" isAbstract="false"/>
+				<project author="Maya Borges" version="1.0" phase="1.0" created="2019-02-08 11:41:05" modified="2019-04-02 23:19:57" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=14745599;BorderColor=-1;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_CD817B17_7986_6f79_8EDA_6B39C198E0B1" name="altLabel (da)" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+					<tag xmi:id="EAID_CD818105_7F74_6f7f_B8E6_45866E880968" name="altLabel (en)" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+					<tag xmi:id="EAID_59BB15E0_C16F_78c1_86D9_7790CF691001" name="applicationNote (da)" value="&lt;memo&gt;" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+					<tag xmi:id="EAID_59BB1BCE_C75D_78c7_BB3B_D6E04D219916" name="applicationNote (en)" value="&lt;memo&gt;" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+					<tag xmi:id="EAID_6D3BD229_5ED8_aa5e_9FD1_8F8BCAE96AE1" name="comment (da)" value="&lt;memo&gt;" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+					<tag xmi:id="EAID_6D3BD817_64C6_aa64_9AE1_428347A603E7" name="comment (en)" value="&lt;memo&gt;" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+					<tag xmi:id="EAID_E4EE217F_23CE_c123_95A6_E0D1FC5D1D0D" name="definition (da)" value="&lt;memo&gt;#NOTES#datakvalitetsdimension der indikerer i hvor høj grad dataværdier er i overensstemmelse med faktiske værdier" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+					<tag xmi:id="EAID_E4EE276D_29BC_c129_BB0E_6DE283A942E8" name="definition (en)" value="&lt;memo&gt;" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+					<tag xmi:id="EAID_82378FC7_3756_3137_BBE2_AE956E7CC5EE" name="deprecatedLabel (da)" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+					<tag xmi:id="EAID_823795B5_3D44_313d_8D4D_C51436243EFC" name="deprecatedLabel (en)" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+					<tag xmi:id="EAID_B8C86962_F611_36f6_94E3_7A7C577DCB3B" name="example (da)" value="&lt;memo&gt;" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+					<tag xmi:id="EAID_B8C86F50_FBFF_36fb_9D56_9C8B9ABFA386" name="example (en)" value="&lt;memo&gt;" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+					<tag xmi:id="EAID_E2FC29C6_3855_d638_A9FA_4210D3837B09" name="isDefinedBy" value="https://data.gov.dk/model/core/CoreDataQualityDimensions#" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+					<tag xmi:id="EAID_A5D15AD6_EFC5_86ef_85BB_42D83EC4BBB9" name="label (da)" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+					<tag xmi:id="EAID_A5D160C4_F5B3_86f5_8857_4814DE3F8471" name="label (en)" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+					<tag xmi:id="EAID_CC387636_94E5_fb94_A520_142DBC594A4A" name="legalSource" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+					<tag xmi:id="EAID_5D30DBE3_2C32_232c_B63E_F3DC885F113C" name="prefLabel (da)" value="korrekthed" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+					<tag xmi:id="EAID_5D30E1D1_3220_2332_89B5_A415ABCB3174" name="prefLabel (en)" value="accuracy" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+					<tag xmi:id="EAID_135A091A_5AFB_f95a_89E1_B2B0EAB3B1A7" name="sameAs" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+					<tag xmi:id="EAID_145BFAB1_7020_0670_AC40_AC99998E0957" name="source" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+					<tag xmi:id="EAID_0041AD82_8F43_618f_A7F3_4FA288F65525" name="type" value="http://www.w3.org/2002/07/owl#Thing#NOTES#Default: http://www.w3.org/2002/07/owl#Thing&#xA;" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+					<tag xmi:id="EAID_000200D0_483F_a748_8F98_847B1EBD9A7D" name="URI" value="https://data.gov.dk/model/core/CoreDataQualityDimensions#Accuracy" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+					<tag xmi:id="EAID_803985A2_C5D1_d5c5_8FE0_324A1D510633" name="wasDerivedFrom" modelElement="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={B3F75FD9-9894-41d7-8DFB-9E2475B5687F}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Individual;FQName=Plusprofil::Individual;@ENDSTEREO;$DES;$CLT={2A3E2AA5-89DB-4735-8ACC-CC6D4309036B}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Fællesoffentlige datakvalitetsdimensioner"/>
+				<links>
+					<Association xmi:id="EAID_4A14FA2D_E7F0_4446_8E70_1C8EC4456B0B" start="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B" end="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D"/>
+				</links>
+			</element>
+		</elements>
+		<connectors>
+			<connector xmi:idref="EAID_324C611C_80B3_4ccc_BD72_E3123514EEE9">
+				<source xmi:idref="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35">
+					<model ea_localid="24781" type="Object" name="Currentness"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D">
+					<model ea_localid="29544" type="Class" name="CoreDimension"/>
+					<role name="rdf:type" stereotype="objectProperty" visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;alias=type;"/>
+					<documentation/>
+					<xrefs value="$XREFPROP=$XID={B38B3CA5-F3AE-46dd-BD59-431D05BF8EC9}$XID;$NAM=Stereotypes$NAM;$TYP=connectorDestEnd property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=objectProperty;FQName=OWL::objectProperty;@ENDSTEREO;$DES;$CLT={324C611C-80B3-4ccc-BD72-E3123514EEE9}$CLT;$ENDXREF;"/>
+					<tags>
+						<tag xmi:id="EAID_00FBDE85_24C2_45a9_8B34_40139C80D7AE" name="applicationNote (en)" value="&lt;memo&gt;$ea_notes="/>
+						<tag xmi:id="EAID_0ADD1DCB_6598_4388_BCB6_6A50DC46A4BB" name="example (da)" value="&lt;memo&gt;$ea_notes="/>
+						<tag xmi:id="EAID_1EDF143F_5A61_4254_865F_EDC94AEE7D8E" name="equivalentProperty" value="$ea_notes=Description: Definition (da):&#xA;angivelse af en egenskab som den aktuelle egenskab er det samme som, det vil sige, at de to egenskabers domæne og rækkevidde er ens&#xA;&#xA;Definition (en):&#xA;The property that determines that two given properties are equivalent&#xA;"/>
+						<tag xmi:id="EAID_24C752AB_23C0_47c9_BC42_AC2AC92B7422" name="domain" value="http://www.w3.org/2000/01/rdf-schema#Resource$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for de individer der har den pågældende egenskab. &#xA;&#xA;Kommentar - egenskaben 'er forfatter af' kan eksempelvis angives med domænet (domain) 'Person'. Angiver den implicitte klasse som indeholder det objekt der ejer egenskaben. Som default værdi bruges owl:Thing &#xA;&#xA;Definition (en):&#xA;A domain of the subject property. [rdfs:domain]&#xA;"/>
+						<tag xmi:id="EAID_25A21B35_5736_43c9_A091_1F4E937836B3" name="source" value="$ea_notes="/>
+						<tag xmi:id="EAID_2660F7C2_FE8F_4d80_98FE_A4F84A6027D2" name="definition (en)" value="&lt;memo&gt;$ea_notes="/>
+						<tag xmi:id="EAID_27CC58A4_179D_4ba5_B8CD_D30BBF2B2469" name="altLabel (da)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;"/>
+						<tag xmi:id="EAID_28D5E7FB_0206_4df4_BECD_91E4F0349E46" name="subPropertyOf" value="$ea_notes=Description: Definition (da):&#xA;angivelse af at en given egenskab er en specialisering af en anden egenskab [rdfs:subPropertyOf]&#xA;&#xA;Kommentar - En egenskab mellem to egenskaber. På samme måde som en klasse kan være en delmængde af en anden klasse (subClassOf) kan en egenskab være en underegenskab til en anden. Dette erklæres ved brug af rdfs:subPropertyOf. Svarer til angivelse af ’subsetting’på en attribut eller en association i UML.&#xA;&#xA;Definition (en):&#xA;The subject is a subproperty of a property.&#xA;[rdfs:subPropertyOf]&#xA;"/>
+						<tag xmi:id="EAID_29527DC3_6533_445c_86E0_A134AFF8D4C3" name="symmetricProperty" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;en egenskab der gælder begge veje selvom den kun er erklæret den ene vej [owl:symmetricProperty]&#xA;&#xA;Kommentar  - Hvis X har egenskaben ’sidder ved siden af’ Y, så gælder det også at Y har egenskaben ’sidder ved siden af’ X.&#xA;&#xA;Definition (en):&#xA;The class of symmetric properties [owl:symmetricProperty]&#xA;"/>
+						<tag xmi:id="EAID_2FC0F03A_65CA_4d58_B094_F3D7C2F2DE32" name="deprecatedLabel (en)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;"/>
+						<tag xmi:id="EAID_311C5560_E31D_45e6_A09A_4E073564F006" name="example (en)" value="&lt;memo&gt;$ea_notes="/>
+						<tag xmi:id="EAID_47AA86F7_3BB6_4aa5_8D9E_9CCC8B7DBEC8" name="label (da)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;"/>
+						<tag xmi:id="EAID_59529952_475E_4cd8_85B7_6A553871AC58" name="legalSource" value="$ea_notes="/>
+						<tag xmi:id="EAID_5B115EF9_C17D_4436_94B4_9624DDB1487E" name="inverseFunctionalProperty" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;egenskab hvis værdi er unik [owl:inverseFunctionalProperty]&#xA;&#xA;Kommentar - Ex. en persons CPR-nummer  &#xA;&#xA;Hvis en attribut eksempelvis er modelleret med invFunctionalProperty, så betyder det at denne attributs værdi udgør en unik idenfikator. Hvis egenskaben E er en omvendt funktionel egenskab gælder det at: Hvis X har egenskaben E med værdien V, og Y har egenskaben E med værdien V, så er X og Y samme individ, samme objekt&#xA;&#xA;Definition (en):&#xA;The class of inverse-functional properties [owl:inverseFunctionalProperty]&#xA;"/>
+						<tag xmi:id="EAID_5E8BD95F_0F05_4f6d_89C1_38090B52CEF0" name="wasDerivedFrom" value="$ea_notes=Description: Definition (da):&#xA;relation som angiver at en entitet har dannet basis for oprettelse af en ny entitet [prov:wasDerivedFrom]&#xA;&#xA;Definition (en):&#xA;A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity [prov:wasDerivedFrom]&#xA;"/>
+						<tag xmi:id="EAID_64BFCBC5_BF16_4bcc_B2B2_887086ACC7DB" name="prefLabel (da)" value="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;"/>
+						<tag xmi:id="EAID_795AEE66_A088_46e5_B98F_2A0F94A48374" name="functionalProperty" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;egenskab hvor udfaldsrummet er en unik værdi eller unikt objekt [owl:functionalProperty]&#xA;&#xA;Kommentar - egenskaben 'biologisk mor' bør markeres som en funktionel egenskab.&#xA;Hvis egenskaben E er en funktionel egenskab gælder det at: Hvis A har egenskaben E med værdien X, og A har egenskaben E med værdien Y, så er X og Y den samme værdi (= samme individ, samme objekt).&#xA;&#xA;Definition (en):&#xA;The class of functional properties [owl:functionalProperty]&#xA;"/>
+						<tag xmi:id="EAID_7E750A70_962E_4718_923D_56F592001B81" name="range" value="http://www.w3.org/2000/01/rdf-schema#Class$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for udfaldsrummet af den pågældende egenskab [rdfs:range]&#xA;&#xA;Kommentar -  egenskaben 'er forfatter til' kan eksempelvis angives med rækkevidden (range) 'dokument'. Angiver den implicitte klasse for dét som egenskaben har som værdi.&#xA;Som default værdi bruges rdfs:Literal for datatypeegenskaber.&#xA;&#xA;Definition (en):&#xA;A range of the subject property.[rdfs:range]&#xA;"/>
+						<tag xmi:id="EAID_9BE637D7_98D6_4a5c_A915_2ACC1AF7922F" name="altLabel (en)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;"/>
+						<tag xmi:id="EAID_A550CF88_BAF1_49d3_943F_801EE55DBA3F" name="deprecatedLabel (da)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;"/>
+						<tag xmi:id="EAID_BCBE640B_F0AF_43a2_AD7D_60AA7D20C9F8" name="transitiveProperty" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;angivelse af at en egenskab tillader at man på baggrund af viden om at &quot;A er relateret til B&quot; og &quot;B er relateret til C&quot; udleder at &quot;A er relateret til C&quot; [owl:transitiveProperty] Kommentar: Ex. Hvis egenskaben ’har forfader’ er transitiv betyder det at hvis: A ’har forfader’ B og B ’har forfader’ C så gælder det at A ’har forfader’ C - Generalisering er et eksempel på en transitiv egenskab. Definition (en):The class of transitive properties[owl:transitiveProperty]&#xA;"/>
+						<tag xmi:id="EAID_BDE8BDF5_2D3B_4535_B819_CA9A4E0D22C5" name="URI" value="http://www.w3.org/1999/02/22-rdf-syntax-ns#type$ea_notes= Definition (da):&#xA;entydig identifikation af en ressource, (en klasse, et individ, en egenskab eller en værdi/literal) ved brug af en HTTP-URI&#xA;&#xA;Definition (en):&#xA;"/>
+						<tag xmi:id="EAID_C2100AD6_45B5_41df_84B0_CE38E7046B71" name="prefLabel (en)" value="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;"/>
+						<tag xmi:id="EAID_C898FBD8_D9B7_4038_8B64_4E88BCDF41F4" name="label (en)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;"/>
+						<tag xmi:id="EAID_D22CFDFA_A49C_4cd1_BEC0_3BE55CA1A663" name="applicationNote (da)" value="&lt;memo&gt;$ea_notes="/>
+						<tag xmi:id="EAID_D885FEEA_4C55_4ec2_BBD9_28417344A11D" name="definition (da)" value="&lt;memo&gt;$ea_notes=den klasse en given instans tilhører"/>
+						<tag xmi:id="EAID_DB9473C2_30BD_4784_9201_E5ECE855043D" name="comment (da)" value="&lt;memo&gt;$ea_notes=Subjektet er en instans af klassen."/>
+						<tag xmi:id="EAID_E6931A44_D48C_40da_8F8A_1A2CCE67A73A" name="inverseOf" value="$ea_notes=Description: Definition (da):&#xA;angivelse af at en egenskab er modsatrettet en given egenskab - dvs at den enes rækkevidde er den andens domæne og vice versa [owl:inverseOf]&#xA;&#xA;Definition (en):&#xA;The property that determines that two given properties are inverse. [owl:inverseOf]&#xA;"/>
+						<tag xmi:id="EAID_ED70231B_B2C1_46b8_B02D_E6708B1A8373" name="comment (en)" value="&lt;memo&gt;$ea_notes=The subject is an instance of a class."/>
+						<tag xmi:id="EAID_F126A7A2_5352_4be2_8C07_8E0C39B84EFC" name="isDefinedBy" value="http://www.w3.org/1999/02/22-rdf-syntax-ns#$ea_notes= Definition (da):&#xA;angivelse af urien for den model elementet er defineret i [rdfs:isDefinedBy]&#xA;&#xA;Definition (en):&#xA;The defininition of the subject resource [rdfs:isDefinedBy]&#xA;"/>
+					</tags>
+				</target>
+				<model ea_localid="25371"/>
+				<properties ea_type="Association" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels rt="+rdf:type&#xA;«objectProperty»"/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_4A14FA2D_E7F0_4446_8E70_1C8EC4456B0B">
+				<source xmi:idref="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B">
+					<model ea_localid="24780" type="Object" name="Accuracy"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D">
+					<model ea_localid="29544" type="Class" name="CoreDimension"/>
+					<role name="rdf:type" stereotype="objectProperty" visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;alias=type;"/>
+					<documentation/>
+					<xrefs value="$XREFPROP=$XID={9AEE636D-8D18-45c6-9623-4D672D70CCC0}$XID;$NAM=Stereotypes$NAM;$TYP=connectorDestEnd property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=objectProperty;FQName=OWL::objectProperty;@ENDSTEREO;$DES;$CLT={4A14FA2D-E7F0-4446-8E70-1C8EC4456B0B}$CLT;$ENDXREF;"/>
+					<tags>
+						<tag xmi:id="EAID_00FBDE85_24C2_45a9_9ACE_6729BBF5E991" name="applicationNote (en)" value="&lt;memo&gt;$ea_notes="/>
+						<tag xmi:id="EAID_0ADD1DCB_6598_4388_B508_BC3E2356C2EE" name="example (da)" value="&lt;memo&gt;$ea_notes="/>
+						<tag xmi:id="EAID_1EDF143F_5A61_4254_881A_2EA604E94A1F" name="equivalentProperty" value="$ea_notes=Description: Definition (da):&#xA;angivelse af en egenskab som den aktuelle egenskab er det samme som, det vil sige, at de to egenskabers domæne og rækkevidde er ens&#xA;&#xA;Definition (en):&#xA;The property that determines that two given properties are equivalent&#xA;"/>
+						<tag xmi:id="EAID_24C752AB_23C0_47c9_B7AE_C86B61E024DF" name="domain" value="http://www.w3.org/2000/01/rdf-schema#Resource$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for de individer der har den pågældende egenskab. &#xA;&#xA;Kommentar - egenskaben 'er forfatter af' kan eksempelvis angives med domænet (domain) 'Person'. Angiver den implicitte klasse som indeholder det objekt der ejer egenskaben. Som default værdi bruges owl:Thing &#xA;&#xA;Definition (en):&#xA;A domain of the subject property. [rdfs:domain]&#xA;"/>
+						<tag xmi:id="EAID_25A21B35_5736_43c9_B161_6713AF15A461" name="source" value="$ea_notes="/>
+						<tag xmi:id="EAID_2660F7C2_FE8F_4d80_BE0D_03E1882EDE85" name="definition (en)" value="&lt;memo&gt;$ea_notes="/>
+						<tag xmi:id="EAID_27CC58A4_179D_4ba5_B66D_B0A326654EC9" name="altLabel (da)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;"/>
+						<tag xmi:id="EAID_28D5E7FB_0206_4df4_8EB7_9E3AFDDD7AED" name="subPropertyOf" value="$ea_notes=Description: Definition (da):&#xA;angivelse af at en given egenskab er en specialisering af en anden egenskab [rdfs:subPropertyOf]&#xA;&#xA;Kommentar - En egenskab mellem to egenskaber. På samme måde som en klasse kan være en delmængde af en anden klasse (subClassOf) kan en egenskab være en underegenskab til en anden. Dette erklæres ved brug af rdfs:subPropertyOf. Svarer til angivelse af ’subsetting’på en attribut eller en association i UML.&#xA;&#xA;Definition (en):&#xA;The subject is a subproperty of a property.&#xA;[rdfs:subPropertyOf]&#xA;"/>
+						<tag xmi:id="EAID_29527DC3_6533_445c_99F2_46AC6DC883AE" name="symmetricProperty" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;en egenskab der gælder begge veje selvom den kun er erklæret den ene vej [owl:symmetricProperty]&#xA;&#xA;Kommentar  - Hvis X har egenskaben ’sidder ved siden af’ Y, så gælder det også at Y har egenskaben ’sidder ved siden af’ X.&#xA;&#xA;Definition (en):&#xA;The class of symmetric properties [owl:symmetricProperty]&#xA;"/>
+						<tag xmi:id="EAID_2FC0F03A_65CA_4d58_BF70_FDA6A0CD3730" name="deprecatedLabel (en)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;"/>
+						<tag xmi:id="EAID_311C5560_E31D_45e6_9152_5ED984867EC3" name="example (en)" value="&lt;memo&gt;$ea_notes="/>
+						<tag xmi:id="EAID_47AA86F7_3BB6_4aa5_8EC0_6F0EB234F138" name="label (da)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;"/>
+						<tag xmi:id="EAID_59529952_475E_4cd8_B29B_57FD0A647361" name="legalSource" value="$ea_notes="/>
+						<tag xmi:id="EAID_5B115EF9_C17D_4436_8D5A_78A45E71087C" name="inverseFunctionalProperty" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;egenskab hvis værdi er unik [owl:inverseFunctionalProperty]&#xA;&#xA;Kommentar - Ex. en persons CPR-nummer  &#xA;&#xA;Hvis en attribut eksempelvis er modelleret med invFunctionalProperty, så betyder det at denne attributs værdi udgør en unik idenfikator. Hvis egenskaben E er en omvendt funktionel egenskab gælder det at: Hvis X har egenskaben E med værdien V, og Y har egenskaben E med værdien V, så er X og Y samme individ, samme objekt&#xA;&#xA;Definition (en):&#xA;The class of inverse-functional properties [owl:inverseFunctionalProperty]&#xA;"/>
+						<tag xmi:id="EAID_5E8BD95F_0F05_4f6d_BE9F_6E9000A6C703" name="wasDerivedFrom" value="$ea_notes=Description: Definition (da):&#xA;relation som angiver at en entitet har dannet basis for oprettelse af en ny entitet [prov:wasDerivedFrom]&#xA;&#xA;Definition (en):&#xA;A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity [prov:wasDerivedFrom]&#xA;"/>
+						<tag xmi:id="EAID_64BFCBC5_BF16_4bcc_A302_A59C4385123F" name="prefLabel (da)" value="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;"/>
+						<tag xmi:id="EAID_795AEE66_A088_46e5_B9D4_7DD5CF62EDD7" name="functionalProperty" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;egenskab hvor udfaldsrummet er en unik værdi eller unikt objekt [owl:functionalProperty]&#xA;&#xA;Kommentar - egenskaben 'biologisk mor' bør markeres som en funktionel egenskab.&#xA;Hvis egenskaben E er en funktionel egenskab gælder det at: Hvis A har egenskaben E med værdien X, og A har egenskaben E med værdien Y, så er X og Y den samme værdi (= samme individ, samme objekt).&#xA;&#xA;Definition (en):&#xA;The class of functional properties [owl:functionalProperty]&#xA;"/>
+						<tag xmi:id="EAID_7E750A70_962E_4718_8D7E_E87E236A4692" name="range" value="http://www.w3.org/2000/01/rdf-schema#Class$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for udfaldsrummet af den pågældende egenskab [rdfs:range]&#xA;&#xA;Kommentar -  egenskaben 'er forfatter til' kan eksempelvis angives med rækkevidden (range) 'dokument'. Angiver den implicitte klasse for dét som egenskaben har som værdi.&#xA;Som default værdi bruges rdfs:Literal for datatypeegenskaber.&#xA;&#xA;Definition (en):&#xA;A range of the subject property.[rdfs:range]&#xA;"/>
+						<tag xmi:id="EAID_9BE637D7_98D6_4a5c_9095_A7DF13A06B72" name="altLabel (en)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;"/>
+						<tag xmi:id="EAID_A550CF88_BAF1_49d3_BE31_944164DE473F" name="deprecatedLabel (da)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;"/>
+						<tag xmi:id="EAID_BCBE640B_F0AF_43a2_8FE5_139018987CD3" name="transitiveProperty" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;angivelse af at en egenskab tillader at man på baggrund af viden om at &quot;A er relateret til B&quot; og &quot;B er relateret til C&quot; udleder at &quot;A er relateret til C&quot; [owl:transitiveProperty] Kommentar: Ex. Hvis egenskaben ’har forfader’ er transitiv betyder det at hvis: A ’har forfader’ B og B ’har forfader’ C så gælder det at A ’har forfader’ C - Generalisering er et eksempel på en transitiv egenskab. Definition (en):The class of transitive properties[owl:transitiveProperty]&#xA;"/>
+						<tag xmi:id="EAID_BDE8BDF5_2D3B_4535_852A_604EA59022F7" name="URI" value="http://www.w3.org/1999/02/22-rdf-syntax-ns#type$ea_notes= Definition (da):&#xA;entydig identifikation af en ressource, (en klasse, et individ, en egenskab eller en værdi/literal) ved brug af en HTTP-URI&#xA;&#xA;Definition (en):&#xA;"/>
+						<tag xmi:id="EAID_C2100AD6_45B5_41df_9F7D_602855A103E0" name="prefLabel (en)" value="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;"/>
+						<tag xmi:id="EAID_C898FBD8_D9B7_4038_83CC_6EDDC6EE9B5E" name="label (en)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;"/>
+						<tag xmi:id="EAID_D22CFDFA_A49C_4cd1_90CE_485BB5C8A54F" name="applicationNote (da)" value="&lt;memo&gt;$ea_notes="/>
+						<tag xmi:id="EAID_D885FEEA_4C55_4ec2_95F0_F85090BC770A" name="definition (da)" value="&lt;memo&gt;$ea_notes=den klasse en given instans tilhører"/>
+						<tag xmi:id="EAID_DB9473C2_30BD_4784_A297_F71458BBE32E" name="comment (da)" value="&lt;memo&gt;$ea_notes=Subjektet er en instans af klassen."/>
+						<tag xmi:id="EAID_E6931A44_D48C_40da_A4D0_777E12FA4D7F" name="inverseOf" value="$ea_notes=Description: Definition (da):&#xA;angivelse af at en egenskab er modsatrettet en given egenskab - dvs at den enes rækkevidde er den andens domæne og vice versa [owl:inverseOf]&#xA;&#xA;Definition (en):&#xA;The property that determines that two given properties are inverse. [owl:inverseOf]&#xA;"/>
+						<tag xmi:id="EAID_ED70231B_B2C1_46b8_A566_B586832680E2" name="comment (en)" value="&lt;memo&gt;$ea_notes=The subject is an instance of a class."/>
+						<tag xmi:id="EAID_F126A7A2_5352_4be2_BD8A_59A3DCA4E3AF" name="isDefinedBy" value="http://www.w3.org/1999/02/22-rdf-syntax-ns#$ea_notes= Definition (da):&#xA;angivelse af urien for den model elementet er defineret i [rdfs:isDefinedBy]&#xA;&#xA;Definition (en):&#xA;The defininition of the subject resource [rdfs:isDefinedBy]&#xA;"/>
+					</tags>
+				</target>
+				<model ea_localid="25370"/>
+				<properties ea_type="Association" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels rt="+rdf:type&#xA;«objectProperty»"/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_64D27A80_298E_49bf_8F17_59FE7B445351">
+				<source xmi:idref="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0">
+					<model ea_localid="24782" type="Object" name="Reusability"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D">
+					<model ea_localid="29544" type="Class" name="CoreDimension"/>
+					<role name="rdf:type" stereotype="objectProperty" visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;alias=type;"/>
+					<documentation/>
+					<xrefs value="$XREFPROP=$XID={DEA61D6A-1561-438f-852A-47498A4A7357}$XID;$NAM=Stereotypes$NAM;$TYP=connectorDestEnd property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=objectProperty;FQName=OWL::objectProperty;@ENDSTEREO;$DES;$CLT={64D27A80-298E-49bf-8F17-59FE7B445351}$CLT;$ENDXREF;"/>
+					<tags>
+						<tag xmi:id="EAID_00FBDE85_24C2_45a9_A0E2_455A7B59C0BC" name="applicationNote (en)" value="&lt;memo&gt;$ea_notes="/>
+						<tag xmi:id="EAID_0ADD1DCB_6598_4388_B174_1E3E6B48C9F2" name="example (da)" value="&lt;memo&gt;$ea_notes="/>
+						<tag xmi:id="EAID_1EDF143F_5A61_4254_BC8E_E49B2F324973" name="equivalentProperty" value="$ea_notes=Description: Definition (da):&#xA;angivelse af en egenskab som den aktuelle egenskab er det samme som, det vil sige, at de to egenskabers domæne og rækkevidde er ens&#xA;&#xA;Definition (en):&#xA;The property that determines that two given properties are equivalent&#xA;"/>
+						<tag xmi:id="EAID_24C752AB_23C0_47c9_BEBD_6660B650F644" name="domain" value="http://www.w3.org/2000/01/rdf-schema#Resource$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for de individer der har den pågældende egenskab. &#xA;&#xA;Kommentar - egenskaben 'er forfatter af' kan eksempelvis angives med domænet (domain) 'Person'. Angiver den implicitte klasse som indeholder det objekt der ejer egenskaben. Som default værdi bruges owl:Thing &#xA;&#xA;Definition (en):&#xA;A domain of the subject property. [rdfs:domain]&#xA;"/>
+						<tag xmi:id="EAID_25A21B35_5736_43c9_BA1B_48D51AAEC4AE" name="source" value="$ea_notes="/>
+						<tag xmi:id="EAID_2660F7C2_FE8F_4d80_BBA4_39418BED8D51" name="definition (en)" value="&lt;memo&gt;$ea_notes="/>
+						<tag xmi:id="EAID_27CC58A4_179D_4ba5_B464_C6DC984DBB51" name="altLabel (da)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;"/>
+						<tag xmi:id="EAID_28D5E7FB_0206_4df4_B2DC_4A6250A6667C" name="subPropertyOf" value="$ea_notes=Description: Definition (da):&#xA;angivelse af at en given egenskab er en specialisering af en anden egenskab [rdfs:subPropertyOf]&#xA;&#xA;Kommentar - En egenskab mellem to egenskaber. På samme måde som en klasse kan være en delmængde af en anden klasse (subClassOf) kan en egenskab være en underegenskab til en anden. Dette erklæres ved brug af rdfs:subPropertyOf. Svarer til angivelse af ’subsetting’på en attribut eller en association i UML.&#xA;&#xA;Definition (en):&#xA;The subject is a subproperty of a property.&#xA;[rdfs:subPropertyOf]&#xA;"/>
+						<tag xmi:id="EAID_29527DC3_6533_445c_B8FD_1FD503EB8E52" name="symmetricProperty" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;en egenskab der gælder begge veje selvom den kun er erklæret den ene vej [owl:symmetricProperty]&#xA;&#xA;Kommentar  - Hvis X har egenskaben ’sidder ved siden af’ Y, så gælder det også at Y har egenskaben ’sidder ved siden af’ X.&#xA;&#xA;Definition (en):&#xA;The class of symmetric properties [owl:symmetricProperty]&#xA;"/>
+						<tag xmi:id="EAID_2FC0F03A_65CA_4d58_8388_548C01D0F1E6" name="deprecatedLabel (en)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;"/>
+						<tag xmi:id="EAID_311C5560_E31D_45e6_840B_04F5EA04818E" name="example (en)" value="&lt;memo&gt;$ea_notes="/>
+						<tag xmi:id="EAID_47AA86F7_3BB6_4aa5_A774_9BB38BE57451" name="label (da)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;"/>
+						<tag xmi:id="EAID_59529952_475E_4cd8_A3DE_F066557E2886" name="legalSource" value="$ea_notes="/>
+						<tag xmi:id="EAID_5B115EF9_C17D_4436_9B77_6816FCF972B2" name="inverseFunctionalProperty" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;egenskab hvis værdi er unik [owl:inverseFunctionalProperty]&#xA;&#xA;Kommentar - Ex. en persons CPR-nummer  &#xA;&#xA;Hvis en attribut eksempelvis er modelleret med invFunctionalProperty, så betyder det at denne attributs værdi udgør en unik idenfikator. Hvis egenskaben E er en omvendt funktionel egenskab gælder det at: Hvis X har egenskaben E med værdien V, og Y har egenskaben E med værdien V, så er X og Y samme individ, samme objekt&#xA;&#xA;Definition (en):&#xA;The class of inverse-functional properties [owl:inverseFunctionalProperty]&#xA;"/>
+						<tag xmi:id="EAID_5E8BD95F_0F05_4f6d_97C1_24BEEF0EFE12" name="wasDerivedFrom" value="$ea_notes=Description: Definition (da):&#xA;relation som angiver at en entitet har dannet basis for oprettelse af en ny entitet [prov:wasDerivedFrom]&#xA;&#xA;Definition (en):&#xA;A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity [prov:wasDerivedFrom]&#xA;"/>
+						<tag xmi:id="EAID_64BFCBC5_BF16_4bcc_AE0D_07EE1B4DFFEB" name="prefLabel (da)" value="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;"/>
+						<tag xmi:id="EAID_795AEE66_A088_46e5_8F68_857A27C3790A" name="functionalProperty" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;egenskab hvor udfaldsrummet er en unik værdi eller unikt objekt [owl:functionalProperty]&#xA;&#xA;Kommentar - egenskaben 'biologisk mor' bør markeres som en funktionel egenskab.&#xA;Hvis egenskaben E er en funktionel egenskab gælder det at: Hvis A har egenskaben E med værdien X, og A har egenskaben E med værdien Y, så er X og Y den samme værdi (= samme individ, samme objekt).&#xA;&#xA;Definition (en):&#xA;The class of functional properties [owl:functionalProperty]&#xA;"/>
+						<tag xmi:id="EAID_7E750A70_962E_4718_A044_51C933F9EC5D" name="range" value="http://www.w3.org/2000/01/rdf-schema#Class$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for udfaldsrummet af den pågældende egenskab [rdfs:range]&#xA;&#xA;Kommentar -  egenskaben 'er forfatter til' kan eksempelvis angives med rækkevidden (range) 'dokument'. Angiver den implicitte klasse for dét som egenskaben har som værdi.&#xA;Som default værdi bruges rdfs:Literal for datatypeegenskaber.&#xA;&#xA;Definition (en):&#xA;A range of the subject property.[rdfs:range]&#xA;"/>
+						<tag xmi:id="EAID_9BE637D7_98D6_4a5c_9975_96E2289C080D" name="altLabel (en)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;"/>
+						<tag xmi:id="EAID_A550CF88_BAF1_49d3_950C_1BFAB7113E46" name="deprecatedLabel (da)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;"/>
+						<tag xmi:id="EAID_BCBE640B_F0AF_43a2_97DC_22929655EC60" name="transitiveProperty" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;angivelse af at en egenskab tillader at man på baggrund af viden om at &quot;A er relateret til B&quot; og &quot;B er relateret til C&quot; udleder at &quot;A er relateret til C&quot; [owl:transitiveProperty] Kommentar: Ex. Hvis egenskaben ’har forfader’ er transitiv betyder det at hvis: A ’har forfader’ B og B ’har forfader’ C så gælder det at A ’har forfader’ C - Generalisering er et eksempel på en transitiv egenskab. Definition (en):The class of transitive properties[owl:transitiveProperty]&#xA;"/>
+						<tag xmi:id="EAID_BDE8BDF5_2D3B_4535_BADF_273C2B0D27EE" name="URI" value="http://www.w3.org/1999/02/22-rdf-syntax-ns#type$ea_notes= Definition (da):&#xA;entydig identifikation af en ressource, (en klasse, et individ, en egenskab eller en værdi/literal) ved brug af en HTTP-URI&#xA;&#xA;Definition (en):&#xA;"/>
+						<tag xmi:id="EAID_C2100AD6_45B5_41df_949F_0E13907B1A93" name="prefLabel (en)" value="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;"/>
+						<tag xmi:id="EAID_C898FBD8_D9B7_4038_8F3B_F6F907980FFA" name="label (en)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;"/>
+						<tag xmi:id="EAID_D22CFDFA_A49C_4cd1_95A0_D3A45EC08E88" name="applicationNote (da)" value="&lt;memo&gt;$ea_notes="/>
+						<tag xmi:id="EAID_D885FEEA_4C55_4ec2_BA4D_F455DE9A53C8" name="definition (da)" value="&lt;memo&gt;$ea_notes=den klasse en given instans tilhører"/>
+						<tag xmi:id="EAID_DB9473C2_30BD_4784_8BD5_AC4EA8748225" name="comment (da)" value="&lt;memo&gt;$ea_notes=Subjektet er en instans af klassen."/>
+						<tag xmi:id="EAID_E6931A44_D48C_40da_AB2A_24591191996B" name="inverseOf" value="$ea_notes=Description: Definition (da):&#xA;angivelse af at en egenskab er modsatrettet en given egenskab - dvs at den enes rækkevidde er den andens domæne og vice versa [owl:inverseOf]&#xA;&#xA;Definition (en):&#xA;The property that determines that two given properties are inverse. [owl:inverseOf]&#xA;"/>
+						<tag xmi:id="EAID_ED70231B_B2C1_46b8_930D_07841B927715" name="comment (en)" value="&lt;memo&gt;$ea_notes=The subject is an instance of a class."/>
+						<tag xmi:id="EAID_F126A7A2_5352_4be2_99A8_9D74FAA8D208" name="isDefinedBy" value="http://www.w3.org/1999/02/22-rdf-syntax-ns#$ea_notes= Definition (da):&#xA;angivelse af urien for den model elementet er defineret i [rdfs:isDefinedBy]&#xA;&#xA;Definition (en):&#xA;The defininition of the subject resource [rdfs:isDefinedBy]&#xA;"/>
+					</tags>
+				</target>
+				<model ea_localid="25372"/>
+				<properties ea_type="Association" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels rt="+rdf:type&#xA;«objectProperty»"/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_FEAB34F1_313D_4d4b_AAD8_0F7B42EC0A2C">
+				<source xmi:idref="EAID_EF0AFE85_6A61_427a_886A_9E413B694850">
+					<model ea_localid="24779" type="Object" name="Completeness"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D">
+					<model ea_localid="29544" type="Class" name="CoreDimension"/>
+					<role name="rdf:type" stereotype="objectProperty" visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;alias=type;"/>
+					<documentation/>
+					<xrefs value="$XREFPROP=$XID={5434309F-E5E4-4a46-B49B-0126E892D14F}$XID;$NAM=Stereotypes$NAM;$TYP=connectorDestEnd property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=objectProperty;FQName=OWL::objectProperty;@ENDSTEREO;$DES;$CLT={FEAB34F1-313D-4d4b-AAD8-0F7B42EC0A2C}$CLT;$ENDXREF;"/>
+					<tags>
+						<tag xmi:id="EAID_00FBDE85_24C2_45a9_BD2E_BAF165A9DAD4" name="applicationNote (en)" value="&lt;memo&gt;$ea_notes="/>
+						<tag xmi:id="EAID_0ADD1DCB_6598_4388_9675_D642A588AB4C" name="example (da)" value="&lt;memo&gt;$ea_notes="/>
+						<tag xmi:id="EAID_1EDF143F_5A61_4254_8016_3C49ED047133" name="equivalentProperty" value="$ea_notes=Description: Definition (da):&#xA;angivelse af en egenskab som den aktuelle egenskab er det samme som, det vil sige, at de to egenskabers domæne og rækkevidde er ens&#xA;&#xA;Definition (en):&#xA;The property that determines that two given properties are equivalent&#xA;"/>
+						<tag xmi:id="EAID_24C752AB_23C0_47c9_A3E3_1D7427F2DBA4" name="domain" value="http://www.w3.org/2000/01/rdf-schema#Resource$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for de individer der har den pågældende egenskab. &#xA;&#xA;Kommentar - egenskaben 'er forfatter af' kan eksempelvis angives med domænet (domain) 'Person'. Angiver den implicitte klasse som indeholder det objekt der ejer egenskaben. Som default værdi bruges owl:Thing &#xA;&#xA;Definition (en):&#xA;A domain of the subject property. [rdfs:domain]&#xA;"/>
+						<tag xmi:id="EAID_25A21B35_5736_43c9_8FA1_2DB33BBC8272" name="source" value="$ea_notes="/>
+						<tag xmi:id="EAID_2660F7C2_FE8F_4d80_AABE_86710CD166CE" name="definition (en)" value="&lt;memo&gt;$ea_notes="/>
+						<tag xmi:id="EAID_27CC58A4_179D_4ba5_8C2B_D7141E3868B6" name="altLabel (da)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;"/>
+						<tag xmi:id="EAID_28D5E7FB_0206_4df4_AE62_0CDBABFDA2D2" name="subPropertyOf" value="$ea_notes=Description: Definition (da):&#xA;angivelse af at en given egenskab er en specialisering af en anden egenskab [rdfs:subPropertyOf]&#xA;&#xA;Kommentar - En egenskab mellem to egenskaber. På samme måde som en klasse kan være en delmængde af en anden klasse (subClassOf) kan en egenskab være en underegenskab til en anden. Dette erklæres ved brug af rdfs:subPropertyOf. Svarer til angivelse af ’subsetting’på en attribut eller en association i UML.&#xA;&#xA;Definition (en):&#xA;The subject is a subproperty of a property.&#xA;[rdfs:subPropertyOf]&#xA;"/>
+						<tag xmi:id="EAID_29527DC3_6533_445c_B0B6_8AD47FDF2A18" name="symmetricProperty" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;en egenskab der gælder begge veje selvom den kun er erklæret den ene vej [owl:symmetricProperty]&#xA;&#xA;Kommentar  - Hvis X har egenskaben ’sidder ved siden af’ Y, så gælder det også at Y har egenskaben ’sidder ved siden af’ X.&#xA;&#xA;Definition (en):&#xA;The class of symmetric properties [owl:symmetricProperty]&#xA;"/>
+						<tag xmi:id="EAID_2FC0F03A_65CA_4d58_A7DB_A607FE88331B" name="deprecatedLabel (en)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;"/>
+						<tag xmi:id="EAID_311C5560_E31D_45e6_97C4_D6F5D66DC1A0" name="example (en)" value="&lt;memo&gt;$ea_notes="/>
+						<tag xmi:id="EAID_47AA86F7_3BB6_4aa5_B99A_2EFD730D533E" name="label (da)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;"/>
+						<tag xmi:id="EAID_59529952_475E_4cd8_92AB_63B2E61FC67E" name="legalSource" value="$ea_notes="/>
+						<tag xmi:id="EAID_5B115EF9_C17D_4436_8398_BE8ADA53D821" name="inverseFunctionalProperty" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;egenskab hvis værdi er unik [owl:inverseFunctionalProperty]&#xA;&#xA;Kommentar - Ex. en persons CPR-nummer  &#xA;&#xA;Hvis en attribut eksempelvis er modelleret med invFunctionalProperty, så betyder det at denne attributs værdi udgør en unik idenfikator. Hvis egenskaben E er en omvendt funktionel egenskab gælder det at: Hvis X har egenskaben E med værdien V, og Y har egenskaben E med værdien V, så er X og Y samme individ, samme objekt&#xA;&#xA;Definition (en):&#xA;The class of inverse-functional properties [owl:inverseFunctionalProperty]&#xA;"/>
+						<tag xmi:id="EAID_5E8BD95F_0F05_4f6d_A6B6_7029A41F75D3" name="wasDerivedFrom" value="$ea_notes=Description: Definition (da):&#xA;relation som angiver at en entitet har dannet basis for oprettelse af en ny entitet [prov:wasDerivedFrom]&#xA;&#xA;Definition (en):&#xA;A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity [prov:wasDerivedFrom]&#xA;"/>
+						<tag xmi:id="EAID_64BFCBC5_BF16_4bcc_8A79_BCB4AFE2DBC1" name="prefLabel (da)" value="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;"/>
+						<tag xmi:id="EAID_795AEE66_A088_46e5_9936_9598A34E4543" name="functionalProperty" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;egenskab hvor udfaldsrummet er en unik værdi eller unikt objekt [owl:functionalProperty]&#xA;&#xA;Kommentar - egenskaben 'biologisk mor' bør markeres som en funktionel egenskab.&#xA;Hvis egenskaben E er en funktionel egenskab gælder det at: Hvis A har egenskaben E med værdien X, og A har egenskaben E med værdien Y, så er X og Y den samme værdi (= samme individ, samme objekt).&#xA;&#xA;Definition (en):&#xA;The class of functional properties [owl:functionalProperty]&#xA;"/>
+						<tag xmi:id="EAID_7E750A70_962E_4718_97F7_3C23F4D54803" name="range" value="http://www.w3.org/2000/01/rdf-schema#Class$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for udfaldsrummet af den pågældende egenskab [rdfs:range]&#xA;&#xA;Kommentar -  egenskaben 'er forfatter til' kan eksempelvis angives med rækkevidden (range) 'dokument'. Angiver den implicitte klasse for dét som egenskaben har som værdi.&#xA;Som default værdi bruges rdfs:Literal for datatypeegenskaber.&#xA;&#xA;Definition (en):&#xA;A range of the subject property.[rdfs:range]&#xA;"/>
+						<tag xmi:id="EAID_9BE637D7_98D6_4a5c_8D8C_941B9D2872EB" name="altLabel (en)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;"/>
+						<tag xmi:id="EAID_A550CF88_BAF1_49d3_83CA_ACEEE7546461" name="deprecatedLabel (da)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;"/>
+						<tag xmi:id="EAID_BCBE640B_F0AF_43a2_969D_DC7BF36A756B" name="transitiveProperty" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;angivelse af at en egenskab tillader at man på baggrund af viden om at &quot;A er relateret til B&quot; og &quot;B er relateret til C&quot; udleder at &quot;A er relateret til C&quot; [owl:transitiveProperty] Kommentar: Ex. Hvis egenskaben ’har forfader’ er transitiv betyder det at hvis: A ’har forfader’ B og B ’har forfader’ C så gælder det at A ’har forfader’ C - Generalisering er et eksempel på en transitiv egenskab. Definition (en):The class of transitive properties[owl:transitiveProperty]&#xA;"/>
+						<tag xmi:id="EAID_BDE8BDF5_2D3B_4535_96BE_579287701AB5" name="URI" value="http://www.w3.org/1999/02/22-rdf-syntax-ns#type$ea_notes= Definition (da):&#xA;entydig identifikation af en ressource, (en klasse, et individ, en egenskab eller en værdi/literal) ved brug af en HTTP-URI&#xA;&#xA;Definition (en):&#xA;"/>
+						<tag xmi:id="EAID_C2100AD6_45B5_41df_BC76_F93DDF5CEAD3" name="prefLabel (en)" value="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;"/>
+						<tag xmi:id="EAID_C898FBD8_D9B7_4038_8BD0_00F5D2C81D6F" name="label (en)" value="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;"/>
+						<tag xmi:id="EAID_D22CFDFA_A49C_4cd1_8485_F7A6CB49B00D" name="applicationNote (da)" value="&lt;memo&gt;$ea_notes="/>
+						<tag xmi:id="EAID_D885FEEA_4C55_4ec2_9725_A78DA581B103" name="definition (da)" value="&lt;memo&gt;$ea_notes=den klasse en given instans tilhører"/>
+						<tag xmi:id="EAID_DB9473C2_30BD_4784_A9FB_BA1983810E76" name="comment (da)" value="&lt;memo&gt;$ea_notes=Subjektet er en instans af klassen."/>
+						<tag xmi:id="EAID_E6931A44_D48C_40da_8855_D535A096433A" name="inverseOf" value="$ea_notes=Description: Definition (da):&#xA;angivelse af at en egenskab er modsatrettet en given egenskab - dvs at den enes rækkevidde er den andens domæne og vice versa [owl:inverseOf]&#xA;&#xA;Definition (en):&#xA;The property that determines that two given properties are inverse. [owl:inverseOf]&#xA;"/>
+						<tag xmi:id="EAID_ED70231B_B2C1_46b8_B075_247E88593823" name="comment (en)" value="&lt;memo&gt;$ea_notes=The subject is an instance of a class."/>
+						<tag xmi:id="EAID_F126A7A2_5352_4be2_8518_5641CE8E593B" name="isDefinedBy" value="http://www.w3.org/1999/02/22-rdf-syntax-ns#$ea_notes= Definition (da):&#xA;angivelse af urien for den model elementet er defineret i [rdfs:isDefinedBy]&#xA;&#xA;Definition (en):&#xA;The defininition of the subject resource [rdfs:isDefinedBy]&#xA;"/>
+					</tags>
+				</target>
+				<model ea_localid="25363"/>
+				<properties ea_type="Association" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels rt="+rdf:type&#xA;«objectProperty»"/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+		</connectors>
+		<primitivetypes>
+			<packagedElement xmi:type="uml:Package" xmi:id="EAPrimitiveTypesPackage" name="EA_PrimitiveTypes_Package"/>
+		</primitivetypes>
+		<profiles>
+			<uml:Profile xmlns:uml="http://www.omg.org/spec/UML/20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="thecustomprofile" nsPrefix="thecustomprofile" name="thecustomprofile" metamodelReference="mmref01">
+				<ownedComment xmi:type="uml:Comment" xmi:id="comment01" annotatedElement="thecustomprofile">
+					<body> Version:1.0</body>
+				</ownedComment>
+				<packageImport xmi:id="mmref01">
+					<importedPackage href="http://www.omg.org/spec/UML/20131001"/>
+				</packageImport>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="transitiveProperty" name="transitiveProperty">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="transitiveProperty-base_Property" name="base_Property" association="Property_transitiveProperty">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Property"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="transitiveProperty-transitiveProperty" name="transitiveProperty">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Property_transitiveProperty" name="A_Property_transitiveProperty" memberEnd="extension_transitiveProperty transitiveProperty-base_Property">
+					<ownedEnd xmi:id="extension_transitiveProperty" name="extension_transitiveProperty" type="transitiveProperty" isComposite="true" lower="0" upper="1" memberEnd="extension_transitiveProperty transitiveProperty-base_Property"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Plusprofil::Individual" name="Plusprofil::Individual">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Plusprofil::Individual-base_InstanceSpecification" name="base_InstanceSpecification" association="InstanceSpecification_Plusprofil::Individual">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#InstanceSpecification"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="InstanceSpecification_Plusprofil::Individual" name="A_InstanceSpecification_Plusprofil::Individual" memberEnd="extension_Plusprofil::Individual Plusprofil::Individual-base_InstanceSpecification">
+					<ownedEnd xmi:id="extension_Plusprofil::Individual" name="extension_Plusprofil::Individual" type="Plusprofil::Individual" isComposite="true" lower="0" upper="1" memberEnd="extension_Plusprofil::Individual Plusprofil::Individual-base_InstanceSpecification"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="inverseFunctionalProperty" name="inverseFunctionalProperty">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="inverseFunctionalProperty-base_Property" name="base_Property" association="Property_inverseFunctionalProperty">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Property"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="inverseFunctionalProperty-inverseFunctionalProperty" name="inverseFunctionalProperty">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Property_inverseFunctionalProperty" name="A_Property_inverseFunctionalProperty" memberEnd="extension_inverseFunctionalProperty inverseFunctionalProperty-base_Property">
+					<ownedEnd xmi:id="extension_inverseFunctionalProperty" name="extension_inverseFunctionalProperty" type="inverseFunctionalProperty" isComposite="true" lower="0" upper="1" memberEnd="extension_inverseFunctionalProperty inverseFunctionalProperty-base_Property"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Plusprofil::OwlClass" name="Plusprofil::OwlClass">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Plusprofil::OwlClass-base_Class" name="base_Class" association="Class_Plusprofil::OwlClass">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Class"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_Plusprofil::OwlClass" name="A_Class_Plusprofil::OwlClass" memberEnd="extension_Plusprofil::OwlClass Plusprofil::OwlClass-base_Class">
+					<ownedEnd xmi:id="extension_Plusprofil::OwlClass" name="extension_Plusprofil::OwlClass" type="Plusprofil::OwlClass" isComposite="true" lower="0" upper="1" memberEnd="extension_Plusprofil::OwlClass Plusprofil::OwlClass-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="symmetricProperty" name="symmetricProperty">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="symmetricProperty-base_Property" name="base_Property" association="Property_symmetricProperty">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Property"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="symmetricProperty-symmetricProperty" name="symmetricProperty">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Property_symmetricProperty" name="A_Property_symmetricProperty" memberEnd="extension_symmetricProperty symmetricProperty-base_Property">
+					<ownedEnd xmi:id="extension_symmetricProperty" name="extension_symmetricProperty" type="symmetricProperty" isComposite="true" lower="0" upper="1" memberEnd="extension_symmetricProperty symmetricProperty-base_Property"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="OWL::objectProperty" name="OWL::objectProperty">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="OWL::objectProperty-base_Property" name="base_Property" association="Property_OWL::objectProperty">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Property"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Property_OWL::objectProperty" name="A_Property_OWL::objectProperty" memberEnd="extension_OWL::objectProperty OWL::objectProperty-base_Property">
+					<ownedEnd xmi:id="extension_OWL::objectProperty" name="extension_OWL::objectProperty" type="OWL::objectProperty" isComposite="true" lower="0" upper="1" memberEnd="extension_OWL::objectProperty OWL::objectProperty-base_Property"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="functionalProperty" name="functionalProperty">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="functionalProperty-base_Property" name="base_Property" association="Property_functionalProperty">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Property"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="functionalProperty-functionalProperty" name="functionalProperty">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Property_functionalProperty" name="A_Property_functionalProperty" memberEnd="extension_functionalProperty functionalProperty-base_Property">
+					<ownedEnd xmi:id="extension_functionalProperty" name="extension_functionalProperty" type="functionalProperty" isComposite="true" lower="0" upper="1" memberEnd="extension_functionalProperty functionalProperty-base_Property"/>
+				</packagedElement>
+			</uml:Profile>
+			<uml:Profile xmlns:uml="http://www.omg.org/spec/UML/20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="A7C82B2C-4" nsPrefix="FDAprofil" name="FDAprofil" metamodelReference="mmref01">
+				<ownedComment xmi:type="uml:Comment" xmi:id="comment01" annotatedElement="A7C82B2C-4">
+					<body>FDAprofil Version:1.0</body>
+				</ownedComment>
+				<packageImport xmi:id="mmref01">
+					<importedPackage href="http://www.omg.org/spec/UML/20131001"/>
+				</packageImport>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="RdfsClass" name="RdfsClass">
+					<generalization xmi:type="uml:Generalization" xmi:id="RdfsClass_RdfsResource_generalization" general="RdfsResource"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="RdfsClass-base_Class" name="base_Class" association="Class_RdfsClass">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Class"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="RdfsClass-subClassOf" name="subClassOf">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="RdfsClass-equivalentClass" name="equivalentClass">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_RdfsClass" name="A_Class_RdfsClass" memberEnd="extension_RdfsClass RdfsClass-base_Class">
+					<ownedEnd xmi:id="extension_RdfsClass" name="extension_RdfsClass" type="RdfsClass" isComposite="true" lower="0" upper="1" memberEnd="extension_RdfsClass RdfsClass-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="ModelElement" name="ModelElement">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ModelElement-base_Element" name="base_Element" association="Element_ModelElement">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Element"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ModelElement-label (en)" name="label (en)">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ModelElement-label (da)" name="label (da)">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ModelElement-prefLabel (en)" name="prefLabel (en)">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ModelElement-deprecatedLabel (en)" name="deprecatedLabel (en)">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ModelElement-prefLabel (da)" name="prefLabel (da)">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ModelElement-deprecatedLabel (da)" name="deprecatedLabel (da)">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ModelElement-example (en)" name="example (en)">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ModelElement-comment (en)" name="comment (en)">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ModelElement-example (da)" name="example (da)">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ModelElement-definition (en)" name="definition (en)">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ModelElement-comment (da)" name="comment (da)">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ModelElement-definition (da)" name="definition (da)">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ModelElement-applicationNote (en)" name="applicationNote (en)">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ModelElement-source" name="source">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ModelElement-legalSource" name="legalSource">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ModelElement-applicationNote (da)" name="applicationNote (da)">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ModelElement-altLabel (en)" name="altLabel (en)">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ModelElement-altLabel (da)" name="altLabel (da)">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ModelElement-URI" name="URI">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ModelElement-isDefinedBy" name="isDefinedBy">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ModelElement-wasDerivedFrom" name="wasDerivedFrom">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Element_ModelElement" name="A_Element_ModelElement" memberEnd="extension_ModelElement ModelElement-base_Element">
+					<ownedEnd xmi:id="extension_ModelElement" name="extension_ModelElement" type="ModelElement" isComposite="true" lower="0" upper="1" memberEnd="extension_ModelElement ModelElement-base_Element"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="InverseFunctionalProperty" name="InverseFunctionalProperty">
+					<generalization xmi:type="uml:Generalization" xmi:id="InverseFunctionalProperty_ObjectProperty_generalization" general="ObjectProperty"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="RdfsResource" name="RdfsResource">
+					<generalization xmi:type="uml:Generalization" xmi:id="RdfsResource_ModelElement_generalization" general="ModelElement"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="DatatypeProperty" name="DatatypeProperty">
+					<generalization xmi:type="uml:Generalization" xmi:id="DatatypeProperty_RdfsProperty_generalization" general="RdfsProperty"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="FunctionalProperty" name="FunctionalProperty">
+					<generalization xmi:type="uml:Generalization" xmi:id="FunctionalProperty_RdfsProperty_generalization" general="RdfsProperty"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="TransitiveProperty" name="TransitiveProperty">
+					<generalization xmi:type="uml:Generalization" xmi:id="TransitiveProperty_ObjectProperty_generalization" general="ObjectProperty"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="InformationModel" name="InformationModel">
+					<generalization xmi:type="uml:Generalization" xmi:id="InformationModel_Model_generalization" general="Model"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="RdfsProperty" name="RdfsProperty">
+					<generalization xmi:type="uml:Generalization" xmi:id="RdfsProperty_RdfsResource_generalization" general="RdfsResource"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="RdfsProperty-base_Property" name="base_Property" association="Property_RdfsProperty">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Property"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="RdfsProperty-domain" name="domain">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="RdfsProperty-range" name="range">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="RdfsProperty-subPropertyOf" name="subPropertyOf">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="RdfsProperty-equivalentProperty" name="equivalentProperty">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Property_RdfsProperty" name="A_Property_RdfsProperty" memberEnd="extension_RdfsProperty RdfsProperty-base_Property">
+					<ownedEnd xmi:id="extension_RdfsProperty" name="extension_RdfsProperty" type="RdfsProperty" isComposite="true" lower="0" upper="1" memberEnd="extension_RdfsProperty RdfsProperty-base_Property"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Individual" name="Individual">
+					<generalization xmi:type="uml:Generalization" xmi:id="Individual_RdfsResource_generalization" general="RdfsResource"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Individual-base_InstanceSpecification" name="base_InstanceSpecification" association="InstanceSpecification_Individual">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#InstanceSpecification"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Individual-sameAs" name="sameAs">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Individual-type" name="type">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="InstanceSpecification_Individual" name="A_InstanceSpecification_Individual" memberEnd="extension_Individual Individual-base_InstanceSpecification">
+					<ownedEnd xmi:id="extension_Individual" name="extension_Individual" type="Individual" isComposite="true" lower="0" upper="1" memberEnd="extension_Individual Individual-base_InstanceSpecification"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="SymmetricProperty" name="SymmetricProperty">
+					<generalization xmi:type="uml:Generalization" xmi:id="SymmetricProperty_ObjectProperty_generalization" general="ObjectProperty"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="ObjectProperty" name="ObjectProperty">
+					<generalization xmi:type="uml:Generalization" xmi:id="ObjectProperty_RdfsProperty_generalization" general="RdfsProperty"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ObjectProperty-inverseOf" name="inverseOf">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="ConceptModel" name="ConceptModel">
+					<generalization xmi:type="uml:Generalization" xmi:id="ConceptModel_Model_generalization" general="Model"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Concept" name="Concept">
+					<generalization xmi:type="uml:Generalization" xmi:id="Concept_ModelElement_generalization" general="ModelElement"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Model" name="Model">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Model-base_Package" name="base_Package" association="Package_Model">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Package"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Model-label (en)" name="label (en)">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Model-modelScope" name="modelScope">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Model-label (da)" name="label (da)">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Model-responsibleEntity" name="responsibleEntity">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Model-publisher" name="publisher">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Model-approvalStatus" name="approvalStatus">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Model-approvedBy" name="approvedBy">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Model-language" name="language">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Model-versionInfo" name="versionInfo">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Model-namespace" name="namespace">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Model-modelStatus" name="modelStatus">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Model-comment (en)" name="comment (en)">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Model-theme" name="theme">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Model-comment (da)" name="comment (da)">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Model-source" name="source">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Model-legalSource" name="legalSource">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Model-namespacePrefix" name="namespacePrefix">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Model-modified" name="modified">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Model-wasDerivedFrom" name="wasDerivedFrom">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Package_Model" name="A_Package_Model" memberEnd="extension_Model Model-base_Package">
+					<ownedEnd xmi:id="extension_Model" name="extension_Model" type="Model" isComposite="true" lower="0" upper="1" memberEnd="extension_Model Model-base_Package"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="ClassificationModel" name="ClassificationModel">
+					<generalization xmi:type="uml:Generalization" xmi:id="ClassificationModel_Model_generalization" general="Model"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="LogicalDataModel" name="LogicalDataModel">
+					<generalization xmi:type="uml:Generalization" xmi:id="LogicalDataModel_Model_generalization" general="Model"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="OwlClass" name="OwlClass">
+					<generalization xmi:type="uml:Generalization" xmi:id="OwlClass_RdfsClass_generalization" general="RdfsClass"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="OwlClass-base_Class" name="base_Class" association="Class_OwlClass">
+						<type href="http://www.omg.org/spec/UML/20131001/UML.xmi#Class"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_OwlClass" name="A_Class_OwlClass" memberEnd="extension_OwlClass OwlClass-base_Class">
+					<ownedEnd xmi:id="extension_OwlClass" name="extension_OwlClass" type="OwlClass" isComposite="true" lower="0" upper="1" memberEnd="extension_OwlClass OwlClass-base_Class"/>
+				</packagedElement>
+			</uml:Profile>
+		</profiles>
+		<diagrams>
+			<diagram xmi:id="EAID_1C78D0F1_1136_4eef_980F_D094ED840DC0">
+				<model package="EAPK_4EA3B0CA_3754_4fd4_9D31_C75C1930038D" localID="2874" owner="EAPK_4EA3B0CA_3754_4fd4_9D31_C75C1930038D"/>
+				<properties name="Fællesoffentlige datakvalitetsdimensioner" type="Logical"/>
+				<project author="Maya Borges" version="1.0" created="2019-02-08 00:00:00" modified="2019-04-02 23:00:00"/>
+				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=0;HighlightForeign=0;PackageContents=0;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=795;DocSize.cy=1138;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=0;ShowIcons=0;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=1;HideAtts=0;HideOps=0;HideStereo=1;HideElemStereo=1;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AdvancedElementProps=1;AdvancedFeatureProps=0;AdvancedConnectorProps=1;m_bElementClassifier=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=1;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=0;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;SaveTag=07B4FAAD;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;cls=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
+				<extendedProperties/>
+				<elements>
+					<element geometry="Left=440;Top=80;Right=540;Bottom=160;" subject="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D" seqno="1" style="DUID=D3B00FC5;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+					<element geometry="Left=785;Top=312;Right=875;Bottom=362;" subject="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0" seqno="2" style="DUID=7B8E7FCA;"/>
+					<element geometry="Left=578;Top=312;Right=668;Bottom=362;" subject="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35" seqno="3" style="DUID=61B5EA06;"/>
+					<element geometry="Left=371;Top=312;Right=461;Bottom=362;" subject="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B" seqno="4" style="DUID=160A315F;"/>
+					<element geometry="Left=164;Top=312;Right=254;Bottom=362;" subject="EAID_EF0AFE85_6A61_427a_886A_9E413B694850" seqno="5" style="DUID=CC876953;"/>
+					<element geometry="EX=0;EY=0;SX=0;SY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=CX=32:CY=26:OX=1:OY=20:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_FEAB34F1_313D_4d4b_AAD8_0F7B42EC0A2C" style="Mode=3;EOID=D3B00FC5;SOID=CC876953;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EX=0;EY=0;SX=0;SY=-1;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=CX=32:CY=26:OX=13:OY=22:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_4A14FA2D_E7F0_4446_8E70_1C8EC4456B0B" style="Mode=3;EOID=D3B00FC5;SOID=160A315F;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EX=0;EY=0;SX=0;SY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=CX=32:CY=26:OX=52:OY=18:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_324C611C_80B3_4ccc_BD72_E3123514EEE9" style="Mode=3;EOID=D3B00FC5;SOID=61B5EA06;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EX=0;EY=0;SX=0;SY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=CX=32:CY=26:OX=39:OY=13:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_64D27A80_298E_49bf_8F17_59FE7B445351" style="Mode=3;EOID=D3B00FC5;SOID=7B8E7FCA;Color=-1;LWidth=0;Hidden=0;"/>
+				</elements>
+			</diagram>
+		</diagrams>
+	</xmi:Extension>
+	<FDAprofil:RdfsClass base_Class="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D" prefLabel__en_="core dimension" subClassOf="http://www.w3.org/ns/dqv#Dimension" prefLabel__da_="kernedimension" definition__en_="data quality dimension, which is considered central to providing quality informatin for datasets in the context of the Danish public sector" definition__da_="datakvalitetsdimension, der anses for central i forbindelse med opmærkning af datasæt med kvalitetsinformation i dansk fællesoffentlig kontekst" source="Projektet Fælles sprog for datakvalitet,Den fællesoffentlige digitaliseringsstrategi 2016-2020" URI="https://data.gov.dk/model/core/CoreDataQualityDimensions#CoreDimension" isDefinedBy="https://data.gov.dk/model/core/CoreDataQualityDimensions#"/>
+	<FDAprofil:ModelElement base_Element="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D" prefLabel__en_="core dimension" prefLabel__da_="kernedimension" definition__en_="data quality dimension, which is considered central to providing quality informatin for datasets in the context of the Danish public sector" definition__da_="datakvalitetsdimension, der anses for central i forbindelse med opmærkning af datasæt med kvalitetsinformation i dansk fællesoffentlig kontekst" source="Projektet Fælles sprog for datakvalitet,Den fællesoffentlige digitaliseringsstrategi 2016-2020" URI="https://data.gov.dk/model/core/CoreDataQualityDimensions#CoreDimension" isDefinedBy="https://data.gov.dk/model/core/CoreDataQualityDimensions#"/>
+	<thecustomprofile:Plusprofil__OwlClass base_Class="EAID_DB0C5401_B776_4eb1_85B6_EA8025948C8D" __EAStereoName="Plusprofil::OwlClass"/>
+	<thecustomprofile:Plusprofil__Individual base_InstanceSpecification="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35" __EAStereoName="Plusprofil::Individual"/>
+	<FDAprofil:Individual base_InstanceSpecification="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35" prefLabel__en_="currentness" prefLabel__da_="aktualitet" definition__en_="datakvalitetsdimension der indikerer i hvor høj grad data er tidsmæssigt aktuelle i forhold til den virkelighed de repræsenterer" definition__da_="datakvalitetsdimension der indikerer i hvor høj grad data er tidsmæssigt aktuelle i forhold til den virkelighed de repræsenterer" URI="https://data.gov.dk/model/core/CoreDataQualityDimensions#Currentness" type="http://www.w3.org/2002/07/owl#Thing" isDefinedBy="https://data.gov.dk/model/core/CoreDataQualityDimensions#"/>
+	<FDAprofil:ModelElement base_Element="EAID_B2171B79_3B73_4d6b_9B8C_6675AE7A1A35" prefLabel__en_="currentness" prefLabel__da_="aktualitet" definition__en_="datakvalitetsdimension der indikerer i hvor høj grad data er tidsmæssigt aktuelle i forhold til den virkelighed de repræsenterer" definition__da_="datakvalitetsdimension der indikerer i hvor høj grad data er tidsmæssigt aktuelle i forhold til den virkelighed de repræsenterer" URI="https://data.gov.dk/model/core/CoreDataQualityDimensions#Currentness" isDefinedBy="https://data.gov.dk/model/core/CoreDataQualityDimensions#"/>
+	<thecustomprofile:OWL__objectProperty base_Property="EAID_dst4C611C_80B3_4ccc_BD72_E3123514EEE9" __EAStereoName="OWL::objectProperty"/>
+	<thecustomprofile:functionalProperty base_Property="EAID_dst4C611C_80B3_4ccc_BD72_E3123514EEE9" functionalProperty="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;egenskab hvor udfaldsrummet er en unik værdi eller unikt objekt [owl:functionalProperty]&#xA;&#xA;Kommentar - egenskaben 'biologisk mor' bør markeres som en funktionel egenskab.&#xA;Hvis egenskaben E er en funktionel egenskab gælder det at: Hvis A har egenskaben E med værdien X, og A har egenskaben E med værdien Y, så er X og Y den samme værdi (= samme individ, samme objekt).&#xA;&#xA;Definition (en):&#xA;The class of functional properties [owl:functionalProperty]&#xA;"/>
+	<thecustomprofile:transitiveProperty base_Property="EAID_dst4C611C_80B3_4ccc_BD72_E3123514EEE9" transitiveProperty="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;angivelse af at en egenskab tillader at man på baggrund af viden om at &quot;A er relateret til B&quot; og &quot;B er relateret til C&quot; udleder at &quot;A er relateret til C&quot; [owl:transitiveProperty] Kommentar: Ex. Hvis egenskaben ’har forfader’ er transitiv betyder det at hvis: A ’har forfader’ B og B ’har forfader’ C så gælder det at A ’har forfader’ C - Generalisering er et eksempel på en transitiv egenskab. Definition (en):The class of transitive properties[owl:transitiveProperty]&#xA;"/>
+	<FDAprofil:RdfsProperty base_Property="EAID_dst4C611C_80B3_4ccc_BD72_E3123514EEE9" label__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;" label__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;" prefLabel__en_="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;" deprecatedLabel__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;" domain="http://www.w3.org/2000/01/rdf-schema#Resource$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for de individer der har den pågældende egenskab. &#xA;&#xA;Kommentar - egenskaben 'er forfatter af' kan eksempelvis angives med domænet (domain) 'Person'. Angiver den implicitte klasse som indeholder det objekt der ejer egenskaben. Som default værdi bruges owl:Thing &#xA;&#xA;Definition (en):&#xA;A domain of the subject property. [rdfs:domain]&#xA;" prefLabel__da_="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;" deprecatedLabel__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;" range="http://www.w3.org/2000/01/rdf-schema#Class$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for udfaldsrummet af den pågældende egenskab [rdfs:range]&#xA;&#xA;Kommentar -  egenskaben 'er forfatter til' kan eksempelvis angives med rækkevidden (range) 'dokument'. Angiver den implicitte klasse for dét som egenskaben har som værdi.&#xA;Som default værdi bruges rdfs:Literal for datatypeegenskaber.&#xA;&#xA;Definition (en):&#xA;A range of the subject property.[rdfs:range]&#xA;" comment__en_="The subject is an instance of a class." subPropertyOf="$ea_notes=Description: Definition (da):&#xA;angivelse af at en given egenskab er en specialisering af en anden egenskab [rdfs:subPropertyOf]&#xA;&#xA;Kommentar - En egenskab mellem to egenskaber. På samme måde som en klasse kan være en delmængde af en anden klasse (subClassOf) kan en egenskab være en underegenskab til en anden. Dette erklæres ved brug af rdfs:subPropertyOf. Svarer til angivelse af ’subsetting’på en attribut eller en association i UML.&#xA;&#xA;Definition (en):&#xA;The subject is a subproperty of a property.&#xA;[rdfs:subPropertyOf]&#xA;" comment__da_="Subjektet er en instans af klassen." definition__da_="den klasse en given instans tilhører" source="$ea_notes=" equivalentProperty="$ea_notes=Description: Definition (da):&#xA;angivelse af en egenskab som den aktuelle egenskab er det samme som, det vil sige, at de to egenskabers domæne og rækkevidde er ens&#xA;&#xA;Definition (en):&#xA;The property that determines that two given properties are equivalent&#xA;" legalSource="$ea_notes=" altLabel__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;" altLabel__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;" URI="http://www.w3.org/1999/02/22-rdf-syntax-ns#type$ea_notes= Definition (da):&#xA;entydig identifikation af en ressource, (en klasse, et individ, en egenskab eller en værdi/literal) ved brug af en HTTP-URI&#xA;&#xA;Definition (en):&#xA;" isDefinedBy="http://www.w3.org/1999/02/22-rdf-syntax-ns#$ea_notes= Definition (da):&#xA;angivelse af urien for den model elementet er defineret i [rdfs:isDefinedBy]&#xA;&#xA;Definition (en):&#xA;The defininition of the subject resource [rdfs:isDefinedBy]&#xA;" wasDerivedFrom="$ea_notes=Description: Definition (da):&#xA;relation som angiver at en entitet har dannet basis for oprettelse af en ny entitet [prov:wasDerivedFrom]&#xA;&#xA;Definition (en):&#xA;A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity [prov:wasDerivedFrom]&#xA;"/>
+	<FDAprofil:ObjectProperty base_Property="EAID_dst4C611C_80B3_4ccc_BD72_E3123514EEE9" label__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;" label__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;" prefLabel__en_="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;" deprecatedLabel__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;" domain="http://www.w3.org/2000/01/rdf-schema#Resource$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for de individer der har den pågældende egenskab. &#xA;&#xA;Kommentar - egenskaben 'er forfatter af' kan eksempelvis angives med domænet (domain) 'Person'. Angiver den implicitte klasse som indeholder det objekt der ejer egenskaben. Som default værdi bruges owl:Thing &#xA;&#xA;Definition (en):&#xA;A domain of the subject property. [rdfs:domain]&#xA;" prefLabel__da_="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;" deprecatedLabel__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;" inverseOf="$ea_notes=Description: Definition (da):&#xA;angivelse af at en egenskab er modsatrettet en given egenskab - dvs at den enes rækkevidde er den andens domæne og vice versa [owl:inverseOf]&#xA;&#xA;Definition (en):&#xA;The property that determines that two given properties are inverse. [owl:inverseOf]&#xA;" range="http://www.w3.org/2000/01/rdf-schema#Class$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for udfaldsrummet af den pågældende egenskab [rdfs:range]&#xA;&#xA;Kommentar -  egenskaben 'er forfatter til' kan eksempelvis angives med rækkevidden (range) 'dokument'. Angiver den implicitte klasse for dét som egenskaben har som værdi.&#xA;Som default værdi bruges rdfs:Literal for datatypeegenskaber.&#xA;&#xA;Definition (en):&#xA;A range of the subject property.[rdfs:range]&#xA;" comment__en_="The subject is an instance of a class." subPropertyOf="$ea_notes=Description: Definition (da):&#xA;angivelse af at en given egenskab er en specialisering af en anden egenskab [rdfs:subPropertyOf]&#xA;&#xA;Kommentar - En egenskab mellem to egenskaber. På samme måde som en klasse kan være en delmængde af en anden klasse (subClassOf) kan en egenskab være en underegenskab til en anden. Dette erklæres ved brug af rdfs:subPropertyOf. Svarer til angivelse af ’subsetting’på en attribut eller en association i UML.&#xA;&#xA;Definition (en):&#xA;The subject is a subproperty of a property.&#xA;[rdfs:subPropertyOf]&#xA;" comment__da_="Subjektet er en instans af klassen." definition__da_="den klasse en given instans tilhører" source="$ea_notes=" equivalentProperty="$ea_notes=Description: Definition (da):&#xA;angivelse af en egenskab som den aktuelle egenskab er det samme som, det vil sige, at de to egenskabers domæne og rækkevidde er ens&#xA;&#xA;Definition (en):&#xA;The property that determines that two given properties are equivalent&#xA;" legalSource="$ea_notes=" altLabel__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;" altLabel__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;" URI="http://www.w3.org/1999/02/22-rdf-syntax-ns#type$ea_notes= Definition (da):&#xA;entydig identifikation af en ressource, (en klasse, et individ, en egenskab eller en værdi/literal) ved brug af en HTTP-URI&#xA;&#xA;Definition (en):&#xA;" isDefinedBy="http://www.w3.org/1999/02/22-rdf-syntax-ns#$ea_notes= Definition (da):&#xA;angivelse af urien for den model elementet er defineret i [rdfs:isDefinedBy]&#xA;&#xA;Definition (en):&#xA;The defininition of the subject resource [rdfs:isDefinedBy]&#xA;" wasDerivedFrom="$ea_notes=Description: Definition (da):&#xA;relation som angiver at en entitet har dannet basis for oprettelse af en ny entitet [prov:wasDerivedFrom]&#xA;&#xA;Definition (en):&#xA;A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity [prov:wasDerivedFrom]&#xA;"/>
+	<thecustomprofile:inverseFunctionalProperty base_Property="EAID_dst4C611C_80B3_4ccc_BD72_E3123514EEE9" inverseFunctionalProperty="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;egenskab hvis værdi er unik [owl:inverseFunctionalProperty]&#xA;&#xA;Kommentar - Ex. en persons CPR-nummer  &#xA;&#xA;Hvis en attribut eksempelvis er modelleret med invFunctionalProperty, så betyder det at denne attributs værdi udgør en unik idenfikator. Hvis egenskaben E er en omvendt funktionel egenskab gælder det at: Hvis X har egenskaben E med værdien V, og Y har egenskaben E med værdien V, så er X og Y samme individ, samme objekt&#xA;&#xA;Definition (en):&#xA;The class of inverse-functional properties [owl:inverseFunctionalProperty]&#xA;"/>
+	<thecustomprofile:symmetricProperty base_Property="EAID_dst4C611C_80B3_4ccc_BD72_E3123514EEE9" symmetricProperty="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;en egenskab der gælder begge veje selvom den kun er erklæret den ene vej [owl:symmetricProperty]&#xA;&#xA;Kommentar  - Hvis X har egenskaben ’sidder ved siden af’ Y, så gælder det også at Y har egenskaben ’sidder ved siden af’ X.&#xA;&#xA;Definition (en):&#xA;The class of symmetric properties [owl:symmetricProperty]&#xA;"/>
+	<thecustomprofile:Plusprofil__Individual base_InstanceSpecification="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0" __EAStereoName="Plusprofil::Individual"/>
+	<FDAprofil:Individual base_InstanceSpecification="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0" prefLabel__en_="reusability" prefLabel__da_="genbruglighed" definition__en_="data quality dimension indicating bthe degree to which data isiunderstandable and without difficulties can be used by others" definition__da_="datakvalitetsdimension der indikerer i hvor høj grad data er forståelige og uden vanskeligheder kan anvendes af andre" URI="https://data.gov.dk/model/core/CoreDataQualityDimensions#Reusability" type="http://www.w3.org/2002/07/owl#Thing" isDefinedBy="https://data.gov.dk/model/core/CoreDataQualityDimensions#"/>
+	<FDAprofil:ModelElement base_Element="EAID_62FB4C6D_49C4_40c0_A78B_E4F937E77FD0" prefLabel__en_="reusability" prefLabel__da_="genbruglighed" definition__en_="data quality dimension indicating bthe degree to which data isiunderstandable and without difficulties can be used by others" definition__da_="datakvalitetsdimension der indikerer i hvor høj grad data er forståelige og uden vanskeligheder kan anvendes af andre" URI="https://data.gov.dk/model/core/CoreDataQualityDimensions#Reusability" isDefinedBy="https://data.gov.dk/model/core/CoreDataQualityDimensions#"/>
+	<thecustomprofile:OWL__objectProperty base_Property="EAID_dstD27A80_298E_49bf_8F17_59FE7B445351" __EAStereoName="OWL::objectProperty"/>
+	<thecustomprofile:functionalProperty base_Property="EAID_dstD27A80_298E_49bf_8F17_59FE7B445351" functionalProperty="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;egenskab hvor udfaldsrummet er en unik værdi eller unikt objekt [owl:functionalProperty]&#xA;&#xA;Kommentar - egenskaben 'biologisk mor' bør markeres som en funktionel egenskab.&#xA;Hvis egenskaben E er en funktionel egenskab gælder det at: Hvis A har egenskaben E med værdien X, og A har egenskaben E med værdien Y, så er X og Y den samme værdi (= samme individ, samme objekt).&#xA;&#xA;Definition (en):&#xA;The class of functional properties [owl:functionalProperty]&#xA;"/>
+	<thecustomprofile:transitiveProperty base_Property="EAID_dstD27A80_298E_49bf_8F17_59FE7B445351" transitiveProperty="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;angivelse af at en egenskab tillader at man på baggrund af viden om at &quot;A er relateret til B&quot; og &quot;B er relateret til C&quot; udleder at &quot;A er relateret til C&quot; [owl:transitiveProperty] Kommentar: Ex. Hvis egenskaben ’har forfader’ er transitiv betyder det at hvis: A ’har forfader’ B og B ’har forfader’ C så gælder det at A ’har forfader’ C - Generalisering er et eksempel på en transitiv egenskab. Definition (en):The class of transitive properties[owl:transitiveProperty]&#xA;"/>
+	<FDAprofil:RdfsProperty base_Property="EAID_dstD27A80_298E_49bf_8F17_59FE7B445351" label__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;" label__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;" prefLabel__en_="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;" deprecatedLabel__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;" domain="http://www.w3.org/2000/01/rdf-schema#Resource$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for de individer der har den pågældende egenskab. &#xA;&#xA;Kommentar - egenskaben 'er forfatter af' kan eksempelvis angives med domænet (domain) 'Person'. Angiver den implicitte klasse som indeholder det objekt der ejer egenskaben. Som default værdi bruges owl:Thing &#xA;&#xA;Definition (en):&#xA;A domain of the subject property. [rdfs:domain]&#xA;" prefLabel__da_="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;" deprecatedLabel__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;" range="http://www.w3.org/2000/01/rdf-schema#Class$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for udfaldsrummet af den pågældende egenskab [rdfs:range]&#xA;&#xA;Kommentar -  egenskaben 'er forfatter til' kan eksempelvis angives med rækkevidden (range) 'dokument'. Angiver den implicitte klasse for dét som egenskaben har som værdi.&#xA;Som default værdi bruges rdfs:Literal for datatypeegenskaber.&#xA;&#xA;Definition (en):&#xA;A range of the subject property.[rdfs:range]&#xA;" comment__en_="The subject is an instance of a class." subPropertyOf="$ea_notes=Description: Definition (da):&#xA;angivelse af at en given egenskab er en specialisering af en anden egenskab [rdfs:subPropertyOf]&#xA;&#xA;Kommentar - En egenskab mellem to egenskaber. På samme måde som en klasse kan være en delmængde af en anden klasse (subClassOf) kan en egenskab være en underegenskab til en anden. Dette erklæres ved brug af rdfs:subPropertyOf. Svarer til angivelse af ’subsetting’på en attribut eller en association i UML.&#xA;&#xA;Definition (en):&#xA;The subject is a subproperty of a property.&#xA;[rdfs:subPropertyOf]&#xA;" comment__da_="Subjektet er en instans af klassen." definition__da_="den klasse en given instans tilhører" source="$ea_notes=" equivalentProperty="$ea_notes=Description: Definition (da):&#xA;angivelse af en egenskab som den aktuelle egenskab er det samme som, det vil sige, at de to egenskabers domæne og rækkevidde er ens&#xA;&#xA;Definition (en):&#xA;The property that determines that two given properties are equivalent&#xA;" legalSource="$ea_notes=" altLabel__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;" altLabel__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;" URI="http://www.w3.org/1999/02/22-rdf-syntax-ns#type$ea_notes= Definition (da):&#xA;entydig identifikation af en ressource, (en klasse, et individ, en egenskab eller en værdi/literal) ved brug af en HTTP-URI&#xA;&#xA;Definition (en):&#xA;" isDefinedBy="http://www.w3.org/1999/02/22-rdf-syntax-ns#$ea_notes= Definition (da):&#xA;angivelse af urien for den model elementet er defineret i [rdfs:isDefinedBy]&#xA;&#xA;Definition (en):&#xA;The defininition of the subject resource [rdfs:isDefinedBy]&#xA;" wasDerivedFrom="$ea_notes=Description: Definition (da):&#xA;relation som angiver at en entitet har dannet basis for oprettelse af en ny entitet [prov:wasDerivedFrom]&#xA;&#xA;Definition (en):&#xA;A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity [prov:wasDerivedFrom]&#xA;"/>
+	<FDAprofil:ObjectProperty base_Property="EAID_dstD27A80_298E_49bf_8F17_59FE7B445351" label__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;" label__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;" prefLabel__en_="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;" deprecatedLabel__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;" domain="http://www.w3.org/2000/01/rdf-schema#Resource$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for de individer der har den pågældende egenskab. &#xA;&#xA;Kommentar - egenskaben 'er forfatter af' kan eksempelvis angives med domænet (domain) 'Person'. Angiver den implicitte klasse som indeholder det objekt der ejer egenskaben. Som default værdi bruges owl:Thing &#xA;&#xA;Definition (en):&#xA;A domain of the subject property. [rdfs:domain]&#xA;" prefLabel__da_="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;" deprecatedLabel__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;" inverseOf="$ea_notes=Description: Definition (da):&#xA;angivelse af at en egenskab er modsatrettet en given egenskab - dvs at den enes rækkevidde er den andens domæne og vice versa [owl:inverseOf]&#xA;&#xA;Definition (en):&#xA;The property that determines that two given properties are inverse. [owl:inverseOf]&#xA;" range="http://www.w3.org/2000/01/rdf-schema#Class$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for udfaldsrummet af den pågældende egenskab [rdfs:range]&#xA;&#xA;Kommentar -  egenskaben 'er forfatter til' kan eksempelvis angives med rækkevidden (range) 'dokument'. Angiver den implicitte klasse for dét som egenskaben har som værdi.&#xA;Som default værdi bruges rdfs:Literal for datatypeegenskaber.&#xA;&#xA;Definition (en):&#xA;A range of the subject property.[rdfs:range]&#xA;" comment__en_="The subject is an instance of a class." subPropertyOf="$ea_notes=Description: Definition (da):&#xA;angivelse af at en given egenskab er en specialisering af en anden egenskab [rdfs:subPropertyOf]&#xA;&#xA;Kommentar - En egenskab mellem to egenskaber. På samme måde som en klasse kan være en delmængde af en anden klasse (subClassOf) kan en egenskab være en underegenskab til en anden. Dette erklæres ved brug af rdfs:subPropertyOf. Svarer til angivelse af ’subsetting’på en attribut eller en association i UML.&#xA;&#xA;Definition (en):&#xA;The subject is a subproperty of a property.&#xA;[rdfs:subPropertyOf]&#xA;" comment__da_="Subjektet er en instans af klassen." definition__da_="den klasse en given instans tilhører" source="$ea_notes=" equivalentProperty="$ea_notes=Description: Definition (da):&#xA;angivelse af en egenskab som den aktuelle egenskab er det samme som, det vil sige, at de to egenskabers domæne og rækkevidde er ens&#xA;&#xA;Definition (en):&#xA;The property that determines that two given properties are equivalent&#xA;" legalSource="$ea_notes=" altLabel__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;" altLabel__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;" URI="http://www.w3.org/1999/02/22-rdf-syntax-ns#type$ea_notes= Definition (da):&#xA;entydig identifikation af en ressource, (en klasse, et individ, en egenskab eller en værdi/literal) ved brug af en HTTP-URI&#xA;&#xA;Definition (en):&#xA;" isDefinedBy="http://www.w3.org/1999/02/22-rdf-syntax-ns#$ea_notes= Definition (da):&#xA;angivelse af urien for den model elementet er defineret i [rdfs:isDefinedBy]&#xA;&#xA;Definition (en):&#xA;The defininition of the subject resource [rdfs:isDefinedBy]&#xA;" wasDerivedFrom="$ea_notes=Description: Definition (da):&#xA;relation som angiver at en entitet har dannet basis for oprettelse af en ny entitet [prov:wasDerivedFrom]&#xA;&#xA;Definition (en):&#xA;A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity [prov:wasDerivedFrom]&#xA;"/>
+	<thecustomprofile:inverseFunctionalProperty base_Property="EAID_dstD27A80_298E_49bf_8F17_59FE7B445351" inverseFunctionalProperty="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;egenskab hvis værdi er unik [owl:inverseFunctionalProperty]&#xA;&#xA;Kommentar - Ex. en persons CPR-nummer  &#xA;&#xA;Hvis en attribut eksempelvis er modelleret med invFunctionalProperty, så betyder det at denne attributs værdi udgør en unik idenfikator. Hvis egenskaben E er en omvendt funktionel egenskab gælder det at: Hvis X har egenskaben E med værdien V, og Y har egenskaben E med værdien V, så er X og Y samme individ, samme objekt&#xA;&#xA;Definition (en):&#xA;The class of inverse-functional properties [owl:inverseFunctionalProperty]&#xA;"/>
+	<thecustomprofile:symmetricProperty base_Property="EAID_dstD27A80_298E_49bf_8F17_59FE7B445351" symmetricProperty="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;en egenskab der gælder begge veje selvom den kun er erklæret den ene vej [owl:symmetricProperty]&#xA;&#xA;Kommentar  - Hvis X har egenskaben ’sidder ved siden af’ Y, så gælder det også at Y har egenskaben ’sidder ved siden af’ X.&#xA;&#xA;Definition (en):&#xA;The class of symmetric properties [owl:symmetricProperty]&#xA;"/>
+	<thecustomprofile:Plusprofil__Individual base_InstanceSpecification="EAID_EF0AFE85_6A61_427a_886A_9E413B694850" __EAStereoName="Plusprofil::Individual"/>
+	<FDAprofil:Individual base_InstanceSpecification="EAID_EF0AFE85_6A61_427a_886A_9E413B694850" prefLabel__en_="Completeness" prefLabel__da_="Komplethed" definition__en_="data quality dimension indicating the degree to which the data set contains the data elements that are expected based on the specifikatino of the data set" definition__da_="datakvalitetsdimension der indikerer i hvor høj grad datasættet indeholder de dataelementer der er forventede i forhold til datasættets specifikation" URI="https://data.gov.dk/model/core/CoreDataQualityDimensions#Completeness" type="http://www.w3.org/2002/07/owl#Thing" isDefinedBy="https://data.gov.dk/model/core/CoreDataQualityDimensions#"/>
+	<FDAprofil:ModelElement base_Element="EAID_EF0AFE85_6A61_427a_886A_9E413B694850" prefLabel__en_="Completeness" prefLabel__da_="Komplethed" definition__en_="data quality dimension indicating the degree to which the data set contains the data elements that are expected based on the specifikatino of the data set" definition__da_="datakvalitetsdimension der indikerer i hvor høj grad datasættet indeholder de dataelementer der er forventede i forhold til datasættets specifikation" URI="https://data.gov.dk/model/core/CoreDataQualityDimensions#Completeness" isDefinedBy="https://data.gov.dk/model/core/CoreDataQualityDimensions#"/>
+	<thecustomprofile:OWL__objectProperty base_Property="EAID_dstAB34F1_313D_4d4b_AAD8_0F7B42EC0A2C" __EAStereoName="OWL::objectProperty"/>
+	<thecustomprofile:functionalProperty base_Property="EAID_dstAB34F1_313D_4d4b_AAD8_0F7B42EC0A2C" functionalProperty="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;egenskab hvor udfaldsrummet er en unik værdi eller unikt objekt [owl:functionalProperty]&#xA;&#xA;Kommentar - egenskaben 'biologisk mor' bør markeres som en funktionel egenskab.&#xA;Hvis egenskaben E er en funktionel egenskab gælder det at: Hvis A har egenskaben E med værdien X, og A har egenskaben E med værdien Y, så er X og Y den samme værdi (= samme individ, samme objekt).&#xA;&#xA;Definition (en):&#xA;The class of functional properties [owl:functionalProperty]&#xA;"/>
+	<thecustomprofile:transitiveProperty base_Property="EAID_dstAB34F1_313D_4d4b_AAD8_0F7B42EC0A2C" transitiveProperty="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;angivelse af at en egenskab tillader at man på baggrund af viden om at &quot;A er relateret til B&quot; og &quot;B er relateret til C&quot; udleder at &quot;A er relateret til C&quot; [owl:transitiveProperty] Kommentar: Ex. Hvis egenskaben ’har forfader’ er transitiv betyder det at hvis: A ’har forfader’ B og B ’har forfader’ C så gælder det at A ’har forfader’ C - Generalisering er et eksempel på en transitiv egenskab. Definition (en):The class of transitive properties[owl:transitiveProperty]&#xA;"/>
+	<FDAprofil:RdfsProperty base_Property="EAID_dstAB34F1_313D_4d4b_AAD8_0F7B42EC0A2C" label__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;" label__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;" prefLabel__en_="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;" deprecatedLabel__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;" domain="http://www.w3.org/2000/01/rdf-schema#Resource$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for de individer der har den pågældende egenskab. &#xA;&#xA;Kommentar - egenskaben 'er forfatter af' kan eksempelvis angives med domænet (domain) 'Person'. Angiver den implicitte klasse som indeholder det objekt der ejer egenskaben. Som default værdi bruges owl:Thing &#xA;&#xA;Definition (en):&#xA;A domain of the subject property. [rdfs:domain]&#xA;" prefLabel__da_="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;" deprecatedLabel__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;" range="http://www.w3.org/2000/01/rdf-schema#Class$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for udfaldsrummet af den pågældende egenskab [rdfs:range]&#xA;&#xA;Kommentar -  egenskaben 'er forfatter til' kan eksempelvis angives med rækkevidden (range) 'dokument'. Angiver den implicitte klasse for dét som egenskaben har som værdi.&#xA;Som default værdi bruges rdfs:Literal for datatypeegenskaber.&#xA;&#xA;Definition (en):&#xA;A range of the subject property.[rdfs:range]&#xA;" comment__en_="The subject is an instance of a class." subPropertyOf="$ea_notes=Description: Definition (da):&#xA;angivelse af at en given egenskab er en specialisering af en anden egenskab [rdfs:subPropertyOf]&#xA;&#xA;Kommentar - En egenskab mellem to egenskaber. På samme måde som en klasse kan være en delmængde af en anden klasse (subClassOf) kan en egenskab være en underegenskab til en anden. Dette erklæres ved brug af rdfs:subPropertyOf. Svarer til angivelse af ’subsetting’på en attribut eller en association i UML.&#xA;&#xA;Definition (en):&#xA;The subject is a subproperty of a property.&#xA;[rdfs:subPropertyOf]&#xA;" comment__da_="Subjektet er en instans af klassen." definition__da_="den klasse en given instans tilhører" source="$ea_notes=" equivalentProperty="$ea_notes=Description: Definition (da):&#xA;angivelse af en egenskab som den aktuelle egenskab er det samme som, det vil sige, at de to egenskabers domæne og rækkevidde er ens&#xA;&#xA;Definition (en):&#xA;The property that determines that two given properties are equivalent&#xA;" legalSource="$ea_notes=" altLabel__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;" altLabel__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;" URI="http://www.w3.org/1999/02/22-rdf-syntax-ns#type$ea_notes= Definition (da):&#xA;entydig identifikation af en ressource, (en klasse, et individ, en egenskab eller en værdi/literal) ved brug af en HTTP-URI&#xA;&#xA;Definition (en):&#xA;" isDefinedBy="http://www.w3.org/1999/02/22-rdf-syntax-ns#$ea_notes= Definition (da):&#xA;angivelse af urien for den model elementet er defineret i [rdfs:isDefinedBy]&#xA;&#xA;Definition (en):&#xA;The defininition of the subject resource [rdfs:isDefinedBy]&#xA;" wasDerivedFrom="$ea_notes=Description: Definition (da):&#xA;relation som angiver at en entitet har dannet basis for oprettelse af en ny entitet [prov:wasDerivedFrom]&#xA;&#xA;Definition (en):&#xA;A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity [prov:wasDerivedFrom]&#xA;"/>
+	<FDAprofil:ObjectProperty base_Property="EAID_dstAB34F1_313D_4d4b_AAD8_0F7B42EC0A2C" label__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;" label__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;" prefLabel__en_="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;" deprecatedLabel__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;" domain="http://www.w3.org/2000/01/rdf-schema#Resource$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for de individer der har den pågældende egenskab. &#xA;&#xA;Kommentar - egenskaben 'er forfatter af' kan eksempelvis angives med domænet (domain) 'Person'. Angiver den implicitte klasse som indeholder det objekt der ejer egenskaben. Som default værdi bruges owl:Thing &#xA;&#xA;Definition (en):&#xA;A domain of the subject property. [rdfs:domain]&#xA;" prefLabel__da_="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;" deprecatedLabel__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;" inverseOf="$ea_notes=Description: Definition (da):&#xA;angivelse af at en egenskab er modsatrettet en given egenskab - dvs at den enes rækkevidde er den andens domæne og vice versa [owl:inverseOf]&#xA;&#xA;Definition (en):&#xA;The property that determines that two given properties are inverse. [owl:inverseOf]&#xA;" range="http://www.w3.org/2000/01/rdf-schema#Class$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for udfaldsrummet af den pågældende egenskab [rdfs:range]&#xA;&#xA;Kommentar -  egenskaben 'er forfatter til' kan eksempelvis angives med rækkevidden (range) 'dokument'. Angiver den implicitte klasse for dét som egenskaben har som værdi.&#xA;Som default værdi bruges rdfs:Literal for datatypeegenskaber.&#xA;&#xA;Definition (en):&#xA;A range of the subject property.[rdfs:range]&#xA;" comment__en_="The subject is an instance of a class." subPropertyOf="$ea_notes=Description: Definition (da):&#xA;angivelse af at en given egenskab er en specialisering af en anden egenskab [rdfs:subPropertyOf]&#xA;&#xA;Kommentar - En egenskab mellem to egenskaber. På samme måde som en klasse kan være en delmængde af en anden klasse (subClassOf) kan en egenskab være en underegenskab til en anden. Dette erklæres ved brug af rdfs:subPropertyOf. Svarer til angivelse af ’subsetting’på en attribut eller en association i UML.&#xA;&#xA;Definition (en):&#xA;The subject is a subproperty of a property.&#xA;[rdfs:subPropertyOf]&#xA;" comment__da_="Subjektet er en instans af klassen." definition__da_="den klasse en given instans tilhører" source="$ea_notes=" equivalentProperty="$ea_notes=Description: Definition (da):&#xA;angivelse af en egenskab som den aktuelle egenskab er det samme som, det vil sige, at de to egenskabers domæne og rækkevidde er ens&#xA;&#xA;Definition (en):&#xA;The property that determines that two given properties are equivalent&#xA;" legalSource="$ea_notes=" altLabel__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;" altLabel__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;" URI="http://www.w3.org/1999/02/22-rdf-syntax-ns#type$ea_notes= Definition (da):&#xA;entydig identifikation af en ressource, (en klasse, et individ, en egenskab eller en værdi/literal) ved brug af en HTTP-URI&#xA;&#xA;Definition (en):&#xA;" isDefinedBy="http://www.w3.org/1999/02/22-rdf-syntax-ns#$ea_notes= Definition (da):&#xA;angivelse af urien for den model elementet er defineret i [rdfs:isDefinedBy]&#xA;&#xA;Definition (en):&#xA;The defininition of the subject resource [rdfs:isDefinedBy]&#xA;" wasDerivedFrom="$ea_notes=Description: Definition (da):&#xA;relation som angiver at en entitet har dannet basis for oprettelse af en ny entitet [prov:wasDerivedFrom]&#xA;&#xA;Definition (en):&#xA;A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity [prov:wasDerivedFrom]&#xA;"/>
+	<thecustomprofile:inverseFunctionalProperty base_Property="EAID_dstAB34F1_313D_4d4b_AAD8_0F7B42EC0A2C" inverseFunctionalProperty="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;egenskab hvis værdi er unik [owl:inverseFunctionalProperty]&#xA;&#xA;Kommentar - Ex. en persons CPR-nummer  &#xA;&#xA;Hvis en attribut eksempelvis er modelleret med invFunctionalProperty, så betyder det at denne attributs værdi udgør en unik idenfikator. Hvis egenskaben E er en omvendt funktionel egenskab gælder det at: Hvis X har egenskaben E med værdien V, og Y har egenskaben E med værdien V, så er X og Y samme individ, samme objekt&#xA;&#xA;Definition (en):&#xA;The class of inverse-functional properties [owl:inverseFunctionalProperty]&#xA;"/>
+	<thecustomprofile:symmetricProperty base_Property="EAID_dstAB34F1_313D_4d4b_AAD8_0F7B42EC0A2C" symmetricProperty="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;en egenskab der gælder begge veje selvom den kun er erklæret den ene vej [owl:symmetricProperty]&#xA;&#xA;Kommentar  - Hvis X har egenskaben ’sidder ved siden af’ Y, så gælder det også at Y har egenskaben ’sidder ved siden af’ X.&#xA;&#xA;Definition (en):&#xA;The class of symmetric properties [owl:symmetricProperty]&#xA;"/>
+	<thecustomprofile:Plusprofil__Individual base_InstanceSpecification="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B" __EAStereoName="Plusprofil::Individual"/>
+	<FDAprofil:Individual base_InstanceSpecification="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B" prefLabel__en_="accuracy" prefLabel__da_="korrekthed" definition__da_="datakvalitetsdimension der indikerer i hvor høj grad dataværdier er i overensstemmelse med faktiske værdier" URI="https://data.gov.dk/model/core/CoreDataQualityDimensions#Accuracy" type="http://www.w3.org/2002/07/owl#Thing" isDefinedBy="https://data.gov.dk/model/core/CoreDataQualityDimensions#"/>
+	<FDAprofil:ModelElement base_Element="EAID_2A3E2AA5_89DB_4735_8ACC_CC6D4309036B" prefLabel__en_="accuracy" prefLabel__da_="korrekthed" definition__da_="datakvalitetsdimension der indikerer i hvor høj grad dataværdier er i overensstemmelse med faktiske værdier" URI="https://data.gov.dk/model/core/CoreDataQualityDimensions#Accuracy" isDefinedBy="https://data.gov.dk/model/core/CoreDataQualityDimensions#"/>
+	<thecustomprofile:OWL__objectProperty base_Property="EAID_dst14FA2D_E7F0_4446_8E70_1C8EC4456B0B" __EAStereoName="OWL::objectProperty"/>
+	<thecustomprofile:functionalProperty base_Property="EAID_dst14FA2D_E7F0_4446_8E70_1C8EC4456B0B" functionalProperty="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;egenskab hvor udfaldsrummet er en unik værdi eller unikt objekt [owl:functionalProperty]&#xA;&#xA;Kommentar - egenskaben 'biologisk mor' bør markeres som en funktionel egenskab.&#xA;Hvis egenskaben E er en funktionel egenskab gælder det at: Hvis A har egenskaben E med værdien X, og A har egenskaben E med værdien Y, så er X og Y den samme værdi (= samme individ, samme objekt).&#xA;&#xA;Definition (en):&#xA;The class of functional properties [owl:functionalProperty]&#xA;"/>
+	<thecustomprofile:transitiveProperty base_Property="EAID_dst14FA2D_E7F0_4446_8E70_1C8EC4456B0B" transitiveProperty="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;angivelse af at en egenskab tillader at man på baggrund af viden om at &quot;A er relateret til B&quot; og &quot;B er relateret til C&quot; udleder at &quot;A er relateret til C&quot; [owl:transitiveProperty] Kommentar: Ex. Hvis egenskaben ’har forfader’ er transitiv betyder det at hvis: A ’har forfader’ B og B ’har forfader’ C så gælder det at A ’har forfader’ C - Generalisering er et eksempel på en transitiv egenskab. Definition (en):The class of transitive properties[owl:transitiveProperty]&#xA;"/>
+	<FDAprofil:RdfsProperty base_Property="EAID_dst14FA2D_E7F0_4446_8E70_1C8EC4456B0B" label__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;" label__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;" prefLabel__en_="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;" deprecatedLabel__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;" domain="http://www.w3.org/2000/01/rdf-schema#Resource$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for de individer der har den pågældende egenskab. &#xA;&#xA;Kommentar - egenskaben 'er forfatter af' kan eksempelvis angives med domænet (domain) 'Person'. Angiver den implicitte klasse som indeholder det objekt der ejer egenskaben. Som default værdi bruges owl:Thing &#xA;&#xA;Definition (en):&#xA;A domain of the subject property. [rdfs:domain]&#xA;" prefLabel__da_="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;" deprecatedLabel__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;" range="http://www.w3.org/2000/01/rdf-schema#Class$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for udfaldsrummet af den pågældende egenskab [rdfs:range]&#xA;&#xA;Kommentar -  egenskaben 'er forfatter til' kan eksempelvis angives med rækkevidden (range) 'dokument'. Angiver den implicitte klasse for dét som egenskaben har som værdi.&#xA;Som default værdi bruges rdfs:Literal for datatypeegenskaber.&#xA;&#xA;Definition (en):&#xA;A range of the subject property.[rdfs:range]&#xA;" comment__en_="The subject is an instance of a class." subPropertyOf="$ea_notes=Description: Definition (da):&#xA;angivelse af at en given egenskab er en specialisering af en anden egenskab [rdfs:subPropertyOf]&#xA;&#xA;Kommentar - En egenskab mellem to egenskaber. På samme måde som en klasse kan være en delmængde af en anden klasse (subClassOf) kan en egenskab være en underegenskab til en anden. Dette erklæres ved brug af rdfs:subPropertyOf. Svarer til angivelse af ’subsetting’på en attribut eller en association i UML.&#xA;&#xA;Definition (en):&#xA;The subject is a subproperty of a property.&#xA;[rdfs:subPropertyOf]&#xA;" comment__da_="Subjektet er en instans af klassen." definition__da_="den klasse en given instans tilhører" source="$ea_notes=" equivalentProperty="$ea_notes=Description: Definition (da):&#xA;angivelse af en egenskab som den aktuelle egenskab er det samme som, det vil sige, at de to egenskabers domæne og rækkevidde er ens&#xA;&#xA;Definition (en):&#xA;The property that determines that two given properties are equivalent&#xA;" legalSource="$ea_notes=" altLabel__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;" altLabel__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;" URI="http://www.w3.org/1999/02/22-rdf-syntax-ns#type$ea_notes= Definition (da):&#xA;entydig identifikation af en ressource, (en klasse, et individ, en egenskab eller en værdi/literal) ved brug af en HTTP-URI&#xA;&#xA;Definition (en):&#xA;" isDefinedBy="http://www.w3.org/1999/02/22-rdf-syntax-ns#$ea_notes= Definition (da):&#xA;angivelse af urien for den model elementet er defineret i [rdfs:isDefinedBy]&#xA;&#xA;Definition (en):&#xA;The defininition of the subject resource [rdfs:isDefinedBy]&#xA;" wasDerivedFrom="$ea_notes=Description: Definition (da):&#xA;relation som angiver at en entitet har dannet basis for oprettelse af en ny entitet [prov:wasDerivedFrom]&#xA;&#xA;Definition (en):&#xA;A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity [prov:wasDerivedFrom]&#xA;"/>
+	<FDAprofil:ObjectProperty base_Property="EAID_dst14FA2D_E7F0_4446_8E70_1C8EC4456B0B" label__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;" label__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse for elementet [rdfs:label]&#xA;&#xA;Definition (en):&#xA;A human-readable name for the subject [rdfs:label]&#xA;" prefLabel__en_="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;" deprecatedLabel__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;" domain="http://www.w3.org/2000/01/rdf-schema#Resource$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for de individer der har den pågældende egenskab. &#xA;&#xA;Kommentar - egenskaben 'er forfatter af' kan eksempelvis angives med domænet (domain) 'Person'. Angiver den implicitte klasse som indeholder det objekt der ejer egenskaben. Som default værdi bruges owl:Thing &#xA;&#xA;Definition (en):&#xA;A domain of the subject property. [rdfs:domain]&#xA;" prefLabel__da_="type$ea_notes= Definition (da):&#xA;betegnelse som foretrækkes anvendt for en given ressource [skos:prefLabel]&#xA;&#xA;Definition (en):&#xA;The preferred lexical label for a resource, in a given language [skos:prefLabel]&#xA;" deprecatedLabel__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse som som ikke bør anvendes fordi den er uønsket, forkert eller forældet [plus:deprecatedLabel]&#xA;&#xA;Definition (en):&#xA;label which should not be used because it is undesirable, obsolete or wrong&#xA;[plus:deprecatedLabel]&#xA;" inverseOf="$ea_notes=Description: Definition (da):&#xA;angivelse af at en egenskab er modsatrettet en given egenskab - dvs at den enes rækkevidde er den andens domæne og vice versa [owl:inverseOf]&#xA;&#xA;Definition (en):&#xA;The property that determines that two given properties are inverse. [owl:inverseOf]&#xA;" range="http://www.w3.org/2000/01/rdf-schema#Class$ea_notes= Definition (da):&#xA;angivelse af den semantiske type for udfaldsrummet af den pågældende egenskab [rdfs:range]&#xA;&#xA;Kommentar -  egenskaben 'er forfatter til' kan eksempelvis angives med rækkevidden (range) 'dokument'. Angiver den implicitte klasse for dét som egenskaben har som værdi.&#xA;Som default værdi bruges rdfs:Literal for datatypeegenskaber.&#xA;&#xA;Definition (en):&#xA;A range of the subject property.[rdfs:range]&#xA;" comment__en_="The subject is an instance of a class." subPropertyOf="$ea_notes=Description: Definition (da):&#xA;angivelse af at en given egenskab er en specialisering af en anden egenskab [rdfs:subPropertyOf]&#xA;&#xA;Kommentar - En egenskab mellem to egenskaber. På samme måde som en klasse kan være en delmængde af en anden klasse (subClassOf) kan en egenskab være en underegenskab til en anden. Dette erklæres ved brug af rdfs:subPropertyOf. Svarer til angivelse af ’subsetting’på en attribut eller en association i UML.&#xA;&#xA;Definition (en):&#xA;The subject is a subproperty of a property.&#xA;[rdfs:subPropertyOf]&#xA;" comment__da_="Subjektet er en instans af klassen." definition__da_="den klasse en given instans tilhører" source="$ea_notes=" equivalentProperty="$ea_notes=Description: Definition (da):&#xA;angivelse af en egenskab som den aktuelle egenskab er det samme som, det vil sige, at de to egenskabers domæne og rækkevidde er ens&#xA;&#xA;Definition (en):&#xA;The property that determines that two given properties are equivalent&#xA;" legalSource="$ea_notes=" altLabel__en_="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;" altLabel__da_="$ea_notes=Description: Definition (da):&#xA;betegnelse som accepteres anvendt for en ressource [skos:altLabel]&#xA;&#xA;Definition (en):&#xA;An alternative lexical label for a resource. [skos:altLabel]&#xA;" URI="http://www.w3.org/1999/02/22-rdf-syntax-ns#type$ea_notes= Definition (da):&#xA;entydig identifikation af en ressource, (en klasse, et individ, en egenskab eller en værdi/literal) ved brug af en HTTP-URI&#xA;&#xA;Definition (en):&#xA;" isDefinedBy="http://www.w3.org/1999/02/22-rdf-syntax-ns#$ea_notes= Definition (da):&#xA;angivelse af urien for den model elementet er defineret i [rdfs:isDefinedBy]&#xA;&#xA;Definition (en):&#xA;The defininition of the subject resource [rdfs:isDefinedBy]&#xA;" wasDerivedFrom="$ea_notes=Description: Definition (da):&#xA;relation som angiver at en entitet har dannet basis for oprettelse af en ny entitet [prov:wasDerivedFrom]&#xA;&#xA;Definition (en):&#xA;A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity [prov:wasDerivedFrom]&#xA;"/>
+	<thecustomprofile:inverseFunctionalProperty base_Property="EAID_dst14FA2D_E7F0_4446_8E70_1C8EC4456B0B" inverseFunctionalProperty="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;egenskab hvis værdi er unik [owl:inverseFunctionalProperty]&#xA;&#xA;Kommentar - Ex. en persons CPR-nummer  &#xA;&#xA;Hvis en attribut eksempelvis er modelleret med invFunctionalProperty, så betyder det at denne attributs værdi udgør en unik idenfikator. Hvis egenskaben E er en omvendt funktionel egenskab gælder det at: Hvis X har egenskaben E med værdien V, og Y har egenskaben E med værdien V, så er X og Y samme individ, samme objekt&#xA;&#xA;Definition (en):&#xA;The class of inverse-functional properties [owl:inverseFunctionalProperty]&#xA;"/>
+	<thecustomprofile:symmetricProperty base_Property="EAID_dst14FA2D_E7F0_4446_8E70_1C8EC4456B0B" symmetricProperty="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Definition (da):&#xA;en egenskab der gælder begge veje selvom den kun er erklæret den ene vej [owl:symmetricProperty]&#xA;&#xA;Kommentar  - Hvis X har egenskaben ’sidder ved siden af’ Y, så gælder det også at Y har egenskaben ’sidder ved siden af’ X.&#xA;&#xA;Definition (en):&#xA;The class of symmetric properties [owl:symmetricProperty]&#xA;"/>
+	<FDAprofil:ClassificationModel base_Package="EAPK_4EA3B0CA_3754_4fd4_9D31_C75C1930038D" label__en_="Danish public sector core data quality dimensions" modelScope="core model" label__da_="Fællesoffentlige kernedatakvaliltetsdimensioner" responsibleEntity="Digitaliseringsstyrelsen" publisher="Digitaliseringsstyrelsen" approvalStatus="approved" approvedBy="Styregruppen for data og arkitektur" language="en" versionInfo="1.0.0" namespace="https://data.gov.dk/model/core/CoreDataQualityDimensions#" modelStatus="stable" comment__en_="Classification of central data quality dimension defnined bythe Danish public sector data qiuality vocabulary produced in connection with the Digital Strategy 2016-2020" theme=" 06.38.10 Digital infrastruktur" comment__da_="Klassifikation for centrale datakvalitetsdimensioner (kernedimenensioner) definineret i forbindelse med Projektet Fælles sprog for datakvalitet,Den fællesoffentlige digitaliseringsstrategi 2016-2020" source="Bygger delvis på &#xA;ISO 25012 &#xA;(http://iso25000.com/index.php/en/iso-25000-standards/iso-25012) &#xA;samt &#xA;Amrapali Zaveri; Anisa Rula; Andrea Maurino; Ricardo Pietrobon; Jens Lehmann; Sören Auer. Quality assessment for Linked Data:&#8201;A Survey. Semantic Web, vol. 7, no. 1, pp. 63-93, 2015. (https://dx.doi.org/10.3233/SW-150175)" namespacePrefix="cdqd" modified="24-09-2019"/>
+</xmi:XMI>

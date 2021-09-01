@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: modelcatalogue-nginx
+  labels:
+    {{- include "modelcatalogue.labels" . | nindent 4 }}-nginx
+spec:
+  ports:
+    - name: "http"
+      port: 80
+      targetPort: 80
+  selector:
+    {{- include "modelcatalogue.selectorLabels" . | nindent 4 }}-nginx
+status:
+  loadBalancer: {}

@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env
+data:
+  NGINX_PORT: "80"
+  NGINX_TIMEOUT: "30"
+  NGINX_PHP: php
+  NGINX_PHP_PORT: "9000"

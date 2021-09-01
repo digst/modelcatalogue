@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Vokabular til fællesoffentligt sprog for datakvalitet</title>
+<link href="../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Vokabular til fællesoffentligt sprog for datakvalitet", " : "))</script>  : Public  &lt;&lt;Model&gt;&gt; Package</span>
+	<!--	
+<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">15-02-2019 14:51:57</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">11-11-2019 15:05:06</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Maya Borges</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{0FEE7FB9-7F8E-44b5-B07A-CE7A93A57F34}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+	</table>
+	
+-->	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+		</ul>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">approvalStatus</td>
+				<td width="50%" class="TableRow" valign="top">approved</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario0" onclick="parent.toggleDiv('detailsDIVScenario0','DetailsImageScenario0')" />Details:
+						<div id="detailsDIVScenario0" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes"><!--Values: not applicable,awaiting approval,approved with remarks,approved<br />--></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">approvedBy</td>
+				<td width="50%" class="TableRow" valign="top">Styregruppen for data og arkitektur</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1" onclick="parent.toggleDiv('detailsDIVScenario1','DetailsImageScenario1')" />Details:
+						<div id="detailsDIVScenario1" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">comment (da)</td>
+				<td width="50%" class="TableRow" valign="top">vokabular til fællesoffentligt sprog for datakvalitets i regi af den fællesoffentlige digitaliseringsstrategi 2016-2020</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2" onclick="parent.toggleDiv('detailsDIVScenario2','DetailsImageScenario2')" />Details:
+						<div id="detailsDIVScenario2" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">comment (en)</td>
+				<td width="50%" class="TableRow" valign="top">vocabulary for describing data quality produced in connection with the project to develop a Danish public sector data qiuality vocabulary as part of the Digital Strategy 2016-2020</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3" onclick="parent.toggleDiv('detailsDIVScenario3','DetailsImageScenario3')" />Details:
+						<div id="detailsDIVScenario3" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">label (da)</td>
+				<td width="50%" class="TableRow" valign="top">Fællesoffentligt sprog for datakvalitet</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4" onclick="parent.toggleDiv('detailsDIVScenario4','DetailsImageScenario4')" />Details:
+						<div id="detailsDIVScenario4" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">label (en)</td>
+				<td width="50%" class="TableRow" valign="top">Danish Public Sector Data Quality Vocabulary</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario5" onclick="parent.toggleDiv('detailsDIVScenario5','DetailsImageScenario5')" />Details:
+						<div id="detailsDIVScenario5" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">language</td>
+				<td width="50%" class="TableRow" valign="top">en</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario6" onclick="parent.toggleDiv('detailsDIVScenario6','DetailsImageScenario6')" />Details:
+						<div id="detailsDIVScenario6" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">legalSource</td>
+				<td width="50%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario7" onclick="parent.toggleDiv('detailsDIVScenario7','DetailsImageScenario7')" />Details:
+						<div id="detailsDIVScenario7" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">modelScope</td>
+				<td width="50%" class="TableRow" valign="top">core model</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario8" onclick="parent.toggleDiv('detailsDIVScenario8','DetailsImageScenario8')" />Details:
+						<div id="detailsDIVScenario8" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes"><!--Values: core model,application model<br />--></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">modelStatus</td>
+				<td width="50%" class="TableRow" valign="top">development</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario9" onclick="parent.toggleDiv('detailsDIVScenario9','DetailsImageScenario9')" />Details:
+						<div id="detailsDIVScenario9" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes"><!--Values: development,stable,withdrawn,obsolete<br />--></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">modified</td>
+				<td width="50%" class="TableRow" valign="top">11-11-2019</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario10" onclick="parent.toggleDiv('detailsDIVScenario10','DetailsImageScenario10')" />Details:
+						<div id="detailsDIVScenario10" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes"><!--Default: Type=Date;<br />--></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">namespace</td>
+				<td width="50%" class="TableRow" valign="top"><a href="http://data.gov.dk/model/core/DataQualityDanishPublicSector#" target="_blank" >http://data.gov.dk/model/core/DataQualityDanishPublicSector#</a></td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario11" onclick="parent.toggleDiv('detailsDIVScenario11','DetailsImageScenario11')" />Details:
+						<div id="detailsDIVScenario11" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">namespacePrefix</td>
+				<td width="50%" class="TableRow" valign="top">dqdk</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario12" onclick="parent.toggleDiv('detailsDIVScenario12','DetailsImageScenario12')" />Details:
+						<div id="detailsDIVScenario12" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">publisher</td>
+				<td width="50%" class="TableRow" valign="top">Digitaliseringsstyrelsen</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario13" onclick="parent.toggleDiv('detailsDIVScenario13','DetailsImageScenario13')" />Details:
+						<div id="detailsDIVScenario13" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">responsibleEntity</td>
+				<td width="50%" class="TableRow" valign="top">Digitaliseringsstyrelsen</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario14" onclick="parent.toggleDiv('detailsDIVScenario14','DetailsImageScenario14')" />Details:
+						<div id="detailsDIVScenario14" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">source</td>
+				<td width="50%" class="TableRow" valign="top">Projektet Fælles sprog for datakvalitet, Den fællesoffentlige digitaliseringsstrategi 2016-2020</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15" onclick="parent.toggleDiv('detailsDIVScenario15','DetailsImageScenario15')" />Details:
+						<div id="detailsDIVScenario15" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">theme</td>
+				<td width="50%" class="TableRow" valign="top"> 06.38.10 Digital infrastruktur</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario16" onclick="parent.toggleDiv('detailsDIVScenario16','DetailsImageScenario16')" />Details:
+						<div id="detailsDIVScenario16" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">versionInfo</td>
+				<td width="50%" class="TableRow" valign="top">1.0.0</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageScenario17" onclick="parent.toggleDiv('detailsDIVScenario17','DetailsImageScenario17')" />Details:
+						<div id="detailsDIVScenario17" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

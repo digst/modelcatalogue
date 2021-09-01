@@ -1,0 +1,71 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+  labels:
+    {{- include "modelcatalogue.labels" . | nindent 4 }}-nginx
+spec:
+  {{- if not .Values.autoscaling.enabled }}
+  replicas: {{ .Values.replicaCount }}
+  {{- end }}
+  selector:
+    matchLabels:
+      {{- include "modelcatalogue.selectorLabels" . | nindent 6 }}-nginx
+  template:
+    metadata:
+      labels:
+        {{- include "modelcatalogue.selectorLabels" . | nindent 8 }}-nginx
+    spec:
+      {{- if not .Values.persistence.modelcatalogue.enabled }}
+      initContainers:
+        - name: git
+          image: "{{ .Values.images.git.repository }}:{{ .Values.images.git.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.images.git.pullPolicy }}
+          command: ["/bin/sh"] 
+          args: ["-c", "git clone -b docker-setup https://github.com/digst/modelcatalogue.git || git -C modelcatalogue pull"]
+          volumeMounts:
+            - name: data
+              mountPath: /git
+              readOnly: false
+      {{- end }}   
+      containers:
+        - name: nginx
+          image: "{{ .Values.images.nginx.repository }}:{{ .Values.images.nginx.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.images.nginx.pullPolicy }}
+          resources: {}
+          envFrom:
+            - configMapRef:
+                name: env
+          volumeMounts:
+            - name: config
+              mountPath: /etc/nginx/templates/default.conf.template
+              readOnly: false
+              subPath: default.conf.template
+            - name: data
+              mountPath: /usr/share/nginx/html
+              readOnly: false
+              subPath: modelcatalogue/dist
+            - name: data
+              mountPath: /usr/share/nginx/html/model/core
+              readOnly: true
+              subPath: modelcatalogue/models/core
+            - name: data
+              mountPath: /usr/share/nginx/html/xml
+              readOnly: true
+              subPath: modelcatalogue/models/xml
+      volumes:
+        - name: config
+          configMap:
+            name: nginx
+        - name: data
+        {{- if .Values.persistence.modelcatalogue.enabled }}
+          persistentVolumeClaim:
+          {{- if .Values.persistence.modelcatalogue.existingClaim }}
+            claimName: {{ .Values.persistence.modelcatalogue.existingClaim }}
+          {{- else }}    
+            claimName: {{ .Release.Name }}-modelcatalogue
+          {{- end }}
+        {{- else }}
+          emptyDir: {}
+        {{- end }}
+status: {}

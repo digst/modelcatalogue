@@ -188,7 +188,7 @@ function displayResult()
 				//Updates the view
 				$.ajax({
 					type: "POST",
-					url: 'php/search_ajax.php',
+					url: '/search_ajax.php',
 					
 					data: $('#search-form').serialize(),
 					
@@ -254,15 +254,16 @@ function arrows(){
 
 function toggleOverlay(){
 	$('.overlay').toggleClass('is-visible');
-	
-	
 }
 
 function updateFilterBtns(btns){
 	
 	$("button.tag").each(function(){
-		
 		var count = btns[$(this).attr('data-filter-xpath')];
+
+		if(count === undefined)
+			return;
+
 		var btnText = $(this).html();
 		btnText = btnText.substr(0,btnText.indexOf('('))+ " ("+ count + ")";
 		$(this).html(btnText);

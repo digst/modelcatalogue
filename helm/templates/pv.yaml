@@ -1,0 +1,23 @@
+{{- if and .Values.persistence.modelcatalogue.enabled (not .Values.persistence.modelcatalogue.existingClaim) }}
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: {{ .Release.Name }}-modelcatalogue
+  labels:
+    app: {{ .Release.Name }}-modelcatalogue
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    release: "{{ .Release.Name }}"
+    heritage: "{{ .Release.Service }}"
+  annotations:
+  {{- if .Values.persistence.modelcatalogue.storageClass }}
+    volume.beta.kubernetes.io/storage-class: {{ .Values.persistence.modelcatalogue.storageClass | quote }}
+  {{- else }}
+    volume.alpha.kubernetes.io/storage-class: default
+  {{- end }}
+spec:
+  accessModes:
+    - {{ .Values.persistence.modelcatalogue.accessMode | quote }}
+  resources:
+    requests:
+      storage: {{ .Values.persistence.modelcatalogue.size | quote }}
+{{- end }}

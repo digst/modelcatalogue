@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xml" href="./htmltransform.xsl"?>
+<rdf:RDF xmlns:dcat="http://www.w3.org/ns/dcat#" 
+		 xmlns:adms="http://www.w3.org/ns/adms#"
+         xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+         xmlns:vann="http://purl.org/vocab/vann/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+		 xmlns:plus="https://data.gov.dk/model/core/plusprofile#">
+
+<!--
+==================================================================================================================================================================================
+MODELING REGIME CLASSIFICATION (SKOS CONCEPT SCHEME)
+==================================================================================================================================================================================
+-->
+		 
+   <rdf:Description rdf:about="https://data.gov.dk/model/core/ModelingRegime#ModelingRegimes">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Modelleringsregimer</dct:identifier>
+      <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+      <dct:title xml:lang="da">Modelleringsregimer</dct:title>
+      <skos:prefLabel xml:lang="da">Modelleringsregimer</skos:prefLabel>
+      <skos:altLabel xml:lang="da">Klassifikation over modelleringsregimer</skos:altLabel>	  
+ 	  <rdfs:label xml:lang="en">Modeling regimes</rdfs:label>
+      <rdfs:label xml:lang="da">Modelleringsregimer</rdfs:label>		  
+      <dct:description xml:lang="da">Modelleringsregimer er en læselig opdeling af modeller ift. hvilket paradigme og regelsæt de er blevet udarbejdet iht.</dct:description>
+      <skos:definition xml:lang="da">Modelleringsregimer er en læselig opdeling af modeller ift. hvilket paradigme og regelsæt de er blevet udarbejdet iht.</skos:definition>
+      <dct:description xml:lang="en">Modeling regimes are...</dct:description>
+      <skos:definition xml:lang="en">Modeling regimes are...</skos:definition>
+	  <rdfs:comment xml:lang="da">Modelleringsregimer er en læselig opdeling af modeller ift. hvilket paradigme og regelsæt modellen er blevet udarbejdet iht.</rdfs:comment>
+	  <rdfs:comment xml:lang="en">Modeling regimes are...</rdfs:comment>
+      <vann:usageNote xml:lang="en"/>
+      <dcat:theme rdf:resource="tbd"/>
+	  <adms:status>Development</adms:status>	  
+      <adms:status rdf:resource="https://data.gov.dk/model/core/ModelStatus#Development"/>	
+	  <plus:approvalStatus>godkendt (approved)</plus:approvalStatus>
+      <plus:approvalStatus rdf:resource="https://data.gov.dk/model/core/ApprovalStatus#Approved"/>		
+	  <dct:theme>06.38.10.10 Arkitektur for den digitale infrastruktur</dct:theme>	 
+	  <dct:publisher>Digitaliseringsstyrelsen</dct:publisher>
+	  <owl:versionInfo>0.1.0</owl:versionInfo>
+	  <dct:modified>06-04-2018</dct:modified>	  
+   </rdf:Description>
+   
+<owl:Class rdf:about="https://data.gov.dk/model/core/ModelingRegime#ModelingRegime">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<topConceptOf xmlns="https://data.gov.dk/model/core/ModelingRegime#ModelingRegimes"/>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">modelleringsregime</prefLabel>	
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="da">modeling regime</prefLabel>		
+	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en"></definition>	
+    <skos:inScheme rdf:resource="https://data.gov.dk/model/core/ModelingRegime#ModelingRegimes"/>
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/ModelingRegime#" />	
+</owl:Class>
+   
+
+   <rdf:Description rdf:about="https://data.gov.dk/model/core/ModelingRegime.rdf.xml">
+      <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+      <rdfs:label xml:lang="en">RDF/XML</rdfs:label>
+      <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DAN"/>
+	  <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/EN"/>
+   </rdf:Description>
+
+   <rdf:Description rdf:about="https://data.gov.dk/model/core/ModelingRegime#International">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Int</dct:identifier>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:inScheme rdf:resource="https://data.gov.dk/model/core/ModelingRegime#ModelingRegimes"/>
+	  <dct:title xml:lang="en">International</dct:title>
+      <dct:description xml:lang="da">Modeller, udfærdiget udenfor de danske modelleringsregimer - kan bruges som reference og inspiration.</dct:description>
+      <skos:definition xml:lang="da">Modeller, udfærdiget udenfor de danske modelleringsregimer - kan bruges som reference og inspiration.</skos:definition>
+      <dct:description xml:lang="en">a level...</dct:description>
+      <skos:definition xml:lang="en">a level...</skos:definition>
+      <skos:prefLabel xml:lang="en">International</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Internationalt</skos:prefLabel>
+      <dcat:theme rdf:resource="tbd"/>
+      <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+
+    <rdf:Description rdf:about="https://data.gov.dk/model/core/ModelingRegime##FODS">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">FODS</dct:identifier>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:inScheme rdf:resource="https://data.gov.dk/model/core/ModelingRegime#ModelingRegimes"/>
+     <dct:title xml:lang="en">FODS</dct:title>
+      <dct:description xml:lang="da">Modeller udfærdiget inden for styring af digitaliseringsstrategien, konformerer med Fællesoffentlige regler for begrebs- og datamodellering.</dct:description>
+      <skos:definition xml:lang="da">Modeller udfærdiget inden for styring af digitaliseringsstrategien, konformerer med Fællesoffentlige regler for begrebs- og datamodellering.</skos:definition>
+      <dct:description xml:lang="en">a level...</dct:description>
+      <skos:definition xml:lang="en">a level...</skos:definition>
+      <skos:prefLabel xml:lang="en">FODS</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">FODS</skos:prefLabel>
+      <dcat:theme rdf:resource="tbd"/>
+      <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+
+    <rdf:Description rdf:about="https://data.gov.dk/model/core/ModelingRegime#Grunddata">
+      <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">GD</dct:identifier>
+      <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:inScheme rdf:resource="https://data.gov.dk/model/core/ModelingRegime#ModelingRegimes"/>
+     <dct:title xml:lang="en">International</dct:title>
+      <dct:description xml:lang="da">Modeller udfærdiget i overensstemmelse med Modelregler for grunddata.</dct:description>
+      <skos:definition xml:lang="da">Modeller udfærdiget i overensstemmelse med Modelregler for grunddata.</skos:definition>
+      <dct:description xml:lang="en">a level...</dct:description>
+      <skos:definition xml:lang="en">a level...</skos:definition>
+      <skos:prefLabel xml:lang="en">Grunddata</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Grunddata</skos:prefLabel>
+      <dcat:theme rdf:resource="tbd"/>
+      <adms:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid"/>
+   </rdf:Description>
+
+  
+
+   </rdf:RDF>
+

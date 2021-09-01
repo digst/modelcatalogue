@@ -1,0 +1,68 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: php
+  labels:
+    {{- include "modelcatalogue.labels" . | nindent 4 }}-php
+spec:
+  {{- if not .Values.autoscaling.enabled }}
+  replicas: {{ .Values.replicaCount }}
+  {{- end }}
+  selector:
+    matchLabels:
+      {{- include "modelcatalogue.selectorLabels" . | nindent 6 }}-php
+  template:
+    metadata:
+      labels:
+        {{- include "modelcatalogue.selectorLabels" . | nindent 8 }}-php
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- if not .Values.persistence.modelcatalogue.enabled }}
+      initContainers:
+        - name: git
+          image: "{{ .Values.images.git.repository }}:{{ .Values.images.git.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.images.git.pullPolicy }}
+          command: ["/bin/sh"] 
+          args: ["-c", "git clone -b docker-setup https://github.com/digst/modelcatalogue.git || git -C modelcatalogue pull"]
+          volumeMounts:
+            - name: data
+              mountPath: /git
+              readOnly: false
+      {{- end }}  
+      containers:
+        - name: php
+          image: "{{ .Values.images.php.repository }}:{{ .Values.images.php.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.images.php.pullPolicy }}
+          resources: {}
+          envFrom:
+            - configMapRef:
+                name: env
+          volumeMounts:
+            - name: data
+              mountPath: /var/www/html/php
+              readOnly: false
+              subPath: modelcatalogue/php
+            - name: data
+              mountPath: /var/www/model/core
+              readOnly: true
+              subPath: modelcatalogue/models/core
+            - name: data
+              mountPath: /var/www/html/php/xml
+              readOnly: true
+              subPath: modelcatalogue/models/xml
+      volumes:
+        - name: data
+        {{- if .Values.persistence.modelcatalogue.enabled }}
+          persistentVolumeClaim:
+          {{- if .Values.persistence.modelcatalogue.existingClaim }}
+            claimName: {{ .Values.persistence.modelcatalogue.existingClaim }}
+          {{- else }}    
+            claimName: {{ .Release.Name }}-modelcatalogue
+          {{- end }}
+        {{- else }}
+          emptyDir: {}
+        {{- end }}
+status: {}
