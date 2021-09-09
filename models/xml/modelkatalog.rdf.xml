@@ -1562,7 +1562,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
   <rdf:Description rdf:about="https://data.gov.dk/model/profile/classification-0-9-1-pdf">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
     <dcat:accessURL rdf:resource="https://arkitektur.digst.dk/node/587"/>
-    <dcat:downloadURL rdf:resource="https://arkitektur.digst.dk/sites/default/files/anvendelsesprofil_for_organisation_-_2018-01-15.pdf"/>	
+    <dcat:downloadURL rdf:resource="https://arkitektur.digst.dk/sites/default/files/anvendelsesprofil_for_klassifikation_-_2018-05-31.pdf"/>	
     <dct:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/> 	
     <dct:description xml:lang="da">Anvendelsesprofil for klassifikation 0.9.1 PDF</dct:description>
     <dct:description xml:lang="en">Application Profile for Classification 0.9.1 PDF</dct:description>
