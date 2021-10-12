@@ -50,7 +50,7 @@ Den bagvedliggende datamodel for Modelkataloget udgøres af anvendelsesprofilen 
 
 ## Deployment steps:
 
-1. Navigate into `helm` directory`
+1. Navigate into `helm` directory.
 2. Create a namespace on rancher.
 3. Create the credentials for docker registry if they don't exist globally or for the namespace:
 
