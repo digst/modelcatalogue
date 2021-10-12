@@ -19,7 +19,7 @@ spec:
           image: "{{ .Values.images.git.repository }}:{{ .Values.images.git.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.images.git.pullPolicy }}
           command: ["/bin/sh"] 
-          args: ["-c", "git clone -b docker-setup https://github.com/digst/modelcatalogue.git || git -C modelcatalogue pull"]
+          args: ["-c", "git clone https://github.com/digst/modelcatalogue.git || git -C modelcatalogue pull"]
           resources: {}
           envFrom:
             - configMapRef:
