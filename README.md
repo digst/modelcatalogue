@@ -1,4 +1,4 @@
-# modelcatalogue (FDA Modelkataloget)
+# Modelcatalogue (FDA Modelkataloget)
 Dette repositorium indeholder implementeringen af det fællesoffentlige katalog over begrebs- og datamodeller
 
 ## Om FDA Modelkataloget
@@ -22,3 +22,75 @@ Modelmetadata distribueres i et maskinlæsbart format (en RDF/XML-fil) på følg
 
 ### Datamodellen modelDCAT-AP
 Den bagvedliggende datamodel for Modelkataloget udgøres af anvendelsesprofilen [modelDCAT-AP](https://github.com/digst/modelDCAT-AP) som er udarbejdet som en profil af den internationale datakatalogstandard [DCAT-AP](https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe). 
+
+
+
+# Local setup
+
+## Prerequisite:
+ - [Docker compose](https://docs.docker.com/compose/install)
+
+## Steps:
+1.  Clone git repo.
+2.  Navigate into folder and run `docker compose up`
+
+
+## Updating the docker image with latest drupal patches
+1.  Update the Dockerfile image to the latest. 
+    - Example: `FROM drupal:7.79-apache` to `FROM drupal:7.80-apache`
+2.  Build it, tag it, push it.
+
+
+
+# Helmchart deployment for Modelcatalogue
+
+## Pre-requisites:
+- kubectl is configured and connected
+
+
+## Deployment steps:
+
+1. Navigate into `helm` directory`
+2. Create a namespace on rancher.
+3. Create the credentials for docker registry if they don't exist globally or for the namespace:
+
+### replace `[]` with actual values
+`kubectl create secret docker-registry [secretName] --docker-server=[reg.govcloud.dk] --docker-username='[robot-name]' --docker-password=[robot-token] -n [namespace]`
+
+
+### Almost working example without namespace
+`kubectl create secret docker-registry harbor-credentials --docker-server=reg.govcloud.dk --docker-username='robot$sprogressourcen+helm-test' --docker-password=4Aaytoe6X5oiMwYiddfGzx8GtKrrZBcQ -n [namespace]`
+
+4. Upgrading previous deployment and/or installing a new in a namespace:
+`helm upgrade [deployment name] . -n [namespace] --install`
+
+
+> Choosing a good deployment name will make it easier to upgrade / uninstall later, and will give a better overview of deployments.
+
+
+
+## Other helm commands
+
+#### Listing deployments in a namespace:
+`helm ls -n [namespace]`
+
+#### Uninstalling a deployment in a namespace:
+`helm uninstall [deployment name] -n [namespace]`
+
+#### Generate a single deployment yaml from the helm template:
+`helm template .`
+
+
+#### Extending / overwriting values file:
+When deploying you can specify the values file to be used, by default it will be `values.yaml`.
+
+Example of specifying an exact values file:
+`helm upgrade [deployment name] . -n [namespace] --install -f test-deploy.yaml`
+
+
+Example of extending values files:
+`helm upgrade [deployment name] . -n [namespace] --install -f test-deploy.yaml -f disabled-pv.yaml`
+
+> Values will be overwritten accordingly to the order specified in the commando.
+So in the case above, disabled-pv.yaml will overwrite test-deploy.yaml for those key/values pairs.
+
