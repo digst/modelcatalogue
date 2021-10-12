@@ -13,7 +13,7 @@ services:
             - ./models/core:/usr/share/nginx/html/model/core
             - ./models/xml:/usr/share/nginx/html/xml
         ports: 
-            - 80:80
+            - 8090:80
         links:
             - php
         depends_on: 
@@ -39,4 +39,4 @@ services:
             - ./repos:/git
             - ~/.ssh:/root/.ssh
         entrypoint: ["/bin/sh", "-c"]
-        command: "'git clone -b docker-setup git@github.com:digst/modelcatalogue.git || git -C modelcatalogue pull'"
+        command: "'git clone git@github.com:digst/modelcatalogue.git || git -C modelcatalogue pull'"

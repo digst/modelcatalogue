@@ -33,13 +33,14 @@ Den bagvedliggende datamodel for Modelkataloget udgøres af anvendelsesprofilen 
 ## Steps:
 1.  Clone git repo.
 2.  Navigate into folder and run `docker compose up`
+3.  Enter http://localhost inside your preferred browser.
 
-
-## Updating the docker image with latest drupal patches
-1.  Update the Dockerfile image to the latest. 
-    - Example: `FROM drupal:7.79-apache` to `FROM drupal:7.80-apache`
-2.  Build it, tag it, push it.
-
+> You can change the port for where the application should run by replacing the line in `docker-compose.yaml` where the ports are specified with:
+```
+ports: 
+    - 8080:80
+```
+> Run `docker-compose up` and it should now be accessible on http://localhost:8080.
 
 
 # Helmchart deployment for Modelcatalogue
