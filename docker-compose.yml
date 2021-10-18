@@ -16,8 +16,6 @@ services:
             - 8090:80
         links:
             - php
-        depends_on: 
-            - git
         environment:
             - NGINX_PORT=80
             - NGINX_TIMEOUT=30
@@ -25,18 +23,9 @@ services:
             - NGINX_PHP_PORT=9000
     php:
         build: .
-        depends_on: 
-            - git
         volumes: 
             - ./php:/var/www/html/php
             - ./models/xml:/var/www/html/php/xml
             - ./models/core:/var/www/model/core
         ports:
             - 9000:9000
-    git:
-        image: alpine/git
-        volumes:
-            - ./repos:/git
-            - ~/.ssh:/root/.ssh
-        entrypoint: ["/bin/sh", "-c"]
-        command: "'git clone git@github.com:digst/modelcatalogue.git || git -C modelcatalogue pull'"
