@@ -354,7 +354,7 @@ Link til placering på server: https://data.gov.dk/catalogue/models/xml/modelkat
 		<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>	
 		<dadk:modelType rdf:resource="https://data.gov.dk/model/core/modeltype#LogicalDataModel"/>			
 		<mdl:modelScope rdf:resource="https://data.gov.dk/model/core/modelscope#ApplicationModel"/>			
-		<dct:title xml:lang="da">Grunddatamodellen</dct:title>   
+		<dct:title xml:lang="da">Grunddatamodellen 1</dct:title>   
 		<dct:title xml:lang="en">The Basic Data Model</dct:title>	
 		<dct:description xml:lang="da">Grunddatamodellen er den samlede datamodel for grunddata. Grunddatamyndighederne har i samarbejde skabt én samlet og sammenhængende datamodel for alle grunddata. Datamodellen viser de grunddata, som udstilles på Datafordeleren. Datamodellen kan du bruge til, at få overblik over grunddata og de informationer, grunddata indeholder og til at se hvordan data hænger sammen på tværs af registrene. Destinationssiden giver adgang til Grunddatamodellen som diagrammer (html) eller xmi-dokumenter.</dct:description>
 		<dct:description xml:lang="en">The Basic Data Model is the aggregated model for data in the Danish basic registries. The landing page provides access to the Basic Data Model as diagrams or xmi documents.</dct:description>		
