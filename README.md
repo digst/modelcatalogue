@@ -1,5 +1,6 @@
 # Modelcatalogue (FDA Modelkataloget)
-Dette repositorium indeholder implementeringen af det fællesoffentlige katalog over begrebs- og datamodeller
+~~Dette repositorium indeholder implementeringen af det fællesoffentlige katalog over begrebs- og datamodeller~~
+Modelkataloget vedligeholdes ikke længere fra dette repositorie, men kan stadig tilgås på https://data.gov.dk/catalogue/models
 
 ## Om FDA Modelkataloget
 FDA Modelkataloget leverer et katalog over begrebs- og datamodeller udarbejdet i offentligt regi og som er registret med henblik på videndeling og genbrug. Derudover indeholder dette katalog også oplysninger om en række anerkendte internationale modeller som kan have en bred anvendelse i dansk administrativ og fællesoffentlig kontekst. 
